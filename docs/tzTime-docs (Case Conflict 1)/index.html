@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lumenize</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="fragment" content="!">
+
+  
+
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+  <link rel="stylesheet" href="resources/css/app.css" type="text/css" />
+  <link rel="stylesheet" href="resources/prettify/prettify.css" type="text/css" />
+  <script type="text/javascript">
+  (function(){
+    var protocol = (document.location.protocol === "https:") ? "https:" : "http:";
+    document.write("<link href='"+protocol+"//fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css' />");
+  })();
+  </script>
+
+  <script type="text/javascript" src="extjs/ext-all.js"></script>
+  <script type="text/javascript" src="data.js"></script>
+
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="resources/prettify/prettify.js"></script>
+
+  
+
+</head>
+<body id="ext-body">
+
+  <div id="loading"><span class="title"></span><span class="logo"></span></div>
+
+  <div id="header-content">Lumenize</div>
+  <div id='welcome-content' style='display:none'><style>
+.readme li {
+    display: list-item;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: disc outside;
+}
+
+.readme ul, .readme ol {
+    display: block;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.readme ul :first-child, .readme ol :first-child {
+    margin-top: 0;
+}
+
+.readme > ul {
+    margin-left: 20px;
+}
+
+.readme h1, .readme h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(241, 241, 241);
+    color: rgb(49, 78, 100);
+}
+
+.readme h1 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.readme h2 {
+    font-size: 20px;
+}
+
+.readme h3 {
+    font-style: italic;
+}
+
+.readme p {
+    margin-top: 15px;
+}
+
+.readme p, .readme ul, .readme li, .readme ol, .readme pre, .readme code {
+    max-width: 900px;
+    color: rgb(72, 72, 72);
+}
+
+.readme pre, .readme code {
+    white-space: pre;
+    margin: 0px;
+    overflow-x: auto;
+    padding: 1px 3px;
+    font-family: "Menlo", "Courier New", "Courier", monospace;
+    color: #314e64;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    border: solid 1px #e8e8e8;
+}
+
+.readme em {
+    font-style: italic;
+}
+
+.readme b {
+    font-weight: bold;
+}
+</style>
+<body>
+<div class="readme">
+<p><a href="http://travis-ci.org/lmaccherone/tzTime"><img src="https://secure.travis-ci.org/lmaccherone/tzTime.png" alt="build status"></a>
+</p>
+<h1>tzTime</h1>
+<p>Copyright (c) 2009-2013, Lawrence S. Maccherone, Jr.
+
+</p>
+<p><em>Timezone transformations in the browser and node.js plus timezone precise timeline creation for charting.</em>
+
+</p>
+<h2>Features</h2>
+<ul>
+<li>Transform into any (and I mean any) timezone</li>
+<li><p>Create timezone precise time-series axis for charts</p>
+<ul>
+<li>Knockout weekends, holidays, non-workhours</li>
+<li>Work with timezone precision</li>
+<li><p>Work in any granularity</p>
+<ul>
+<li>Year, quarter, week, day, hour, etc.</li>
+<li>No more recording <code>2012-03-05T00:00:00.000Z</code> when you really just mean <code>2012-03-05</code></li>
+<li>Create and use custom granularities: <code>R02I04-07</code> = Seventh day of fourth iteration in second release</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Tested - Over 300 tests</p>
+</li>
+<li><a href="http://lmaccherone.github.com/tzTime/docs/tzTimes-docs/index.html">Documented</a> - Robust documentation for an open source library</li>
+<li><a href="https://github.com/lmaccherone/coffeedoctest">DocTested</a> - The examples will always match the code because it fails automated testing
+ when they don&#39;t</li>
+</ul>
+<h2>Credits</h2>
+<p>Authors:
+
+</p>
+<ul>
+<li><a href="http://maccherone.com">Larry Maccherone</a></li>
+<li>Jennifer Maccherone</li>
+</ul>
+<p>Used when running:
+
+</p>
+<ul>
+<li><a href="https://github.com/mde/timezone-js">timezoneJS</a> - library for <a href="http://www.twinsun.com/tz/tz-link.htm">tz file</a> parsing. Although I haven&#39;t touched the actual tz file parsing code, I have modified timezoneJS fairly significantly. The original included a drop-in replacement for JavaScript&#39;s Date object which I have removed. I also modified it to work on node.js and in the browser once &quot;browserified&quot; by bundling the tz files.</li>
+</ul>
+<p>Used when developing:
+
+</p>
+<ul>
+<li><a href="http://nodejs.org/">Node.js</a></li>
+<li><a href="http://coffeescript.org/">CoffeeScript</a></li>
+<li><a href="https://github.com/lmaccherone/coffeedoctest">coffeedoctest</a> (by Larry Maccherone)</li>
+<li><a href="https://github.com/caolan/nodeunit">nodeunit</a></li>
+<li><a href="https://github.com/substack/node-browserify">browserify with fileify plugin (modified)</a></li>
+<li><a href="https://github.com/mishoo/UglifyJS">uglify-js</a></li>
+<li><a href="https://github.com/ryanmcgrath/wrench-js">wrench</a></li>
+<li><a href="https://github.com/chjj/marked">marked</a></li>
+</ul>
+<h2>Using from a browser</h2>
+<p>To use in a browser, either host it on your own site, or if your volume is low enough, you can directly hit the github pages for the deploy version:
+
+</p>
+<p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://raw.github.com/lmaccherone/tzTime/v{{version}}/deploy/tzTime-min.js&quot;&gt;&lt;/script&gt;</code>
+
+</p>
+<p>Replace <code>{{version}}</code> with the version of tzTime you wish to use (probably the latest). See the Changelog section for information about versions. Example:
+
+</p>
+<p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://raw.github.com/lmaccherone/tzTime/v0.6.0/deploy/tzTime-min.js&quot;&gt;&lt;/script&gt;</code>
+
+</p>
+<p>The package is fairly large ~205KB but most of that is the embedded timezone files which compress really well. The Github pages server will gzip the package so it&#39;s only ~45KB over the wire.
+
+</p>
+<p>Then at the top of the javascript where you want to call it, put the following:
+
+</p>
+<p><code>var tzTime = require(&#39;./tzTime&#39;);</code>
+
+</p>
+<p>Then to use it, you can either create local aliases like:
+
+</p>
+<p><code>var Time = tzTime.Time;</code>
+
+</p>
+<p>or you can just use the tzTime namespace:
+
+</p>
+<p><code>var timeline = new tzTime.Time();</code>
+
+</p>
+<h2>Installation for node.js usage</h2>
+<p>To install, run the following from the root folder of your project:
+
+</p>
+<p><code>npm install tzTime --save</code>
+
+</p>
+<h2>Documentation and source code</h2>
+<ul>
+<li><a href="http://lmaccherone.github.com/tzTime/docs/tzTime-docs/index.html">API Documentation</a></li>
+<li><a href="https://github.com/lmaccherone/tzTime">Source Repository</a></li>
+</ul>
+<h2>Changelog</h2>
+<ul>
+<li>0.6.0 - 2013-02-02 Original version when first broken out from <a href="http://lmaccherone.github.com/Lumenize">Lumenize</a></li>
+</ul>
+<h2>MIT License</h2>
+<p>Copyright (c) 2011, 2012, 2013 Lawrence S. Maccherone, Jr.
+
+</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
+documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation 
+the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and 
+to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
+TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF 
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+IN THE SOFTWARE.
+
+
+
+
+
+</p>
+
+</div>
+</body></div>
+          <div id='categories-content' style='display:none'>
+            <div class='section'>
+<h1>tzTime</h1>
+<div class='left-column'>
+<h3>tzTime Classes</h3>
+<ul class='links'>
+<li><a href="#!/api/tzTime.Time" rel="tzTime.Time" class="docClass">tzTime.Time</a></li>
+<li><a href="#!/api/tzTime.Timeline" rel="tzTime.Timeline" class="docClass">tzTime.Timeline</a></li>
+<li><a href="#!/api/tzTime.TimelineIterator" rel="tzTime.TimelineIterator" class="docClass">tzTime.TimelineIterator</a></li>
+</ul>
+</div>
+<div class='middle-column'>
+</div>
+<div class='right-column'>
+</div>
+<div style='clear:both'></div>
+</div>
+        </div>
+
+  
+  <div id='footer-content' style='display: none'>Generated with <a href='https://github.com/senchalabs/jsduck'>JSDuck</a> 4.3.2.</div>
+
+  
+
+</body>
+</html>
