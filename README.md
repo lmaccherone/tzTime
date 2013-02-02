@@ -19,7 +19,7 @@ _Timezone transformations in the browser and node.js plus timezone precise timel
     * Create and use custom granularities: `R02I04-07` = Seventh day of fourth iteration in second release
 
 * Tested - Over 300 tests
-* [Documented](http://lmaccherone.github.com/tzTime/docs/tzTimes-docs/index.html) - Robust documentation for an open source library
+* [Documented](http://lmaccherone.github.com/tzTime/docs/tztime-docs/index.html) - Robust documentation for an open source library
 * [DocTested](https://github.com/lmaccherone/coffeedoctest) - The examples will always match the code because it fails automated testing
    when they don't
 
@@ -49,11 +49,11 @@ Used when developing:
 
 To use in a browser, either host it on your own site, or if your volume is low enough, you can directly hit the github pages for the deploy version:
 
-`<script type="text/javascript" src="https://raw.github.com/lmaccherone/tzTime/v{{version}}/deploy/tzTime-min.js"></script>`
+`<script type="text/javascript" src="https://raw.github.com/lmaccherone/tzTime/v{{version}}/deploy/tztime-min.js"></script>`
 
 Replace `{{version}}` with the version of tzTime you wish to use (probably the latest). See the Changelog section for information about versions. Example:
 
-`<script type="text/javascript" src="https://raw.github.com/lmaccherone/tzTime/v0.6.0/deploy/tzTime-min.js"></script>`
+`<script type="text/javascript" src="https://raw.github.com/lmaccherone/tzTime/v0.6.0/deploy/tztime-min.js"></script>`
 
 The package is fairly large ~205KB but most of that is the embedded timezone files which compress really well. The Github pages server will gzip the package so it's only ~45KB over the wire.
 
@@ -77,7 +77,7 @@ To install, run the following from the root folder of your project:
 
 ## Documentation and source code ##
 
-* [API Documentation](http://lmaccherone.github.com/tzTime/docs/tzTime-docs/index.html)
+* [API Documentation](http://lmaccherone.github.com/tzTime/docs/tztime-docs/index.html)
 * [Source Repository](https://github.com/lmaccherone/tzTime)
 
 ## Changelog ##
