@@ -7,13 +7,17 @@ _Timezone transformations in the browser and node.js plus timezone precise timel
 
 ## Features ##
 
-* Create time-series axis for charts
+* Transform into any (and I mean any) timezone
+* Create timezone precise time-series axis for charts
+
   * Knockout weekends, holidays, non-workhours
   * Work with timezone precision
   * Work in any granularity
+
     * Year, quarter, week, day, hour, etc.
     * No more recording `2012-03-05T00:00:00.000Z` when you really just mean `2012-03-05`
     * Create and use custom granularities: `R02I04-07` = Seventh day of fourth iteration in second release
+
 * Tested - Over 300 tests
 * [Documented](http://lmaccherone.github.com/tzTime/docs/tzTimes-docs/index.html) - Robust documentation for an open source library
 * [DocTested](https://github.com/lmaccherone/coffeedoctest) - The examples will always match the code because it fails automated testing
@@ -45,7 +49,7 @@ Used when developing:
 
 To use in a browser, either host it on your own site, or if your volume is low enough, you can directly hit the github pages for the deploy version:
 
-`<script type="text/javascript" src="https://raw.github.com/lmaccherone/Lumenize/v{{version}}/deploy/Lumenize-min.js"></script>`
+`<script type="text/javascript" src="https://raw.github.com/lmaccherone/tzTime/v{{version}}/deploy/tzTime-min.js"></script>`
 
 Replace `{{version}}` with the version of tzTime you wish to use (probably the latest). See the Changelog section for information about versions. Example:
 
@@ -78,7 +82,7 @@ To install, run the following from the root folder of your project:
 
 ## Changelog ##
 
-* 0.6.0 - 2013-02-03 Original version when first broken out from [Lumenize](http://lmaccherone.github.com/Lumenize)
+* 0.6.0 - 2013-02-02 Original version when first broken out from [Lumenize](http://lmaccherone.github.com/Lumenize)
 
 ## MIT License ##
 
