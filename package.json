@@ -1,5 +1,5 @@
 {
-  "name": "tzTime",
+  "name": "tztime",
   "version": "0.6.0",
   "main": "./tzTime",
   "description": "Timezone transformations in the browser and node.js plus timezone precise timeline creation for charting",
