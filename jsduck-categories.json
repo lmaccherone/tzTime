@@ -1,0 +1,15 @@
+[
+    {
+        "name": "tzTime",
+        "groups": [
+            {
+                "name": "tzTime Classes",
+                "classes": [
+                    "*.Time",
+                    "*.Timeline",
+                    "*.TimelineIterator"
+                ]
+            }
+        ]
+    }
+]

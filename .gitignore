@@ -1,0 +1,5 @@
+.idea
+.DS_Store
+coffeedoctest_temp
+js
+node_modules

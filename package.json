@@ -1,0 +1,48 @@
+{
+  "name": "tzTime",
+  "version": "0.6.0",
+  "main": "./tzTime",
+  "description": "Timezone transformations in the browser and node.js plus timezone precise timeline creation for charting",
+  "keywords": [
+    "charting",
+    "chart",
+    "date",
+    "time"
+  ],
+  "author": {
+    "name": "Larry Maccherone",
+    "url": "http://maccherone.com"
+  },
+  "homepage": "https://github.com/lmaccherone/tzTime",
+  "engines": {
+    "node": "0.8.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/lmaccherone/tzTime.git"
+  },
+  "preferGlobal": false,
+  "dependencies": {
+    "coffee-script": "1.4.x"
+  },
+  "devDependencies": {
+    "coffeedoctest": "0.4.x",
+    "uglify-js": "2.2.x",
+    "nodeunit": "~0.7.4",
+    "browserify": "1.16.x",
+    "jsduckify": "0.2.x",
+    "wrench": "1.4.x",
+    "marked": "0.2.x",
+    "exec-sync": "~0.1.5",
+    "fileify-lm": "~0.3.1"
+  },
+  "scripts": {
+    "test": "cake testall"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ]
+}
