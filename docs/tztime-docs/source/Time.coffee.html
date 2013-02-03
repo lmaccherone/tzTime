@@ -28,31 +28,25 @@ class Time
    * 
    *     {TimelineIterator, Timeline, Time} = require('../')
    * 
-   * Get Time objects relative to now.
+   * Get Time objects from partial ISOStrings. The granularity is automatically inferred from how many segments you provide.
    * 
-   *     d = new Time('this millisecond in Pacific/Fiji')
-   *     d = new Time('previous week')
-   *     d = new Time('next month')
-   *     
-   * Spell it all out with a JavaScript object
-   * 
-   *     d1 = new Time({granularity: Time.DAY, year: 2011, month: 2, day: 28})
+   *     d1 = new Time('2011-02-28')
    *     console.log(d1.toString())
    *     # 2011-02-28
-   *     
-   * You can use the string short-hand rather than spell out the segments separately. The granularity
-   * is automatically inferred from how many segments you provide.
    * 
-   *     d2 = new Time('2011-03-01')
+   * Spell it all out with a JavaScript object
+   * 
+   *     d2 = new Time({granularity: Time.DAY, year: 2011, month: 3, day: 1})
    *     console.log(d2.toString())
    *     # 2011-03-01
    *     
    * Increment/decrement and compare Times without regard to timezone
    * 
    *     console.log(d1.greaterThanOrEqual(d2))
+   *     # false
+   * 
    *     d1.increment()
    *     console.log(d1.equal(d2))
-   *     # false
    *     # true
    * 
    * Do math on them.

@@ -89,7 +89,9 @@
 </p>
 <h2>Features</h2>
 <ul>
-<li>Transform into any (and I mean any) timezone</li>
+<li>Transform into and out of any timezone using Olson timezone rules</li>
+<li>Timezone rule files embedded in the minified browser package. No need to host them
+seperately.</li>
 <li><p>Create timezone precise time-series axis for charts</p>
 <ul>
 <li>Knockout weekends, holidays, non-workhours</li>
@@ -98,16 +100,18 @@
 <ul>
 <li>Year, quarter, week, day, hour, etc.</li>
 <li>No more recording <code>2012-03-05T00:00:00.000Z</code> when you really just mean <code>2012-03-05</code></li>
-<li>Create and use custom granularities: <code>R02I04-07</code> = Seventh day of fourth iteration in second release</li>
+<li>Create and use custom granularities: <code>R02I04-07</code> = Seventh day of fourth iteration in
+second release</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><p>Tested - Over 300 tests</p>
 </li>
-<li><a href="http://lmaccherone.github.com/tzTime/docs/tztime-docs/index.html">Documented</a> - Robust documentation for an open source library</li>
-<li><a href="https://github.com/lmaccherone/coffeedoctest">DocTested</a> - The examples will always match the code because it fails automated testing
- when they don&#39;t</li>
+<li><a href="http://lmaccherone.github.com/tzTime/docs/tztime-docs/index.html">Documented</a> - Robust
+documentation</li>
+<li><a href="https://github.com/lmaccherone/coffeedoctest">DocTested</a> - The examples will always match
+the code because it fails automated testing when they don&#39;t</li>
 </ul>
 <h2>Credits</h2>
 <p>Authors:
@@ -121,7 +125,12 @@
 
 </p>
 <ul>
-<li><a href="https://github.com/mde/timezone-js">timezoneJS</a> - library for <a href="http://www.twinsun.com/tz/tz-link.htm">tz file</a> parsing. Although I haven&#39;t touched the actual tz file parsing code, I have modified timezoneJS fairly significantly. The original included a drop-in replacement for JavaScript&#39;s Date object which I have removed. I also modified it to work on node.js and in the browser once &quot;browserified&quot; by bundling the tz files.</li>
+<li><a href="https://github.com/mde/timezone-js">timezoneJS</a> - library for Olson
+<a href="http://www.twinsun.com/tz/tz-link.htm">tz file</a> parsing.  Although I haven&#39;t touched the
+actual tz file parsing code, I have modified timezoneJS fairly significantly. The original 
+included a drop-in replacement for JavaScript&#39;s Date object which I have removed. I also 
+modified it to work on node.js and in the browser once &quot;browserified&quot; by bundling the tz 
+files.</li>
 </ul>
 <p>Used when developing:
 
@@ -137,7 +146,7 @@
 <li><a href="https://github.com/chjj/marked">marked</a></li>
 </ul>
 <h2>Using from a browser</h2>
-<p>To use in a browser, either host it on your own site, or if your volume is low enough, you can directly hit the github pages for the deploy version:
+<p>If you are using Lumenize, you don&#39;t need to do anything. The browser package for Lumenize includes tzTime. If you just want to use tzTime without Lumenize, then you can either host it on your own site, or you can directly hit the github pages for the deploy version:
 
 </p>
 <p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://raw.github.com/lmaccherone/tzTime/v{{version}}/deploy/tztime-min.js&quot;&gt;&lt;/script&gt;</code>
@@ -146,28 +155,17 @@
 <p>Replace <code>{{version}}</code> with the version of tzTime you wish to use (probably the latest). See the Changelog section for information about versions. Example:
 
 </p>
-<p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://raw.github.com/lmaccherone/tzTime/v0.6.0/deploy/tztime-min.js&quot;&gt;&lt;/script&gt;</code>
+<p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://raw.github.com/lmaccherone/tzTime/v0.6.1/deploy/tztime-min.js&quot;&gt;&lt;/script&gt;</code>
 
 </p>
 <p>The package is fairly large ~205KB but most of that is the embedded timezone files which compress really well. The Github pages server will gzip the package so it&#39;s only ~45KB over the wire.
 
 </p>
-<p>Then at the top of the javascript where you want to call it, put the following:
+<p>Then:
 
 </p>
 <p><code>var tzTime = require(&#39;./tzTime&#39;);</code>
-
-</p>
-<p>Then to use it, you can either create local aliases like:
-
-</p>
-<p><code>var Time = tzTime.Time;</code>
-
-</p>
-<p>or you can just use the tzTime namespace:
-
-</p>
-<p><code>var timeline = new tzTime.Time();</code>
+<code>var timeline = new tzTime.Timeline({startOn:&#39;2012-01&#39;, endBefore:&#39;2013-01&#39;});</code>
 
 </p>
 <h2>Installation for node.js usage</h2>
@@ -184,6 +182,7 @@
 </ul>
 <h2>Changelog</h2>
 <ul>
+<li>0.6.2 - 2013-02-03 Expose utils for Lumenize usage</li>
 <li>0.6.1 - 2013-02-03 Fix Travis-CI badge</li>
 <li>0.6.0 - 2013-02-02 Original version when first broken out from <a href="http://lmaccherone.github.com/Lumenize">Lumenize</a></li>
 </ul>

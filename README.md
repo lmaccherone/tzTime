@@ -7,7 +7,9 @@ _Timezone transformations in the browser and node.js plus timezone precise timel
 
 ## Features ##
 
-* Transform into any (and I mean any) timezone
+* Transform into and out of any timezone using Olson timezone rules
+* Timezone rule files embedded in the minified browser package. No need to host them
+  seperately.
 * Create timezone precise time-series axis for charts
 
   * Knockout weekends, holidays, non-workhours
@@ -16,12 +18,14 @@ _Timezone transformations in the browser and node.js plus timezone precise timel
 
     * Year, quarter, week, day, hour, etc.
     * No more recording `2012-03-05T00:00:00.000Z` when you really just mean `2012-03-05`
-    * Create and use custom granularities: `R02I04-07` = Seventh day of fourth iteration in second release
+    * Create and use custom granularities: `R02I04-07` = Seventh day of fourth iteration in
+      second release
 
 * Tested - Over 300 tests
-* [Documented](http://lmaccherone.github.com/tzTime/docs/tztime-docs/index.html) - Robust documentation for an open source library
-* [DocTested](https://github.com/lmaccherone/coffeedoctest) - The examples will always match the code because it fails automated testing
-   when they don't
+* [Documented](http://lmaccherone.github.com/tzTime/docs/tztime-docs/index.html) - Robust
+  documentation
+* [DocTested](https://github.com/lmaccherone/coffeedoctest) - The examples will always match
+  the code because it fails automated testing when they don't
 
 ## Credits ##
 
@@ -32,7 +36,12 @@ Authors:
 
 Used when running:
 
-* [timezoneJS](https://github.com/mde/timezone-js) - library for [tz file](http://www.twinsun.com/tz/tz-link.htm) parsing. Although I haven't touched the actual tz file parsing code, I have modified timezoneJS fairly significantly. The original included a drop-in replacement for JavaScript's Date object which I have removed. I also modified it to work on node.js and in the browser once "browserified" by bundling the tz files.
+* [timezoneJS](https://github.com/mde/timezone-js) - library for Olson
+  [tz file](http://www.twinsun.com/tz/tz-link.htm) parsing.  Although I haven't touched the
+  actual tz file parsing code, I have modified timezoneJS fairly significantly. The original 
+  included a drop-in replacement for JavaScript's Date object which I have removed. I also 
+  modified it to work on node.js and in the browser once "browserified" by bundling the tz 
+  files.
 
 Used when developing:
 
@@ -47,27 +56,20 @@ Used when developing:
 
 ## Using from a browser ##
 
-To use in a browser, either host it on your own site, or if your volume is low enough, you can directly hit the github pages for the deploy version:
+If you are using Lumenize, you don't need to do anything. The browser package for Lumenize includes tzTime. If you just want to use tzTime without Lumenize, then you can either host it on your own site, or you can directly hit the github pages for the deploy version:
 
 `<script type="text/javascript" src="https://raw.github.com/lmaccherone/tzTime/v{{version}}/deploy/tztime-min.js"></script>`
 
 Replace `{{version}}` with the version of tzTime you wish to use (probably the latest). See the Changelog section for information about versions. Example:
 
-`<script type="text/javascript" src="https://raw.github.com/lmaccherone/tzTime/v0.6.0/deploy/tztime-min.js"></script>`
+`<script type="text/javascript" src="https://raw.github.com/lmaccherone/tzTime/v0.6.1/deploy/tztime-min.js"></script>`
 
 The package is fairly large ~205KB but most of that is the embedded timezone files which compress really well. The Github pages server will gzip the package so it's only ~45KB over the wire.
 
-Then at the top of the javascript where you want to call it, put the following:
+Then:
 
 `var tzTime = require('./tzTime');`
-
-Then to use it, you can either create local aliases like:
-
-`var Time = tzTime.Time;`
-
-or you can just use the tzTime namespace:
-
-`var timeline = new tzTime.Time();`
+`var timeline = new tzTime.Timeline({startOn:'2012-01', endBefore:'2013-01'});`
     
 ## Installation for node.js usage ##
 
@@ -82,6 +84,7 @@ To install, run the following from the root folder of your project:
 
 ## Changelog ##
 
+* 0.6.2 - 2013-02-03 Expose utils for Lumenize usage
 * 0.6.1 - 2013-02-03 Fix Travis-CI badge
 * 0.6.0 - 2013-02-02 Original version when first broken out from [Lumenize](http://lmaccherone.github.com/Lumenize)
 

@@ -99,3 +99,4 @@ exports.type = type
 exports.clone = clone
 exports.keys = keys
 exports.values = values
+exports._ = require('underscore')
