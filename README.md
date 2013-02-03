@@ -1,4 +1,4 @@
-[![build status](https://secure.travis-ci.org/lmaccherone/tzTime.png)](http://travis-ci.org/lmaccherone/tzTime)
+[![build status](https://travis-ci.org/lmaccherone/tzTime.png?branch=master)](http://travis-ci.org/lmaccherone/tzTime)
 # tzTime #
 
 Copyright (c) 2009-2013, Lawrence S. Maccherone, Jr.
@@ -82,6 +82,7 @@ To install, run the following from the root folder of your project:
 
 ## Changelog ##
 
+* 0.6.1 - 2013-02-03 Fix Travis-CI badge
 * 0.6.0 - 2013-02-02 Original version when first broken out from [Lumenize](http://lmaccherone.github.com/Lumenize)
 
 ## MIT License ##
