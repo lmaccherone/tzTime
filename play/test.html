@@ -7,17 +7,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Time In Process (TIP) Chart</title>
 
-    <script type="text/javascript" src="https://raw.github.com/lmaccherone/tzTime/v0.6.2/deploy/tztime-min.js"></script>
-<!--     <script type="text/javascript" src="https://raw.github.com/lmaccherone/Lumenize/v0.5.5/deploy/Lumenize-min.js"></script> -->
+<!--     <script type="text/javascript" src="https://raw.github.com/lmaccherone/tzTime/v0.6.2/deploy/tztime-min.js"></script> -->
+    <script type="text/javascript" src="https://raw.github.com/lmaccherone/Lumenize/v0.6.1/deploy/Lumenize-min.js"></script>
 
     <script type="text/javascript">
-        var tzTime = require('./tzTime');
-        var Time = tzTime.Time;
-        var t = new Time('2012-01-01');
-        var timeline = new tzTime.Timeline({startOn:'2012-01', endBefore:'2013-01'});
-        console.log(timeline.getAll());
-
-        var x = tzTime.utils._.groupBy([1.3, 2.1, 2.4], function(num){ return Math.floor(num); });
+        var lumenize = require('./lumenize');
+        console.log(lumenize.utils);
+        var x = lumenize.utils._.groupBy([1.3, 2.1, 2.4], function(num){ return Math.floor(num); });
         console.log(x)
 
     </script>

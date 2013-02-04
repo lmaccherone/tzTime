@@ -67,7 +67,11 @@ class Timeline
       # true
   
   All of the above comparisons assume that the `startOn`/`endBefore` boundaries are in the same timezone as the contains date.
-  
+
+  ## Getting a Timeline of ISOStrings ##
+
+  One of the more common uses of Timeline is to
+
   ## Timezone sensitive comparisions ##
   
   Now, let's look at how you do timezone sensitive comparisions.
@@ -92,72 +96,6 @@ class Timeline
       console.log(tl2.contains('2011-01-07T03:00:00.000Z', 'America/New_York'))
       # true
       
-  Now, let's explore how Timelines and TimelineIterators are used together.
-
-      tl3 = new Timeline({
-        startOn:new Time('2011-01-06'),
-        endBefore:new Time('2011-01-11'),
-        workDayStartOn: {hour: 9, minute: 0},
-        workDayEndBefore: {hour: 11, minute: 0}  # Very short work day for demo purposes
-      })
-          
-  You can ask for an iterator to emit Timelines rather than Time values. On each call to `next()`, the
-  iterator will give you a new Timeline with the `startOn` value set to what you would have gotten had you
-  requested that it emit Times. The `endBefore' of the emitted Timeline will be set to the following value.
-  This is how you drill-down from one granularity into a lower granularity.
-  
-  By default, the granularity of the iterator will equal the `startOn`/`endBefore` of the original Timeline.
-  However, you can provide a different granularity (`hour` in the example below) for the iterator if you want 
-  to drill-down at a lower granularity.
-  
-      tli3 = tl3.getIterator('Timeline', undefined, 'hour')
-      
-      while tli3.hasNext()
-        subTimeline = tli3.next()
-        console.log("Sub Timeline goes from #{subTimeline.startOn.toString()} to #{subTimeline.endBefore.toString()}")
-        subIterator = subTimeline.getIterator('Time')
-        while subIterator.hasNext()
-          console.log('    Hour: ' + subIterator.next().hour)
-          
-      # Sub Timeline goes from 2011-01-06T00 to 2011-01-07T00
-      #     Hour: 9
-      #     Hour: 10
-      # Sub Timeline goes from 2011-01-07T00 to 2011-01-10T00
-      #     Hour: 9
-      #     Hour: 10
-      # Sub Timeline goes from 2011-01-10T00 to 2011-01-11T00
-      #     Hour: 9
-      #     Hour: 10
-          
-  There is a lot going on here, so let's poke at it a bit. First, notice how the second sub-Timeline goes from the 7th to the
-  10th. That's because there was a weekend in there. We didn't get hours for the Saturday and Sunday.
-      
-  The above approach (`tl3`/`tli3`) is useful for some forms of hand generated analysis, but if you are using Time with
-  Lumenize, it's overkill because Lumenize is smart enough to do rollups based upon the segments that are emitted from the
-  lowest granularity Time. So you can just iterate over the lower granularity and Lumenize will automatically manage
-  the drill up/down to day/month/year levels automatically.
-  
-      tl4 = new Timeline({
-        startOn:'2011-01-06T00',  # Notice how we include the hour now
-        endBefore:'2011-01-11T00',
-        workDayStartOn: {hour: 9, minute: 0},
-        workDayEndBefore: {hour: 11, minute: 0}  # Very short work day for demo purposes
-      })
-
-      tli4 = tl4.getIterator('ISOString', 'GMT')
-      
-      while tli4.hasNext()
-        console.log(tli4.next())
-        
-      # 2011-01-06T09:00:00.000Z
-      # 2011-01-06T10:00:00.000Z
-      # 2011-01-07T09:00:00.000Z
-      # 2011-01-07T10:00:00.000Z
-      # 2011-01-10T09:00:00.000Z
-      # 2011-01-10T10:00:00.000Z
-      
-  `tl4`/`tli4` covers the same ground as `tl3`/`tli3` but without the explicit nesting.
-
   ###
   
   constructor: (config) ->
@@ -165,40 +103,43 @@ class Timeline
     @constructor
     @param {Object} config
 
-    config can have the following properties:
+    @cfg {Time/ISOString} [startOn] Unless it falls on a knocked out moment, this is the first value in the resulting Timeline
+      If it falls on a knocked out moment, it will advance to the first appropriate moment after startOn.
+      You must specify 2 out of 3 of startOn, endBefore, and limit.
+    @cfg {Time/ISOString} [endBefore] Must match granularity of startOn. Timeline will stop before returning this value.
+      You must specify 2 out of 3 of startOn, endBefore, and limit.
+    @cfg {Number} [limit] You can specify limit and either startOn or endBefore and only get back this many.
+      You must specify 2 out of 3 of startOn, endBefore, and limit.
+    @cfg {Number} [step = 1 or -1] Use -1 to march backwards from endBefore - 1. Currently any
+       values other than 1 and -1 are not well tested.
+    @cfg {String} [granularity = granularity of startOn or endBefore] Used to determine the granularity of the ticks.
+      Note, this can be different from the granularity of startOn and endBefore. For example:
 
-    * **startOn** is a Time object or a string. The first value that next() returns. Must specify 2 out of
-       3 of startOn, endBefore, and limit.
-    * **endBefore** is a Time object or string. Must match granularity. hasNext() returns false when current is here or
-       later. Must specify 2 out of 3 of startOn, endBefore, and limit.
-    * **limit** you can specify limit and either startOn or endBefore and only get back this many. Must specify 2 out of
-       3 of startOn, endBefore, and limit.
-    * **step** is an optional parameter. Defaults to 1 or -1. Use -1 to march backwards from endBefore - 1. Currently any
-       values other than 1 and -1 may give unexpected behavior. It should be able to step by more but there are not
-       good tests around it now.
-    * **granularity** is used to determine the granularity that you will iterate over. Note, this is independent of the
-       granularity you have used to specify startOn and endBefore. For example:
+        {
+          startOn: '2012-01', # Month Granularity
+          endBefore: '2012-02', # Month Granularity
+          granularity: Time.DAY # Day granularity
+        }
 
-           {startOn: '2012-01', # Month Granularity
-            endBefore: '2012-02', # Month Granularity
-            granularity: Time.DAY} # Day granularity}
+    @cfg {String[]/String} [workDays =  ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']] List of days of the
+      week that you work on. You can specify this as an Array of Strings (['Monday', 'Tuesday', ...]) or a single comma
+      seperated String ("Monday,Tuesday,...").
+    @cfg {Array} [holidays] An optional Array of either ISOStrings or JavaScript Objects (and you can mix and match). Example:
 
-    * **workDays** list of days of the week that you work on. You can specify this as an Array of Strings
-       (['Monday', 'Tuesday', ...]) or a single comma seperated String ("Monday,Tuesday,...").
-       Defaults to ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'].
-    * **holidays** is an optional Array of either ISOStrings or JavaScript Objects (and you can mix and match). Example:
-
-          [{month: 12, day: 25}, {year: 2011, month: 11, day: 24}, "2012-12-24"]
+        [{month: 12, day: 25}, {year: 2011, month: 11, day: 24}, "2012-12-24"]
 
        Notice how you can leave off the year if the holiday falls on the same day every year.
-    * **workDayStartOn** is an optional object in the form {hour: 8, minute: 15}. If minute is zero it can be omitted.
-       If workDayStartOn is later than workDayEndBefore, then it assumes that you work the night shift and your work
-       hours span midnight.
-    * **workDayEndBefore** is an optional object in the form {hour: 17, minute: 0}. If minute is zero it can be omitted.
-       The use of workDayStartOn and workDayEndBefore only make sense when the granularity is "hour" or finer.
-       Note: If the business closes at 5:00pm, you'll want to leave workDayEndBefore to 17:00, rather
-       than 17:01. Think about it, you'll be open 4:59:59.999pm, but you'll be closed at 5:00pm. This also makes all of
-       the math work. 9am to 5pm means 17 - 9 = an 8 hour work day.
+    @cfg {Object} [workDayStartOn = {hour: 0, minute: 0}] An optional object in the form {hour: 8, minute: 15}.
+      If minute is zero it can be omitted. If workDayStartOn is later than workDayEndBefore, then it assumes that you
+      work the night shift and your work  hours span midnight.
+
+      The use of workDayStartOn and workDayEndBefore only make sense when the granularity is "hour" or finer.
+
+      Note: If the business closes at 5:00pm, you'll want to leave workDayEndBefore to 17:00, rather
+      than 17:01. Think about it, you'll be open 4:59:59.999pm, but you'll be closed at 5:00pm. This also makes all of
+      the math work. 9am to 5pm means 17 - 9 = an 8 hour work day.
+    @cfg {Object} [workDayEndBefore = {hour: 24, minute: 60}] An optional object in the form {hour: 17, minute: 0}.
+      If minute is zero it can be omitted.
     ###
     @memoizedTicks = {}  # key: stringified parameters to getAll
     if config.endBefore?
@@ -280,50 +221,50 @@ class Timeline
       'Must provide two out of "startOn", "endBefore", or "limit" and the sign of step must match.'
     )
     
-  getIterator: (emit = 'Time', tz, childGranularity) ->
+  getIterator: (tickType = 'Time', tz, childGranularity) ->
     ###
     @method getIterator
-    @param {String} [emit] An optional String that specifies what should be emitted. Possible values are 'Time' (default),
-       'Timeline', 'Date' (javascript Date Object), and 'ISOString'.
+    @param {String} [tickType] An optional String that specifies what type should be returned on each call to next().
+      Possible values are 'Time' (default), 'Timeline', 'Date' (javascript Date Object), and 'ISOString'.
     @param {String} [tz] A Sting specifying the timezone in the standard form,`America/New_York` for example. This is
-       required if `emit` is 'Date' or 'ISOString'.
-    @param {String} [childGranularity] When emit is 'Timeline', this is the granularity for the startOn and endBefore of the
-       Timeline that is emitted.
+      required if `tickType` is 'Date' or 'ISOString'.
+    @param {String} [childGranularity] When tickType is 'Timeline', this is the granularity for the startOn and endBefore of the
+      Timeline that is returned.
     @return {TimelineIterator}
 
     Returns a new TimelineIterator using this Timeline as the boundaries.
     ###
-    return new TimelineIterator(this, emit, tz, childGranularity)
+    return new TimelineIterator(this, tickType, tz, childGranularity)
     
-  getAllRaw: (emit = 'Time', tz, childGranularity) ->
+  getAllRaw: (tickType = 'Time', tz, childGranularity) ->
     ###
     @method getAllRaw
-    @param {String} [emit] An optional String that specifies what should be emitted. Possible values are 'Time' (default),
+    @param {String} [tickType] An optional String that specifies the type should be returned. Possible values are 'Time' (default),
        'Timeline', 'Date' (javascript Date Object), and 'ISOString'.
     @param {String} [tz] A Sting specifying the timezone in the standard form,`America/New_York` for example. This is
-       required if `emit` is 'Date' or 'ISOString'.
-    @param {String} [childGranularity] When emit is 'Timeline', this is the granularity for the startOn and endBefore of the
-       Timeline that is emitted.
+       required if `tickType` is 'Date' or 'ISOString'.
+    @param {String} [childGranularity] When tickType is 'Timeline', this is the granularity for the startOn and endBefore of the
+       Timeline that is returned.
     @return {Time[]/Date[]/Timeline[]/String[]}
 
     Returns all of the points in the timeline. Note, this will come back in the order specified
     by step so they could be out of chronological order. Use getAll() if they must be in chronological order.
     ###
-    tli = @getIterator(emit, tz, childGranularity)
+    tli = @getIterator(tickType, tz, childGranularity)
     temp = []
     while tli.hasNext()
       temp.push(tli.next())
     return temp
     
-  getAll: (emit = 'Time', tz, childGranularity) ->
+  getAll: (tickType = 'Time', tz, childGranularity) ->
     ###
     @method getAll
-    @param {String} [emit] An optional String that specifies what should be emitted. Possible values are 'Time' (default),
+    @param {String} [tickType] An optional String that specifies what should be returned. Possible values are 'Time' (default),
        'Timeline', 'Date' (javascript Date Object), and 'ISOString'.
     @param {String} [tz] A Sting specifying the timezone in the standard form,`America/New_York` for example. This is
-       required if `emit` is 'Date' or 'ISOString'.
-    @param {String} [childGranularity] When emit is 'Timeline', this is the granularity for the startOn and endBefore of the
-       Timeline object that is emitted.
+       required if `tickType` is 'Date' or 'ISOString'.
+    @param {String} [childGranularity] When tickType is 'Timeline', this is the granularity for the startOn and endBefore of the
+       Timeline object that is returned.
     @return {Time[]/Date[]/Timeline[]/String[]}
 
     Returns all of the points in the timeline in chronological order. If you want them in the order specified by `step`
@@ -332,7 +273,7 @@ class Timeline
     to call it repeatedly within loops and means you don't need to worry about holding onto the result on the client
     side.
     ###
-    parameterKeyObject = {emit}
+    parameterKeyObject = {tickType}
     if tz?
       parameterKeyObject.tz = tz
     if childGranularity?
@@ -340,7 +281,7 @@ class Timeline
     parameterKey = JSON.stringify(parameterKeyObject)
     ticks = @memoizedTicks[parameterKey]
     unless ticks?
-      ticks = @getAllRaw(emit, tz, childGranularity)
+      ticks = @getAllRaw(tickType, tz, childGranularity)
       if ticks.length > 1
         if (ticks[0] instanceof Time and ticks[0].greaterThan(ticks[1])) or (utils.type(ticks[0]) is 'string' and ticks[0] > ticks[1] )
           ticks.reverse()
@@ -366,20 +307,6 @@ class Timeline
       utils.assert(isoDateRegExp.test(endBefore), 'endBefore must be in form ####-##-##T##:##:##.###Z')
       utils.assert(tz?, "Must specify parameter tz when submitting ISO string boundaries.")
 
-#      ticksUnshifted = @getAll()
-#      ticks = (tick.add(1, @granularity).toString() for tick in ticksUnshifted)
-#      if ticks[0] >= endBefore or ticks[ticks.length - 1] < startOn
-#        out = []
-#      else
-#        i = 0
-#        ticksLength = ticks.length
-#        while i < ticksLength and ticks[i] < startOn
-#          i++
-#        while i < ticksLength and ticks[i] < endBefore
-#          out.push(ticksUnshifted[i].toString())
-#          i++
-
-
       ticks = @getAll('ISOString', tz)
       if ticks[0] >= endBefore or ticks[ticks.length - 1] < startOn
         out = []
@@ -391,7 +318,6 @@ class Timeline
         while i < ticksLength and ticks[i] < endBefore
           out.push(ticks[i])
           i++
-
 
     else if startOn instanceof Time
       utils.assert(endBefore instanceof Time, 'The type for startOn and endBefore must match.')
@@ -492,24 +418,91 @@ class TimelineIterator
       # 2009-01-05
       # 2009-01-06
       # 2009-01-07
+
+  Now, let's explore how Timelines and TimelineIterators are used together.
+
+      tl3 = new Timeline({
+        startOn:new Time('2011-01-06'),
+        endBefore:new Time('2011-01-11'),
+        workDayStartOn: {hour: 9, minute: 0},
+        workDayEndBefore: {hour: 11, minute: 0}  # Very short work day for demo purposes
+      })
+
+  You can specify that the tickType be Timelines rather than Time values. On each call to `next()`, the
+  iterator will give you a new Timeline with the `startOn` value set to what you would have gotten had you
+  requested that the tickType be Times. The `endBefore' of the returned Timeline will be set to the following value.
+  This is how you drill-down from one granularity into a lower granularity.
+
+  By default, the granularity of the iterator will equal the `startOn`/`endBefore` of the original Timeline.
+  However, you can provide a different granularity (`hour` in the example below) for the iterator if you want
+  to drill-down at a lower granularity.
+
+      tli3 = tl3.getIterator('Timeline', undefined, 'hour')
+
+      while tli3.hasNext()
+        subTimeline = tli3.next()
+        console.log("Sub Timeline goes from #{subTimeline.startOn.toString()} to #{subTimeline.endBefore.toString()}")
+        subIterator = subTimeline.getIterator('Time')
+        while subIterator.hasNext()
+          console.log('    Hour: ' + subIterator.next().hour)
+
+      # Sub Timeline goes from 2011-01-06T00 to 2011-01-07T00
+      #     Hour: 9
+      #     Hour: 10
+      # Sub Timeline goes from 2011-01-07T00 to 2011-01-10T00
+      #     Hour: 9
+      #     Hour: 10
+      # Sub Timeline goes from 2011-01-10T00 to 2011-01-11T00
+      #     Hour: 9
+      #     Hour: 10
+
+  There is a lot going on here, so let's poke at it a bit. First, notice how the second sub-Timeline goes from the 7th to the
+  10th. That's because there was a weekend in there. We didn't get hours for the Saturday and Sunday.
+
+  The above approach (`tl3`/`tli3`) is useful for some forms of hand generated analysis, but if you are using Time with
+  Lumenize, it's overkill because Lumenize is smart enough to do rollups based upon the segments that are returned from the
+  lowest granularity Time. So you can just iterate over the lower granularity and Lumenize will automatically manage
+  the drill up/down to day/month/year levels automatically.
+
+      tl4 = new Timeline({
+        startOn:'2011-01-06T00',  # Notice how we include the hour now
+        endBefore:'2011-01-11T00',
+        workDayStartOn: {hour: 9, minute: 0},
+        workDayEndBefore: {hour: 11, minute: 0}  # Very short work day for demo purposes
+      })
+
+      tli4 = tl4.getIterator('ISOString', 'GMT')
+
+      while tli4.hasNext()
+        console.log(tli4.next())
+
+      # 2011-01-06T09:00:00.000Z
+      # 2011-01-06T10:00:00.000Z
+      # 2011-01-07T09:00:00.000Z
+      # 2011-01-07T10:00:00.000Z
+      # 2011-01-10T09:00:00.000Z
+      # 2011-01-10T10:00:00.000Z
+
+  `tl4`/`tli4` covers the same ground as `tl3`/`tli3` but without the explicit nesting.
+
   ###
-  constructor: (timeline, @emit = 'Time', tz, @childGranularity = 'day') ->
+  constructor: (timeline, @tickType = 'Time', tz, @childGranularity = 'day') ->
     ###
     @constructor
     @param {Timeline} timeline A Timeline object
-    @param {String} [emit] An optional String that specifies what should be emitted. Possible values are 'Time' (default),
+    @param {String} [tickType] An optional String that specifies the type for the returned ticks. Possible values are 'Time' (default),
        'Timeline', 'Date' (javascript Date Object), and 'ISOString'.
-    @param {String} [childGranularity] When emit is 'Timeline', this is the granularity for the startOn and endBefore of the
-       Timeline that is emitted.
+    @param {String} [childGranularity] When tickType is 'Timeline', this is the granularity for the startOn and endBefore of the
+       Timeline that is returned.
     @param {String} [tz] A Sting specifying the timezone in the standard form,`America/New_York` for example. This is
-       required if `emit` is 'Date' or 'ISOString'.
+       required if `tickType` is 'Date' or 'ISOString'.
     ###
-    utils.assert(@emit in ['Time', 'Timeline', 'Date', 'ISOString'], "emit must be 'Time', 'Timeline', 'Date', or 'ISOString'. You provided #{@emit}.")
-    utils.assert(@emit != 'Date' or tz?, 'Must provide a tz (timezone) parameter when emitting Dates.')
-    utils.assert(@emit != 'ISOString' or tz?, 'Must provide a tz (timezone) parameter when emitting ISOStrings.')
+    utils.assert(@tickType in ['Time', 'Timeline', 'Date', 'ISOString'], "tickType must be 'Time', 'Timeline', 'Date', or 'ISOString'. You provided #{@tickType}.")
+    utils.assert(@tickType != 'Date' or tz?, 'Must provide a tz (timezone) parameter when tickType is Date.')
+    utils.assert(@tickType != 'ISOString' or tz?, 'Must provide a tz (timezone) parameter when returning ISOStrings.')
     # if timeline.granularity in ['Minute','Second', 'Millisecond']
       # console.error("Warning: iterating at granularity #{timeline.granularity} can be very slow.")
-    @tz ?= tz  # !TODO: Need to test tz and emitting Dates
+    @tz ?= tz  # !TODO: Need to test tz and tickType is Date
     if timeline instanceof Timeline
       @timeline = timeline
     else
@@ -540,7 +533,7 @@ class TimelineIterator
     @method hasNext
     @return {Boolean} Returns true if there are still things left to iterator over. Note that if there are holidays,
        weekends or non-workhours to skip, then hasNext() will take that into account. For example if the endBefore is a
-       Sunday, hasNext() will return true the next time it is called after the Friday is emitted.
+       Sunday, hasNext() will return true the next time it is called after the Friday is returned.
     ###
     return _contains(@current, @timeline.startOn, @timeline.endBefore) and (@count < @timeline.limit)
 
@@ -577,7 +570,7 @@ class TimelineIterator
   next: () ->
     ###
     @method next
-    @return {Time/Timeline/Date/String} Returns the next value of the iterator. The start will be the first value emitted unless it should
+    @return {Time/Timeline/Date/String} Returns the next value of the iterator. The start will be the first value returned unless it should
        be skipped due to holiday, weekend, or workhour knockouts.
     ###
     if !@hasNext()
@@ -590,7 +583,7 @@ class TimelineIterator
       else
         @current.decrement()
       @_proceedToNextValid()
-    switch @emit
+    switch @tickType
       when 'Time'
         return currentCopy
       when 'Date'
@@ -609,7 +602,7 @@ class TimelineIterator
         childtimeline = new Timeline(config)
         return childtimeline
       else
-        throw new Error("You asked for type #{@emit}. Only 'Time', 'Date', 'ISOString', and 'Timeline' are allowed.")
+        throw new Error("You asked for tickType #{@tickType}. Only 'Time', 'Date', 'ISOString', and 'Timeline' are allowed.")
 
 exports.Timeline = Timeline
 exports.TimelineIterator = TimelineIterator
