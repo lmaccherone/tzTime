@@ -8,18 +8,40 @@ class Timeline
 
   Allows you to specify a timeline with weekend, holiday and non-work hours knocked out and timezone precision.
   
-  ## Usage ##
- 
-  Let's create a Timeline
-  
+  ## Basic usage ##
+
       {TimelineIterator, Timeline, Time} = require('../')
-      
+
+      tl = new Timeline({
+        startOn: '2011-01-03',
+        endBefore: '2011-01-05',
+      })
+
+      console.log(t.toString() for t in tl.getAll())
+      # [ '2011-01-03', '2011-01-04' ]
+
+  Notice how the endBefore, '2011-01-05', is excluded. Timelines are inclusive of the startOn and exclusive of the
+  endBefore. This allows the endBefore to be the startOn of the next with no overlap or gap. This focus on precision
+  pervades the design of the Time library.
+
+  Perhaps the most common use of Timeline is to return a Timeline of ISOStrings shifted to the correct timezone.
+  Since ISOString comparisons give the expected chronological results and many APIs return their date/time stamps as
+  ISOStrings, it's convenient and surprisingly fast to do your own bucketing operations after you've gotten a Timeline
+  of ISOStrings.
+
+      console.log(tl.getAll('ISOString', 'America/New_York'))
+      # [ '2011-01-03T05:00:00.000Z', '2011-01-04T05:00:00.000Z' ]
+
+  ## More advanced usage ##
+ 
+  Now let's poke at Timeline behavior a little more. Let's start by creating a more advanced Timeline:
+  
       tl = new Timeline({
         startOn: '2011-01-02',
         endBefore: '2011-01-07',
         holidays: [
           {month: 1, day: 1},  # Notice the lack of a year specification
-          '2011-01-02'  # Got January 2 off also in 2011. Allows ISO strings.
+          '2011-01-04'  # Got January 4 off also in 2011. Allows ISO strings.
         ]
       })
       
@@ -28,23 +50,23 @@ class Timeline
       console.log(tl.workDays)
       # [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday' ]
       
-  Now let's get an TimelineIterator over this Timeline.
-      
-      tli = tl.getIterator('Time')
-      
-      while tli.hasNext()
-        console.log(tli.next().toString())
-             
-      # 2011-01-03
-      # 2011-01-04
-      # 2011-01-05
-      # 2011-01-06
+  Another common use case is to get a Timeline to return child Timelines. You see, Timelines can be thought of as
+  time boxes with a startOn and an endBefore. You might have a big time box for the entire x-axis for a chart
+  but if you want to bucket raw data into each tick on the x-axis, you'll need to know where each sub-time box starts
+  and ends.
+
+      subTimelines = tl.getAll('Timeline')
+      console.log((t.startOn.toString() + ' to ' + t.endBefore.toString() for t in subTimelines))
+      # [ '2011-01-03 to 2011-01-05',
+      #   '2011-01-05 to 2011-01-06',
+      #   '2011-01-06 to 2011-01-07' ]
+
+  Notice how the first subTimeline went all the way from 03 to 05. That's because we specified 04 as a holiday.
+  Timelines are contiguous without gaps or overlap. You can see that the endBefore of one subTimeline is always the startOn
+  of the next.
   
-  Notice how 2011-01-02 was skipped because it was a holiday. Also notice how the endBefore is not included.
-  Timelines are inclusive of the startOn and exclusive of the endBefore. This allows the endBefore to be
-  the startOn of the next with no overlap or gap. This focus on precision pervades the design of the Time library.
-  
-  Now, let's create a Timeline with `hour` granularity to elaborate on this inclusive/exclusive behavior.
+  Now, let's create a Timeline with `hour` granularity and show of the concept that Timelines also serve as time boxes by
+  learning about the contains() method.
       
       tl2 = new Timeline({
         startOn: '2011-01-02T00',
@@ -68,10 +90,6 @@ class Timeline
   
   All of the above comparisons assume that the `startOn`/`endBefore` boundaries are in the same timezone as the contains date.
 
-  ## Getting a Timeline of ISOStrings ##
-
-  One of the more common uses of Timeline is to
-
   ## Timezone sensitive comparisions ##
   
   Now, let's look at how you do timezone sensitive comparisions.
@@ -80,11 +98,11 @@ class Timeline
   date/timestamp that you pass in. This system is optimized to the pattern where you first define your boundaries without regard 
   to timezone. Christmas day is a holiday in any timezone. Saturday and Sunday are non work days in any timezone. The iteration
   starts on July 10th; etc. THEN you have a bunch of data that you have stored in a database in GMT. Maybe you've pulled
-  it down from an API but the data is represented with a GMT date/timestamp. You then want to decide if the GMT date/timestamp 
+  it down from an API but the data is represented with ISOString. You then want to decide if the ISOString
   is contained within the iteration as defined by a particular timezone, or is a Saturday, or is during workhours, etc. 
   The key concept to remember is that the timebox boundaries are shifted NOT the other way around. It says at what moment
-  in time July 10th starts on in a particular timezone and internally represents that in a way that can be compared to a GMT
-  date/timestamp.
+  in time July 10th starts on in a particular timezone and internally represents that in a way that can be compared to
+  an ISOString.
   
   So, when it's 3am in GMT on 2011-01-02, it's still 2011-01-01 in New York. Using the above `tl2` timeline, we say:
   
@@ -296,7 +314,9 @@ class Timeline
     @return {Array}
 
     Returns the list of ticks from this Timeline that intersect with the time period specified by the parameters
-    startOn and endBefore.
+    startOn and endBefore. This is a convenient way to "tag" a timebox as overlaping with particular moments on
+    your Timeline. A common pattern for Lumenize calculators is to use ticksThatIntersect to "tag" each snapshot
+    and then do groupBy operations with an OLAPCube.
     ###
     utils.assert(@limit == utils.MAX_INT, 'Cannot call `ticksThatIntersect()` on Timelines specified with `limit`.')
     out = []
@@ -430,7 +450,7 @@ class TimelineIterator
 
   You can specify that the tickType be Timelines rather than Time values. On each call to `next()`, the
   iterator will give you a new Timeline with the `startOn` value set to what you would have gotten had you
-  requested that the tickType be Times. The `endBefore' of the returned Timeline will be set to the following value.
+  requested that the tickType be Times. The `endBefore' of the returned Timeline will be set to the next value.
   This is how you drill-down from one granularity into a lower granularity.
 
   By default, the granularity of the iterator will equal the `startOn`/`endBefore` of the original Timeline.

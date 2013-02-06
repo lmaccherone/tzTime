@@ -5,19 +5,29 @@ _Timezone transformations in the browser and node.js plus timezone precise timel
 
 ## Features ##
 
-* Transform into any (and I mean any) timezone
-* Generate the values for time series chart axis
-* Knockout weekends and holidays (TimelineIterator)
-* Knockout non-work hours (TimelineIterator)
-* Work with precision around timezone differences
+* Transform into and out of any timezone using Olson timezone rules
+* Timezone rule files embedded in the minified browser package. No need to host them
+  seperately.
+* Create timezone precise time-series axis for charts
+
+  * Knockout weekends, holidays, non-workhours
+  * Work with timezone precision
+  * Work in any granularity
+
+    * Year, quarter, week, day, hour, etc.
+    * No more recording `2012-03-05T00:00:00.000Z` when you really just mean `2012-03-05`
+    * Create and use custom granularities: `R02I04-07` = Seventh day of fourth iteration in
+      second release
+
+* Work in a particular granularity like day, week, month, or quarter and not worry about the fiddly bits of finer
+  granularity. JavaScript's Date object forces you to think about the fact that the underlying representation is milliseconds
+  from the unix epoch.
 * Month is 1-indexed (rather than 0-indexed like Javascript's Date object)
 * Date/Time math (add 3 months, subtract 2 weeks, etc.)
 * Work with ISO-8601 formatted strings (called 'ISOString' in this library)
+
    * Added: Quarter form (e.g. 2012Q3 equates to 2012-07-01)
    * Not supported: Ordinal form (e.g. 2012-001 for 2012-01-01, 2011-365 for 2012-12-31) not supported
-* Allows for custom granularities like release/iteration/iteration_day
-* Tested
-* Documented
 
 ## Granularity ##
 
@@ -75,8 +85,7 @@ point or another gets burned by this.
 
 ## Week support ##
 
-Time follows ISO-8601 week support where ever it makes sense. Implications of using this ISO format (paraphrased
-info from wikipedia):
+Time has ISO-8601 week support. Implications of using this ISO format (paraphrased info from wikipedia):
 
 * All weeks have 7 days (i.e. there are no fractional weeks).
 * Any given day falls into a single week which means that incrementing across the year boundary in week
@@ -90,9 +99,12 @@ info from wikipedia):
 
 **In general, it just greatly simplifies the use of week granularity in a chart situation.**
 
-The only real downside to this approach is that USA folks expect the week to start on Sunday. However, the ISO-8601 spec starts
+The ISO-8601 standard is an elegant and well thought out approach to dealing with week granularity. The only real
+downside to this approach is that USA folks expect the week to start on Sunday. However, the ISO-8601 spec starts
 each week on Monday. Following ISO-8601, Time uses 1 for Monday and 7 for Sunday which aligns with
-the US standard for every day except Sunday. The US standard is to use 0 for Sunday.
+the US standard for every day except Sunday. The US standard is to use 0 for Sunday. This library says, "tough luck"
+to folks who are unhappy that the week starts on Monday. Live with the fact that weeks in this library start on Monday
+as they do in the ISO-8601 standard, or roll your own library. :-)
 ###
 
 exports.Time = require('./src/Time').Time
