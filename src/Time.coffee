@@ -192,13 +192,12 @@ class Time
               s = s.slice(0, -6)
             if s.slice(-1) == 'Z'
               s = s.slice(0, -1)
+            newCT = new Time(s, 'millisecond')
+            jsDate = newCT.getJSDateFromGMTInTZ(tz)
           else
             throw new Error("Must provide a tz parameter when instantiating a Time object with ISOString that contains timeshift/timezone specification. You provided: #{s}.")
-        if tz?
-          newCT = new Time(s, 'millisecond')
-          jsDate = newCT.getJSDateFromGMTInTZ(tz)
         else
-          @_setFromString(s, granularity, tz)
+          @_setFromString(s, granularity)
       when 'number'
         rdn = value
         if tz?
@@ -383,7 +382,7 @@ class Time
       else
         this[segment] = Time._granularitySpecs[segment].lowest
         
-  _setFromString: (s, granularity, tz) ->
+  _setFromString: (s, granularity) ->
 
     if s in ['PAST_LAST', 'BEFORE_FIRST']
       if granularity?

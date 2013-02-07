@@ -85,7 +85,7 @@ To install, run the following from the root folder of your project:
 ## Changelog ##
 
 * 0.6.3 - 2013-02-07 Made it an error to instantiate a Time object with an ISOString without a 
-  timezone.
+  timezone. Also, ignore timezone when sending a string without the ending 'Z' or '+01:00'
 * 0.6.2 - 2013-02-03 Expose utils for Lumenize usage
 * 0.6.1 - 2013-02-03 Fix Travis-CI badge
 * 0.6.0 - 2013-02-02 Original version when first broken out from [Lumenize](http://lmaccherone.github.com/Lumenize)

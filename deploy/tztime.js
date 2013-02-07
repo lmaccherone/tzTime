@@ -1,5 +1,5 @@
 /*
-tztime version: 0.6.2
+tztime version: 0.6.3
 */
 var require = function (file, cwd) {
     var resolved = require.resolve(file, cwd || '/');
@@ -4916,15 +4916,13 @@ require.define("/src/Time.coffee",function(require,module,exports,__dirname,__fi
               if (s.slice(-1) === 'Z') {
                 s = s.slice(0, -1);
               }
+              newCT = new Time(s, 'millisecond');
+              jsDate = newCT.getJSDateFromGMTInTZ(tz);
             } else {
               throw new Error("Must provide a tz parameter when instantiating a Time object with ISOString that contains timeshift/timezone specification. You provided: " + s + ".");
             }
-          }
-          if (tz != null) {
-            newCT = new Time(s, 'millisecond');
-            jsDate = newCT.getJSDateFromGMTInTZ(tz);
           } else {
-            this._setFromString(s, granularity, tz);
+            this._setFromString(s, granularity);
           }
           break;
         case 'number':
@@ -5186,8 +5184,8 @@ require.define("/src/Time.coffee",function(require,module,exports,__dirname,__fi
       return _results;
     };
 
-    Time.prototype._setFromString = function(s, granularity, tz) {
-      var gs, l, sSplit, segment, segments, stillParsing, sub, zuluCT, _i, _len, _ref1, _ref2, _results;
+    Time.prototype._setFromString = function(s, granularity) {
+      var gs, l, sSplit, segment, segments, stillParsing, sub, tz, zuluCT, _i, _len, _ref1, _ref2, _results;
       if (s === 'PAST_LAST' || s === 'BEFORE_FIRST') {
         if (granularity != null) {
           this.granularity = granularity;
