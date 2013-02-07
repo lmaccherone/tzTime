@@ -84,6 +84,8 @@ To install, run the following from the root folder of your project:
 
 ## Changelog ##
 
+* 0.6.4 - 2013-02-07 Timezone is safely ignored when sending in strings without 'Z' at the 
+  end. Also, made it an error to send in timeshifted string formats like '...+01:00'. 
 * 0.6.3 - 2013-02-07 Made it an error to instantiate a Time object with an ISOString without a 
   timezone. Also, ignore timezone when sending a string without the ending 'Z' or '+01:00'
 * 0.6.2 - 2013-02-03 Expose utils for Lumenize usage

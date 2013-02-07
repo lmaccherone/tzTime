@@ -1,5 +1,5 @@
 /*
-tztime version: 0.6.3
+tztime version: 0.6.4
 */
 var require = function (file, cwd) {
     var resolved = require.resolve(file, cwd || '/');
@@ -4911,7 +4911,7 @@ require.define("/src/Time.coffee",function(require,module,exports,__dirname,__fi
           if ((s.slice(-3, -2) === ':' && (_ref = s.slice(-6, -5), __indexOf.call('+-', _ref) >= 0)) || s.slice(-1) === 'Z') {
             if (tz != null) {
               if (s.slice(-3, -2) === ':' && (_ref1 = s.slice(-6, -5), __indexOf.call('+-', _ref1) >= 0)) {
-                s = s.slice(0, -6);
+                throw new Error("tzTime.Time does not know how to deal with time shifted ISOStrings like what you sent: " + s);
               }
               if (s.slice(-1) === 'Z') {
                 s = s.slice(0, -1);
@@ -4923,6 +4923,7 @@ require.define("/src/Time.coffee",function(require,module,exports,__dirname,__fi
             }
           } else {
             this._setFromString(s, granularity);
+            tz = void 0;
           }
           break;
         case 'number':

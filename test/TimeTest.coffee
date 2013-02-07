@@ -451,4 +451,12 @@ exports.TimeTest =
     test.throws(f, Error)
 
     test.done()
+
+  testIgnoreTimezone: (test) ->
+    timeZone = 'America/New_York'
+    s = "2010-12-29"
+    t = new Time(s, Time.DAY, timeZone)
+    test.equal(t.toString(), s)
+
+    test.done()
     

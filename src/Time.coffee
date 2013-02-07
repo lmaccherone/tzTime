@@ -189,7 +189,8 @@ class Time
           if tz?
             # Remove the timezone stuff from the end
             if s.slice(-3, -2) == ':' and s.slice(-6, -5) in '+-'
-              s = s.slice(0, -6)
+#              s = s.slice(0, -6)
+              throw new Error("tzTime.Time does not know how to deal with time shifted ISOStrings like what you sent: #{s}")
             if s.slice(-1) == 'Z'
               s = s.slice(0, -1)
             newCT = new Time(s, 'millisecond')
@@ -198,6 +199,7 @@ class Time
             throw new Error("Must provide a tz parameter when instantiating a Time object with ISOString that contains timeshift/timezone specification. You provided: #{s}.")
         else
           @_setFromString(s, granularity)
+          tz = undefined
       when 'number'
         rdn = value
         if tz?
