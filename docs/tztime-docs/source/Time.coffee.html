@@ -204,11 +204,20 @@ class Time
     switch utils.type(value)
       when 'string'
         s = value
+        if (s.slice(-3, -2) == ':' and s.slice(-6, -5) in '+-') or s.slice(-1) == 'Z'
+          if tz?
+            # Remove the timezone stuff from the end
+            if s.slice(-3, -2) == ':' and s.slice(-6, -5) in '+-'
+              s = s.slice(0, -6)
+            if s.slice(-1) == 'Z'
+              s = s.slice(0, -1)
+          else
+            throw new Error(&quot;Must provide a tz parameter when instantiating a Time object with ISOString that contains timeshift/timezone specification. You provided: #{s}.&quot;)
         if tz?
           newCT = new Time(s, 'millisecond')
           jsDate = newCT.getJSDateFromGMTInTZ(tz)
         else
-          @_setFromString(s, granularity)
+          @_setFromString(s, granularity, tz)
       when 'number'
         rdn = value
         if tz?
@@ -393,15 +402,8 @@ class Time
       else
         this[segment] = Time._granularitySpecs[segment].lowest
         
-  _setFromString: (s, granularity) -&gt;
-    
-    # Remove the timezone stuff from the end
-    if s.slice(-3, -2) == ':' and s.slice(-6, -5) in '+-'
-      # console.log(&quot;WARNING: Ignoring the timeshift information at the end of #{s}.&quot;)
-      s = s.slice(0, -6)
-    if s.slice(-1) == 'Z'
-      s = s.slice(0, -1)
-      
+  _setFromString: (s, granularity, tz) -&gt;
+
     if s in ['PAST_LAST', 'BEFORE_FIRST']
       if granularity?
         @granularity = granularity

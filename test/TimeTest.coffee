@@ -438,4 +438,17 @@ exports.TimeTest =
     test.equal(dateString, fromRDN)
 
     test.done()
+
+  testMissingTimezone: (test) ->
+    timeZone = 'America/New_York'
+    isoString = "2010-12-29T15:00:00.000Z"
+    startOnISOString = new Time(isoString, Time.MILLISECOND, timeZone).getISOStringInTZ(timeZone)
+    test.equal(startOnISOString, isoString)
+
+    f = () ->
+      endBeforeISOString = new Time(isoString).getISOStringInTZ(timeZone)
+
+    test.throws(f, Error)
+
+    test.done()
     
