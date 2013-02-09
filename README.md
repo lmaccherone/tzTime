@@ -84,6 +84,7 @@ To install, run the following from the root folder of your project:
 
 ## Changelog ##
 
+* 0.6.5 - 2012-02-09 Documention fixes
 * 0.6.4 - 2013-02-07 Timezone is safely ignored when sending in strings without 'Z' at the 
   end. Also, made it an error to send in timeshifted string formats like '...+01:00'. 
 * 0.6.3 - 2013-02-07 Made it an error to instantiate a Time object with an ISOString without a 

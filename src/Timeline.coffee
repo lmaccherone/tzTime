@@ -306,7 +306,7 @@ class Timeline
       @memoizedTicks[parameterKey] = ticks
     return ticks
 
-  ticksThatIntersect: (startOn, endBefore, tz, returnEnd = false) ->
+  ticksThatIntersect: (startOn, endBefore, tz) ->
     ###
     @method ticksThatIntersect
     @param {Time/ISOString} startOn The start of the time period of interest
@@ -506,13 +506,13 @@ class TimelineIterator
   `tl4`/`tli4` covers the same ground as `tl3`/`tli3` but without the explicit nesting.
 
   ###
-  constructor: (timeline, @tickType = 'Time', tz, @childGranularity = 'day') ->
+  constructor: (timeline, @tickType = 'Time', tz, @childGranularity) ->
     ###
     @constructor
     @param {Timeline} timeline A Timeline object
     @param {String} [tickType] An optional String that specifies the type for the returned ticks. Possible values are 'Time' (default),
        'Timeline', 'Date' (javascript Date Object), and 'ISOString'.
-    @param {String} [childGranularity] When tickType is 'Timeline', this is the granularity for the startOn and endBefore of the
+    @param {String} [childGranularity=granularity of timeline] When tickType is 'Timeline', this is the granularity for the startOn and endBefore of the
        Timeline that is returned.
     @param {String} [tz] A Sting specifying the timezone in the standard form,`America/New_York` for example. This is
        required if `tickType` is 'Date' or 'ISOString'.
@@ -522,11 +522,13 @@ class TimelineIterator
     utils.assert(@tickType != 'ISOString' or tz?, 'Must provide a tz (timezone) parameter when returning ISOStrings.')
     # if timeline.granularity in ['Minute','Second', 'Millisecond']
       # console.error("Warning: iterating at granularity #{timeline.granularity} can be very slow.")
-    @tz ?= tz  # !TODO: Need to test tz and tickType is Date
+    @tz ?= tz
     if timeline instanceof Timeline
       @timeline = timeline
     else
       @timeline = new Timeline(timeline)
+    unless @childGranularity?
+      @childGranularity = timeline.granularity
     @reset()
 
   StopIteration = if typeof(StopIteration) == 'undefined' then utils.StopIteration else StopIteration
@@ -552,8 +554,7 @@ class TimelineIterator
     ###
     @method hasNext
     @return {Boolean} Returns true if there are still things left to iterator over. Note that if there are holidays,
-       weekends or non-workhours to skip, then hasNext() will take that into account. For example if the endBefore is a
-       Sunday, hasNext() will return true the next time it is called after the Friday is returned.
+       weekends or non-workhours to skip, then hasNext() will take that into account.
     ###
     return _contains(@current, @timeline.startOn, @timeline.endBefore) and (@count < @timeline.limit)
 
