@@ -88,6 +88,15 @@ keys = Object.keys or (obj) ->
 values = (obj) ->
   return (val for key, val of obj)
 
+log = (s) ->
+  if document?.createElement?
+    pre = document.createElement('pre')
+    pre.innerHTML = s
+    document.body.appendChild(pre)
+  else
+    console.log(s)
+
+exports.log = log
 exports.AssertException = AssertException
 exports.assert = assert
 exports.match = match

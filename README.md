@@ -62,7 +62,7 @@ If you are using Lumenize, you don't need to do anything. The browser package fo
 
 Replace `{{version}}` with the version of tzTime you wish to use (probably the latest). See the Changelog section for information about versions. Example:
 
-`<script type="text/javascript" src="https://raw.github.com/lmaccherone/tzTime/v0.6.1/deploy/tztime-min.js"></script>`
+`<script type="text/javascript" src="https://raw.github.com/lmaccherone/tzTime/v0.6.8/deploy/tztime-min.js"></script>`
 
 The package is fairly large ~205KB but most of that is the embedded timezone files which compress really well. The Github pages server will gzip the package so it's only ~45KB over the wire.
 
@@ -84,6 +84,7 @@ To install, run the following from the root folder of your project:
 
 ## Changelog ##
 
+* 0.6.8 - 2013-04-24 Uses JSON2 for IE7 compatibility
 * 0.6.6 - 2013-02-14 Updated to latest version of jsduckify
 * 0.6.5 - 2012-02-09 Documention fixes
 * 0.6.4 - 2013-02-07 Timezone is safely ignored when sending in strings without 'Z' at the 
