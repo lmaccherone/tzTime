@@ -1,5 +1,5 @@
 Time = require('./Time').Time
-timezoneJS = require('./timezone-js.js').timezoneJS
+timezoneJS = require('./../lib/timezone-js.js').timezoneJS
 utils = require('./utils')
 JSON = require('JSON2')
 

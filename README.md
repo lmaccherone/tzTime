@@ -84,6 +84,7 @@ To install, run the following from the root folder of your project:
 
 ## Changelog ##
 
+* 0.6.10 - 2013-04-24 Restoring timezone-js.js that was removed with .gitignore
 * 0.6.9 - 2013-04-24 Fixed side effect bug issue #2
 * 0.6.8 - 2013-04-24 Uses JSON2 for IE7 compatibility
 * 0.6.6 - 2013-02-14 Updated to latest version of jsduckify

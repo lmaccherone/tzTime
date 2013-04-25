@@ -1,5 +1,5 @@
 utils = require('./utils')
-timezoneJS = require('./timezone-js.js').timezoneJS
+timezoneJS = require('../lib/timezone-js.js').timezoneJS
 
 class Time
   ###
