@@ -214,7 +214,11 @@ class Time
           tz = 'GMT'
 
       when 'object'
-        config = value
+        config = {}
+        config.granularity = value.granularity
+        config.beforePastFlag = value.beforePastFlag
+        for segment in Time._granularitySpecs[value.granularity].segments
+          config[segment] = value[segment]
         if tz?
           config.granularity = 'millisecond'
           newCT = new Time(config)
@@ -418,7 +422,7 @@ class Time
         sub = Time._getStringPart(s, segment)
         if sub.length != l
           stillParsing = false
-      
+
       if stillParsing
         this[segment] = Number(sub)
       else

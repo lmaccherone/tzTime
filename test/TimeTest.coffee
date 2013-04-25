@@ -459,4 +459,11 @@ exports.TimeTest =
     test.equal(t.toString(), s)
 
     test.done()
+
+  testSideEffect: (test) ->
+    t1 = new Time('2013-04', Time.MONTH, 'America/Chicago')
+    t2 = new Time(t1, Time.MONTH, 'America/Chicago')
+    test.equal(t1.granularity, Time.MONTH)
+
+    test.done()
     

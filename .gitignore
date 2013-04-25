@@ -3,3 +3,9 @@
 coffeedoctest_temp
 js
 node_modules
+src/*.map
+src/*.js
+test/*.map
+test/*.js
+play/*.map
+play/*.js
