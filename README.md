@@ -21,7 +21,7 @@ _Timezone transformations in the browser and node.js plus timezone precise timel
     * Create and use custom granularities: `R02I04-07` = Seventh day of fourth iteration in
       second release
 
-* Tested - Over 300 tests
+* Tested - Over 450 tests
 * [Documented](http://lmaccherone.github.com/tzTime/docs/tztime-docs/index.html) - Robust
   documentation
 * [DocTested](https://github.com/lmaccherone/coffeedoctest) - The examples will always match
@@ -84,6 +84,7 @@ To install, run the following from the root folder of your project:
 
 ## Changelog ##
 
+* 0.6.11 - 2013-08-30 Stopped doing chdir in timezone.js because it was breaking other uses
 * 0.6.10 - 2013-04-24 Restoring timezone-js.js that was removed with .gitignore
 * 0.6.9 - 2013-04-24 Fixed side effect bug issue #2
 * 0.6.8 - 2013-04-24 Uses JSON2 for IE7 compatibility
