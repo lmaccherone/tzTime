@@ -2,6 +2,11 @@
 utils = require('../src/utils')
 
 exports.TimeTest =
+
+  testAthens: (test) ->
+    t = new Time('2013-01-01T00:00:00.000Z', Time.MONTH, 'Europe/Athens')  # Note, this results in parse error before the fix
+    test.done()
+
   testConstruction: (test) ->
     test.expect(4)
     temp = new Time({granularity: Time.DAY, year:2011, month:10, day:27})

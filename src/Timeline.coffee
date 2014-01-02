@@ -312,6 +312,7 @@ class Timeline
     @method ticksThatIntersect
     @param {Time/ISOString} startOn The start of the time period of interest
     @param {Time/ISOString} endBefore The moment just past the end of the time period of interest
+    @param {String} tz The timezone you want to use for the comparison
     @return {Array}
 
     Returns the list of ticks from this Timeline that intersect with the time period specified by the parameters

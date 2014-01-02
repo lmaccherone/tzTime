@@ -7,5 +7,6 @@ src/*.map
 src/*.js
 test/*.map
 test/*.js
-play/*.map
-play/*.js
+play
+.js
+.map
