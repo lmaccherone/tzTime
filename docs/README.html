@@ -78,16 +78,11 @@
 </style>
 <body>
 <div class="readme">
-<p><a href="http://travis-ci.org/lmaccherone/tzTime"><img src="https://travis-ci.org/lmaccherone/tzTime.png?branch=master" alt="build status"></a>
-</p>
-<h1>tzTime</h1>
-<p>Copyright (c) 2009-2013, Lawrence S. Maccherone, Jr.
-
-</p>
-<p><em>Timezone transformations in the browser and node.js plus timezone precise timeline creation for charting.</em>
-
-</p>
-<h2>Features</h2>
+<p><a href="http://travis-ci.org/lmaccherone/tzTime"><img src="https://travis-ci.org/lmaccherone/tzTime.png?branch=master" alt="build status"></a></p>
+<h1 id="tztime">tzTime</h1>
+<p>Copyright (c) 2009-2013, Lawrence S. Maccherone, Jr.</p>
+<p><em>Timezone transformations in the browser and node.js plus timezone precise timeline creation for charting.</em></p>
+<h2 id="features">Features</h2>
 <ul>
 <li>Transform into and out of any timezone using Olson timezone rules</li>
 <li>Timezone rule files embedded in the minified browser package. No need to host them
@@ -113,17 +108,13 @@ documentation</li>
 <li><a href="https://github.com/lmaccherone/coffeedoctest">DocTested</a> - The examples will always match
 the code because it fails automated testing when they don&#39;t</li>
 </ul>
-<h2>Credits</h2>
-<p>Authors:
-
-</p>
+<h2 id="credits">Credits</h2>
+<p>Authors:</p>
 <ul>
 <li><a href="http://maccherone.com">Larry Maccherone</a></li>
 <li>Jennifer Maccherone</li>
 </ul>
-<p>Used when running:
-
-</p>
+<p>Used when running:</p>
 <ul>
 <li><a href="https://github.com/mde/timezone-js">timezoneJS</a> - library for Olson
 <a href="http://www.twinsun.com/tz/tz-link.htm">tz file</a> parsing.  Although I haven&#39;t touched the
@@ -132,9 +123,7 @@ included a drop-in replacement for JavaScript&#39;s Date object which I have rem
 modified it to work on node.js and in the browser once &quot;browserified&quot; by bundling the tz 
 files.</li>
 </ul>
-<p>Used when developing:
-
-</p>
+<p>Used when developing:</p>
 <ul>
 <li><a href="http://nodejs.org/">Node.js</a></li>
 <li><a href="http://coffeescript.org/">CoffeeScript</a></li>
@@ -145,42 +134,27 @@ files.</li>
 <li><a href="https://github.com/ryanmcgrath/wrench-js">wrench</a></li>
 <li><a href="https://github.com/chjj/marked">marked</a></li>
 </ul>
-<h2>Using from a browser</h2>
-<p>If you are using Lumenize, you don&#39;t need to do anything. The browser package for Lumenize includes tzTime. If you just want to use tzTime without Lumenize, then you can either host it on your own site, or you can directly hit the github pages for the deploy version:
-
-</p>
-<p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://raw.github.com/lmaccherone/tzTime/v{{version}}/deploy/tztime-min.js&quot;&gt;&lt;/script&gt;</code>
-
-</p>
-<p>Replace <code>{{version}}</code> with the version of tzTime you wish to use (probably the latest). See the Changelog section for information about versions. Example:
-
-</p>
-<p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://raw.github.com/lmaccherone/tzTime/v0.6.8/deploy/tztime-min.js&quot;&gt;&lt;/script&gt;</code>
-
-</p>
-<p>The package is fairly large ~205KB but most of that is the embedded timezone files which compress really well. The Github pages server will gzip the package so it&#39;s only ~45KB over the wire.
-
-</p>
-<p>Then:
-
-</p>
+<h2 id="using-from-a-browser">Using from a browser</h2>
+<p>If you are using Lumenize, you don&#39;t need to do anything. The browser package for Lumenize includes tzTime. If you just want to use tzTime without Lumenize, then you can either host it on your own site, or you can directly hit the github pages for the deploy version:</p>
+<p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://raw.github.com/lmaccherone/tzTime/v{{version}}/deploy/tztime-min.js&quot;&gt;&lt;/script&gt;</code></p>
+<p>Replace <code>{{version}}</code> with the version of tzTime you wish to use (probably the latest). See the Changelog section for information about versions. Example:</p>
+<p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://raw.github.com/lmaccherone/tzTime/v0.6.8/deploy/tztime-min.js&quot;&gt;&lt;/script&gt;</code></p>
+<p>The package is fairly large ~205KB but most of that is the embedded timezone files which compress really well. The Github pages server will gzip the package so it&#39;s only ~45KB over the wire.</p>
+<p>Then:</p>
 <p><code>var tzTime = require(&#39;./tzTime&#39;);</code>
-<code>var timeline = new tzTime.Timeline({startOn:&#39;2012-01&#39;, endBefore:&#39;2013-01&#39;});</code>
-
-</p>
-<h2>Installation for node.js usage</h2>
-<p>To install, run the following from the root folder of your project:
-
-</p>
-<p><code>npm install tzTime --save</code>
-
-</p>
-<h2>Documentation and source code</h2>
+<code>var timeline = new tzTime.Timeline({startOn:&#39;2012-01&#39;, endBefore:&#39;2013-01&#39;});</code></p>
+<h2 id="installation-for-node-js-usage">Installation for node.js usage</h2>
+<p>To install, run the following from the root folder of your project:</p>
+<p><code>npm install tzTime --save</code></p>
+<h2 id="installation-for-development">Installation for development</h2>
+<p>The documentation system uses jsduck so you&#39;ll need to install that like this:</p>
+<p><code>[sudo] gem install jsduck</code></p>
+<h2 id="documentation-and-source-code">Documentation and source code</h2>
 <ul>
 <li><a href="http://lmaccherone.github.com/tzTime/docs/tztime-docs/index.html">API Documentation</a></li>
 <li><a href="https://github.com/lmaccherone/tzTime">Source Repository</a></li>
 </ul>
-<h2>Changelog</h2>
+<h2 id="changelog">Changelog</h2>
 <ul>
 <li>0.6.11 - 2013-08-30 Stopped doing chdir in timezone.js because it was breaking other uses</li>
 <li>0.6.10 - 2013-04-24 Restoring timezone-js.js that was removed with .gitignore</li>
@@ -196,30 +170,18 @@ timezone. Also, ignore timezone when sending a string without the ending &#39;Z&
 <li>0.6.1 - 2013-02-03 Fix Travis-CI badge</li>
 <li>0.6.0 - 2013-02-02 Original version when first broken out from <a href="http://lmaccherone.github.com/Lumenize">Lumenize</a></li>
 </ul>
-<h2>MIT License</h2>
-<p>Copyright (c) 2011, 2012, 2013 Lawrence S. Maccherone, Jr.
-
-</p>
+<h2 id="mit-license">MIT License</h2>
+<p>Copyright (c) 2011, 2012, 2013 Lawrence S. Maccherone, Jr.</p>
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
 documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation 
 the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and 
-to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-</p>
-<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-</p>
+to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 <p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
 TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
 THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF 
 CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
-IN THE SOFTWARE.
-
-
-
-
-
-</p>
+IN THE SOFTWARE.</p>
 
 </div>
 </body>

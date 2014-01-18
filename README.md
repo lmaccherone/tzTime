@@ -56,15 +56,8 @@ Used when developing:
 
 ## Using from a browser ##
 
-If you are using Lumenize, you don't need to do anything. The browser package for Lumenize includes tzTime. If you just want to use tzTime without Lumenize, then you can either host it on your own site, or you can directly hit the github pages for the deploy version:
-
-`<script type="text/javascript" src="https://raw.github.com/lmaccherone/tzTime/v{{version}}/deploy/tztime-min.js"></script>`
-
-Replace `{{version}}` with the version of tzTime you wish to use (probably the latest). See the Changelog section for information about versions. Example:
-
-`<script type="text/javascript" src="https://raw.github.com/lmaccherone/tzTime/v0.6.8/deploy/tztime-min.js"></script>`
-
-The package is fairly large ~205KB but most of that is the embedded timezone files which compress really well. The Github pages server will gzip the package so it's only ~45KB over the wire.
+If you are using Lumenize, you don't need to do anything. The browser package for Lumenize includes tzTime. If you just
+want to use tzTime without Lumenize, then you can either host it on your own site.
 
 Then:
 
@@ -76,6 +69,12 @@ Then:
 To install, run the following from the root folder of your project:
 
 `npm install tzTime --save`
+
+## Installation for development ##
+
+The documentation system uses jsduck so you'll need to install that like this:
+
+`[sudo] gem install jsduck`
 
 ## Documentation and source code ##
 

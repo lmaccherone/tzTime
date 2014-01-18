@@ -16,10 +16,10 @@
 </head>
 <body onload="prettyPrint(); highlight();">
   <pre class="prettyprint lang-js">/* &lt;CoffeeScript&gt;
-Time = require('./Time').Time
-timezoneJS = require('./../lib/timezone-js.js').timezoneJS
-utils = require('./utils')
-JSON = require('JSON2')
+Time = require(&#39;./Time&#39;).Time
+timezoneJS = require(&#39;./../lib/timezone-js.js&#39;).timezoneJS
+utils = require(&#39;./utils&#39;)
+JSON = require(&#39;JSON2&#39;)
 
 class Timeline
 &lt;/CoffeeScript&gt; */
@@ -30,108 +30,108 @@ class Timeline
    * 
    * ## Basic usage ##
    * 
-   *     {TimelineIterator, Timeline, Time} = require('../')
+   *     {TimelineIterator, Timeline, Time} = require(&#39;../&#39;)
    * 
    *     tl = new Timeline({
-   *       startOn: '2011-01-03',
-   *       endBefore: '2011-01-05',
+   *       startOn: &#39;2011-01-03&#39;,
+   *       endBefore: &#39;2011-01-05&#39;,
    *     })
    * 
    *     console.log(t.toString() for t in tl.getAll())
-   *     # [ '2011-01-03', '2011-01-04' ]
+   *     # [ &#39;2011-01-03&#39;, &#39;2011-01-04&#39; ]
    * 
-   * Notice how the endBefore, '2011-01-05', is excluded. Timelines are inclusive of the startOn and exclusive of the
+   * Notice how the endBefore, &#39;2011-01-05&#39;, is excluded. Timelines are inclusive of the startOn and exclusive of the
    * endBefore. This allows the endBefore to be the startOn of the next with no overlap or gap. This focus on precision
    * pervades the design of the Time library.
    * 
    * Perhaps the most common use of Timeline is to return a Timeline of ISOStrings shifted to the correct timezone.
    * Since ISOString comparisons give the expected chronological results and many APIs return their date/time stamps as
-   * ISOStrings, it's convenient and surprisingly fast to do your own bucketing operations after you've gotten a Timeline
+   * ISOStrings, it&#39;s convenient and surprisingly fast to do your own bucketing operations after you&#39;ve gotten a Timeline
    * of ISOStrings.
    * 
-   *     console.log(tl.getAll('ISOString', 'America/New_York'))
-   *     # [ '2011-01-03T05:00:00.000Z', '2011-01-04T05:00:00.000Z' ]
+   *     console.log(tl.getAll(&#39;ISOString&#39;, &#39;America/New_York&#39;))
+   *     # [ &#39;2011-01-03T05:00:00.000Z&#39;, &#39;2011-01-04T05:00:00.000Z&#39; ]
    * 
    * ## More advanced usage ##
    * 
-   * Now let's poke at Timeline behavior a little more. Let's start by creating a more advanced Timeline:
+   * Now let&#39;s poke at Timeline behavior a little more. Let&#39;s start by creating a more advanced Timeline:
    * 
    *     tl = new Timeline({
-   *       startOn: '2011-01-02',
-   *       endBefore: '2011-01-07',
+   *       startOn: &#39;2011-01-02&#39;,
+   *       endBefore: &#39;2011-01-07&#39;,
    *       holidays: [
    *         {month: 1, day: 1},  # Notice the lack of a year specification
-   *         '2011-01-04'  # Got January 4 off also in 2011. Allows ISO strings.
+   *         &#39;2011-01-04&#39;  # Got January 4 off also in 2011. Allows ISO strings.
    *       ]
    *     })
    *     
    * `workDays` is already defaulted but you could have overridden it.
    * 
    *     console.log(tl.workDays)
-   *     # [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday' ]
+   *     # [ &#39;Monday&#39;, &#39;Tuesday&#39;, &#39;Wednesday&#39;, &#39;Thursday&#39;, &#39;Friday&#39; ]
    *     
    * Another common use case is to get a Timeline to return child Timelines. You see, Timelines can be thought of as
    * time boxes with a startOn and an endBefore. You might have a big time box for the entire x-axis for a chart
-   * but if you want to bucket raw data into each tick on the x-axis, you'll need to know where each sub-time box starts
+   * but if you want to bucket raw data into each tick on the x-axis, you&#39;ll need to know where each sub-time box starts
    * and ends.
    * 
-   *     subTimelines = tl.getAll('Timeline')
-   *     console.log((t.startOn.toString() + ' to ' + t.endBefore.toString() for t in subTimelines))
-   *     # [ '2011-01-03 to 2011-01-05',
-   *     #   '2011-01-05 to 2011-01-06',
-   *     #   '2011-01-06 to 2011-01-07' ]
+   *     subTimelines = tl.getAll(&#39;Timeline&#39;)
+   *     console.log((t.startOn.toString() + &#39; to &#39; + t.endBefore.toString() for t in subTimelines))
+   *     # [ &#39;2011-01-03 to 2011-01-05&#39;,
+   *     #   &#39;2011-01-05 to 2011-01-06&#39;,
+   *     #   &#39;2011-01-06 to 2011-01-07&#39; ]
    * 
-   * Notice how the first subTimeline went all the way from 03 to 05. That's because we specified 04 as a holiday.
+   * Notice how the first subTimeline went all the way from 03 to 05. That&#39;s because we specified 04 as a holiday.
    * Timelines are contiguous without gaps or overlap. You can see that the endBefore of one subTimeline is always the startOn
    * of the next.
    * 
-   * Now, let's create a Timeline with `hour` granularity and show of the concept that Timelines also serve as time boxes by
+   * Now, let&#39;s create a Timeline with `hour` granularity and show of the concept that Timelines also serve as time boxes by
    * learning about the contains() method.
    *     
    *     tl2 = new Timeline({
-   *       startOn: '2011-01-02T00',
-   *       endBefore: '2011-01-07T00',
+   *       startOn: &#39;2011-01-02T00&#39;,
+   *       endBefore: &#39;2011-01-07T00&#39;,
    *     })
    *     
    * `startOn` is inclusive.
    * 
-   *     console.log(tl2.contains('2011-01-02T00'))
+   *     console.log(tl2.contains(&#39;2011-01-02T00&#39;))
    *     # true
    *     
    * But `endBefore` is exclusive
    * 
-   *     console.log(tl2.contains('2011-01-07T00'))
+   *     console.log(tl2.contains(&#39;2011-01-07T00&#39;))
    *     # false
    * 
    * But just before `endBefore` is OK
    * 
-   *     console.log(tl2.contains('2011-01-06T23'))
+   *     console.log(tl2.contains(&#39;2011-01-06T23&#39;))
    *     # true
    * 
    * All of the above comparisons assume that the `startOn`/`endBefore` boundaries are in the same timezone as the contains date.
    * 
    * ## Timezone sensitive comparisions ##
    * 
-   * Now, let's look at how you do timezone sensitive comparisions.
+   * Now, let&#39;s look at how you do timezone sensitive comparisions.
    * 
    * If you pass in a timezone, then it will shift the Timeline boundaries to that timezone to compare to the 
    * date/timestamp that you pass in. This system is optimized to the pattern where you first define your boundaries without regard 
    * to timezone. Christmas day is a holiday in any timezone. Saturday and Sunday are non work days in any timezone. The iteration
-   * starts on July 10th; etc. THEN you have a bunch of data that you have stored in a database in GMT. Maybe you've pulled
+   * starts on July 10th; etc. THEN you have a bunch of data that you have stored in a database in GMT. Maybe you&#39;ve pulled
    * it down from an API but the data is represented with ISOString. You then want to decide if the ISOString
    * is contained within the iteration as defined by a particular timezone, or is a Saturday, or is during workhours, etc. 
    * The key concept to remember is that the timebox boundaries are shifted NOT the other way around. It says at what moment
    * in time July 10th starts on in a particular timezone and internally represents that in a way that can be compared to
    * an ISOString.
    * 
-   * So, when it's 3am in GMT on 2011-01-02, it's still 2011-01-01 in New York. Using the above `tl2` timeline, we say:
+   * So, when it&#39;s 3am in GMT on 2011-01-02, it&#39;s still 2011-01-01 in New York. Using the above `tl2` timeline, we say:
    * 
-   *     console.log(tl2.contains('2011-01-02T03:00:00.000Z', 'America/New_York'))
+   *     console.log(tl2.contains(&#39;2011-01-02T03:00:00.000Z&#39;, &#39;America/New_York&#39;))
    *     # false
    *     
-   * But it's still 2011-01-06 in New York, when it's 3am in GMT on 2011-01-07
+   * But it&#39;s still 2011-01-06 in New York, when it&#39;s 3am in GMT on 2011-01-07
    *     
-   *     console.log(tl2.contains('2011-01-07T03:00:00.000Z', 'America/New_York'))
+   *     console.log(tl2.contains(&#39;2011-01-07T03:00:00.000Z&#39;, &#39;America/New_York&#39;))
    *     # true
    *     
    * 
@@ -151,13 +151,13 @@ class Timeline
    *   Note, this can be different from the granularity of startOn and endBefore. For example:
    * 
    *     {
-   *       startOn: '2012-01', # Month Granularity
-   *       endBefore: '2012-02', # Month Granularity
+   *       startOn: &#39;2012-01&#39;, # Month Granularity
+   *       endBefore: &#39;2012-02&#39;, # Month Granularity
    *       granularity: Time.DAY # Day granularity
    *     }
    * 
-   * @cfg {String[]/String} [workDays =  ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']] List of days of the
-   *   week that you work on. You can specify this as an Array of Strings (['Monday', 'Tuesday', ...]) or a single comma
+   * @cfg {String[]/String} [workDays =  [&#39;Monday&#39;, &#39;Tuesday&#39;, &#39;Wednesday&#39;, &#39;Thursday&#39;, &#39;Friday&#39;]] List of days of the
+   *   week that you work on. You can specify this as an Array of Strings ([&#39;Monday&#39;, &#39;Tuesday&#39;, ...]) or a single comma
    *   seperated String (&quot;Monday,Tuesday,...&quot;).
    * @cfg {Array} [holidays] An optional Array of either ISOStrings or JavaScript Objects (and you can mix and match). Example:
    * 
@@ -170,8 +170,8 @@ class Timeline
    * 
    *   The use of workDayStartOn and workDayEndBefore only make sense when the granularity is &quot;hour&quot; or finer.
    * 
-   *   Note: If the business closes at 5:00pm, you'll want to leave workDayEndBefore to 17:00, rather
-   *   than 17:01. Think about it, you'll be open 4:59:59.999pm, but you'll be closed at 5:00pm. This also makes all of
+   *   Note: If the business closes at 5:00pm, you&#39;ll want to leave workDayEndBefore to 17:00, rather
+   *   than 17:01. Think about it, you&#39;ll be open 4:59:59.999pm, but you&#39;ll be closed at 5:00pm. This also makes all of
    *   the math work. 9am to 5pm means 17 - 9 = an 8 hour work day.
    * @cfg {Object} [workDayEndBefore = {hour: 24, minute: 60}] An optional object in the form {hour: 17, minute: 0}.
    *   If minute is zero it can be omitted.
@@ -182,14 +182,14 @@ class Timeline
     @memoizedTicks = {}  # key: stringified parameters to getAll
     if config.endBefore?
       @endBefore = config.endBefore
-      if @endBefore != 'PAST_LAST'
-        if utils.type(@endBefore) == 'string'
+      if @endBefore != &#39;PAST_LAST&#39;
+        if utils.type(@endBefore) == &#39;string&#39;
           @endBefore = new Time(@endBefore)
         @granularity = @endBefore.granularity
     if config.startOn?
       @startOn = config.startOn
-      if @startOn != 'BEFORE_FIRST'
-        if utils.type(@startOn) == 'string'
+      if @startOn != &#39;BEFORE_FIRST&#39;
+        if utils.type(@startOn) == &#39;string&#39;
           @startOn = new Time(@startOn)
         @granularity = @startOn.granularity
     if config.granularity?
@@ -199,15 +199,15 @@ class Timeline
       if @endBefore?
         @endBefore = @endBefore.inGranularity(@granularity)
     unless @granularity
-      throw new Error('Cannot determine granularity for Timeline.')
-    if @startOn == 'BEFORE_FIRST'
+      throw new Error(&#39;Cannot determine granularity for Timeline.&#39;)
+    if @startOn == &#39;BEFORE_FIRST&#39;
       @startOn = new Time(@startOn, @granularity)
-    if @endBefore == 'PAST_LAST'
+    if @endBefore == &#39;PAST_LAST&#39;
       @endBefore == new Time(@endBefore, @granularity)
     if !@endBefore
-      @endBefore = new Time('PAST_LAST', @granularity)
+      @endBefore = new Time(&#39;PAST_LAST&#39;, @granularity)
     if !@startOn
-      @startOn = new Time('BEFORE_FIRST', @granularity)
+      @startOn = new Time(&#39;BEFORE_FIRST&#39;, @granularity)
 
     @limit = if config.limit? then config.limit else utils.MAX_INT
     
@@ -216,12 +216,12 @@ class Timeline
     else if config.workdays?
       @workDays = config.workdays
     else
-      @workDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
-    if utils.type(@workDays) == 'string'
-      @workDays = (utils.trim(s) for s in @workDays.split(','))
+      @workDays = [&#39;Monday&#39;, &#39;Tuesday&#39;, &#39;Wednesday&#39;, &#39;Thursday&#39;, &#39;Friday&#39;]
+    if utils.type(@workDays) == &#39;string&#39;
+      @workDays = (utils.trim(s) for s in @workDays.split(&#39;,&#39;))
     @holidays = if config.holidays? then config.holidays else []
     for holiday, idx in @holidays
-      if utils.type(holiday) == 'string'
+      if utils.type(holiday) == &#39;string&#39;
         @holidays[idx] = new Time(holiday).getSegmentsAsObject()
     
     @workDayStartOn = if config.workDayStartOn? then config.workDayStartOn
@@ -256,19 +256,19 @@ class Timeline
       (config.startOn? and config.endBefore?) or
       (config.startOn? and config.limit? and @step &gt; 0) or
       (config.endBefore? and config.limit? and @step &lt; 0),
-      'Must provide two out of &quot;startOn&quot;, &quot;endBefore&quot;, or &quot;limit&quot; and the sign of step must match.'
+      &#39;Must provide two out of &quot;startOn&quot;, &quot;endBefore&quot;, or &quot;limit&quot; and the sign of step must match.&#39;
     )
     
-  getIterator: (tickType = 'Time', tz, childGranularity) -&gt;
+  getIterator: (tickType = &#39;Time&#39;, tz, childGranularity) -&gt;
 &lt;/CoffeeScript&gt; */
 <span id='tzTime-Timeline-method-getIterator'>    /**
 </span>     * @method getIterator
      * @member tzTime.Timeline
      * @param {String} [tickType] An optional String that specifies what type should be returned on each call to next().
-     *   Possible values are 'Time' (default), 'Timeline', 'Date' (javascript Date Object), and 'ISOString'.
+     *   Possible values are &#39;Time&#39; (default), &#39;Timeline&#39;, &#39;Date&#39; (javascript Date Object), and &#39;ISOString&#39;.
      * @param {String} [tz] A Sting specifying the timezone in the standard form,`America/New_York` for example. This is
-     *   required if `tickType` is 'Date' or 'ISOString'.
-     * @param {String} [childGranularity] When tickType is 'Timeline', this is the granularity for the startOn and endBefore of the
+     *   required if `tickType` is &#39;Date&#39; or &#39;ISOString&#39;.
+     * @param {String} [childGranularity] When tickType is &#39;Timeline&#39;, this is the granularity for the startOn and endBefore of the
      *   Timeline that is returned.
      * @return {TimelineIterator}
      * 
@@ -277,16 +277,16 @@ class Timeline
 /* &lt;CoffeeScript&gt;
     return new TimelineIterator(this, tickType, tz, childGranularity)
     
-  getAllRaw: (tickType = 'Time', tz, childGranularity) -&gt;
+  getAllRaw: (tickType = &#39;Time&#39;, tz, childGranularity) -&gt;
 &lt;/CoffeeScript&gt; */
 <span id='tzTime-Timeline-method-getAllRaw'>    /**
 </span>     * @method getAllRaw
      * @member tzTime.Timeline
-     * @param {String} [tickType] An optional String that specifies the type should be returned. Possible values are 'Time' (default),
-     *    'Timeline', 'Date' (javascript Date Object), and 'ISOString'.
+     * @param {String} [tickType] An optional String that specifies the type should be returned. Possible values are &#39;Time&#39; (default),
+     *    &#39;Timeline&#39;, &#39;Date&#39; (javascript Date Object), and &#39;ISOString&#39;.
      * @param {String} [tz] A Sting specifying the timezone in the standard form,`America/New_York` for example. This is
-     *    required if `tickType` is 'Date' or 'ISOString'.
-     * @param {String} [childGranularity] When tickType is 'Timeline', this is the granularity for the startOn and endBefore of the
+     *    required if `tickType` is &#39;Date&#39; or &#39;ISOString&#39;.
+     * @param {String} [childGranularity] When tickType is &#39;Timeline&#39;, this is the granularity for the startOn and endBefore of the
      *    Timeline that is returned.
      * @return {Time[]/Date[]/Timeline[]/String[]}
      * 
@@ -300,23 +300,23 @@ class Timeline
       temp.push(tli.next())
     return temp
     
-  getAll: (tickType = 'Time', tz, childGranularity) -&gt;
+  getAll: (tickType = &#39;Time&#39;, tz, childGranularity) -&gt;
 &lt;/CoffeeScript&gt; */
 <span id='tzTime-Timeline-method-getAll'>    /**
 </span>     * @method getAll
      * @member tzTime.Timeline
-     * @param {String} [tickType] An optional String that specifies what should be returned. Possible values are 'Time' (default),
-     *    'Timeline', 'Date' (javascript Date Object), and 'ISOString'.
+     * @param {String} [tickType] An optional String that specifies what should be returned. Possible values are &#39;Time&#39; (default),
+     *    &#39;Timeline&#39;, &#39;Date&#39; (javascript Date Object), and &#39;ISOString&#39;.
      * @param {String} [tz] A Sting specifying the timezone in the standard form,`America/New_York` for example. This is
-     *    required if `tickType` is 'Date' or 'ISOString'.
-     * @param {String} [childGranularity] When tickType is 'Timeline', this is the granularity for the startOn and endBefore of the
+     *    required if `tickType` is &#39;Date&#39; or &#39;ISOString&#39;.
+     * @param {String} [childGranularity] When tickType is &#39;Timeline&#39;, this is the granularity for the startOn and endBefore of the
      *    Timeline object that is returned.
      * @return {Time[]/Date[]/Timeline[]/String[]}
      * 
      * Returns all of the points in the timeline in chronological order. If you want them in the order specified by `step`
      * then use getAllRaw(). Note, the output of this function is memoized so that subsequent calls to getAll() for the
      * same Timeline instance with the same parameters will return the previously calculated values. This makes it safe
-     * to call it repeatedly within loops and means you don't need to worry about holding onto the result on the client
+     * to call it repeatedly within loops and means you don&#39;t need to worry about holding onto the result on the client
      * side.
      */
 /* &lt;CoffeeScript&gt;
@@ -330,7 +330,7 @@ class Timeline
     unless ticks?
       ticks = @getAllRaw(tickType, tz, childGranularity)
       if ticks.length &gt; 1
-        if (ticks[0] instanceof Time and ticks[0].greaterThan(ticks[1])) or (utils.type(ticks[0]) is 'string' and ticks[0] &gt; ticks[1] )
+        if (ticks[0] instanceof Time and ticks[0].greaterThan(ticks[1])) or (utils.type(ticks[0]) is &#39;string&#39; and ticks[0] &gt; ticks[1] )
           ticks.reverse()
       @memoizedTicks[parameterKey] = ticks
     return ticks
@@ -342,6 +342,7 @@ class Timeline
      * @member tzTime.Timeline
      * @param {Time/ISOString} startOn The start of the time period of interest
      * @param {Time/ISOString} endBefore The moment just past the end of the time period of interest
+     * @param {String} tz The timezone you want to use for the comparison
      * @return {Array}
      * 
      * Returns the list of ticks from this Timeline that intersect with the time period specified by the parameters
@@ -350,16 +351,16 @@ class Timeline
      * and then do groupBy operations with an OLAPCube.
      */
 /* &lt;CoffeeScript&gt;
-    utils.assert(@limit == utils.MAX_INT, 'Cannot call `ticksThatIntersect()` on Timelines specified with `limit`.')
+    utils.assert(@limit == utils.MAX_INT, &#39;Cannot call `ticksThatIntersect()` on Timelines specified with `limit`.&#39;)
     out = []
-    if utils.type(startOn) is 'string'
-      utils.assert(utils.type(endBefore) is 'string', 'The type for startOn and endBefore must match.')
+    if utils.type(startOn) is &#39;string&#39;
+      utils.assert(utils.type(endBefore) is &#39;string&#39;, &#39;The type for startOn and endBefore must match.&#39;)
       isoDateRegExp = /\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ/
-      utils.assert(isoDateRegExp.test(startOn), 'startOn must be in form ####-##-##T##:##:##.###Z')
-      utils.assert(isoDateRegExp.test(endBefore), 'endBefore must be in form ####-##-##T##:##:##.###Z')
+      utils.assert(isoDateRegExp.test(startOn), &#39;startOn must be in form ####-##-##T##:##:##.###Z&#39;)
+      utils.assert(isoDateRegExp.test(endBefore), &#39;endBefore must be in form ####-##-##T##:##:##.###Z&#39;)
       utils.assert(tz?, &quot;Must specify parameter tz when submitting ISO string boundaries.&quot;)
 
-      ticks = @getAll('ISOString', tz)
+      ticks = @getAll(&#39;ISOString&#39;, tz)
       if ticks[0] &gt;= endBefore or ticks[ticks.length - 1] &lt; startOn
         out = []
       else
@@ -372,7 +373,7 @@ class Timeline
           i++
 
     else if startOn instanceof Time
-      utils.assert(endBefore instanceof Time, 'The type for startOn and endBefore must match.')
+      utils.assert(endBefore instanceof Time, &#39;The type for startOn and endBefore must match.&#39;)
       startOn = startOn.inGranularity(@granularity)
       endBefore = endBefore.inGranularity(@granularity)
       if @endBefore.lessThan(@startOn)
@@ -410,30 +411,30 @@ class Timeline
      * We can create a Timeline from May to just before July.
      * 
      *     tl = new Timeline({
-     *       startOn: '2011-05',
-     *       endBefore: '2011-07'
+     *       startOn: &#39;2011-05&#39;,
+     *       endBefore: &#39;2011-07&#39;
      *     })
      * 
-     *     console.log(tl.contains('2011-06-15T12:00:00.000Z', 'America/New_York'))
+     *     console.log(tl.contains(&#39;2011-06-15T12:00:00.000Z&#39;, &#39;America/New_York&#39;))
      *     # true
      * 
      */
 /* &lt;CoffeeScript&gt;
-    utils.assert(@limit == utils.MAX_INT, 'Cannot call `contains()` on Timelines specified with `limit`.')
+    utils.assert(@limit == utils.MAX_INT, &#39;Cannot call `contains()` on Timelines specified with `limit`.&#39;)
     if date instanceof Time
       return date.lessThan(@endBefore) and date.greaterThanOrEqual(@startOn)
-    utils.assert(tz? or utils.type(date) != 'date', 'Timeline.contains() requires a second parameter (timezone) when the first parameter is a Date()')
+    utils.assert(tz? or utils.type(date) != &#39;date&#39;, &#39;Timeline.contains() requires a second parameter (timezone) when the first parameter is a Date()&#39;)
     switch utils.type(date)
-      when 'string'
+      when &#39;string&#39;
         if tz?
           target = timezoneJS.parseISO(date)
         else
           target = new Time(date)
           return target.lessThan(@endBefore) and target.greaterThanOrEqual(@startOn)
-      when 'date'
+      when &#39;date&#39;
         target = date.getTime()  # !TODO: A - Need to use my getJSDate to be sure this behaves as expected... or test the hell out of this
       else
-        throw new Error('Timeline.contains() requires that the first parameter be of type Time, String, or Date')
+        throw new Error(&#39;Timeline.contains() requires that the first parameter be of type Time, String, or Date&#39;)
     startOn = @startOn.getJSDate(tz)
     endBefore = @endBefore.getJSDate(tz)
     return target &lt; endBefore and target &gt;= startOn
@@ -443,7 +444,7 @@ class TimelineIterator
 <span id='tzTime-TimelineIterator-method-constructor'><span id='tzTime-TimelineIterator'>  /**
 </span></span>   * @class tzTime.TimelineIterator
    * 
-   * In most cases you'll want to call getAll() on Timeline. TimelineIterator is for use cases where you want to get the
+   * In most cases you&#39;ll want to call getAll() on Timeline. TimelineIterator is for use cases where you want to get the
    * values in the Timeline one at a time.
    * 
    * You usually get a TimelineIterator by calling getIterator() on a Timeline object.
@@ -454,12 +455,12 @@ class TimelineIterator
    * 
    * ## Usage ##
    * 
-   *     {TimelineIterator, Timeline, Time} = require('../')
+   *     {TimelineIterator, Timeline, Time} = require(&#39;../&#39;)
    * 
    *     tl = new Timeline({
-   *       startOn:new Time({granularity: 'day', year: 2009, month:1, day: 1}),
-   *       endBefore:new Time({granularity: 'day', year: 2009, month:1, day: 8}),
-   *       workDays: 'Monday, Tuesday, Wednesday, Thursday, Friday',
+   *       startOn:new Time({granularity: &#39;day&#39;, year: 2009, month:1, day: 1}),
+   *       endBefore:new Time({granularity: &#39;day&#39;, year: 2009, month:1, day: 8}),
+   *       workDays: &#39;Monday, Tuesday, Wednesday, Thursday, Friday&#39;,
    *       holidays: [
    *         {month: 1, day: 1},  # New Years day was a Thursday in 2009
    *         {year: 2009, month: 1, day: 2}  # Also got Friday off in 2009
@@ -475,32 +476,32 @@ class TimelineIterator
    *     # 2009-01-06
    *     # 2009-01-07
    * 
-   * Now, let's explore how Timelines and TimelineIterators are used together.
+   * Now, let&#39;s explore how Timelines and TimelineIterators are used together.
    * 
    *     tl3 = new Timeline({
-   *       startOn:new Time('2011-01-06'),
-   *       endBefore:new Time('2011-01-11'),
+   *       startOn:new Time(&#39;2011-01-06&#39;),
+   *       endBefore:new Time(&#39;2011-01-11&#39;),
    *       workDayStartOn: {hour: 9, minute: 0},
    *       workDayEndBefore: {hour: 11, minute: 0}  # Very short work day for demo purposes
    *     })
    * 
    * You can specify that the tickType be Timelines rather than Time values. On each call to `next()`, the
    * iterator will give you a new Timeline with the `startOn` value set to what you would have gotten had you
-   * requested that the tickType be Times. The `endBefore' of the returned Timeline will be set to the next value.
+   * requested that the tickType be Times. The `endBefore&#39; of the returned Timeline will be set to the next value.
    * This is how you drill-down from one granularity into a lower granularity.
    * 
    * By default, the granularity of the iterator will equal the `startOn`/`endBefore` of the original Timeline.
    * However, you can provide a different granularity (`hour` in the example below) for the iterator if you want
    * to drill-down at a lower granularity.
    * 
-   *     tli3 = tl3.getIterator('Timeline', undefined, 'hour')
+   *     tli3 = tl3.getIterator(&#39;Timeline&#39;, undefined, &#39;hour&#39;)
    * 
    *     while tli3.hasNext()
    *       subTimeline = tli3.next()
    *       console.log(&quot;Sub Timeline goes from #{subTimeline.startOn.toString()} to #{subTimeline.endBefore.toString()}&quot;)
-   *       subIterator = subTimeline.getIterator('Time')
+   *       subIterator = subTimeline.getIterator(&#39;Time&#39;)
    *       while subIterator.hasNext()
-   *         console.log('    Hour: ' + subIterator.next().hour)
+   *         console.log(&#39;    Hour: &#39; + subIterator.next().hour)
    * 
    *     # Sub Timeline goes from 2011-01-06T00 to 2011-01-07T00
    *     #     Hour: 9
@@ -512,22 +513,22 @@ class TimelineIterator
    *     #     Hour: 9
    *     #     Hour: 10
    * 
-   * There is a lot going on here, so let's poke at it a bit. First, notice how the second sub-Timeline goes from the 7th to the
-   * 10th. That's because there was a weekend in there. We didn't get hours for the Saturday and Sunday.
+   * There is a lot going on here, so let&#39;s poke at it a bit. First, notice how the second sub-Timeline goes from the 7th to the
+   * 10th. That&#39;s because there was a weekend in there. We didn&#39;t get hours for the Saturday and Sunday.
    * 
    * The above approach (`tl3`/`tli3`) is useful for some forms of hand generated analysis, but if you are using Time with
-   * Lumenize, it's overkill because Lumenize is smart enough to do rollups based upon the segments that are returned from the
+   * Lumenize, it&#39;s overkill because Lumenize is smart enough to do rollups based upon the segments that are returned from the
    * lowest granularity Time. So you can just iterate over the lower granularity and Lumenize will automatically manage
    * the drill up/down to day/month/year levels automatically.
    * 
    *     tl4 = new Timeline({
-   *       startOn:'2011-01-06T00',  # Notice how we include the hour now
-   *       endBefore:'2011-01-11T00',
+   *       startOn:&#39;2011-01-06T00&#39;,  # Notice how we include the hour now
+   *       endBefore:&#39;2011-01-11T00&#39;,
    *       workDayStartOn: {hour: 9, minute: 0},
    *       workDayEndBefore: {hour: 11, minute: 0}  # Very short work day for demo purposes
    *     })
    * 
-   *     tli4 = tl4.getIterator('ISOString', 'GMT')
+   *     tli4 = tl4.getIterator(&#39;ISOString&#39;, &#39;GMT&#39;)
    * 
    *     while tli4.hasNext()
    *       console.log(tli4.next())
@@ -544,19 +545,19 @@ class TimelineIterator
    * 
    * @constructor
    * @param {Timeline} timeline A Timeline object
-   * @param {String} [tickType] An optional String that specifies the type for the returned ticks. Possible values are 'Time' (default),
-   *    'Timeline', 'Date' (javascript Date Object), and 'ISOString'.
-   * @param {String} [childGranularity=granularity of timeline] When tickType is 'Timeline', this is the granularity for the startOn and endBefore of the
+   * @param {String} [tickType] An optional String that specifies the type for the returned ticks. Possible values are &#39;Time&#39; (default),
+   *    &#39;Timeline&#39;, &#39;Date&#39; (javascript Date Object), and &#39;ISOString&#39;.
+   * @param {String} [childGranularity=granularity of timeline] When tickType is &#39;Timeline&#39;, this is the granularity for the startOn and endBefore of the
    *    Timeline that is returned.
    * @param {String} [tz] A Sting specifying the timezone in the standard form,`America/New_York` for example. This is
-   *    required if `tickType` is 'Date' or 'ISOString'.
+   *    required if `tickType` is &#39;Date&#39; or &#39;ISOString&#39;.
    */
 /* &lt;CoffeeScript&gt;
-       required if `tickType` is 'Date' or 'ISOString'.
-    utils.assert(@tickType in ['Time', 'Timeline', 'Date', 'ISOString'], &quot;tickType must be 'Time', 'Timeline', 'Date', or 'ISOString'. You provided #{@tickType}.&quot;)
-    utils.assert(@tickType != 'Date' or tz?, 'Must provide a tz (timezone) parameter when tickType is Date.')
-    utils.assert(@tickType != 'ISOString' or tz?, 'Must provide a tz (timezone) parameter when returning ISOStrings.')
-    # if timeline.granularity in ['Minute','Second', 'Millisecond']
+       required if `tickType` is &#39;Date&#39; or &#39;ISOString&#39;.
+    utils.assert(@tickType in [&#39;Time&#39;, &#39;Timeline&#39;, &#39;Date&#39;, &#39;ISOString&#39;], &quot;tickType must be &#39;Time&#39;, &#39;Timeline&#39;, &#39;Date&#39;, or &#39;ISOString&#39;. You provided #{@tickType}.&quot;)
+    utils.assert(@tickType != &#39;Date&#39; or tz?, &#39;Must provide a tz (timezone) parameter when tickType is Date.&#39;)
+    utils.assert(@tickType != &#39;ISOString&#39; or tz?, &#39;Must provide a tz (timezone) parameter when returning ISOStrings.&#39;)
+    # if timeline.granularity in [&#39;Minute&#39;,&#39;Second&#39;, &#39;Millisecond&#39;]
       # console.error(&quot;Warning: iterating at granularity #{timeline.granularity} can be very slow.&quot;)
     @tz ?= tz
     if timeline instanceof Timeline
@@ -567,7 +568,7 @@ class TimelineIterator
       @childGranularity = timeline.granularity
     @reset()
 
-  StopIteration = if typeof(StopIteration) == 'undefined' then utils.StopIteration else StopIteration
+  StopIteration = if typeof(StopIteration) == &#39;undefined&#39; then utils.StopIteration else StopIteration
 
   reset: () -&gt;
 &lt;/CoffeeScript&gt; */
@@ -605,13 +606,13 @@ class TimelineIterator
       return false
 
     # Do everything below for granularies day and lower
-    currentInDay = @current.inGranularity('day')
+    currentInDay = @current.inGranularity(&#39;day&#39;)
     unless @current.dowString() in @timeline.workDays
       return true
     for holiday in @timeline.holidays
       if (utils.match(holiday, currentInDay))
         return true
-    if @timeline.granularity in ['hour', 'minute',' second', 'millisecond']
+    if @timeline.granularity in [&#39;hour&#39;, &#39;minute&#39;,&#39; second&#39;, &#39;millisecond&#39;]
       currentMinutes = @current.hour * 60
       if @current.minute?
         currentMinutes += @current.minute
@@ -640,7 +641,7 @@ class TimelineIterator
      */
 /* &lt;CoffeeScript&gt;
     if !@hasNext()
-      throw new StopIteration('Cannot call next() past end.')
+      throw new StopIteration(&#39;Cannot call next() past end.&#39;)
     currentCopy = new Time(@current)
     @count++
     for i in [Math.abs(@timeline.step)..1]
@@ -650,13 +651,13 @@ class TimelineIterator
         @current.decrement()
       @_proceedToNextValid()
     switch @tickType
-      when 'Time'
+      when &#39;Time&#39;
         return currentCopy
-      when 'Date'
+      when &#39;Date&#39;
         return currentCopy.getJSDate(@tz)
-      when 'ISOString'
+      when &#39;ISOString&#39;
         return currentCopy.getISOStringInTZ(@tz)
-      when 'Timeline'
+      when &#39;Timeline&#39;
         config = {
           startOn: currentCopy.inGranularity(@childGranularity),
           endBefore: @current.inGranularity(@childGranularity),
@@ -668,7 +669,7 @@ class TimelineIterator
         childtimeline = new Timeline(config)
         return childtimeline
       else
-        throw new Error(&quot;You asked for tickType #{@tickType}. Only 'Time', 'Date', 'ISOString', and 'Timeline' are allowed.&quot;)
+        throw new Error(&quot;You asked for tickType #{@tickType}. Only &#39;Time&#39;, &#39;Date&#39;, &#39;ISOString&#39;, and &#39;Timeline&#39; are allowed.&quot;)
 
 exports.Timeline = Timeline
 exports.TimelineIterator = TimelineIterator
