@@ -135,11 +135,8 @@ files.</li>
 <li><a href="https://github.com/chjj/marked">marked</a></li>
 </ul>
 <h2 id="using-from-a-browser">Using from a browser</h2>
-<p>If you are using Lumenize, you don&#39;t need to do anything. The browser package for Lumenize includes tzTime. If you just want to use tzTime without Lumenize, then you can either host it on your own site, or you can directly hit the github pages for the deploy version:</p>
-<p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://raw.github.com/lmaccherone/tzTime/v{{version}}/deploy/tztime-min.js&quot;&gt;&lt;/script&gt;</code></p>
-<p>Replace <code>{{version}}</code> with the version of tzTime you wish to use (probably the latest). See the Changelog section for information about versions. Example:</p>
-<p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://raw.github.com/lmaccherone/tzTime/v0.6.8/deploy/tztime-min.js&quot;&gt;&lt;/script&gt;</code></p>
-<p>The package is fairly large ~205KB but most of that is the embedded timezone files which compress really well. The Github pages server will gzip the package so it&#39;s only ~45KB over the wire.</p>
+<p>If you are using Lumenize, you don&#39;t need to do anything. The browser package for Lumenize includes tzTime. If you just
+want to use tzTime without Lumenize, then you can either host it on your own site.</p>
 <p>Then:</p>
 <p><code>var tzTime = require(&#39;./tzTime&#39;);</code>
 <code>var timeline = new tzTime.Timeline({startOn:&#39;2012-01&#39;, endBefore:&#39;2013-01&#39;});</code></p>
@@ -156,6 +153,7 @@ files.</li>
 </ul>
 <h2 id="changelog">Changelog</h2>
 <ul>
+<li>0.6.12 - 2014-01-18 Updated to the latest coffee-script and jsduck</li>
 <li>0.6.11 - 2013-08-30 Stopped doing chdir in timezone.js because it was breaking other uses</li>
 <li>0.6.10 - 2013-04-24 Restoring timezone-js.js that was removed with .gitignore</li>
 <li>0.6.9 - 2013-04-24 Fixed side effect bug issue #2</li>
