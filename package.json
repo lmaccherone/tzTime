@@ -26,16 +26,15 @@
   "preferGlobal": false,
   "dependencies": {
     "underscore": "~1.4.4",
-    "jsduckify": "~0.2.2",
     "JSON2": "~0.1.0"
   },
   "devDependencies": {
+    "jsduckify": "~0.2.2",
     "coffee-script": "~1.6.3",
     "coffeedoctest": "0.4.x",
     "uglify-js": "2.2.x",
     "nodeunit": "~0.7.4",
     "browserify": "1.16.x",
-    "jsduckify": "0.2.x",
     "wrench": "1.4.x",
     "marked": "0.2.x",
     "exec-sync": "~0.1.5",

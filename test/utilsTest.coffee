@@ -19,3 +19,10 @@ exports.utilsTest =
     test.ok(utils.filterMatch(o3, o1))
     test.equal(false, utils.filterMatch(o1, o3))
     test.done()
+
+
+  compareTest: (test) ->
+    a1 = [1, 2, 5]
+    a2 = [1, 2, 3]
+    test.equal(utils.compare(a1, a2), -1)
+    test.done()

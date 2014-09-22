@@ -96,6 +96,38 @@ log = (s) ->
   else
     console.log(s)
 
+compare = (a, b) ->  # Used for sorting any type
+  if a is null
+    return 1
+  if b is null
+    return -1
+  switch type(a)
+    when 'number', 'boolean', 'date'
+      return b - a
+    when 'array'
+      for value, index in a
+        if b.length - 1 >= index and value < b[index]
+          return 1
+        if b.length - 1 >= index and value > b[index]
+          return -1
+      if a.length < b.length
+        return 1
+      else if a.length > b.length
+        return -1
+      else
+        return 0
+    when 'object', 'string'
+      aString = JSON.stringify(a)
+      bString = JSON.stringify(b)
+      if aString < bString
+        return 1
+      else if aString > bString
+        return -1
+      else
+        return 0
+    else
+      throw new Error("Do not know how to sort objects of type #{utils.type(a)}.")
+
 exports.log = log
 exports.AssertException = AssertException
 exports.assert = assert
@@ -108,4 +140,5 @@ exports.type = type
 exports.clone = clone
 exports.keys = keys
 exports.values = values
+exports.compare = compare
 exports._ = require('underscore')
