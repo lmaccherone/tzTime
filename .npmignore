@@ -8,9 +8,9 @@ src/*.coffee
 src/*.js.map
 src/*.map
 test
-lumenize.coffee
-lumenize.map
-lumenize.js.map
+tzTime.coffee
+tzTime.map
+tzTime.js.map
 .js.map
 .map
 .coffee

@@ -101,13 +101,14 @@ task('publish', 'Publish to npm', () ->
       stdoutMaster = stdout
       if stdoutOrigin == stdoutMaster
         console.log('running npm publish')
+        runSyncNoExit('coffee -c *.coffee src')
         {stdout, stderr} = runSyncNoExit('npm publish .')
         if fs.existsSync('npm-debug.log')
           console.error('`npm publish` failed. See npm-debug.log for details.')
         else
           console.log('running git tag')
-          runSync("git tag v#{require('./package.json').version}")
-          runSync("git push --tags")
+          runSyncNoExit("git tag v#{require('./package.json').version}")
+          runSyncNoExit("git push --tags")
 
           pubDocsRaw()
 
