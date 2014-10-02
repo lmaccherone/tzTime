@@ -33,10 +33,10 @@
     "coffee-script": "~1.8.0",
     "coffeedoctest": "~0.5.0",
     "fileify-lm": "~0.3.1",
-    "jsduckify": "^0.3.0",
+    "jsduckify": "~0.3.0",
     "marked": "0.2.x",
     "nodeunit": "~0.7.4",
-    "runsync": "^0.1.8",
+    "runsync": "~0.1.8",
     "uglify-js": "2.2.x",
     "wrench": "1.4.x"
   },
