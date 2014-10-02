@@ -83,6 +83,7 @@ The documentation system uses jsduck so you'll need to install that like this:
 
 ## Changelog ##
 
+* 0.7.2 - 2014-10-02 More build fixes
 * 0.7.1 - 2014-10-02 TravisCI fiddly fix
 * 0.7.0 - 2014-10-02 Updated dependencies, git gets only source, npm gets only .js
 * 0.6.12 - 2014-01-18 Updated to the latest coffee-script and jsduck
