@@ -30,8 +30,8 @@
   },
   "devDependencies": {
     "browserify": "1.16.x",
-    "coffee-script": "^1.8.0",
-    "coffeedoctest": "^0.5.0",
+    "coffee-script": "~1.8.0",
+    "coffeedoctest": "~0.5.0",
     "fileify-lm": "~0.3.1",
     "jsduckify": "^0.3.0",
     "marked": "0.2.x",
