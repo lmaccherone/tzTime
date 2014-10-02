@@ -83,6 +83,7 @@ The documentation system uses jsduck so you'll need to install that like this:
 
 ## Changelog ##
 
+* 0.7.0 - 2014-10-04 Updated dependencies, git gets only source, npm gets only .js
 * 0.6.12 - 2014-01-18 Updated to the latest coffee-script and jsduck
 * 0.6.11 - 2013-08-30 Stopped doing chdir in timezone.js because it was breaking other uses
 * 0.6.10 - 2013-04-24 Restoring timezone-js.js that was removed with .gitignore

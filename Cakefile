@@ -6,13 +6,10 @@ marked = require('marked')
 uglify = require("uglify-js")
 browserify = require('browserify')
 fileify = require('fileify-lm')
-execSync = require('exec-sync')
+runsync = require('runsync')  # polyfil for node.js 0.12 synchronous running functionality. Remove when upgrading to 0.12
 
 runSync = (command, options, next) ->
-  if options? and options.length > 0
-    command += ' ' + options.join(' ')
-
-  {stdout, stderr} = execSync(command, true)
+  {stderr, stdout} = runSyncRaw(command, options)
   if stderr.length > 0
     console.error("Error running `#{command}`\n" + stderr)
     process.exit(1)
@@ -21,6 +18,19 @@ runSync = (command, options, next) ->
   else
     if stdout.length > 0
       console.log("Stdout exec'ing command '#{command}'...\n" + stdout)
+
+runSyncNoExit = (command, options) ->
+  {stderr, stdout} = runSyncRaw(command, options)
+  console.log("Output of running '#{command}'...\n#{stderr}\n#{stdout}\n")
+  return {stderr, stdout}
+
+runSyncRaw = (command, options) ->
+  if options? and options.length > 0
+    command += ' ' + options.join(' ')
+  output = runsync.popen(command)
+  stdout = output.stdout.toString()
+  stderr = output.stderr.toString()
+  return {stderr, stdout}
 
 runAsync = (command, options, next) ->
   if options? and options.length > 0
@@ -66,7 +76,7 @@ task('docs', 'Generate docs with CoffeeDoc and place in ./docs', () ->
   outputDirectory = path.join(__dirname, 'docs', "#{name}-docs")
   if fs.existsSync(outputDirectory)
     wrench.rmdirSyncRecursive(outputDirectory, false)
-  runSync('node_modules/jsduckify/bin/jsduckify', ['-d', outputDirectory, __dirname])
+  runSync('jsduckify', ['-d', "'" + outputDirectory + "'", "'" + __dirname + "'"])
 )
 
 task('pub-docs', 'Push master to gh-pages on github', () ->
@@ -85,21 +95,22 @@ task('publish', 'Publish to npm', () ->
   invoke('build')
   runSync('git status --porcelain', [], (stdout) ->
     if stdout.length == 0
-      {stdout, stderr} = execSync('git rev-parse origin/master', true)
+      {stdout, stderr} = runSyncNoExit('git rev-parse origin/master')
       stdoutOrigin = stdout
-      {stdout, stderr} = execSync('git rev-parse master', true)
+      {stdout, stderr} = runSyncNoExit('git rev-parse master')
       stdoutMaster = stdout
       if stdoutOrigin == stdoutMaster
         console.log('running npm publish')
-        {stdout, stderr} = execSync('npm publish .', true)
+        {stdout, stderr} = runSyncNoExit('npm publish .')
         if fs.existsSync('npm-debug.log')
           console.error('`npm publish` failed. See npm-debug.log for details.')
         else
-          console.log('running pubDocsRaw()')
-          pubDocsRaw()
           console.log('running git tag')
           runSync("git tag v#{require('./package.json').version}")
-          runAsync("git push --tags")
+          runSync("git push --tags")
+
+          pubDocsRaw()
+
       else
         console.error('Origin and master out of sync. Not publishing.')
     else

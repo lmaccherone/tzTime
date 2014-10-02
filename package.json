@@ -1,6 +1,6 @@
 {
   "name": "tztime",
-  "version": "0.6.12",
+  "version": "0.7.0",
   "main": "./tzTime",
   "description": "Timezone transformations in the browser and node.js plus timezone precise timeline creation for charting",
   "keywords": [
@@ -29,16 +29,16 @@
     "JSON2": "~0.1.0"
   },
   "devDependencies": {
-    "jsduckify": "~0.2.2",
-    "coffee-script": "~1.6.3",
-    "coffeedoctest": "0.4.x",
-    "uglify-js": "2.2.x",
-    "nodeunit": "~0.7.4",
     "browserify": "1.16.x",
-    "wrench": "1.4.x",
+    "coffee-script": "^1.8.0",
+    "coffeedoctest": "^0.5.0",
+    "fileify-lm": "~0.3.1",
+    "jsduckify": "^0.3.0",
     "marked": "0.2.x",
-    "exec-sync": "~0.1.5",
-    "fileify-lm": "~0.3.1"
+    "nodeunit": "~0.7.4",
+    "runsync": "^0.1.8",
+    "uglify-js": "2.2.x",
+    "wrench": "1.4.x"
   },
   "scripts": {
     "test": "cake testall"
