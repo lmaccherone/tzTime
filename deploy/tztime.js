@@ -1,5 +1,5 @@
 /*
-tztime version: 0.7.0
+tztime version: 0.7.1
 */
 var require = function (file, cwd) {
     var resolved = require.resolve(file, cwd || '/');

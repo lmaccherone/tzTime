@@ -1,0 +1,116 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish', '.' ]
+2 info using npm@1.4.23
+3 info using node@v0.10.31
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/larry/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/larry/.npm/tztime/0.7.0/package.tgz', '.' ]
+11 verbose tarball /Users/larry/.npm/tztime/0.7.0/package.tgz
+12 verbose folder .
+13 info prepublish tztime@0.7.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/larry/.npm/1f1177db-tar.lock
+16 silly lockFile b96bb789-rry-npm-tztime-0-7-0-package-tgz tar:///Users/larry/.npm/tztime/0.7.0/package.tgz
+17 verbose lock tar:///Users/larry/.npm/tztime/0.7.0/package.tgz /Users/larry/.npm/b96bb789-rry-npm-tztime-0-7-0-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile b96bb789-rry-npm-tztime-0-7-0-package-tgz tar:///Users/larry/.npm/tztime/0.7.0/package.tgz
+21 silly lockFile b96bb789-rry-npm-tztime-0-7-0-package-tgz tar:///Users/larry/.npm/tztime/0.7.0/package.tgz
+22 silly lockFile a6f337a0-s-larry-npm-tztime-0-7-0-package /Users/larry/.npm/tztime/0.7.0/package
+23 verbose lock /Users/larry/.npm/tztime/0.7.0/package /Users/larry/.npm/a6f337a0-s-larry-npm-tztime-0-7-0-package.lock
+24 silly lockFile a6f337a0-s-larry-npm-tztime-0-7-0-package /Users/larry/.npm/tztime/0.7.0/package
+25 silly lockFile a6f337a0-s-larry-npm-tztime-0-7-0-package /Users/larry/.npm/tztime/0.7.0/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'tztime',
+28 silly publish   version: '0.7.0',
+28 silly publish   main: './tzTime',
+28 silly publish   description: 'Timezone transformations in the browser and node.js plus timezone precise timeline creation for charting',
+28 silly publish   keywords: [ 'charting', 'chart', 'date', 'time', 'timezone', 'tz' ],
+28 silly publish   author: { name: 'Larry Maccherone', url: 'http://maccherone.com' },
+28 silly publish   homepage: 'https://github.com/lmaccherone/tzTime',
+28 silly publish   engines: { node: '0.8.x' },
+28 silly publish   repository: { type: 'git', url: 'http://github.com/lmaccherone/tzTime.git' },
+28 silly publish   preferGlobal: false,
+28 silly publish   dependencies: { underscore: '~1.4.4', JSON2: '~0.1.0' },
+28 silly publish   devDependencies:
+28 silly publish    { browserify: '1.16.x',
+28 silly publish      'coffee-script': '~1.8.0',
+28 silly publish      coffeedoctest: '~0.5.0',
+28 silly publish      'fileify-lm': '~0.3.1',
+28 silly publish      jsduckify: '~0.3.0',
+28 silly publish      marked: '0.2.x',
+28 silly publish      nodeunit: '~0.7.4',
+28 silly publish      runsync: '~0.1.8',
+28 silly publish      'uglify-js': '2.2.x',
+28 silly publish      wrench: '1.4.x' },
+28 silly publish   scripts: { test: 'cake testall' },
+28 silly publish   licenses: [ { type: 'MIT', url: 'http://www.opensource.org/licenses/MIT' } ],
+28 silly publish   readme: '[![build status](https://travis-ci.org/lmaccherone/tzTime.png?branch=master)](http://travis-ci.org/lmaccherone/tzTime)\n# tzTime #\n\nCopyright (c) 2009-2013, Lawrence S. Maccherone, Jr.\n\n_Timezone transformations in the browser and node.js plus timezone precise timeline creation for charting._\n\n## Features ##\n\n* Transform into and out of any timezone using Olson timezone rules\n* Timezone rule files embedded in the minified browser package. No need to host them\n  seperately.\n* Create timezone precise time-series axis for charts\n\n  * Knockout weekends, holidays, non-workhours\n  * Work with timezone precision\n  * Work in any granularity\n\n    * Year, quarter, week, day, hour, etc.\n    * No more recording `2012-03-05T00:00:00.000Z` when you really just mean `2012-03-05`\n    * Create and use custom granularities: `R02I04-07` = Seventh day of fourth iteration in\n      second release\n\n* Tested - Over 450 tests\n* [Documented](http://lmaccherone.github.com/tzTime/docs/tztime-docs/index.html) - Robust\n  documentation\n* [DocTested](https://github.com/lmaccherone/coffeedoctest) - The examples will always match\n  the code because it fails automated testing when they don\'t\n\n## Credits ##\n\nAuthors:\n\n* [Larry Maccherone](http://maccherone.com)\n* Jennifer Maccherone\n\nUsed when running:\n\n* [timezoneJS](https://github.com/mde/timezone-js) - library for Olson\n  [tz file](http://www.twinsun.com/tz/tz-link.htm) parsing.  Although I haven\'t touched the\n  actual tz file parsing code, I have modified timezoneJS fairly significantly. The original \n  included a drop-in replacement for JavaScript\'s Date object which I have removed. I also \n  modified it to work on node.js and in the browser once "browserified" by bundling the tz \n  files.\n\nUsed when developing:\n\n* [Node.js](http://nodejs.org/)\n* [CoffeeScript](http://coffeescript.org/)\n* [coffeedoctest](https://github.com/lmaccherone/coffeedoctest) (by Larry Maccherone)\n* [nodeunit](https://github.com/caolan/nodeunit)\n* [browserify with fileify plugin (modified)](https://github.com/substack/node-browserify)\n* [uglify-js](https://github.com/mishoo/UglifyJS)\n* [wrench](https://github.com/ryanmcgrath/wrench-js)\n* [marked](https://github.com/chjj/marked)\n\n## Using from a browser ##\n\nIf you are using Lumenize, you don\'t need to do anything. The browser package for Lumenize includes tzTime. If you just\nwant to use tzTime without Lumenize, then you can either host it on your own site.\n\nThen:\n\n`var tzTime = require(\'./tzTime\');`\n`var timeline = new tzTime.Timeline({startOn:\'2012-01\', endBefore:\'2013-01\'});`\n    \n## Installation for node.js usage ##\n\nTo install, run the following from the root folder of your project:\n\n`npm install tzTime --save`\n\n## Installation for development ##\n\nThe documentation system uses jsduck so you\'ll need to install that like this:\n\n`[sudo] gem install jsduck`\n\n## Documentation and source code ##\n\n* [API Documentation](http://lmaccherone.github.com/tzTime/docs/tztime-docs/index.html)\n* [Source Repository](https://github.com/lmaccherone/tzTime)\n\n## Changelog ##\n\n* 0.7.0 - 2014-10-04 Updated dependencies, git gets only source, npm gets only .js\n* 0.6.12 - 2014-01-18 Updated to the latest coffee-script and jsduck\n* 0.6.11 - 2013-08-30 Stopped doing chdir in timezone.js because it was breaking other uses\n* 0.6.10 - 2013-04-24 Restoring timezone-js.js that was removed with .gitignore\n* 0.6.9 - 2013-04-24 Fixed side effect bug issue #2\n* 0.6.8 - 2013-04-24 Uses JSON2 for IE7 compatibility\n* 0.6.6 - 2013-02-14 Updated to latest version of jsduckify\n* 0.6.5 - 2012-02-09 Documention fixes\n* 0.6.4 - 2013-02-07 Timezone is safely ignored when sending in strings without \'Z\' at the \n  end. Also, made it an error to send in timeshifted string formats like \'...+01:00\'. \n* 0.6.3 - 2013-02-07 Made it an error to instantiate a Time object with an ISOString without a \n  timezone. Also, ignore timezone when sending a string without the ending \'Z\' or \'+01:00\'\n* 0.6.2 - 2013-02-03 Expose utils for Lumenize usage\n* 0.6.1 - 2013-02-03 Fix Travis-CI badge\n* 0.6.0 - 2013-02-02 Original version when first broken out from [Lumenize](http://lmaccherone.github.com/Lumenize)\n\n## MIT License ##\n\nCopyright (c) 2011, 2012, 2013 Lawrence S. Maccherone, Jr.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated \ndocumentation files (the "Software"), to deal in the Software without restriction, including without limitation \nthe rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and \nto permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED \nTO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL \nTHE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS \nIN THE SOFTWARE.\n\n\n\n\n\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: 'cd767c6a4fb21810830b68272cf5c5357c479b4f',
+28 silly publish   bugs: { url: 'https://github.com/lmaccherone/tzTime/issues' },
+28 silly publish   _id: 'tztime@0.7.0',
+28 silly publish   _shasum: 'a9ab53d61c47b98ff8a41528af48b2d841e34013',
+28 silly publish   _from: '.' }
+29 verbose request where is /tztime
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 01276b71fd0746eb
+32 verbose url raw /tztime
+33 verbose url resolving [ 'https://registry.npmjs.org/', './tztime' ]
+34 verbose url resolved https://registry.npmjs.org/tztime
+35 verbose request where is https://registry.npmjs.org/tztime
+36 info trying registry request attempt 1 at 14:17:38
+37 http PUT https://registry.npmjs.org/tztime
+38 http 403 https://registry.npmjs.org/tztime
+39 verbose headers { date: 'Thu, 02 Oct 2014 18:17:53 GMT',
+39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '9245',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'x-served-by': 'cache-iad2120-IAD',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1412273858.140163,VS0,VE14999',
+39 verbose headers   'keep-alive': 'timeout=10, max=50',
+39 verbose headers   connection: 'Keep-Alive' }
+40 error publish Failed PUT 403
+41 error Error: forbidden cannot modify pre-existing version: 0.7.0
+41 error old={"name":"tztime","version":"0.7.0","main":"./tzTime","description":"Timezone transformations in the browser and node.js plus timezone precise timeline creation for charting","keywords":["charting","chart","date","time","timezone","tz"],"author":{"name":"Larry Maccherone","url":"http://maccherone.com"},"homepage":"https://github.com/lmaccherone/tzTime","engines":{"node":"0.8.x"},"repository":{"type":"git","url":"http://github.com/lmaccherone/tzTime.git"},"preferGlobal":false,"dependencies":{"underscore":"~1.4.4","JSON2":"~0.1.0"},"devDependencies":{"browserify":"1.16.x","coffee-script":"^1.8.0","coffeedoctest":"^0.5.0","fileify-lm":"~0.3.1","jsduckify":"^0.3.0","marked":"0.2.x","nodeunit":"~0.7.4","runsync":"^0.1.8","uglify-js":"2.2.x","wrench":"1.4.x"},"scripts":{"test":"cake testall"},"licenses":[{"type":"MIT","url":"http://www.opensource.org/licenses/MIT"}],"gitHead":"e56b971bbbae172c15e7e82a305aa2e6a8d161ec","bugs":{"url":"https://github.com/lmaccherone/tzTime/issues"},"_id":"tztime@0.7.0","_shasum":"a08ed19297091c10a99e2c05a05ee7f84695f826","_from":".","_npmVersion":"1.4.23","_npmUser":{"name":"lmaccherone","email":"Larry@Maccherone.com"},"maintainers":[{"name":"lmaccherone","email":"Larry@Maccherone.com"}],"dist":{"shasum":"a08ed19297091c10a99e2c05a05ee7f84695f826","tarball":"http://registry.npmjs.org/tztime/-/tztime-0.7.0.tgz"}}
+41 error new={"name":"tztime","version":"0.7.0","main":"./tzTime","description":"Timezone transformations in the browser and node.js plus timezone precise timeline creation for charting","keywords":["charting","chart","date","time","timezone","tz"],"author":{"name":"Larry Maccherone","url":"http://maccherone.com"},"homepage":"https://github.com/lmaccherone/tzTime","engines":{"node":"0.8.x"},"repository":{"type":"git","url":"http://github.com/lmaccherone/tzTime.git"},"preferGlobal":false,"dependencies":{"underscore":"~1.4.4","JSON2":"~0.1.0"},"devDependencies":{"browserify":"1.16.x","coffee-script":"~1.8.0","coffeedoctest":"~0.5.0","fileify-lm":"~0.3.1","jsduckify":"~0.3.0","marked":"0.2.x","nodeunit":"~0.7.4","runsync":"~0.1.8","uglify-js":"2.2.x","wrench":"1.4.x"},"scripts":{"test":"cake testall"},"licenses":[{"type":"MIT","url":"http://www.opensource.org/licenses/MIT"}],"readme":"[![build status](https://travis-ci.org/lmaccherone/tzTime.png?branch=master)](http://travis-ci.org/lmaccherone/tzTime)\u000a# tzTime #\u000a\u000aCopyright (c) 2009-2013, Lawrence S. Maccherone, Jr.\u000a\u000a_Timezone transformations in the browser and node.js plus timezone precise timeline creation for charting._\u000a\u000a## Features ##\u000a\u000a* Transform into and out of any timezone using Olson timezone rules\u000a* Timezone rule files embedded in the minified browser package. No need to host them\u000a  seperately.\u000a* Create timezone precise time-series axis for charts\u000a\u000a  * Knockout weekends, holidays, non-workhours\u000a  * Work with timezone precision\u000a  * Work in any granularity\u000a\u000a    * Year, quarter, week, day, hour, etc.\u000a    * No more recording `2012-03-05T00:00:00.000Z` when you really just mean `2012-03-05`\u000a    * Create and use custom granularities: `R02I04-07` = Seventh day of fourth iteration in\u000a      second release\u000a\u000a* Tested - Over 450 tests\u000a* [Documented](http://lmaccherone.github.com/tzTime/docs/tztime-docs/index.html) - Robust\u000a  documentation\u000a* [DocTested](https://github.com/lmaccherone/coffeedoctest) - The examples will always match\u000a  the code because it fails automated testing when they don't\u000a\u000a## Credits ##\u000a\u000aAuthors:\u000a\u000a* [Larry Maccherone](http://maccherone.com)\u000a* Jennifer Maccherone\u000a\u000aUsed when running:\u000a\u000a* [timezoneJS](https://github.com/mde/timezone-js) - library for Olson\u000a  [tz file](http://www.twinsun.com/tz/tz-link.htm) parsing.  Although I haven't touched the\u000a  actual tz file parsing code, I have modified timezoneJS fairly significantly. The original \u000a  included a drop-in replacement for JavaScript's Date object which I have removed. I also \u000a  modified it to work on node.js and in the browser once \"browserified\" by bundling the tz \u000a  files.\u000a\u000aUsed when developing:\u000a\u000a* [Node.js](http://nodejs.org/)\u000a* [CoffeeScript](http://coffeescript.org/)\u000a* [coffeedoctest](https://github.com/lmaccherone/coffeedoctest) (by Larry Maccherone)\u000a* [nodeunit](https://github.com/caolan/nodeunit)\u000a* [browserify with fileify plugin (modified)](https://github.com/substack/node-browserify)\u000a* [uglify-js](https://github.com/mishoo/UglifyJS)\u000a* [wrench](https://github.com/ryanmcgrath/wrench-js)\u000a* [marked](https://github.com/chjj/marked)\u000a\u000a## Using from a browser ##\u000a\u000aIf you are using Lumenize, you don't need to do anything. The browser package for Lumenize includes tzTime. If you just\u000awant to use tzTime without Lumenize, then you can either host it on your own site.\u000a\u000aThen:\u000a\u000a`var tzTime = require('./tzTime');`\u000a`var timeline = new tzTime.Timeline({startOn:'2012-01', endBefore:'2013-01'});`\u000a    \u000a## Installation for node.js usage ##\u000a\u000aTo install, run the following from the root folder of your project:\u000a\u000a`npm install tzTime --save`\u000a\u000a## Installation for development ##\u000a\u000aThe documentation system uses jsduck so you'll need to install that like this:\u000a\u000a`[sudo] gem install jsduck`\u000a\u000a## Documentation and source code ##\u000a\u000a* [API Documentation](http://lmaccherone.github.com/tzTime/docs/tztime-docs/index.html)\u000a* [Source Repository](https://github.com/lmaccherone/tzTime)\u000a\u000a## Changelog ##\u000a\u000a* 0.7.0 - 2014-10-04 Updated dependencies, git gets only source, npm gets only .js\u000a* 0.6.12 - 2014-01-18 Updated to the latest coffee-script and jsduck\u000a* 0.6.11 - 2013-08-30 Stopped doing chdir in timezone.js because it was breaking other uses\u000a* 0.6.10 - 2013-04-24 Restoring timezone-js.js that was removed with .gitignore\u000a* 0.6.9 - 2013-04-24 Fixed side effect bug issue #2\u000a* 0.6.8 - 2013-04-24 Uses JSON2 for IE7 compatibility\u000a* 0.6.6 - 2013-02-14 Updated to latest version of jsduckify\u000a* 0.6.5 - 2012-02-09 Documention fixes\u000a* 0.6.4 - 2013-02-07 Timezone is safely ignored when sending in strings without 'Z' at the \u000a  end. Also, made it an error to send in timeshifted string formats like '...+01:00'. \u000a* 0.6.3 - 2013-02-07 Made it an error to instantiate a Time object with an ISOString without a \u000a  timezone. Also, ignore timezone when sending a string without the ending 'Z' or '+01:00'\u000a* 0.6.2 - 2013-02-03 Expose utils for Lumenize usage\u000a* 0.6.1 - 2013-02-03 Fix Travis-CI badge\u000a* 0.6.0 - 2013-02-02 Original version when first broken out from [Lumenize](http://lmaccherone.github.com/Lumenize)\u000a\u000a## MIT License ##\u000a\u000aCopyright (c) 2011, 2012, 2013 Lawrence S. Maccherone, Jr.\u000a\u000aPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated \u000adocumentation files (the \"Software\"), to deal in the Software without restriction, including without limitation \u000athe rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and \u000ato permit persons to whom the Software is furnished to do so, subject to the following conditions:\u000a\u000aThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\u000a\u000aTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED \u000aTO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL \u000aTHE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF \u000aCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS \u000aIN THE SOFTWARE.\u000a\u000a\u000a\u000a\u000a\u000a","readmeFilename":"README.md","gitHead":"cd767c6a4fb21810830b68272cf5c5357c479b4f","bugs":{"url":"https://github.com/lmaccherone/tzTime/issues"},"_id":"tztime@0.7.0","_shasum":"a9ab53d61c47b98ff8a41528af48b2d841e34013","_from":".","_npmVersion":"1.4.23","_npmUser":{"name":"lmaccherone","email":"Larry@Maccherone.com"},"maintainers":[{"name":"lmaccherone","email":"Larry@Maccherone.com"}],"dist":{"shasum":"a9ab53d61c47b98ff8a41528af48b2d841e34013","tarball":"http://registry.npmjs.org/tztime/-/tztime-0.7.0.tgz"}}: tztime
+41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:300:14)
+41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:238:65)
+41 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Darwin 13.4.0
+44 error command "node" "/usr/local/bin/npm" "publish" "."
+45 error cwd /Users/larry/Dropbox (Personal)/Projects/tzTime
+46 error node -v v0.10.31
+47 error npm -v 1.4.23
+48 verbose exit [ 1, true ]
