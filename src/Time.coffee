@@ -261,7 +261,7 @@ class Time
     segments: ['year', 'month', 'day', 'hour', 'minute', 'second', 'millisecond'],
     mask: '####-##-##T##:##:##.###',
     lowest: 0,
-    rolloverValue: () -> return 1000,
+    rolloverValue: () -> return 1000
   }
   @_granularitySpecs['second'] = {
     segments: ['year', 'month', 'day', 'hour', 'minute', 'second'], 
@@ -691,6 +691,7 @@ class Time
     return result
 
   @DOW_N_TO_S_MAP = {0: 'Sunday', 1: 'Monday', 2: 'Tuesday', 3: 'Wednesday', 4: 'Thursday', 5: 'Friday', 6: 'Saturday', 7: 'Sunday'}
+  @MONTH_TO_S_MAP = {1: 'January', 2: 'February', 3: 'March', 4: 'April', 5: 'May', 6: 'June', 7: 'July', 8: 'August', 9: 'September', 10: 'October', 11: 'November', 12: 'December'}
   @DOW_MONTH_TABLE = [0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4]
   dowNumber: () ->
     ###
@@ -724,6 +725,16 @@ class Time
         # Sunday
     ###
     return Time.DOW_N_TO_S_MAP[@dowNumber()]
+
+  monthString: () ->
+    ###
+    @method monthString
+    @return {String} Returns the month as a String (e.g. "January")
+
+        console.log(new Time('2012-01-01').monthString())
+        # January
+    ###
+    return Time.MONTH_TO_S_MAP[@month]
 
   rataDieNumber: () ->
     ###

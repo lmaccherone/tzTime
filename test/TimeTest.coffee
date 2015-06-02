@@ -471,4 +471,10 @@ exports.TimeTest =
     test.equal(t1.granularity, Time.MONTH)
 
     test.done()
+
+  testMonthString: (test) ->
+    t1 = new Time('2013-04')
+    test.equal(t1.monthString(), 'April')
+
+    test.done()
     

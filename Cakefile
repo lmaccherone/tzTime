@@ -1,3 +1,5 @@
+utils = require('./src/utils')
+
 fs = require('fs')
 path = require('path')
 {spawn, exec} = require('child_process')
@@ -146,30 +148,26 @@ task('build-and-docs', 'Build and docs combined for LiveReload.', () ->
   invoke('docs')
 )
 
-# task('prep-tz', 'NOT WORKING - Prepare the tz files found in vendor/tz for browserify/fileify and place in files/tz.', () ->
-#   files = [
-#     'africa',
-#     'antarctica',
-#     'asia',
-#     'australasia',
-#     'backward',
-#     'etcetera',
-#     'europe',
-#     'northamerica',
-#     'pacificnew',
-#     'southamerica',
-#   ]
-#   for f in files
-#     inputFile = 'vendor/tz/' + f
-#     outputFile = 'files2/tz/' + f + '.lzw'
-#     fs.readFile(inputFile, (err, contents) ->
-#       lzw.compress({
-#         input: contents,
-#         output: (output) ->
-#           fs.writeFile(outputFile, output)
-#       })
-#     ) 
-# )
+task('prep-tz', 'NOT WORKING - Prepare the tz files found in vendor/tz for browserify/fileify and place in files/tz.', () ->
+   files = [
+     'africa',
+     'antarctica',
+     'asia',
+     'australasia',
+     'backward',
+     'etcetera',
+     'europe',
+     'northamerica',
+     'pacificnew',
+     'southamerica',
+   ]
+   for f in files
+     inputFile = 'vendor/tz/' + f
+     outputFile = 'files/tz/' + f + '.lzw'
+     fileString = fs.readFileSync(inputFile, 'utf8')
+     output = utils.lzwEncode(fileString)
+     fs.writeFileSync(outputFile, output)
+ )
 
 task('test', 'Run the CoffeeScript test suite with nodeunit', () ->
   {reporters} = require('nodeunit')
