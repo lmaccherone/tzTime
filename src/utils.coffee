@@ -88,6 +88,13 @@ keys = Object.keys or (obj) ->
 values = (obj) ->
   return (val for key, val of obj)
 
+sortBy = (array, key) ->
+  array.sort((a, b) ->
+    x = a[key]
+    y = b[key]
+    return compare(x, y)
+  )
+
 log = (s) ->
   if document?.createElement?
     pre = document.createElement('pre')

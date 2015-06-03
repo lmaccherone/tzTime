@@ -83,6 +83,7 @@ The documentation system uses jsduck so you'll need to install that like this:
 
 ## Changelog ##
 
+* 0.9.1 - 2015-06-02 Added sortBy to utils to replace Lumenize's use of utils._.sortBy
 * 0.9.0 - 2015-06-02 Auto update the tz files on build. Removed dependency on JSON2 and underscore
 * 0.7.2 - 2014-10-02 More build fixes
 * 0.7.1 - 2014-10-02 TravisCI fiddly fix
