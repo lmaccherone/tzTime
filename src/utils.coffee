@@ -210,6 +210,7 @@ exports.type = type
 exports.clone = clone
 exports.keys = keys
 exports.values = values
+exports.sortBy = sortBy
 exports.compare = compare
 exports.lzwEncode = lzwEncode
 exports.lzwDecode = lzwDecode
