@@ -204,6 +204,5 @@ exports.clone = clone
 exports.keys = keys
 exports.values = values
 exports.compare = compare
-exports._ = require('underscore')
 exports.lzwEncode = lzwEncode
 exports.lzwDecode = lzwDecode

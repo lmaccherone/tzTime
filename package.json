@@ -24,10 +24,7 @@
     "url": "http://github.com/lmaccherone/tzTime.git"
   },
   "preferGlobal": false,
-  "dependencies": {
-    "underscore": "~1.4.4",
-    "JSON2": "~0.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "browserify": "1.16.x",
     "coffee-script": "~1.9.3",

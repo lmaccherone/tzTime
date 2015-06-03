@@ -165,8 +165,24 @@ task('prep-tz', 'NOT WORKING - Prepare the tz files found in vendor/tz for brows
      inputFile = 'vendor/tz/' + f
      outputFile = 'files/tz/' + f + '.lzw'
      fileString = fs.readFileSync(inputFile, 'utf8')
-     output = utils.lzwEncode(fileString)
-     fs.writeFileSync(outputFile, output)
+     # strip comment lines
+     lines = fileString.split('\n')
+     outputLines = []
+     for line in lines
+       commentLocation = line.indexOf('#')
+       if commentLocation > 0
+         line = line.substr(0, commentLocation)
+       while line.substr(line.length - 1) is ' '
+         console.log('trimming end')
+         line = line.substr(0, line.length - 1)
+       trimmedLine = line.trim()
+       if trimmedLine.length > 0 and not utils.startsWith(trimmedLine, '#')
+         outputLines.push(line)
+
+     console.log(f, lines.length, outputLines.length)
+     outputFileString = outputLines.join('\n')
+     output = utils.lzwEncode(outputFileString)
+     fs.writeFileSync(outputFile, output, 'utf8')
  )
 
 task('test', 'Run the CoffeeScript test suite with nodeunit', () ->

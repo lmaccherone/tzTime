@@ -394,4187 +394,35 @@ process.binding = function (name) {
 
 });
 
-require.define("/node_modules/files",function(require,module,exports,__dirname,__filename,process,global){module.exports = {"tz/africa":"Rule\tAlgeria\t1916\tonly\t-\tJun\t14\t23:00s\t1:00\tS\n"+
-"Rule\tAlgeria\t1916\t1919\t-\tOct\tSun>=1\t23:00s\t0\t-\n"+
-"Rule\tAlgeria\t1917\tonly\t-\tMar\t24\t23:00s\t1:00\tS\n"+
-"Rule\tAlgeria\t1918\tonly\t-\tMar\t 9\t23:00s\t1:00\tS\n"+
-"Rule\tAlgeria\t1919\tonly\t-\tMar\t 1\t23:00s\t1:00\tS\n"+
-"Rule\tAlgeria\t1920\tonly\t-\tFeb\t14\t23:00s\t1:00\tS\n"+
-"Rule\tAlgeria\t1920\tonly\t-\tOct\t23\t23:00s\t0\t-\n"+
-"Rule\tAlgeria\t1921\tonly\t-\tMar\t14\t23:00s\t1:00\tS\n"+
-"Rule\tAlgeria\t1921\tonly\t-\tJun\t21\t23:00s\t0\t-\n"+
-"Rule\tAlgeria\t1939\tonly\t-\tSep\t11\t23:00s\t1:00\tS\n"+
-"Rule\tAlgeria\t1939\tonly\t-\tNov\t19\t 1:00\t0\t-\n"+
-"Rule\tAlgeria\t1944\t1945\t-\tApr\tMon>=1\t 2:00\t1:00\tS\n"+
-"Rule\tAlgeria\t1944\tonly\t-\tOct\t 8\t 2:00\t0\t-\n"+
-"Rule\tAlgeria\t1945\tonly\t-\tSep\t16\t 1:00\t0\t-\n"+
-"Rule\tAlgeria\t1971\tonly\t-\tApr\t25\t23:00s\t1:00\tS\n"+
-"Rule\tAlgeria\t1971\tonly\t-\tSep\t26\t23:00s\t0\t-\n"+
-"Rule\tAlgeria\t1977\tonly\t-\tMay\t 6\t 0:00\t1:00\tS\n"+
-"Rule\tAlgeria\t1977\tonly\t-\tOct\t21\t 0:00\t0\t-\n"+
-"Rule\tAlgeria\t1978\tonly\t-\tMar\t24\t 1:00\t1:00\tS\n"+
-"Rule\tAlgeria\t1978\tonly\t-\tSep\t22\t 3:00\t0\t-\n"+
-"Rule\tAlgeria\t1980\tonly\t-\tApr\t25\t 0:00\t1:00\tS\n"+
-"Rule\tAlgeria\t1980\tonly\t-\tOct\t31\t 2:00\t0\t-\n"+
-"Zone\tAfrica/Algiers\t0:12:12 -\tLMT\t1891 Mar 15 0:01\n"+
-"\t\t\t0:09:21\t-\tPMT\t1911 Mar 11    # Paris Mean Time\n"+
-"\t\t\t0:00\tAlgeria\tWE%sT\t1940 Feb 25 2:00\n"+
-"\t\t\t1:00\tAlgeria\tCE%sT\t1946 Oct  7\n"+
-"\t\t\t0:00\t-\tWET\t1956 Jan 29\n"+
-"\t\t\t1:00\t-\tCET\t1963 Apr 14\n"+
-"\t\t\t0:00\tAlgeria\tWE%sT\t1977 Oct 21\n"+
-"\t\t\t1:00\tAlgeria\tCE%sT\t1979 Oct 26\n"+
-"\t\t\t0:00\tAlgeria\tWE%sT\t1981 May\n"+
-"\t\t\t1:00\t-\tCET\n"+
-"Zone\tAfrica/Luanda\t0:52:56\t-\tLMT\t1892\n"+
-"\t\t\t0:52:04\t-\tAOT\t1911 May 26 # Angola Time\n"+
-"\t\t\t1:00\t-\tWAT\n"+
-"Zone Africa/Porto-Novo\t0:10:28\t-\tLMT\t1912\n"+
-"\t\t\t0:00\t-\tGMT\t1934 Feb 26\n"+
-"\t\t\t1:00\t-\tWAT\n"+
-"Zone\tAfrica/Gaborone\t1:43:40 -\tLMT\t1885\n"+
-"\t\t\t2:00\t-\tCAT\t1943 Sep 19 2:00\n"+
-"\t\t\t2:00\t1:00\tCAST\t1944 Mar 19 2:00\n"+
-"\t\t\t2:00\t-\tCAT\n"+
-"Zone Africa/Ouagadougou\t-0:06:04 -\tLMT\t1912\n"+
-"\t\t\t 0:00\t-\tGMT\n"+
-"Zone Africa/Bujumbura\t1:57:28\t-\tLMT\t1890\n"+
-"\t\t\t2:00\t-\tCAT\n"+
-"Zone\tAfrica/Douala\t0:38:48\t-\tLMT\t1912\n"+
-"\t\t\t1:00\t-\tWAT\n"+
-"Zone Atlantic/Cape_Verde -1:34:04 -\tLMT\t1907\t\t\t# Praia\n"+
-"\t\t\t-2:00\t-\tCVT\t1942 Sep\n"+
-"\t\t\t-2:00\t1:00\tCVST\t1945 Oct 15\n"+
-"\t\t\t-2:00\t-\tCVT\t1975 Nov 25 2:00\n"+
-"\t\t\t-1:00\t-\tCVT\n"+
-"Zone\tAfrica/Bangui\t1:14:20\t-\tLMT\t1912\n"+
-"\t\t\t1:00\t-\tWAT\n"+
-"Zone\tAfrica/Ndjamena\t1:00:12 -\tLMT\t1912\n"+
-"\t\t\t1:00\t-\tWAT\t1979 Oct 14\n"+
-"\t\t\t1:00\t1:00\tWAST\t1980 Mar  8\n"+
-"\t\t\t1:00\t-\tWAT\n"+
-"Zone\tIndian/Comoro\t2:53:04 -\tLMT\t1911 Jul   # Moroni, Gran Comoro\n"+
-"\t\t\t3:00\t-\tEAT\n"+
-"Zone Africa/Kinshasa\t1:01:12 -\tLMT\t1897 Nov 9\n"+
-"\t\t\t1:00\t-\tWAT\n"+
-"Zone Africa/Lubumbashi\t1:49:52 -\tLMT\t1897 Nov 9\n"+
-"\t\t\t2:00\t-\tCAT\n"+
-"Zone Africa/Brazzaville\t1:01:08 -\tLMT\t1912\n"+
-"\t\t\t1:00\t-\tWAT\n"+
-"Zone\tAfrica/Abidjan\t-0:16:08 -\tLMT\t1912\n"+
-"\t\t\t 0:00\t-\tGMT\n"+
-"Zone\tAfrica/Djibouti\t2:52:36 -\tLMT\t1911 Jul\n"+
-"\t\t\t3:00\t-\tEAT\n"+
-"Rule\tEgypt\t1940\tonly\t-\tJul\t15\t0:00\t1:00\tS\n"+
-"Rule\tEgypt\t1940\tonly\t-\tOct\t 1\t0:00\t0\t-\n"+
-"Rule\tEgypt\t1941\tonly\t-\tApr\t15\t0:00\t1:00\tS\n"+
-"Rule\tEgypt\t1941\tonly\t-\tSep\t16\t0:00\t0\t-\n"+
-"Rule\tEgypt\t1942\t1944\t-\tApr\t 1\t0:00\t1:00\tS\n"+
-"Rule\tEgypt\t1942\tonly\t-\tOct\t27\t0:00\t0\t-\n"+
-"Rule\tEgypt\t1943\t1945\t-\tNov\t 1\t0:00\t0\t-\n"+
-"Rule\tEgypt\t1945\tonly\t-\tApr\t16\t0:00\t1:00\tS\n"+
-"Rule\tEgypt\t1957\tonly\t-\tMay\t10\t0:00\t1:00\tS\n"+
-"Rule\tEgypt\t1957\t1958\t-\tOct\t 1\t0:00\t0\t-\n"+
-"Rule\tEgypt\t1958\tonly\t-\tMay\t 1\t0:00\t1:00\tS\n"+
-"Rule\tEgypt\t1959\t1981\t-\tMay\t 1\t1:00\t1:00\tS\n"+
-"Rule\tEgypt\t1959\t1965\t-\tSep\t30\t3:00\t0\t-\n"+
-"Rule\tEgypt\t1966\t1994\t-\tOct\t 1\t3:00\t0\t-\n"+
-"Rule\tEgypt\t1982\tonly\t-\tJul\t25\t1:00\t1:00\tS\n"+
-"Rule\tEgypt\t1983\tonly\t-\tJul\t12\t1:00\t1:00\tS\n"+
-"Rule\tEgypt\t1984\t1988\t-\tMay\t 1\t1:00\t1:00\tS\n"+
-"Rule\tEgypt\t1989\tonly\t-\tMay\t 6\t1:00\t1:00\tS\n"+
-"Rule\tEgypt\t1990\t1994\t-\tMay\t 1\t1:00\t1:00\tS\n"+
-"Rule\tEgypt\t1995\t2010\t-\tApr\tlastFri\t 0:00s\t1:00\tS\n"+
-"Rule\tEgypt\t1995\t2005\t-\tSep\tlastThu\t23:00s\t0\t-\n"+
-"Rule\tEgypt\t2006\tonly\t-\tSep\t21\t23:00s\t0\t-\n"+
-"Rule\tEgypt\t2007\tonly\t-\tSep\tThu>=1\t23:00s\t0\t-\n"+
-"Rule\tEgypt\t2008\tonly\t-\tAug\tlastThu\t23:00s\t0\t-\n"+
-"Rule\tEgypt\t2009\tonly\t-\tAug\t20\t23:00s\t0\t-\n"+
-"Rule\tEgypt\t2010\tonly\t-\tAug\t11\t0:00\t0\t-\n"+
-"Rule\tEgypt\t2010\tonly\t-\tSep\t10\t0:00\t1:00\tS\n"+
-"Rule\tEgypt\t2010\tonly\t-\tSep\tlastThu\t23:00s\t0\t-\n"+
-"Zone\tAfrica/Cairo\t2:05:00 -\tLMT\t1900 Oct\n"+
-"\t\t\t2:00\tEgypt\tEE%sT\n"+
-"Zone\tAfrica/Malabo\t0:35:08 -\tLMT\t1912\n"+
-"\t\t\t0:00\t-\tGMT\t1963 Dec 15\n"+
-"\t\t\t1:00\t-\tWAT\n"+
-"Zone\tAfrica/Asmara\t2:35:32 -\tLMT\t1870\n"+
-"\t\t\t2:35:32\t-\tAMT\t1890\t      # Asmara Mean Time\n"+
-"\t\t\t2:35:20\t-\tADMT\t1936 May 5    # Adis Dera MT\n"+
-"\t\t\t3:00\t-\tEAT\n"+
-"Zone Africa/Addis_Ababa\t2:34:48 -\tLMT\t1870\n"+
-"\t\t\t2:35:20\t-\tADMT\t1936 May 5    # Adis Dera MT\n"+
-"\t\t\t3:00\t-\tEAT\n"+
-"Zone Africa/Libreville\t0:37:48 -\tLMT\t1912\n"+
-"\t\t\t1:00\t-\tWAT\n"+
-"Zone\tAfrica/Banjul\t-1:06:36 -\tLMT\t1912\n"+
-"\t\t\t-1:06:36 -\tBMT\t1935\t# Banjul Mean Time\n"+
-"\t\t\t-1:00\t-\tWAT\t1964\n"+
-"\t\t\t 0:00\t-\tGMT\n"+
-"Rule\tGhana\t1936\t1942\t-\tSep\t 1\t0:00\t0:20\tGHST\n"+
-"Rule\tGhana\t1936\t1942\t-\tDec\t31\t0:00\t0\tGMT\n"+
-"Zone\tAfrica/Accra\t-0:00:52 -\tLMT\t1918\n"+
-"\t\t\t 0:00\tGhana\t%s\n"+
-"Zone\tAfrica/Conakry\t-0:54:52 -\tLMT\t1912\n"+
-"\t\t\t 0:00\t-\tGMT\t1934 Feb 26\n"+
-"\t\t\t-1:00\t-\tWAT\t1960\n"+
-"\t\t\t 0:00\t-\tGMT\n"+
-"Zone\tAfrica/Bissau\t-1:02:20 -\tLMT\t1911 May 26\n"+
-"\t\t\t-1:00\t-\tWAT\t1975\n"+
-"\t\t\t 0:00\t-\tGMT\n"+
-"Zone\tAfrica/Nairobi\t2:27:16\t-\tLMT\t1928 Jul\n"+
-"\t\t\t3:00\t-\tEAT\t1930\n"+
-"\t\t\t2:30\t-\tBEAT\t1940\n"+
-"\t\t\t2:45\t-\tBEAUT\t1960\n"+
-"\t\t\t3:00\t-\tEAT\n"+
-"Zone\tAfrica/Maseru\t1:50:00 -\tLMT\t1903 Mar\n"+
-"\t\t\t2:00\t-\tSAST\t1943 Sep 19 2:00\n"+
-"\t\t\t2:00\t1:00\tSAST\t1944 Mar 19 2:00\n"+
-"\t\t\t2:00\t-\tSAST\n"+
-"Zone\tAfrica/Monrovia\t-0:43:08 -\tLMT\t1882\n"+
-"\t\t\t-0:43:08 -\tMMT\t1919 Mar # Monrovia Mean Time\n"+
-"\t\t\t-0:44:30 -\tLRT\t1972 May # Liberia Time\n"+
-"\t\t\t 0:00\t-\tGMT\n"+
-"Rule\tLibya\t1951\tonly\t-\tOct\t14\t2:00\t1:00\tS\n"+
-"Rule\tLibya\t1952\tonly\t-\tJan\t 1\t0:00\t0\t-\n"+
-"Rule\tLibya\t1953\tonly\t-\tOct\t 9\t2:00\t1:00\tS\n"+
-"Rule\tLibya\t1954\tonly\t-\tJan\t 1\t0:00\t0\t-\n"+
-"Rule\tLibya\t1955\tonly\t-\tSep\t30\t0:00\t1:00\tS\n"+
-"Rule\tLibya\t1956\tonly\t-\tJan\t 1\t0:00\t0\t-\n"+
-"Rule\tLibya\t1982\t1984\t-\tApr\t 1\t0:00\t1:00\tS\n"+
-"Rule\tLibya\t1982\t1985\t-\tOct\t 1\t0:00\t0\t-\n"+
-"Rule\tLibya\t1985\tonly\t-\tApr\t 6\t0:00\t1:00\tS\n"+
-"Rule\tLibya\t1986\tonly\t-\tApr\t 4\t0:00\t1:00\tS\n"+
-"Rule\tLibya\t1986\tonly\t-\tOct\t 3\t0:00\t0\t-\n"+
-"Rule\tLibya\t1987\t1989\t-\tApr\t 1\t0:00\t1:00\tS\n"+
-"Rule\tLibya\t1987\t1989\t-\tOct\t 1\t0:00\t0\t-\n"+
-"Zone\tAfrica/Tripoli\t0:52:44 -\tLMT\t1920\n"+
-"\t\t\t1:00\tLibya\tCE%sT\t1959\n"+
-"\t\t\t2:00\t-\tEET\t1982\n"+
-"\t\t\t1:00\tLibya\tCE%sT\t1990 May  4\n"+
-"\t\t\t2:00\t-\tEET\t1996 Sep 30\n"+
-"\t\t\t1:00\t-\tCET\t1997 Apr  4\n"+
-"\t\t\t1:00\t1:00\tCEST\t1997 Oct  4\n"+
-"\t\t\t2:00\t-\tEET\n"+
-"Zone Indian/Antananarivo 3:10:04 -\tLMT\t1911 Jul\n"+
-"\t\t\t3:00\t-\tEAT\t1954 Feb 27 23:00s\n"+
-"\t\t\t3:00\t1:00\tEAST\t1954 May 29 23:00s\n"+
-"\t\t\t3:00\t-\tEAT\n"+
-"Zone\tAfrica/Blantyre\t2:20:00 -\tLMT\t1903 Mar\n"+
-"\t\t\t2:00\t-\tCAT\n"+
-"Zone\tAfrica/Bamako\t-0:32:00 -\tLMT\t1912\n"+
-"\t\t\t 0:00\t-\tGMT\t1934 Feb 26\n"+
-"\t\t\t-1:00\t-\tWAT\t1960 Jun 20\n"+
-"\t\t\t 0:00\t-\tGMT\n"+
-"Zone Africa/Nouakchott\t-1:03:48 -\tLMT\t1912\n"+
-"\t\t\t 0:00\t-\tGMT\t1934 Feb 26\n"+
-"\t\t\t-1:00\t-\tWAT\t1960 Nov 28\n"+
-"\t\t\t 0:00\t-\tGMT\n"+
-"Rule Mauritius\t1982\tonly\t-\tOct\t10\t0:00\t1:00\tS\n"+
-"Rule Mauritius\t1983\tonly\t-\tMar\t21\t0:00\t0\t-\n"+
-"Rule Mauritius\t2008\tonly\t-\tOct\tlastSun\t2:00\t1:00\tS\n"+
-"Rule Mauritius\t2009\tonly\t-\tMar\tlastSun\t2:00\t0\t-\n"+
-"Zone Indian/Mauritius\t3:50:00 -\tLMT\t1907\t\t# Port Louis\n"+
-"\t\t\t4:00 Mauritius\tMU%sT\t# Mauritius Time\n"+
-"Zone\tIndian/Mayotte\t3:00:56 -\tLMT\t1911 Jul\t# Mamoutzou\n"+
-"\t\t\t3:00\t-\tEAT\n"+
-"Rule\tMorocco\t1939\tonly\t-\tSep\t12\t 0:00\t1:00\tS\n"+
-"Rule\tMorocco\t1939\tonly\t-\tNov\t19\t 0:00\t0\t-\n"+
-"Rule\tMorocco\t1940\tonly\t-\tFeb\t25\t 0:00\t1:00\tS\n"+
-"Rule\tMorocco\t1945\tonly\t-\tNov\t18\t 0:00\t0\t-\n"+
-"Rule\tMorocco\t1950\tonly\t-\tJun\t11\t 0:00\t1:00\tS\n"+
-"Rule\tMorocco\t1950\tonly\t-\tOct\t29\t 0:00\t0\t-\n"+
-"Rule\tMorocco\t1967\tonly\t-\tJun\t 3\t12:00\t1:00\tS\n"+
-"Rule\tMorocco\t1967\tonly\t-\tOct\t 1\t 0:00\t0\t-\n"+
-"Rule\tMorocco\t1974\tonly\t-\tJun\t24\t 0:00\t1:00\tS\n"+
-"Rule\tMorocco\t1974\tonly\t-\tSep\t 1\t 0:00\t0\t-\n"+
-"Rule\tMorocco\t1976\t1977\t-\tMay\t 1\t 0:00\t1:00\tS\n"+
-"Rule\tMorocco\t1976\tonly\t-\tAug\t 1\t 0:00\t0\t-\n"+
-"Rule\tMorocco\t1977\tonly\t-\tSep\t28\t 0:00\t0\t-\n"+
-"Rule\tMorocco\t1978\tonly\t-\tJun\t 1\t 0:00\t1:00\tS\n"+
-"Rule\tMorocco\t1978\tonly\t-\tAug\t 4\t 0:00\t0\t-\n"+
-"Rule\tMorocco\t2008\tonly\t-\tJun\t 1\t 0:00\t1:00\tS\n"+
-"Rule\tMorocco\t2008\tonly\t-\tSep\t 1\t 0:00\t0\t-\n"+
-"Rule\tMorocco\t2009\tonly\t-\tJun\t 1\t 0:00\t1:00\tS\n"+
-"Rule\tMorocco\t2009\tonly\t-\tAug\t 21\t 0:00\t0\t-\n"+
-"Rule\tMorocco\t2010\tonly\t-\tMay\t 2\t 0:00\t1:00\tS\n"+
-"Rule\tMorocco\t2010\tonly\t-\tAug\t 8\t 0:00\t0\t-\n"+
-"Rule\tMorocco\t2011\tonly\t-\tApr\t 3\t 0:00\t1:00\tS\n"+
-"Rule\tMorocco\t2011\tonly\t-\tJul\t 31\t 0\t0\t-\n"+
-"Zone Africa/Casablanca\t-0:30:20 -\tLMT\t1913 Oct 26\n"+
-"\t\t\t 0:00\tMorocco\tWE%sT\t1984 Mar 16\n"+
-"\t\t\t 1:00\t-\tCET\t1986\n"+
-"\t\t\t 0:00\tMorocco\tWE%sT\n"+
-"Zone Africa/El_Aaiun\t-0:52:48 -\tLMT\t1934 Jan\n"+
-"\t\t\t-1:00\t-\tWAT\t1976 Apr 14\n"+
-"\t\t\t 0:00\t-\tWET\n"+
-"Zone\tAfrica/Maputo\t2:10:20 -\tLMT\t1903 Mar\n"+
-"\t\t\t2:00\t-\tCAT\n"+
-"Rule\tNamibia\t1994\tmax\t-\tSep\tSun>=1\t2:00\t1:00\tS\n"+
-"Rule\tNamibia\t1995\tmax\t-\tApr\tSun>=1\t2:00\t0\t-\n"+
-"Zone\tAfrica/Windhoek\t1:08:24 -\tLMT\t1892 Feb 8\n"+
-"\t\t\t1:30\t-\tSWAT\t1903 Mar\t# SW Africa Time\n"+
-"\t\t\t2:00\t-\tSAST\t1942 Sep 20 2:00\n"+
-"\t\t\t2:00\t1:00\tSAST\t1943 Mar 21 2:00\n"+
-"\t\t\t2:00\t-\tSAST\t1990 Mar 21 # independence\n"+
-"\t\t\t2:00\t-\tCAT\t1994 Apr  3\n"+
-"\t\t\t1:00\tNamibia\tWA%sT\n"+
-"Zone\tAfrica/Niamey\t 0:08:28 -\tLMT\t1912\n"+
-"\t\t\t-1:00\t-\tWAT\t1934 Feb 26\n"+
-"\t\t\t 0:00\t-\tGMT\t1960\n"+
-"\t\t\t 1:00\t-\tWAT\n"+
-"Zone\tAfrica/Lagos\t0:13:36 -\tLMT\t1919 Sep\n"+
-"\t\t\t1:00\t-\tWAT\n"+
-"Zone\tIndian/Reunion\t3:41:52 -\tLMT\t1911 Jun\t# Saint-Denis\n"+
-"\t\t\t4:00\t-\tRET\t# Reunion Time\n"+
-"Zone\tAfrica/Kigali\t2:00:16 -\tLMT\t1935 Jun\n"+
-"\t\t\t2:00\t-\tCAT\n"+
-"Zone Atlantic/St_Helena\t-0:22:48 -\tLMT\t1890\t\t# Jamestown\n"+
-"\t\t\t-0:22:48 -\tJMT\t1951\t# Jamestown Mean Time\n"+
-"\t\t\t 0:00\t-\tGMT\n"+
-"Zone\tAfrica/Sao_Tome\t 0:26:56 -\tLMT\t1884\n"+
-"\t\t\t-0:36:32 -\tLMT\t1912\t# Lisbon Mean Time\n"+
-"\t\t\t 0:00\t-\tGMT\n"+
-"Zone\tAfrica/Dakar\t-1:09:44 -\tLMT\t1912\n"+
-"\t\t\t-1:00\t-\tWAT\t1941 Jun\n"+
-"\t\t\t 0:00\t-\tGMT\n"+
-"Zone\tIndian/Mahe\t3:41:48 -\tLMT\t1906 Jun\t# Victoria\n"+
-"\t\t\t4:00\t-\tSCT\t# Seychelles Time\n"+
-"Rule\tSL\t1935\t1942\t-\tJun\t 1\t0:00\t0:40\tSLST\n"+
-"Rule\tSL\t1935\t1942\t-\tOct\t 1\t0:00\t0\tWAT\n"+
-"Rule\tSL\t1957\t1962\t-\tJun\t 1\t0:00\t1:00\tSLST\n"+
-"Rule\tSL\t1957\t1962\t-\tSep\t 1\t0:00\t0\tGMT\n"+
-"Zone\tAfrica/Freetown\t-0:53:00 -\tLMT\t1882\n"+
-"\t\t\t-0:53:00 -\tFMT\t1913 Jun # Freetown Mean Time\n"+
-"\t\t\t-1:00\tSL\t%s\t1957\n"+
-"\t\t\t 0:00\tSL\t%s\n"+
-"Zone Africa/Mogadishu\t3:01:28 -\tLMT\t1893 Nov\n"+
-"\t\t\t3:00\t-\tEAT\t1931\n"+
-"\t\t\t2:30\t-\tBEAT\t1957\n"+
-"\t\t\t3:00\t-\tEAT\n"+
-"Rule\tSA\t1942\t1943\t-\tSep\tSun>=15\t2:00\t1:00\t-\n"+
-"Rule\tSA\t1943\t1944\t-\tMar\tSun>=15\t2:00\t0\t-\n"+
-"Zone Africa/Johannesburg 1:52:00 -\tLMT\t1892 Feb 8\n"+
-"\t\t\t1:30\t-\tSAST\t1903 Mar\n"+
-"\t\t\t2:00\tSA\tSAST\n"+
-"Rule\tSudan\t1970\tonly\t-\tMay\t 1\t0:00\t1:00\tS\n"+
-"Rule\tSudan\t1970\t1985\t-\tOct\t15\t0:00\t0\t-\n"+
-"Rule\tSudan\t1971\tonly\t-\tApr\t30\t0:00\t1:00\tS\n"+
-"Rule\tSudan\t1972\t1985\t-\tApr\tlastSun\t0:00\t1:00\tS\n"+
-"Zone\tAfrica/Khartoum\t2:10:08 -\tLMT\t1931\n"+
-"\t\t\t2:00\tSudan\tCA%sT\t2000 Jan 15 12:00\n"+
-"\t\t\t3:00\t-\tEAT\n"+
-"Zone\tAfrica/Juba\t2:06:24 -\tLMT\t1931\n"+
-"\t\t\t2:00\tSudan\tCA%sT\t2000 Jan 15 12:00\n"+
-"\t\t\t3:00\t-\tEAT\n"+
-"Zone\tAfrica/Mbabane\t2:04:24 -\tLMT\t1903 Mar\n"+
-"\t\t\t2:00\t-\tSAST\n"+
-"Zone Africa/Dar_es_Salaam 2:37:08 -\tLMT\t1931\n"+
-"\t\t\t3:00\t-\tEAT\t1948\n"+
-"\t\t\t2:45\t-\tBEAUT\t1961\n"+
-"\t\t\t3:00\t-\tEAT\n"+
-"Zone\tAfrica/Lome\t0:04:52 -\tLMT\t1893\n"+
-"\t\t\t0:00\t-\tGMT\n"+
-"Rule\tTunisia\t1939\tonly\t-\tApr\t15\t23:00s\t1:00\tS\n"+
-"Rule\tTunisia\t1939\tonly\t-\tNov\t18\t23:00s\t0\t-\n"+
-"Rule\tTunisia\t1940\tonly\t-\tFeb\t25\t23:00s\t1:00\tS\n"+
-"Rule\tTunisia\t1941\tonly\t-\tOct\t 6\t 0:00\t0\t-\n"+
-"Rule\tTunisia\t1942\tonly\t-\tMar\t 9\t 0:00\t1:00\tS\n"+
-"Rule\tTunisia\t1942\tonly\t-\tNov\t 2\t 3:00\t0\t-\n"+
-"Rule\tTunisia\t1943\tonly\t-\tMar\t29\t 2:00\t1:00\tS\n"+
-"Rule\tTunisia\t1943\tonly\t-\tApr\t17\t 2:00\t0\t-\n"+
-"Rule\tTunisia\t1943\tonly\t-\tApr\t25\t 2:00\t1:00\tS\n"+
-"Rule\tTunisia\t1943\tonly\t-\tOct\t 4\t 2:00\t0\t-\n"+
-"Rule\tTunisia\t1944\t1945\t-\tApr\tMon>=1\t 2:00\t1:00\tS\n"+
-"Rule\tTunisia\t1944\tonly\t-\tOct\t 8\t 0:00\t0\t-\n"+
-"Rule\tTunisia\t1945\tonly\t-\tSep\t16\t 0:00\t0\t-\n"+
-"Rule\tTunisia\t1977\tonly\t-\tApr\t30\t 0:00s\t1:00\tS\n"+
-"Rule\tTunisia\t1977\tonly\t-\tSep\t24\t 0:00s\t0\t-\n"+
-"Rule\tTunisia\t1978\tonly\t-\tMay\t 1\t 0:00s\t1:00\tS\n"+
-"Rule\tTunisia\t1978\tonly\t-\tOct\t 1\t 0:00s\t0\t-\n"+
-"Rule\tTunisia\t1988\tonly\t-\tJun\t 1\t 0:00s\t1:00\tS\n"+
-"Rule\tTunisia\t1988\t1990\t-\tSep\tlastSun\t 0:00s\t0\t-\n"+
-"Rule\tTunisia\t1989\tonly\t-\tMar\t26\t 0:00s\t1:00\tS\n"+
-"Rule\tTunisia\t1990\tonly\t-\tMay\t 1\t 0:00s\t1:00\tS\n"+
-"Rule\tTunisia\t2005\tonly\t-\tMay\t 1\t 0:00s\t1:00\tS\n"+
-"Rule\tTunisia\t2005\tonly\t-\tSep\t30\t 1:00s\t0\t-\n"+
-"Rule\tTunisia\t2006\t2008\t-\tMar\tlastSun\t 2:00s\t1:00\tS\n"+
-"Rule\tTunisia\t2006\t2008\t-\tOct\tlastSun\t 2:00s\t0\t-\n"+
-"Zone\tAfrica/Tunis\t0:40:44 -\tLMT\t1881 May 12\n"+
-"\t\t\t0:09:21\t-\tPMT\t1911 Mar 11    # Paris Mean Time\n"+
-"\t\t\t1:00\tTunisia\tCE%sT\n"+
-"Zone\tAfrica/Kampala\t2:09:40 -\tLMT\t1928 Jul\n"+
-"\t\t\t3:00\t-\tEAT\t1930\n"+
-"\t\t\t2:30\t-\tBEAT\t1948\n"+
-"\t\t\t2:45\t-\tBEAUT\t1957\n"+
-"\t\t\t3:00\t-\tEAT\n"+
-"Zone\tAfrica/Lusaka\t1:53:08 -\tLMT\t1903 Mar\n"+
-"\t\t\t2:00\t-\tCAT\n"+
-"Zone\tAfrica/Harare\t2:04:12 -\tLMT\t1903 Mar\n"+
-"\t\t\t2:00\t-\tCAT\n"+
-"","tz/antarctica":"Rule\tArgAQ\t1964\t1966\t-\tMar\t 1\t0:00\t0\t-\n"+
-"Rule\tArgAQ\t1964\t1966\t-\tOct\t15\t0:00\t1:00\tS\n"+
-"Rule\tArgAQ\t1967\tonly\t-\tApr\t 2\t0:00\t0\t-\n"+
-"Rule\tArgAQ\t1967\t1968\t-\tOct\tSun>=1\t0:00\t1:00\tS\n"+
-"Rule\tArgAQ\t1968\t1969\t-\tApr\tSun>=1\t0:00\t0\t-\n"+
-"Rule\tArgAQ\t1974\tonly\t-\tJan\t23\t0:00\t1:00\tS\n"+
-"Rule\tArgAQ\t1974\tonly\t-\tMay\t 1\t0:00\t0\t-\n"+
-"Rule\tChileAQ\t1972\t1986\t-\tMar\tSun>=9\t3:00u\t0\t-\n"+
-"Rule\tChileAQ\t1974\t1987\t-\tOct\tSun>=9\t4:00u\t1:00\tS\n"+
-"Rule\tChileAQ\t1987\tonly\t-\tApr\t12\t3:00u\t0\t-\n"+
-"Rule\tChileAQ\t1988\t1989\t-\tMar\tSun>=9\t3:00u\t0\t-\n"+
-"Rule\tChileAQ\t1988\tonly\t-\tOct\tSun>=1\t4:00u\t1:00\tS\n"+
-"Rule\tChileAQ\t1989\tonly\t-\tOct\tSun>=9\t4:00u\t1:00\tS\n"+
-"Rule\tChileAQ\t1990\tonly\t-\tMar\t18\t3:00u\t0\t-\n"+
-"Rule\tChileAQ\t1990\tonly\t-\tSep\t16\t4:00u\t1:00\tS\n"+
-"Rule\tChileAQ\t1991\t1996\t-\tMar\tSun>=9\t3:00u\t0\t-\n"+
-"Rule\tChileAQ\t1991\t1997\t-\tOct\tSun>=9\t4:00u\t1:00\tS\n"+
-"Rule\tChileAQ\t1997\tonly\t-\tMar\t30\t3:00u\t0\t-\n"+
-"Rule\tChileAQ\t1998\tonly\t-\tMar\tSun>=9\t3:00u\t0\t-\n"+
-"Rule\tChileAQ\t1998\tonly\t-\tSep\t27\t4:00u\t1:00\tS\n"+
-"Rule\tChileAQ\t1999\tonly\t-\tApr\t 4\t3:00u\t0\t-\n"+
-"Rule\tChileAQ\t1999\tmax\t-\tOct\tSun>=9\t4:00u\t1:00\tS\n"+
-"Rule\tChileAQ\t2000\tmax\t-\tMar\tSun>=9\t3:00u\t0\t-\n"+
-"Rule\tAusAQ\t1917\tonly\t-\tJan\t 1\t0:01\t1:00\t-\n"+
-"Rule\tAusAQ\t1917\tonly\t-\tMar\t25\t2:00\t0\t-\n"+
-"Rule\tAusAQ\t1942\tonly\t-\tJan\t 1\t2:00\t1:00\t-\n"+
-"Rule\tAusAQ\t1942\tonly\t-\tMar\t29\t2:00\t0\t-\n"+
-"Rule\tAusAQ\t1942\tonly\t-\tSep\t27\t2:00\t1:00\t-\n"+
-"Rule\tAusAQ\t1943\t1944\t-\tMar\tlastSun\t2:00\t0\t-\n"+
-"Rule\tAusAQ\t1943\tonly\t-\tOct\t 3\t2:00\t1:00\t-\n"+
-"Rule\tATAQ\t1967\tonly\t-\tOct\tSun>=1\t2:00s\t1:00\t-\n"+
-"Rule\tATAQ\t1968\tonly\t-\tMar\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tATAQ\t1968\t1985\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tATAQ\t1969\t1971\t-\tMar\tSun>=8\t2:00s\t0\t-\n"+
-"Rule\tATAQ\t1972\tonly\t-\tFeb\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tATAQ\t1973\t1981\t-\tMar\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tATAQ\t1982\t1983\t-\tMar\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tATAQ\t1984\t1986\t-\tMar\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tATAQ\t1986\tonly\t-\tOct\tSun>=15\t2:00s\t1:00\t-\n"+
-"Rule\tATAQ\t1987\t1990\t-\tMar\tSun>=15\t2:00s\t0\t-\n"+
-"Rule\tATAQ\t1987\tonly\t-\tOct\tSun>=22\t2:00s\t1:00\t-\n"+
-"Rule\tATAQ\t1988\t1990\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tATAQ\t1991\t1999\t-\tOct\tSun>=1\t2:00s\t1:00\t-\n"+
-"Rule\tATAQ\t1991\t2005\t-\tMar\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tATAQ\t2000\tonly\t-\tAug\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tATAQ\t2001\tmax\t-\tOct\tSun>=1\t2:00s\t1:00\t-\n"+
-"Rule\tATAQ\t2006\tonly\t-\tApr\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tATAQ\t2007\tonly\t-\tMar\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tATAQ\t2008\tmax\t-\tApr\tSun>=1\t2:00s\t0\t-\n"+
-"Zone Antarctica/Casey\t0\t-\tzzz\t1969\n"+
-"\t\t\t8:00\t-\tWST\t2009 Oct 18 2:00\n"+
-"\t\t\t\t\t\t# Western (Aus) Standard Time\n"+
-"\t\t\t11:00\t-\tCAST\t2010 Mar 5 2:00\n"+
-"\t\t\t\t\t\t# Casey Time\n"+
-"\t\t\t8:00\t-\tWST\n"+
-"Zone Antarctica/Davis\t0\t-\tzzz\t1957 Jan 13\n"+
-"\t\t\t7:00\t-\tDAVT\t1964 Nov # Davis Time\n"+
-"\t\t\t0\t-\tzzz\t1969 Feb\n"+
-"\t\t\t7:00\t-\tDAVT\t2009 Oct 18 2:00\n"+
-"\t\t\t5:00\t-\tDAVT\t2010 Mar 10 20:00u\n"+
-"\t\t\t7:00\t-\tDAVT\n"+
-"Zone Antarctica/Mawson\t0\t-\tzzz\t1954 Feb 13\n"+
-"\t\t\t6:00\t-\tMAWT\t2009 Oct 18 2:00\n"+
-"\t\t\t\t\t\t# Mawson Time\n"+
-"\t\t\t5:00\t-\tMAWT\n"+
-"Zone Antarctica/Macquarie 0\t-\tzzz\t1911\n"+
-"\t\t\t10:00\t-\tEST\t1916 Oct 1 2:00\n"+
-"\t\t\t10:00\t1:00\tEST\t1917 Feb\n"+
-"\t\t\t10:00\tAusAQ\tEST\t1967\n"+
-"\t\t\t10:00\tATAQ\tEST\t2010 Apr 4 3:00\n"+
-"\t\t\t11:00\t-\tMIST\t# Macquarie Island Time\n"+
-"Zone Indian/Kerguelen\t0\t-\tzzz\t1950\t# Port-aux-Francais\n"+
-"\t\t\t5:00\t-\tTFT\t# ISO code TF Time\n"+
-"Zone Antarctica/DumontDUrville 0 -\tzzz\t1947\n"+
-"\t\t\t10:00\t-\tPMT\t1952 Jan 14 # Port-Martin Time\n"+
-"\t\t\t0\t-\tzzz\t1956 Nov\n"+
-"\t\t\t10:00\t-\tDDUT\t# Dumont-d'Urville Time\n"+
-"Zone Antarctica/Syowa\t0\t-\tzzz\t1957 Jan 29\n"+
-"\t\t\t3:00\t-\tSYOT\t# Syowa Time\n"+
-"Rule\tNZAQ\t1974\tonly\t-\tNov\t 3\t2:00s\t1:00\tD\n"+
-"Rule\tNZAQ\t1975\t1988\t-\tOct\tlastSun\t2:00s\t1:00\tD\n"+
-"Rule\tNZAQ\t1989\tonly\t-\tOct\t 8\t2:00s\t1:00\tD\n"+
-"Rule\tNZAQ\t1990\t2006\t-\tOct\tSun>=1\t2:00s\t1:00\tD\n"+
-"Rule\tNZAQ\t1975\tonly\t-\tFeb\t23\t2:00s\t0\tS\n"+
-"Rule\tNZAQ\t1976\t1989\t-\tMar\tSun>=1\t2:00s\t0\tS\n"+
-"Rule\tNZAQ\t1990\t2007\t-\tMar\tSun>=15\t2:00s\t0\tS\n"+
-"Rule\tNZAQ\t2007\tmax\t-\tSep\tlastSun\t2:00s\t1:00\tD\n"+
-"Rule\tNZAQ\t2008\tmax\t-\tApr\tSun>=1\t2:00s\t0\tS\n"+
-"Zone Antarctica/Vostok\t0\t-\tzzz\t1957 Dec 16\n"+
-"\t\t\t6:00\t-\tVOST\t# Vostok time\n"+
-"Zone Antarctica/Rothera\t0\t-\tzzz\t1976 Dec  1\n"+
-"\t\t\t-3:00\t-\tROTT\t# Rothera time\n"+
-"Zone Antarctica/Palmer\t0\t-\tzzz\t1965\n"+
-"\t\t\t-4:00\tArgAQ\tAR%sT\t1969 Oct 5\n"+
-"\t\t\t-3:00\tArgAQ\tAR%sT\t1982 May\n"+
-"\t\t\t-4:00\tChileAQ\tCL%sT\n"+
-"Zone Antarctica/McMurdo\t0\t-\tzzz\t1956\n"+
-"\t\t\t12:00\tNZAQ\tNZ%sT\n"+
-"Link\tAntarctica/McMurdo\tAntarctica/South_Pole\n"+
-"","tz/asia":"Rule\tEUAsia\t1981\tmax\t-\tMar\tlastSun\t 1:00u\t1:00\tS\n"+
-"Rule\tEUAsia\t1979\t1995\t-\tSep\tlastSun\t 1:00u\t0\t-\n"+
-"Rule\tEUAsia\t1996\tmax\t-\tOct\tlastSun\t 1:00u\t0\t-\n"+
-"Rule E-EurAsia\t1981\tmax\t-\tMar\tlastSun\t 0:00\t1:00\tS\n"+
-"Rule E-EurAsia\t1979\t1995\t-\tSep\tlastSun\t 0:00\t0\t-\n"+
-"Rule E-EurAsia\t1996\tmax\t-\tOct\tlastSun\t 0:00\t0\t-\n"+
-"Rule RussiaAsia\t1981\t1984\t-\tApr\t1\t 0:00\t1:00\tS\n"+
-"Rule RussiaAsia\t1981\t1983\t-\tOct\t1\t 0:00\t0\t-\n"+
-"Rule RussiaAsia\t1984\t1991\t-\tSep\tlastSun\t 2:00s\t0\t-\n"+
-"Rule RussiaAsia\t1985\t1991\t-\tMar\tlastSun\t 2:00s\t1:00\tS\n"+
-"Rule RussiaAsia\t1992\tonly\t-\tMar\tlastSat\t23:00\t1:00\tS\n"+
-"Rule RussiaAsia\t1992\tonly\t-\tSep\tlastSat\t23:00\t0\t-\n"+
-"Rule RussiaAsia\t1993\tmax\t-\tMar\tlastSun\t 2:00s\t1:00\tS\n"+
-"Rule RussiaAsia\t1993\t1995\t-\tSep\tlastSun\t 2:00s\t0\t-\n"+
-"Rule RussiaAsia\t1996\tmax\t-\tOct\tlastSun\t 2:00s\t0\t-\n"+
-"Zone\tAsia/Kabul\t4:36:48 -\tLMT\t1890\n"+
-"\t\t\t4:00\t-\tAFT\t1945\n"+
-"\t\t\t4:30\t-\tAFT\n"+
-"Zone\tAsia/Yerevan\t2:58:00 -\tLMT\t1924 May  2\n"+
-"\t\t\t3:00\t-\tYERT\t1957 Mar    # Yerevan Time\n"+
-"\t\t\t4:00 RussiaAsia YER%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t3:00\t1:00\tYERST\t1991 Sep 23 # independence\n"+
-"\t\t\t3:00 RussiaAsia\tAM%sT\t1995 Sep 24 2:00s\n"+
-"\t\t\t4:00\t-\tAMT\t1997\n"+
-"\t\t\t4:00 RussiaAsia\tAM%sT\n"+
-"Rule\tAzer\t1997\tmax\t-\tMar\tlastSun\t 4:00\t1:00\tS\n"+
-"Rule\tAzer\t1997\tmax\t-\tOct\tlastSun\t 5:00\t0\t-\n"+
-"Zone\tAsia/Baku\t3:19:24 -\tLMT\t1924 May  2\n"+
-"\t\t\t3:00\t-\tBAKT\t1957 Mar    # Baku Time\n"+
-"\t\t\t4:00 RussiaAsia BAK%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t3:00\t1:00\tBAKST\t1991 Aug 30 # independence\n"+
-"\t\t\t3:00 RussiaAsia\tAZ%sT\t1992 Sep lastSat 23:00\n"+
-"\t\t\t4:00\t-\tAZT\t1996 # Azerbaijan time\n"+
-"\t\t\t4:00\tEUAsia\tAZ%sT\t1997\n"+
-"\t\t\t4:00\tAzer\tAZ%sT\n"+
-"Zone\tAsia/Bahrain\t3:22:20 -\tLMT\t1920\t\t# Al Manamah\n"+
-"\t\t\t4:00\t-\tGST\t1972 Jun\n"+
-"\t\t\t3:00\t-\tAST\n"+
-"Rule\tDhaka\t2009\tonly\t-\tJun\t19\t23:00\t1:00\tS\n"+
-"Rule\tDhaka\t2009\tonly\t-\tDec\t31\t23:59\t0\t-\n"+
-"Zone\tAsia/Dhaka\t6:01:40 -\tLMT\t1890\n"+
-"\t\t\t5:53:20\t-\tHMT\t1941 Oct    # Howrah Mean Time?\n"+
-"\t\t\t6:30\t-\tBURT\t1942 May 15 # Burma Time\n"+
-"\t\t\t5:30\t-\tIST\t1942 Sep\n"+
-"\t\t\t6:30\t-\tBURT\t1951 Sep 30\n"+
-"\t\t\t6:00\t-\tDACT\t1971 Mar 26 # Dacca Time\n"+
-"\t\t\t6:00\t-\tBDT\t2009\n"+
-"\t\t\t6:00\tDhaka\tBD%sT\n"+
-"Zone\tAsia/Thimphu\t5:58:36 -\tLMT\t1947 Aug 15 # or Thimbu\n"+
-"\t\t\t5:30\t-\tIST\t1987 Oct\n"+
-"\t\t\t6:00\t-\tBTT\t# Bhutan Time\n"+
-"Zone\tIndian/Chagos\t4:49:40\t-\tLMT\t1907\n"+
-"\t\t\t5:00\t-\tIOT\t1996 # BIOT Time\n"+
-"\t\t\t6:00\t-\tIOT\n"+
-"Zone\tAsia/Brunei\t7:39:40 -\tLMT\t1926 Mar   # Bandar Seri Begawan\n"+
-"\t\t\t7:30\t-\tBNT\t1933\n"+
-"\t\t\t8:00\t-\tBNT\n"+
-"Zone\tAsia/Rangoon\t6:24:40 -\tLMT\t1880\t\t# or Yangon\n"+
-"\t\t\t6:24:36\t-\tRMT\t1920\t   # Rangoon Mean Time?\n"+
-"\t\t\t6:30\t-\tBURT\t1942 May   # Burma Time\n"+
-"\t\t\t9:00\t-\tJST\t1945 May 3\n"+
-"\t\t\t6:30\t-\tMMT\t\t   # Myanmar Time\n"+
-"Zone\tAsia/Phnom_Penh\t6:59:40 -\tLMT\t1906 Jun  9\n"+
-"\t\t\t7:06:20\t-\tSMT\t1911 Mar 11 0:01 # Saigon MT?\n"+
-"\t\t\t7:00\t-\tICT\t1912 May\n"+
-"\t\t\t8:00\t-\tICT\t1931 May\n"+
-"\t\t\t7:00\t-\tICT\n"+
-"Rule\tShang\t1940\tonly\t-\tJun\t 3\t0:00\t1:00\tD\n"+
-"Rule\tShang\t1940\t1941\t-\tOct\t 1\t0:00\t0\tS\n"+
-"Rule\tShang\t1941\tonly\t-\tMar\t16\t0:00\t1:00\tD\n"+
-"Rule\tPRC\t1986\tonly\t-\tMay\t 4\t0:00\t1:00\tD\n"+
-"Rule\tPRC\t1986\t1991\t-\tSep\tSun>=11\t0:00\t0\tS\n"+
-"Rule\tPRC\t1987\t1991\t-\tApr\tSun>=10\t0:00\t1:00\tD\n"+
-"Zone\tAsia/Harbin\t8:26:44\t-\tLMT\t1928 # or Haerbin\n"+
-"\t\t\t8:30\t-\tCHAT\t1932 Mar # Changbai Time\n"+
-"\t\t\t8:00\t-\tCST\t1940\n"+
-"\t\t\t9:00\t-\tCHAT\t1966 May\n"+
-"\t\t\t8:30\t-\tCHAT\t1980 May\n"+
-"\t\t\t8:00\tPRC\tC%sT\n"+
-"Zone\tAsia/Shanghai\t8:05:52\t-\tLMT\t1928\n"+
-"\t\t\t8:00\tShang\tC%sT\t1949\n"+
-"\t\t\t8:00\tPRC\tC%sT\n"+
-"Zone\tAsia/Chongqing\t7:06:20\t-\tLMT\t1928 # or Chungking\n"+
-"\t\t\t7:00\t-\tLONT\t1980 May # Long-shu Time\n"+
-"\t\t\t8:00\tPRC\tC%sT\n"+
-"Zone\tAsia/Urumqi\t5:50:20\t-\tLMT\t1928 # or Urumchi\n"+
-"\t\t\t6:00\t-\tURUT\t1980 May # Urumqi Time\n"+
-"\t\t\t8:00\tPRC\tC%sT\n"+
-"Zone\tAsia/Kashgar\t5:03:56\t-\tLMT\t1928 # or Kashi or Kaxgar\n"+
-"\t\t\t5:30\t-\tKAST\t1940\t # Kashgar Time\n"+
-"\t\t\t5:00\t-\tKAST\t1980 May\n"+
-"\t\t\t8:00\tPRC\tC%sT\n"+
-"Rule\tHK\t1941\tonly\t-\tApr\t1\t3:30\t1:00\tS\n"+
-"Rule\tHK\t1941\tonly\t-\tSep\t30\t3:30\t0\t-\n"+
-"Rule\tHK\t1946\tonly\t-\tApr\t20\t3:30\t1:00\tS\n"+
-"Rule\tHK\t1946\tonly\t-\tDec\t1\t3:30\t0\t-\n"+
-"Rule\tHK\t1947\tonly\t-\tApr\t13\t3:30\t1:00\tS\n"+
-"Rule\tHK\t1947\tonly\t-\tDec\t30\t3:30\t0\t-\n"+
-"Rule\tHK\t1948\tonly\t-\tMay\t2\t3:30\t1:00\tS\n"+
-"Rule\tHK\t1948\t1951\t-\tOct\tlastSun\t3:30\t0\t-\n"+
-"Rule\tHK\t1952\tonly\t-\tOct\t25\t3:30\t0\t-\n"+
-"Rule\tHK\t1949\t1953\t-\tApr\tSun>=1\t3:30\t1:00\tS\n"+
-"Rule\tHK\t1953\tonly\t-\tNov\t1\t3:30\t0\t-\n"+
-"Rule\tHK\t1954\t1964\t-\tMar\tSun>=18\t3:30\t1:00\tS\n"+
-"Rule\tHK\t1954\tonly\t-\tOct\t31\t3:30\t0\t-\n"+
-"Rule\tHK\t1955\t1964\t-\tNov\tSun>=1\t3:30\t0\t-\n"+
-"Rule\tHK\t1965\t1976\t-\tApr\tSun>=16\t3:30\t1:00\tS\n"+
-"Rule\tHK\t1965\t1976\t-\tOct\tSun>=16\t3:30\t0\t-\n"+
-"Rule\tHK\t1973\tonly\t-\tDec\t30\t3:30\t1:00\tS\n"+
-"Rule\tHK\t1979\tonly\t-\tMay\tSun>=8\t3:30\t1:00\tS\n"+
-"Rule\tHK\t1979\tonly\t-\tOct\tSun>=16\t3:30\t0\t-\n"+
-"Zone\tAsia/Hong_Kong\t7:36:36 -\tLMT\t1904 Oct 30\n"+
-"\t\t\t8:00\tHK\tHK%sT\t1941 Dec 25\n"+
-"\t\t\t9:00\t-\tJST\t1945 Sep 15\n"+
-"\t\t\t8:00\tHK\tHK%sT\n"+
-"Rule\tTaiwan\t1945\t1951\t-\tMay\t1\t0:00\t1:00\tD\n"+
-"Rule\tTaiwan\t1945\t1951\t-\tOct\t1\t0:00\t0\tS\n"+
-"Rule\tTaiwan\t1952\tonly\t-\tMar\t1\t0:00\t1:00\tD\n"+
-"Rule\tTaiwan\t1952\t1954\t-\tNov\t1\t0:00\t0\tS\n"+
-"Rule\tTaiwan\t1953\t1959\t-\tApr\t1\t0:00\t1:00\tD\n"+
-"Rule\tTaiwan\t1955\t1961\t-\tOct\t1\t0:00\t0\tS\n"+
-"Rule\tTaiwan\t1960\t1961\t-\tJun\t1\t0:00\t1:00\tD\n"+
-"Rule\tTaiwan\t1974\t1975\t-\tApr\t1\t0:00\t1:00\tD\n"+
-"Rule\tTaiwan\t1974\t1975\t-\tOct\t1\t0:00\t0\tS\n"+
-"Rule\tTaiwan\t1979\tonly\t-\tJun\t30\t0:00\t1:00\tD\n"+
-"Rule\tTaiwan\t1979\tonly\t-\tSep\t30\t0:00\t0\tS\n"+
-"Zone\tAsia/Taipei\t8:06:00 -\tLMT\t1896 # or Taibei or T'ai-pei\n"+
-"\t\t\t8:00\tTaiwan\tC%sT\n"+
-"Rule\tMacau\t1961\t1962\t-\tMar\tSun>=16\t3:30\t1:00\tS\n"+
-"Rule\tMacau\t1961\t1964\t-\tNov\tSun>=1\t3:30\t0\t-\n"+
-"Rule\tMacau\t1963\tonly\t-\tMar\tSun>=16\t0:00\t1:00\tS\n"+
-"Rule\tMacau\t1964\tonly\t-\tMar\tSun>=16\t3:30\t1:00\tS\n"+
-"Rule\tMacau\t1965\tonly\t-\tMar\tSun>=16\t0:00\t1:00\tS\n"+
-"Rule\tMacau\t1965\tonly\t-\tOct\t31\t0:00\t0\t-\n"+
-"Rule\tMacau\t1966\t1971\t-\tApr\tSun>=16\t3:30\t1:00\tS\n"+
-"Rule\tMacau\t1966\t1971\t-\tOct\tSun>=16\t3:30\t0\t-\n"+
-"Rule\tMacau\t1972\t1974\t-\tApr\tSun>=15\t0:00\t1:00\tS\n"+
-"Rule\tMacau\t1972\t1973\t-\tOct\tSun>=15\t0:00\t0\t-\n"+
-"Rule\tMacau\t1974\t1977\t-\tOct\tSun>=15\t3:30\t0\t-\n"+
-"Rule\tMacau\t1975\t1977\t-\tApr\tSun>=15\t3:30\t1:00\tS\n"+
-"Rule\tMacau\t1978\t1980\t-\tApr\tSun>=15\t0:00\t1:00\tS\n"+
-"Rule\tMacau\t1978\t1980\t-\tOct\tSun>=15\t0:00\t0\t-\n"+
-"Zone\tAsia/Macau\t7:34:20 -\tLMT\t1912\n"+
-"\t\t\t8:00\tMacau\tMO%sT\t1999 Dec 20 # return to China\n"+
-"\t\t\t8:00\tPRC\tC%sT\n"+
-"Rule\tCyprus\t1975\tonly\t-\tApr\t13\t0:00\t1:00\tS\n"+
-"Rule\tCyprus\t1975\tonly\t-\tOct\t12\t0:00\t0\t-\n"+
-"Rule\tCyprus\t1976\tonly\t-\tMay\t15\t0:00\t1:00\tS\n"+
-"Rule\tCyprus\t1976\tonly\t-\tOct\t11\t0:00\t0\t-\n"+
-"Rule\tCyprus\t1977\t1980\t-\tApr\tSun>=1\t0:00\t1:00\tS\n"+
-"Rule\tCyprus\t1977\tonly\t-\tSep\t25\t0:00\t0\t-\n"+
-"Rule\tCyprus\t1978\tonly\t-\tOct\t2\t0:00\t0\t-\n"+
-"Rule\tCyprus\t1979\t1997\t-\tSep\tlastSun\t0:00\t0\t-\n"+
-"Rule\tCyprus\t1981\t1998\t-\tMar\tlastSun\t0:00\t1:00\tS\n"+
-"Zone\tAsia/Nicosia\t2:13:28 -\tLMT\t1921 Nov 14\n"+
-"\t\t\t2:00\tCyprus\tEE%sT\t1998 Sep\n"+
-"\t\t\t2:00\tEUAsia\tEE%sT\n"+
-"Link\tAsia/Nicosia\tEurope/Nicosia\n"+
-"Zone\tAsia/Tbilisi\t2:59:16 -\tLMT\t1880\n"+
-"\t\t\t2:59:16\t-\tTBMT\t1924 May  2 # Tbilisi Mean Time\n"+
-"\t\t\t3:00\t-\tTBIT\t1957 Mar    # Tbilisi Time\n"+
-"\t\t\t4:00 RussiaAsia TBI%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t3:00\t1:00\tTBIST\t1991 Apr  9 # independence\n"+
-"\t\t\t3:00 RussiaAsia GE%sT\t1992 # Georgia Time\n"+
-"\t\t\t3:00 E-EurAsia\tGE%sT\t1994 Sep lastSun\n"+
-"\t\t\t4:00 E-EurAsia\tGE%sT\t1996 Oct lastSun\n"+
-"\t\t\t4:00\t1:00\tGEST\t1997 Mar lastSun\n"+
-"\t\t\t4:00 E-EurAsia\tGE%sT\t2004 Jun 27\n"+
-"\t\t\t3:00 RussiaAsia\tGE%sT\t2005 Mar lastSun 2:00\n"+
-"\t\t\t4:00\t-\tGET\n"+
-"Zone\tAsia/Dili\t8:22:20 -\tLMT\t1912\n"+
-"\t\t\t8:00\t-\tTLT\t1942 Feb 21 23:00 # E Timor Time\n"+
-"\t\t\t9:00\t-\tJST\t1945 Sep 23\n"+
-"\t\t\t9:00\t-\tTLT\t1976 May  3\n"+
-"\t\t\t8:00\t-\tCIT\t2000 Sep 17 00:00\n"+
-"\t\t\t9:00\t-\tTLT\n"+
-"Zone\tAsia/Kolkata\t5:53:28 -\tLMT\t1880\t# Kolkata\n"+
-"\t\t\t5:53:20\t-\tHMT\t1941 Oct    # Howrah Mean Time?\n"+
-"\t\t\t6:30\t-\tBURT\t1942 May 15 # Burma Time\n"+
-"\t\t\t5:30\t-\tIST\t1942 Sep\n"+
-"\t\t\t5:30\t1:00\tIST\t1945 Oct 15\n"+
-"\t\t\t5:30\t-\tIST\n"+
-"Zone Asia/Jakarta\t7:07:12 -\tLMT\t1867 Aug 10\n"+
-"\t\t\t7:07:12\t-\tJMT\t1923 Dec 31 23:47:12 # Jakarta\n"+
-"\t\t\t7:20\t-\tJAVT\t1932 Nov\t # Java Time\n"+
-"\t\t\t7:30\t-\tWIT\t1942 Mar 23\n"+
-"\t\t\t9:00\t-\tJST\t1945 Sep 23\n"+
-"\t\t\t7:30\t-\tWIT\t1948 May\n"+
-"\t\t\t8:00\t-\tWIT\t1950 May\n"+
-"\t\t\t7:30\t-\tWIT\t1964\n"+
-"\t\t\t7:00\t-\tWIT\n"+
-"Zone Asia/Pontianak\t7:17:20\t-\tLMT\t1908 May\n"+
-"\t\t\t7:17:20\t-\tPMT\t1932 Nov    # Pontianak MT\n"+
-"\t\t\t7:30\t-\tWIT\t1942 Jan 29\n"+
-"\t\t\t9:00\t-\tJST\t1945 Sep 23\n"+
-"\t\t\t7:30\t-\tWIT\t1948 May\n"+
-"\t\t\t8:00\t-\tWIT\t1950 May\n"+
-"\t\t\t7:30\t-\tWIT\t1964\n"+
-"\t\t\t8:00\t-\tCIT\t1988 Jan  1\n"+
-"\t\t\t7:00\t-\tWIT\n"+
-"Zone Asia/Makassar\t7:57:36 -\tLMT\t1920\n"+
-"\t\t\t7:57:36\t-\tMMT\t1932 Nov    # Macassar MT\n"+
-"\t\t\t8:00\t-\tCIT\t1942 Feb  9\n"+
-"\t\t\t9:00\t-\tJST\t1945 Sep 23\n"+
-"\t\t\t8:00\t-\tCIT\n"+
-"Zone Asia/Jayapura\t9:22:48 -\tLMT\t1932 Nov\n"+
-"\t\t\t9:00\t-\tEIT\t1944 Sep  1\n"+
-"\t\t\t9:30\t-\tCST\t1964\n"+
-"\t\t\t9:00\t-\tEIT\n"+
-"Rule\tIran\t1978\t1980\t-\tMar\t21\t0:00\t1:00\tD\n"+
-"Rule\tIran\t1978\tonly\t-\tOct\t21\t0:00\t0\tS\n"+
-"Rule\tIran\t1979\tonly\t-\tSep\t19\t0:00\t0\tS\n"+
-"Rule\tIran\t1980\tonly\t-\tSep\t23\t0:00\t0\tS\n"+
-"Rule\tIran\t1991\tonly\t-\tMay\t 3\t0:00\t1:00\tD\n"+
-"Rule\tIran\t1992\t1995\t-\tMar\t22\t0:00\t1:00\tD\n"+
-"Rule\tIran\t1991\t1995\t-\tSep\t22\t0:00\t0\tS\n"+
-"Rule\tIran\t1996\tonly\t-\tMar\t21\t0:00\t1:00\tD\n"+
-"Rule\tIran\t1996\tonly\t-\tSep\t21\t0:00\t0\tS\n"+
-"Rule\tIran\t1997\t1999\t-\tMar\t22\t0:00\t1:00\tD\n"+
-"Rule\tIran\t1997\t1999\t-\tSep\t22\t0:00\t0\tS\n"+
-"Rule\tIran\t2000\tonly\t-\tMar\t21\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2000\tonly\t-\tSep\t21\t0:00\t0\tS\n"+
-"Rule\tIran\t2001\t2003\t-\tMar\t22\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2001\t2003\t-\tSep\t22\t0:00\t0\tS\n"+
-"Rule\tIran\t2004\tonly\t-\tMar\t21\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2004\tonly\t-\tSep\t21\t0:00\t0\tS\n"+
-"Rule\tIran\t2005\tonly\t-\tMar\t22\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2005\tonly\t-\tSep\t22\t0:00\t0\tS\n"+
-"Rule\tIran\t2008\tonly\t-\tMar\t21\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2008\tonly\t-\tSep\t21\t0:00\t0\tS\n"+
-"Rule\tIran\t2009\t2011\t-\tMar\t22\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2009\t2011\t-\tSep\t22\t0:00\t0\tS\n"+
-"Rule\tIran\t2012\tonly\t-\tMar\t21\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2012\tonly\t-\tSep\t21\t0:00\t0\tS\n"+
-"Rule\tIran\t2013\t2015\t-\tMar\t22\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2013\t2015\t-\tSep\t22\t0:00\t0\tS\n"+
-"Rule\tIran\t2016\tonly\t-\tMar\t21\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2016\tonly\t-\tSep\t21\t0:00\t0\tS\n"+
-"Rule\tIran\t2017\t2019\t-\tMar\t22\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2017\t2019\t-\tSep\t22\t0:00\t0\tS\n"+
-"Rule\tIran\t2020\tonly\t-\tMar\t21\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2020\tonly\t-\tSep\t21\t0:00\t0\tS\n"+
-"Rule\tIran\t2021\t2023\t-\tMar\t22\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2021\t2023\t-\tSep\t22\t0:00\t0\tS\n"+
-"Rule\tIran\t2024\tonly\t-\tMar\t21\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2024\tonly\t-\tSep\t21\t0:00\t0\tS\n"+
-"Rule\tIran\t2025\t2027\t-\tMar\t22\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2025\t2027\t-\tSep\t22\t0:00\t0\tS\n"+
-"Rule\tIran\t2028\t2029\t-\tMar\t21\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2028\t2029\t-\tSep\t21\t0:00\t0\tS\n"+
-"Rule\tIran\t2030\t2031\t-\tMar\t22\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2030\t2031\t-\tSep\t22\t0:00\t0\tS\n"+
-"Rule\tIran\t2032\t2033\t-\tMar\t21\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2032\t2033\t-\tSep\t21\t0:00\t0\tS\n"+
-"Rule\tIran\t2034\t2035\t-\tMar\t22\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2034\t2035\t-\tSep\t22\t0:00\t0\tS\n"+
-"Rule\tIran\t2036\t2037\t-\tMar\t21\t0:00\t1:00\tD\n"+
-"Rule\tIran\t2036\t2037\t-\tSep\t21\t0:00\t0\tS\n"+
-"Zone\tAsia/Tehran\t3:25:44\t-\tLMT\t1916\n"+
-"\t\t\t3:25:44\t-\tTMT\t1946\t# Tehran Mean Time\n"+
-"\t\t\t3:30\t-\tIRST\t1977 Nov\n"+
-"\t\t\t4:00\tIran\tIR%sT\t1979\n"+
-"\t\t\t3:30\tIran\tIR%sT\n"+
-"Rule\tIraq\t1982\tonly\t-\tMay\t1\t0:00\t1:00\tD\n"+
-"Rule\tIraq\t1982\t1984\t-\tOct\t1\t0:00\t0\tS\n"+
-"Rule\tIraq\t1983\tonly\t-\tMar\t31\t0:00\t1:00\tD\n"+
-"Rule\tIraq\t1984\t1985\t-\tApr\t1\t0:00\t1:00\tD\n"+
-"Rule\tIraq\t1985\t1990\t-\tSep\tlastSun\t1:00s\t0\tS\n"+
-"Rule\tIraq\t1986\t1990\t-\tMar\tlastSun\t1:00s\t1:00\tD\n"+
-"Rule\tIraq\t1991\t2007\t-\tApr\t 1\t3:00s\t1:00\tD\n"+
-"Rule\tIraq\t1991\t2007\t-\tOct\t 1\t3:00s\t0\tS\n"+
-"Zone\tAsia/Baghdad\t2:57:40\t-\tLMT\t1890\n"+
-"\t\t\t2:57:36\t-\tBMT\t1918\t    # Baghdad Mean Time?\n"+
-"\t\t\t3:00\t-\tAST\t1982 May\n"+
-"\t\t\t3:00\tIraq\tA%sT\n"+
-"Rule\tZion\t1940\tonly\t-\tJun\t 1\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1942\t1944\t-\tNov\t 1\t0:00\t0\tS\n"+
-"Rule\tZion\t1943\tonly\t-\tApr\t 1\t2:00\t1:00\tD\n"+
-"Rule\tZion\t1944\tonly\t-\tApr\t 1\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1945\tonly\t-\tApr\t16\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1945\tonly\t-\tNov\t 1\t2:00\t0\tS\n"+
-"Rule\tZion\t1946\tonly\t-\tApr\t16\t2:00\t1:00\tD\n"+
-"Rule\tZion\t1946\tonly\t-\tNov\t 1\t0:00\t0\tS\n"+
-"Rule\tZion\t1948\tonly\t-\tMay\t23\t0:00\t2:00\tDD\n"+
-"Rule\tZion\t1948\tonly\t-\tSep\t 1\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1948\t1949\t-\tNov\t 1\t2:00\t0\tS\n"+
-"Rule\tZion\t1949\tonly\t-\tMay\t 1\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1950\tonly\t-\tApr\t16\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1950\tonly\t-\tSep\t15\t3:00\t0\tS\n"+
-"Rule\tZion\t1951\tonly\t-\tApr\t 1\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1951\tonly\t-\tNov\t11\t3:00\t0\tS\n"+
-"Rule\tZion\t1952\tonly\t-\tApr\t20\t2:00\t1:00\tD\n"+
-"Rule\tZion\t1952\tonly\t-\tOct\t19\t3:00\t0\tS\n"+
-"Rule\tZion\t1953\tonly\t-\tApr\t12\t2:00\t1:00\tD\n"+
-"Rule\tZion\t1953\tonly\t-\tSep\t13\t3:00\t0\tS\n"+
-"Rule\tZion\t1954\tonly\t-\tJun\t13\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1954\tonly\t-\tSep\t12\t0:00\t0\tS\n"+
-"Rule\tZion\t1955\tonly\t-\tJun\t11\t2:00\t1:00\tD\n"+
-"Rule\tZion\t1955\tonly\t-\tSep\t11\t0:00\t0\tS\n"+
-"Rule\tZion\t1956\tonly\t-\tJun\t 3\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1956\tonly\t-\tSep\t30\t3:00\t0\tS\n"+
-"Rule\tZion\t1957\tonly\t-\tApr\t29\t2:00\t1:00\tD\n"+
-"Rule\tZion\t1957\tonly\t-\tSep\t22\t0:00\t0\tS\n"+
-"Rule\tZion\t1974\tonly\t-\tJul\t 7\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1974\tonly\t-\tOct\t13\t0:00\t0\tS\n"+
-"Rule\tZion\t1975\tonly\t-\tApr\t20\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1975\tonly\t-\tAug\t31\t0:00\t0\tS\n"+
-"Rule\tZion\t1985\tonly\t-\tApr\t14\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1985\tonly\t-\tSep\t15\t0:00\t0\tS\n"+
-"Rule\tZion\t1986\tonly\t-\tMay\t18\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1986\tonly\t-\tSep\t 7\t0:00\t0\tS\n"+
-"Rule\tZion\t1987\tonly\t-\tApr\t15\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1987\tonly\t-\tSep\t13\t0:00\t0\tS\n"+
-"Rule\tZion\t1988\tonly\t-\tApr\t 9\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1988\tonly\t-\tSep\t 3\t0:00\t0\tS\n"+
-"Rule\tZion\t1989\tonly\t-\tApr\t30\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1989\tonly\t-\tSep\t 3\t0:00\t0\tS\n"+
-"Rule\tZion\t1990\tonly\t-\tMar\t25\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1990\tonly\t-\tAug\t26\t0:00\t0\tS\n"+
-"Rule\tZion\t1991\tonly\t-\tMar\t24\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1991\tonly\t-\tSep\t 1\t0:00\t0\tS\n"+
-"Rule\tZion\t1992\tonly\t-\tMar\t29\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1992\tonly\t-\tSep\t 6\t0:00\t0\tS\n"+
-"Rule\tZion\t1993\tonly\t-\tApr\t 2\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1993\tonly\t-\tSep\t 5\t0:00\t0\tS\n"+
-"Rule\tZion\t1994\tonly\t-\tApr\t 1\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1994\tonly\t-\tAug\t28\t0:00\t0\tS\n"+
-"Rule\tZion\t1995\tonly\t-\tMar\t31\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1995\tonly\t-\tSep\t 3\t0:00\t0\tS\n"+
-"Rule\tZion\t1996\tonly\t-\tMar\t15\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1996\tonly\t-\tSep\t16\t0:00\t0\tS\n"+
-"Rule\tZion\t1997\tonly\t-\tMar\t21\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1997\tonly\t-\tSep\t14\t0:00\t0\tS\n"+
-"Rule\tZion\t1998\tonly\t-\tMar\t20\t0:00\t1:00\tD\n"+
-"Rule\tZion\t1998\tonly\t-\tSep\t 6\t0:00\t0\tS\n"+
-"Rule\tZion\t1999\tonly\t-\tApr\t 2\t2:00\t1:00\tD\n"+
-"Rule\tZion\t1999\tonly\t-\tSep\t 3\t2:00\t0\tS\n"+
-"Rule\tZion\t2000\tonly\t-\tApr\t14\t2:00\t1:00\tD\n"+
-"Rule\tZion\t2000\tonly\t-\tOct\t 6\t1:00\t0\tS\n"+
-"Rule\tZion\t2001\tonly\t-\tApr\t 9\t1:00\t1:00\tD\n"+
-"Rule\tZion\t2001\tonly\t-\tSep\t24\t1:00\t0\tS\n"+
-"Rule\tZion\t2002\tonly\t-\tMar\t29\t1:00\t1:00\tD\n"+
-"Rule\tZion\t2002\tonly\t-\tOct\t 7\t1:00\t0\tS\n"+
-"Rule\tZion\t2003\tonly\t-\tMar\t28\t1:00\t1:00\tD\n"+
-"Rule\tZion\t2003\tonly\t-\tOct\t 3\t1:00\t0\tS\n"+
-"Rule\tZion\t2004\tonly\t-\tApr\t 7\t1:00\t1:00\tD\n"+
-"Rule\tZion\t2004\tonly\t-\tSep\t22\t1:00\t0\tS\n"+
-"Rule\tZion\t2005\tonly\t-\tApr\t 1\t2:00\t1:00\tD\n"+
-"Rule\tZion\t2005\tonly\t-\tOct\t 9\t2:00\t0\tS\n"+
-"Rule\tZion\t2006\t2010\t-\tMar\tFri>=26\t2:00\t1:00\tD\n"+
-"Rule\tZion\t2006\tonly\t-\tOct\t 1\t2:00\t0\tS\n"+
-"Rule\tZion\t2007\tonly\t-\tSep\t16\t2:00\t0\tS\n"+
-"Rule\tZion\t2008\tonly\t-\tOct\t 5\t2:00\t0\tS\n"+
-"Rule\tZion\t2009\tonly\t-\tSep\t27\t2:00\t0\tS\n"+
-"Rule\tZion\t2010\tonly\t-\tSep\t12\t2:00\t0\tS\n"+
-"Rule\tZion\t2011\tonly\t-\tApr\t 1\t2:00\t1:00\tD\n"+
-"Rule\tZion\t2011\tonly\t-\tOct\t 2\t2:00\t0\tS\n"+
-"Rule\tZion\t2012\t2015\t-\tMar\tFri>=26\t2:00\t1:00\tD\n"+
-"Rule\tZion\t2012\tonly\t-\tSep\t23\t2:00\t0\tS\n"+
-"Rule\tZion\t2013\tonly\t-\tSep\t 8\t2:00\t0\tS\n"+
-"Rule\tZion\t2014\tonly\t-\tSep\t28\t2:00\t0\tS\n"+
-"Rule\tZion\t2015\tonly\t-\tSep\t20\t2:00\t0\tS\n"+
-"Rule\tZion\t2016\tonly\t-\tApr\t 1\t2:00\t1:00\tD\n"+
-"Rule\tZion\t2016\tonly\t-\tOct\t 9\t2:00\t0\tS\n"+
-"Rule\tZion\t2017\t2021\t-\tMar\tFri>=26\t2:00\t1:00\tD\n"+
-"Rule\tZion\t2017\tonly\t-\tSep\t24\t2:00\t0\tS\n"+
-"Rule\tZion\t2018\tonly\t-\tSep\t16\t2:00\t0\tS\n"+
-"Rule\tZion\t2019\tonly\t-\tOct\t 6\t2:00\t0\tS\n"+
-"Rule\tZion\t2020\tonly\t-\tSep\t27\t2:00\t0\tS\n"+
-"Rule\tZion\t2021\tonly\t-\tSep\t12\t2:00\t0\tS\n"+
-"Rule\tZion\t2022\tonly\t-\tApr\t 1\t2:00\t1:00\tD\n"+
-"Rule\tZion\t2022\tonly\t-\tOct\t 2\t2:00\t0\tS\n"+
-"Rule\tZion\t2023\t2032\t-\tMar\tFri>=26\t2:00\t1:00\tD\n"+
-"Rule\tZion\t2023\tonly\t-\tSep\t24\t2:00\t0\tS\n"+
-"Rule\tZion\t2024\tonly\t-\tOct\t 6\t2:00\t0\tS\n"+
-"Rule\tZion\t2025\tonly\t-\tSep\t28\t2:00\t0\tS\n"+
-"Rule\tZion\t2026\tonly\t-\tSep\t20\t2:00\t0\tS\n"+
-"Rule\tZion\t2027\tonly\t-\tOct\t10\t2:00\t0\tS\n"+
-"Rule\tZion\t2028\tonly\t-\tSep\t24\t2:00\t0\tS\n"+
-"Rule\tZion\t2029\tonly\t-\tSep\t16\t2:00\t0\tS\n"+
-"Rule\tZion\t2030\tonly\t-\tOct\t 6\t2:00\t0\tS\n"+
-"Rule\tZion\t2031\tonly\t-\tSep\t21\t2:00\t0\tS\n"+
-"Rule\tZion\t2032\tonly\t-\tSep\t12\t2:00\t0\tS\n"+
-"Rule\tZion\t2033\tonly\t-\tApr\t 1\t2:00\t1:00\tD\n"+
-"Rule\tZion\t2033\tonly\t-\tOct\t 2\t2:00\t0\tS\n"+
-"Rule\tZion\t2034\t2037\t-\tMar\tFri>=26\t2:00\t1:00\tD\n"+
-"Rule\tZion\t2034\tonly\t-\tSep\t17\t2:00\t0\tS\n"+
-"Rule\tZion\t2035\tonly\t-\tOct\t 7\t2:00\t0\tS\n"+
-"Rule\tZion\t2036\tonly\t-\tSep\t28\t2:00\t0\tS\n"+
-"Rule\tZion\t2037\tonly\t-\tSep\t13\t2:00\t0\tS\n"+
-"Zone\tAsia/Jerusalem\t2:20:56 -\tLMT\t1880\n"+
-"\t\t\t2:20:40\t-\tJMT\t1918\t# Jerusalem Mean Time?\n"+
-"\t\t\t2:00\tZion\tI%sT\n"+
-"Rule\tJapan\t1948\tonly\t-\tMay\tSun>=1\t2:00\t1:00\tD\n"+
-"Rule\tJapan\t1948\t1951\t-\tSep\tSat>=8\t2:00\t0\tS\n"+
-"Rule\tJapan\t1949\tonly\t-\tApr\tSun>=1\t2:00\t1:00\tD\n"+
-"Rule\tJapan\t1950\t1951\t-\tMay\tSun>=1\t2:00\t1:00\tD\n"+
-"Zone\tAsia/Tokyo\t9:18:59\t-\tLMT\t1887 Dec 31 15:00u\n"+
-"\t\t\t9:00\t-\tJST\t1896\n"+
-"\t\t\t9:00\t-\tCJT\t1938\n"+
-"\t\t\t9:00\tJapan\tJ%sT\n"+
-"Rule\tJordan\t1973\tonly\t-\tJun\t6\t0:00\t1:00\tS\n"+
-"Rule\tJordan\t1973\t1975\t-\tOct\t1\t0:00\t0\t-\n"+
-"Rule\tJordan\t1974\t1977\t-\tMay\t1\t0:00\t1:00\tS\n"+
-"Rule\tJordan\t1976\tonly\t-\tNov\t1\t0:00\t0\t-\n"+
-"Rule\tJordan\t1977\tonly\t-\tOct\t1\t0:00\t0\t-\n"+
-"Rule\tJordan\t1978\tonly\t-\tApr\t30\t0:00\t1:00\tS\n"+
-"Rule\tJordan\t1978\tonly\t-\tSep\t30\t0:00\t0\t-\n"+
-"Rule\tJordan\t1985\tonly\t-\tApr\t1\t0:00\t1:00\tS\n"+
-"Rule\tJordan\t1985\tonly\t-\tOct\t1\t0:00\t0\t-\n"+
-"Rule\tJordan\t1986\t1988\t-\tApr\tFri>=1\t0:00\t1:00\tS\n"+
-"Rule\tJordan\t1986\t1990\t-\tOct\tFri>=1\t0:00\t0\t-\n"+
-"Rule\tJordan\t1989\tonly\t-\tMay\t8\t0:00\t1:00\tS\n"+
-"Rule\tJordan\t1990\tonly\t-\tApr\t27\t0:00\t1:00\tS\n"+
-"Rule\tJordan\t1991\tonly\t-\tApr\t17\t0:00\t1:00\tS\n"+
-"Rule\tJordan\t1991\tonly\t-\tSep\t27\t0:00\t0\t-\n"+
-"Rule\tJordan\t1992\tonly\t-\tApr\t10\t0:00\t1:00\tS\n"+
-"Rule\tJordan\t1992\t1993\t-\tOct\tFri>=1\t0:00\t0\t-\n"+
-"Rule\tJordan\t1993\t1998\t-\tApr\tFri>=1\t0:00\t1:00\tS\n"+
-"Rule\tJordan\t1994\tonly\t-\tSep\tFri>=15\t0:00\t0\t-\n"+
-"Rule\tJordan\t1995\t1998\t-\tSep\tFri>=15\t0:00s\t0\t-\n"+
-"Rule\tJordan\t1999\tonly\t-\tJul\t 1\t0:00s\t1:00\tS\n"+
-"Rule\tJordan\t1999\t2002\t-\tSep\tlastFri\t0:00s\t0\t-\n"+
-"Rule\tJordan\t2000\t2001\t-\tMar\tlastThu\t0:00s\t1:00\tS\n"+
-"Rule\tJordan\t2002\tmax\t-\tMar\tlastThu\t24:00\t1:00\tS\n"+
-"Rule\tJordan\t2003\tonly\t-\tOct\t24\t0:00s\t0\t-\n"+
-"Rule\tJordan\t2004\tonly\t-\tOct\t15\t0:00s\t0\t-\n"+
-"Rule\tJordan\t2005\tonly\t-\tSep\tlastFri\t0:00s\t0\t-\n"+
-"Rule\tJordan\t2006\tmax\t-\tOct\tlastFri\t0:00s\t0\t-\n"+
-"Zone\tAsia/Amman\t2:23:44 -\tLMT\t1931\n"+
-"\t\t\t2:00\tJordan\tEE%sT\n"+
-"Zone\tAsia/Almaty\t5:07:48 -\tLMT\t1924 May  2 # or Alma-Ata\n"+
-"\t\t\t5:00\t-\tALMT\t1930 Jun 21 # Alma-Ata Time\n"+
-"\t\t\t6:00 RussiaAsia ALM%sT\t1991\n"+
-"\t\t\t6:00\t-\tALMT\t1992\n"+
-"\t\t\t6:00 RussiaAsia\tALM%sT\t2005 Mar 15\n"+
-"\t\t\t6:00\t-\tALMT\n"+
-"Zone\tAsia/Qyzylorda\t4:21:52 -\tLMT\t1924 May  2\n"+
-"\t\t\t4:00\t-\tKIZT\t1930 Jun 21 # Kizilorda Time\n"+
-"\t\t\t5:00\t-\tKIZT\t1981 Apr  1\n"+
-"\t\t\t5:00\t1:00\tKIZST\t1981 Oct  1\n"+
-"\t\t\t6:00\t-\tKIZT\t1982 Apr  1\n"+
-"\t\t\t5:00 RussiaAsia\tKIZ%sT\t1991\n"+
-"\t\t\t5:00\t-\tKIZT\t1991 Dec 16 # independence\n"+
-"\t\t\t5:00\t-\tQYZT\t1992 Jan 19 2:00\n"+
-"\t\t\t6:00 RussiaAsia\tQYZ%sT\t2005 Mar 15\n"+
-"\t\t\t6:00\t-\tQYZT\n"+
-"Zone\tAsia/Aqtobe\t3:48:40\t-\tLMT\t1924 May  2\n"+
-"\t\t\t4:00\t-\tAKTT\t1930 Jun 21 # Aktyubinsk Time\n"+
-"\t\t\t5:00\t-\tAKTT\t1981 Apr  1\n"+
-"\t\t\t5:00\t1:00\tAKTST\t1981 Oct  1\n"+
-"\t\t\t6:00\t-\tAKTT\t1982 Apr  1\n"+
-"\t\t\t5:00 RussiaAsia\tAKT%sT\t1991\n"+
-"\t\t\t5:00\t-\tAKTT\t1991 Dec 16 # independence\n"+
-"\t\t\t5:00 RussiaAsia\tAQT%sT\t2005 Mar 15 # Aqtobe Time\n"+
-"\t\t\t5:00\t-\tAQTT\n"+
-"Zone\tAsia/Aqtau\t3:21:04\t-\tLMT\t1924 May  2\n"+
-"\t\t\t4:00\t-\tFORT\t1930 Jun 21 # Fort Shevchenko T\n"+
-"\t\t\t5:00\t-\tFORT\t1963\n"+
-"\t\t\t5:00\t-\tSHET\t1981 Oct  1 # Shevchenko Time\n"+
-"\t\t\t6:00\t-\tSHET\t1982 Apr  1\n"+
-"\t\t\t5:00 RussiaAsia\tSHE%sT\t1991\n"+
-"\t\t\t5:00\t-\tSHET\t1991 Dec 16 # independence\n"+
-"\t\t\t5:00 RussiaAsia\tAQT%sT\t1995 Mar lastSun 2:00 # Aqtau Time\n"+
-"\t\t\t4:00 RussiaAsia\tAQT%sT\t2005 Mar 15\n"+
-"\t\t\t5:00\t-\tAQTT\n"+
-"Zone\tAsia/Oral\t3:25:24\t-\tLMT\t1924 May  2 # or Ural'sk\n"+
-"\t\t\t4:00\t-\tURAT\t1930 Jun 21 # Ural'sk time\n"+
-"\t\t\t5:00\t-\tURAT\t1981 Apr  1\n"+
-"\t\t\t5:00\t1:00\tURAST\t1981 Oct  1\n"+
-"\t\t\t6:00\t-\tURAT\t1982 Apr  1\n"+
-"\t\t\t5:00 RussiaAsia\tURA%sT\t1989 Mar 26 2:00\n"+
-"\t\t\t4:00 RussiaAsia\tURA%sT\t1991\n"+
-"\t\t\t4:00\t-\tURAT\t1991 Dec 16 # independence\n"+
-"\t\t\t4:00 RussiaAsia\tORA%sT\t2005 Mar 15 # Oral Time\n"+
-"\t\t\t5:00\t-\tORAT\n"+
-"Rule\tKyrgyz\t1992\t1996\t-\tApr\tSun>=7\t0:00s\t1:00\tS\n"+
-"Rule\tKyrgyz\t1992\t1996\t-\tSep\tlastSun\t0:00\t0\t-\n"+
-"Rule\tKyrgyz\t1997\t2005\t-\tMar\tlastSun\t2:30\t1:00\tS\n"+
-"Rule\tKyrgyz\t1997\t2004\t-\tOct\tlastSun\t2:30\t0\t-\n"+
-"Zone\tAsia/Bishkek\t4:58:24 -\tLMT\t1924 May  2\n"+
-"\t\t\t5:00\t-\tFRUT\t1930 Jun 21 # Frunze Time\n"+
-"\t\t\t6:00 RussiaAsia FRU%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t5:00\t1:00\tFRUST\t1991 Aug 31 2:00 # independence\n"+
-"\t\t\t5:00\tKyrgyz\tKG%sT\t2005 Aug 12    # Kyrgyzstan Time\n"+
-"\t\t\t6:00\t-\tKGT\n"+
-"Rule\tROK\t1960\tonly\t-\tMay\t15\t0:00\t1:00\tD\n"+
-"Rule\tROK\t1960\tonly\t-\tSep\t13\t0:00\t0\tS\n"+
-"Rule\tROK\t1987\t1988\t-\tMay\tSun>=8\t0:00\t1:00\tD\n"+
-"Rule\tROK\t1987\t1988\t-\tOct\tSun>=8\t0:00\t0\tS\n"+
-"Zone\tAsia/Seoul\t8:27:52\t-\tLMT\t1890\n"+
-"\t\t\t8:30\t-\tKST\t1904 Dec\n"+
-"\t\t\t9:00\t-\tKST\t1928\n"+
-"\t\t\t8:30\t-\tKST\t1932\n"+
-"\t\t\t9:00\t-\tKST\t1954 Mar 21\n"+
-"\t\t\t8:00\tROK\tK%sT\t1961 Aug 10\n"+
-"\t\t\t8:30\t-\tKST\t1968 Oct\n"+
-"\t\t\t9:00\tROK\tK%sT\n"+
-"Zone\tAsia/Pyongyang\t8:23:00 -\tLMT\t1890\n"+
-"\t\t\t8:30\t-\tKST\t1904 Dec\n"+
-"\t\t\t9:00\t-\tKST\t1928\n"+
-"\t\t\t8:30\t-\tKST\t1932\n"+
-"\t\t\t9:00\t-\tKST\t1954 Mar 21\n"+
-"\t\t\t8:00\t-\tKST\t1961 Aug 10\n"+
-"\t\t\t9:00\t-\tKST\n"+
-"Zone\tAsia/Kuwait\t3:11:56 -\tLMT\t1950\n"+
-"\t\t\t3:00\t-\tAST\n"+
-"Zone\tAsia/Vientiane\t6:50:24 -\tLMT\t1906 Jun  9 # or Viangchan\n"+
-"\t\t\t7:06:20\t-\tSMT\t1911 Mar 11 0:01 # Saigon MT?\n"+
-"\t\t\t7:00\t-\tICT\t1912 May\n"+
-"\t\t\t8:00\t-\tICT\t1931 May\n"+
-"\t\t\t7:00\t-\tICT\n"+
-"Rule\tLebanon\t1920\tonly\t-\tMar\t28\t0:00\t1:00\tS\n"+
-"Rule\tLebanon\t1920\tonly\t-\tOct\t25\t0:00\t0\t-\n"+
-"Rule\tLebanon\t1921\tonly\t-\tApr\t3\t0:00\t1:00\tS\n"+
-"Rule\tLebanon\t1921\tonly\t-\tOct\t3\t0:00\t0\t-\n"+
-"Rule\tLebanon\t1922\tonly\t-\tMar\t26\t0:00\t1:00\tS\n"+
-"Rule\tLebanon\t1922\tonly\t-\tOct\t8\t0:00\t0\t-\n"+
-"Rule\tLebanon\t1923\tonly\t-\tApr\t22\t0:00\t1:00\tS\n"+
-"Rule\tLebanon\t1923\tonly\t-\tSep\t16\t0:00\t0\t-\n"+
-"Rule\tLebanon\t1957\t1961\t-\tMay\t1\t0:00\t1:00\tS\n"+
-"Rule\tLebanon\t1957\t1961\t-\tOct\t1\t0:00\t0\t-\n"+
-"Rule\tLebanon\t1972\tonly\t-\tJun\t22\t0:00\t1:00\tS\n"+
-"Rule\tLebanon\t1972\t1977\t-\tOct\t1\t0:00\t0\t-\n"+
-"Rule\tLebanon\t1973\t1977\t-\tMay\t1\t0:00\t1:00\tS\n"+
-"Rule\tLebanon\t1978\tonly\t-\tApr\t30\t0:00\t1:00\tS\n"+
-"Rule\tLebanon\t1978\tonly\t-\tSep\t30\t0:00\t0\t-\n"+
-"Rule\tLebanon\t1984\t1987\t-\tMay\t1\t0:00\t1:00\tS\n"+
-"Rule\tLebanon\t1984\t1991\t-\tOct\t16\t0:00\t0\t-\n"+
-"Rule\tLebanon\t1988\tonly\t-\tJun\t1\t0:00\t1:00\tS\n"+
-"Rule\tLebanon\t1989\tonly\t-\tMay\t10\t0:00\t1:00\tS\n"+
-"Rule\tLebanon\t1990\t1992\t-\tMay\t1\t0:00\t1:00\tS\n"+
-"Rule\tLebanon\t1992\tonly\t-\tOct\t4\t0:00\t0\t-\n"+
-"Rule\tLebanon\t1993\tmax\t-\tMar\tlastSun\t0:00\t1:00\tS\n"+
-"Rule\tLebanon\t1993\t1998\t-\tSep\tlastSun\t0:00\t0\t-\n"+
-"Rule\tLebanon\t1999\tmax\t-\tOct\tlastSun\t0:00\t0\t-\n"+
-"Zone\tAsia/Beirut\t2:22:00 -\tLMT\t1880\n"+
-"\t\t\t2:00\tLebanon\tEE%sT\n"+
-"Rule\tNBorneo\t1935\t1941\t-\tSep\t14\t0:00\t0:20\tTS # one-Third Summer\n"+
-"Rule\tNBorneo\t1935\t1941\t-\tDec\t14\t0:00\t0\t-\n"+
-"Zone Asia/Kuala_Lumpur\t6:46:46 -\tLMT\t1901 Jan  1\n"+
-"\t\t\t6:55:25\t-\tSMT\t1905 Jun  1 # Singapore M.T.\n"+
-"\t\t\t7:00\t-\tMALT\t1933 Jan  1 # Malaya Time\n"+
-"\t\t\t7:00\t0:20\tMALST\t1936 Jan  1\n"+
-"\t\t\t7:20\t-\tMALT\t1941 Sep  1\n"+
-"\t\t\t7:30\t-\tMALT\t1942 Feb 16\n"+
-"\t\t\t9:00\t-\tJST\t1945 Sep 12\n"+
-"\t\t\t7:30\t-\tMALT\t1982 Jan  1\n"+
-"\t\t\t8:00\t-\tMYT\t# Malaysia Time\n"+
-"Zone Asia/Kuching\t7:21:20\t-\tLMT\t1926 Mar\n"+
-"\t\t\t7:30\t-\tBORT\t1933\t# Borneo Time\n"+
-"\t\t\t8:00\tNBorneo\tBOR%sT\t1942 Feb 16\n"+
-"\t\t\t9:00\t-\tJST\t1945 Sep 12\n"+
-"\t\t\t8:00\t-\tBORT\t1982 Jan  1\n"+
-"\t\t\t8:00\t-\tMYT\n"+
-"Zone\tIndian/Maldives\t4:54:00 -\tLMT\t1880\t# Male\n"+
-"\t\t\t4:54:00\t-\tMMT\t1960\t# Male Mean Time\n"+
-"\t\t\t5:00\t-\tMVT\t\t# Maldives Time\n"+
-"Rule\tMongol\t1983\t1984\t-\tApr\t1\t0:00\t1:00\tS\n"+
-"Rule\tMongol\t1983\tonly\t-\tOct\t1\t0:00\t0\t-\n"+
-"Rule\tMongol\t1985\t1998\t-\tMar\tlastSun\t0:00\t1:00\tS\n"+
-"Rule\tMongol\t1984\t1998\t-\tSep\tlastSun\t0:00\t0\t-\n"+
-"Rule\tMongol\t2001\tonly\t-\tApr\tlastSat\t2:00\t1:00\tS\n"+
-"Rule\tMongol\t2001\t2006\t-\tSep\tlastSat\t2:00\t0\t-\n"+
-"Rule\tMongol\t2002\t2006\t-\tMar\tlastSat\t2:00\t1:00\tS\n"+
-"Zone\tAsia/Hovd\t6:06:36 -\tLMT\t1905 Aug\n"+
-"\t\t\t6:00\t-\tHOVT\t1978\t# Hovd Time\n"+
-"\t\t\t7:00\tMongol\tHOV%sT\n"+
-"Zone\tAsia/Ulaanbaatar 7:07:32 -\tLMT\t1905 Aug\n"+
-"\t\t\t7:00\t-\tULAT\t1978\t# Ulaanbaatar Time\n"+
-"\t\t\t8:00\tMongol\tULA%sT\n"+
-"Zone\tAsia/Choibalsan\t7:38:00 -\tLMT\t1905 Aug\n"+
-"\t\t\t7:00\t-\tULAT\t1978\n"+
-"\t\t\t8:00\t-\tULAT\t1983 Apr\n"+
-"\t\t\t9:00\tMongol\tCHO%sT\t2008 Mar 31 # Choibalsan Time\n"+
-"\t\t\t8:00\tMongol\tCHO%sT\n"+
-"Zone\tAsia/Kathmandu\t5:41:16 -\tLMT\t1920\n"+
-"\t\t\t5:30\t-\tIST\t1986\n"+
-"\t\t\t5:45\t-\tNPT\t# Nepal Time\n"+
-"Zone\tAsia/Muscat\t3:54:20 -\tLMT\t1920\n"+
-"\t\t\t4:00\t-\tGST\n"+
-"Rule Pakistan\t2002\tonly\t-\tApr\tSun>=2\t0:01\t1:00\tS\n"+
-"Rule Pakistan\t2002\tonly\t-\tOct\tSun>=2\t0:01\t0\t-\n"+
-"Rule Pakistan\t2008\tonly\t-\tJun\t1\t0:00\t1:00\tS\n"+
-"Rule Pakistan\t2008\tonly\t-\tNov\t1\t0:00\t0\t-\n"+
-"Rule Pakistan\t2009\tonly\t-\tApr\t15\t0:00\t1:00\tS\n"+
-"Rule Pakistan\t2009\tonly\t-\tNov\t1\t0:00\t0\t-\n"+
-"Zone\tAsia/Karachi\t4:28:12 -\tLMT\t1907\n"+
-"\t\t\t5:30\t-\tIST\t1942 Sep\n"+
-"\t\t\t5:30\t1:00\tIST\t1945 Oct 15\n"+
-"\t\t\t5:30\t-\tIST\t1951 Sep 30\n"+
-"\t\t\t5:00\t-\tKART\t1971 Mar 26 # Karachi Time\n"+
-"\t\t\t5:00 Pakistan\tPK%sT\t# Pakistan Time\n"+
-"Rule EgyptAsia\t1957\tonly\t-\tMay\t10\t0:00\t1:00\tS\n"+
-"Rule EgyptAsia\t1957\t1958\t-\tOct\t 1\t0:00\t0\t-\n"+
-"Rule EgyptAsia\t1958\tonly\t-\tMay\t 1\t0:00\t1:00\tS\n"+
-"Rule EgyptAsia\t1959\t1967\t-\tMay\t 1\t1:00\t1:00\tS\n"+
-"Rule EgyptAsia\t1959\t1965\t-\tSep\t30\t3:00\t0\t-\n"+
-"Rule EgyptAsia\t1966\tonly\t-\tOct\t 1\t3:00\t0\t-\n"+
-"Rule Palestine\t1999\t2005\t-\tApr\tFri>=15\t0:00\t1:00\tS\n"+
-"Rule Palestine\t1999\t2003\t-\tOct\tFri>=15\t0:00\t0\t-\n"+
-"Rule Palestine\t2004\tonly\t-\tOct\t 1\t1:00\t0\t-\n"+
-"Rule Palestine\t2005\tonly\t-\tOct\t 4\t2:00\t0\t-\n"+
-"Rule Palestine\t2006\t2008\t-\tApr\t 1\t0:00\t1:00\tS\n"+
-"Rule Palestine\t2006\tonly\t-\tSep\t22\t0:00\t0\t-\n"+
-"Rule Palestine\t2007\tonly\t-\tSep\tThu>=8\t2:00\t0\t-\n"+
-"Rule Palestine\t2008\tonly\t-\tAug\tlastFri\t0:00\t0\t-\n"+
-"Rule Palestine\t2009\tonly\t-\tMar\tlastFri\t0:00\t1:00\tS\n"+
-"Rule Palestine\t2009\tonly\t-\tSep\tFri>=1\t2:00\t0\t-\n"+
-"Rule Palestine\t2010\tonly\t-\tMar\tlastSat\t0:01\t1:00\tS\n"+
-"Rule Palestine\t2010\tonly\t-\tAug\t11\t0:00\t0\t-\n"+
-"Zone\tAsia/Gaza\t2:17:52\t-\tLMT\t1900 Oct\n"+
-"\t\t\t2:00\tZion\tEET\t1948 May 15\n"+
-"\t\t\t2:00 EgyptAsia\tEE%sT\t1967 Jun  5\n"+
-"\t\t\t2:00\tZion\tI%sT\t1996\n"+
-"\t\t\t2:00\tJordan\tEE%sT\t1999\n"+
-"\t\t\t2:00 Palestine\tEE%sT\t2011 Apr  2 12:01\n"+
-"\t\t\t2:00\t1:00\tEEST\t2011 Aug  1\n"+
-"\t\t\t2:00\t-\tEET\n"+
-"Zone\tAsia/Hebron\t2:20:23\t-\tLMT\t1900 Oct\n"+
-"\t\t\t2:00\tZion\tEET\t1948 May 15\n"+
-"\t\t\t2:00 EgyptAsia\tEE%sT\t1967 Jun  5\n"+
-"\t\t\t2:00\tZion\tI%sT\t1996\n"+
-"\t\t\t2:00\tJordan\tEE%sT\t1999\n"+
-"\t\t\t2:00 Palestine\tEE%sT\t2008 Aug\n"+
-"\t\t\t2:00 \t1:00\tEEST\t2008 Sep\n"+
-"\t\t\t2:00 Palestine\tEE%sT\t2011 Apr  1 12:01\n"+
-"\t\t\t2:00\t1:00\tEEST\t2011 Aug  1\n"+
-"\t\t\t2:00\t-\tEET\t2011 Aug 30\n"+
-"\t\t\t2:00\t1:00\tEEST\t2011 Sep 30 3:00\n"+
-"\t\t\t2:00\t-\tEET\n"+
-"Rule\tPhil\t1936\tonly\t-\tNov\t1\t0:00\t1:00\tS\n"+
-"Rule\tPhil\t1937\tonly\t-\tFeb\t1\t0:00\t0\t-\n"+
-"Rule\tPhil\t1954\tonly\t-\tApr\t12\t0:00\t1:00\tS\n"+
-"Rule\tPhil\t1954\tonly\t-\tJul\t1\t0:00\t0\t-\n"+
-"Rule\tPhil\t1978\tonly\t-\tMar\t22\t0:00\t1:00\tS\n"+
-"Rule\tPhil\t1978\tonly\t-\tSep\t21\t0:00\t0\t-\n"+
-"Zone\tAsia/Manila\t-15:56:00 -\tLMT\t1844 Dec 31\n"+
-"\t\t\t8:04:00 -\tLMT\t1899 May 11\n"+
-"\t\t\t8:00\tPhil\tPH%sT\t1942 May\n"+
-"\t\t\t9:00\t-\tJST\t1944 Nov\n"+
-"\t\t\t8:00\tPhil\tPH%sT\n"+
-"Zone\tAsia/Qatar\t3:26:08 -\tLMT\t1920\t# Al Dawhah / Doha\n"+
-"\t\t\t4:00\t-\tGST\t1972 Jun\n"+
-"\t\t\t3:00\t-\tAST\n"+
-"Zone\tAsia/Riyadh\t3:06:52 -\tLMT\t1950\n"+
-"\t\t\t3:00\t-\tAST\n"+
-"Zone\tAsia/Singapore\t6:55:25 -\tLMT\t1901 Jan  1\n"+
-"\t\t\t6:55:25\t-\tSMT\t1905 Jun  1 # Singapore M.T.\n"+
-"\t\t\t7:00\t-\tMALT\t1933 Jan  1 # Malaya Time\n"+
-"\t\t\t7:00\t0:20\tMALST\t1936 Jan  1\n"+
-"\t\t\t7:20\t-\tMALT\t1941 Sep  1\n"+
-"\t\t\t7:30\t-\tMALT\t1942 Feb 16\n"+
-"\t\t\t9:00\t-\tJST\t1945 Sep 12\n"+
-"\t\t\t7:30\t-\tMALT\t1965 Aug  9 # independence\n"+
-"\t\t\t7:30\t-\tSGT\t1982 Jan  1 # Singapore Time\n"+
-"\t\t\t8:00\t-\tSGT\n"+
-"Zone\tAsia/Colombo\t5:19:24 -\tLMT\t1880\n"+
-"\t\t\t5:19:32\t-\tMMT\t1906\t# Moratuwa Mean Time\n"+
-"\t\t\t5:30\t-\tIST\t1942 Jan  5\n"+
-"\t\t\t5:30\t0:30\tIHST\t1942 Sep\n"+
-"\t\t\t5:30\t1:00\tIST\t1945 Oct 16 2:00\n"+
-"\t\t\t5:30\t-\tIST\t1996 May 25 0:00\n"+
-"\t\t\t6:30\t-\tLKT\t1996 Oct 26 0:30\n"+
-"\t\t\t6:00\t-\tLKT\t2006 Apr 15 0:30\n"+
-"\t\t\t5:30\t-\tIST\n"+
-"Rule\tSyria\t1920\t1923\t-\tApr\tSun>=15\t2:00\t1:00\tS\n"+
-"Rule\tSyria\t1920\t1923\t-\tOct\tSun>=1\t2:00\t0\t-\n"+
-"Rule\tSyria\t1962\tonly\t-\tApr\t29\t2:00\t1:00\tS\n"+
-"Rule\tSyria\t1962\tonly\t-\tOct\t1\t2:00\t0\t-\n"+
-"Rule\tSyria\t1963\t1965\t-\tMay\t1\t2:00\t1:00\tS\n"+
-"Rule\tSyria\t1963\tonly\t-\tSep\t30\t2:00\t0\t-\n"+
-"Rule\tSyria\t1964\tonly\t-\tOct\t1\t2:00\t0\t-\n"+
-"Rule\tSyria\t1965\tonly\t-\tSep\t30\t2:00\t0\t-\n"+
-"Rule\tSyria\t1966\tonly\t-\tApr\t24\t2:00\t1:00\tS\n"+
-"Rule\tSyria\t1966\t1976\t-\tOct\t1\t2:00\t0\t-\n"+
-"Rule\tSyria\t1967\t1978\t-\tMay\t1\t2:00\t1:00\tS\n"+
-"Rule\tSyria\t1977\t1978\t-\tSep\t1\t2:00\t0\t-\n"+
-"Rule\tSyria\t1983\t1984\t-\tApr\t9\t2:00\t1:00\tS\n"+
-"Rule\tSyria\t1983\t1984\t-\tOct\t1\t2:00\t0\t-\n"+
-"Rule\tSyria\t1986\tonly\t-\tFeb\t16\t2:00\t1:00\tS\n"+
-"Rule\tSyria\t1986\tonly\t-\tOct\t9\t2:00\t0\t-\n"+
-"Rule\tSyria\t1987\tonly\t-\tMar\t1\t2:00\t1:00\tS\n"+
-"Rule\tSyria\t1987\t1988\t-\tOct\t31\t2:00\t0\t-\n"+
-"Rule\tSyria\t1988\tonly\t-\tMar\t15\t2:00\t1:00\tS\n"+
-"Rule\tSyria\t1989\tonly\t-\tMar\t31\t2:00\t1:00\tS\n"+
-"Rule\tSyria\t1989\tonly\t-\tOct\t1\t2:00\t0\t-\n"+
-"Rule\tSyria\t1990\tonly\t-\tApr\t1\t2:00\t1:00\tS\n"+
-"Rule\tSyria\t1990\tonly\t-\tSep\t30\t2:00\t0\t-\n"+
-"Rule\tSyria\t1991\tonly\t-\tApr\t 1\t0:00\t1:00\tS\n"+
-"Rule\tSyria\t1991\t1992\t-\tOct\t 1\t0:00\t0\t-\n"+
-"Rule\tSyria\t1992\tonly\t-\tApr\t 8\t0:00\t1:00\tS\n"+
-"Rule\tSyria\t1993\tonly\t-\tMar\t26\t0:00\t1:00\tS\n"+
-"Rule\tSyria\t1993\tonly\t-\tSep\t25\t0:00\t0\t-\n"+
-"Rule\tSyria\t1994\t1996\t-\tApr\t 1\t0:00\t1:00\tS\n"+
-"Rule\tSyria\t1994\t2005\t-\tOct\t 1\t0:00\t0\t-\n"+
-"Rule\tSyria\t1997\t1998\t-\tMar\tlastMon\t0:00\t1:00\tS\n"+
-"Rule\tSyria\t1999\t2006\t-\tApr\t 1\t0:00\t1:00\tS\n"+
-"Rule\tSyria\t2006\tonly\t-\tSep\t22\t0:00\t0\t-\n"+
-"Rule\tSyria\t2007\tonly\t-\tMar\tlastFri\t0:00\t1:00\tS\n"+
-"Rule\tSyria\t2007\tonly\t-\tNov\t Fri>=1\t0:00\t0\t-\n"+
-"Rule\tSyria\t2008\tonly\t-\tApr\tFri>=1\t0:00\t1:00\tS\n"+
-"Rule\tSyria\t2008\tonly\t-\tNov\t1\t0:00\t0\t-\n"+
-"Rule\tSyria\t2009\tonly\t-\tMar\tlastFri\t0:00\t1:00\tS\n"+
-"Rule\tSyria\t2010\tmax\t-\tApr\tFri>=1\t0:00\t1:00\tS\n"+
-"Rule\tSyria\t2009\tmax\t-\tOct\tlastFri\t0:00\t0\t-\n"+
-"Zone\tAsia/Damascus\t2:25:12 -\tLMT\t1920\t# Dimashq\n"+
-"\t\t\t2:00\tSyria\tEE%sT\n"+
-"Zone\tAsia/Dushanbe\t4:35:12 -\tLMT\t1924 May  2\n"+
-"\t\t\t5:00\t-\tDUST\t1930 Jun 21 # Dushanbe Time\n"+
-"\t\t\t6:00 RussiaAsia DUS%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t5:00\t1:00\tDUSST\t1991 Sep  9 2:00s\n"+
-"\t\t\t5:00\t-\tTJT\t\t    # Tajikistan Time\n"+
-"Zone\tAsia/Bangkok\t6:42:04\t-\tLMT\t1880\n"+
-"\t\t\t6:42:04\t-\tBMT\t1920 Apr # Bangkok Mean Time\n"+
-"\t\t\t7:00\t-\tICT\n"+
-"Zone\tAsia/Ashgabat\t3:53:32 -\tLMT\t1924 May  2 # or Ashkhabad\n"+
-"\t\t\t4:00\t-\tASHT\t1930 Jun 21 # Ashkhabad Time\n"+
-"\t\t\t5:00 RussiaAsia\tASH%sT\t1991 Mar 31 2:00\n"+
-"\t\t\t4:00 RussiaAsia\tASH%sT\t1991 Oct 27 # independence\n"+
-"\t\t\t4:00 RussiaAsia\tTM%sT\t1992 Jan 19 2:00\n"+
-"\t\t\t5:00\t-\tTMT\n"+
-"Zone\tAsia/Dubai\t3:41:12 -\tLMT\t1920\n"+
-"\t\t\t4:00\t-\tGST\n"+
-"Zone\tAsia/Samarkand\t4:27:12 -\tLMT\t1924 May  2\n"+
-"\t\t\t4:00\t-\tSAMT\t1930 Jun 21 # Samarkand Time\n"+
-"\t\t\t5:00\t-\tSAMT\t1981 Apr  1\n"+
-"\t\t\t5:00\t1:00\tSAMST\t1981 Oct  1\n"+
-"\t\t\t6:00\t-\tTAST\t1982 Apr  1 # Tashkent Time\n"+
-"\t\t\t5:00 RussiaAsia\tSAM%sT\t1991 Sep  1 # independence\n"+
-"\t\t\t5:00 RussiaAsia\tUZ%sT\t1992\n"+
-"\t\t\t5:00\t-\tUZT\n"+
-"Zone\tAsia/Tashkent\t4:37:12 -\tLMT\t1924 May  2\n"+
-"\t\t\t5:00\t-\tTAST\t1930 Jun 21 # Tashkent Time\n"+
-"\t\t\t6:00 RussiaAsia\tTAS%sT\t1991 Mar 31 2:00\n"+
-"\t\t\t5:00 RussiaAsia\tTAS%sT\t1991 Sep  1 # independence\n"+
-"\t\t\t5:00 RussiaAsia\tUZ%sT\t1992\n"+
-"\t\t\t5:00\t-\tUZT\n"+
-"Zone\tAsia/Ho_Chi_Minh\t7:06:40 -\tLMT\t1906 Jun  9\n"+
-"\t\t\t7:06:20\t-\tSMT\t1911 Mar 11 0:01 # Saigon MT?\n"+
-"\t\t\t7:00\t-\tICT\t1912 May\n"+
-"\t\t\t8:00\t-\tICT\t1931 May\n"+
-"\t\t\t7:00\t-\tICT\n"+
-"Zone\tAsia/Aden\t3:00:48\t-\tLMT\t1950\n"+
-"\t\t\t3:00\t-\tAST\n"+
-"","tz/australasia":"Rule\tAus\t1917\tonly\t-\tJan\t 1\t0:01\t1:00\t-\n"+
-"Rule\tAus\t1917\tonly\t-\tMar\t25\t2:00\t0\t-\n"+
-"Rule\tAus\t1942\tonly\t-\tJan\t 1\t2:00\t1:00\t-\n"+
-"Rule\tAus\t1942\tonly\t-\tMar\t29\t2:00\t0\t-\n"+
-"Rule\tAus\t1942\tonly\t-\tSep\t27\t2:00\t1:00\t-\n"+
-"Rule\tAus\t1943\t1944\t-\tMar\tlastSun\t2:00\t0\t-\n"+
-"Rule\tAus\t1943\tonly\t-\tOct\t 3\t2:00\t1:00\t-\n"+
-"Zone Australia/Darwin\t 8:43:20 -\tLMT\t1895 Feb\n"+
-"\t\t\t 9:00\t-\tCST\t1899 May\n"+
-"\t\t\t 9:30\tAus\tCST\n"+
-"Rule\tAW\t1974\tonly\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAW\t1975\tonly\t-\tMar\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAW\t1983\tonly\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAW\t1984\tonly\t-\tMar\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAW\t1991\tonly\t-\tNov\t17\t2:00s\t1:00\t-\n"+
-"Rule\tAW\t1992\tonly\t-\tMar\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAW\t2006\tonly\t-\tDec\t 3\t2:00s\t1:00\t-\n"+
-"Rule\tAW\t2007\t2009\t-\tMar\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tAW\t2007\t2008\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Zone Australia/Perth\t 7:43:24 -\tLMT\t1895 Dec\n"+
-"\t\t\t 8:00\tAus\tWST\t1943 Jul\n"+
-"\t\t\t 8:00\tAW\tWST\n"+
-"Zone Australia/Eucla\t 8:35:28 -\tLMT\t1895 Dec\n"+
-"\t\t\t 8:45\tAus\tCWST\t1943 Jul\n"+
-"\t\t\t 8:45\tAW\tCWST\n"+
-"Rule\tAQ\t1971\tonly\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAQ\t1972\tonly\t-\tFeb\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tAQ\t1989\t1991\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAQ\t1990\t1992\t-\tMar\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tHoliday\t1992\t1993\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tHoliday\t1993\t1994\t-\tMar\tSun>=1\t2:00s\t0\t-\n"+
-"Zone Australia/Brisbane\t10:12:08 -\tLMT\t1895\n"+
-"\t\t\t10:00\tAus\tEST\t1971\n"+
-"\t\t\t10:00\tAQ\tEST\n"+
-"Zone Australia/Lindeman  9:55:56 -\tLMT\t1895\n"+
-"\t\t\t10:00\tAus\tEST\t1971\n"+
-"\t\t\t10:00\tAQ\tEST\t1992 Jul\n"+
-"\t\t\t10:00\tHoliday\tEST\n"+
-"Rule\tAS\t1971\t1985\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAS\t1986\tonly\t-\tOct\t19\t2:00s\t1:00\t-\n"+
-"Rule\tAS\t1987\t2007\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAS\t1972\tonly\t-\tFeb\t27\t2:00s\t0\t-\n"+
-"Rule\tAS\t1973\t1985\t-\tMar\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAS\t1986\t1990\t-\tMar\tSun>=15\t2:00s\t0\t-\n"+
-"Rule\tAS\t1991\tonly\t-\tMar\t3\t2:00s\t0\t-\n"+
-"Rule\tAS\t1992\tonly\t-\tMar\t22\t2:00s\t0\t-\n"+
-"Rule\tAS\t1993\tonly\t-\tMar\t7\t2:00s\t0\t-\n"+
-"Rule\tAS\t1994\tonly\t-\tMar\t20\t2:00s\t0\t-\n"+
-"Rule\tAS\t1995\t2005\t-\tMar\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tAS\t2006\tonly\t-\tApr\t2\t2:00s\t0\t-\n"+
-"Rule\tAS\t2007\tonly\t-\tMar\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tAS\t2008\tmax\t-\tApr\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAS\t2008\tmax\t-\tOct\tSun>=1\t2:00s\t1:00\t-\n"+
-"Zone Australia/Adelaide\t9:14:20 -\tLMT\t1895 Feb\n"+
-"\t\t\t9:00\t-\tCST\t1899 May\n"+
-"\t\t\t9:30\tAus\tCST\t1971\n"+
-"\t\t\t9:30\tAS\tCST\n"+
-"Rule\tAT\t1967\tonly\t-\tOct\tSun>=1\t2:00s\t1:00\t-\n"+
-"Rule\tAT\t1968\tonly\t-\tMar\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tAT\t1968\t1985\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAT\t1969\t1971\t-\tMar\tSun>=8\t2:00s\t0\t-\n"+
-"Rule\tAT\t1972\tonly\t-\tFeb\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tAT\t1973\t1981\t-\tMar\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAT\t1982\t1983\t-\tMar\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tAT\t1984\t1986\t-\tMar\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAT\t1986\tonly\t-\tOct\tSun>=15\t2:00s\t1:00\t-\n"+
-"Rule\tAT\t1987\t1990\t-\tMar\tSun>=15\t2:00s\t0\t-\n"+
-"Rule\tAT\t1987\tonly\t-\tOct\tSun>=22\t2:00s\t1:00\t-\n"+
-"Rule\tAT\t1988\t1990\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAT\t1991\t1999\t-\tOct\tSun>=1\t2:00s\t1:00\t-\n"+
-"Rule\tAT\t1991\t2005\t-\tMar\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tAT\t2000\tonly\t-\tAug\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAT\t2001\tmax\t-\tOct\tSun>=1\t2:00s\t1:00\t-\n"+
-"Rule\tAT\t2006\tonly\t-\tApr\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAT\t2007\tonly\t-\tMar\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tAT\t2008\tmax\t-\tApr\tSun>=1\t2:00s\t0\t-\n"+
-"Zone Australia/Hobart\t9:49:16\t-\tLMT\t1895 Sep\n"+
-"\t\t\t10:00\t-\tEST\t1916 Oct 1 2:00\n"+
-"\t\t\t10:00\t1:00\tEST\t1917 Feb\n"+
-"\t\t\t10:00\tAus\tEST\t1967\n"+
-"\t\t\t10:00\tAT\tEST\n"+
-"Zone Australia/Currie\t9:35:28\t-\tLMT\t1895 Sep\n"+
-"\t\t\t10:00\t-\tEST\t1916 Oct 1 2:00\n"+
-"\t\t\t10:00\t1:00\tEST\t1917 Feb\n"+
-"\t\t\t10:00\tAus\tEST\t1971 Jul\n"+
-"\t\t\t10:00\tAT\tEST\n"+
-"Rule\tAV\t1971\t1985\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAV\t1972\tonly\t-\tFeb\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tAV\t1973\t1985\t-\tMar\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAV\t1986\t1990\t-\tMar\tSun>=15\t2:00s\t0\t-\n"+
-"Rule\tAV\t1986\t1987\t-\tOct\tSun>=15\t2:00s\t1:00\t-\n"+
-"Rule\tAV\t1988\t1999\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAV\t1991\t1994\t-\tMar\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAV\t1995\t2005\t-\tMar\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tAV\t2000\tonly\t-\tAug\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAV\t2001\t2007\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAV\t2006\tonly\t-\tApr\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAV\t2007\tonly\t-\tMar\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tAV\t2008\tmax\t-\tApr\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAV\t2008\tmax\t-\tOct\tSun>=1\t2:00s\t1:00\t-\n"+
-"Zone Australia/Melbourne 9:39:52 -\tLMT\t1895 Feb\n"+
-"\t\t\t10:00\tAus\tEST\t1971\n"+
-"\t\t\t10:00\tAV\tEST\n"+
-"Rule\tAN\t1971\t1985\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAN\t1972\tonly\t-\tFeb\t27\t2:00s\t0\t-\n"+
-"Rule\tAN\t1973\t1981\t-\tMar\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAN\t1982\tonly\t-\tApr\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAN\t1983\t1985\t-\tMar\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAN\t1986\t1989\t-\tMar\tSun>=15\t2:00s\t0\t-\n"+
-"Rule\tAN\t1986\tonly\t-\tOct\t19\t2:00s\t1:00\t-\n"+
-"Rule\tAN\t1987\t1999\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAN\t1990\t1995\t-\tMar\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAN\t1996\t2005\t-\tMar\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tAN\t2000\tonly\t-\tAug\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAN\t2001\t2007\t-\tOct\tlastSun\t2:00s\t1:00\t-\n"+
-"Rule\tAN\t2006\tonly\t-\tApr\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAN\t2007\tonly\t-\tMar\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tAN\t2008\tmax\t-\tApr\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAN\t2008\tmax\t-\tOct\tSun>=1\t2:00s\t1:00\t-\n"+
-"Zone Australia/Sydney\t10:04:52 -\tLMT\t1895 Feb\n"+
-"\t\t\t10:00\tAus\tEST\t1971\n"+
-"\t\t\t10:00\tAN\tEST\n"+
-"Zone Australia/Broken_Hill 9:25:48 -\tLMT\t1895 Feb\n"+
-"\t\t\t10:00\t-\tEST\t1896 Aug 23\n"+
-"\t\t\t9:00\t-\tCST\t1899 May\n"+
-"\t\t\t9:30\tAus\tCST\t1971\n"+
-"\t\t\t9:30\tAN\tCST\t2000\n"+
-"\t\t\t9:30\tAS\tCST\n"+
-"Rule\tLH\t1981\t1984\t-\tOct\tlastSun\t2:00\t1:00\t-\n"+
-"Rule\tLH\t1982\t1985\t-\tMar\tSun>=1\t2:00\t0\t-\n"+
-"Rule\tLH\t1985\tonly\t-\tOct\tlastSun\t2:00\t0:30\t-\n"+
-"Rule\tLH\t1986\t1989\t-\tMar\tSun>=15\t2:00\t0\t-\n"+
-"Rule\tLH\t1986\tonly\t-\tOct\t19\t2:00\t0:30\t-\n"+
-"Rule\tLH\t1987\t1999\t-\tOct\tlastSun\t2:00\t0:30\t-\n"+
-"Rule\tLH\t1990\t1995\t-\tMar\tSun>=1\t2:00\t0\t-\n"+
-"Rule\tLH\t1996\t2005\t-\tMar\tlastSun\t2:00\t0\t-\n"+
-"Rule\tLH\t2000\tonly\t-\tAug\tlastSun\t2:00\t0:30\t-\n"+
-"Rule\tLH\t2001\t2007\t-\tOct\tlastSun\t2:00\t0:30\t-\n"+
-"Rule\tLH\t2006\tonly\t-\tApr\tSun>=1\t2:00\t0\t-\n"+
-"Rule\tLH\t2007\tonly\t-\tMar\tlastSun\t2:00\t0\t-\n"+
-"Rule\tLH\t2008\tmax\t-\tApr\tSun>=1\t2:00\t0\t-\n"+
-"Rule\tLH\t2008\tmax\t-\tOct\tSun>=1\t2:00\t0:30\t-\n"+
-"Zone Australia/Lord_Howe 10:36:20 -\tLMT\t1895 Feb\n"+
-"\t\t\t10:00\t-\tEST\t1981 Mar\n"+
-"\t\t\t10:30\tLH\tLHST\n"+
-"Zone Indian/Christmas\t7:02:52 -\tLMT\t1895 Feb\n"+
-"\t\t\t7:00\t-\tCXT\t# Christmas Island Time\n"+
-"Rule\tCook\t1978\tonly\t-\tNov\t12\t0:00\t0:30\tHS\n"+
-"Rule\tCook\t1979\t1991\t-\tMar\tSun>=1\t0:00\t0\t-\n"+
-"Rule\tCook\t1979\t1990\t-\tOct\tlastSun\t0:00\t0:30\tHS\n"+
-"Zone Pacific/Rarotonga\t-10:39:04 -\tLMT\t1901\t\t# Avarua\n"+
-"\t\t\t-10:30\t-\tCKT\t1978 Nov 12\t# Cook Is Time\n"+
-"\t\t\t-10:00\tCook\tCK%sT\n"+
-"Zone\tIndian/Cocos\t6:27:40\t-\tLMT\t1900\n"+
-"\t\t\t6:30\t-\tCCT\t# Cocos Islands Time\n"+
-"Rule\tFiji\t1998\t1999\t-\tNov\tSun>=1\t2:00\t1:00\tS\n"+
-"Rule\tFiji\t1999\t2000\t-\tFeb\tlastSun\t3:00\t0\t-\n"+
-"Rule\tFiji\t2009\tonly\t-\tNov\t29\t2:00\t1:00\tS\n"+
-"Rule\tFiji\t2010\tonly\t-\tMar\tlastSun\t3:00\t0\t-\n"+
-"Rule\tFiji\t2010\tonly\t-\tOct\t24\t2:00\t1:00\tS\n"+
-"Rule\tFiji\t2011\tonly\t-\tMar\tSun>=1\t3:00\t0\t-\n"+
-"Rule\tFiji\t2011\tonly\t-\tOct\t23\t2:00\t1:00\tS\n"+
-"Rule\tFiji\t2012\tonly\t-\tJan\t22\t3:00\t0\t-\n"+
-"Zone\tPacific/Fiji\t11:53:40 -\tLMT\t1915 Oct 26\t# Suva\n"+
-"\t\t\t12:00\tFiji\tFJ%sT\t# Fiji Time\n"+
-"Zone\tPacific/Gambier\t -8:59:48 -\tLMT\t1912 Oct\t# Rikitea\n"+
-"\t\t\t -9:00\t-\tGAMT\t# Gambier Time\n"+
-"Zone\tPacific/Marquesas -9:18:00 -\tLMT\t1912 Oct\n"+
-"\t\t\t -9:30\t-\tMART\t# Marquesas Time\n"+
-"Zone\tPacific/Tahiti\t -9:58:16 -\tLMT\t1912 Oct\t# Papeete\n"+
-"\t\t\t-10:00\t-\tTAHT\t# Tahiti Time\n"+
-"Zone\tPacific/Guam\t-14:21:00 -\tLMT\t1844 Dec 31\n"+
-"\t\t\t 9:39:00 -\tLMT\t1901\t\t# Agana\n"+
-"\t\t\t10:00\t-\tGST\t2000 Dec 23\t# Guam\n"+
-"\t\t\t10:00\t-\tChST\t# Chamorro Standard Time\n"+
-"Zone Pacific/Tarawa\t 11:32:04 -\tLMT\t1901\t\t# Bairiki\n"+
-"\t\t\t 12:00\t-\tGILT\t\t # Gilbert Is Time\n"+
-"Zone Pacific/Enderbury\t-11:24:20 -\tLMT\t1901\n"+
-"\t\t\t-12:00\t-\tPHOT\t1979 Oct # Phoenix Is Time\n"+
-"\t\t\t-11:00\t-\tPHOT\t1995\n"+
-"\t\t\t 13:00\t-\tPHOT\n"+
-"Zone Pacific/Kiritimati\t-10:29:20 -\tLMT\t1901\n"+
-"\t\t\t-10:40\t-\tLINT\t1979 Oct # Line Is Time\n"+
-"\t\t\t-10:00\t-\tLINT\t1995\n"+
-"\t\t\t 14:00\t-\tLINT\n"+
-"Zone Pacific/Saipan\t-14:17:00 -\tLMT\t1844 Dec 31\n"+
-"\t\t\t 9:43:00 -\tLMT\t1901\n"+
-"\t\t\t 9:00\t-\tMPT\t1969 Oct # N Mariana Is Time\n"+
-"\t\t\t10:00\t-\tMPT\t2000 Dec 23\n"+
-"\t\t\t10:00\t-\tChST\t# Chamorro Standard Time\n"+
-"Zone Pacific/Majuro\t11:24:48 -\tLMT\t1901\n"+
-"\t\t\t11:00\t-\tMHT\t1969 Oct # Marshall Islands Time\n"+
-"\t\t\t12:00\t-\tMHT\n"+
-"Zone Pacific/Kwajalein\t11:09:20 -\tLMT\t1901\n"+
-"\t\t\t11:00\t-\tMHT\t1969 Oct\n"+
-"\t\t\t-12:00\t-\tKWAT\t1993 Aug 20\t# Kwajalein Time\n"+
-"\t\t\t12:00\t-\tMHT\n"+
-"Zone Pacific/Chuuk\t10:07:08 -\tLMT\t1901\n"+
-"\t\t\t10:00\t-\tCHUT\t\t\t# Chuuk Time\n"+
-"Zone Pacific/Pohnpei\t10:32:52 -\tLMT\t1901\t\t# Kolonia\n"+
-"\t\t\t11:00\t-\tPONT\t\t\t# Pohnpei Time\n"+
-"Zone Pacific/Kosrae\t10:51:56 -\tLMT\t1901\n"+
-"\t\t\t11:00\t-\tKOST\t1969 Oct\t# Kosrae Time\n"+
-"\t\t\t12:00\t-\tKOST\t1999\n"+
-"\t\t\t11:00\t-\tKOST\n"+
-"Zone\tPacific/Nauru\t11:07:40 -\tLMT\t1921 Jan 15\t# Uaobe\n"+
-"\t\t\t11:30\t-\tNRT\t1942 Mar 15\t# Nauru Time\n"+
-"\t\t\t9:00\t-\tJST\t1944 Aug 15\n"+
-"\t\t\t11:30\t-\tNRT\t1979 May\n"+
-"\t\t\t12:00\t-\tNRT\n"+
-"Rule\tNC\t1977\t1978\t-\tDec\tSun>=1\t0:00\t1:00\tS\n"+
-"Rule\tNC\t1978\t1979\t-\tFeb\t27\t0:00\t0\t-\n"+
-"Rule\tNC\t1996\tonly\t-\tDec\t 1\t2:00s\t1:00\tS\n"+
-"Rule\tNC\t1997\tonly\t-\tMar\t 2\t2:00s\t0\t-\n"+
-"Zone\tPacific/Noumea\t11:05:48 -\tLMT\t1912 Jan 13\n"+
-"\t\t\t11:00\tNC\tNC%sT\n"+
-"Rule\tNZ\t1927\tonly\t-\tNov\t 6\t2:00\t1:00\tS\n"+
-"Rule\tNZ\t1928\tonly\t-\tMar\t 4\t2:00\t0\tM\n"+
-"Rule\tNZ\t1928\t1933\t-\tOct\tSun>=8\t2:00\t0:30\tS\n"+
-"Rule\tNZ\t1929\t1933\t-\tMar\tSun>=15\t2:00\t0\tM\n"+
-"Rule\tNZ\t1934\t1940\t-\tApr\tlastSun\t2:00\t0\tM\n"+
-"Rule\tNZ\t1934\t1940\t-\tSep\tlastSun\t2:00\t0:30\tS\n"+
-"Rule\tNZ\t1946\tonly\t-\tJan\t 1\t0:00\t0\tS\n"+
-"Rule\tNZ\t1974\tonly\t-\tNov\tSun>=1\t2:00s\t1:00\tD\n"+
-"Rule\tChatham\t1974\tonly\t-\tNov\tSun>=1\t2:45s\t1:00\tD\n"+
-"Rule\tNZ\t1975\tonly\t-\tFeb\tlastSun\t2:00s\t0\tS\n"+
-"Rule\tChatham\t1975\tonly\t-\tFeb\tlastSun\t2:45s\t0\tS\n"+
-"Rule\tNZ\t1975\t1988\t-\tOct\tlastSun\t2:00s\t1:00\tD\n"+
-"Rule\tChatham\t1975\t1988\t-\tOct\tlastSun\t2:45s\t1:00\tD\n"+
-"Rule\tNZ\t1976\t1989\t-\tMar\tSun>=1\t2:00s\t0\tS\n"+
-"Rule\tChatham\t1976\t1989\t-\tMar\tSun>=1\t2:45s\t0\tS\n"+
-"Rule\tNZ\t1989\tonly\t-\tOct\tSun>=8\t2:00s\t1:00\tD\n"+
-"Rule\tChatham\t1989\tonly\t-\tOct\tSun>=8\t2:45s\t1:00\tD\n"+
-"Rule\tNZ\t1990\t2006\t-\tOct\tSun>=1\t2:00s\t1:00\tD\n"+
-"Rule\tChatham\t1990\t2006\t-\tOct\tSun>=1\t2:45s\t1:00\tD\n"+
-"Rule\tNZ\t1990\t2007\t-\tMar\tSun>=15\t2:00s\t0\tS\n"+
-"Rule\tChatham\t1990\t2007\t-\tMar\tSun>=15\t2:45s\t0\tS\n"+
-"Rule\tNZ\t2007\tmax\t-\tSep\tlastSun\t2:00s\t1:00\tD\n"+
-"Rule\tChatham\t2007\tmax\t-\tSep\tlastSun\t2:45s\t1:00\tD\n"+
-"Rule\tNZ\t2008\tmax\t-\tApr\tSun>=1\t2:00s\t0\tS\n"+
-"Rule\tChatham\t2008\tmax\t-\tApr\tSun>=1\t2:45s\t0\tS\n"+
-"Zone Pacific/Auckland\t11:39:04 -\tLMT\t1868 Nov  2\n"+
-"\t\t\t11:30\tNZ\tNZ%sT\t1946 Jan  1\n"+
-"\t\t\t12:00\tNZ\tNZ%sT\n"+
-"Zone Pacific/Chatham\t12:13:48 -\tLMT\t1957 Jan  1\n"+
-"\t\t\t12:45\tChatham\tCHA%sT\n"+
-"Zone\tPacific/Niue\t-11:19:40 -\tLMT\t1901\t\t# Alofi\n"+
-"\t\t\t-11:20\t-\tNUT\t1951\t# Niue Time\n"+
-"\t\t\t-11:30\t-\tNUT\t1978 Oct 1\n"+
-"\t\t\t-11:00\t-\tNUT\n"+
-"Zone\tPacific/Norfolk\t11:11:52 -\tLMT\t1901\t\t# Kingston\n"+
-"\t\t\t11:12\t-\tNMT\t1951\t# Norfolk Mean Time\n"+
-"\t\t\t11:30\t-\tNFT\t\t# Norfolk Time\n"+
-"Zone Pacific/Palau\t8:57:56 -\tLMT\t1901\t\t# Koror\n"+
-"\t\t\t9:00\t-\tPWT\t# Palau Time\n"+
-"Zone Pacific/Port_Moresby 9:48:40 -\tLMT\t1880\n"+
-"\t\t\t9:48:32\t-\tPMMT\t1895\t# Port Moresby Mean Time\n"+
-"\t\t\t10:00\t-\tPGT\t\t# Papua New Guinea Time\n"+
-"Zone Pacific/Pitcairn\t-8:40:20 -\tLMT\t1901\t\t# Adamstown\n"+
-"\t\t\t-8:30\t-\tPNT\t1998 Apr 27 00:00\n"+
-"\t\t\t-8:00\t-\tPST\t# Pitcairn Standard Time\n"+
-"Zone Pacific/Pago_Pago\t 12:37:12 -\tLMT\t1879 Jul  5\n"+
-"\t\t\t-11:22:48 -\tLMT\t1911\n"+
-"\t\t\t-11:30\t-\tSAMT\t1950\t\t# Samoa Time\n"+
-"\t\t\t-11:00\t-\tNST\t1967 Apr\t# N=Nome\n"+
-"\t\t\t-11:00\t-\tBST\t1983 Nov 30\t# B=Bering\n"+
-"\t\t\t-11:00\t-\tSST\t\t\t# S=Samoa\n"+
-"Zone Pacific/Apia\t 12:33:04 -\tLMT\t1879 Jul  5\n"+
-"\t\t\t-11:26:56 -\tLMT\t1911\n"+
-"\t\t\t-11:30\t-\tSAMT\t1950\t\t# Samoa Time\n"+
-"\t\t\t-11:00\t-\tWST\t2010 Sep 26\n"+
-"\t\t\t-11:00\t1:00\tWSDT\t2011 Apr 2 4:00\n"+
-"\t\t\t-11:00\t-\tWST\t2011 Sep 24 3:00\n"+
-"\t\t\t-11:00\t1:00\tWSDT\t2011 Dec 30\n"+
-"\t\t\t 13:00\t1:00\tWSDT\t2012 Apr 1 4:00\n"+
-"\t\t\t 13:00\t-\tWST\n"+
-"Zone Pacific/Guadalcanal 10:39:48 -\tLMT\t1912 Oct\t# Honiara\n"+
-"\t\t\t11:00\t-\tSBT\t# Solomon Is Time\n"+
-"Zone\tPacific/Fakaofo\t-11:24:56 -\tLMT\t1901\n"+
-"\t\t\t-10:00\t-\tTKT\t# Tokelau Time\n"+
-"Rule\tTonga\t1999\tonly\t-\tOct\t 7\t2:00s\t1:00\tS\n"+
-"Rule\tTonga\t2000\tonly\t-\tMar\t19\t2:00s\t0\t-\n"+
-"Rule\tTonga\t2000\t2001\t-\tNov\tSun>=1\t2:00\t1:00\tS\n"+
-"Rule\tTonga\t2001\t2002\t-\tJan\tlastSun\t2:00\t0\t-\n"+
-"Zone Pacific/Tongatapu\t12:19:20 -\tLMT\t1901\n"+
-"\t\t\t12:20\t-\tTOT\t1941 # Tonga Time\n"+
-"\t\t\t13:00\t-\tTOT\t1999\n"+
-"\t\t\t13:00\tTonga\tTO%sT\n"+
-"Zone Pacific/Funafuti\t11:56:52 -\tLMT\t1901\n"+
-"\t\t\t12:00\t-\tTVT\t# Tuvalu Time\n"+
-"Zone Pacific/Johnston\t-10:00\t-\tHST\n"+
-"Zone Pacific/Midway\t-11:49:28 -\tLMT\t1901\n"+
-"\t\t\t-11:00\t-\tNST\t1956 Jun  3\n"+
-"\t\t\t-11:00\t1:00\tNDT\t1956 Sep  2\n"+
-"\t\t\t-11:00\t-\tNST\t1967 Apr\t# N=Nome\n"+
-"\t\t\t-11:00\t-\tBST\t1983 Nov 30\t# B=Bering\n"+
-"\t\t\t-11:00\t-\tSST\t\t\t# S=Samoa\n"+
-"Zone\tPacific/Wake\t11:06:28 -\tLMT\t1901\n"+
-"\t\t\t12:00\t-\tWAKT\t# Wake Time\n"+
-"Rule\tVanuatu\t1983\tonly\t-\tSep\t25\t0:00\t1:00\tS\n"+
-"Rule\tVanuatu\t1984\t1991\t-\tMar\tSun>=23\t0:00\t0\t-\n"+
-"Rule\tVanuatu\t1984\tonly\t-\tOct\t23\t0:00\t1:00\tS\n"+
-"Rule\tVanuatu\t1985\t1991\t-\tSep\tSun>=23\t0:00\t1:00\tS\n"+
-"Rule\tVanuatu\t1992\t1993\t-\tJan\tSun>=23\t0:00\t0\t-\n"+
-"Rule\tVanuatu\t1992\tonly\t-\tOct\tSun>=23\t0:00\t1:00\tS\n"+
-"Zone\tPacific/Efate\t11:13:16 -\tLMT\t1912 Jan 13\t\t# Vila\n"+
-"\t\t\t11:00\tVanuatu\tVU%sT\t# Vanuatu Time\n"+
-"Zone\tPacific/Wallis\t12:15:20 -\tLMT\t1901\n"+
-"\t\t\t12:00\t-\tWFT\t# Wallis & Futuna Time\n"+
-"","tz/backward":"# <pre>\n"+
-"# @(#)backward\t8.11\n"+
-"# This file is in the public domain, so clarified as of\n"+
-"# 2009-05-17 by Arthur David Olson.\n"+
-"\n"+
-"# This file provides links between current names for time zones\n"+
-"# and their old names.  Many names changed in late 1993.\n"+
-"\n"+
-"Link\tAfrica/Asmara\t\tAfrica/Asmera\n"+
-"Link\tAfrica/Bamako\t\tAfrica/Timbuktu\n"+
-"Link\tAmerica/Argentina/Catamarca\tAmerica/Argentina/ComodRivadavia\n"+
-"Link\tAmerica/Adak\t\tAmerica/Atka\n"+
-"Link\tAmerica/Argentina/Buenos_Aires\tAmerica/Buenos_Aires\n"+
-"Link\tAmerica/Argentina/Catamarca\tAmerica/Catamarca\n"+
-"Link\tAmerica/Atikokan\tAmerica/Coral_Harbour\n"+
-"Link\tAmerica/Argentina/Cordoba\tAmerica/Cordoba\n"+
-"Link\tAmerica/Tijuana\t\tAmerica/Ensenada\n"+
-"Link\tAmerica/Indiana/Indianapolis\tAmerica/Fort_Wayne\n"+
-"Link\tAmerica/Indiana/Indianapolis\tAmerica/Indianapolis\n"+
-"Link\tAmerica/Argentina/Jujuy\tAmerica/Jujuy\n"+
-"Link\tAmerica/Indiana/Knox\tAmerica/Knox_IN\n"+
-"Link\tAmerica/Kentucky/Louisville\tAmerica/Louisville\n"+
-"Link\tAmerica/Argentina/Mendoza\tAmerica/Mendoza\n"+
-"Link\tAmerica/Rio_Branco\tAmerica/Porto_Acre\n"+
-"Link\tAmerica/Argentina/Cordoba\tAmerica/Rosario\n"+
-"Link\tAmerica/St_Thomas\tAmerica/Virgin\n"+
-"Link\tAsia/Ashgabat\t\tAsia/Ashkhabad\n"+
-"Link\tAsia/Chongqing\t\tAsia/Chungking\n"+
-"Link\tAsia/Dhaka\t\tAsia/Dacca\n"+
-"Link\tAsia/Kathmandu\t\tAsia/Katmandu\n"+
-"Link\tAsia/Kolkata\t\tAsia/Calcutta\n"+
-"Link\tAsia/Macau\t\tAsia/Macao\n"+
-"Link\tAsia/Jerusalem\t\tAsia/Tel_Aviv\n"+
-"Link\tAsia/Ho_Chi_Minh\tAsia/Saigon\n"+
-"Link\tAsia/Thimphu\t\tAsia/Thimbu\n"+
-"Link\tAsia/Makassar\t\tAsia/Ujung_Pandang\n"+
-"Link\tAsia/Ulaanbaatar\tAsia/Ulan_Bator\n"+
-"Link\tAtlantic/Faroe\t\tAtlantic/Faeroe\n"+
-"Link\tEurope/Oslo\t\tAtlantic/Jan_Mayen\n"+
-"Link\tAustralia/Sydney\tAustralia/ACT\n"+
-"Link\tAustralia/Sydney\tAustralia/Canberra\n"+
-"Link\tAustralia/Lord_Howe\tAustralia/LHI\n"+
-"Link\tAustralia/Sydney\tAustralia/NSW\n"+
-"Link\tAustralia/Darwin\tAustralia/North\n"+
-"Link\tAustralia/Brisbane\tAustralia/Queensland\n"+
-"Link\tAustralia/Adelaide\tAustralia/South\n"+
-"Link\tAustralia/Hobart\tAustralia/Tasmania\n"+
-"Link\tAustralia/Melbourne\tAustralia/Victoria\n"+
-"Link\tAustralia/Perth\t\tAustralia/West\n"+
-"Link\tAustralia/Broken_Hill\tAustralia/Yancowinna\n"+
-"Link\tAmerica/Rio_Branco\tBrazil/Acre\n"+
-"Link\tAmerica/Noronha\t\tBrazil/DeNoronha\n"+
-"Link\tAmerica/Sao_Paulo\tBrazil/East\n"+
-"Link\tAmerica/Manaus\t\tBrazil/West\n"+
-"Link\tAmerica/Halifax\t\tCanada/Atlantic\n"+
-"Link\tAmerica/Winnipeg\tCanada/Central\n"+
-"Link\tAmerica/Regina\t\tCanada/East-Saskatchewan\n"+
-"Link\tAmerica/Toronto\t\tCanada/Eastern\n"+
-"Link\tAmerica/Edmonton\tCanada/Mountain\n"+
-"Link\tAmerica/St_Johns\tCanada/Newfoundland\n"+
-"Link\tAmerica/Vancouver\tCanada/Pacific\n"+
-"Link\tAmerica/Regina\t\tCanada/Saskatchewan\n"+
-"Link\tAmerica/Whitehorse\tCanada/Yukon\n"+
-"Link\tAmerica/Santiago\tChile/Continental\n"+
-"Link\tPacific/Easter\t\tChile/EasterIsland\n"+
-"Link\tAmerica/Havana\t\tCuba\n"+
-"Link\tAfrica/Cairo\t\tEgypt\n"+
-"Link\tEurope/Dublin\t\tEire\n"+
-"Link\tEurope/London\t\tEurope/Belfast\n"+
-"Link\tEurope/Chisinau\t\tEurope/Tiraspol\n"+
-"Link\tEurope/London\t\tGB\n"+
-"Link\tEurope/London\t\tGB-Eire\n"+
-"Link\tEtc/GMT\t\t\tGMT+0\n"+
-"Link\tEtc/GMT\t\t\tGMT-0\n"+
-"Link\tEtc/GMT\t\t\tGMT0\n"+
-"Link\tEtc/GMT\t\t\tGreenwich\n"+
-"Link\tAsia/Hong_Kong\t\tHongkong\n"+
-"Link\tAtlantic/Reykjavik\tIceland\n"+
-"Link\tAsia/Tehran\t\tIran\n"+
-"Link\tAsia/Jerusalem\t\tIsrael\n"+
-"Link\tAmerica/Jamaica\t\tJamaica\n"+
-"Link\tAsia/Tokyo\t\tJapan\n"+
-"Link\tPacific/Kwajalein\tKwajalein\n"+
-"Link\tAfrica/Tripoli\t\tLibya\n"+
-"Link\tAmerica/Tijuana\t\tMexico/BajaNorte\n"+
-"Link\tAmerica/Mazatlan\tMexico/BajaSur\n"+
-"Link\tAmerica/Mexico_City\tMexico/General\n"+
-"Link\tPacific/Auckland\tNZ\n"+
-"Link\tPacific/Chatham\t\tNZ-CHAT\n"+
-"Link\tAmerica/Denver\t\tNavajo\n"+
-"Link\tAsia/Shanghai\t\tPRC\n"+
-"Link\tPacific/Pago_Pago\tPacific/Samoa\n"+
-"Link\tPacific/Chuuk\t\tPacific/Yap\n"+
-"Link\tPacific/Chuuk\t\tPacific/Truk\n"+
-"Link\tPacific/Pohnpei\t\tPacific/Ponape\n"+
-"Link\tEurope/Warsaw\t\tPoland\n"+
-"Link\tEurope/Lisbon\t\tPortugal\n"+
-"Link\tAsia/Taipei\t\tROC\n"+
-"Link\tAsia/Seoul\t\tROK\n"+
-"Link\tAsia/Singapore\t\tSingapore\n"+
-"Link\tEurope/Istanbul\t\tTurkey\n"+
-"Link\tEtc/UCT\t\t\tUCT\n"+
-"Link\tAmerica/Anchorage\tUS/Alaska\n"+
-"Link\tAmerica/Adak\t\tUS/Aleutian\n"+
-"Link\tAmerica/Phoenix\t\tUS/Arizona\n"+
-"Link\tAmerica/Chicago\t\tUS/Central\n"+
-"Link\tAmerica/Indiana/Indianapolis\tUS/East-Indiana\n"+
-"Link\tAmerica/New_York\tUS/Eastern\n"+
-"Link\tPacific/Honolulu\tUS/Hawaii\n"+
-"Link\tAmerica/Indiana/Knox\tUS/Indiana-Starke\n"+
-"Link\tAmerica/Detroit\t\tUS/Michigan\n"+
-"Link\tAmerica/Denver\t\tUS/Mountain\n"+
-"Link\tAmerica/Los_Angeles\tUS/Pacific\n"+
-"Link\tPacific/Pago_Pago\tUS/Samoa\n"+
-"Link\tEtc/UTC\t\t\tUTC\n"+
-"Link\tEtc/UTC\t\t\tUniversal\n"+
-"Link\tEurope/Moscow\t\tW-SU\n"+
-"Link\tEtc/UTC\t\t\tZulu\n"+
-"","tz/etcetera":"Zone\tEtc/GMT\t\t0\t-\tGMT\n"+
-"Zone\tEtc/UTC\t\t0\t-\tUTC\n"+
-"Zone\tEtc/UCT\t\t0\t-\tUCT\n"+
-"Link\tEtc/GMT\t\t\t\tGMT\n"+
-"Link\tEtc/UTC\t\t\t\tEtc/Universal\n"+
-"Link\tEtc/UTC\t\t\t\tEtc/Zulu\n"+
-"Link\tEtc/GMT\t\t\t\tEtc/Greenwich\n"+
-"Link\tEtc/GMT\t\t\t\tEtc/GMT-0\n"+
-"Link\tEtc/GMT\t\t\t\tEtc/GMT+0\n"+
-"Link\tEtc/GMT\t\t\t\tEtc/GMT0\n"+
-"Zone\tEtc/GMT-14\t14\t-\tGMT-14\t# 14 hours ahead of GMT\n"+
-"Zone\tEtc/GMT-13\t13\t-\tGMT-13\n"+
-"Zone\tEtc/GMT-12\t12\t-\tGMT-12\n"+
-"Zone\tEtc/GMT-11\t11\t-\tGMT-11\n"+
-"Zone\tEtc/GMT-10\t10\t-\tGMT-10\n"+
-"Zone\tEtc/GMT-9\t9\t-\tGMT-9\n"+
-"Zone\tEtc/GMT-8\t8\t-\tGMT-8\n"+
-"Zone\tEtc/GMT-7\t7\t-\tGMT-7\n"+
-"Zone\tEtc/GMT-6\t6\t-\tGMT-6\n"+
-"Zone\tEtc/GMT-5\t5\t-\tGMT-5\n"+
-"Zone\tEtc/GMT-4\t4\t-\tGMT-4\n"+
-"Zone\tEtc/GMT-3\t3\t-\tGMT-3\n"+
-"Zone\tEtc/GMT-2\t2\t-\tGMT-2\n"+
-"Zone\tEtc/GMT-1\t1\t-\tGMT-1\n"+
-"Zone\tEtc/GMT+1\t-1\t-\tGMT+1\n"+
-"Zone\tEtc/GMT+2\t-2\t-\tGMT+2\n"+
-"Zone\tEtc/GMT+3\t-3\t-\tGMT+3\n"+
-"Zone\tEtc/GMT+4\t-4\t-\tGMT+4\n"+
-"Zone\tEtc/GMT+5\t-5\t-\tGMT+5\n"+
-"Zone\tEtc/GMT+6\t-6\t-\tGMT+6\n"+
-"Zone\tEtc/GMT+7\t-7\t-\tGMT+7\n"+
-"Zone\tEtc/GMT+8\t-8\t-\tGMT+8\n"+
-"Zone\tEtc/GMT+9\t-9\t-\tGMT+9\n"+
-"Zone\tEtc/GMT+10\t-10\t-\tGMT+10\n"+
-"Zone\tEtc/GMT+11\t-11\t-\tGMT+11\n"+
-"Zone\tEtc/GMT+12\t-12\t-\tGMT+12\n"+
-"","tz/europe":"Rule\tGB-Eire\t1916\tonly\t-\tMay\t21\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1916\tonly\t-\tOct\t 1\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1917\tonly\t-\tApr\t 8\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1917\tonly\t-\tSep\t17\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1918\tonly\t-\tMar\t24\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1918\tonly\t-\tSep\t30\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1919\tonly\t-\tMar\t30\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1919\tonly\t-\tSep\t29\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1920\tonly\t-\tMar\t28\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1920\tonly\t-\tOct\t25\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1921\tonly\t-\tApr\t 3\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1921\tonly\t-\tOct\t 3\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1922\tonly\t-\tMar\t26\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1922\tonly\t-\tOct\t 8\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1923\tonly\t-\tApr\tSun>=16\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1923\t1924\t-\tSep\tSun>=16\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1924\tonly\t-\tApr\tSun>=9\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1925\t1926\t-\tApr\tSun>=16\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1925\t1938\t-\tOct\tSun>=2\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1927\tonly\t-\tApr\tSun>=9\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1928\t1929\t-\tApr\tSun>=16\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1930\tonly\t-\tApr\tSun>=9\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1931\t1932\t-\tApr\tSun>=16\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1933\tonly\t-\tApr\tSun>=9\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1934\tonly\t-\tApr\tSun>=16\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1935\tonly\t-\tApr\tSun>=9\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1936\t1937\t-\tApr\tSun>=16\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1938\tonly\t-\tApr\tSun>=9\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1939\tonly\t-\tApr\tSun>=16\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1939\tonly\t-\tNov\tSun>=16\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1940\tonly\t-\tFeb\tSun>=23\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1941\tonly\t-\tMay\tSun>=2\t1:00s\t2:00\tBDST\n"+
-"Rule\tGB-Eire\t1941\t1943\t-\tAug\tSun>=9\t1:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1942\t1944\t-\tApr\tSun>=2\t1:00s\t2:00\tBDST\n"+
-"Rule\tGB-Eire\t1944\tonly\t-\tSep\tSun>=16\t1:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1945\tonly\t-\tApr\tMon>=2\t1:00s\t2:00\tBDST\n"+
-"Rule\tGB-Eire\t1945\tonly\t-\tJul\tSun>=9\t1:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1945\t1946\t-\tOct\tSun>=2\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1946\tonly\t-\tApr\tSun>=9\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1947\tonly\t-\tMar\t16\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1947\tonly\t-\tApr\t13\t1:00s\t2:00\tBDST\n"+
-"Rule\tGB-Eire\t1947\tonly\t-\tAug\t10\t1:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1947\tonly\t-\tNov\t 2\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1948\tonly\t-\tMar\t14\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1948\tonly\t-\tOct\t31\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1949\tonly\t-\tApr\t 3\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1949\tonly\t-\tOct\t30\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1950\t1952\t-\tApr\tSun>=14\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1950\t1952\t-\tOct\tSun>=21\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1953\tonly\t-\tApr\tSun>=16\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1953\t1960\t-\tOct\tSun>=2\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1954\tonly\t-\tApr\tSun>=9\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1955\t1956\t-\tApr\tSun>=16\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1957\tonly\t-\tApr\tSun>=9\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1958\t1959\t-\tApr\tSun>=16\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1960\tonly\t-\tApr\tSun>=9\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1961\t1963\t-\tMar\tlastSun\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1961\t1968\t-\tOct\tSun>=23\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1964\t1967\t-\tMar\tSun>=19\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1968\tonly\t-\tFeb\t18\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1972\t1980\t-\tMar\tSun>=16\t2:00s\t1:00\tBST\n"+
-"Rule\tGB-Eire\t1972\t1980\t-\tOct\tSun>=23\t2:00s\t0\tGMT\n"+
-"Rule\tGB-Eire\t1981\t1995\t-\tMar\tlastSun\t1:00u\t1:00\tBST\n"+
-"Rule\tGB-Eire 1981\t1989\t-\tOct\tSun>=23\t1:00u\t0\tGMT\n"+
-"Rule\tGB-Eire 1990\t1995\t-\tOct\tSun>=22\t1:00u\t0\tGMT\n"+
-"Zone\tEurope/London\t-0:01:15 -\tLMT\t1847 Dec  1 0:00s\n"+
-"\t\t\t 0:00\tGB-Eire\t%s\t1968 Oct 27\n"+
-"\t\t\t 1:00\t-\tBST\t1971 Oct 31 2:00u\n"+
-"\t\t\t 0:00\tGB-Eire\t%s\t1996\n"+
-"\t\t\t 0:00\tEU\tGMT/BST\n"+
-"Link\tEurope/London\tEurope/Jersey\n"+
-"Link\tEurope/London\tEurope/Guernsey\n"+
-"Link\tEurope/London\tEurope/Isle_of_Man\n"+
-"Zone\tEurope/Dublin\t-0:25:00 -\tLMT\t1880 Aug  2\n"+
-"\t\t\t-0:25:21 -\tDMT\t1916 May 21 2:00\n"+
-"\t\t\t-0:25:21 1:00\tIST\t1916 Oct  1 2:00s\n"+
-"\t\t\t 0:00\tGB-Eire\t%s\t1921 Dec  6 # independence\n"+
-"\t\t\t 0:00\tGB-Eire\tGMT/IST\t1940 Feb 25 2:00\n"+
-"\t\t\t 0:00\t1:00\tIST\t1946 Oct  6 2:00\n"+
-"\t\t\t 0:00\t-\tGMT\t1947 Mar 16 2:00\n"+
-"\t\t\t 0:00\t1:00\tIST\t1947 Nov  2 2:00\n"+
-"\t\t\t 0:00\t-\tGMT\t1948 Apr 18 2:00\n"+
-"\t\t\t 0:00\tGB-Eire\tGMT/IST\t1968 Oct 27\n"+
-"\t\t\t 1:00\t-\tIST\t1971 Oct 31 2:00u\n"+
-"\t\t\t 0:00\tGB-Eire\tGMT/IST\t1996\n"+
-"\t\t\t 0:00\tEU\tGMT/IST\n"+
-"Rule\tEU\t1977\t1980\t-\tApr\tSun>=1\t 1:00u\t1:00\tS\n"+
-"Rule\tEU\t1977\tonly\t-\tSep\tlastSun\t 1:00u\t0\t-\n"+
-"Rule\tEU\t1978\tonly\t-\tOct\t 1\t 1:00u\t0\t-\n"+
-"Rule\tEU\t1979\t1995\t-\tSep\tlastSun\t 1:00u\t0\t-\n"+
-"Rule\tEU\t1981\tmax\t-\tMar\tlastSun\t 1:00u\t1:00\tS\n"+
-"Rule\tEU\t1996\tmax\t-\tOct\tlastSun\t 1:00u\t0\t-\n"+
-"Rule\tW-Eur\t1977\t1980\t-\tApr\tSun>=1\t 1:00s\t1:00\tS\n"+
-"Rule\tW-Eur\t1977\tonly\t-\tSep\tlastSun\t 1:00s\t0\t-\n"+
-"Rule\tW-Eur\t1978\tonly\t-\tOct\t 1\t 1:00s\t0\t-\n"+
-"Rule\tW-Eur\t1979\t1995\t-\tSep\tlastSun\t 1:00s\t0\t-\n"+
-"Rule\tW-Eur\t1981\tmax\t-\tMar\tlastSun\t 1:00s\t1:00\tS\n"+
-"Rule\tW-Eur\t1996\tmax\t-\tOct\tlastSun\t 1:00s\t0\t-\n"+
-"Rule\tC-Eur\t1916\tonly\t-\tApr\t30\t23:00\t1:00\tS\n"+
-"Rule\tC-Eur\t1916\tonly\t-\tOct\t 1\t 1:00\t0\t-\n"+
-"Rule\tC-Eur\t1917\t1918\t-\tApr\tMon>=15\t 2:00s\t1:00\tS\n"+
-"Rule\tC-Eur\t1917\t1918\t-\tSep\tMon>=15\t 2:00s\t0\t-\n"+
-"Rule\tC-Eur\t1940\tonly\t-\tApr\t 1\t 2:00s\t1:00\tS\n"+
-"Rule\tC-Eur\t1942\tonly\t-\tNov\t 2\t 2:00s\t0\t-\n"+
-"Rule\tC-Eur\t1943\tonly\t-\tMar\t29\t 2:00s\t1:00\tS\n"+
-"Rule\tC-Eur\t1943\tonly\t-\tOct\t 4\t 2:00s\t0\t-\n"+
-"Rule\tC-Eur\t1944\t1945\t-\tApr\tMon>=1\t 2:00s\t1:00\tS\n"+
-"Rule\tC-Eur\t1944\tonly\t-\tOct\t 2\t 2:00s\t0\t-\n"+
-"Rule\tC-Eur\t1945\tonly\t-\tSep\t16\t 2:00s\t0\t-\n"+
-"Rule\tC-Eur\t1977\t1980\t-\tApr\tSun>=1\t 2:00s\t1:00\tS\n"+
-"Rule\tC-Eur\t1977\tonly\t-\tSep\tlastSun\t 2:00s\t0\t-\n"+
-"Rule\tC-Eur\t1978\tonly\t-\tOct\t 1\t 2:00s\t0\t-\n"+
-"Rule\tC-Eur\t1979\t1995\t-\tSep\tlastSun\t 2:00s\t0\t-\n"+
-"Rule\tC-Eur\t1981\tmax\t-\tMar\tlastSun\t 2:00s\t1:00\tS\n"+
-"Rule\tC-Eur\t1996\tmax\t-\tOct\tlastSun\t 2:00s\t0\t-\n"+
-"Rule\tE-Eur\t1977\t1980\t-\tApr\tSun>=1\t 0:00\t1:00\tS\n"+
-"Rule\tE-Eur\t1977\tonly\t-\tSep\tlastSun\t 0:00\t0\t-\n"+
-"Rule\tE-Eur\t1978\tonly\t-\tOct\t 1\t 0:00\t0\t-\n"+
-"Rule\tE-Eur\t1979\t1995\t-\tSep\tlastSun\t 0:00\t0\t-\n"+
-"Rule\tE-Eur\t1981\tmax\t-\tMar\tlastSun\t 0:00\t1:00\tS\n"+
-"Rule\tE-Eur\t1996\tmax\t-\tOct\tlastSun\t 0:00\t0\t-\n"+
-"Rule\tRussia\t1917\tonly\t-\tJul\t 1\t23:00\t1:00\tMST\t# Moscow Summer Time\n"+
-"Rule\tRussia\t1917\tonly\t-\tDec\t28\t 0:00\t0\tMMT\t# Moscow Mean Time\n"+
-"Rule\tRussia\t1918\tonly\t-\tMay\t31\t22:00\t2:00\tMDST\t# Moscow Double Summer Time\n"+
-"Rule\tRussia\t1918\tonly\t-\tSep\t16\t 1:00\t1:00\tMST\n"+
-"Rule\tRussia\t1919\tonly\t-\tMay\t31\t23:00\t2:00\tMDST\n"+
-"Rule\tRussia\t1919\tonly\t-\tJul\t 1\t 2:00\t1:00\tS\n"+
-"Rule\tRussia\t1919\tonly\t-\tAug\t16\t 0:00\t0\t-\n"+
-"Rule\tRussia\t1921\tonly\t-\tFeb\t14\t23:00\t1:00\tS\n"+
-"Rule\tRussia\t1921\tonly\t-\tMar\t20\t23:00\t2:00\tM # Midsummer\n"+
-"Rule\tRussia\t1921\tonly\t-\tSep\t 1\t 0:00\t1:00\tS\n"+
-"Rule\tRussia\t1921\tonly\t-\tOct\t 1\t 0:00\t0\t-\n"+
-"Rule\tRussia\t1981\t1984\t-\tApr\t 1\t 0:00\t1:00\tS\n"+
-"Rule\tRussia\t1981\t1983\t-\tOct\t 1\t 0:00\t0\t-\n"+
-"Rule\tRussia\t1984\t1991\t-\tSep\tlastSun\t 2:00s\t0\t-\n"+
-"Rule\tRussia\t1985\t1991\t-\tMar\tlastSun\t 2:00s\t1:00\tS\n"+
-"Rule\tRussia\t1992\tonly\t-\tMar\tlastSat\t 23:00\t1:00\tS\n"+
-"Rule\tRussia\t1992\tonly\t-\tSep\tlastSat\t 23:00\t0\t-\n"+
-"Rule\tRussia\t1993\t2010\t-\tMar\tlastSun\t 2:00s\t1:00\tS\n"+
-"Rule\tRussia\t1993\t1995\t-\tSep\tlastSun\t 2:00s\t0\t-\n"+
-"Rule\tRussia\t1996\t2010\t-\tOct\tlastSun\t 2:00s\t0\t-\n"+
-"Zone\tWET\t\t0:00\tEU\tWE%sT\n"+
-"Zone\tCET\t\t1:00\tC-Eur\tCE%sT\n"+
-"Zone\tMET\t\t1:00\tC-Eur\tME%sT\n"+
-"Zone\tEET\t\t2:00\tEU\tEE%sT\n"+
-"Rule\tAlbania\t1940\tonly\t-\tJun\t16\t0:00\t1:00\tS\n"+
-"Rule\tAlbania\t1942\tonly\t-\tNov\t 2\t3:00\t0\t-\n"+
-"Rule\tAlbania\t1943\tonly\t-\tMar\t29\t2:00\t1:00\tS\n"+
-"Rule\tAlbania\t1943\tonly\t-\tApr\t10\t3:00\t0\t-\n"+
-"Rule\tAlbania\t1974\tonly\t-\tMay\t 4\t0:00\t1:00\tS\n"+
-"Rule\tAlbania\t1974\tonly\t-\tOct\t 2\t0:00\t0\t-\n"+
-"Rule\tAlbania\t1975\tonly\t-\tMay\t 1\t0:00\t1:00\tS\n"+
-"Rule\tAlbania\t1975\tonly\t-\tOct\t 2\t0:00\t0\t-\n"+
-"Rule\tAlbania\t1976\tonly\t-\tMay\t 2\t0:00\t1:00\tS\n"+
-"Rule\tAlbania\t1976\tonly\t-\tOct\t 3\t0:00\t0\t-\n"+
-"Rule\tAlbania\t1977\tonly\t-\tMay\t 8\t0:00\t1:00\tS\n"+
-"Rule\tAlbania\t1977\tonly\t-\tOct\t 2\t0:00\t0\t-\n"+
-"Rule\tAlbania\t1978\tonly\t-\tMay\t 6\t0:00\t1:00\tS\n"+
-"Rule\tAlbania\t1978\tonly\t-\tOct\t 1\t0:00\t0\t-\n"+
-"Rule\tAlbania\t1979\tonly\t-\tMay\t 5\t0:00\t1:00\tS\n"+
-"Rule\tAlbania\t1979\tonly\t-\tSep\t30\t0:00\t0\t-\n"+
-"Rule\tAlbania\t1980\tonly\t-\tMay\t 3\t0:00\t1:00\tS\n"+
-"Rule\tAlbania\t1980\tonly\t-\tOct\t 4\t0:00\t0\t-\n"+
-"Rule\tAlbania\t1981\tonly\t-\tApr\t26\t0:00\t1:00\tS\n"+
-"Rule\tAlbania\t1981\tonly\t-\tSep\t27\t0:00\t0\t-\n"+
-"Rule\tAlbania\t1982\tonly\t-\tMay\t 2\t0:00\t1:00\tS\n"+
-"Rule\tAlbania\t1982\tonly\t-\tOct\t 3\t0:00\t0\t-\n"+
-"Rule\tAlbania\t1983\tonly\t-\tApr\t18\t0:00\t1:00\tS\n"+
-"Rule\tAlbania\t1983\tonly\t-\tOct\t 1\t0:00\t0\t-\n"+
-"Rule\tAlbania\t1984\tonly\t-\tApr\t 1\t0:00\t1:00\tS\n"+
-"Zone\tEurope/Tirane\t1:19:20 -\tLMT\t1914\n"+
-"\t\t\t1:00\t-\tCET\t1940 Jun 16\n"+
-"\t\t\t1:00\tAlbania\tCE%sT\t1984 Jul\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Zone\tEurope/Andorra\t0:06:04 -\tLMT\t1901\n"+
-"\t\t\t0:00\t-\tWET\t1946 Sep 30\n"+
-"\t\t\t1:00\t-\tCET\t1985 Mar 31 2:00\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Rule\tAustria\t1920\tonly\t-\tApr\t 5\t2:00s\t1:00\tS\n"+
-"Rule\tAustria\t1920\tonly\t-\tSep\t13\t2:00s\t0\t-\n"+
-"Rule\tAustria\t1946\tonly\t-\tApr\t14\t2:00s\t1:00\tS\n"+
-"Rule\tAustria\t1946\t1948\t-\tOct\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tAustria\t1947\tonly\t-\tApr\t 6\t2:00s\t1:00\tS\n"+
-"Rule\tAustria\t1948\tonly\t-\tApr\t18\t2:00s\t1:00\tS\n"+
-"Rule\tAustria\t1980\tonly\t-\tApr\t 6\t0:00\t1:00\tS\n"+
-"Rule\tAustria\t1980\tonly\t-\tSep\t28\t0:00\t0\t-\n"+
-"Zone\tEurope/Vienna\t1:05:20 -\tLMT\t1893 Apr\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1920\n"+
-"\t\t\t1:00\tAustria\tCE%sT\t1940 Apr  1 2:00s\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1945 Apr  2 2:00s\n"+
-"\t\t\t1:00\t1:00\tCEST\t1945 Apr 12 2:00s\n"+
-"\t\t\t1:00\t-\tCET\t1946\n"+
-"\t\t\t1:00\tAustria\tCE%sT\t1981\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Zone\tEurope/Minsk\t1:50:16 -\tLMT\t1880\n"+
-"\t\t\t1:50\t-\tMMT\t1924 May 2 # Minsk Mean Time\n"+
-"\t\t\t2:00\t-\tEET\t1930 Jun 21\n"+
-"\t\t\t3:00\t-\tMSK\t1941 Jun 28\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1944 Jul  3\n"+
-"\t\t\t3:00\tRussia\tMSK/MSD\t1990\n"+
-"\t\t\t3:00\t-\tMSK\t1991 Mar 31 2:00s\n"+
-"\t\t\t2:00\t1:00\tEEST\t1991 Sep 29 2:00s\n"+
-"\t\t\t2:00\t-\tEET\t1992 Mar 29 0:00s\n"+
-"\t\t\t2:00\t1:00\tEEST\t1992 Sep 27 0:00s\n"+
-"\t\t\t2:00\tRussia\tEE%sT\t2011 Mar 27 2:00s\n"+
-"\t\t\t3:00\t-\tFET # Further-eastern European Time\n"+
-"Rule\tBelgium\t1918\tonly\t-\tMar\t 9\t 0:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1918\t1919\t-\tOct\tSat>=1\t23:00s\t0\t-\n"+
-"Rule\tBelgium\t1919\tonly\t-\tMar\t 1\t23:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1920\tonly\t-\tFeb\t14\t23:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1920\tonly\t-\tOct\t23\t23:00s\t0\t-\n"+
-"Rule\tBelgium\t1921\tonly\t-\tMar\t14\t23:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1921\tonly\t-\tOct\t25\t23:00s\t0\t-\n"+
-"Rule\tBelgium\t1922\tonly\t-\tMar\t25\t23:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1922\t1927\t-\tOct\tSat>=1\t23:00s\t0\t-\n"+
-"Rule\tBelgium\t1923\tonly\t-\tApr\t21\t23:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1924\tonly\t-\tMar\t29\t23:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1925\tonly\t-\tApr\t 4\t23:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1926\tonly\t-\tApr\t17\t23:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1927\tonly\t-\tApr\t 9\t23:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1928\tonly\t-\tApr\t14\t23:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1928\t1938\t-\tOct\tSun>=2\t 2:00s\t0\t-\n"+
-"Rule\tBelgium\t1929\tonly\t-\tApr\t21\t 2:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1930\tonly\t-\tApr\t13\t 2:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1931\tonly\t-\tApr\t19\t 2:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1932\tonly\t-\tApr\t 3\t 2:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1933\tonly\t-\tMar\t26\t 2:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1934\tonly\t-\tApr\t 8\t 2:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1935\tonly\t-\tMar\t31\t 2:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1936\tonly\t-\tApr\t19\t 2:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1937\tonly\t-\tApr\t 4\t 2:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1938\tonly\t-\tMar\t27\t 2:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1939\tonly\t-\tApr\t16\t 2:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1939\tonly\t-\tNov\t19\t 2:00s\t0\t-\n"+
-"Rule\tBelgium\t1940\tonly\t-\tFeb\t25\t 2:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1944\tonly\t-\tSep\t17\t 2:00s\t0\t-\n"+
-"Rule\tBelgium\t1945\tonly\t-\tApr\t 2\t 2:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1945\tonly\t-\tSep\t16\t 2:00s\t0\t-\n"+
-"Rule\tBelgium\t1946\tonly\t-\tMay\t19\t 2:00s\t1:00\tS\n"+
-"Rule\tBelgium\t1946\tonly\t-\tOct\t 7\t 2:00s\t0\t-\n"+
-"Zone\tEurope/Brussels\t0:17:30 -\tLMT\t1880\n"+
-"\t\t\t0:17:30\t-\tBMT\t1892 May  1 12:00 # Brussels MT\n"+
-"\t\t\t0:00\t-\tWET\t1914 Nov  8\n"+
-"\t\t\t1:00\t-\tCET\t1916 May  1  0:00\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1918 Nov 11 11:00u\n"+
-"\t\t\t0:00\tBelgium\tWE%sT\t1940 May 20  2:00s\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1944 Sep  3\n"+
-"\t\t\t1:00\tBelgium\tCE%sT\t1977\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Rule\tBulg\t1979\tonly\t-\tMar\t31\t23:00\t1:00\tS\n"+
-"Rule\tBulg\t1979\tonly\t-\tOct\t 1\t 1:00\t0\t-\n"+
-"Rule\tBulg\t1980\t1982\t-\tApr\tSat>=1\t23:00\t1:00\tS\n"+
-"Rule\tBulg\t1980\tonly\t-\tSep\t29\t 1:00\t0\t-\n"+
-"Rule\tBulg\t1981\tonly\t-\tSep\t27\t 2:00\t0\t-\n"+
-"Zone\tEurope/Sofia\t1:33:16 -\tLMT\t1880\n"+
-"\t\t\t1:56:56\t-\tIMT\t1894 Nov 30 # Istanbul MT?\n"+
-"\t\t\t2:00\t-\tEET\t1942 Nov  2  3:00\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1945\n"+
-"\t\t\t1:00\t-\tCET\t1945 Apr 2 3:00\n"+
-"\t\t\t2:00\t-\tEET\t1979 Mar 31 23:00\n"+
-"\t\t\t2:00\tBulg\tEE%sT\t1982 Sep 26  2:00\n"+
-"\t\t\t2:00\tC-Eur\tEE%sT\t1991\n"+
-"\t\t\t2:00\tE-Eur\tEE%sT\t1997\n"+
-"\t\t\t2:00\tEU\tEE%sT\n"+
-"Rule\tCzech\t1945\tonly\t-\tApr\t 8\t2:00s\t1:00\tS\n"+
-"Rule\tCzech\t1945\tonly\t-\tNov\t18\t2:00s\t0\t-\n"+
-"Rule\tCzech\t1946\tonly\t-\tMay\t 6\t2:00s\t1:00\tS\n"+
-"Rule\tCzech\t1946\t1949\t-\tOct\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tCzech\t1947\tonly\t-\tApr\t20\t2:00s\t1:00\tS\n"+
-"Rule\tCzech\t1948\tonly\t-\tApr\t18\t2:00s\t1:00\tS\n"+
-"Rule\tCzech\t1949\tonly\t-\tApr\t 9\t2:00s\t1:00\tS\n"+
-"Zone\tEurope/Prague\t0:57:44 -\tLMT\t1850\n"+
-"\t\t\t0:57:44\t-\tPMT\t1891 Oct     # Prague Mean Time\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1944 Sep 17 2:00s\n"+
-"\t\t\t1:00\tCzech\tCE%sT\t1979\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Rule\tDenmark\t1916\tonly\t-\tMay\t14\t23:00\t1:00\tS\n"+
-"Rule\tDenmark\t1916\tonly\t-\tSep\t30\t23:00\t0\t-\n"+
-"Rule\tDenmark\t1940\tonly\t-\tMay\t15\t 0:00\t1:00\tS\n"+
-"Rule\tDenmark\t1945\tonly\t-\tApr\t 2\t 2:00s\t1:00\tS\n"+
-"Rule\tDenmark\t1945\tonly\t-\tAug\t15\t 2:00s\t0\t-\n"+
-"Rule\tDenmark\t1946\tonly\t-\tMay\t 1\t 2:00s\t1:00\tS\n"+
-"Rule\tDenmark\t1946\tonly\t-\tSep\t 1\t 2:00s\t0\t-\n"+
-"Rule\tDenmark\t1947\tonly\t-\tMay\t 4\t 2:00s\t1:00\tS\n"+
-"Rule\tDenmark\t1947\tonly\t-\tAug\t10\t 2:00s\t0\t-\n"+
-"Rule\tDenmark\t1948\tonly\t-\tMay\t 9\t 2:00s\t1:00\tS\n"+
-"Rule\tDenmark\t1948\tonly\t-\tAug\t 8\t 2:00s\t0\t-\n"+
-"Zone Europe/Copenhagen\t 0:50:20 -\tLMT\t1890\n"+
-"\t\t\t 0:50:20 -\tCMT\t1894 Jan  1 # Copenhagen MT\n"+
-"\t\t\t 1:00\tDenmark\tCE%sT\t1942 Nov  2 2:00s\n"+
-"\t\t\t 1:00\tC-Eur\tCE%sT\t1945 Apr  2 2:00\n"+
-"\t\t\t 1:00\tDenmark\tCE%sT\t1980\n"+
-"\t\t\t 1:00\tEU\tCE%sT\n"+
-"Zone Atlantic/Faroe\t-0:27:04 -\tLMT\t1908 Jan 11\t# Torshavn\n"+
-"\t\t\t 0:00\t-\tWET\t1981\n"+
-"\t\t\t 0:00\tEU\tWE%sT\n"+
-"Rule\tThule\t1991\t1992\t-\tMar\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tThule\t1991\t1992\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tThule\t1993\t2006\t-\tApr\tSun>=1\t2:00\t1:00\tD\n"+
-"Rule\tThule\t1993\t2006\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tThule\t2007\tmax\t-\tMar\tSun>=8\t2:00\t1:00\tD\n"+
-"Rule\tThule\t2007\tmax\t-\tNov\tSun>=1\t2:00\t0\tS\n"+
-"Zone America/Danmarkshavn -1:14:40 -\tLMT\t1916 Jul 28\n"+
-"\t\t\t-3:00\t-\tWGT\t1980 Apr  6 2:00\n"+
-"\t\t\t-3:00\tEU\tWG%sT\t1996\n"+
-"\t\t\t0:00\t-\tGMT\n"+
-"Zone America/Scoresbysund -1:27:52 -\tLMT\t1916 Jul 28 # Ittoqqortoormiit\n"+
-"\t\t\t-2:00\t-\tCGT\t1980 Apr  6 2:00\n"+
-"\t\t\t-2:00\tC-Eur\tCG%sT\t1981 Mar 29\n"+
-"\t\t\t-1:00\tEU\tEG%sT\n"+
-"Zone America/Godthab\t-3:26:56 -\tLMT\t1916 Jul 28 # Nuuk\n"+
-"\t\t\t-3:00\t-\tWGT\t1980 Apr  6 2:00\n"+
-"\t\t\t-3:00\tEU\tWG%sT\n"+
-"Zone America/Thule\t-4:35:08 -\tLMT\t1916 Jul 28 # Pituffik air base\n"+
-"\t\t\t-4:00\tThule\tA%sT\n"+
-"Zone\tEurope/Tallinn\t1:39:00\t-\tLMT\t1880\n"+
-"\t\t\t1:39:00\t-\tTMT\t1918 Feb # Tallinn Mean Time\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1919 Jul\n"+
-"\t\t\t1:39:00\t-\tTMT\t1921 May\n"+
-"\t\t\t2:00\t-\tEET\t1940 Aug  6\n"+
-"\t\t\t3:00\t-\tMSK\t1941 Sep 15\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1944 Sep 22\n"+
-"\t\t\t3:00\tRussia\tMSK/MSD\t1989 Mar 26 2:00s\n"+
-"\t\t\t2:00\t1:00\tEEST\t1989 Sep 24 2:00s\n"+
-"\t\t\t2:00\tC-Eur\tEE%sT\t1998 Sep 22\n"+
-"\t\t\t2:00\tEU\tEE%sT\t1999 Nov  1\n"+
-"\t\t\t2:00\t-\tEET\t2002 Feb 21\n"+
-"\t\t\t2:00\tEU\tEE%sT\n"+
-"Rule\tFinland\t1942\tonly\t-\tApr\t3\t0:00\t1:00\tS\n"+
-"Rule\tFinland\t1942\tonly\t-\tOct\t3\t0:00\t0\t-\n"+
-"Rule\tFinland\t1981\t1982\t-\tMar\tlastSun\t2:00\t1:00\tS\n"+
-"Rule\tFinland\t1981\t1982\t-\tSep\tlastSun\t3:00\t0\t-\n"+
-"Zone\tEurope/Helsinki\t1:39:52 -\tLMT\t1878 May 31\n"+
-"\t\t\t1:39:52\t-\tHMT\t1921 May    # Helsinki Mean Time\n"+
-"\t\t\t2:00\tFinland\tEE%sT\t1983\n"+
-"\t\t\t2:00\tEU\tEE%sT\n"+
-"Link\tEurope/Helsinki\tEurope/Mariehamn\n"+
-"Rule\tFrance\t1916\tonly\t-\tJun\t14\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1916\t1919\t-\tOct\tSun>=1\t23:00s\t0\t-\n"+
-"Rule\tFrance\t1917\tonly\t-\tMar\t24\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1918\tonly\t-\tMar\t 9\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1919\tonly\t-\tMar\t 1\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1920\tonly\t-\tFeb\t14\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1920\tonly\t-\tOct\t23\t23:00s\t0\t-\n"+
-"Rule\tFrance\t1921\tonly\t-\tMar\t14\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1921\tonly\t-\tOct\t25\t23:00s\t0\t-\n"+
-"Rule\tFrance\t1922\tonly\t-\tMar\t25\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1922\t1938\t-\tOct\tSat>=1\t23:00s\t0\t-\n"+
-"Rule\tFrance\t1923\tonly\t-\tMay\t26\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1924\tonly\t-\tMar\t29\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1925\tonly\t-\tApr\t 4\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1926\tonly\t-\tApr\t17\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1927\tonly\t-\tApr\t 9\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1928\tonly\t-\tApr\t14\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1929\tonly\t-\tApr\t20\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1930\tonly\t-\tApr\t12\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1931\tonly\t-\tApr\t18\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1932\tonly\t-\tApr\t 2\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1933\tonly\t-\tMar\t25\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1934\tonly\t-\tApr\t 7\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1935\tonly\t-\tMar\t30\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1936\tonly\t-\tApr\t18\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1937\tonly\t-\tApr\t 3\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1938\tonly\t-\tMar\t26\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1939\tonly\t-\tApr\t15\t23:00s\t1:00\tS\n"+
-"Rule\tFrance\t1939\tonly\t-\tNov\t18\t23:00s\t0\t-\n"+
-"Rule\tFrance\t1940\tonly\t-\tFeb\t25\t 2:00\t1:00\tS\n"+
-"Rule\tFrance\t1941\tonly\t-\tMay\t 5\t 0:00\t2:00\tM # Midsummer\n"+
-"Rule\tFrance\t1941\tonly\t-\tOct\t 6\t 0:00\t1:00\tS\n"+
-"Rule\tFrance\t1942\tonly\t-\tMar\t 9\t 0:00\t2:00\tM\n"+
-"Rule\tFrance\t1942\tonly\t-\tNov\t 2\t 3:00\t1:00\tS\n"+
-"Rule\tFrance\t1943\tonly\t-\tMar\t29\t 2:00\t2:00\tM\n"+
-"Rule\tFrance\t1943\tonly\t-\tOct\t 4\t 3:00\t1:00\tS\n"+
-"Rule\tFrance\t1944\tonly\t-\tApr\t 3\t 2:00\t2:00\tM\n"+
-"Rule\tFrance\t1944\tonly\t-\tOct\t 8\t 1:00\t1:00\tS\n"+
-"Rule\tFrance\t1945\tonly\t-\tApr\t 2\t 2:00\t2:00\tM\n"+
-"Rule\tFrance\t1945\tonly\t-\tSep\t16\t 3:00\t0\t-\n"+
-"Rule\tFrance\t1976\tonly\t-\tMar\t28\t 1:00\t1:00\tS\n"+
-"Rule\tFrance\t1976\tonly\t-\tSep\t26\t 1:00\t0\t-\n"+
-"Zone\tEurope/Paris\t0:09:21 -\tLMT\t1891 Mar 15  0:01\n"+
-"\t\t\t0:09:21\t-\tPMT\t1911 Mar 11  0:01  # Paris MT\n"+
-"\t\t\t0:00\tFrance\tWE%sT\t1940 Jun 14 23:00\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1944 Aug 25\n"+
-"\t\t\t0:00\tFrance\tWE%sT\t1945 Sep 16  3:00\n"+
-"\t\t\t1:00\tFrance\tCE%sT\t1977\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Rule\tGermany\t1946\tonly\t-\tApr\t14\t2:00s\t1:00\tS\n"+
-"Rule\tGermany\t1946\tonly\t-\tOct\t 7\t2:00s\t0\t-\n"+
-"Rule\tGermany\t1947\t1949\t-\tOct\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tGermany\t1947\tonly\t-\tApr\t 6\t3:00s\t1:00\tS\n"+
-"Rule\tGermany\t1947\tonly\t-\tMay\t11\t2:00s\t2:00\tM\n"+
-"Rule\tGermany\t1947\tonly\t-\tJun\t29\t3:00\t1:00\tS\n"+
-"Rule\tGermany\t1948\tonly\t-\tApr\t18\t2:00s\t1:00\tS\n"+
-"Rule\tGermany\t1949\tonly\t-\tApr\t10\t2:00s\t1:00\tS\n"+
-"Rule SovietZone\t1945\tonly\t-\tMay\t24\t2:00\t2:00\tM # Midsummer\n"+
-"Rule SovietZone\t1945\tonly\t-\tSep\t24\t3:00\t1:00\tS\n"+
-"Rule SovietZone\t1945\tonly\t-\tNov\t18\t2:00s\t0\t-\n"+
-"Zone\tEurope/Berlin\t0:53:28 -\tLMT\t1893 Apr\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1945 May 24 2:00\n"+
-"\t\t\t1:00 SovietZone\tCE%sT\t1946\n"+
-"\t\t\t1:00\tGermany\tCE%sT\t1980\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Zone Europe/Gibraltar\t-0:21:24 -\tLMT\t1880 Aug  2 0:00s\n"+
-"\t\t\t0:00\tGB-Eire\t%s\t1957 Apr 14 2:00\n"+
-"\t\t\t1:00\t-\tCET\t1982\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Rule\tGreece\t1932\tonly\t-\tJul\t 7\t0:00\t1:00\tS\n"+
-"Rule\tGreece\t1932\tonly\t-\tSep\t 1\t0:00\t0\t-\n"+
-"Rule\tGreece\t1941\tonly\t-\tApr\t 7\t0:00\t1:00\tS\n"+
-"Rule\tGreece\t1942\tonly\t-\tNov\t 2\t3:00\t0\t-\n"+
-"Rule\tGreece\t1943\tonly\t-\tMar\t30\t0:00\t1:00\tS\n"+
-"Rule\tGreece\t1943\tonly\t-\tOct\t 4\t0:00\t0\t-\n"+
-"Rule\tGreece\t1952\tonly\t-\tJul\t 1\t0:00\t1:00\tS\n"+
-"Rule\tGreece\t1952\tonly\t-\tNov\t 2\t0:00\t0\t-\n"+
-"Rule\tGreece\t1975\tonly\t-\tApr\t12\t0:00s\t1:00\tS\n"+
-"Rule\tGreece\t1975\tonly\t-\tNov\t26\t0:00s\t0\t-\n"+
-"Rule\tGreece\t1976\tonly\t-\tApr\t11\t2:00s\t1:00\tS\n"+
-"Rule\tGreece\t1976\tonly\t-\tOct\t10\t2:00s\t0\t-\n"+
-"Rule\tGreece\t1977\t1978\t-\tApr\tSun>=1\t2:00s\t1:00\tS\n"+
-"Rule\tGreece\t1977\tonly\t-\tSep\t26\t2:00s\t0\t-\n"+
-"Rule\tGreece\t1978\tonly\t-\tSep\t24\t4:00\t0\t-\n"+
-"Rule\tGreece\t1979\tonly\t-\tApr\t 1\t9:00\t1:00\tS\n"+
-"Rule\tGreece\t1979\tonly\t-\tSep\t29\t2:00\t0\t-\n"+
-"Rule\tGreece\t1980\tonly\t-\tApr\t 1\t0:00\t1:00\tS\n"+
-"Rule\tGreece\t1980\tonly\t-\tSep\t28\t0:00\t0\t-\n"+
-"Zone\tEurope/Athens\t1:34:52 -\tLMT\t1895 Sep 14\n"+
-"\t\t\t1:34:52\t-\tAMT\t1916 Jul 28 0:01     # Athens MT\n"+
-"\t\t\t2:00\tGreece\tEE%sT\t1941 Apr 30\n"+
-"\t\t\t1:00\tGreece\tCE%sT\t1944 Apr  4\n"+
-"\t\t\t2:00\tGreece\tEE%sT\t1981\n"+
-"\t\t\t2:00\tEU\tEE%sT\n"+
-"Rule\tHungary\t1918\tonly\t-\tApr\t 1\t 3:00\t1:00\tS\n"+
-"Rule\tHungary\t1918\tonly\t-\tSep\t29\t 3:00\t0\t-\n"+
-"Rule\tHungary\t1919\tonly\t-\tApr\t15\t 3:00\t1:00\tS\n"+
-"Rule\tHungary\t1919\tonly\t-\tSep\t15\t 3:00\t0\t-\n"+
-"Rule\tHungary\t1920\tonly\t-\tApr\t 5\t 3:00\t1:00\tS\n"+
-"Rule\tHungary\t1920\tonly\t-\tSep\t30\t 3:00\t0\t-\n"+
-"Rule\tHungary\t1945\tonly\t-\tMay\t 1\t23:00\t1:00\tS\n"+
-"Rule\tHungary\t1945\tonly\t-\tNov\t 3\t 0:00\t0\t-\n"+
-"Rule\tHungary\t1946\tonly\t-\tMar\t31\t 2:00s\t1:00\tS\n"+
-"Rule\tHungary\t1946\t1949\t-\tOct\tSun>=1\t 2:00s\t0\t-\n"+
-"Rule\tHungary\t1947\t1949\t-\tApr\tSun>=4\t 2:00s\t1:00\tS\n"+
-"Rule\tHungary\t1950\tonly\t-\tApr\t17\t 2:00s\t1:00\tS\n"+
-"Rule\tHungary\t1950\tonly\t-\tOct\t23\t 2:00s\t0\t-\n"+
-"Rule\tHungary\t1954\t1955\t-\tMay\t23\t 0:00\t1:00\tS\n"+
-"Rule\tHungary\t1954\t1955\t-\tOct\t 3\t 0:00\t0\t-\n"+
-"Rule\tHungary\t1956\tonly\t-\tJun\tSun>=1\t 0:00\t1:00\tS\n"+
-"Rule\tHungary\t1956\tonly\t-\tSep\tlastSun\t 0:00\t0\t-\n"+
-"Rule\tHungary\t1957\tonly\t-\tJun\tSun>=1\t 1:00\t1:00\tS\n"+
-"Rule\tHungary\t1957\tonly\t-\tSep\tlastSun\t 3:00\t0\t-\n"+
-"Rule\tHungary\t1980\tonly\t-\tApr\t 6\t 1:00\t1:00\tS\n"+
-"Zone\tEurope/Budapest\t1:16:20 -\tLMT\t1890 Oct\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1918\n"+
-"\t\t\t1:00\tHungary\tCE%sT\t1941 Apr  6  2:00\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1945\n"+
-"\t\t\t1:00\tHungary\tCE%sT\t1980 Sep 28  2:00s\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Rule\tIceland\t1917\t1918\t-\tFeb\t19\t23:00\t1:00\tS\n"+
-"Rule\tIceland\t1917\tonly\t-\tOct\t21\t 1:00\t0\t-\n"+
-"Rule\tIceland\t1918\tonly\t-\tNov\t16\t 1:00\t0\t-\n"+
-"Rule\tIceland\t1939\tonly\t-\tApr\t29\t23:00\t1:00\tS\n"+
-"Rule\tIceland\t1939\tonly\t-\tNov\t29\t 2:00\t0\t-\n"+
-"Rule\tIceland\t1940\tonly\t-\tFeb\t25\t 2:00\t1:00\tS\n"+
-"Rule\tIceland\t1940\tonly\t-\tNov\t 3\t 2:00\t0\t-\n"+
-"Rule\tIceland\t1941\tonly\t-\tMar\t 2\t 1:00s\t1:00\tS\n"+
-"Rule\tIceland\t1941\tonly\t-\tNov\t 2\t 1:00s\t0\t-\n"+
-"Rule\tIceland\t1942\tonly\t-\tMar\t 8\t 1:00s\t1:00\tS\n"+
-"Rule\tIceland\t1942\tonly\t-\tOct\t25\t 1:00s\t0\t-\n"+
-"Rule\tIceland\t1943\t1946\t-\tMar\tSun>=1\t 1:00s\t1:00\tS\n"+
-"Rule\tIceland\t1943\t1948\t-\tOct\tSun>=22\t 1:00s\t0\t-\n"+
-"Rule\tIceland\t1947\t1967\t-\tApr\tSun>=1\t 1:00s\t1:00\tS\n"+
-"Rule\tIceland\t1949\tonly\t-\tOct\t30\t 1:00s\t0\t-\n"+
-"Rule\tIceland\t1950\t1966\t-\tOct\tSun>=22\t 1:00s\t0\t-\n"+
-"Rule\tIceland\t1967\tonly\t-\tOct\t29\t 1:00s\t0\t-\n"+
-"Zone Atlantic/Reykjavik\t-1:27:24 -\tLMT\t1837\n"+
-"\t\t\t-1:27:48 -\tRMT\t1908 # Reykjavik Mean Time?\n"+
-"\t\t\t-1:00\tIceland\tIS%sT\t1968 Apr 7 1:00s\n"+
-"\t\t\t 0:00\t-\tGMT\n"+
-"Rule\tItaly\t1916\tonly\t-\tJun\t 3\t0:00s\t1:00\tS\n"+
-"Rule\tItaly\t1916\tonly\t-\tOct\t 1\t0:00s\t0\t-\n"+
-"Rule\tItaly\t1917\tonly\t-\tApr\t 1\t0:00s\t1:00\tS\n"+
-"Rule\tItaly\t1917\tonly\t-\tSep\t30\t0:00s\t0\t-\n"+
-"Rule\tItaly\t1918\tonly\t-\tMar\t10\t0:00s\t1:00\tS\n"+
-"Rule\tItaly\t1918\t1919\t-\tOct\tSun>=1\t0:00s\t0\t-\n"+
-"Rule\tItaly\t1919\tonly\t-\tMar\t 2\t0:00s\t1:00\tS\n"+
-"Rule\tItaly\t1920\tonly\t-\tMar\t21\t0:00s\t1:00\tS\n"+
-"Rule\tItaly\t1920\tonly\t-\tSep\t19\t0:00s\t0\t-\n"+
-"Rule\tItaly\t1940\tonly\t-\tJun\t15\t0:00s\t1:00\tS\n"+
-"Rule\tItaly\t1944\tonly\t-\tSep\t17\t0:00s\t0\t-\n"+
-"Rule\tItaly\t1945\tonly\t-\tApr\t 2\t2:00\t1:00\tS\n"+
-"Rule\tItaly\t1945\tonly\t-\tSep\t15\t0:00s\t0\t-\n"+
-"Rule\tItaly\t1946\tonly\t-\tMar\t17\t2:00s\t1:00\tS\n"+
-"Rule\tItaly\t1946\tonly\t-\tOct\t 6\t2:00s\t0\t-\n"+
-"Rule\tItaly\t1947\tonly\t-\tMar\t16\t0:00s\t1:00\tS\n"+
-"Rule\tItaly\t1947\tonly\t-\tOct\t 5\t0:00s\t0\t-\n"+
-"Rule\tItaly\t1948\tonly\t-\tFeb\t29\t2:00s\t1:00\tS\n"+
-"Rule\tItaly\t1948\tonly\t-\tOct\t 3\t2:00s\t0\t-\n"+
-"Rule\tItaly\t1966\t1968\t-\tMay\tSun>=22\t0:00\t1:00\tS\n"+
-"Rule\tItaly\t1966\t1969\t-\tSep\tSun>=22\t0:00\t0\t-\n"+
-"Rule\tItaly\t1969\tonly\t-\tJun\t 1\t0:00\t1:00\tS\n"+
-"Rule\tItaly\t1970\tonly\t-\tMay\t31\t0:00\t1:00\tS\n"+
-"Rule\tItaly\t1970\tonly\t-\tSep\tlastSun\t0:00\t0\t-\n"+
-"Rule\tItaly\t1971\t1972\t-\tMay\tSun>=22\t0:00\t1:00\tS\n"+
-"Rule\tItaly\t1971\tonly\t-\tSep\tlastSun\t1:00\t0\t-\n"+
-"Rule\tItaly\t1972\tonly\t-\tOct\t 1\t0:00\t0\t-\n"+
-"Rule\tItaly\t1973\tonly\t-\tJun\t 3\t0:00\t1:00\tS\n"+
-"Rule\tItaly\t1973\t1974\t-\tSep\tlastSun\t0:00\t0\t-\n"+
-"Rule\tItaly\t1974\tonly\t-\tMay\t26\t0:00\t1:00\tS\n"+
-"Rule\tItaly\t1975\tonly\t-\tJun\t 1\t0:00s\t1:00\tS\n"+
-"Rule\tItaly\t1975\t1977\t-\tSep\tlastSun\t0:00s\t0\t-\n"+
-"Rule\tItaly\t1976\tonly\t-\tMay\t30\t0:00s\t1:00\tS\n"+
-"Rule\tItaly\t1977\t1979\t-\tMay\tSun>=22\t0:00s\t1:00\tS\n"+
-"Rule\tItaly\t1978\tonly\t-\tOct\t 1\t0:00s\t0\t-\n"+
-"Rule\tItaly\t1979\tonly\t-\tSep\t30\t0:00s\t0\t-\n"+
-"Zone\tEurope/Rome\t0:49:56 -\tLMT\t1866 Sep 22\n"+
-"\t\t\t0:49:56\t-\tRMT\t1893 Nov  1 0:00s # Rome Mean\n"+
-"\t\t\t1:00\tItaly\tCE%sT\t1942 Nov  2 2:00s\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1944 Jul\n"+
-"\t\t\t1:00\tItaly\tCE%sT\t1980\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Link\tEurope/Rome\tEurope/Vatican\n"+
-"Link\tEurope/Rome\tEurope/San_Marino\n"+
-"Rule\tLatvia\t1989\t1996\t-\tMar\tlastSun\t 2:00s\t1:00\tS\n"+
-"Rule\tLatvia\t1989\t1996\t-\tSep\tlastSun\t 2:00s\t0\t-\n"+
-"Zone\tEurope/Riga\t1:36:24\t-\tLMT\t1880\n"+
-"\t\t\t1:36:24\t-\tRMT\t1918 Apr 15 2:00 #Riga Mean Time\n"+
-"\t\t\t1:36:24\t1:00\tLST\t1918 Sep 16 3:00 #Latvian Summer\n"+
-"\t\t\t1:36:24\t-\tRMT\t1919 Apr  1 2:00\n"+
-"\t\t\t1:36:24\t1:00\tLST\t1919 May 22 3:00\n"+
-"\t\t\t1:36:24\t-\tRMT\t1926 May 11\n"+
-"\t\t\t2:00\t-\tEET\t1940 Aug  5\n"+
-"\t\t\t3:00\t-\tMSK\t1941 Jul\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1944 Oct 13\n"+
-"\t\t\t3:00\tRussia\tMSK/MSD\t1989 Mar lastSun 2:00s\n"+
-"\t\t\t2:00\t1:00\tEEST\t1989 Sep lastSun 2:00s\n"+
-"\t\t\t2:00\tLatvia\tEE%sT\t1997 Jan 21\n"+
-"\t\t\t2:00\tEU\tEE%sT\t2000 Feb 29\n"+
-"\t\t\t2:00\t-\tEET\t2001 Jan  2\n"+
-"\t\t\t2:00\tEU\tEE%sT\n"+
-"Zone\tEurope/Vaduz\t0:38:04 -\tLMT\t1894 Jun\n"+
-"\t\t\t1:00\t-\tCET\t1981\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Zone\tEurope/Vilnius\t1:41:16\t-\tLMT\t1880\n"+
-"\t\t\t1:24:00\t-\tWMT\t1917\t    # Warsaw Mean Time\n"+
-"\t\t\t1:35:36\t-\tKMT\t1919 Oct 10 # Kaunas Mean Time\n"+
-"\t\t\t1:00\t-\tCET\t1920 Jul 12\n"+
-"\t\t\t2:00\t-\tEET\t1920 Oct  9\n"+
-"\t\t\t1:00\t-\tCET\t1940 Aug  3\n"+
-"\t\t\t3:00\t-\tMSK\t1941 Jun 24\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1944 Aug\n"+
-"\t\t\t3:00\tRussia\tMSK/MSD\t1991 Mar 31 2:00s\n"+
-"\t\t\t2:00\t1:00\tEEST\t1991 Sep 29 2:00s\n"+
-"\t\t\t2:00\tC-Eur\tEE%sT\t1998\n"+
-"\t\t\t2:00\t-\tEET\t1998 Mar 29 1:00u\n"+
-"\t\t\t1:00\tEU\tCE%sT\t1999 Oct 31 1:00u\n"+
-"\t\t\t2:00\t-\tEET\t2003 Jan  1\n"+
-"\t\t\t2:00\tEU\tEE%sT\n"+
-"Rule\tLux\t1916\tonly\t-\tMay\t14\t23:00\t1:00\tS\n"+
-"Rule\tLux\t1916\tonly\t-\tOct\t 1\t 1:00\t0\t-\n"+
-"Rule\tLux\t1917\tonly\t-\tApr\t28\t23:00\t1:00\tS\n"+
-"Rule\tLux\t1917\tonly\t-\tSep\t17\t 1:00\t0\t-\n"+
-"Rule\tLux\t1918\tonly\t-\tApr\tMon>=15\t 2:00s\t1:00\tS\n"+
-"Rule\tLux\t1918\tonly\t-\tSep\tMon>=15\t 2:00s\t0\t-\n"+
-"Rule\tLux\t1919\tonly\t-\tMar\t 1\t23:00\t1:00\tS\n"+
-"Rule\tLux\t1919\tonly\t-\tOct\t 5\t 3:00\t0\t-\n"+
-"Rule\tLux\t1920\tonly\t-\tFeb\t14\t23:00\t1:00\tS\n"+
-"Rule\tLux\t1920\tonly\t-\tOct\t24\t 2:00\t0\t-\n"+
-"Rule\tLux\t1921\tonly\t-\tMar\t14\t23:00\t1:00\tS\n"+
-"Rule\tLux\t1921\tonly\t-\tOct\t26\t 2:00\t0\t-\n"+
-"Rule\tLux\t1922\tonly\t-\tMar\t25\t23:00\t1:00\tS\n"+
-"Rule\tLux\t1922\tonly\t-\tOct\tSun>=2\t 1:00\t0\t-\n"+
-"Rule\tLux\t1923\tonly\t-\tApr\t21\t23:00\t1:00\tS\n"+
-"Rule\tLux\t1923\tonly\t-\tOct\tSun>=2\t 2:00\t0\t-\n"+
-"Rule\tLux\t1924\tonly\t-\tMar\t29\t23:00\t1:00\tS\n"+
-"Rule\tLux\t1924\t1928\t-\tOct\tSun>=2\t 1:00\t0\t-\n"+
-"Rule\tLux\t1925\tonly\t-\tApr\t 5\t23:00\t1:00\tS\n"+
-"Rule\tLux\t1926\tonly\t-\tApr\t17\t23:00\t1:00\tS\n"+
-"Rule\tLux\t1927\tonly\t-\tApr\t 9\t23:00\t1:00\tS\n"+
-"Rule\tLux\t1928\tonly\t-\tApr\t14\t23:00\t1:00\tS\n"+
-"Rule\tLux\t1929\tonly\t-\tApr\t20\t23:00\t1:00\tS\n"+
-"Zone Europe/Luxembourg\t0:24:36 -\tLMT\t1904 Jun\n"+
-"\t\t\t1:00\tLux\tCE%sT\t1918 Nov 25\n"+
-"\t\t\t0:00\tLux\tWE%sT\t1929 Oct  6 2:00s\n"+
-"\t\t\t0:00\tBelgium\tWE%sT\t1940 May 14 3:00\n"+
-"\t\t\t1:00\tC-Eur\tWE%sT\t1944 Sep 18 3:00\n"+
-"\t\t\t1:00\tBelgium\tCE%sT\t1977\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Rule\tMalta\t1973\tonly\t-\tMar\t31\t0:00s\t1:00\tS\n"+
-"Rule\tMalta\t1973\tonly\t-\tSep\t29\t0:00s\t0\t-\n"+
-"Rule\tMalta\t1974\tonly\t-\tApr\t21\t0:00s\t1:00\tS\n"+
-"Rule\tMalta\t1974\tonly\t-\tSep\t16\t0:00s\t0\t-\n"+
-"Rule\tMalta\t1975\t1979\t-\tApr\tSun>=15\t2:00\t1:00\tS\n"+
-"Rule\tMalta\t1975\t1980\t-\tSep\tSun>=15\t2:00\t0\t-\n"+
-"Rule\tMalta\t1980\tonly\t-\tMar\t31\t2:00\t1:00\tS\n"+
-"Zone\tEurope/Malta\t0:58:04 -\tLMT\t1893 Nov  2 0:00s # Valletta\n"+
-"\t\t\t1:00\tItaly\tCE%sT\t1942 Nov  2 2:00s\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1945 Apr  2 2:00s\n"+
-"\t\t\t1:00\tItaly\tCE%sT\t1973 Mar 31\n"+
-"\t\t\t1:00\tMalta\tCE%sT\t1981\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Zone\tEurope/Chisinau\t1:55:20 -\tLMT\t1880\n"+
-"\t\t\t1:55\t-\tCMT\t1918 Feb 15 # Chisinau MT\n"+
-"\t\t\t1:44:24\t-\tBMT\t1931 Jul 24 # Bucharest MT\n"+
-"\t\t\t2:00\tRomania\tEE%sT\t1940 Aug 15\n"+
-"\t\t\t2:00\t1:00\tEEST\t1941 Jul 17\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1944 Aug 24\n"+
-"\t\t\t3:00\tRussia\tMSK/MSD\t1990\n"+
-"\t\t\t3:00\t-\tMSK\t1990 May 6\n"+
-"\t\t\t2:00\t-\tEET\t1991\n"+
-"\t\t\t2:00\tRussia\tEE%sT\t1992\n"+
-"\t\t\t2:00\tE-Eur\tEE%sT\t1997\n"+
-"\t\t\t2:00\tEU\tEE%sT\n"+
-"Zone\tEurope/Monaco\t0:29:32 -\tLMT\t1891 Mar 15\n"+
-"\t\t\t0:09:21\t-\tPMT\t1911 Mar 11    # Paris Mean Time\n"+
-"\t\t\t0:00\tFrance\tWE%sT\t1945 Sep 16 3:00\n"+
-"\t\t\t1:00\tFrance\tCE%sT\t1977\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Rule\tNeth\t1916\tonly\t-\tMay\t 1\t0:00\t1:00\tNST\t# Netherlands Summer Time\n"+
-"Rule\tNeth\t1916\tonly\t-\tOct\t 1\t0:00\t0\tAMT\t# Amsterdam Mean Time\n"+
-"Rule\tNeth\t1917\tonly\t-\tApr\t16\t2:00s\t1:00\tNST\n"+
-"Rule\tNeth\t1917\tonly\t-\tSep\t17\t2:00s\t0\tAMT\n"+
-"Rule\tNeth\t1918\t1921\t-\tApr\tMon>=1\t2:00s\t1:00\tNST\n"+
-"Rule\tNeth\t1918\t1921\t-\tSep\tlastMon\t2:00s\t0\tAMT\n"+
-"Rule\tNeth\t1922\tonly\t-\tMar\tlastSun\t2:00s\t1:00\tNST\n"+
-"Rule\tNeth\t1922\t1936\t-\tOct\tSun>=2\t2:00s\t0\tAMT\n"+
-"Rule\tNeth\t1923\tonly\t-\tJun\tFri>=1\t2:00s\t1:00\tNST\n"+
-"Rule\tNeth\t1924\tonly\t-\tMar\tlastSun\t2:00s\t1:00\tNST\n"+
-"Rule\tNeth\t1925\tonly\t-\tJun\tFri>=1\t2:00s\t1:00\tNST\n"+
-"Rule\tNeth\t1926\t1931\t-\tMay\t15\t2:00s\t1:00\tNST\n"+
-"Rule\tNeth\t1932\tonly\t-\tMay\t22\t2:00s\t1:00\tNST\n"+
-"Rule\tNeth\t1933\t1936\t-\tMay\t15\t2:00s\t1:00\tNST\n"+
-"Rule\tNeth\t1937\tonly\t-\tMay\t22\t2:00s\t1:00\tNST\n"+
-"Rule\tNeth\t1937\tonly\t-\tJul\t 1\t0:00\t1:00\tS\n"+
-"Rule\tNeth\t1937\t1939\t-\tOct\tSun>=2\t2:00s\t0\t-\n"+
-"Rule\tNeth\t1938\t1939\t-\tMay\t15\t2:00s\t1:00\tS\n"+
-"Rule\tNeth\t1945\tonly\t-\tApr\t 2\t2:00s\t1:00\tS\n"+
-"Rule\tNeth\t1945\tonly\t-\tSep\t16\t2:00s\t0\t-\n"+
-"Zone Europe/Amsterdam\t0:19:32 -\tLMT\t1835\n"+
-"\t\t\t0:19:32\tNeth\t%s\t1937 Jul  1\n"+
-"\t\t\t0:20\tNeth\tNE%sT\t1940 May 16 0:00 # Dutch Time\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1945 Apr  2 2:00\n"+
-"\t\t\t1:00\tNeth\tCE%sT\t1977\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Rule\tNorway\t1916\tonly\t-\tMay\t22\t1:00\t1:00\tS\n"+
-"Rule\tNorway\t1916\tonly\t-\tSep\t30\t0:00\t0\t-\n"+
-"Rule\tNorway\t1945\tonly\t-\tApr\t 2\t2:00s\t1:00\tS\n"+
-"Rule\tNorway\t1945\tonly\t-\tOct\t 1\t2:00s\t0\t-\n"+
-"Rule\tNorway\t1959\t1964\t-\tMar\tSun>=15\t2:00s\t1:00\tS\n"+
-"Rule\tNorway\t1959\t1965\t-\tSep\tSun>=15\t2:00s\t0\t-\n"+
-"Rule\tNorway\t1965\tonly\t-\tApr\t25\t2:00s\t1:00\tS\n"+
-"Zone\tEurope/Oslo\t0:43:00 -\tLMT\t1895 Jan  1\n"+
-"\t\t\t1:00\tNorway\tCE%sT\t1940 Aug 10 23:00\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1945 Apr  2  2:00\n"+
-"\t\t\t1:00\tNorway\tCE%sT\t1980\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Link\tEurope/Oslo\tArctic/Longyearbyen\n"+
-"Rule\tPoland\t1918\t1919\t-\tSep\t16\t2:00s\t0\t-\n"+
-"Rule\tPoland\t1919\tonly\t-\tApr\t15\t2:00s\t1:00\tS\n"+
-"Rule\tPoland\t1944\tonly\t-\tApr\t 3\t2:00s\t1:00\tS\n"+
-"Rule\tPoland\t1944\tonly\t-\tOct\t 4\t2:00\t0\t-\n"+
-"Rule\tPoland\t1945\tonly\t-\tApr\t29\t0:00\t1:00\tS\n"+
-"Rule\tPoland\t1945\tonly\t-\tNov\t 1\t0:00\t0\t-\n"+
-"Rule\tPoland\t1946\tonly\t-\tApr\t14\t0:00s\t1:00\tS\n"+
-"Rule\tPoland\t1946\tonly\t-\tOct\t 7\t2:00s\t0\t-\n"+
-"Rule\tPoland\t1947\tonly\t-\tMay\t 4\t2:00s\t1:00\tS\n"+
-"Rule\tPoland\t1947\t1949\t-\tOct\tSun>=1\t2:00s\t0\t-\n"+
-"Rule\tPoland\t1948\tonly\t-\tApr\t18\t2:00s\t1:00\tS\n"+
-"Rule\tPoland\t1949\tonly\t-\tApr\t10\t2:00s\t1:00\tS\n"+
-"Rule\tPoland\t1957\tonly\t-\tJun\t 2\t1:00s\t1:00\tS\n"+
-"Rule\tPoland\t1957\t1958\t-\tSep\tlastSun\t1:00s\t0\t-\n"+
-"Rule\tPoland\t1958\tonly\t-\tMar\t30\t1:00s\t1:00\tS\n"+
-"Rule\tPoland\t1959\tonly\t-\tMay\t31\t1:00s\t1:00\tS\n"+
-"Rule\tPoland\t1959\t1961\t-\tOct\tSun>=1\t1:00s\t0\t-\n"+
-"Rule\tPoland\t1960\tonly\t-\tApr\t 3\t1:00s\t1:00\tS\n"+
-"Rule\tPoland\t1961\t1964\t-\tMay\tlastSun\t1:00s\t1:00\tS\n"+
-"Rule\tPoland\t1962\t1964\t-\tSep\tlastSun\t1:00s\t0\t-\n"+
-"Zone\tEurope/Warsaw\t1:24:00 -\tLMT\t1880\n"+
-"\t\t\t1:24:00\t-\tWMT\t1915 Aug  5   # Warsaw Mean Time\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1918 Sep 16 3:00\n"+
-"\t\t\t2:00\tPoland\tEE%sT\t1922 Jun\n"+
-"\t\t\t1:00\tPoland\tCE%sT\t1940 Jun 23 2:00\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1944 Oct\n"+
-"\t\t\t1:00\tPoland\tCE%sT\t1977\n"+
-"\t\t\t1:00\tW-Eur\tCE%sT\t1988\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Rule\tPort\t1916\tonly\t-\tJun\t17\t23:00\t1:00\tS\n"+
-"Rule\tPort\t1916\tonly\t-\tNov\t 1\t 1:00\t0\t-\n"+
-"Rule\tPort\t1917\tonly\t-\tFeb\t28\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1917\t1921\t-\tOct\t14\t23:00s\t0\t-\n"+
-"Rule\tPort\t1918\tonly\t-\tMar\t 1\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1919\tonly\t-\tFeb\t28\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1920\tonly\t-\tFeb\t29\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1921\tonly\t-\tFeb\t28\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1924\tonly\t-\tApr\t16\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1924\tonly\t-\tOct\t14\t23:00s\t0\t-\n"+
-"Rule\tPort\t1926\tonly\t-\tApr\t17\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1926\t1929\t-\tOct\tSat>=1\t23:00s\t0\t-\n"+
-"Rule\tPort\t1927\tonly\t-\tApr\t 9\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1928\tonly\t-\tApr\t14\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1929\tonly\t-\tApr\t20\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1931\tonly\t-\tApr\t18\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1931\t1932\t-\tOct\tSat>=1\t23:00s\t0\t-\n"+
-"Rule\tPort\t1932\tonly\t-\tApr\t 2\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1934\tonly\t-\tApr\t 7\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1934\t1938\t-\tOct\tSat>=1\t23:00s\t0\t-\n"+
-"Rule\tPort\t1935\tonly\t-\tMar\t30\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1936\tonly\t-\tApr\t18\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1937\tonly\t-\tApr\t 3\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1938\tonly\t-\tMar\t26\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1939\tonly\t-\tApr\t15\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1939\tonly\t-\tNov\t18\t23:00s\t0\t-\n"+
-"Rule\tPort\t1940\tonly\t-\tFeb\t24\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1940\t1941\t-\tOct\t 5\t23:00s\t0\t-\n"+
-"Rule\tPort\t1941\tonly\t-\tApr\t 5\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1942\t1945\t-\tMar\tSat>=8\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1942\tonly\t-\tApr\t25\t22:00s\t2:00\tM # Midsummer\n"+
-"Rule\tPort\t1942\tonly\t-\tAug\t15\t22:00s\t1:00\tS\n"+
-"Rule\tPort\t1942\t1945\t-\tOct\tSat>=24\t23:00s\t0\t-\n"+
-"Rule\tPort\t1943\tonly\t-\tApr\t17\t22:00s\t2:00\tM\n"+
-"Rule\tPort\t1943\t1945\t-\tAug\tSat>=25\t22:00s\t1:00\tS\n"+
-"Rule\tPort\t1944\t1945\t-\tApr\tSat>=21\t22:00s\t2:00\tM\n"+
-"Rule\tPort\t1946\tonly\t-\tApr\tSat>=1\t23:00s\t1:00\tS\n"+
-"Rule\tPort\t1946\tonly\t-\tOct\tSat>=1\t23:00s\t0\t-\n"+
-"Rule\tPort\t1947\t1949\t-\tApr\tSun>=1\t 2:00s\t1:00\tS\n"+
-"Rule\tPort\t1947\t1949\t-\tOct\tSun>=1\t 2:00s\t0\t-\n"+
-"Rule\tPort\t1951\t1965\t-\tApr\tSun>=1\t 2:00s\t1:00\tS\n"+
-"Rule\tPort\t1951\t1965\t-\tOct\tSun>=1\t 2:00s\t0\t-\n"+
-"Rule\tPort\t1977\tonly\t-\tMar\t27\t 0:00s\t1:00\tS\n"+
-"Rule\tPort\t1977\tonly\t-\tSep\t25\t 0:00s\t0\t-\n"+
-"Rule\tPort\t1978\t1979\t-\tApr\tSun>=1\t 0:00s\t1:00\tS\n"+
-"Rule\tPort\t1978\tonly\t-\tOct\t 1\t 0:00s\t0\t-\n"+
-"Rule\tPort\t1979\t1982\t-\tSep\tlastSun\t 1:00s\t0\t-\n"+
-"Rule\tPort\t1980\tonly\t-\tMar\tlastSun\t 0:00s\t1:00\tS\n"+
-"Rule\tPort\t1981\t1982\t-\tMar\tlastSun\t 1:00s\t1:00\tS\n"+
-"Rule\tPort\t1983\tonly\t-\tMar\tlastSun\t 2:00s\t1:00\tS\n"+
-"Zone\tEurope/Lisbon\t-0:36:32 -\tLMT\t1884\n"+
-"\t\t\t-0:36:32 -\tLMT\t1912 Jan  1  # Lisbon Mean Time\n"+
-"\t\t\t 0:00\tPort\tWE%sT\t1966 Apr  3 2:00\n"+
-"\t\t\t 1:00\t-\tCET\t1976 Sep 26 1:00\n"+
-"\t\t\t 0:00\tPort\tWE%sT\t1983 Sep 25 1:00s\n"+
-"\t\t\t 0:00\tW-Eur\tWE%sT\t1992 Sep 27 1:00s\n"+
-"\t\t\t 1:00\tEU\tCE%sT\t1996 Mar 31 1:00u\n"+
-"\t\t\t 0:00\tEU\tWE%sT\n"+
-"Zone Atlantic/Azores\t-1:42:40 -\tLMT\t1884\t\t# Ponta Delgada\n"+
-"\t\t\t-1:54:32 -\tHMT\t1911 May 24  # Horta Mean Time\n"+
-"\t\t\t-2:00\tPort\tAZO%sT\t1966 Apr  3 2:00 # Azores Time\n"+
-"\t\t\t-1:00\tPort\tAZO%sT\t1983 Sep 25 1:00s\n"+
-"\t\t\t-1:00\tW-Eur\tAZO%sT\t1992 Sep 27 1:00s\n"+
-"\t\t\t 0:00\tEU\tWE%sT\t1993 Mar 28 1:00u\n"+
-"\t\t\t-1:00\tEU\tAZO%sT\n"+
-"Zone Atlantic/Madeira\t-1:07:36 -\tLMT\t1884\t\t# Funchal\n"+
-"\t\t\t-1:07:36 -\tFMT\t1911 May 24  # Funchal Mean Time\n"+
-"\t\t\t-1:00\tPort\tMAD%sT\t1966 Apr  3 2:00 # Madeira Time\n"+
-"\t\t\t 0:00\tPort\tWE%sT\t1983 Sep 25 1:00s\n"+
-"\t\t\t 0:00\tEU\tWE%sT\n"+
-"Rule\tRomania\t1932\tonly\t-\tMay\t21\t 0:00s\t1:00\tS\n"+
-"Rule\tRomania\t1932\t1939\t-\tOct\tSun>=1\t 0:00s\t0\t-\n"+
-"Rule\tRomania\t1933\t1939\t-\tApr\tSun>=2\t 0:00s\t1:00\tS\n"+
-"Rule\tRomania\t1979\tonly\t-\tMay\t27\t 0:00\t1:00\tS\n"+
-"Rule\tRomania\t1979\tonly\t-\tSep\tlastSun\t 0:00\t0\t-\n"+
-"Rule\tRomania\t1980\tonly\t-\tApr\t 5\t23:00\t1:00\tS\n"+
-"Rule\tRomania\t1980\tonly\t-\tSep\tlastSun\t 1:00\t0\t-\n"+
-"Rule\tRomania\t1991\t1993\t-\tMar\tlastSun\t 0:00s\t1:00\tS\n"+
-"Rule\tRomania\t1991\t1993\t-\tSep\tlastSun\t 0:00s\t0\t-\n"+
-"Zone Europe/Bucharest\t1:44:24 -\tLMT\t1891 Oct\n"+
-"\t\t\t1:44:24\t-\tBMT\t1931 Jul 24\t# Bucharest MT\n"+
-"\t\t\t2:00\tRomania\tEE%sT\t1981 Mar 29 2:00s\n"+
-"\t\t\t2:00\tC-Eur\tEE%sT\t1991\n"+
-"\t\t\t2:00\tRomania\tEE%sT\t1994\n"+
-"\t\t\t2:00\tE-Eur\tEE%sT\t1997\n"+
-"\t\t\t2:00\tEU\tEE%sT\n"+
-"Zone Europe/Kaliningrad\t 1:22:00 -\tLMT\t1893 Apr\n"+
-"\t\t\t 1:00\tC-Eur\tCE%sT\t1945\n"+
-"\t\t\t 2:00\tPoland\tCE%sT\t1946\n"+
-"\t\t\t 3:00\tRussia\tMSK/MSD\t1991 Mar 31 2:00s\n"+
-"\t\t\t 2:00\tRussia\tEE%sT\t2011 Mar 27 2:00s\n"+
-"\t\t\t 3:00\t-\tFET # Further-eastern European Time\n"+
-"Zone Europe/Moscow\t 2:30:20 -\tLMT\t1880\n"+
-"\t\t\t 2:30\t-\tMMT\t1916 Jul  3 # Moscow Mean Time\n"+
-"\t\t\t 2:30:48 Russia\t%s\t1919 Jul  1 2:00\n"+
-"\t\t\t 3:00\tRussia\tMSK/MSD\t1922 Oct\n"+
-"\t\t\t 2:00\t-\tEET\t1930 Jun 21\n"+
-"\t\t\t 3:00\tRussia\tMSK/MSD\t1991 Mar 31 2:00s\n"+
-"\t\t\t 2:00\tRussia\tEE%sT\t1992 Jan 19 2:00s\n"+
-"\t\t\t 3:00\tRussia\tMSK/MSD\t2011 Mar 27 2:00s\n"+
-"\t\t\t 4:00\t-\tMSK\n"+
-"Zone Europe/Volgograd\t 2:57:40 -\tLMT\t1920 Jan  3\n"+
-"\t\t\t 3:00\t-\tTSAT\t1925 Apr  6 # Tsaritsyn Time\n"+
-"\t\t\t 3:00\t-\tSTAT\t1930 Jun 21 # Stalingrad Time\n"+
-"\t\t\t 4:00\t-\tSTAT\t1961 Nov 11\n"+
-"\t\t\t 4:00\tRussia\tVOL%sT\t1989 Mar 26 2:00s # Volgograd T\n"+
-"\t\t\t 3:00\tRussia\tVOL%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t 4:00\t-\tVOLT\t1992 Mar 29 2:00s\n"+
-"\t\t\t 3:00\tRussia\tVOL%sT\t2011 Mar 27 2:00s\n"+
-"\t\t\t 4:00\t-\tVOLT\n"+
-"Zone Europe/Samara\t 3:20:36 -\tLMT\t1919 Jul  1 2:00\n"+
-"\t\t\t 3:00\t-\tSAMT\t1930 Jun 21\n"+
-"\t\t\t 4:00\t-\tSAMT\t1935 Jan 27\n"+
-"\t\t\t 4:00\tRussia\tKUY%sT\t1989 Mar 26 2:00s # Kuybyshev\n"+
-"\t\t\t 3:00\tRussia\tKUY%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t 2:00\tRussia\tKUY%sT\t1991 Sep 29 2:00s\n"+
-"\t\t\t 3:00\t-\tKUYT\t1991 Oct 20 3:00\n"+
-"\t\t\t 4:00\tRussia\tSAM%sT\t2010 Mar 28 2:00s # Samara Time\n"+
-"\t\t\t 3:00\tRussia\tSAM%sT\t2011 Mar 27 2:00s\n"+
-"\t\t\t 4:00\t-\tSAMT\n"+
-"Zone Asia/Yekaterinburg\t 4:02:24 -\tLMT\t1919 Jul 15 4:00\n"+
-"\t\t\t 4:00\t-\tSVET\t1930 Jun 21 # Sverdlovsk Time\n"+
-"\t\t\t 5:00\tRussia\tSVE%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t 4:00\tRussia\tSVE%sT\t1992 Jan 19 2:00s\n"+
-"\t\t\t 5:00\tRussia\tYEK%sT\t2011 Mar 27 2:00s\n"+
-"\t\t\t 6:00\t-\tYEKT\t# Yekaterinburg Time\n"+
-"Zone Asia/Omsk\t\t 4:53:36 -\tLMT\t1919 Nov 14\n"+
-"\t\t\t 5:00\t-\tOMST\t1930 Jun 21 # Omsk TIme\n"+
-"\t\t\t 6:00\tRussia\tOMS%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t 5:00\tRussia\tOMS%sT\t1992 Jan 19 2:00s\n"+
-"\t\t\t 6:00\tRussia\tOMS%sT\t2011 Mar 27 2:00s\n"+
-"\t\t\t 7:00\t-\tOMST\n"+
-"Zone Asia/Novosibirsk\t 5:31:40 -\tLMT\t1919 Dec 14 6:00\n"+
-"\t\t\t 6:00\t-\tNOVT\t1930 Jun 21 # Novosibirsk Time\n"+
-"\t\t\t 7:00\tRussia\tNOV%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t 6:00\tRussia\tNOV%sT\t1992 Jan 19 2:00s\n"+
-"\t\t\t 7:00\tRussia\tNOV%sT\t1993 May 23 # say Shanks & P.\n"+
-"\t\t\t 6:00\tRussia\tNOV%sT\t2011 Mar 27 2:00s\n"+
-"\t\t\t 7:00\t-\tNOVT\n"+
-"Zone Asia/Novokuznetsk\t 5:48:48 -\tNMT\t1920 Jan  6\n"+
-"\t\t\t 6:00\t-\tKRAT\t1930 Jun 21 # Krasnoyarsk Time\n"+
-"\t\t\t 7:00\tRussia\tKRA%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t 6:00\tRussia\tKRA%sT\t1992 Jan 19 2:00s\n"+
-"\t\t\t 7:00\tRussia\tKRA%sT\t2010 Mar 28 2:00s\n"+
-"\t\t\t 6:00\tRussia\tNOV%sT\t2011 Mar 27 2:00s\n"+
-"\t\t\t 7:00\t-\tNOVT # Novosibirsk/Novokuznetsk Time\n"+
-"Zone Asia/Krasnoyarsk\t 6:11:20 -\tLMT\t1920 Jan  6\n"+
-"\t\t\t 6:00\t-\tKRAT\t1930 Jun 21 # Krasnoyarsk Time\n"+
-"\t\t\t 7:00\tRussia\tKRA%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t 6:00\tRussia\tKRA%sT\t1992 Jan 19 2:00s\n"+
-"\t\t\t 7:00\tRussia\tKRA%sT\t2011 Mar 27 2:00s\n"+
-"\t\t\t 8:00\t-\tKRAT\n"+
-"Zone Asia/Irkutsk\t 6:57:20 -\tLMT\t1880\n"+
-"\t\t\t 6:57:20 -\tIMT\t1920 Jan 25 # Irkutsk Mean Time\n"+
-"\t\t\t 7:00\t-\tIRKT\t1930 Jun 21 # Irkutsk Time\n"+
-"\t\t\t 8:00\tRussia\tIRK%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t 7:00\tRussia\tIRK%sT\t1992 Jan 19 2:00s\n"+
-"\t\t\t 8:00\tRussia\tIRK%sT\t2011 Mar 27 2:00s\n"+
-"\t\t\t 9:00\t-\tIRKT\n"+
-"Zone Asia/Yakutsk\t 8:38:40 -\tLMT\t1919 Dec 15\n"+
-"\t\t\t 8:00\t-\tYAKT\t1930 Jun 21 # Yakutsk Time\n"+
-"\t\t\t 9:00\tRussia\tYAK%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t 8:00\tRussia\tYAK%sT\t1992 Jan 19 2:00s\n"+
-"\t\t\t 9:00\tRussia\tYAK%sT\t2011 Mar 27 2:00s\n"+
-"\t\t\t 10:00\t-\tYAKT\n"+
-"Zone Asia/Vladivostok\t 8:47:44 -\tLMT\t1922 Nov 15\n"+
-"\t\t\t 9:00\t-\tVLAT\t1930 Jun 21 # Vladivostok Time\n"+
-"\t\t\t10:00\tRussia\tVLA%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t 9:00\tRussia\tVLA%sST\t1992 Jan 19 2:00s\n"+
-"\t\t\t10:00\tRussia\tVLA%sT\t2011 Mar 27 2:00s\n"+
-"\t\t\t11:00\t-\tVLAT\n"+
-"Zone Asia/Sakhalin\t 9:30:48 -\tLMT\t1905 Aug 23\n"+
-"\t\t\t 9:00\t-\tCJT\t1938\n"+
-"\t\t\t 9:00\t-\tJST\t1945 Aug 25\n"+
-"\t\t\t11:00\tRussia\tSAK%sT\t1991 Mar 31 2:00s # Sakhalin T.\n"+
-"\t\t\t10:00\tRussia\tSAK%sT\t1992 Jan 19 2:00s\n"+
-"\t\t\t11:00\tRussia\tSAK%sT\t1997 Mar lastSun 2:00s\n"+
-"\t\t\t10:00\tRussia\tSAK%sT\t2011 Mar 27 2:00s\n"+
-"\t\t\t11:00\t-\tSAKT\n"+
-"Zone Asia/Magadan\t10:03:12 -\tLMT\t1924 May  2\n"+
-"\t\t\t10:00\t-\tMAGT\t1930 Jun 21 # Magadan Time\n"+
-"\t\t\t11:00\tRussia\tMAG%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t10:00\tRussia\tMAG%sT\t1992 Jan 19 2:00s\n"+
-"\t\t\t11:00\tRussia\tMAG%sT\t2011 Mar 27 2:00s\n"+
-"\t\t\t12:00\t-\tMAGT\n"+
-"Zone Asia/Kamchatka\t10:34:36 -\tLMT\t1922 Nov 10\n"+
-"\t\t\t11:00\t-\tPETT\t1930 Jun 21 # P-K Time\n"+
-"\t\t\t12:00\tRussia\tPET%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t11:00\tRussia\tPET%sT\t1992 Jan 19 2:00s\n"+
-"\t\t\t12:00\tRussia\tPET%sT\t2010 Mar 28 2:00s\n"+
-"\t\t\t11:00\tRussia\tPET%sT\t2011 Mar 27 2:00s\n"+
-"\t\t\t12:00\t-\tPETT\n"+
-"Zone Asia/Anadyr\t11:49:56 -\tLMT\t1924 May  2\n"+
-"\t\t\t12:00\t-\tANAT\t1930 Jun 21 # Anadyr Time\n"+
-"\t\t\t13:00\tRussia\tANA%sT\t1982 Apr  1 0:00s\n"+
-"\t\t\t12:00\tRussia\tANA%sT\t1991 Mar 31 2:00s\n"+
-"\t\t\t11:00\tRussia\tANA%sT\t1992 Jan 19 2:00s\n"+
-"\t\t\t12:00\tRussia\tANA%sT\t2010 Mar 28 2:00s\n"+
-"\t\t\t11:00\tRussia\tANA%sT\t2011 Mar 27 2:00s\n"+
-"\t\t\t12:00\t-\tANAT\n"+
-"Zone\tEurope/Belgrade\t1:22:00\t-\tLMT\t1884\n"+
-"\t\t\t1:00\t-\tCET\t1941 Apr 18 23:00\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1945\n"+
-"\t\t\t1:00\t-\tCET\t1945 May 8 2:00s\n"+
-"\t\t\t1:00\t1:00\tCEST\t1945 Sep 16  2:00s\n"+
-"\t\t\t1:00\t-\tCET\t1982 Nov 27\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Link Europe/Belgrade Europe/Ljubljana\t# Slovenia\n"+
-"Link Europe/Belgrade Europe/Podgorica\t# Montenegro\n"+
-"Link Europe/Belgrade Europe/Sarajevo\t# Bosnia and Herzegovina\n"+
-"Link Europe/Belgrade Europe/Skopje\t# Macedonia\n"+
-"Link Europe/Belgrade Europe/Zagreb\t# Croatia\n"+
-"Link Europe/Prague Europe/Bratislava\n"+
-"Rule\tSpain\t1917\tonly\t-\tMay\t 5\t23:00s\t1:00\tS\n"+
-"Rule\tSpain\t1917\t1919\t-\tOct\t 6\t23:00s\t0\t-\n"+
-"Rule\tSpain\t1918\tonly\t-\tApr\t15\t23:00s\t1:00\tS\n"+
-"Rule\tSpain\t1919\tonly\t-\tApr\t 5\t23:00s\t1:00\tS\n"+
-"Rule\tSpain\t1924\tonly\t-\tApr\t16\t23:00s\t1:00\tS\n"+
-"Rule\tSpain\t1924\tonly\t-\tOct\t 4\t23:00s\t0\t-\n"+
-"Rule\tSpain\t1926\tonly\t-\tApr\t17\t23:00s\t1:00\tS\n"+
-"Rule\tSpain\t1926\t1929\t-\tOct\tSat>=1\t23:00s\t0\t-\n"+
-"Rule\tSpain\t1927\tonly\t-\tApr\t 9\t23:00s\t1:00\tS\n"+
-"Rule\tSpain\t1928\tonly\t-\tApr\t14\t23:00s\t1:00\tS\n"+
-"Rule\tSpain\t1929\tonly\t-\tApr\t20\t23:00s\t1:00\tS\n"+
-"Rule\tSpain\t1937\tonly\t-\tMay\t22\t23:00s\t1:00\tS\n"+
-"Rule\tSpain\t1937\t1939\t-\tOct\tSat>=1\t23:00s\t0\t-\n"+
-"Rule\tSpain\t1938\tonly\t-\tMar\t22\t23:00s\t1:00\tS\n"+
-"Rule\tSpain\t1939\tonly\t-\tApr\t15\t23:00s\t1:00\tS\n"+
-"Rule\tSpain\t1940\tonly\t-\tMar\t16\t23:00s\t1:00\tS\n"+
-"Rule\tSpain\t1942\tonly\t-\tMay\t 2\t22:00s\t2:00\tM # Midsummer\n"+
-"Rule\tSpain\t1942\tonly\t-\tSep\t 1\t22:00s\t1:00\tS\n"+
-"Rule\tSpain\t1943\t1946\t-\tApr\tSat>=13\t22:00s\t2:00\tM\n"+
-"Rule\tSpain\t1943\tonly\t-\tOct\t 3\t22:00s\t1:00\tS\n"+
-"Rule\tSpain\t1944\tonly\t-\tOct\t10\t22:00s\t1:00\tS\n"+
-"Rule\tSpain\t1945\tonly\t-\tSep\t30\t 1:00\t1:00\tS\n"+
-"Rule\tSpain\t1946\tonly\t-\tSep\t30\t 0:00\t0\t-\n"+
-"Rule\tSpain\t1949\tonly\t-\tApr\t30\t23:00\t1:00\tS\n"+
-"Rule\tSpain\t1949\tonly\t-\tSep\t30\t 1:00\t0\t-\n"+
-"Rule\tSpain\t1974\t1975\t-\tApr\tSat>=13\t23:00\t1:00\tS\n"+
-"Rule\tSpain\t1974\t1975\t-\tOct\tSun>=1\t 1:00\t0\t-\n"+
-"Rule\tSpain\t1976\tonly\t-\tMar\t27\t23:00\t1:00\tS\n"+
-"Rule\tSpain\t1976\t1977\t-\tSep\tlastSun\t 1:00\t0\t-\n"+
-"Rule\tSpain\t1977\t1978\t-\tApr\t 2\t23:00\t1:00\tS\n"+
-"Rule\tSpain\t1978\tonly\t-\tOct\t 1\t 1:00\t0\t-\n"+
-"Rule SpainAfrica 1967\tonly\t-\tJun\t 3\t12:00\t1:00\tS\n"+
-"Rule SpainAfrica 1967\tonly\t-\tOct\t 1\t 0:00\t0\t-\n"+
-"Rule SpainAfrica 1974\tonly\t-\tJun\t24\t 0:00\t1:00\tS\n"+
-"Rule SpainAfrica 1974\tonly\t-\tSep\t 1\t 0:00\t0\t-\n"+
-"Rule SpainAfrica 1976\t1977\t-\tMay\t 1\t 0:00\t1:00\tS\n"+
-"Rule SpainAfrica 1976\tonly\t-\tAug\t 1\t 0:00\t0\t-\n"+
-"Rule SpainAfrica 1977\tonly\t-\tSep\t28\t 0:00\t0\t-\n"+
-"Rule SpainAfrica 1978\tonly\t-\tJun\t 1\t 0:00\t1:00\tS\n"+
-"Rule SpainAfrica 1978\tonly\t-\tAug\t 4\t 0:00\t0\t-\n"+
-"Zone\tEurope/Madrid\t-0:14:44 -\tLMT\t1901 Jan  1  0:00s\n"+
-"\t\t\t 0:00\tSpain\tWE%sT\t1946 Sep 30\n"+
-"\t\t\t 1:00\tSpain\tCE%sT\t1979\n"+
-"\t\t\t 1:00\tEU\tCE%sT\n"+
-"Zone\tAfrica/Ceuta\t-0:21:16 -\tLMT\t1901\n"+
-"\t\t\t 0:00\t-\tWET\t1918 May  6 23:00\n"+
-"\t\t\t 0:00\t1:00\tWEST\t1918 Oct  7 23:00\n"+
-"\t\t\t 0:00\t-\tWET\t1924\n"+
-"\t\t\t 0:00\tSpain\tWE%sT\t1929\n"+
-"\t\t\t 0:00 SpainAfrica WE%sT 1984 Mar 16\n"+
-"\t\t\t 1:00\t-\tCET\t1986\n"+
-"\t\t\t 1:00\tEU\tCE%sT\n"+
-"Zone\tAtlantic/Canary\t-1:01:36 -\tLMT\t1922 Mar # Las Palmas de Gran C.\n"+
-"\t\t\t-1:00\t-\tCANT\t1946 Sep 30 1:00 # Canaries Time\n"+
-"\t\t\t 0:00\t-\tWET\t1980 Apr  6 0:00s\n"+
-"\t\t\t 0:00\t1:00\tWEST\t1980 Sep 28 0:00s\n"+
-"\t\t\t 0:00\tEU\tWE%sT\n"+
-"Zone Europe/Stockholm\t1:12:12 -\tLMT\t1879 Jan  1\n"+
-"\t\t\t1:00:14\t-\tSET\t1900 Jan  1\t# Swedish Time\n"+
-"\t\t\t1:00\t-\tCET\t1916 May 14 23:00\n"+
-"\t\t\t1:00\t1:00\tCEST\t1916 Oct  1 01:00\n"+
-"\t\t\t1:00\t-\tCET\t1980\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Rule\tSwiss\t1941\t1942\t-\tMay\tMon>=1\t1:00\t1:00\tS\n"+
-"Rule\tSwiss\t1941\t1942\t-\tOct\tMon>=1\t2:00\t0\t-\n"+
-"Zone\tEurope/Zurich\t0:34:08 -\tLMT\t1848 Sep 12\n"+
-"\t\t\t0:29:44\t-\tBMT\t1894 Jun # Bern Mean Time\n"+
-"\t\t\t1:00\tSwiss\tCE%sT\t1981\n"+
-"\t\t\t1:00\tEU\tCE%sT\n"+
-"Rule\tTurkey\t1916\tonly\t-\tMay\t 1\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1916\tonly\t-\tOct\t 1\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1920\tonly\t-\tMar\t28\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1920\tonly\t-\tOct\t25\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1921\tonly\t-\tApr\t 3\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1921\tonly\t-\tOct\t 3\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1922\tonly\t-\tMar\t26\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1922\tonly\t-\tOct\t 8\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1924\tonly\t-\tMay\t13\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1924\t1925\t-\tOct\t 1\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1925\tonly\t-\tMay\t 1\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1940\tonly\t-\tJun\t30\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1940\tonly\t-\tOct\t 5\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1940\tonly\t-\tDec\t 1\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1941\tonly\t-\tSep\t21\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1942\tonly\t-\tApr\t 1\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1942\tonly\t-\tNov\t 1\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1945\tonly\t-\tApr\t 2\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1945\tonly\t-\tOct\t 8\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1946\tonly\t-\tJun\t 1\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1946\tonly\t-\tOct\t 1\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1947\t1948\t-\tApr\tSun>=16\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1947\t1950\t-\tOct\tSun>=2\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1949\tonly\t-\tApr\t10\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1950\tonly\t-\tApr\t19\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1951\tonly\t-\tApr\t22\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1951\tonly\t-\tOct\t 8\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1962\tonly\t-\tJul\t15\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1962\tonly\t-\tOct\t 8\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1964\tonly\t-\tMay\t15\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1964\tonly\t-\tOct\t 1\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1970\t1972\t-\tMay\tSun>=2\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1970\t1972\t-\tOct\tSun>=2\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1973\tonly\t-\tJun\t 3\t1:00\t1:00\tS\n"+
-"Rule\tTurkey\t1973\tonly\t-\tNov\t 4\t3:00\t0\t-\n"+
-"Rule\tTurkey\t1974\tonly\t-\tMar\t31\t2:00\t1:00\tS\n"+
-"Rule\tTurkey\t1974\tonly\t-\tNov\t 3\t5:00\t0\t-\n"+
-"Rule\tTurkey\t1975\tonly\t-\tMar\t30\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1975\t1976\t-\tOct\tlastSun\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1976\tonly\t-\tJun\t 1\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1977\t1978\t-\tApr\tSun>=1\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1977\tonly\t-\tOct\t16\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1979\t1980\t-\tApr\tSun>=1\t3:00\t1:00\tS\n"+
-"Rule\tTurkey\t1979\t1982\t-\tOct\tMon>=11\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1981\t1982\t-\tMar\tlastSun\t3:00\t1:00\tS\n"+
-"Rule\tTurkey\t1983\tonly\t-\tJul\t31\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1983\tonly\t-\tOct\t 2\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1985\tonly\t-\tApr\t20\t0:00\t1:00\tS\n"+
-"Rule\tTurkey\t1985\tonly\t-\tSep\t28\t0:00\t0\t-\n"+
-"Rule\tTurkey\t1986\t1990\t-\tMar\tlastSun\t2:00s\t1:00\tS\n"+
-"Rule\tTurkey\t1986\t1990\t-\tSep\tlastSun\t2:00s\t0\t-\n"+
-"Rule\tTurkey\t1991\t2006\t-\tMar\tlastSun\t1:00s\t1:00\tS\n"+
-"Rule\tTurkey\t1991\t1995\t-\tSep\tlastSun\t1:00s\t0\t-\n"+
-"Rule\tTurkey\t1996\t2006\t-\tOct\tlastSun\t1:00s\t0\t-\n"+
-"Zone\tEurope/Istanbul\t1:55:52 -\tLMT\t1880\n"+
-"\t\t\t1:56:56\t-\tIMT\t1910 Oct # Istanbul Mean Time?\n"+
-"\t\t\t2:00\tTurkey\tEE%sT\t1978 Oct 15\n"+
-"\t\t\t3:00\tTurkey\tTR%sT\t1985 Apr 20 # Turkey Time\n"+
-"\t\t\t2:00\tTurkey\tEE%sT\t2007\n"+
-"\t\t\t2:00\tEU\tEE%sT\t2011 Mar 27 1:00u\n"+
-"\t\t\t2:00\t-\tEET\t2011 Mar 28 1:00u\n"+
-"\t\t\t2:00\tEU\tEE%sT\n"+
-"Link\tEurope/Istanbul\tAsia/Istanbul\t# Istanbul is in both continents.\n"+
-"Zone Europe/Kiev\t2:02:04 -\tLMT\t1880\n"+
-"\t\t\t2:02:04\t-\tKMT\t1924 May  2 # Kiev Mean Time\n"+
-"\t\t\t2:00\t-\tEET\t1930 Jun 21\n"+
-"\t\t\t3:00\t-\tMSK\t1941 Sep 20\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1943 Nov  6\n"+
-"\t\t\t3:00\tRussia\tMSK/MSD\t1990\n"+
-"\t\t\t3:00\t-\tMSK\t1990 Jul  1 2:00\n"+
-"\t\t\t2:00\t-\tEET\t1992\n"+
-"\t\t\t2:00\tE-Eur\tEE%sT\t1995\n"+
-"\t\t\t2:00\tEU\tEE%sT\n"+
-"Zone Europe/Uzhgorod\t1:29:12 -\tLMT\t1890 Oct\n"+
-"\t\t\t1:00\t-\tCET\t1940\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1944 Oct\n"+
-"\t\t\t1:00\t1:00\tCEST\t1944 Oct 26\n"+
-"\t\t\t1:00\t-\tCET\t1945 Jun 29\n"+
-"\t\t\t3:00\tRussia\tMSK/MSD\t1990\n"+
-"\t\t\t3:00\t-\tMSK\t1990 Jul  1 2:00\n"+
-"\t\t\t1:00\t-\tCET\t1991 Mar 31 3:00\n"+
-"\t\t\t2:00\t-\tEET\t1992\n"+
-"\t\t\t2:00\tE-Eur\tEE%sT\t1995\n"+
-"\t\t\t2:00\tEU\tEE%sT\n"+
-"Zone Europe/Zaporozhye\t2:20:40 -\tLMT\t1880\n"+
-"\t\t\t2:20\t-\tCUT\t1924 May  2 # Central Ukraine T\n"+
-"\t\t\t2:00\t-\tEET\t1930 Jun 21\n"+
-"\t\t\t3:00\t-\tMSK\t1941 Aug 25\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1943 Oct 25\n"+
-"\t\t\t3:00\tRussia\tMSK/MSD\t1991 Mar 31 2:00\n"+
-"\t\t\t2:00\tE-Eur\tEE%sT\t1995\n"+
-"\t\t\t2:00\tEU\tEE%sT\n"+
-"Zone Europe/Simferopol\t2:16:24 -\tLMT\t1880\n"+
-"\t\t\t2:16\t-\tSMT\t1924 May  2 # Simferopol Mean T\n"+
-"\t\t\t2:00\t-\tEET\t1930 Jun 21\n"+
-"\t\t\t3:00\t-\tMSK\t1941 Nov\n"+
-"\t\t\t1:00\tC-Eur\tCE%sT\t1944 Apr 13\n"+
-"\t\t\t3:00\tRussia\tMSK/MSD\t1990\n"+
-"\t\t\t3:00\t-\tMSK\t1990 Jul  1 2:00\n"+
-"\t\t\t2:00\t-\tEET\t1992\n"+
-"\t\t\t2:00\tE-Eur\tEE%sT\t1994 May\n"+
-"\t\t\t3:00\tE-Eur\tMSK/MSD\t1996 Mar 31 3:00s\n"+
-"\t\t\t3:00\t1:00\tMSD\t1996 Oct 27 3:00s\n"+
-"\t\t\t3:00\tRussia\tMSK/MSD\t1997\n"+
-"\t\t\t3:00\t-\tMSK\t1997 Mar lastSun 1:00u\n"+
-"\t\t\t2:00\tEU\tEE%sT\n"+
-"","tz/northamerica":"Rule\tUS\t1918\t1919\t-\tMar\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tUS\t1918\t1919\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tUS\t1942\tonly\t-\tFeb\t9\t2:00\t1:00\tW # War\n"+
-"Rule\tUS\t1945\tonly\t-\tAug\t14\t23:00u\t1:00\tP # Peace\n"+
-"Rule\tUS\t1945\tonly\t-\tSep\t30\t2:00\t0\tS\n"+
-"Rule\tUS\t1967\t2006\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tUS\t1967\t1973\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tUS\t1974\tonly\t-\tJan\t6\t2:00\t1:00\tD\n"+
-"Rule\tUS\t1975\tonly\t-\tFeb\t23\t2:00\t1:00\tD\n"+
-"Rule\tUS\t1976\t1986\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tUS\t1987\t2006\t-\tApr\tSun>=1\t2:00\t1:00\tD\n"+
-"Rule\tUS\t2007\tmax\t-\tMar\tSun>=8\t2:00\t1:00\tD\n"+
-"Rule\tUS\t2007\tmax\t-\tNov\tSun>=1\t2:00\t0\tS\n"+
-"Zone\tEST\t\t -5:00\t-\tEST\n"+
-"Zone\tMST\t\t -7:00\t-\tMST\n"+
-"Zone\tHST\t\t-10:00\t-\tHST\n"+
-"Zone\tEST5EDT\t\t -5:00\tUS\tE%sT\n"+
-"Zone\tCST6CDT\t\t -6:00\tUS\tC%sT\n"+
-"Zone\tMST7MDT\t\t -7:00\tUS\tM%sT\n"+
-"Zone\tPST8PDT\t\t -8:00\tUS\tP%sT\n"+
-"Rule\tNYC\t1920\tonly\t-\tMar\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tNYC\t1920\tonly\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tNYC\t1921\t1966\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tNYC\t1921\t1954\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tNYC\t1955\t1966\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/New_York\t-4:56:02 -\tLMT\t1883 Nov 18 12:03:58\n"+
-"\t\t\t-5:00\tUS\tE%sT\t1920\n"+
-"\t\t\t-5:00\tNYC\tE%sT\t1942\n"+
-"\t\t\t-5:00\tUS\tE%sT\t1946\n"+
-"\t\t\t-5:00\tNYC\tE%sT\t1967\n"+
-"\t\t\t-5:00\tUS\tE%sT\n"+
-"Rule\tChicago\t1920\tonly\t-\tJun\t13\t2:00\t1:00\tD\n"+
-"Rule\tChicago\t1920\t1921\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tChicago\t1921\tonly\t-\tMar\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tChicago\t1922\t1966\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tChicago\t1922\t1954\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tChicago\t1955\t1966\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Chicago\t-5:50:36 -\tLMT\t1883 Nov 18 12:09:24\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1920\n"+
-"\t\t\t-6:00\tChicago\tC%sT\t1936 Mar  1 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t1936 Nov 15 2:00\n"+
-"\t\t\t-6:00\tChicago\tC%sT\t1942\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1946\n"+
-"\t\t\t-6:00\tChicago\tC%sT\t1967\n"+
-"\t\t\t-6:00\tUS\tC%sT\n"+
-"Zone America/North_Dakota/Center -6:45:12 - LMT\t1883 Nov 18 12:14:48\n"+
-"\t\t\t-7:00\tUS\tM%sT\t1992 Oct 25 02:00\n"+
-"\t\t\t-6:00\tUS\tC%sT\n"+
-"Zone America/North_Dakota/New_Salem -6:45:39 - LMT 1883 Nov 18 12:14:21\n"+
-"\t\t\t-7:00\tUS\tM%sT\t2003 Oct 26 02:00\n"+
-"\t\t\t-6:00\tUS\tC%sT\n"+
-"Zone America/North_Dakota/Beulah -6:47:07 - LMT 1883 Nov 18 12:12:53\n"+
-"\t\t\t-7:00\tUS\tM%sT\t2010 Nov  7 2:00\n"+
-"\t\t\t-6:00\tUS\tC%sT\n"+
-"Rule\tDenver\t1920\t1921\t-\tMar\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tDenver\t1920\tonly\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tDenver\t1921\tonly\t-\tMay\t22\t2:00\t0\tS\n"+
-"Rule\tDenver\t1965\t1966\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tDenver\t1965\t1966\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Denver\t-6:59:56 -\tLMT\t1883 Nov 18 12:00:04\n"+
-"\t\t\t-7:00\tUS\tM%sT\t1920\n"+
-"\t\t\t-7:00\tDenver\tM%sT\t1942\n"+
-"\t\t\t-7:00\tUS\tM%sT\t1946\n"+
-"\t\t\t-7:00\tDenver\tM%sT\t1967\n"+
-"\t\t\t-7:00\tUS\tM%sT\n"+
-"Rule\tCA\t1948\tonly\t-\tMar\t14\t2:00\t1:00\tD\n"+
-"Rule\tCA\t1949\tonly\t-\tJan\t 1\t2:00\t0\tS\n"+
-"Rule\tCA\t1950\t1966\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tCA\t1950\t1961\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tCA\t1962\t1966\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Los_Angeles -7:52:58 -\tLMT\t1883 Nov 18 12:07:02\n"+
-"\t\t\t-8:00\tUS\tP%sT\t1946\n"+
-"\t\t\t-8:00\tCA\tP%sT\t1967\n"+
-"\t\t\t-8:00\tUS\tP%sT\n"+
-"Zone America/Juneau\t 15:02:19 -\tLMT\t1867 Oct 18\n"+
-"\t\t\t -8:57:41 -\tLMT\t1900 Aug 20 12:00\n"+
-"\t\t\t -8:00\t-\tPST\t1942\n"+
-"\t\t\t -8:00\tUS\tP%sT\t1946\n"+
-"\t\t\t -8:00\t-\tPST\t1969\n"+
-"\t\t\t -8:00\tUS\tP%sT\t1980 Apr 27 2:00\n"+
-"\t\t\t -9:00\tUS\tY%sT\t1980 Oct 26 2:00\t\n"+
-"\t\t\t -8:00\tUS\tP%sT\t1983 Oct 30 2:00\n"+
-"\t\t\t -9:00\tUS\tY%sT\t1983 Nov 30\n"+
-"\t\t\t -9:00\tUS\tAK%sT\n"+
-"Zone America/Sitka\t 14:58:47 -\tLMT\t1867 Oct 18\n"+
-"\t\t\t -9:01:13 -\tLMT\t1900 Aug 20 12:00\n"+
-"\t\t\t -8:00\t-\tPST\t1942\n"+
-"\t\t\t -8:00\tUS\tP%sT\t1946\n"+
-"\t\t\t -8:00\t-\tPST\t1969\n"+
-"\t\t\t -8:00\tUS\tP%sT\t1983 Oct 30 2:00\n"+
-"\t\t\t -9:00\tUS\tY%sT\t1983 Nov 30\n"+
-"\t\t\t -9:00\tUS\tAK%sT\n"+
-"Zone America/Metlakatla\t 15:13:42 -\tLMT\t1867 Oct 18\n"+
-"\t\t\t -8:46:18 -\tLMT\t1900 Aug 20 12:00\n"+
-"\t\t\t -8:00\t-\tPST\t1942\n"+
-"\t\t\t -8:00\tUS\tP%sT\t1946\n"+
-"\t\t\t -8:00\t-\tPST\t1969\n"+
-"\t\t\t -8:00\tUS\tP%sT\t1983 Oct 30 2:00\n"+
-"\t\t\t -8:00\t-\tMeST\n"+
-"Zone America/Yakutat\t 14:41:05 -\tLMT\t1867 Oct 18\n"+
-"\t\t\t -9:18:55 -\tLMT\t1900 Aug 20 12:00\n"+
-"\t\t\t -9:00\t-\tYST\t1942\n"+
-"\t\t\t -9:00\tUS\tY%sT\t1946\n"+
-"\t\t\t -9:00\t-\tYST\t1969\n"+
-"\t\t\t -9:00\tUS\tY%sT\t1983 Nov 30\n"+
-"\t\t\t -9:00\tUS\tAK%sT\n"+
-"Zone America/Anchorage\t 14:00:24 -\tLMT\t1867 Oct 18\n"+
-"\t\t\t -9:59:36 -\tLMT\t1900 Aug 20 12:00\n"+
-"\t\t\t-10:00\t-\tCAT\t1942\n"+
-"\t\t\t-10:00\tUS\tCAT/CAWT 1945 Aug 14 23:00u\n"+
-"\t\t\t-10:00\tUS\tCAT/CAPT 1946 # Peace\n"+
-"\t\t\t-10:00\t-\tCAT\t1967 Apr\n"+
-"\t\t\t-10:00\t-\tAHST\t1969\n"+
-"\t\t\t-10:00\tUS\tAH%sT\t1983 Oct 30 2:00\n"+
-"\t\t\t -9:00\tUS\tY%sT\t1983 Nov 30\n"+
-"\t\t\t -9:00\tUS\tAK%sT\n"+
-"Zone America/Nome\t 12:58:21 -\tLMT\t1867 Oct 18\n"+
-"\t\t\t-11:01:38 -\tLMT\t1900 Aug 20 12:00\n"+
-"\t\t\t-11:00\t-\tNST\t1942\n"+
-"\t\t\t-11:00\tUS\tN%sT\t1946\n"+
-"\t\t\t-11:00\t-\tNST\t1967 Apr\n"+
-"\t\t\t-11:00\t-\tBST\t1969\n"+
-"\t\t\t-11:00\tUS\tB%sT\t1983 Oct 30 2:00\n"+
-"\t\t\t -9:00\tUS\tY%sT\t1983 Nov 30\n"+
-"\t\t\t -9:00\tUS\tAK%sT\n"+
-"Zone America/Adak\t 12:13:21 -\tLMT\t1867 Oct 18\n"+
-"\t\t\t-11:46:38 -\tLMT\t1900 Aug 20 12:00\n"+
-"\t\t\t-11:00\t-\tNST\t1942\n"+
-"\t\t\t-11:00\tUS\tN%sT\t1946\n"+
-"\t\t\t-11:00\t-\tNST\t1967 Apr\n"+
-"\t\t\t-11:00\t-\tBST\t1969\n"+
-"\t\t\t-11:00\tUS\tB%sT\t1983 Oct 30 2:00\n"+
-"\t\t\t-10:00\tUS\tAH%sT\t1983 Nov 30\n"+
-"\t\t\t-10:00\tUS\tHA%sT\n"+
-"Zone Pacific/Honolulu\t-10:31:26 -\tLMT\t1896 Jan 13 12:00 #Schmitt&Cox\n"+
-"\t\t\t-10:30\t-\tHST\t1933 Apr 30 2:00 #Laws 1933\n"+
-"\t\t\t-10:30\t1:00\tHDT\t1933 May 21 12:00 #Laws 1933+12\n"+
-"\t\t\t-10:30\t-\tHST\t1942 Feb 09 2:00 #Schmitt&Cox+2\n"+
-"\t\t\t-10:30\t1:00\tHDT\t1945 Sep 30 2:00 #Schmitt&Cox+2\n"+
-"\t\t\t-10:30\t-\tHST\t1947 Jun  8 2:00 #Schmitt&Cox+2\n"+
-"\t\t\t-10:00\t-\tHST\n"+
-"Zone America/Phoenix\t-7:28:18 -\tLMT\t1883 Nov 18 11:31:42\n"+
-"\t\t\t-7:00\tUS\tM%sT\t1944 Jan  1 00:01\n"+
-"\t\t\t-7:00\t-\tMST\t1944 Apr  1 00:01\n"+
-"\t\t\t-7:00\tUS\tM%sT\t1944 Oct  1 00:01\n"+
-"\t\t\t-7:00\t-\tMST\t1967\n"+
-"\t\t\t-7:00\tUS\tM%sT\t1968 Mar 21\n"+
-"\t\t\t-7:00\t-\tMST\n"+
-"Link America/Denver America/Shiprock\n"+
-"Zone America/Boise\t-7:44:49 -\tLMT\t1883 Nov 18 12:15:11\n"+
-"\t\t\t-8:00\tUS\tP%sT\t1923 May 13 2:00\n"+
-"\t\t\t-7:00\tUS\tM%sT\t1974\n"+
-"\t\t\t-7:00\t-\tMST\t1974 Feb  3 2:00\n"+
-"\t\t\t-7:00\tUS\tM%sT\n"+
-"Rule Indianapolis 1941\tonly\t-\tJun\t22\t2:00\t1:00\tD\n"+
-"Rule Indianapolis 1941\t1954\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule Indianapolis 1946\t1954\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Zone America/Indiana/Indianapolis -5:44:38 - LMT 1883 Nov 18 12:15:22\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1920\n"+
-"\t\t\t-6:00 Indianapolis C%sT\t1942\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1946\n"+
-"\t\t\t-6:00 Indianapolis C%sT\t1955 Apr 24 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t1957 Sep 29 2:00\n"+
-"\t\t\t-6:00\t-\tCST\t1958 Apr 27 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t1969\n"+
-"\t\t\t-5:00\tUS\tE%sT\t1971\n"+
-"\t\t\t-5:00\t-\tEST\t2006\n"+
-"\t\t\t-5:00\tUS\tE%sT\n"+
-"Rule\tMarengo\t1951\tonly\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tMarengo\t1951\tonly\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tMarengo\t1954\t1960\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tMarengo\t1954\t1960\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Indiana/Marengo -5:45:23 -\tLMT\t1883 Nov 18 12:14:37\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1951\n"+
-"\t\t\t-6:00\tMarengo\tC%sT\t1961 Apr 30 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t1969\n"+
-"\t\t\t-5:00\tUS\tE%sT\t1974 Jan  6 2:00\n"+
-"\t\t\t-6:00\t1:00\tCDT\t1974 Oct 27 2:00\n"+
-"\t\t\t-5:00\tUS\tE%sT\t1976\n"+
-"\t\t\t-5:00\t-\tEST\t2006\n"+
-"\t\t\t-5:00\tUS\tE%sT\n"+
-"Rule Vincennes\t1946\tonly\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule Vincennes\t1946\tonly\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule Vincennes\t1953\t1954\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule Vincennes\t1953\t1959\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule Vincennes\t1955\tonly\t-\tMay\t 1\t0:00\t1:00\tD\n"+
-"Rule Vincennes\t1956\t1963\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule Vincennes\t1960\tonly\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule Vincennes\t1961\tonly\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule Vincennes\t1962\t1963\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Indiana/Vincennes -5:50:07 - LMT\t1883 Nov 18 12:09:53\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1946\n"+
-"\t\t\t-6:00 Vincennes\tC%sT\t1964 Apr 26 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t1969\n"+
-"\t\t\t-5:00\tUS\tE%sT\t1971\n"+
-"\t\t\t-5:00\t-\tEST\t2006 Apr  2 2:00\n"+
-"\t\t\t-6:00\tUS\tC%sT\t2007 Nov  4 2:00\n"+
-"\t\t\t-5:00\tUS\tE%sT\n"+
-"Rule Perry\t1946\tonly\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule Perry\t1946\tonly\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule Perry\t1953\t1954\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule Perry\t1953\t1959\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule Perry\t1955\tonly\t-\tMay\t 1\t0:00\t1:00\tD\n"+
-"Rule Perry\t1956\t1963\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule Perry\t1960\tonly\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule Perry\t1961\tonly\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule Perry\t1962\t1963\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Indiana/Tell_City -5:47:03 - LMT\t1883 Nov 18 12:12:57\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1946\n"+
-"\t\t\t-6:00 Perry\tC%sT\t1964 Apr 26 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t1969\n"+
-"\t\t\t-5:00\tUS\tE%sT\t1971\n"+
-"\t\t\t-5:00\t-\tEST\t2006 Apr  2 2:00\n"+
-"\t\t\t-6:00\tUS\tC%sT\n"+
-"Rule\tPike\t1955\tonly\t-\tMay\t 1\t0:00\t1:00\tD\n"+
-"Rule\tPike\t1955\t1960\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tPike\t1956\t1964\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tPike\t1961\t1964\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Indiana/Petersburg -5:49:07 - LMT\t1883 Nov 18 12:10:53\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1955\n"+
-"\t\t\t-6:00\tPike\tC%sT\t1965 Apr 25 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t1966 Oct 30 2:00\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1977 Oct 30 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t2006 Apr  2 2:00\n"+
-"\t\t\t-6:00\tUS\tC%sT\t2007 Nov  4 2:00\n"+
-"\t\t\t-5:00\tUS\tE%sT\n"+
-"Rule\tStarke\t1947\t1961\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tStarke\t1947\t1954\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tStarke\t1955\t1956\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tStarke\t1957\t1958\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tStarke\t1959\t1961\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Indiana/Knox -5:46:30 -\tLMT\t1883 Nov 18 12:13:30\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1947\n"+
-"\t\t\t-6:00\tStarke\tC%sT\t1962 Apr 29 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t1963 Oct 27 2:00\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1991 Oct 27 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t2006 Apr  2 2:00\n"+
-"\t\t\t-6:00\tUS\tC%sT\n"+
-"Rule\tPulaski\t1946\t1960\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tPulaski\t1946\t1954\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tPulaski\t1955\t1956\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tPulaski\t1957\t1960\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Indiana/Winamac -5:46:25 - LMT\t1883 Nov 18 12:13:35\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1946\n"+
-"\t\t\t-6:00\tPulaski\tC%sT\t1961 Apr 30 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t1969\n"+
-"\t\t\t-5:00\tUS\tE%sT\t1971\n"+
-"\t\t\t-5:00\t-\tEST\t2006 Apr  2 2:00\n"+
-"\t\t\t-6:00\tUS\tC%sT\t2007 Mar 11 2:00\n"+
-"\t\t\t-5:00\tUS\tE%sT\n"+
-"Zone America/Indiana/Vevay -5:40:16 -\tLMT\t1883 Nov 18 12:19:44\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1954 Apr 25 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t1969\n"+
-"\t\t\t-5:00\tUS\tE%sT\t1973\n"+
-"\t\t\t-5:00\t-\tEST\t2006\n"+
-"\t\t\t-5:00\tUS\tE%sT\n"+
-"Rule Louisville\t1921\tonly\t-\tMay\t1\t2:00\t1:00\tD\n"+
-"Rule Louisville\t1921\tonly\t-\tSep\t1\t2:00\t0\tS\n"+
-"Rule Louisville\t1941\t1961\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule Louisville\t1941\tonly\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule Louisville\t1946\tonly\t-\tJun\t2\t2:00\t0\tS\n"+
-"Rule Louisville\t1950\t1955\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule Louisville\t1956\t1960\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Kentucky/Louisville -5:43:02 -\tLMT\t1883 Nov 18 12:16:58\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1921\n"+
-"\t\t\t-6:00 Louisville C%sT\t1942\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1946\n"+
-"\t\t\t-6:00 Louisville C%sT\t1961 Jul 23 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t1968\n"+
-"\t\t\t-5:00\tUS\tE%sT\t1974 Jan  6 2:00\n"+
-"\t\t\t-6:00\t1:00\tCDT\t1974 Oct 27 2:00\n"+
-"\t\t\t-5:00\tUS\tE%sT\n"+
-"Zone America/Kentucky/Monticello -5:39:24 - LMT\t1883 Nov 18 12:20:36\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1946\n"+
-"\t\t\t-6:00\t-\tCST\t1968\n"+
-"\t\t\t-6:00\tUS\tC%sT\t2000 Oct 29  2:00\n"+
-"\t\t\t-5:00\tUS\tE%sT\n"+
-"Rule\tDetroit\t1948\tonly\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tDetroit\t1948\tonly\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tDetroit\t1967\tonly\t-\tJun\t14\t2:00\t1:00\tD\n"+
-"Rule\tDetroit\t1967\tonly\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Detroit\t-5:32:11 -\tLMT\t1905\n"+
-"\t\t\t-6:00\t-\tCST\t1915 May 15 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t1942\n"+
-"\t\t\t-5:00\tUS\tE%sT\t1946\n"+
-"\t\t\t-5:00\tDetroit\tE%sT\t1973\n"+
-"\t\t\t-5:00\tUS\tE%sT\t1975\n"+
-"\t\t\t-5:00\t-\tEST\t1975 Apr 27 2:00\n"+
-"\t\t\t-5:00\tUS\tE%sT\n"+
-"Rule Menominee\t1946\tonly\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule Menominee\t1946\tonly\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule Menominee\t1966\tonly\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule Menominee\t1966\tonly\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Menominee\t-5:50:27 -\tLMT\t1885 Sep 18 12:00\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1946\n"+
-"\t\t\t-6:00 Menominee\tC%sT\t1969 Apr 27 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t1973 Apr 29 2:00\n"+
-"\t\t\t-6:00\tUS\tC%sT\n"+
-"Rule\tCanada\t1918\tonly\t-\tApr\t14\t2:00\t1:00\tD\n"+
-"Rule\tCanada\t1918\tonly\t-\tOct\t31\t2:00\t0\tS\n"+
-"Rule\tCanada\t1942\tonly\t-\tFeb\t 9\t2:00\t1:00\tW # War\n"+
-"Rule\tCanada\t1945\tonly\t-\tAug\t14\t23:00u\t1:00\tP # Peace\n"+
-"Rule\tCanada\t1945\tonly\t-\tSep\t30\t2:00\t0\tS\n"+
-"Rule\tCanada\t1974\t1986\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tCanada\t1974\t2006\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tCanada\t1987\t2006\t-\tApr\tSun>=1\t2:00\t1:00\tD\n"+
-"Rule\tCanada\t2007\tmax\t-\tMar\tSun>=8\t2:00\t1:00\tD\n"+
-"Rule\tCanada\t2007\tmax\t-\tNov\tSun>=1\t2:00\t0\tS\n"+
-"Rule\tStJohns\t1917\tonly\t-\tApr\t 8\t2:00\t1:00\tD\n"+
-"Rule\tStJohns\t1917\tonly\t-\tSep\t17\t2:00\t0\tS\n"+
-"Rule\tStJohns\t1919\tonly\t-\tMay\t 5\t23:00\t1:00\tD\n"+
-"Rule\tStJohns\t1919\tonly\t-\tAug\t12\t23:00\t0\tS\n"+
-"Rule\tStJohns\t1920\t1935\t-\tMay\tSun>=1\t23:00\t1:00\tD\n"+
-"Rule\tStJohns\t1920\t1935\t-\tOct\tlastSun\t23:00\t0\tS\n"+
-"Rule\tStJohns\t1936\t1941\t-\tMay\tMon>=9\t0:00\t1:00\tD\n"+
-"Rule\tStJohns\t1936\t1941\t-\tOct\tMon>=2\t0:00\t0\tS\n"+
-"Rule\tStJohns\t1946\t1950\t-\tMay\tSun>=8\t2:00\t1:00\tD\n"+
-"Rule\tStJohns\t1946\t1950\t-\tOct\tSun>=2\t2:00\t0\tS\n"+
-"Rule\tStJohns\t1951\t1986\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tStJohns\t1951\t1959\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tStJohns\t1960\t1986\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tStJohns\t1987\tonly\t-\tApr\tSun>=1\t0:01\t1:00\tD\n"+
-"Rule\tStJohns\t1987\t2006\t-\tOct\tlastSun\t0:01\t0\tS\n"+
-"Rule\tStJohns\t1988\tonly\t-\tApr\tSun>=1\t0:01\t2:00\tDD\n"+
-"Rule\tStJohns\t1989\t2006\t-\tApr\tSun>=1\t0:01\t1:00\tD\n"+
-"Rule\tStJohns\t2007\t2011\t-\tMar\tSun>=8\t0:01\t1:00\tD\n"+
-"Rule\tStJohns\t2007\t2010\t-\tNov\tSun>=1\t0:01\t0\tS\n"+
-"Zone America/St_Johns\t-3:30:52 -\tLMT\t1884\n"+
-"\t\t\t-3:30:52 StJohns N%sT\t1918\n"+
-"\t\t\t-3:30:52 Canada\tN%sT\t1919\n"+
-"\t\t\t-3:30:52 StJohns N%sT\t1935 Mar 30\n"+
-"\t\t\t-3:30\tStJohns\tN%sT\t1942 May 11\n"+
-"\t\t\t-3:30\tCanada\tN%sT\t1946\n"+
-"\t\t\t-3:30\tStJohns\tN%sT\t2011 Nov\n"+
-"\t\t\t-3:30\tCanada\tN%sT\n"+
-"Zone America/Goose_Bay\t-4:01:40 -\tLMT\t1884 # Happy Valley-Goose Bay\n"+
-"\t\t\t-3:30:52 -\tNST\t1918\n"+
-"\t\t\t-3:30:52 Canada N%sT\t1919\n"+
-"\t\t\t-3:30:52 -\tNST\t1935 Mar 30\n"+
-"\t\t\t-3:30\t-\tNST\t1936\n"+
-"\t\t\t-3:30\tStJohns\tN%sT\t1942 May 11\n"+
-"\t\t\t-3:30\tCanada\tN%sT\t1946\n"+
-"\t\t\t-3:30\tStJohns\tN%sT\t1966 Mar 15 2:00\n"+
-"\t\t\t-4:00\tStJohns\tA%sT\t2011 Nov\n"+
-"\t\t\t-4:00\tCanada\tA%sT\n"+
-"Rule\tHalifax\t1916\tonly\t-\tApr\t 1\t0:00\t1:00\tD\n"+
-"Rule\tHalifax\t1916\tonly\t-\tOct\t 1\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1920\tonly\t-\tMay\t 9\t0:00\t1:00\tD\n"+
-"Rule\tHalifax\t1920\tonly\t-\tAug\t29\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1921\tonly\t-\tMay\t 6\t0:00\t1:00\tD\n"+
-"Rule\tHalifax\t1921\t1922\t-\tSep\t 5\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1922\tonly\t-\tApr\t30\t0:00\t1:00\tD\n"+
-"Rule\tHalifax\t1923\t1925\t-\tMay\tSun>=1\t0:00\t1:00\tD\n"+
-"Rule\tHalifax\t1923\tonly\t-\tSep\t 4\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1924\tonly\t-\tSep\t15\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1925\tonly\t-\tSep\t28\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1926\tonly\t-\tMay\t16\t0:00\t1:00\tD\n"+
-"Rule\tHalifax\t1926\tonly\t-\tSep\t13\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1927\tonly\t-\tMay\t 1\t0:00\t1:00\tD\n"+
-"Rule\tHalifax\t1927\tonly\t-\tSep\t26\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1928\t1931\t-\tMay\tSun>=8\t0:00\t1:00\tD\n"+
-"Rule\tHalifax\t1928\tonly\t-\tSep\t 9\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1929\tonly\t-\tSep\t 3\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1930\tonly\t-\tSep\t15\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1931\t1932\t-\tSep\tMon>=24\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1932\tonly\t-\tMay\t 1\t0:00\t1:00\tD\n"+
-"Rule\tHalifax\t1933\tonly\t-\tApr\t30\t0:00\t1:00\tD\n"+
-"Rule\tHalifax\t1933\tonly\t-\tOct\t 2\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1934\tonly\t-\tMay\t20\t0:00\t1:00\tD\n"+
-"Rule\tHalifax\t1934\tonly\t-\tSep\t16\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1935\tonly\t-\tJun\t 2\t0:00\t1:00\tD\n"+
-"Rule\tHalifax\t1935\tonly\t-\tSep\t30\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1936\tonly\t-\tJun\t 1\t0:00\t1:00\tD\n"+
-"Rule\tHalifax\t1936\tonly\t-\tSep\t14\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1937\t1938\t-\tMay\tSun>=1\t0:00\t1:00\tD\n"+
-"Rule\tHalifax\t1937\t1941\t-\tSep\tMon>=24\t0:00\t0\tS\n"+
-"Rule\tHalifax\t1939\tonly\t-\tMay\t28\t0:00\t1:00\tD\n"+
-"Rule\tHalifax\t1940\t1941\t-\tMay\tSun>=1\t0:00\t1:00\tD\n"+
-"Rule\tHalifax\t1946\t1949\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tHalifax\t1946\t1949\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tHalifax\t1951\t1954\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tHalifax\t1951\t1954\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tHalifax\t1956\t1959\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tHalifax\t1956\t1959\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tHalifax\t1962\t1973\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tHalifax\t1962\t1973\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Halifax\t-4:14:24 -\tLMT\t1902 Jun 15\n"+
-"\t\t\t-4:00\tHalifax\tA%sT\t1918\n"+
-"\t\t\t-4:00\tCanada\tA%sT\t1919\n"+
-"\t\t\t-4:00\tHalifax\tA%sT\t1942 Feb  9 2:00s\n"+
-"\t\t\t-4:00\tCanada\tA%sT\t1946\n"+
-"\t\t\t-4:00\tHalifax\tA%sT\t1974\n"+
-"\t\t\t-4:00\tCanada\tA%sT\n"+
-"Zone America/Glace_Bay\t-3:59:48 -\tLMT\t1902 Jun 15\n"+
-"\t\t\t-4:00\tCanada\tA%sT\t1953\n"+
-"\t\t\t-4:00\tHalifax\tA%sT\t1954\n"+
-"\t\t\t-4:00\t-\tAST\t1972\n"+
-"\t\t\t-4:00\tHalifax\tA%sT\t1974\n"+
-"\t\t\t-4:00\tCanada\tA%sT\n"+
-"Rule\tMoncton\t1933\t1935\t-\tJun\tSun>=8\t1:00\t1:00\tD\n"+
-"Rule\tMoncton\t1933\t1935\t-\tSep\tSun>=8\t1:00\t0\tS\n"+
-"Rule\tMoncton\t1936\t1938\t-\tJun\tSun>=1\t1:00\t1:00\tD\n"+
-"Rule\tMoncton\t1936\t1938\t-\tSep\tSun>=1\t1:00\t0\tS\n"+
-"Rule\tMoncton\t1939\tonly\t-\tMay\t27\t1:00\t1:00\tD\n"+
-"Rule\tMoncton\t1939\t1941\t-\tSep\tSat>=21\t1:00\t0\tS\n"+
-"Rule\tMoncton\t1940\tonly\t-\tMay\t19\t1:00\t1:00\tD\n"+
-"Rule\tMoncton\t1941\tonly\t-\tMay\t 4\t1:00\t1:00\tD\n"+
-"Rule\tMoncton\t1946\t1972\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tMoncton\t1946\t1956\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tMoncton\t1957\t1972\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tMoncton\t1993\t2006\t-\tApr\tSun>=1\t0:01\t1:00\tD\n"+
-"Rule\tMoncton\t1993\t2006\t-\tOct\tlastSun\t0:01\t0\tS\n"+
-"Zone America/Moncton\t-4:19:08 -\tLMT\t1883 Dec  9\n"+
-"\t\t\t-5:00\t-\tEST\t1902 Jun 15\n"+
-"\t\t\t-4:00\tCanada\tA%sT\t1933\n"+
-"\t\t\t-4:00\tMoncton\tA%sT\t1942\n"+
-"\t\t\t-4:00\tCanada\tA%sT\t1946\n"+
-"\t\t\t-4:00\tMoncton\tA%sT\t1973\n"+
-"\t\t\t-4:00\tCanada\tA%sT\t1993\n"+
-"\t\t\t-4:00\tMoncton\tA%sT\t2007\n"+
-"\t\t\t-4:00\tCanada\tA%sT\n"+
-"Rule\tMont\t1917\tonly\t-\tMar\t25\t2:00\t1:00\tD\n"+
-"Rule\tMont\t1917\tonly\t-\tApr\t24\t0:00\t0\tS\n"+
-"Rule\tMont\t1919\tonly\t-\tMar\t31\t2:30\t1:00\tD\n"+
-"Rule\tMont\t1919\tonly\t-\tOct\t25\t2:30\t0\tS\n"+
-"Rule\tMont\t1920\tonly\t-\tMay\t 2\t2:30\t1:00\tD\n"+
-"Rule\tMont\t1920\t1922\t-\tOct\tSun>=1\t2:30\t0\tS\n"+
-"Rule\tMont\t1921\tonly\t-\tMay\t 1\t2:00\t1:00\tD\n"+
-"Rule\tMont\t1922\tonly\t-\tApr\t30\t2:00\t1:00\tD\n"+
-"Rule\tMont\t1924\tonly\t-\tMay\t17\t2:00\t1:00\tD\n"+
-"Rule\tMont\t1924\t1926\t-\tSep\tlastSun\t2:30\t0\tS\n"+
-"Rule\tMont\t1925\t1926\t-\tMay\tSun>=1\t2:00\t1:00\tD\n"+
-"Rule\tMont\t1927\tonly\t-\tMay\t1\t0:00\t1:00\tD\n"+
-"Rule\tMont\t1927\t1932\t-\tSep\tlastSun\t0:00\t0\tS\n"+
-"Rule\tMont\t1928\t1931\t-\tApr\tlastSun\t0:00\t1:00\tD\n"+
-"Rule\tMont\t1932\tonly\t-\tMay\t1\t0:00\t1:00\tD\n"+
-"Rule\tMont\t1933\t1940\t-\tApr\tlastSun\t0:00\t1:00\tD\n"+
-"Rule\tMont\t1933\tonly\t-\tOct\t1\t0:00\t0\tS\n"+
-"Rule\tMont\t1934\t1939\t-\tSep\tlastSun\t0:00\t0\tS\n"+
-"Rule\tMont\t1946\t1973\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tMont\t1945\t1948\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tMont\t1949\t1950\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tMont\t1951\t1956\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tMont\t1957\t1973\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Blanc-Sablon -3:48:28 -\tLMT\t1884\n"+
-"\t\t\t-4:00\tCanada\tA%sT\t1970\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Zone America/Montreal\t-4:54:16 -\tLMT\t1884\n"+
-"\t\t\t-5:00\tMont\tE%sT\t1918\n"+
-"\t\t\t-5:00\tCanada\tE%sT\t1919\n"+
-"\t\t\t-5:00\tMont\tE%sT\t1942 Feb  9 2:00s\n"+
-"\t\t\t-5:00\tCanada\tE%sT\t1946\n"+
-"\t\t\t-5:00\tMont\tE%sT\t1974\n"+
-"\t\t\t-5:00\tCanada\tE%sT\n"+
-"Rule\tToronto\t1919\tonly\t-\tMar\t30\t23:30\t1:00\tD\n"+
-"Rule\tToronto\t1919\tonly\t-\tOct\t26\t0:00\t0\tS\n"+
-"Rule\tToronto\t1920\tonly\t-\tMay\t 2\t2:00\t1:00\tD\n"+
-"Rule\tToronto\t1920\tonly\t-\tSep\t26\t0:00\t0\tS\n"+
-"Rule\tToronto\t1921\tonly\t-\tMay\t15\t2:00\t1:00\tD\n"+
-"Rule\tToronto\t1921\tonly\t-\tSep\t15\t2:00\t0\tS\n"+
-"Rule\tToronto\t1922\t1923\t-\tMay\tSun>=8\t2:00\t1:00\tD\n"+
-"Rule\tToronto\t1922\t1926\t-\tSep\tSun>=15\t2:00\t0\tS\n"+
-"Rule\tToronto\t1924\t1927\t-\tMay\tSun>=1\t2:00\t1:00\tD\n"+
-"Rule\tToronto\t1927\t1932\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tToronto\t1928\t1931\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tToronto\t1932\tonly\t-\tMay\t1\t2:00\t1:00\tD\n"+
-"Rule\tToronto\t1933\t1940\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tToronto\t1933\tonly\t-\tOct\t1\t2:00\t0\tS\n"+
-"Rule\tToronto\t1934\t1939\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tToronto\t1945\t1946\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tToronto\t1946\tonly\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tToronto\t1947\t1949\t-\tApr\tlastSun\t0:00\t1:00\tD\n"+
-"Rule\tToronto\t1947\t1948\t-\tSep\tlastSun\t0:00\t0\tS\n"+
-"Rule\tToronto\t1949\tonly\t-\tNov\tlastSun\t0:00\t0\tS\n"+
-"Rule\tToronto\t1950\t1973\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tToronto\t1950\tonly\t-\tNov\tlastSun\t2:00\t0\tS\n"+
-"Rule\tToronto\t1951\t1956\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tToronto\t1957\t1973\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Toronto\t-5:17:32 -\tLMT\t1895\n"+
-"\t\t\t-5:00\tCanada\tE%sT\t1919\n"+
-"\t\t\t-5:00\tToronto\tE%sT\t1942 Feb  9 2:00s\n"+
-"\t\t\t-5:00\tCanada\tE%sT\t1946\n"+
-"\t\t\t-5:00\tToronto\tE%sT\t1974\n"+
-"\t\t\t-5:00\tCanada\tE%sT\n"+
-"Zone America/Thunder_Bay -5:57:00 -\tLMT\t1895\n"+
-"\t\t\t-6:00\t-\tCST\t1910\n"+
-"\t\t\t-5:00\t-\tEST\t1942\n"+
-"\t\t\t-5:00\tCanada\tE%sT\t1970\n"+
-"\t\t\t-5:00\tMont\tE%sT\t1973\n"+
-"\t\t\t-5:00\t-\tEST\t1974\n"+
-"\t\t\t-5:00\tCanada\tE%sT\n"+
-"Zone America/Nipigon\t-5:53:04 -\tLMT\t1895\n"+
-"\t\t\t-5:00\tCanada\tE%sT\t1940 Sep 29\n"+
-"\t\t\t-5:00\t1:00\tEDT\t1942 Feb  9 2:00s\n"+
-"\t\t\t-5:00\tCanada\tE%sT\n"+
-"Zone America/Rainy_River -6:18:16 -\tLMT\t1895\n"+
-"\t\t\t-6:00\tCanada\tC%sT\t1940 Sep 29\n"+
-"\t\t\t-6:00\t1:00\tCDT\t1942 Feb  9 2:00s\n"+
-"\t\t\t-6:00\tCanada\tC%sT\n"+
-"Zone America/Atikokan\t-6:06:28 -\tLMT\t1895\n"+
-"\t\t\t-6:00\tCanada\tC%sT\t1940 Sep 29\n"+
-"\t\t\t-6:00\t1:00\tCDT\t1942 Feb  9 2:00s\n"+
-"\t\t\t-6:00\tCanada\tC%sT\t1945 Sep 30 2:00\n"+
-"\t\t\t-5:00\t-\tEST\n"+
-"Rule\tWinn\t1916\tonly\t-\tApr\t23\t0:00\t1:00\tD\n"+
-"Rule\tWinn\t1916\tonly\t-\tSep\t17\t0:00\t0\tS\n"+
-"Rule\tWinn\t1918\tonly\t-\tApr\t14\t2:00\t1:00\tD\n"+
-"Rule\tWinn\t1918\tonly\t-\tOct\t31\t2:00\t0\tS\n"+
-"Rule\tWinn\t1937\tonly\t-\tMay\t16\t2:00\t1:00\tD\n"+
-"Rule\tWinn\t1937\tonly\t-\tSep\t26\t2:00\t0\tS\n"+
-"Rule\tWinn\t1942\tonly\t-\tFeb\t 9\t2:00\t1:00\tW # War\n"+
-"Rule\tWinn\t1945\tonly\t-\tAug\t14\t23:00u\t1:00\tP # Peace\n"+
-"Rule\tWinn\t1945\tonly\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tWinn\t1946\tonly\t-\tMay\t12\t2:00\t1:00\tD\n"+
-"Rule\tWinn\t1946\tonly\t-\tOct\t13\t2:00\t0\tS\n"+
-"Rule\tWinn\t1947\t1949\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tWinn\t1947\t1949\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tWinn\t1950\tonly\t-\tMay\t 1\t2:00\t1:00\tD\n"+
-"Rule\tWinn\t1950\tonly\t-\tSep\t30\t2:00\t0\tS\n"+
-"Rule\tWinn\t1951\t1960\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tWinn\t1951\t1958\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tWinn\t1959\tonly\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tWinn\t1960\tonly\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tWinn\t1963\tonly\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tWinn\t1963\tonly\t-\tSep\t22\t2:00\t0\tS\n"+
-"Rule\tWinn\t1966\t1986\t-\tApr\tlastSun\t2:00s\t1:00\tD\n"+
-"Rule\tWinn\t1966\t2005\t-\tOct\tlastSun\t2:00s\t0\tS\n"+
-"Rule\tWinn\t1987\t2005\t-\tApr\tSun>=1\t2:00s\t1:00\tD\n"+
-"Zone America/Winnipeg\t-6:28:36 -\tLMT\t1887 Jul 16\n"+
-"\t\t\t-6:00\tWinn\tC%sT\t2006\n"+
-"\t\t\t-6:00\tCanada\tC%sT\n"+
-"Rule\tRegina\t1918\tonly\t-\tApr\t14\t2:00\t1:00\tD\n"+
-"Rule\tRegina\t1918\tonly\t-\tOct\t31\t2:00\t0\tS\n"+
-"Rule\tRegina\t1930\t1934\t-\tMay\tSun>=1\t0:00\t1:00\tD\n"+
-"Rule\tRegina\t1930\t1934\t-\tOct\tSun>=1\t0:00\t0\tS\n"+
-"Rule\tRegina\t1937\t1941\t-\tApr\tSun>=8\t0:00\t1:00\tD\n"+
-"Rule\tRegina\t1937\tonly\t-\tOct\tSun>=8\t0:00\t0\tS\n"+
-"Rule\tRegina\t1938\tonly\t-\tOct\tSun>=1\t0:00\t0\tS\n"+
-"Rule\tRegina\t1939\t1941\t-\tOct\tSun>=8\t0:00\t0\tS\n"+
-"Rule\tRegina\t1942\tonly\t-\tFeb\t 9\t2:00\t1:00\tW # War\n"+
-"Rule\tRegina\t1945\tonly\t-\tAug\t14\t23:00u\t1:00\tP # Peace\n"+
-"Rule\tRegina\t1945\tonly\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tRegina\t1946\tonly\t-\tApr\tSun>=8\t2:00\t1:00\tD\n"+
-"Rule\tRegina\t1946\tonly\t-\tOct\tSun>=8\t2:00\t0\tS\n"+
-"Rule\tRegina\t1947\t1957\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tRegina\t1947\t1957\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tRegina\t1959\tonly\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tRegina\t1959\tonly\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tSwift\t1957\tonly\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tSwift\t1957\tonly\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tSwift\t1959\t1961\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tSwift\t1959\tonly\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tSwift\t1960\t1961\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Regina\t-6:58:36 -\tLMT\t1905 Sep\n"+
-"\t\t\t-7:00\tRegina\tM%sT\t1960 Apr lastSun 2:00\n"+
-"\t\t\t-6:00\t-\tCST\n"+
-"Zone America/Swift_Current -7:11:20 -\tLMT\t1905 Sep\n"+
-"\t\t\t-7:00\tCanada\tM%sT\t1946 Apr lastSun 2:00\n"+
-"\t\t\t-7:00\tRegina\tM%sT\t1950\n"+
-"\t\t\t-7:00\tSwift\tM%sT\t1972 Apr lastSun 2:00\n"+
-"\t\t\t-6:00\t-\tCST\n"+
-"Rule\tEdm\t1918\t1919\t-\tApr\tSun>=8\t2:00\t1:00\tD\n"+
-"Rule\tEdm\t1918\tonly\t-\tOct\t31\t2:00\t0\tS\n"+
-"Rule\tEdm\t1919\tonly\t-\tMay\t27\t2:00\t0\tS\n"+
-"Rule\tEdm\t1920\t1923\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tEdm\t1920\tonly\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tEdm\t1921\t1923\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tEdm\t1942\tonly\t-\tFeb\t 9\t2:00\t1:00\tW # War\n"+
-"Rule\tEdm\t1945\tonly\t-\tAug\t14\t23:00u\t1:00\tP # Peace\n"+
-"Rule\tEdm\t1945\tonly\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tEdm\t1947\tonly\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tEdm\t1947\tonly\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tEdm\t1967\tonly\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tEdm\t1967\tonly\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tEdm\t1969\tonly\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tEdm\t1969\tonly\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tEdm\t1972\t1986\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tEdm\t1972\t2006\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Edmonton\t-7:33:52 -\tLMT\t1906 Sep\n"+
-"\t\t\t-7:00\tEdm\tM%sT\t1987\n"+
-"\t\t\t-7:00\tCanada\tM%sT\n"+
-"Rule\tVanc\t1918\tonly\t-\tApr\t14\t2:00\t1:00\tD\n"+
-"Rule\tVanc\t1918\tonly\t-\tOct\t31\t2:00\t0\tS\n"+
-"Rule\tVanc\t1942\tonly\t-\tFeb\t 9\t2:00\t1:00\tW # War\n"+
-"Rule\tVanc\t1945\tonly\t-\tAug\t14\t23:00u\t1:00\tP # Peace\n"+
-"Rule\tVanc\t1945\tonly\t-\tSep\t30\t2:00\t0\tS\n"+
-"Rule\tVanc\t1946\t1986\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tVanc\t1946\tonly\t-\tOct\t13\t2:00\t0\tS\n"+
-"Rule\tVanc\t1947\t1961\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tVanc\t1962\t2006\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Vancouver\t-8:12:28 -\tLMT\t1884\n"+
-"\t\t\t-8:00\tVanc\tP%sT\t1987\n"+
-"\t\t\t-8:00\tCanada\tP%sT\n"+
-"Zone America/Dawson_Creek -8:00:56 -\tLMT\t1884\n"+
-"\t\t\t-8:00\tCanada\tP%sT\t1947\n"+
-"\t\t\t-8:00\tVanc\tP%sT\t1972 Aug 30 2:00\n"+
-"\t\t\t-7:00\t-\tMST\n"+
-"Rule\tNT_YK\t1918\tonly\t-\tApr\t14\t2:00\t1:00\tD\n"+
-"Rule\tNT_YK\t1918\tonly\t-\tOct\t27\t2:00\t0\tS\n"+
-"Rule\tNT_YK\t1919\tonly\t-\tMay\t25\t2:00\t1:00\tD\n"+
-"Rule\tNT_YK\t1919\tonly\t-\tNov\t 1\t0:00\t0\tS\n"+
-"Rule\tNT_YK\t1942\tonly\t-\tFeb\t 9\t2:00\t1:00\tW # War\n"+
-"Rule\tNT_YK\t1945\tonly\t-\tAug\t14\t23:00u\t1:00\tP # Peace\n"+
-"Rule\tNT_YK\t1945\tonly\t-\tSep\t30\t2:00\t0\tS\n"+
-"Rule\tNT_YK\t1965\tonly\t-\tApr\tlastSun\t0:00\t2:00\tDD\n"+
-"Rule\tNT_YK\t1965\tonly\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tNT_YK\t1980\t1986\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tNT_YK\t1980\t2006\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tNT_YK\t1987\t2006\t-\tApr\tSun>=1\t2:00\t1:00\tD\n"+
-"Zone America/Pangnirtung 0\t-\tzzz\t1921 # trading post est.\n"+
-"\t\t\t-4:00\tNT_YK\tA%sT\t1995 Apr Sun>=1 2:00\n"+
-"\t\t\t-5:00\tCanada\tE%sT\t1999 Oct 31 2:00\n"+
-"\t\t\t-6:00\tCanada\tC%sT\t2000 Oct 29 2:00\n"+
-"\t\t\t-5:00\tCanada\tE%sT\n"+
-"Zone America/Iqaluit\t0\t-\tzzz\t1942 Aug # Frobisher Bay est.\n"+
-"\t\t\t-5:00\tNT_YK\tE%sT\t1999 Oct 31 2:00\n"+
-"\t\t\t-6:00\tCanada\tC%sT\t2000 Oct 29 2:00\n"+
-"\t\t\t-5:00\tCanada\tE%sT\n"+
-"Zone America/Resolute\t0\t-\tzzz\t1947 Aug 31 # Resolute founded\n"+
-"\t\t\t-6:00\tNT_YK\tC%sT\t2000 Oct 29 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t2001 Apr  1 3:00\n"+
-"\t\t\t-6:00\tCanada\tC%sT\t2006 Oct 29 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t2007 Mar 11 3:00\n"+
-"\t\t\t-6:00\tCanada\tC%sT\n"+
-"Zone America/Rankin_Inlet 0\t-\tzzz\t1957 # Rankin Inlet founded\n"+
-"\t\t\t-6:00\tNT_YK\tC%sT\t2000 Oct 29 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t2001 Apr  1 3:00\n"+
-"\t\t\t-6:00\tCanada\tC%sT\n"+
-"Zone America/Cambridge_Bay 0\t-\tzzz\t1920 # trading post est.?\n"+
-"\t\t\t-7:00\tNT_YK\tM%sT\t1999 Oct 31 2:00\n"+
-"\t\t\t-6:00\tCanada\tC%sT\t2000 Oct 29 2:00\n"+
-"\t\t\t-5:00\t-\tEST\t2000 Nov  5 0:00\n"+
-"\t\t\t-6:00\t-\tCST\t2001 Apr  1 3:00\n"+
-"\t\t\t-7:00\tCanada\tM%sT\n"+
-"Zone America/Yellowknife 0\t-\tzzz\t1935 # Yellowknife founded?\n"+
-"\t\t\t-7:00\tNT_YK\tM%sT\t1980\n"+
-"\t\t\t-7:00\tCanada\tM%sT\n"+
-"Zone America/Inuvik\t0\t-\tzzz\t1953 # Inuvik founded\n"+
-"\t\t\t-8:00\tNT_YK\tP%sT\t1979 Apr lastSun 2:00\n"+
-"\t\t\t-7:00\tNT_YK\tM%sT\t1980\n"+
-"\t\t\t-7:00\tCanada\tM%sT\n"+
-"Zone America/Whitehorse\t-9:00:12 -\tLMT\t1900 Aug 20\n"+
-"\t\t\t-9:00\tNT_YK\tY%sT\t1966 Jul 1 2:00\n"+
-"\t\t\t-8:00\tNT_YK\tP%sT\t1980\n"+
-"\t\t\t-8:00\tCanada\tP%sT\n"+
-"Zone America/Dawson\t-9:17:40 -\tLMT\t1900 Aug 20\n"+
-"\t\t\t-9:00\tNT_YK\tY%sT\t1973 Oct 28 0:00\n"+
-"\t\t\t-8:00\tNT_YK\tP%sT\t1980\n"+
-"\t\t\t-8:00\tCanada\tP%sT\n"+
-"Rule\tMexico\t1939\tonly\t-\tFeb\t5\t0:00\t1:00\tD\n"+
-"Rule\tMexico\t1939\tonly\t-\tJun\t25\t0:00\t0\tS\n"+
-"Rule\tMexico\t1940\tonly\t-\tDec\t9\t0:00\t1:00\tD\n"+
-"Rule\tMexico\t1941\tonly\t-\tApr\t1\t0:00\t0\tS\n"+
-"Rule\tMexico\t1943\tonly\t-\tDec\t16\t0:00\t1:00\tW # War\n"+
-"Rule\tMexico\t1944\tonly\t-\tMay\t1\t0:00\t0\tS\n"+
-"Rule\tMexico\t1950\tonly\t-\tFeb\t12\t0:00\t1:00\tD\n"+
-"Rule\tMexico\t1950\tonly\t-\tJul\t30\t0:00\t0\tS\n"+
-"Rule\tMexico\t1996\t2000\t-\tApr\tSun>=1\t2:00\t1:00\tD\n"+
-"Rule\tMexico\t1996\t2000\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tMexico\t2001\tonly\t-\tMay\tSun>=1\t2:00\t1:00\tD\n"+
-"Rule\tMexico\t2001\tonly\t-\tSep\tlastSun\t2:00\t0\tS\n"+
-"Rule\tMexico\t2002\tmax\t-\tApr\tSun>=1\t2:00\t1:00\tD\n"+
-"Rule\tMexico\t2002\tmax\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Zone America/Cancun\t-5:47:04 -\tLMT\t1922 Jan  1  0:12:56\n"+
-"\t\t\t-6:00\t-\tCST\t1981 Dec 23\n"+
-"\t\t\t-5:00\tMexico\tE%sT\t1998 Aug  2  2:00\n"+
-"\t\t\t-6:00\tMexico\tC%sT\n"+
-"Zone America/Merida\t-5:58:28 -\tLMT\t1922 Jan  1  0:01:32\n"+
-"\t\t\t-6:00\t-\tCST\t1981 Dec 23\n"+
-"\t\t\t-5:00\t-\tEST\t1982 Dec  2\n"+
-"\t\t\t-6:00\tMexico\tC%sT\n"+
-"Zone America/Matamoros\t-6:40:00 -\tLMT\t1921 Dec 31 23:20:00\n"+
-"\t\t\t-6:00\t-\tCST\t1988\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1989\n"+
-"\t\t\t-6:00\tMexico\tC%sT\t2010\n"+
-"\t\t\t-6:00\tUS\tC%sT\n"+
-"Zone America/Monterrey\t-6:41:16 -\tLMT\t1921 Dec 31 23:18:44\n"+
-"\t\t\t-6:00\t-\tCST\t1988\n"+
-"\t\t\t-6:00\tUS\tC%sT\t1989\n"+
-"\t\t\t-6:00\tMexico\tC%sT\n"+
-"Zone America/Mexico_City -6:36:36 -\tLMT\t1922 Jan  1 0:23:24\n"+
-"\t\t\t-7:00\t-\tMST\t1927 Jun 10 23:00\n"+
-"\t\t\t-6:00\t-\tCST\t1930 Nov 15\n"+
-"\t\t\t-7:00\t-\tMST\t1931 May  1 23:00\n"+
-"\t\t\t-6:00\t-\tCST\t1931 Oct\n"+
-"\t\t\t-7:00\t-\tMST\t1932 Apr  1\n"+
-"\t\t\t-6:00\tMexico\tC%sT\t2001 Sep 30 02:00\n"+
-"\t\t\t-6:00\t-\tCST\t2002 Feb 20\n"+
-"\t\t\t-6:00\tMexico\tC%sT\n"+
-"Zone America/Ojinaga\t-6:57:40 -\tLMT\t1922 Jan 1 0:02:20\n"+
-"\t\t\t-7:00\t-\tMST\t1927 Jun 10 23:00\n"+
-"\t\t\t-6:00\t-\tCST\t1930 Nov 15\n"+
-"\t\t\t-7:00\t-\tMST\t1931 May  1 23:00\n"+
-"\t\t\t-6:00\t-\tCST\t1931 Oct\n"+
-"\t\t\t-7:00\t-\tMST\t1932 Apr  1\n"+
-"\t\t\t-6:00\t-\tCST\t1996\n"+
-"\t\t\t-6:00\tMexico\tC%sT\t1998\n"+
-"\t\t\t-6:00\t-\tCST\t1998 Apr Sun>=1 3:00\n"+
-"\t\t\t-7:00\tMexico\tM%sT\t2010\n"+
-"\t\t\t-7:00\tUS\tM%sT\n"+
-"Zone America/Chihuahua\t-7:04:20 -\tLMT\t1921 Dec 31 23:55:40\n"+
-"\t\t\t-7:00\t-\tMST\t1927 Jun 10 23:00\n"+
-"\t\t\t-6:00\t-\tCST\t1930 Nov 15\n"+
-"\t\t\t-7:00\t-\tMST\t1931 May  1 23:00\n"+
-"\t\t\t-6:00\t-\tCST\t1931 Oct\n"+
-"\t\t\t-7:00\t-\tMST\t1932 Apr  1\n"+
-"\t\t\t-6:00\t-\tCST\t1996\n"+
-"\t\t\t-6:00\tMexico\tC%sT\t1998\n"+
-"\t\t\t-6:00\t-\tCST\t1998 Apr Sun>=1 3:00\n"+
-"\t\t\t-7:00\tMexico\tM%sT\n"+
-"Zone America/Hermosillo\t-7:23:52 -\tLMT\t1921 Dec 31 23:36:08\n"+
-"\t\t\t-7:00\t-\tMST\t1927 Jun 10 23:00\n"+
-"\t\t\t-6:00\t-\tCST\t1930 Nov 15\n"+
-"\t\t\t-7:00\t-\tMST\t1931 May  1 23:00\n"+
-"\t\t\t-6:00\t-\tCST\t1931 Oct\n"+
-"\t\t\t-7:00\t-\tMST\t1932 Apr  1\n"+
-"\t\t\t-6:00\t-\tCST\t1942 Apr 24\n"+
-"\t\t\t-7:00\t-\tMST\t1949 Jan 14\n"+
-"\t\t\t-8:00\t-\tPST\t1970\n"+
-"\t\t\t-7:00\tMexico\tM%sT\t1999\n"+
-"\t\t\t-7:00\t-\tMST\n"+
-"Zone America/Mazatlan\t-7:05:40 -\tLMT\t1921 Dec 31 23:54:20\n"+
-"\t\t\t-7:00\t-\tMST\t1927 Jun 10 23:00\n"+
-"\t\t\t-6:00\t-\tCST\t1930 Nov 15\n"+
-"\t\t\t-7:00\t-\tMST\t1931 May  1 23:00\n"+
-"\t\t\t-6:00\t-\tCST\t1931 Oct\n"+
-"\t\t\t-7:00\t-\tMST\t1932 Apr  1\n"+
-"\t\t\t-6:00\t-\tCST\t1942 Apr 24\n"+
-"\t\t\t-7:00\t-\tMST\t1949 Jan 14\n"+
-"\t\t\t-8:00\t-\tPST\t1970\n"+
-"\t\t\t-7:00\tMexico\tM%sT\n"+
-"Zone America/Bahia_Banderas\t-7:01:00 -\tLMT\t1921 Dec 31 23:59:00\n"+
-"\t\t\t-7:00\t-\tMST\t1927 Jun 10 23:00\n"+
-"\t\t\t-6:00\t-\tCST\t1930 Nov 15\n"+
-"\t\t\t-7:00\t-\tMST\t1931 May  1 23:00\n"+
-"\t\t\t-6:00\t-\tCST\t1931 Oct\n"+
-"\t\t\t-7:00\t-\tMST\t1932 Apr  1\n"+
-"\t\t\t-6:00\t-\tCST\t1942 Apr 24\n"+
-"\t\t\t-7:00\t-\tMST\t1949 Jan 14\n"+
-"\t\t\t-8:00\t-\tPST\t1970\n"+
-"\t\t\t-7:00\tMexico\tM%sT\t2010 Apr 4 2:00\n"+
-"\t\t\t-6:00\tMexico\tC%sT\n"+
-"Zone America/Tijuana\t-7:48:04 -\tLMT\t1922 Jan  1  0:11:56\n"+
-"\t\t\t-7:00\t-\tMST\t1924\n"+
-"\t\t\t-8:00\t-\tPST\t1927 Jun 10 23:00\n"+
-"\t\t\t-7:00\t-\tMST\t1930 Nov 15\n"+
-"\t\t\t-8:00\t-\tPST\t1931 Apr  1\n"+
-"\t\t\t-8:00\t1:00\tPDT\t1931 Sep 30\n"+
-"\t\t\t-8:00\t-\tPST\t1942 Apr 24\n"+
-"\t\t\t-8:00\t1:00\tPWT\t1945 Aug 14 23:00u\n"+
-"\t\t\t-8:00\t1:00\tPPT\t1945 Nov 12 # Peace\n"+
-"\t\t\t-8:00\t-\tPST\t1948 Apr  5\n"+
-"\t\t\t-8:00\t1:00\tPDT\t1949 Jan 14\n"+
-"\t\t\t-8:00\t-\tPST\t1954\n"+
-"\t\t\t-8:00\tCA\tP%sT\t1961\n"+
-"\t\t\t-8:00\t-\tPST\t1976\n"+
-"\t\t\t-8:00\tUS\tP%sT\t1996\n"+
-"\t\t\t-8:00\tMexico\tP%sT\t2001\n"+
-"\t\t\t-8:00\tUS\tP%sT\t2002 Feb 20\n"+
-"\t\t\t-8:00\tMexico\tP%sT\t2010\n"+
-"\t\t\t-8:00\tUS\tP%sT\n"+
-"Zone America/Santa_Isabel\t-7:39:28 -\tLMT\t1922 Jan  1  0:20:32\n"+
-"\t\t\t-7:00\t-\tMST\t1924\n"+
-"\t\t\t-8:00\t-\tPST\t1927 Jun 10 23:00\n"+
-"\t\t\t-7:00\t-\tMST\t1930 Nov 15\n"+
-"\t\t\t-8:00\t-\tPST\t1931 Apr  1\n"+
-"\t\t\t-8:00\t1:00\tPDT\t1931 Sep 30\n"+
-"\t\t\t-8:00\t-\tPST\t1942 Apr 24\n"+
-"\t\t\t-8:00\t1:00\tPWT\t1945 Aug 14 23:00u\n"+
-"\t\t\t-8:00\t1:00\tPPT\t1945 Nov 12 # Peace\n"+
-"\t\t\t-8:00\t-\tPST\t1948 Apr  5\n"+
-"\t\t\t-8:00\t1:00\tPDT\t1949 Jan 14\n"+
-"\t\t\t-8:00\t-\tPST\t1954\n"+
-"\t\t\t-8:00\tCA\tP%sT\t1961\n"+
-"\t\t\t-8:00\t-\tPST\t1976\n"+
-"\t\t\t-8:00\tUS\tP%sT\t1996\n"+
-"\t\t\t-8:00\tMexico\tP%sT\t2001\n"+
-"\t\t\t-8:00\tUS\tP%sT\t2002 Feb 20\n"+
-"\t\t\t-8:00\tMexico\tP%sT\n"+
-"Zone America/Anguilla\t-4:12:16 -\tLMT\t1912 Mar 2\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Zone\tAmerica/Antigua\t-4:07:12 -\tLMT\t1912 Mar 2\n"+
-"\t\t\t-5:00\t-\tEST\t1951\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Rule\tBahamas\t1964\t1975\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tBahamas\t1964\t1975\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Zone\tAmerica/Nassau\t-5:09:24 -\tLMT\t1912 Mar 2\n"+
-"\t\t\t-5:00\tBahamas\tE%sT\t1976\n"+
-"\t\t\t-5:00\tUS\tE%sT\n"+
-"Rule\tBarb\t1977\tonly\t-\tJun\t12\t2:00\t1:00\tD\n"+
-"Rule\tBarb\t1977\t1978\t-\tOct\tSun>=1\t2:00\t0\tS\n"+
-"Rule\tBarb\t1978\t1980\t-\tApr\tSun>=15\t2:00\t1:00\tD\n"+
-"Rule\tBarb\t1979\tonly\t-\tSep\t30\t2:00\t0\tS\n"+
-"Rule\tBarb\t1980\tonly\t-\tSep\t25\t2:00\t0\tS\n"+
-"Zone America/Barbados\t-3:58:28 -\tLMT\t1924\t\t# Bridgetown\n"+
-"\t\t\t-3:58:28 -\tBMT\t1932\t  # Bridgetown Mean Time\n"+
-"\t\t\t-4:00\tBarb\tA%sT\n"+
-"Rule\tBelize\t1918\t1942\t-\tOct\tSun>=2\t0:00\t0:30\tHD\n"+
-"Rule\tBelize\t1919\t1943\t-\tFeb\tSun>=9\t0:00\t0\tS\n"+
-"Rule\tBelize\t1973\tonly\t-\tDec\t 5\t0:00\t1:00\tD\n"+
-"Rule\tBelize\t1974\tonly\t-\tFeb\t 9\t0:00\t0\tS\n"+
-"Rule\tBelize\t1982\tonly\t-\tDec\t18\t0:00\t1:00\tD\n"+
-"Rule\tBelize\t1983\tonly\t-\tFeb\t12\t0:00\t0\tS\n"+
-"Zone\tAmerica/Belize\t-5:52:48 -\tLMT\t1912 Apr\n"+
-"\t\t\t-6:00\tBelize\tC%sT\n"+
-"Zone Atlantic/Bermuda\t-4:19:04 -\tLMT\t1930 Jan  1 2:00    # Hamilton\n"+
-"\t\t\t-4:00\t-\tAST\t1974 Apr 28 2:00\n"+
-"\t\t\t-4:00\tBahamas\tA%sT\t1976\n"+
-"\t\t\t-4:00\tUS\tA%sT\n"+
-"Zone\tAmerica/Cayman\t-5:25:32 -\tLMT\t1890\t\t# Georgetown\n"+
-"\t\t\t-5:07:12 -\tKMT\t1912 Feb    # Kingston Mean Time\n"+
-"\t\t\t-5:00\t-\tEST\n"+
-"Rule\tCR\t1979\t1980\t-\tFeb\tlastSun\t0:00\t1:00\tD\n"+
-"Rule\tCR\t1979\t1980\t-\tJun\tSun>=1\t0:00\t0\tS\n"+
-"Rule\tCR\t1991\t1992\t-\tJan\tSat>=15\t0:00\t1:00\tD\n"+
-"Rule\tCR\t1991\tonly\t-\tJul\t 1\t0:00\t0\tS\n"+
-"Rule\tCR\t1992\tonly\t-\tMar\t15\t0:00\t0\tS\n"+
-"Zone America/Costa_Rica\t-5:36:20 -\tLMT\t1890\t\t# San Jose\n"+
-"\t\t\t-5:36:20 -\tSJMT\t1921 Jan 15 # San Jose Mean Time\n"+
-"\t\t\t-6:00\tCR\tC%sT\n"+
-"Rule\tCuba\t1928\tonly\t-\tJun\t10\t0:00\t1:00\tD\n"+
-"Rule\tCuba\t1928\tonly\t-\tOct\t10\t0:00\t0\tS\n"+
-"Rule\tCuba\t1940\t1942\t-\tJun\tSun>=1\t0:00\t1:00\tD\n"+
-"Rule\tCuba\t1940\t1942\t-\tSep\tSun>=1\t0:00\t0\tS\n"+
-"Rule\tCuba\t1945\t1946\t-\tJun\tSun>=1\t0:00\t1:00\tD\n"+
-"Rule\tCuba\t1945\t1946\t-\tSep\tSun>=1\t0:00\t0\tS\n"+
-"Rule\tCuba\t1965\tonly\t-\tJun\t1\t0:00\t1:00\tD\n"+
-"Rule\tCuba\t1965\tonly\t-\tSep\t30\t0:00\t0\tS\n"+
-"Rule\tCuba\t1966\tonly\t-\tMay\t29\t0:00\t1:00\tD\n"+
-"Rule\tCuba\t1966\tonly\t-\tOct\t2\t0:00\t0\tS\n"+
-"Rule\tCuba\t1967\tonly\t-\tApr\t8\t0:00\t1:00\tD\n"+
-"Rule\tCuba\t1967\t1968\t-\tSep\tSun>=8\t0:00\t0\tS\n"+
-"Rule\tCuba\t1968\tonly\t-\tApr\t14\t0:00\t1:00\tD\n"+
-"Rule\tCuba\t1969\t1977\t-\tApr\tlastSun\t0:00\t1:00\tD\n"+
-"Rule\tCuba\t1969\t1971\t-\tOct\tlastSun\t0:00\t0\tS\n"+
-"Rule\tCuba\t1972\t1974\t-\tOct\t8\t0:00\t0\tS\n"+
-"Rule\tCuba\t1975\t1977\t-\tOct\tlastSun\t0:00\t0\tS\n"+
-"Rule\tCuba\t1978\tonly\t-\tMay\t7\t0:00\t1:00\tD\n"+
-"Rule\tCuba\t1978\t1990\t-\tOct\tSun>=8\t0:00\t0\tS\n"+
-"Rule\tCuba\t1979\t1980\t-\tMar\tSun>=15\t0:00\t1:00\tD\n"+
-"Rule\tCuba\t1981\t1985\t-\tMay\tSun>=5\t0:00\t1:00\tD\n"+
-"Rule\tCuba\t1986\t1989\t-\tMar\tSun>=14\t0:00\t1:00\tD\n"+
-"Rule\tCuba\t1990\t1997\t-\tApr\tSun>=1\t0:00\t1:00\tD\n"+
-"Rule\tCuba\t1991\t1995\t-\tOct\tSun>=8\t0:00s\t0\tS\n"+
-"Rule\tCuba\t1996\tonly\t-\tOct\t 6\t0:00s\t0\tS\n"+
-"Rule\tCuba\t1997\tonly\t-\tOct\t12\t0:00s\t0\tS\n"+
-"Rule\tCuba\t1998\t1999\t-\tMar\tlastSun\t0:00s\t1:00\tD\n"+
-"Rule\tCuba\t1998\t2003\t-\tOct\tlastSun\t0:00s\t0\tS\n"+
-"Rule\tCuba\t2000\t2004\t-\tApr\tSun>=1\t0:00s\t1:00\tD\n"+
-"Rule\tCuba\t2006\t2010\t-\tOct\tlastSun\t0:00s\t0\tS\n"+
-"Rule\tCuba\t2007\tonly\t-\tMar\tSun>=8\t0:00s\t1:00\tD\n"+
-"Rule\tCuba\t2008\tonly\t-\tMar\tSun>=15\t0:00s\t1:00\tD\n"+
-"Rule\tCuba\t2009\t2010\t-\tMar\tSun>=8\t0:00s\t1:00\tD\n"+
-"Rule\tCuba\t2011\tonly\t-\tMar\tSun>=15\t0:00s\t1:00\tD\n"+
-"Rule\tCuba\t2011\tonly\t-\tNov\t13\t0:00s\t0\tS\n"+
-"Rule\tCuba\t2012\tmax\t-\tMar\tSun>=8\t0:00s\t1:00\tD\n"+
-"Rule\tCuba\t2012\tmax\t-\tOct\tlastSun\t0:00s\t0\tS\n"+
-"Zone\tAmerica/Havana\t-5:29:28 -\tLMT\t1890\n"+
-"\t\t\t-5:29:36 -\tHMT\t1925 Jul 19 12:00 # Havana MT\n"+
-"\t\t\t-5:00\tCuba\tC%sT\n"+
-"Zone America/Dominica\t-4:05:36 -\tLMT\t1911 Jul 1 0:01\t\t# Roseau\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Rule\tDR\t1966\tonly\t-\tOct\t30\t0:00\t1:00\tD\n"+
-"Rule\tDR\t1967\tonly\t-\tFeb\t28\t0:00\t0\tS\n"+
-"Rule\tDR\t1969\t1973\t-\tOct\tlastSun\t0:00\t0:30\tHD\n"+
-"Rule\tDR\t1970\tonly\t-\tFeb\t21\t0:00\t0\tS\n"+
-"Rule\tDR\t1971\tonly\t-\tJan\t20\t0:00\t0\tS\n"+
-"Rule\tDR\t1972\t1974\t-\tJan\t21\t0:00\t0\tS\n"+
-"Zone America/Santo_Domingo -4:39:36 -\tLMT\t1890\n"+
-"\t\t\t-4:40\t-\tSDMT\t1933 Apr  1 12:00 # S. Dom. MT\n"+
-"\t\t\t-5:00\tDR\tE%sT\t1974 Oct 27\n"+
-"\t\t\t-4:00\t-\tAST\t2000 Oct 29 02:00\n"+
-"\t\t\t-5:00\tUS\tE%sT\t2000 Dec  3 01:00\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Rule\tSalv\t1987\t1988\t-\tMay\tSun>=1\t0:00\t1:00\tD\n"+
-"Rule\tSalv\t1987\t1988\t-\tSep\tlastSun\t0:00\t0\tS\n"+
-"Zone America/El_Salvador -5:56:48 -\tLMT\t1921\t\t# San Salvador\n"+
-"\t\t\t-6:00\tSalv\tC%sT\n"+
-"Zone\tAmerica/Grenada\t-4:07:00 -\tLMT\t1911 Jul\t# St George's\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Zone America/Guadeloupe\t-4:06:08 -\tLMT\t1911 Jun 8\t# Pointe a Pitre\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Link America/Guadeloupe\tAmerica/St_Barthelemy\n"+
-"Link America/Guadeloupe\tAmerica/Marigot\n"+
-"Rule\tGuat\t1973\tonly\t-\tNov\t25\t0:00\t1:00\tD\n"+
-"Rule\tGuat\t1974\tonly\t-\tFeb\t24\t0:00\t0\tS\n"+
-"Rule\tGuat\t1983\tonly\t-\tMay\t21\t0:00\t1:00\tD\n"+
-"Rule\tGuat\t1983\tonly\t-\tSep\t22\t0:00\t0\tS\n"+
-"Rule\tGuat\t1991\tonly\t-\tMar\t23\t0:00\t1:00\tD\n"+
-"Rule\tGuat\t1991\tonly\t-\tSep\t 7\t0:00\t0\tS\n"+
-"Rule\tGuat\t2006\tonly\t-\tApr\t30\t0:00\t1:00\tD\n"+
-"Rule\tGuat\t2006\tonly\t-\tOct\t 1\t0:00\t0\tS\n"+
-"Zone America/Guatemala\t-6:02:04 -\tLMT\t1918 Oct 5\n"+
-"\t\t\t-6:00\tGuat\tC%sT\n"+
-"Rule\tHaiti\t1983\tonly\t-\tMay\t8\t0:00\t1:00\tD\n"+
-"Rule\tHaiti\t1984\t1987\t-\tApr\tlastSun\t0:00\t1:00\tD\n"+
-"Rule\tHaiti\t1983\t1987\t-\tOct\tlastSun\t0:00\t0\tS\n"+
-"Rule\tHaiti\t1988\t1997\t-\tApr\tSun>=1\t1:00s\t1:00\tD\n"+
-"Rule\tHaiti\t1988\t1997\t-\tOct\tlastSun\t1:00s\t0\tS\n"+
-"Rule\tHaiti\t2005\t2006\t-\tApr\tSun>=1\t0:00\t1:00\tD\n"+
-"Rule\tHaiti\t2005\t2006\t-\tOct\tlastSun\t0:00\t0\tS\n"+
-"Zone America/Port-au-Prince -4:49:20 -\tLMT\t1890\n"+
-"\t\t\t-4:49\t-\tPPMT\t1917 Jan 24 12:00 # P-a-P MT\n"+
-"\t\t\t-5:00\tHaiti\tE%sT\n"+
-"Rule\tHond\t1987\t1988\t-\tMay\tSun>=1\t0:00\t1:00\tD\n"+
-"Rule\tHond\t1987\t1988\t-\tSep\tlastSun\t0:00\t0\tS\n"+
-"Rule\tHond\t2006\tonly\t-\tMay\tSun>=1\t0:00\t1:00\tD\n"+
-"Rule\tHond\t2006\tonly\t-\tAug\tMon>=1\t0:00\t0\tS\n"+
-"Zone America/Tegucigalpa -5:48:52 -\tLMT\t1921 Apr\n"+
-"\t\t\t-6:00\tHond\tC%sT\n"+
-"Zone\tAmerica/Jamaica\t-5:07:12 -\tLMT\t1890\t\t# Kingston\n"+
-"\t\t\t-5:07:12 -\tKMT\t1912 Feb    # Kingston Mean Time\n"+
-"\t\t\t-5:00\t-\tEST\t1974 Apr 28 2:00\n"+
-"\t\t\t-5:00\tUS\tE%sT\t1984\n"+
-"\t\t\t-5:00\t-\tEST\n"+
-"Zone America/Martinique\t-4:04:20 -      LMT\t1890\t\t# Fort-de-France\n"+
-"\t\t\t-4:04:20 -\tFFMT\t1911 May     # Fort-de-France MT\n"+
-"\t\t\t-4:00\t-\tAST\t1980 Apr  6\n"+
-"\t\t\t-4:00\t1:00\tADT\t1980 Sep 28\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Zone America/Montserrat\t-4:08:52 -\tLMT\t1911 Jul 1 0:01   # Cork Hill\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Rule\tNic\t1979\t1980\t-\tMar\tSun>=16\t0:00\t1:00\tD\n"+
-"Rule\tNic\t1979\t1980\t-\tJun\tMon>=23\t0:00\t0\tS\n"+
-"Rule\tNic\t2005\tonly\t-\tApr\t10\t0:00\t1:00\tD\n"+
-"Rule\tNic\t2005\tonly\t-\tOct\tSun>=1\t0:00\t0\tS\n"+
-"Rule\tNic\t2006\tonly\t-\tApr\t30\t2:00\t1:00\tD\n"+
-"Rule\tNic\t2006\tonly\t-\tOct\tSun>=1\t1:00\t0\tS\n"+
-"Zone\tAmerica/Managua\t-5:45:08 -\tLMT\t1890\n"+
-"\t\t\t-5:45:12 -\tMMT\t1934 Jun 23 # Managua Mean Time?\n"+
-"\t\t\t-6:00\t-\tCST\t1973 May\n"+
-"\t\t\t-5:00\t-\tEST\t1975 Feb 16\n"+
-"\t\t\t-6:00\tNic\tC%sT\t1992 Jan  1 4:00\n"+
-"\t\t\t-5:00\t-\tEST\t1992 Sep 24\n"+
-"\t\t\t-6:00\t-\tCST\t1993\n"+
-"\t\t\t-5:00\t-\tEST\t1997\n"+
-"\t\t\t-6:00\tNic\tC%sT\n"+
-"Zone\tAmerica/Panama\t-5:18:08 -\tLMT\t1890\n"+
-"\t\t\t-5:19:36 -\tCMT\t1908 Apr 22   # Colon Mean Time\n"+
-"\t\t\t-5:00\t-\tEST\n"+
-"Zone America/Puerto_Rico -4:24:25 -\tLMT\t1899 Mar 28 12:00    # San Juan\n"+
-"\t\t\t-4:00\t-\tAST\t1942 May  3\n"+
-"\t\t\t-4:00\tUS\tA%sT\t1946\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Zone America/St_Kitts\t-4:10:52 -\tLMT\t1912 Mar 2\t# Basseterre\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Zone America/St_Lucia\t-4:04:00 -\tLMT\t1890\t\t# Castries\n"+
-"\t\t\t-4:04:00 -\tCMT\t1912\t    # Castries Mean Time\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Zone America/Miquelon\t-3:44:40 -\tLMT\t1911 May 15\t# St Pierre\n"+
-"\t\t\t-4:00\t-\tAST\t1980 May\n"+
-"\t\t\t-3:00\t-\tPMST\t1987 # Pierre & Miquelon Time\n"+
-"\t\t\t-3:00\tCanada\tPM%sT\n"+
-"Zone America/St_Vincent\t-4:04:56 -\tLMT\t1890\t\t# Kingstown\n"+
-"\t\t\t-4:04:56 -\tKMT\t1912\t   # Kingstown Mean Time\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Rule\tTC\t1979\t1986\t-\tApr\tlastSun\t2:00\t1:00\tD\n"+
-"Rule\tTC\t1979\t2006\t-\tOct\tlastSun\t2:00\t0\tS\n"+
-"Rule\tTC\t1987\t2006\t-\tApr\tSun>=1\t2:00\t1:00\tD\n"+
-"Rule\tTC\t2007\tmax\t-\tMar\tSun>=8\t2:00\t1:00\tD\n"+
-"Rule\tTC\t2007\tmax\t-\tNov\tSun>=1\t2:00\t0\tS\n"+
-"Zone America/Grand_Turk\t-4:44:32 -\tLMT\t1890\n"+
-"\t\t\t-5:07:12 -\tKMT\t1912 Feb    # Kingston Mean Time\n"+
-"\t\t\t-5:00\tTC\tE%sT\n"+
-"Zone America/Tortola\t-4:18:28 -\tLMT\t1911 Jul    # Road Town\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Zone America/St_Thomas\t-4:19:44 -\tLMT\t1911 Jul    # Charlotte Amalie\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"","tz/pacificnew":"Link\tAmerica/Los_Angeles\tUS/Pacific-New\t##\n"+
-"","tz/southamerica":"Rule\tArg\t1930\tonly\t-\tDec\t 1\t0:00\t1:00\tS\n"+
-"Rule\tArg\t1931\tonly\t-\tApr\t 1\t0:00\t0\t-\n"+
-"Rule\tArg\t1931\tonly\t-\tOct\t15\t0:00\t1:00\tS\n"+
-"Rule\tArg\t1932\t1940\t-\tMar\t 1\t0:00\t0\t-\n"+
-"Rule\tArg\t1932\t1939\t-\tNov\t 1\t0:00\t1:00\tS\n"+
-"Rule\tArg\t1940\tonly\t-\tJul\t 1\t0:00\t1:00\tS\n"+
-"Rule\tArg\t1941\tonly\t-\tJun\t15\t0:00\t0\t-\n"+
-"Rule\tArg\t1941\tonly\t-\tOct\t15\t0:00\t1:00\tS\n"+
-"Rule\tArg\t1943\tonly\t-\tAug\t 1\t0:00\t0\t-\n"+
-"Rule\tArg\t1943\tonly\t-\tOct\t15\t0:00\t1:00\tS\n"+
-"Rule\tArg\t1946\tonly\t-\tMar\t 1\t0:00\t0\t-\n"+
-"Rule\tArg\t1946\tonly\t-\tOct\t 1\t0:00\t1:00\tS\n"+
-"Rule\tArg\t1963\tonly\t-\tOct\t 1\t0:00\t0\t-\n"+
-"Rule\tArg\t1963\tonly\t-\tDec\t15\t0:00\t1:00\tS\n"+
-"Rule\tArg\t1964\t1966\t-\tMar\t 1\t0:00\t0\t-\n"+
-"Rule\tArg\t1964\t1966\t-\tOct\t15\t0:00\t1:00\tS\n"+
-"Rule\tArg\t1967\tonly\t-\tApr\t 2\t0:00\t0\t-\n"+
-"Rule\tArg\t1967\t1968\t-\tOct\tSun>=1\t0:00\t1:00\tS\n"+
-"Rule\tArg\t1968\t1969\t-\tApr\tSun>=1\t0:00\t0\t-\n"+
-"Rule\tArg\t1974\tonly\t-\tJan\t23\t0:00\t1:00\tS\n"+
-"Rule\tArg\t1974\tonly\t-\tMay\t 1\t0:00\t0\t-\n"+
-"Rule\tArg\t1988\tonly\t-\tDec\t 1\t0:00\t1:00\tS\n"+
-"Rule\tArg\t1989\t1993\t-\tMar\tSun>=1\t0:00\t0\t-\n"+
-"Rule\tArg\t1989\t1992\t-\tOct\tSun>=15\t0:00\t1:00\tS\n"+
-"Rule\tArg\t1999\tonly\t-\tOct\tSun>=1\t0:00\t1:00\tS\n"+
-"Rule\tArg\t2000\tonly\t-\tMar\t3\t0:00\t0\t-\n"+
-"Rule\tArg\t2007\tonly\t-\tDec\t30\t0:00\t1:00\tS\n"+
-"Rule\tArg\t2008\t2009\t-\tMar\tSun>=15\t0:00\t0\t-\n"+
-"Rule\tArg\t2008\tonly\t-\tOct\tSun>=15\t0:00\t1:00\tS\n"+
-" \n"+
-"Zone America/Argentina/Buenos_Aires -3:53:48 - LMT 1894 Oct 31\n"+
-"\t\t\t-4:16:48 -\tCMT\t1920 May # Cordoba Mean Time\n"+
-"\t\t\t-4:00\t-\tART\t1930 Dec\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t1969 Oct  5\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1999 Oct  3\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t2000 Mar  3\n"+
-"\t\t\t-3:00\tArg\tAR%sT\n"+
-"Zone America/Argentina/Cordoba -4:16:48 - LMT\t1894 Oct 31\n"+
-"\t\t\t-4:16:48 -\tCMT\t1920 May\n"+
-"\t\t\t-4:00\t-\tART\t1930 Dec\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t1969 Oct  5\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1991 Mar  3\n"+
-"\t\t\t-4:00\t-\tWART\t1991 Oct 20\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1999 Oct  3\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t2000 Mar  3\n"+
-"\t\t\t-3:00\tArg\tAR%sT\n"+
-"Zone America/Argentina/Salta -4:21:40 - LMT\t1894 Oct 31\n"+
-"\t\t\t-4:16:48 -\tCMT\t1920 May\n"+
-"\t\t\t-4:00\t-\tART\t1930 Dec\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t1969 Oct  5\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1991 Mar  3\n"+
-"\t\t\t-4:00\t-\tWART\t1991 Oct 20\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1999 Oct  3\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t2000 Mar  3\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t2008 Oct 18\n"+
-"\t\t\t-3:00\t-\tART\n"+
-"Zone America/Argentina/Tucuman -4:20:52 - LMT\t1894 Oct 31\n"+
-"\t\t\t-4:16:48 -\tCMT\t1920 May\n"+
-"\t\t\t-4:00\t-\tART\t1930 Dec\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t1969 Oct  5\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1991 Mar  3\n"+
-"\t\t\t-4:00\t-\tWART\t1991 Oct 20\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1999 Oct  3\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t2000 Mar  3\n"+
-"\t\t\t-3:00\t-\tART\t2004 Jun  1\n"+
-"\t\t\t-4:00\t-\tWART\t2004 Jun 13\n"+
-"\t\t\t-3:00\tArg\tAR%sT\n"+
-"Zone America/Argentina/La_Rioja -4:27:24 - LMT\t1894 Oct 31\n"+
-"\t\t\t-4:16:48 -\tCMT\t1920 May\n"+
-"\t\t\t-4:00\t-\tART\t1930 Dec\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t1969 Oct  5\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1991 Mar  1\n"+
-"\t\t\t-4:00\t-\tWART\t1991 May  7\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1999 Oct  3\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t2000 Mar  3\n"+
-"\t\t\t-3:00\t-\tART\t2004 Jun  1\n"+
-"\t\t\t-4:00\t-\tWART\t2004 Jun 20\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t2008 Oct 18\n"+
-"\t\t\t-3:00\t-\tART\n"+
-"Zone America/Argentina/San_Juan -4:34:04 - LMT\t1894 Oct 31\n"+
-"\t\t\t-4:16:48 -\tCMT\t1920 May\n"+
-"\t\t\t-4:00\t-\tART\t1930 Dec\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t1969 Oct  5\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1991 Mar  1\n"+
-"\t\t\t-4:00\t-\tWART\t1991 May  7\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1999 Oct  3\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t2000 Mar  3\n"+
-"\t\t\t-3:00\t-\tART\t2004 May 31\n"+
-"\t\t\t-4:00\t-\tWART\t2004 Jul 25\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t2008 Oct 18\n"+
-"\t\t\t-3:00\t-\tART\n"+
-"Zone America/Argentina/Jujuy -4:21:12 -\tLMT\t1894 Oct 31\n"+
-"\t\t\t-4:16:48 -\tCMT\t1920 May\n"+
-"\t\t\t-4:00\t-\tART\t1930 Dec\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t1969 Oct  5\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1990 Mar  4\n"+
-"\t\t\t-4:00\t-\tWART\t1990 Oct 28\n"+
-"\t\t\t-4:00\t1:00\tWARST\t1991 Mar 17\n"+
-"\t\t\t-4:00\t-\tWART\t1991 Oct  6\n"+
-"\t\t\t-3:00\t1:00\tARST\t1992\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1999 Oct  3\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t2000 Mar  3\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t2008 Oct 18\n"+
-"\t\t\t-3:00\t-\tART\n"+
-"Zone America/Argentina/Catamarca -4:23:08 - LMT\t1894 Oct 31\n"+
-"\t\t\t-4:16:48 -\tCMT\t1920 May\n"+
-"\t\t\t-4:00\t-\tART\t1930 Dec\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t1969 Oct  5\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1991 Mar  3\n"+
-"\t\t\t-4:00\t-\tWART\t1991 Oct 20\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1999 Oct  3\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t2000 Mar  3\n"+
-"\t\t\t-3:00\t-\tART\t2004 Jun  1\n"+
-"\t\t\t-4:00\t-\tWART\t2004 Jun 20\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t2008 Oct 18\n"+
-"\t\t\t-3:00\t-\tART\n"+
-"Zone America/Argentina/Mendoza -4:35:16 - LMT\t1894 Oct 31\n"+
-"\t\t\t-4:16:48 -\tCMT\t1920 May\n"+
-"\t\t\t-4:00\t-\tART\t1930 Dec\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t1969 Oct  5\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1990 Mar  4\n"+
-"\t\t\t-4:00\t-\tWART\t1990 Oct 15\n"+
-"\t\t\t-4:00\t1:00\tWARST\t1991 Mar  1\n"+
-"\t\t\t-4:00\t-\tWART\t1991 Oct 15\n"+
-"\t\t\t-4:00\t1:00\tWARST\t1992 Mar  1\n"+
-"\t\t\t-4:00\t-\tWART\t1992 Oct 18\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1999 Oct  3\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t2000 Mar  3\n"+
-"\t\t\t-3:00\t-\tART\t2004 May 23\n"+
-"\t\t\t-4:00\t-\tWART\t2004 Sep 26\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t2008 Oct 18\n"+
-"\t\t\t-3:00\t-\tART\n"+
-"Rule\tSanLuis\t2008\t2009\t-\tMar\tSun>=8\t0:00\t0\t-\n"+
-"Rule\tSanLuis\t2007\t2009\t-\tOct\tSun>=8\t0:00\t1:00\tS\n"+
-"Zone America/Argentina/San_Luis -4:25:24 - LMT\t1894 Oct 31\n"+
-"\t\t\t-4:16:48 -\tCMT\t1920 May\n"+
-"\t\t\t-4:00\t-\tART\t1930 Dec\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t1969 Oct  5\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1990\n"+
-"\t\t\t-3:00\t1:00\tARST\t1990 Mar 14\n"+
-"\t\t\t-4:00\t-\tWART\t1990 Oct 15\n"+
-"\t\t\t-4:00\t1:00\tWARST\t1991 Mar  1\n"+
-"\t\t\t-4:00\t-\tWART\t1991 Jun  1\n"+
-"\t\t\t-3:00\t-\tART\t1999 Oct  3\n"+
-"\t\t\t-4:00\t1:00\tWARST\t2000 Mar  3\n"+
-"\t\t\t-3:00\t-\tART\t2004 May 31\n"+
-"\t\t\t-4:00\t-\tWART\t2004 Jul 25\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t2008 Jan 21\n"+
-"\t\t\t-4:00\tSanLuis\tWAR%sT\n"+
-"Zone America/Argentina/Rio_Gallegos -4:36:52 - LMT 1894 Oct 31\n"+
-"\t\t\t-4:16:48 -\tCMT\t1920 May # Cordoba Mean Time\n"+
-"\t\t\t-4:00\t-\tART\t1930 Dec\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t1969 Oct  5\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1999 Oct  3\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t2000 Mar  3\n"+
-"\t\t\t-3:00\t-\tART\t2004 Jun  1\n"+
-"\t\t\t-4:00\t-\tWART\t2004 Jun 20\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t2008 Oct 18\n"+
-"\t\t\t-3:00\t-\tART\n"+
-"Zone America/Argentina/Ushuaia -4:33:12 - LMT 1894 Oct 31\n"+
-"\t\t\t-4:16:48 -\tCMT\t1920 May # Cordoba Mean Time\n"+
-"\t\t\t-4:00\t-\tART\t1930 Dec\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t1969 Oct  5\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t1999 Oct  3\n"+
-"\t\t\t-4:00\tArg\tAR%sT\t2000 Mar  3\n"+
-"\t\t\t-3:00\t-\tART\t2004 May 30\n"+
-"\t\t\t-4:00\t-\tWART\t2004 Jun 20\n"+
-"\t\t\t-3:00\tArg\tAR%sT\t2008 Oct 18\n"+
-"\t\t\t-3:00\t-\tART\n"+
-"Zone\tAmerica/Aruba\t-4:40:24 -\tLMT\t1912 Feb 12\t# Oranjestad\n"+
-"\t\t\t-4:30\t-\tANT\t1965 # Netherlands Antilles Time\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Zone\tAmerica/La_Paz\t-4:32:36 -\tLMT\t1890\n"+
-"\t\t\t-4:32:36 -\tCMT\t1931 Oct 15 # Calamarca MT\n"+
-"\t\t\t-4:32:36 1:00\tBOST\t1932 Mar 21 # Bolivia ST\n"+
-"\t\t\t-4:00\t-\tBOT\t# Bolivia Time\n"+
-"Rule\tBrazil\t1931\tonly\t-\tOct\t 3\t11:00\t1:00\tS\n"+
-"Rule\tBrazil\t1932\t1933\t-\tApr\t 1\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1932\tonly\t-\tOct\t 3\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1949\t1952\t-\tDec\t 1\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1950\tonly\t-\tApr\t16\t 1:00\t0\t-\n"+
-"Rule\tBrazil\t1951\t1952\t-\tApr\t 1\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1953\tonly\t-\tMar\t 1\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1963\tonly\t-\tDec\t 9\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1964\tonly\t-\tMar\t 1\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1965\tonly\t-\tJan\t31\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1965\tonly\t-\tMar\t31\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1965\tonly\t-\tDec\t 1\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1966\t1968\t-\tMar\t 1\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1966\t1967\t-\tNov\t 1\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1985\tonly\t-\tNov\t 2\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1986\tonly\t-\tMar\t15\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1986\tonly\t-\tOct\t25\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1987\tonly\t-\tFeb\t14\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1987\tonly\t-\tOct\t25\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1988\tonly\t-\tFeb\t 7\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1988\tonly\t-\tOct\t16\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1989\tonly\t-\tJan\t29\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1989\tonly\t-\tOct\t15\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1990\tonly\t-\tFeb\t11\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1990\tonly\t-\tOct\t21\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1991\tonly\t-\tFeb\t17\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1991\tonly\t-\tOct\t20\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1992\tonly\t-\tFeb\t 9\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1992\tonly\t-\tOct\t25\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1993\tonly\t-\tJan\t31\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1993\t1995\t-\tOct\tSun>=11\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1994\t1995\t-\tFeb\tSun>=15\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1996\tonly\t-\tFeb\t11\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1996\tonly\t-\tOct\t 6\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1997\tonly\t-\tFeb\t16\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1997\tonly\t-\tOct\t 6\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1998\tonly\t-\tMar\t 1\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1998\tonly\t-\tOct\t11\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t1999\tonly\t-\tFeb\t21\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t1999\tonly\t-\tOct\t 3\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t2000\tonly\t-\tFeb\t27\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t2000\t2001\t-\tOct\tSun>=8\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t2001\t2006\t-\tFeb\tSun>=15\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t2002\tonly\t-\tNov\t 3\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t2003\tonly\t-\tOct\t19\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t2004\tonly\t-\tNov\t 2\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t2005\tonly\t-\tOct\t16\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t2006\tonly\t-\tNov\t 5\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t2007\tonly\t-\tFeb\t25\t 0:00\t0\t-\n"+
-"Rule\tBrazil\t2007\tonly\t-\tOct\tSun>=8\t 0:00\t1:00\tS\n"+
-"Rule\tBrazil\t2008\tmax\t-\tOct\tSun>=15\t0:00\t1:00\tS\n"+
-"Rule\tBrazil\t2008\t2011\t-\tFeb\tSun>=15\t0:00\t0\t-\n"+
-"Rule\tBrazil\t2012\tonly\t-\tFeb\tSun>=22\t0:00\t0\t-\n"+
-"Rule\tBrazil\t2013\t2014\t-\tFeb\tSun>=15\t0:00\t0\t-\n"+
-"Rule\tBrazil\t2015\tonly\t-\tFeb\tSun>=22\t0:00\t0\t-\n"+
-"Rule\tBrazil\t2016\t2022\t-\tFeb\tSun>=15\t0:00\t0\t-\n"+
-"Rule\tBrazil\t2023\tonly\t-\tFeb\tSun>=22\t0:00\t0\t-\n"+
-"Rule\tBrazil\t2024\t2025\t-\tFeb\tSun>=15\t0:00\t0\t-\n"+
-"Rule\tBrazil\t2026\tonly\t-\tFeb\tSun>=22\t0:00\t0\t-\n"+
-"Rule\tBrazil\t2027\t2033\t-\tFeb\tSun>=15\t0:00\t0\t-\n"+
-"Rule\tBrazil\t2034\tonly\t-\tFeb\tSun>=22\t0:00\t0\t-\n"+
-"Rule\tBrazil\t2035\t2036\t-\tFeb\tSun>=15\t0:00\t0\t-\n"+
-"Rule\tBrazil\t2037\tonly\t-\tFeb\tSun>=22\t0:00\t0\t-\n"+
-"Rule\tBrazil\t2038\tmax\t-\tFeb\tSun>=15\t0:00\t0\t-\n"+
-"Zone America/Noronha\t-2:09:40 -\tLMT\t1914\n"+
-"\t\t\t-2:00\tBrazil\tFN%sT\t1990 Sep 17\n"+
-"\t\t\t-2:00\t-\tFNT\t1999 Sep 30\n"+
-"\t\t\t-2:00\tBrazil\tFN%sT\t2000 Oct 15\n"+
-"\t\t\t-2:00\t-\tFNT\t2001 Sep 13\n"+
-"\t\t\t-2:00\tBrazil\tFN%sT\t2002 Oct  1\n"+
-"\t\t\t-2:00\t-\tFNT\n"+
-"Zone America/Belem\t-3:13:56 -\tLMT\t1914\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\t1988 Sep 12\n"+
-"\t\t\t-3:00\t-\tBRT\n"+
-"Zone America/Santarem\t-3:38:48 -\tLMT\t1914\n"+
-"\t\t\t-4:00\tBrazil\tAM%sT\t1988 Sep 12\n"+
-"\t\t\t-4:00\t-\tAMT\t2008 Jun 24 00:00\n"+
-"\t\t\t-3:00\t-\tBRT\n"+
-"Zone America/Fortaleza\t-2:34:00 -\tLMT\t1914\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\t1990 Sep 17\n"+
-"\t\t\t-3:00\t-\tBRT\t1999 Sep 30\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\t2000 Oct 22\n"+
-"\t\t\t-3:00\t-\tBRT\t2001 Sep 13\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\t2002 Oct  1\n"+
-"\t\t\t-3:00\t-\tBRT\n"+
-"Zone America/Recife\t-2:19:36 -\tLMT\t1914\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\t1990 Sep 17\n"+
-"\t\t\t-3:00\t-\tBRT\t1999 Sep 30\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\t2000 Oct 15\n"+
-"\t\t\t-3:00\t-\tBRT\t2001 Sep 13\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\t2002 Oct  1\n"+
-"\t\t\t-3:00\t-\tBRT\n"+
-"Zone America/Araguaina\t-3:12:48 -\tLMT\t1914\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\t1990 Sep 17\n"+
-"\t\t\t-3:00\t-\tBRT\t1995 Sep 14\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\t2003 Sep 24\n"+
-"\t\t\t-3:00\t-\tBRT\n"+
-"Zone America/Maceio\t-2:22:52 -\tLMT\t1914\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\t1990 Sep 17\n"+
-"\t\t\t-3:00\t-\tBRT\t1995 Oct 13\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\t1996 Sep  4\n"+
-"\t\t\t-3:00\t-\tBRT\t1999 Sep 30\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\t2000 Oct 22\n"+
-"\t\t\t-3:00\t-\tBRT\t2001 Sep 13\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\t2002 Oct  1\n"+
-"\t\t\t-3:00\t-\tBRT\n"+
-"Zone America/Bahia\t-2:34:04 -\tLMT\t1914\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\t2003 Sep 24\n"+
-"\t\t\t-3:00\t-\tBRT\t2011 Oct 16\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\n"+
-"Zone America/Sao_Paulo\t-3:06:28 -\tLMT\t1914\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\t1963 Oct 23 00:00\n"+
-"\t\t\t-3:00\t1:00\tBRST\t1964\n"+
-"\t\t\t-3:00\tBrazil\tBR%sT\n"+
-"Zone America/Campo_Grande -3:38:28 -\tLMT\t1914\n"+
-"\t\t\t-4:00\tBrazil\tAM%sT\n"+
-"Zone America/Cuiaba\t-3:44:20 -\tLMT\t1914\n"+
-"\t\t\t-4:00\tBrazil\tAM%sT\t2003 Sep 24\n"+
-"\t\t\t-4:00\t-\tAMT\t2004 Oct  1\n"+
-"\t\t\t-4:00\tBrazil\tAM%sT\n"+
-"Zone America/Porto_Velho -4:15:36 -\tLMT\t1914\n"+
-"\t\t\t-4:00\tBrazil\tAM%sT\t1988 Sep 12\n"+
-"\t\t\t-4:00\t-\tAMT\n"+
-"Zone America/Boa_Vista\t-4:02:40 -\tLMT\t1914\n"+
-"\t\t\t-4:00\tBrazil\tAM%sT\t1988 Sep 12\n"+
-"\t\t\t-4:00\t-\tAMT\t1999 Sep 30\n"+
-"\t\t\t-4:00\tBrazil\tAM%sT\t2000 Oct 15\n"+
-"\t\t\t-4:00\t-\tAMT\n"+
-"Zone America/Manaus\t-4:00:04 -\tLMT\t1914\n"+
-"\t\t\t-4:00\tBrazil\tAM%sT\t1988 Sep 12\n"+
-"\t\t\t-4:00\t-\tAMT\t1993 Sep 28\n"+
-"\t\t\t-4:00\tBrazil\tAM%sT\t1994 Sep 22\n"+
-"\t\t\t-4:00\t-\tAMT\n"+
-"Zone America/Eirunepe\t-4:39:28 -\tLMT\t1914\n"+
-"\t\t\t-5:00\tBrazil\tAC%sT\t1988 Sep 12\n"+
-"\t\t\t-5:00\t-\tACT\t1993 Sep 28\n"+
-"\t\t\t-5:00\tBrazil\tAC%sT\t1994 Sep 22\n"+
-"\t\t\t-5:00\t-\tACT\t2008 Jun 24 00:00\n"+
-"\t\t\t-4:00\t-\tAMT\n"+
-"Zone America/Rio_Branco\t-4:31:12 -\tLMT\t1914\n"+
-"\t\t\t-5:00\tBrazil\tAC%sT\t1988 Sep 12\n"+
-"\t\t\t-5:00\t-\tACT\t2008 Jun 24 00:00\n"+
-"\t\t\t-4:00\t-\tAMT\n"+
-"Rule\tChile\t1927\t1932\t-\tSep\t 1\t0:00\t1:00\tS\n"+
-"Rule\tChile\t1928\t1932\t-\tApr\t 1\t0:00\t0\t-\n"+
-"Rule\tChile\t1942\tonly\t-\tJun\t 1\t4:00u\t0\t-\n"+
-"Rule\tChile\t1942\tonly\t-\tAug\t 1\t5:00u\t1:00\tS\n"+
-"Rule\tChile\t1946\tonly\t-\tJul\t15\t4:00u\t1:00\tS\n"+
-"Rule\tChile\t1946\tonly\t-\tSep\t 1\t3:00u\t0:00\t-\n"+
-"Rule\tChile\t1947\tonly\t-\tApr\t 1\t4:00u\t0\t-\n"+
-"Rule\tChile\t1968\tonly\t-\tNov\t 3\t4:00u\t1:00\tS\n"+
-"Rule\tChile\t1969\tonly\t-\tMar\t30\t3:00u\t0\t-\n"+
-"Rule\tChile\t1969\tonly\t-\tNov\t23\t4:00u\t1:00\tS\n"+
-"Rule\tChile\t1970\tonly\t-\tMar\t29\t3:00u\t0\t-\n"+
-"Rule\tChile\t1971\tonly\t-\tMar\t14\t3:00u\t0\t-\n"+
-"Rule\tChile\t1970\t1972\t-\tOct\tSun>=9\t4:00u\t1:00\tS\n"+
-"Rule\tChile\t1972\t1986\t-\tMar\tSun>=9\t3:00u\t0\t-\n"+
-"Rule\tChile\t1973\tonly\t-\tSep\t30\t4:00u\t1:00\tS\n"+
-"Rule\tChile\t1974\t1987\t-\tOct\tSun>=9\t4:00u\t1:00\tS\n"+
-"Rule\tChile\t1987\tonly\t-\tApr\t12\t3:00u\t0\t-\n"+
-"Rule\tChile\t1988\t1989\t-\tMar\tSun>=9\t3:00u\t0\t-\n"+
-"Rule\tChile\t1988\tonly\t-\tOct\tSun>=1\t4:00u\t1:00\tS\n"+
-"Rule\tChile\t1989\tonly\t-\tOct\tSun>=9\t4:00u\t1:00\tS\n"+
-"Rule\tChile\t1990\tonly\t-\tMar\t18\t3:00u\t0\t-\n"+
-"Rule\tChile\t1990\tonly\t-\tSep\t16\t4:00u\t1:00\tS\n"+
-"Rule\tChile\t1991\t1996\t-\tMar\tSun>=9\t3:00u\t0\t-\n"+
-"Rule\tChile\t1991\t1997\t-\tOct\tSun>=9\t4:00u\t1:00\tS\n"+
-"Rule\tChile\t1997\tonly\t-\tMar\t30\t3:00u\t0\t-\n"+
-"Rule\tChile\t1998\tonly\t-\tMar\tSun>=9\t3:00u\t0\t-\n"+
-"Rule\tChile\t1998\tonly\t-\tSep\t27\t4:00u\t1:00\tS\n"+
-"Rule\tChile\t1999\tonly\t-\tApr\t 4\t3:00u\t0\t-\n"+
-"Rule\tChile\t1999\t2010\t-\tOct\tSun>=9\t4:00u\t1:00\tS\n"+
-"Rule\tChile\t2011\tonly\t-\tAug\tSun>=16\t4:00u\t1:00\tS\n"+
-"Rule\tChile\t2012\tmax\t-\tOct\tSun>=9\t4:00u\t1:00\tS\n"+
-"Rule\tChile\t2000\t2007\t-\tMar\tSun>=9\t3:00u\t0\t-\n"+
-"Rule\tChile\t2008\tonly\t-\tMar\t30\t3:00u\t0\t-\n"+
-"Rule\tChile\t2009\tonly\t-\tMar\tSun>=9\t3:00u\t0\t-\n"+
-"Rule\tChile\t2010\tonly\t-\tApr\tSun>=1\t3:00u\t0\t-\n"+
-"Rule\tChile\t2011\tonly\t-\tMay\tSun>=2\t3:00u\t0\t-\n"+
-"Rule\tChile\t2012\tmax\t-\tMar\tSun>=9\t3:00u\t0\t-\n"+
-"Zone America/Santiago\t-4:42:46 -\tLMT\t1890\n"+
-"\t\t\t-4:42:46 -\tSMT\t1910 \t    # Santiago Mean Time\n"+
-"\t\t\t-5:00\t-\tCLT\t1916 Jul  1 # Chile Time\n"+
-"\t\t\t-4:42:46 -\tSMT\t1918 Sep  1 # Santiago Mean Time\n"+
-"\t\t\t-4:00\t-\tCLT\t1919 Jul  1 # Chile Time\n"+
-"\t\t\t-4:42:46 -\tSMT\t1927 Sep  1 # Santiago Mean Time\n"+
-"\t\t\t-5:00\tChile\tCL%sT\t1947 May 22 # Chile Time\n"+
-"\t\t\t-4:00\tChile\tCL%sT\n"+
-"Zone Pacific/Easter\t-7:17:44 -\tLMT\t1890\n"+
-"\t\t\t-7:17:28 -\tEMT\t1932 Sep    # Easter Mean Time\n"+
-"\t\t\t-7:00\tChile\tEAS%sT\t1982 Mar 13 21:00 # Easter I Time\n"+
-"\t\t\t-6:00\tChile\tEAS%sT\n"+
-"Rule\tCO\t1992\tonly\t-\tMay\t 3\t0:00\t1:00\tS\n"+
-"Rule\tCO\t1993\tonly\t-\tApr\t 4\t0:00\t0\t-\n"+
-"Zone\tAmerica/Bogota\t-4:56:20 -\tLMT\t1884 Mar 13\n"+
-"\t\t\t-4:56:20 -\tBMT\t1914 Nov 23 # Bogota Mean Time\n"+
-"\t\t\t-5:00\tCO\tCO%sT\t# Colombia Time\n"+
-"Zone\tAmerica/Curacao\t-4:35:44 -\tLMT\t1912 Feb 12\t# Willemstad\n"+
-"\t\t\t-4:30\t-\tANT\t1965 # Netherlands Antilles Time\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Link\tAmerica/Curacao\tAmerica/Lower_Princes # Sint Maarten\n"+
-"Link\tAmerica/Curacao\tAmerica/Kralendijk # Bonaire, Sint Estatius and Saba\n"+
-"Zone America/Guayaquil\t-5:19:20 -\tLMT\t1890\n"+
-"\t\t\t-5:14:00 -\tQMT\t1931 # Quito Mean Time\n"+
-"\t\t\t-5:00\t-\tECT\t     # Ecuador Time\n"+
-"Zone Pacific/Galapagos\t-5:58:24 -\tLMT\t1931 # Puerto Baquerizo Moreno\n"+
-"\t\t\t-5:00\t-\tECT\t1986\n"+
-"\t\t\t-6:00\t-\tGALT\t     # Galapagos Time\n"+
-"Rule\tFalk\t1937\t1938\t-\tSep\tlastSun\t0:00\t1:00\tS\n"+
-"Rule\tFalk\t1938\t1942\t-\tMar\tSun>=19\t0:00\t0\t-\n"+
-"Rule\tFalk\t1939\tonly\t-\tOct\t1\t0:00\t1:00\tS\n"+
-"Rule\tFalk\t1940\t1942\t-\tSep\tlastSun\t0:00\t1:00\tS\n"+
-"Rule\tFalk\t1943\tonly\t-\tJan\t1\t0:00\t0\t-\n"+
-"Rule\tFalk\t1983\tonly\t-\tSep\tlastSun\t0:00\t1:00\tS\n"+
-"Rule\tFalk\t1984\t1985\t-\tApr\tlastSun\t0:00\t0\t-\n"+
-"Rule\tFalk\t1984\tonly\t-\tSep\t16\t0:00\t1:00\tS\n"+
-"Rule\tFalk\t1985\t2000\t-\tSep\tSun>=9\t0:00\t1:00\tS\n"+
-"Rule\tFalk\t1986\t2000\t-\tApr\tSun>=16\t0:00\t0\t-\n"+
-"Rule\tFalk\t2001\t2010\t-\tApr\tSun>=15\t2:00\t0\t-\n"+
-"Rule\tFalk\t2012\tmax\t-\tApr\tSun>=15\t2:00\t0\t-\n"+
-"Rule\tFalk\t2001\tmax\t-\tSep\tSun>=1\t2:00\t1:00\tS\n"+
-"Zone Atlantic/Stanley\t-3:51:24 -\tLMT\t1890\n"+
-"\t\t\t-3:51:24 -\tSMT\t1912 Mar 12  # Stanley Mean Time\n"+
-"\t\t\t-4:00\tFalk\tFK%sT\t1983 May     # Falkland Is Time\n"+
-"\t\t\t-3:00\tFalk\tFK%sT\t1985 Sep 15\n"+
-"\t\t\t-4:00\tFalk\tFK%sT\n"+
-"Zone America/Cayenne\t-3:29:20 -\tLMT\t1911 Jul\n"+
-"\t\t\t-4:00\t-\tGFT\t1967 Oct # French Guiana Time\n"+
-"\t\t\t-3:00\t-\tGFT\n"+
-"Zone\tAmerica/Guyana\t-3:52:40 -\tLMT\t1915 Mar\t# Georgetown\n"+
-"\t\t\t-3:45\t-\tGBGT\t1966 May 26 # Br Guiana Time\n"+
-"\t\t\t-3:45\t-\tGYT\t1975 Jul 31 # Guyana Time\n"+
-"\t\t\t-3:00\t-\tGYT\t1991\n"+
-"\t\t\t-4:00\t-\tGYT\n"+
-"Rule\tPara\t1975\t1988\t-\tOct\t 1\t0:00\t1:00\tS\n"+
-"Rule\tPara\t1975\t1978\t-\tMar\t 1\t0:00\t0\t-\n"+
-"Rule\tPara\t1979\t1991\t-\tApr\t 1\t0:00\t0\t-\n"+
-"Rule\tPara\t1989\tonly\t-\tOct\t22\t0:00\t1:00\tS\n"+
-"Rule\tPara\t1990\tonly\t-\tOct\t 1\t0:00\t1:00\tS\n"+
-"Rule\tPara\t1991\tonly\t-\tOct\t 6\t0:00\t1:00\tS\n"+
-"Rule\tPara\t1992\tonly\t-\tMar\t 1\t0:00\t0\t-\n"+
-"Rule\tPara\t1992\tonly\t-\tOct\t 5\t0:00\t1:00\tS\n"+
-"Rule\tPara\t1993\tonly\t-\tMar\t31\t0:00\t0\t-\n"+
-"Rule\tPara\t1993\t1995\t-\tOct\t 1\t0:00\t1:00\tS\n"+
-"Rule\tPara\t1994\t1995\t-\tFeb\tlastSun\t0:00\t0\t-\n"+
-"Rule\tPara\t1996\tonly\t-\tMar\t 1\t0:00\t0\t-\n"+
-"Rule\tPara\t1996\t2001\t-\tOct\tSun>=1\t0:00\t1:00\tS\n"+
-"Rule\tPara\t1997\tonly\t-\tFeb\tlastSun\t0:00\t0\t-\n"+
-"Rule\tPara\t1998\t2001\t-\tMar\tSun>=1\t0:00\t0\t-\n"+
-"Rule\tPara\t2002\t2004\t-\tApr\tSun>=1\t0:00\t0\t-\n"+
-"Rule\tPara\t2002\t2003\t-\tSep\tSun>=1\t0:00\t1:00\tS\n"+
-"Rule\tPara\t2004\t2009\t-\tOct\tSun>=15\t0:00\t1:00\tS\n"+
-"Rule\tPara\t2005\t2009\t-\tMar\tSun>=8\t0:00\t0\t-\n"+
-"Rule\tPara\t2010\tmax\t-\tOct\tSun>=1\t0:00\t1:00\tS\n"+
-"Rule\tPara\t2010\tmax\t-\tApr\tSun>=8\t0:00\t0\t-\n"+
-"Zone America/Asuncion\t-3:50:40 -\tLMT\t1890\n"+
-"\t\t\t-3:50:40 -\tAMT\t1931 Oct 10 # Asuncion Mean Time\n"+
-"\t\t\t-4:00\t-\tPYT\t1972 Oct # Paraguay Time\n"+
-"\t\t\t-3:00\t-\tPYT\t1974 Apr\n"+
-"\t\t\t-4:00\tPara\tPY%sT\n"+
-"Rule\tPeru\t1938\tonly\t-\tJan\t 1\t0:00\t1:00\tS\n"+
-"Rule\tPeru\t1938\tonly\t-\tApr\t 1\t0:00\t0\t-\n"+
-"Rule\tPeru\t1938\t1939\t-\tSep\tlastSun\t0:00\t1:00\tS\n"+
-"Rule\tPeru\t1939\t1940\t-\tMar\tSun>=24\t0:00\t0\t-\n"+
-"Rule\tPeru\t1986\t1987\t-\tJan\t 1\t0:00\t1:00\tS\n"+
-"Rule\tPeru\t1986\t1987\t-\tApr\t 1\t0:00\t0\t-\n"+
-"Rule\tPeru\t1990\tonly\t-\tJan\t 1\t0:00\t1:00\tS\n"+
-"Rule\tPeru\t1990\tonly\t-\tApr\t 1\t0:00\t0\t-\n"+
-"Rule\tPeru\t1994\tonly\t-\tJan\t 1\t0:00\t1:00\tS\n"+
-"Rule\tPeru\t1994\tonly\t-\tApr\t 1\t0:00\t0\t-\n"+
-"Zone\tAmerica/Lima\t-5:08:12 -\tLMT\t1890\n"+
-"\t\t\t-5:08:36 -\tLMT\t1908 Jul 28 # Lima Mean Time?\n"+
-"\t\t\t-5:00\tPeru\tPE%sT\t# Peru Time\n"+
-"Zone Atlantic/South_Georgia -2:26:08 -\tLMT\t1890\t\t# Grytviken\n"+
-"\t\t\t-2:00\t-\tGST\t# South Georgia Time\n"+
-"Zone America/Paramaribo\t-3:40:40 -\tLMT\t1911\n"+
-"\t\t\t-3:40:52 -\tPMT\t1935     # Paramaribo Mean Time\n"+
-"\t\t\t-3:40:36 -\tPMT\t1945 Oct # The capital moved?\n"+
-"\t\t\t-3:30\t-\tNEGT\t1975 Nov 20 # Dutch Guiana Time\n"+
-"\t\t\t-3:30\t-\tSRT\t1984 Oct # Suriname Time\n"+
-"\t\t\t-3:00\t-\tSRT\n"+
-"Zone America/Port_of_Spain -4:06:04 -\tLMT\t1912 Mar 2\n"+
-"\t\t\t-4:00\t-\tAST\n"+
-"Rule\tUruguay\t1923\tonly\t-\tOct\t 2\t 0:00\t0:30\tHS\n"+
-"Rule\tUruguay\t1924\t1926\t-\tApr\t 1\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t1924\t1925\t-\tOct\t 1\t 0:00\t0:30\tHS\n"+
-"Rule\tUruguay\t1933\t1935\t-\tOct\tlastSun\t 0:00\t0:30\tHS\n"+
-"Rule\tUruguay\t1934\t1936\t-\tMar\tSat>=25\t23:30s\t0\t-\n"+
-"Rule\tUruguay\t1936\tonly\t-\tNov\t 1\t 0:00\t0:30\tHS\n"+
-"Rule\tUruguay\t1937\t1941\t-\tMar\tlastSun\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t1937\t1940\t-\tOct\tlastSun\t 0:00\t0:30\tHS\n"+
-"Rule\tUruguay\t1941\tonly\t-\tAug\t 1\t 0:00\t0:30\tHS\n"+
-"Rule\tUruguay\t1942\tonly\t-\tJan\t 1\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t1942\tonly\t-\tDec\t14\t 0:00\t1:00\tS\n"+
-"Rule\tUruguay\t1943\tonly\t-\tMar\t14\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t1959\tonly\t-\tMay\t24\t 0:00\t1:00\tS\n"+
-"Rule\tUruguay\t1959\tonly\t-\tNov\t15\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t1960\tonly\t-\tJan\t17\t 0:00\t1:00\tS\n"+
-"Rule\tUruguay\t1960\tonly\t-\tMar\t 6\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t1965\t1967\t-\tApr\tSun>=1\t 0:00\t1:00\tS\n"+
-"Rule\tUruguay\t1965\tonly\t-\tSep\t26\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t1966\t1967\t-\tOct\t31\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t1968\t1970\t-\tMay\t27\t 0:00\t0:30\tHS\n"+
-"Rule\tUruguay\t1968\t1970\t-\tDec\t 2\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t1972\tonly\t-\tApr\t24\t 0:00\t1:00\tS\n"+
-"Rule\tUruguay\t1972\tonly\t-\tAug\t15\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t1974\tonly\t-\tMar\t10\t 0:00\t0:30\tHS\n"+
-"Rule\tUruguay\t1974\tonly\t-\tDec\t22\t 0:00\t1:00\tS\n"+
-"Rule\tUruguay\t1976\tonly\t-\tOct\t 1\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t1977\tonly\t-\tDec\t 4\t 0:00\t1:00\tS\n"+
-"Rule\tUruguay\t1978\tonly\t-\tApr\t 1\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t1979\tonly\t-\tOct\t 1\t 0:00\t1:00\tS\n"+
-"Rule\tUruguay\t1980\tonly\t-\tMay\t 1\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t1987\tonly\t-\tDec\t14\t 0:00\t1:00\tS\n"+
-"Rule\tUruguay\t1988\tonly\t-\tMar\t14\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t1988\tonly\t-\tDec\t11\t 0:00\t1:00\tS\n"+
-"Rule\tUruguay\t1989\tonly\t-\tMar\t12\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t1989\tonly\t-\tOct\t29\t 0:00\t1:00\tS\n"+
-"Rule\tUruguay\t1990\t1992\t-\tMar\tSun>=1\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t1990\t1991\t-\tOct\tSun>=21\t 0:00\t1:00\tS\n"+
-"Rule\tUruguay\t1992\tonly\t-\tOct\t18\t 0:00\t1:00\tS\n"+
-"Rule\tUruguay\t1993\tonly\t-\tFeb\t28\t 0:00\t0\t-\n"+
-"Rule\tUruguay\t2004\tonly\t-\tSep\t19\t 0:00\t1:00\tS\n"+
-"Rule\tUruguay\t2005\tonly\t-\tMar\t27\t 2:00\t0\t-\n"+
-"Rule\tUruguay\t2005\tonly\t-\tOct\t 9\t 2:00\t1:00\tS\n"+
-"Rule\tUruguay\t2006\tonly\t-\tMar\t12\t 2:00\t0\t-\n"+
-"Rule\tUruguay\t2006\tmax\t-\tOct\tSun>=1\t 2:00\t1:00\tS\n"+
-"Rule\tUruguay\t2007\tmax\t-\tMar\tSun>=8\t 2:00\t0\t-\n"+
-"Zone America/Montevideo\t-3:44:44 -\tLMT\t1898 Jun 28\n"+
-"\t\t\t-3:44:44 -\tMMT\t1920 May  1\t# Montevideo MT\n"+
-"\t\t\t-3:30\tUruguay\tUY%sT\t1942 Dec 14\t# Uruguay Time\n"+
-"\t\t\t-3:00\tUruguay\tUY%sT\n"+
-"Zone\tAmerica/Caracas\t-4:27:44 -\tLMT\t1890\n"+
-"\t\t\t-4:27:40 -\tCMT\t1912 Feb 12 # Caracas Mean Time?\n"+
-"\t\t\t-4:30\t-\tVET\t1965\t     # Venezuela Time\n"+
-"\t\t\t-4:00\t-\tVET\t2007 Dec  9 03:00\n"+
-"\t\t\t-4:30\t-\tVET\n"+
-""}
+require.define("/node_modules/files",function(require,module,exports,__dirname,__filename,process,global){module.exports = {"tz/africa.lzw":"Rule\tAlgeria\t1916\tonly\t-\tJunČ4\t23:00sČġ0\tS\n"+
+"ĀĂĄĆĈĊČĎĐččĖ\tOctĨĚ>=1ĞĠĢĤħ-ĪāăąćĉċĴ7đēĕėMarĞĝğĦĤ1ĦĨņĬŉįŌĎ8ŏĔĶœŕ 9ŀřĥĢŝīňĮŋıĵĒŦŒŔ\t ĿŘłŮħĩűĭŊİč2ħŷő\tFebĜŬſśůƂŇƄšıƈťƋĸĺğƑģ\tńŞŲƅŢ2ĿƊŧź1ŗŁơƓƁƤƗŴƇƩŐĶęěƨƠŃĖƳŠƵ93ūƪėSepČŽƯŚŜƕşųƆǃǅƸėNovıŻƱƢƿƃǁǓ4ĝč45ĶApŕMĒĽĿ 2ŜǝǐƥƘǥĝǆķĹŻŤǰŜƣǠǒŢǦƛĶǈǊďǜǿǟƖǡŢ7ƷŸĄǪĞǧžưǏǀȂıȐȅǇǉĞĐȗƾŅȁƦȜŎǹœĕ Đ 0ǲșȦǶ97ȩǖǺƞǯȰůȀȍțč7ŤȪź2ĝżȱƔȚȧɁɃȸȇĞ2ŻƯǞȥȿɌ98Ɖȸǩŕ2ǧȯɉƲȳǂɚȞȹ\t3ǯǱȽƿZĒňfĉca/ŉiĈŃ:1Ǳɼ ėLMTČ8Ď Ũż5ɡ01\n"+
+"\tʏȼ9:ƼėPʂŵ1ʇŔżʍʏƢŜȎ\tWE%sʃǥ0 ƍbǰʊɬ0ʎʏǝʡCʤʦı46 Ɲ  7ʱʟůėʣʧ95ʺJanǰ9ˀǝėʵ˅63 ɝż4ˀȼħʡʣʥ˅ȶʻĹǰʝʲʠțʵ˞Ȝ9ˡtǰ6˙˦ȧ˝ʷč8ʙȫˎŜːET\n"+
+"ɯnɱɳɵLuˊdċȰ5ǱˇĶʁʧʅ2˰̊ġĝėAO˅1˷ayˮ˹˂ʢA˽˿e˕ɲiɴ/Porto-ǘvoʟ1Ȱ2ŤʀʗĴ̑ʞ˚ĶG̺ǃ4ʪƎ̞ʞˏ̡̣ɰĄ̧̩Gab̬͋ś4Ġ4ʩ̹̏85ˀʯĶC̢ʸ˔ȇż˫ʯ͝ɢ\t͠S˅ǣʚrͥǾĢ̠̦ͨ͊̀̂͠/O̅gadoug΁Ėȼ6̔ɿ\t̎ŵ̼ʏʋń\t̀ͷ̥A͍ɵBujumburŌ:57ʓ̸Ί̺ʅʰʞ͞ː̢˾͋ΕͺD΁al̈:38:4Υ΋̻̟ΐWέ̤˕tεnt̨/Cape_VĈd̥-ś34Έ͙ı0Ŏʏˀ-ΫͪVͭ2 ȇϞ͞ǝCVͬʸʊʼ1͜ʞϟ˺ϡ˟ʊ̱ʭͲΩʏϔϴϪΓ͌ͺBˊguiĥƭʓΐνĎ΍ƀĶρЀΰ̨ɵNdjamenΠĢɻϤϙξ͇ϴБ˪ˬ˗οЏρϬ˵ʩʈ 8Щ˃ς͋IndĊnϊom͒ĞΡŁ̓СĎʙęlˀɔėEд͸Г̩KinshasНśɾСʅ7 ϸˍУ̠БήэΖ/̄ΝΜѕhЇ͔ʒ̊ΉνћѝǙŪʹΐͶѣΔѥBΟzzavilĬƓƓ8Ѱ́ɼв͉ѹЁДɶbiЗˊ΅ɻ·0҇уҊʞΏ̿ʂҍюɵDji͑uψп̓3ʺҚхāшϴы˽ƃEgypĺʨɧцČǧ̾ǳƳҵҷҹ9͗ɧƝǜˁħȾĬӂҸʸȑƋɝҽӊЏǴ\tӎӄ4ӑȆȠȉ̾ӌăәʸɒǷǨȔżӕӀҴҶӏǥɒǹӈ2ŎӠȌӍӭӚ3ϭĶ̱ӉӵɖӷӃӻǹӓӟͩӗӣč΢ɧȫČӋԇӁӸıԋԊΥӈөӿԑԂԕԌ̜ӾԐӬԛˆū˵ĿŹȬĿǝӫƖԉԣı6ǧȟǊ3ħɔӡӘԒč6ĳ9ӅĶԗĿԶӶӢԹəӰȸҼɟЏԫԁӮəӺǹҼɼՋȲԬՅ8ǤəΥԍөԪՕՍӄʅԝȬĳԠՖԢ9ħčԾԧӉ՞ɊԡՎˆĞʌΐӓεstFĉŻ˚ǎհէղȖĢԱĨȠոtThuƽɕԚӏƈ0ĐǹɐƼȣ֎ձƞĢȷȒɐ֊uǮ֍Էӣ֑ɎȒA΂\tֈ֢֟ՃԸԂ֑Ǖ֧֩ƚ֣֗Ԓƈ̵ɧ֨gǋӕְַյɧɐֺҿ՟Մֺׁ֔ևѕ։֋֭Ņ̤Ҏ̩ϋir̳ɬ5Ħ҈˅ĢˬѶ֯ӏEʶВѥœε͑ʟ3ךҘלΌ˰̠Βԯ˔DecʉҋѢגҡɶsmŔċǱ׫ηРΦ̏7ϻп؃3ɒ̖Χթ\tͨ؃ƚ̖D́ҫʚ̝ϱʏщӘьѺͺAdиs_Ab͐؁ηϗλ׮18؈ؒךؔĄؖ˅ؘȫ ؛ɩұ؟͹ҏLҥreҁ҃ăȰ3ΣحҚЎ͈׺ίѻˊΚlĖƓ·ٌؘϞٖηҬ\tBؗǧٚФ͡Ժ˘Ҝ̾ėΒƳGєМıҫӤӝǊԘǿЊΑHͬ٫٭ŢٰӯĶ׵cɩĿӵ٪׻ѥAccΟҕОѯҚб٧Ŝ٬ˊċʥҠѥCĒakrő̉ϗڎ؆ׯڑױؗ̓ʫ͆ϼَ٤96؉ҝ٩ҟچЂisі֌Ͻ0Ǳƈخфؙکٕ٣϶ˀڰΑڲِͺNaזoґпӳҖ̷̍́ цҰ̠Ҳٯ؉؂ΐBۙʨͨȄė۞AU˒؉؝ҲڗͺœsĈ֌ś5˚ڽ0˔ŨנǇAЬӅͣǉͱͧΪԇۺͭ̓ʈčϺ۸Ĩ܃۫ҏǬnחҁċ-Ȱ͕ġҙڢد8ЎܓκŁܗM҉˫۷ϲܔϗԴѰR˟Ϥ˸ڤΐ٪ƃفbyŢ5ӜėӈƭпůՌăܱܳԓՇȒˉěٴɭԀܽҥܿԊՐȸԗūϨׇΊܴ݉ǸՈҔ݅Ӌܾܴ֮ǧ׋Գԏܻݑݛԓ֓ݖ݄ڃȋ݇ݒܲŢܚı՘ӧũݨݡրĬݣ˵ӥəօՀֿݚݓݯݝɜӨĐ׆ݵ݈ݬݯݥ֧ӨĝޅɣƖݷəފƜǻ Ӻԙܰݿ˵Ŏ˵ū̖Өݳժݢޚəޜəޞɨݘ֎ڳҏTĉpolЇ̉ǱͮуƈЩݣ˨˴ԣ܉ף˅ܚ޹ݿ޻˅թڿ ٦ʏϠ޿ıڭϥ۾Դҋˑߍќ˖߈ЩϩEۻȵЧߗ܁ۘ˼ѹ жиˊɶχڔМĉ̲ޖɻȼтܘھۖʞ۩ڬ5ڧͅӳǰǍۗޢůыۻ߷ڿ2ͦ߼ߴؽץЂφtyكۏ۳у۵ͯ܉Ѹެ̩Ѓ׿k̳ܜ،כٙܭҞط߸ʬ2˯ϲګۧەĚǰگ٨ۆΓؿ̩ǘ̅kchotĺڹ͖ܗЌқΎ࠮ײčϖ̈́ࠤࠦڪۂԯʩϸ̷ۄࡁҟűʚΞiψuŚՆӇǻׅզĂࡒĉࡕࡗ8݌ȒŨĞޡ֘Ň࡞ࡔiࡖմҘ࡙ĺֈSĚܺ߾ޏ࡝œࡓࡠ࡮ֲƋࡥࡲࡴ͞ƣσߤй/ࡹ࡟࡬ĤĠ۲ࠞ߱ϛϝʞϗמ࢈࡫࡭MU˩ҍࢅߦȫ࠸tăƯΡٝ࠾Ү߽ٔĶ۪ƃǬחډ̳ࡃࡽٲČɒҝܼ\tࢬoࢮٯࢱǗǙǛҝԷࢸࢺҺǹʫȕս࡜ăࣂcࢯӅށȒӽدࣈ݆Ƴ࣋࣍۲һࡴ࣓̚ࡶŰƖࣖԓɛȒӲūࣀ֮࣠Ժ֜Ƌƺɓࢳࣉࢷ͒ࣃڭ࣪ԿޕȻݩࣱࣕ࣌Ȝݕ݂ࢁɇގࣞĬࣨȵࣽƋɐөࣦݪऄ7ԼȶƫԨࣜӖࣹࢭࣻɁޓǨ֩उޘࣺࣟ࣍एݞĞǽजःञȜ֦࣫ࡴछ࣯ऌनङֽ߈ऒࣁद֥ࣙݧऒࢶ࣠वडफࣔࢫऴĢࢼĘपࣷݴࡷ࣊ी0ूּŻƼऊऔࢹֹࣻ࣢ࡾԞǰसݑऺׂԄचणࣸिकטʌܶȓũӺࢵख़ीࣛՑāɓȻޫɰ࠱ɵϋіbφɴҕԴЊڽ1˔ʼࠥࡎŜ࣠˳߀܅ʛďۄ͈ߓ˵ࡇऒঃפߢ׼Elئۋࡴܜً̓߱ࡄ݃٢ѡڬऍ˕ǪШࠠ˃ߡࠖɵœpҧט߮ॻࠑ۶ŔࠔέƃۊmҥǓԾ׿xࢲࡳn֡ݐކ\tশসŢճ঻ݱĻিľࡵ॰̀דɵWёd࠷ekŮιɆخ̐ࡅа˹ԴȆХčࠒࡥ܉S܃Ӥߏpࠬ܈ߟࣝ১ۻ͕ͯˣ৭ߊϴৰ߅Юʛƨ঳߅̓ߖ3Щৄґċρ˞܌࠲ĊКȬȼ৙࠽҉ܛࠨٯࠣۀۅࡂڭگࠨਈ̃a΃ɺॽٜॼ˫ϦѠπ؟\t࢜кReĚiĒؼӛΡ؅ࢥࠪěˀ࢓ΐR˼ؑন/ѐ;޲ࡵҖڽ׫ਵ৽঑υˊψc/St_HeĂٮܜ2޵ਏ̏ؐؑܤʓ੗ΉJ́ܵਜ਼ࡀϴڅۈҏSao_Tмăɡࠥࢣ৛՘Ϟوٗਲ਼ਐ੣ऒڱࠉҏDڛźڹʒ޶߱࠿ہটͭҮnঁڥЀ਩ࢇahࢡκ͔੘Ϛˈࡴ਷৷CʃƳSLٯǧپė࣬ުܔƁLٹƃટડٱܷࣶݽѢફઠԊަ6؍ृषँટપƖબવԯસईࡧħ੦৏׼ջee̮wěঘƯੳܛ̉ૐėF҉˔ƺঞન\tʥԓʿࠠબږσ׼Ǭ;ؤ׏Łś۔њǃѳvࢨъڬɪؒ۝۟ˆ૟؜ࠈઞAٱǥӺԲ৊ǮȖͩݪ১͢ʸ̕ࢷźাଂ্ࢃॱ׼Jo٭̀sΝrgɈ̓מ૬Ϥڨڐ˥ৠ۹ۻ৤ল৮܊܊ઽĬࡳ̇ěɁ॔ऐԟॆंăବҔଯހࣵҹҾय़ાuଭȜ।ӓৠ઻ઞିଷȵݹ͛৉ࢀě୅਽Kє̭΁mп̵ܖ੄ˤ্ଶě͠˩֑ʩ݃ʉż܀ૹۘਧ଑uبܺ·৚у૳ଧଡ଼ͪAୟĢୡˊୣɼĦ૰؞੽̩Mبب৏ɬϗ୮࢏঱r০܋ૣѥ੿r_eإ੩εЙǾى୘୯୚ߵͭଠпۢٞыۦԯசૺ਽L੮ˁڠ੸ਖ਼ਁ̽੥ࡐƖTਭsǓǄֻȔϰ֍ࢶலnڵவू࣑Ťֶ֮஼ாȃର૕Ǝࣇ֗஻ளǢ।ԗȮतă௅ழȃ݁ॕũࣥ୅ƃ௕Ǣ௘Ӽࢾॗ߭ाற௎ȃࡣ௙Ğࣥুे\t௞௨ஷŕ1ŎϺࡨĬ௰ଇԄȔՊ௶்஽௖௺ݍޕɇࢂ௄௧ଈӻޟǫǭৌ௾ݑ௹Ӧӱޕफ़௥௸ఈǥ࣏इӞ௒ଽగఀǓठނŕৠΏտ௮఑ȵࣴ଀ɆࣜȤƳ఩ɂգӉదओ௝ఘȵमયĺऽơԷ఩8఺હఴվశ௦ఠݭŤիΐɐ୍మ௷௔సբɄɞఝƒఐసؐɄऑవ௿ெ࡮చ଱ఽధ଴௯ఈ֑ౡ଀థƱయషై࡮ȢĢ՛ź౎Ϻ౤ӗ௹֑౱࡯఻֪׍া्ŭଏેѥ௕ʟ͗κ߰ѱ˶ڿઆʑʓԦ\tʖ̛̙Ͱ̚Щ௹߄ਛਾЙpδتॊκ߱͘۔߳୦ΐ૶ߑ܁ଢ஠ڬλۡօۤ஢વ୼۪஦ࡖ઀ĥ5ܞ۴ஈੇ਽H؀ࠎ஄ПಽࠓଧάT","tz/antarctica.lzw":"Rule\tArgAQ\t1964ĊČ6\t-\tMar\t 1\t0:00ěĒ\n"+
+"ĀĂĄĆĈďčĨđēOctĊ5ěĝğ1ĳ\tSĢāăąćĉċ67\tonlyĒĄpė 2ĲĞĠ-ĹĤļħĿŁĿ8ŇĭįSun>=ĚĜŎĵŎĸģĻĦľČŘĿ9ŇAŉķŝşšĶğŐŧĥĽď7ĎŃŅŇJan\t23ōĴĶŦĺźŔ9ŽłńņēĕņęƈŏőăChiĂƎ7Ōċ8īĔĖŲŞ=Ů3ĳuƙŹƜƞeƠĎƣŁĬĮƨşŮ4ƭĊƊƚ\tƱƟŪ8ŁſƓňė1ŌƬĞƮŷǁǃƳǅŬ98ŮƔƧŜƩƫƾǑưƝǄď8ŘǈřƹǜŴ\tƽǏƿťǒǢǔǤŮǧƸśųƪǬƾŤğƋĤǓƎ9ğǶƦǋŘǎ0ǐġǡƲȂȄƒŇSepĊđǭȊǯǾǱȎŪ9ĚċČŇĕėǪǺȉȋŸƌȁȞȠ9ƏǨǸǝǻǮǽķȜǣȡǇȑǚė3ğȨƯȫǲȂǦȼȆƺȧǟȌɃȝďǗƑƀēȓȕ2ŁȘƮȶǿƛɄȞǵɇŰŊĎɁǠɍȹȯŮmaxȱɉƼǼǀȍǣ2ĞğɪɬȽɮ\tɤɌŒusƎ1Ȼɒ\tƂƄƗŢȠĶȪɾʀŪʂɑǉȤƅı2ŶɽĻɿƎ4ŌȅʆĘĚʖţʋǁAʚŪʜʑȣƧ2ŮʢğɥʍʛʝɇɔƅŁʯȚʘĄʧď4Ƈċ4ĎɹlastǜƅʗʌʙʎʾƇȅŚĘƇʹȶˌĄTƎŀʪǷɉʡĳsʺ˗A˙Ū6Ɇʄʓ˅ˇˉʯˡʱĻ˥Ĩǖ8ı˝˫ˈŝˊĞˡ˖ʥ˲ŭżĚɹȦŘˮɂŒ̀ƏʴʄFeb\t˸˭ˠ̈˱ƠˀǗ̃ɈȦ˟˼̕˘Ǝ8ƢǗƇ˄ˆ˹Ƅ̇˰̠ǅƵǗƥʓ̜˻0˯ʻˤ̡đˑǩǹ1ʕ̔˾Ź̷ǅŖȯŷ̛̼̞̫̾͂Ǥʃǉ˒Ȧ2Ō̇̀ƌ͌ƣǖȃɭ̒˺͔ʤ́̊ȟɏǙ\t̼̳͐˽͖͟͡ʡĞ˶Ɉ̩̔͋͜˲ɴŎȅʦģ̞͕̑̓̉ħͶĚɷɭ̲͞Ŏˣ͵Ğ̹ɠűΆͳ̶Ί0͎ʫėͱ̟ͨ͌ͶŘ΄ēɡ˞ΘǑZŃe AntĖĮica/Cˆeņ͆zεĨ9\n"+
+"\tκ8ʋ\tWSTƅĞ9 Śę8ŋĳικ1˖ǂAπς10 Ȥ 5ωĞϋ\tμΈξπ\n"+
+"ΣnΥΧΩrΫέ/Davi̵ēεzď57 ʆę3ϛ7νDAVρĿ4 Novϛδζŭ ̎bϺϼϾρͶτφ1ψʯϛ5ЏϿϒϔϖϓŋŢȊЎϞϽϿϡΤΦΨΪtάήĕwsŃŏ\tϱϳЂЌϸϛ6νMAWБσυĮχϙ0ИмоTЧϣЩϦϨЮacquĖiΥЈϲċύϛϓνEϑњ6тtęхќСʺџЀȟϵЌѧĶʦˎѪĨ7ѯŎ͌ѳɴПɡ ЂȉќώMIϑыΥIndiƃ/KeĆueĂƄјϳğчϞTFρ҅эЫЭϪumŃtDUrϭlĂ ϔϰЉ94ѵκĊѨēPMѫ52϶ƃę4ЇŇеċ5ѢЄІҲѝФҥқϢϤЪϧЬϩSyowaгӁ9ϴһnŋθҲȉȒYOқŹNZƴ˜\tӅ˓ΘȶDǁӦƠı͛͘ͼ̿͝Ķӯӥӧǅɟʄ˒ ̆ӸŎӺƌӱȞğͶƥͦƩ̴̝ʺԅĤԇżıȅЌƅ˔ΐɛӪӼżđƣ̱̪ͤͧȷӻȏςΓΕ˞͉ԏțԦĉͶŁΝķȔͻˬӷ;ӹӰԝΛ\tԳΟΏ͊ȷӌҝӏҟVoˇokӗҮӚDecę6кνVO҄ՄϥҞϩRothҎӖҔċ7ѢՐՒęϛ-ӠēRӣӋШ՛ՆϩPalmҎՍљČ5իȘƍĉAR%sѫ6ГуվҲլѰũĄքֆǤҺƕտĶȬǂLօъ՚ӎя/McMurdoջϳՔӇʹԓӦ֛\n"+
+"LinՌճֵ֣֥֧֟֡ӐήSouՠ_PoĂ","tz/asia.lzw":"Rule\tEUAsia\t1981\tmax\t-\tMar\tlastSun\t 1:00uċĥ0\tS\n"+
+"ĀĂĄĆĈĊČ79ċ995ĔĬepĚĜĞĠĢĤĦĨī-Įāăąćĉĸ96ĐĒļOctŀĝğġģĪŇĔŊĂ E-EurŎĴčďđēĕėęěŚŃ 0ĪĩĦĬšeţťŧũĸĶŐĻĕSľřłŜŶŹňŻŽŦŨĳŐŒŭŕŗƈśĢƋīƍįżĀsĳƀČĎĸ84ļApęďŵŷŅīĭƞ ƠƢƒƤďƤ3ƖŘƭƛ\tƝŋƴuơĉƣčƨČ9ďƅƇŲƉĢ2ĪsǀŠƳƵǆƷčĻǊǌĖĘƘŴǒĦǔưźǗǄƶŏǊ2\tonlyļŰƘaŘ23ƯŷƲǂǘaǇ9ǭǯǱļƆĿǏSǶ\tǸŷǁŢǾȀƻƕůǠȈǢǓŸƱƎȐǚ9ƻǊƄĽȇŁƙ ǣ0ǔȎƟǩǙǫĹƔŔĕŖŘȖŜȧȩŠZǯăũ/Kabā\t4:36:48 ĕLMTċ890\n"+
+"\tɕɄŹĕAFɏČ45ɔɖɅň\tɚT\n"+
+"Ⱥnȼĳ/Yerevaġǒ58Īɋ\tɍɜȁ4 ėy Ȧɠ\tǹɘ\tYERɻ57ɾĘʃɗ0ǃǅǿĳ ʈR%sɻǋʎr 31ȦǓʃʅīǦʘSʜʢȆȦ3ʥɷȜŏAMʚʜ5 ʭ2ɽȷʐŷəɎŐ7ʾĦʓǪĊʴʶŻɤzɮ˂œŮǟűȤŴʑșǧŋˌˎǊ7ːƼǡŜ5ȍȹȻɤɫBakĨǹČ:ʻɸɺĸ˯ɿʁ2ʰʆBAKʋʍŰ˄ʒʲa ˹KʶŐʢŰʠʢʽɕʄǺŹ̄ʪ̇ Augʠɓ̍ʦˆȭˈZ̆Ǭʹľ ȈǶʮĪ˿ƩZʜ6̩ōƒA̟ʛ˂̩Aˍę̱ˊɨɪĉ/˨hraiġǹ2ǒ2ʒɌˁČ͈ɕ̩ĕG̒ĵ2 JĠ˷ɣAʪˋDh˩Ċ͈0ķȃǲĕ͖ġČȋʦ˗Ǽİ͟͝ȋĦͣǰͥ\tDecʄďȌ5ķƍ̻˦̽ͯkĊɇ0Ĥ4͉ɹ͋ɑ̙ɕˢ5ͅɣH͋94ʢȳʃɇ3ɣBUʊĸ4͔˴1ɟ̍ˢΜļI͒Ζ͔ȆΚɢļΞΠČ5ʬ̣ΜΰʆDACɻ7̈ĘȦ̭̍ΆΝDɏ͡9κī΃ĊBD̺˥ȽThimphĨΐɶɆ˰Ε4ʍ̗̕ΥʃΨɣΫɻ8ʍΙυʿ\tBTɏɧ˥Indĉn/C͞goǔɄ49Ɉɣ˱Č0˃ΧϯIO̬όΪЍϴɩ΁a̾rĠei\t7ɅЃΉϟɻ26ʞʃМΩĕBNɻ3ʯ̍ɶ˸ЪВ̼ЕRɲϾǯ\tɇʻЄРɐ8ī\tΰлɆļRΕ͍ΰЧϰΟɻ΢ʎyʃЃʆJάɞяʠщɣMˁс΀ȽPhnom_Penhй:ͽм͊ɻ0Уͧʁϋ̍МѰˮɣSΕ1ρʟѼƮ·ХЋξĸ1ΣaѐЮ҃Ыρ҉ɕѶϨξˋS͞ngΡīͤļͧĢƻƿǦDғҕҗɝʧΖǞȳńǀˣͭăҔжΡďҚȔƬŒҟŷҡƞ\tPRCƦŒҳǟǲ ƨҷŹҹ˙ҼҾƤŒǝȅƇś>=Ѽҫƌ˘İӊƦ˝ӎəƫĬĠӒ1Ɯ̏ύвД/HĘb̓\tɶТɈƨѮ˲8ʃϝɣCHAЫ҇rӵϯCѕΎ\tђӷӹɻ6УɿӾъӸӺƦʒԊҊŹәCϒГȽүҖ͞КЯΐǭӲ͌ӴԒƱң\tԕ̳ɝѴɕЯīԔԖгϻhǯgq̓җѶкЅчԢҏϯLOЪԏяӾԓҽԦԯӧUЗmԵ\tΐŶ͍ԠȁԼѪʆΟUϪԐ҈ՄԭՆԧɦўɫȿshgǠˢ0ǹ5ŒՒ2ՔϧļK͚эīϦϯղάпՃԣһ՞ˊҺHKұǮʹƩӞďǹΩǦҭ\tցփӁȆʄī։Ɯǖ˙֎ɝӀօӝę͍֔ͬˋ֘Ζ֚Ȅĕͷ͹ֈαȪ֍ւɝ˝ӁƪƬƻ֟֋֭֡Ζ֛֯Ͷ͸֒̎Ω֢֫ɉք֥ӂȋ־ʧǻֶΡ8ĸζ˟ȵׇǕŉրַ5Ȃֺҩ2Ļ֟׀ַЂ׍ƻ֜ӟnӡבֵהנ׃͵Novċבם׍ǉőӱ˒ףӡ׌ִ׉רεƨӁҩʡװ֖İ֢5ǜ״ļ׬׮ӑӓ؂דַ֗6؇7լɤӞ،1Œ׺Ź֌֢ؒƁؕҩؘؚ֪؃ă֢7ƻӁֽ֧؛Ț׼9ƂӁɿ׷=׹αקؐƁͳׄآӠӓؤֿˤԗɫHԳ_KԳЛɅΛУՒ0ɽȳ̘՜̠֬֬ҧ ֧ȦΦɕԄқѕʸʭϥռ֎ցտ˙T͂wɲΡ؇׎ȔǲďӆӥҺ٩i٫ͨΖٮҨƗٲҬˋٶٸ׍חׄǴپŹҠڀ٪٬εǭ׽؉׭ׯƿد٨ڋٹΑ׍ķעڇ׈Ӈڊٷڌĺ؇6ټƽӕ֕֌ځڡ6ҦڤқŃڜ˗ӈİڪٹ7׳7ȡֱڒӤͶڟڂĵڸȡҩڱڔڴږػתگ̈́ӣڈҸڿڡزֺֿ֑ٿա̽ٶpЙӭĥφн1ɑτԫŷڵՇʛˋėcaĨČڮۭԟ׶أצ׻˙۩۫ĸۮ؈ĕ؊ص֩ق؏İ۶۬őتֺǴ۲ٳӗă܂۸׾܆Ǡ۲خ܊ǟ۪܃؟سܐؿؙڧ֠Һ܌ۭĻ׿Ɨ؁ړئܔ۷ۭӍرǞڻܑظ۴܁aܕ۸ܪπ˟ܮۿۨܲܨرڎر׵ܭܚĻ܉֌ܟܽƁס\tؾפӓ݃ˣ܀܋ܻ܃ڷƁ˝ȲƗؘכإݐܧݓؓݖؖęݙ۳؜ܺܳĵ׌Ƥ͙݂ؗܜعܱݧرݩčɣ݋ӡݎӖŉۗЕ܌ЦɄ͈۟ǋ˶ռ܌MOٗĹٙ͸ȦԂԬսҾ՟ˋCyƫǄƁܡֺڻ1Ҟڽ֌ޓޕǥرޘؽٽǭܥݜޟЗޡؔۊٰċݸڝۆăީޖĵ֤͵ۄۅܦ޴ޫӛݴֆݢܚݮܰ޳ޔުݕޭȢȋްגޒ߆޵ݲ߉יܜ֫޼ۉ˜ӏȣųġާߎޠƦƹĹ׌Ҵˠ߃ݥݻ/NicϿŏǒޛˮɊխʢ؊ģ4ʃȧԦߏǔEEވɊί̍߹̯ŏ߽ˊL̓kӧߪ߬ƒƐoۚߩ߫߭aӦϔӫliĈȋѫЃؙ۟8п߸ࠝ:ܛĕTBчɽ˴ʂ̚ϯࠨI˼Ф̍ʑ̜ʕĉ ࠰ވѽ̊ʣǤ͘˗࠰άʝֱѳ͘࠶ũ G߾ԨĹރɕ̛ŤƐƀࡋވɽʭȵ˿Əſƒࡕࡍő ْ࡙࠴ڽࡋࡃ˽ςࡣɡ˅ࡒ࡜ŏ࡞ωĦɽѲ2ЉࡐʱȬ࠷Ċࡰͱ0ʸ̉ȵ࠾Ԃ˖͐EՠϓɫDi࠙ۜ͆Ѹށ҆ٔࠧLэ͔FebȦ̋ʦёϯєэ١̣Ǹ࢝ʆT࢔ؠїјռĕC࠱ࡽʒ٢ʍĦ̨̍ٞ࢓ࢇل̽ىl΄tĊΐ߲ͅ΋ɜࠡյЊΑѸļΔэΘŗљβьΡ҇ʀ٣Ώαĕϩ̢࣒pն֊ŷࣙɝʸْࣕՎࣗ\tϩв̔ɫJ͟rࢾًЈ͔ࠥԠ86Ϣ̖ģԂѶМ҆қч3ފc࠽Ȍϡࣲ҂Ց\tJAVӻ ۼ҂ъWࢮɝӼʮࢤɣ࢟٭ࣛखѵࣦऒэɊԑۣʆट׍՚Ҏًऑओ״҂त࠱ࣩџǯtϹ˩ً1МईІɒड՛झषࣉĕPΕ3͔؊ऐɣथऔ͕ɲȦԪԃ࢞٠छࢣझपठջणैफ5धेļॉबࢫԦफࠡोnʁ1भख़ࢸżȽė΄ơǠМʌٌށ͈҂ॳфůृॅ׭࢒ॢ࢕ ࢙ࢗ ॎࢶउ॑ʺЭक़ļࢭ५࣪̽࣬yapŧĊЃࢎɉށॄऎॽࢵϯEफ4ࡗ̣ģ࢝Ԍά6߷ঞʆঠɦҺÍڶݳпǳǠ2ڱډয঱Ɓ׌ܢǷ޺֌রۑؼ͵֑ͩܥু঻ݪ߉֑Ǹߔܓূٹǋ߉شʠߦٴ˙৑Őܾĺ঵֝ަڽڳă৚ӎȠߙȋৠӖ৉ڡő৔শসۏ঺৬޷১ষ৏৫৒޾Ĺ৞২ৗھ৲৹Őښߊ͆৷ˋ৚͡ҙ܏֝ৰڞ਀ࢯৌƇ৶ৈਇ঻͡ͻĦ݉Ǵਅ܉ৢࣧਖĦਘթ৵৩ڨਕ٬͡܎څ৯৾ਞਈࡲ਑Ŀਓٿਏ͡ޣ͵ਛਥڲਧɳĦ਷ਤਆਵĦঽ਋ȋ਍৘İਯ0੄্ׄী਼ࡽķ͈Ӕߤਜৡ੐ϊͱ੔਄਺޲ਟਨ·ڄਸਬਝ੘੡਱੆ੁ৙ਠޛਗ਼ȡਹਭ੦੭੓ȡ্੝৐੬৴੕ੇ৿੫੠ܛ֐਒੏ੂषਗ਼ਃੰ੥઄˝੓ਃ੶੪੉ਠ͍ܘ਌ੱੂ઒ۓંએৣઑਘৎ੕਺হ੾਽৶͈ઞੜચ੟ણਪ੣ઔઉઢͱʻ੨ਲ਼৪੦ךરݠઈ੗ખĻથݠ઎ਔખ׌થઇ੤઺યથૂ02ઍઙીેթī͈؁ટક૏Ω૒Ǟિ਴૖ǭ૒ਚૅێ਎૜ͱЬ৵ઃ૖ƨ૒੯শઠৱ૨૤ੵ਒੷৸૤Œ૒સૠޱ੽ઐ੠ф૷૦ਆߨTè٬ͅˢঢļऺؙʰךӰļTϠŒʰъIRά7ʍॆࡤŹ৚ଖٗĶଔīଞʙۧ৲qƦ੢঵ٱ૕ૼନƤܾƧ˟૧ମƦ܅ਫęܤ૆ଵƤ׳8ںևଭછaଯǛŐѹǎ˔ͨȘਫ਼ূ୅ࣵେৼאưǥ૮଼Ĺਢݠڻģ̎Ǥ਻ଧ̇ࡽݠҩଡ଼ʦȸĭߨ˨ghdadࠜॳΉଊΌɒࠣॸؕࠩɻ۠с࠮ʆճ଩ॗଢ଼ଣ́ନA٧İZiиҥ߉Ҝଡ଼મஈஊٹ΢Ρ׵ۼஏ૛஑஋Ζଷ͵୛ͻ଻ăஉ஛ଉְӞ஘ૡੈ஢ஒ٭߉ޚҶ஡\tணஓਿۻڑଡ଼߹ਫ਼ளΡ੺ݡċ૶ற஻֙߉஗଴஫தੌ੣ǲৎƿ߹DਞூΖ௉১நૺௐ஬ɝݳןஶ׮ஸஙேஓৄଫҪஐ௠दமևரனૻ௦εਊ੍ƇΥஂǕ֌௑׎஦ę௕ୟ˙௶ҲֺۼӔͫ஺௘ĺପע͍߹ડசڗఆ݊ٽķంܓ௶஝߀ċ૝ுఄژઁĿ੭఑௵ఙફۋċޜ௫ௗ஛5డǍజ૳ˋ௶வउڰ஠థభఙయ৆ெலఙ஽எత௖ఴధ஽۔֓௟హధֹׄڻોࠜళҺ௶ే৅૲ન௑ݔӁ͖lĢ˝௥౅ڶ఩ఎƽఽ௴ిڶయ౉ۍా్ఄڹம̖ͺ౒ఄି௨ƬӅఘ஛౰ఛޯ౮౵஽ش୻ౚ௑୐౷ ౙౄ౿౏క௲౾౯ಆపణ౹ٹࠡ౱Ģ;౴ಏ௓ಌ৖૎ఋƦ௢עەౌ௼౯ಜߊಘ಄ఄɒ৮֝ߌఊ௭Ĺ௯ஞ౬Тಎୡઓȋ౳ಟಚӎಁస௑ȁನȋಓಷಬಽಁ௪ਦ౨஛Ȟ಑Ȧୂ౛Őఔಗߌఃೈౝடೌ಼೔ರ׌ಙೂయǴ଺ು್০ಁౠ೒৒౻ǠಈಔƓ੨ܛ೛ೡĹಋ׶ળ౧ಠೈೱ৆ಶೆ೵৒ಖೲ౦௻ಸߢ੨ ೅ౡೇ৒ಢ୛గೠ಼ಢ֑৖ஹఒ஬ਉ಑1૩೪ഔাĢӍಥиਗೊķǦಫ್ട౷઱Ǧ೥ࡽ఍ਛഡഘĦ఍୤ӛഝ਽ਣ಴ծ˗ണ஻͡೏౞ҝ˗ഩ਩ೊലഌഓਰദڎളࡽ౤஧ల೴ಚਸ਼ߒƗ঄ో೺൏Ħ૶·њǠFriӒಱఉୖ௦͡஽୤്ആ೻ୢ೬ீ઴ഇࡽ೽୤઼൉ਖ਼ദઋ൳൙೬ഋൕൣ·௾ైൌൔഀർӔചೋ഑టഞ੧ੴৼ൜൞=ൠമࣽദƻඇౢਗ਼഼ഏૂ൷ഖલක൭൩උദ૑ඛ஽ೕൡૢൖ઀ט൒੒ඛઋ૊ǞǴඍൟ൬ൎඃ೷਒ഗඟඩ೽৆ඵ൨ඩಢ୤඿ീ૊ಮ৵൶රർ৶౷ࣽඕ൮થ఍ඦമਅඅൺව෋ඔթ۰඲൝පඁഹ൅ৎദයൻത૊ౝසඁළશദඞ෦ഺ૊ు਒ඣ්෧ࡵ൑ƽ෵෰෢ලඹ෫ഒඉొ෍හก਽Ωඅฅඈงൾ౐ਲ൧ළॄ൹฀ซ૤഼ීൄඉ૥ූดඖ૒૩թ૸ęඳඏ඿෡บౝ৆෉෼บయറฝැթෳਲ෯ෘ෧3මజඔۖ࢈ঐɮǄaĂm͈ࠜѫَࣃоԂ͇Ŷ୲ͦѻ׌ࠣŹ஻Iஇă࣬pڡׂܘǲؘ෠ൢउও๙ݳٯߊȉtӒีਫ਼๗๙ഉݬ݌൧ണ๫ڗҦ๤ش๝ටӥଂokyoॏ۠ࠝ୳ࣄϫँ࠽ΥŞगٟࣄőຉࢬJЫՔٞ๲उ๕उor୭ڶ഼Ҝഅݯ๖ທນ݈ޗଳ৏ݜJຠۑڸ૸ବ݄ˋວຘۑ஽ఀລຮຨڶೱۄິҺຯມݨ಑ಞૺ֌ຼۑ෾ĿເߍົຶƦോƬ৾ໂ໊Ƥฮٽ຺˙ໃಏܪಐעฤ੼໏ະ໗୑ݗŘ໛໔İ໖ಛ৮ǲ೚ޝີໞ୑௸ȋಃ௫ໝຽ୘ക໱ແ໬໴৓൵໤ຟ໭Ǭക೿ພຖ໿ࡎ೎˟໣ߝ້༅೉Ǌߣா༉໫་໺ษƇ໛೑ܦ໦০༎১༗ڧȸ຦໐Ĺಢౖ௤Ș༃༚༣പ১Ǐඍ༟່໕໊ഔടߤǏϕŇ༧߄༄ມ͡ǭȓ׶༶Ϛವ༒༱໭഻෹ವ༯֫໦ുച೩୞ཋ༲ਾ੨༭൝ཊ༙དྷѰ˞໡ƈ༮ƛ༠ࠖɫAmđɳˮǹঢচ२ࠂŷ໦ࠆۧߨAlđtǲըМঙխࠫ҈˵ն୾ऺΜ͕Ġ࢚όࡈʖAɍ࠻Џəऺȁ྅́ɤྉ̳ਸ਼ʞģٜՕ͙ɺཡ̽QyzylຨɃˮĤזॵཻʀ࠭࡫ɣKI̫ĸཱྀࡴཫࣖʆྭྯƸ̔ƫ१ཾૺྶչ࣍tྻϮྵྮϪ͔ࡅথЊ˅ྐྶྊ࿊ྫྷ࿅̓ٚଌ࿏ļQYྷࡎ॥ģ9ࢂྏࡹƀ࿗̲ࡱࡾྕࣤφ࿖࿘५ӧAqtobăཨɶํ่͌ྨཽଜ͙˻ЫʒྲྼƩ࿼ߠྐྵʟ࿉ྴૺ˺T྿ࡡŗ࿂ɕ࿨əဂରငဎࣥ࿋࿠̰˻࿎ဇခϲ࿒ދ࿔ဇ྆ʳQT̆ྔ̉ࣤը͙ဥ࿫Ƚ࿭ࢾ˫ྤĥ׵ऺ˳ོྪྣʆFOδȞ࿾ྃষကĕြှ6ঊဖѹHࢆဃْဆ྘ȅ။࿆န၏ါဣĊS။ရ၉ၑ၌ǝ຅အ၉ၗɤဥވࡿࡩ୊࿞࿺ၣAၥྒྷਾ࿦ྗါƩိྛЕÓ౗ଇˮဵࠪࢩࡏ်ɣΟԎČྱ၁ླၜĕႃϪʢ࿈ႈၳǦႃဋ၎ႈတ\tႋ஀ႎྼၣႃٗɑྕТၪྫႜRஆ࡟ႈࢄ႗ႥʫၠۢႁၣွႦ࿤ၧѾၲϯႱম˙Kyrgྞ৛೫ע،໷୕ݥҺႻႽႿༀǊ֑ؕא༊ႺႼႾzˏ൐༵୊ࠜࣞ჆ბ჉ეߘുཛྷאǒܹ୩ࠚhkeࠊɄɵၼྦྷၿ၃\tFR՘ྰ၀०၂࿃̀ဘ࠸ჲU࠻ྕʡࢂsကǦჽࡃႍࣸᄁȧက჈დ\tKGဧၰϣģႀ႖ᄐႹİROؑ෇ޮཏබ\tᄛᄝ೬೤ܓᄣӚƦ༏๶ؿ໪ೠᄨƤ޾໙ഽ،ᄮਦߨƆoɂӮॲ۰І΍ԋྫྷάِँຍᄏάծᅁձάॄᅆKάనႠႈގᄨ̅ࡍڤ̔ࣸӢᅊĕᅏԇɊϭٝŷᅕՈџ๽Җ঒Җࢍ̛ࣴ୵Ҋъᅞĸᅄ֧ᅎᅈՔӶᅋӻᅵʋཻʟჸঋᅝনᄈϤԂআᅞၶȾu٫iŘˬྥ็ऺज़ࡀə͛ߨViѧळɲăɇज़ჭُѱྃ঄भԹȅѻ࠼ѿƋႈҐΪ҄Č҆஁ގࣘᆮȞҍ३ᆭᄙăL࢘ɲ஛ગସȋᄶܝ˙ᆻbᆽٹᆿ޸Ɨશაİᇅᇇ˲ญకౠ༃ᇏѢᇈᇒཛྷᄦݜᇖᆾഫশຝ༺ᇝᇈരƗᇂ֫ᇣ˲ทӞ੖໲ˋᇩ͌඘௱അᇨᆼᇗ׍޾ڮᄟ໎ᇯᇶె۸ڥڼݹᇽᇆᇷ͓஍Ńᇭ໸Һᇰ݇ĵୣ໓ᇍᆺᇾບ߈ᇻອሌሔ়຿༂ᇢሚ຾౷໇ᇵህ౵ାຫሂላᇄሟǈୡཛྷ೭ݏሄᇐƤ೽Ҝໜሱሆčಢ౼ምმᇎራಧༀሗངሾሤ৒ᇥŘ೹༰ቄሲĹȒȱཀიመሪቅ༇༜ಌ჏ሰሙቔǊķ༿ҩቘሃ୩ЙЗǷˮȧࠠࠢཬŹᇩ཯ᆹ\tNBທɩ๾ႅ؇Η১ගړࣉညˋተቲeቴȞቶǞجቹሰ̻এЕKuแa_LuϘŧѪ4ɇንށ·࿛၏ᆝˢશƅΕ࿥Ѳ၏ᆬůྈЫऀ࣬०ኣȍࣉMྈᅌѱौካईኮࢧɝηpပЦњኦࣚংģႮআङ࣡छ࢑॔ኼ኶č͔ኩပᆲĖYϳኈȽኋcϖᅪसĤहчԉʏ዇βွኧ୼ঋቾrታϰွٗю኿ၡዂঈ̣዆ᆀዧှ8ዋኲᅓϯMዐӦ϶ϸɲ/ėlϸveЀѫ࠵ࣴ঴ʾనዸΕڬዢႉĖऌ͎ܞԳo౗ƺƦ݀ୁቒ܁ጕ጗č഼ູሒĖጞ໋Őᄫȕቑቃ܋ጥଽጧ༬ጪሃጔҖ጖ࡽᇙா̥ብᇮጳϾ౗ട൤ጰŚȊ഑ݜMጥ༽ࡽؕǴጹ๞ߧ฽Еنv୯Άٍኘʸϣྋ֍Oጒ຾ᆷፆጴ౗H፛ᅥɫUěɲᇆǶςࣻɅࣳ࿶ɒፗ̖ᆷႊLႄߑٔ፟ጽ႗፵፤̽ϼoiᇆls٬ЦԬፖᅙg፳፻፶7ᅷϯU፵Ϫऀֱຉ፹ጵӸއၯੋᄀዷŹ᎗౗᎙፽ኊǶhཥdϛɈĤࠟխԂհࣘչႮଈȡNPዑፏዿǄ۪ᆍጆ࢏Ꭽ͏\t͑ᆹ P˩ࠚࢾഴි๮ൟӕƹ߄ᏄᏆĝ੠૊཈،৩ٲئᏐkᏇᏓሴڰᇼƳᏅᏛᏒഴ೽ຳሒᏚᏜഴ๭ƬಪᏏᏢᏪੑ௄ڑ޺ݺᎸȿ́ዕКݿɶᆰُࡶࣥକѕήľࣝૺ࣠ٺဌ࿁ဪࣦᐈζछι࿕ᅝAှπႠᎲɷᏰᏤһᅖϳƳEႾptǇʌ໨ċሼ޲ţᐡᐣǚᐥε༏൦໽ᐪޔᐬȮɵᐦ௺ພᐳᐢᐤഡőሧଡ଼ഢᏏᐠᐴᐽ۸૱ໆృጲǂᑄᐼǚԈ཈୥቙ǂᏅĂĝ̓ăቜൊక༞ጜżᑕጄळГᑚཇཛྷᑝᑓŢᑠᑗГཌྷණŘᑁᑨᑟแᑡᑘᑛඅ෥ቊᑲᑖᑢăፀ͡༏ೕᑞᏐᑻᑵፀേᐲᑪᑼ൪౷༷๨฀ݐᒃᑴᑬ੃౫җཕКᏨᒉᒅͲಾᒗᏠᑔᑳᑫᑽᒜ౷໣ፄƎᒚᒓӢᒝȤȊᆪᇃᑩᒡᒊ੓ᄞɤ౬ӔߝߨGazࠥ͠ᄽຂᅲʒᅡඁ஻߽ॖΤྗቧᑍᐵĊቭ۸ʍኢᓊŷ๓ވႮ߹཮ࡌʜॎቧᒩŌᓚਗ਼ႍྺȦᄕĥႈ๸ĄE̒੓ᆃပ߹ĕᓇᆈH࢘rഞѸཧᓁЇᓃ࣎ቪīᓆၞ௒їࣤᓋᐫƀᓏۭᓑᆢᓓ๒஬๔࡟ᓗ཭໊ᔇ༣๑ʒᓞᓩᄒ᎜ፘᓽ ˗߽ᓫ੃ࣛᔕᒑᒢᔘၯѿႎᓥҁᓽᔞᓪࡱᔨࣸ၏ᓯᓩᔯᓭᐑɕᓨᔟᔵᐐʒ࢜ᔬᓰࢆˋѠࢋྰາᏴᒟӘϖጟุ߉ংረᑹһᕊײക૭ሽăᕃጟనለ጗໽ᕑᕄሠ੅ሊᒰᕗᕒᕠ௰ฏິߨėnࢋĊ-ງիɷࣴཀྵٚʡՄጇ࿶ɑ࿝Τ᎞ԭᕒPHዩ࣓ᅆዃΖɽଛঋᕘһᖁ཰ᎸQ፪ହˮΆࣂံࣆྫļᏂƁዋ͗୽͙ᆕᎸRi঒dѩʅᆝ፮ᆑԂͫᆔီɫSԶওທᆜѫኝʸُʢዌኛᖴˮੵአʸኢᆫዸኽႅከዶᆷՐīኵኰኚᗁኴᗃ٘ʭካъኵঀያ዁ॐࢠዅႀኻǳᗏؒᎉࡆዞƅGၓᖹᕽȅᗤᆈC጖ѣb๾ˢ˭˯ገᎮࠥЃฒॺѯଓЊᐂঀᖹႶەΩIHᐃᔢᗻᐇࣣ॑УᄋᘆΪࡃዜʀךҀԂΛЅ˻ƓᐊσƮᔷၐɌᘖ൤နΥᘚᗴᗼғႼȮ͍ᇱకݣᓨ֌SᘦŪᘨȁ݉ݶ؍ᒧҺᘮ൝Ū6Ꮚ֝තጻ˙ᘸȮᘻ཈ฐܦᙁᘺȟő૫ବᘬᘥᘹ۸ᇲᑉᒏᙎᙂ෩໓ᘶᙀᘯᑇ੨૗ᑱĬᙚܩ಑઱ᙍᘷᙠőܵءᙗᙞᙇᓐማᇻᙤᙙᙏሏ᙮ߊᙅݜᙬጘጮעᘾሩİᙸጠጙ຤ᙘᙾᙦಀֺᕎܛᙰᚄᙲč൥Ɨᙼᕐᙿϫಾ๰༺ᚒᄲᐰܣᙶᙔŪಐ಴௲ᚊҮᚅሺǠ؁ᚡᙟᚌɑᙄᙓᙥᚌಧ໯ᚕᕖᚨȮᚯઘᙒᚃᚢᚮጷᒁጫᚳŪ৓ቁഽ௺֫ᙿೃޙ஧ᇂ༃ᛅ഼ਛᇡᚲᛋલ༘ᙷᙦΖჁாᐹᚖᛔภࡾ˟ᛃᙆᛔ৺ጨ˓ĝ፟ᕈᚹᚴ੒ൗకᛘᛏᙚᒆᚶ৽ጣᙬ͡ೱፋŁཞᚽᛳĦೱ஗༑ᑋᚋ߮ᒔ໯᛾ᙽᛧ͠ᜂ௿ᕇᛲᛮᒤ੅ᒞᑞᚾਗ਼ī༿ڻᜄᕣᜑਖ਼቞ƗᜏኇᎸDađscޖ͇ᗰᖨчᖖඁᙬቭᆈDǄҕ࿱ྣ3ᜦხࠬႀၳ֦Uᅌჶ྄ჹၗٙ᜺ჿ̉ᄊʤ࿕Ҡ᜺ᄇछ঄ᄂჰTຏ͎୩жk๻ኔǣၽ຃ᘓɈ᝖βᜨငᎋIҒཱդզᇆᎼࣈছེჯ࿺Ʃၙ࿽ྂჷႏࡸʔƀ͚ᖌႬᝃ̋ࢴႣྐ᝵ჿْࡵ࡚ྐ଑ވድ०ČႢጐ଑ᖭ΂uᇆКཨᎫᜧСࢃϯᏂᆈȉđr΄Ϸྣࡵࣲ᜵းႀႩSʴᝮ࿿ᐒĬឥဃႚᝆǻʴ႓ဍᖺࢥ୿ဓឬဢྐឤʵႧᝊ᝱ဗᝳƒU࿣৛ჰេឋЕ٩դშnቈɅࣼធ˲࿸္᜸\tT឴ဿᝯ᜽ဏᝲˇ។͚ᝂςᝄĦႛគ៞ុᗑួჺឿŏេងោ̫ᓲo_ϼi_M̓ѩԸѭ፯Ѱ៘ᆣझѷईѺ୺ᆨʢᆪ᝟ᆴᆰढۜʆᝠҌ஁ኤࣧᝡᎸAdѧஂɈ༏ᖩᆓɤʪ","tz/australasia.lzw":"Rule\tAus\t1917\tonly\t-\tJan\t 1\t0:0Ě1ĝ0Ē\n"+
+"ĀĂĄĆĈĊČĎĐĒ\tMar\t25ĳġěģĥăąćĉ42čďđēĕėęĶ0ĢĠŉĹāĻĨľŀĬŃįıĳ9ňĢĢ-ĤŎħĽ9ĿŁĭēSepĳČ2ķŋśŝĦļĩ43Ų4ĮİĲlastSuėūŌŮĺşŲŴœĮOctĘŴƁŊķŜZĎe ļtralia/Dıwiņ8:ų:20 ēLMTĈ895 Feb\n"+
+"\tƸ 9Ƒ\tCSƮ1ư9 İyƷƹƻ3ĢűƾTůĻWĩ7ŶƈēƊƌźżžƀġĽƑǏĄǑĉ7ĵǕŕĲǛ>=ĚƏćƃŞAǢ98ƇłƉƋ\tǙŽſřǞŌŜƄǱĩ8ǔǶēŸ\tǩǫǽĸȀǰǲĊţŔNovĈŪǝĈǟȁȐŒȆǧȉſǪǬșǯŰǑƨ06ȒĮDecƍȌŭōȧĳŉŪŉŘȇŖǺǛȌȦǐȶ0ȸ08ǷǘŻǻǜŉǾŮƓnƕƗƙƛƝPerthĘ7ƥ3Ƨ4ƪ\tƬǀưƲȮcǇĘƤŌűWƿƆ Jāɩ ɫǋǑɮǎɏɑĆƘƚƜ/Eucźɪ:35Ƨ8ɡɣƯƱ ɧɴƤ4ĵǌɹɰɲlʒƥʕǑCɹǠAQǒĚǦǗǹɉȾǭȚǿʡʣǣȞŤ\tƴbʨǚǼʫɀĄʯǳŘĉȑǖǸȽʸșȳȎŰʼ9Ŋ99ŀȻǨȢȋʹȴăHoƛdađʿŀʿŴˁɈʷɋ0ɍ˔\t˖˘˚ĩ9ŴʿŶˏȡnȣȿģɻƖɽɓʀBrisbĖă1Ĝ1Ɓʋƫƭʎ5ɩ̂ķűEɯǣ1̋Ĝɬʣ̏ɺƔ˷ż˹ƝLƢdemĖ ƺ:5ʉ56ʌ̈ǁƱ̓̍Ĩ̗ʤ̯̕\t̲˜ɱɳƸĈ̔Ģ˨i˙đ̗ʡSʤȃĵˠʶɊȲțǰͅĉ8ȫʦǸĉ͌ʭȁ͏ǳɄČ͉˃ˣ˥ˇĻ͙7ʱŔʴũ˴͡Ąͣ˭ǳ͈ȠȊȤɌȍ̈́ȃȫʿśͰˑ1ĵ˓ͪA͙ȑǦȈƎȥ˦΀˫ͥŷŖ2ŀ;͵˞Ȭ˰ȘͳʺΈˮΒȠƨͩΐˌͽŉͯȈ͞Μ͘ɂ͒ȟApĲΎΆͿͅȩīȟ΢ʩ˄Ε·ίŉɆ̢xĮΩː˲˒έ͵ȩκaμ͉ͱ͖Ɏ̙ɒɿƝA̠ź̀ăƻ14ƧƩ̇ɤʏʴɩƻǿƽ̐ǂǄ˚ϞʇǋĨǍ̳̻ǉǋͅǍʡǀ96αʲʧωʫˆϱĩ6Ɇ΃ȼδ͟ʹȁϲϽ͇ɇ͊ʪ˅͍ŰЅʾ97Ě˰ȊɆΏЄǒΊēͧΣЖǰϲ7ͭ8ВͺπͲˤЃОȃ˝ǳ˟ȠМςЗ͐Ŷ͐ȫГͻΤЩдΙϷͻͽЋ͗й͚˫͹ȈͱоζͿϲ8ϵŔмπ΍ϊ·ъɆ͸ЈЯͳϺбˌğˌȺ\tю˳ϹЌĻϲȑȩΡЀˢиЍɂĢǦągЉεЧљЩȩĚλЈϸпΖƮȩΧʲξ˱ѡаѶȷΙγѪНѬτ\tѹē҂ѻш\n"+
+"˶ύɔ/˖˿ɘ\tƻ4ϕеɢ̬ɥ Ŧp̴͹̷Ċ̪Ǘę ƏҧʬĢҩċƳƵҰ̎̐ϳ7ҷƮ̓ҕ˸ώ/Cur˼ϔʇʉ2ɆϚ̉ҤŧҰēҳҫƋҭү̻̌Ōȳҳ7ҵƶӗ̽ƅҩБ̹ʚӟ̍ҽƿʡV͆͐ͯʧїѴѣĄӫʰΙЛЁѫĻӴАСѨο҄ғȁӻ͑у΋ӿǫчЧΖԃͷтψнёͿԃєѝіӸѢрŰӻȑΘжХӹӳ˫Ο0ӾѲЂԋѭΙѰԦԑӪɂǬ҇͝ԗѼ·ӫѿԪΪ҃ρԁǰԶ҇ϿŹԳԼԚɂυχĄԹҒԊԵՅҎφѺзԘϋɐ̚ɾҗMelboӄՔǉƻ52̫ϛƲϝӦɬ̱ҹБҷӫ̓ȁNӬͮԖҊԴͿհӵǦͧ2ΔՋնǒСУхՑ҅ŰշǳЙՈԇЦǮ·ֆǴЇԞԀսʡ֎ԍưԆԺͼԠA֕л͔ŘՒ֍ȃČʿўӯՂӱԙĻֆˊԢ֘Պ֌վʿȫѧ֘Ӱֱ֔ԩѯuѱַұ֢ѷɂ͜џ˂ֹ֨͠ԷѯՉփՃׂ֫҈ѩ͋ҋ׎ҍҏ։֛֙հוՏԏԟ֡ƒόӀҗSydɐ˛̔ϗագӍզƸӘϨćӢ̒էǋհҾס̛Ӂ˻oken_Hill̥Ĵƥ̆ҡդӝӐ̶Ϣϳ˷gҮ3ϦϠϪ̭ǃǅϦǊƅؗА״ƸϭĄհϪȩ0؛ϮϡǎƄLHȃќȄճגŬӲحЪ֐Ф֒ШĦضӭ֞ˡسƂϧ˦ؽǳ֖ўւХԉػăمԄ͓ƌ͕Əěكَ֤ͪԕԲմق؜ٖخѕʿԥՊٌɢٟˌִΠֶ֨٤ضئԪּԬٓĜٝǠ٭ŉ԰ɃزЊٜʺٶȪԸ֊ř٬خΰאՁٛŚلڄιՎՇґ׌ډٞՍזѠԻŚٕҔ׹ՖʀLord؁owƕ̌36Ϙ׬̭եҶ׵ĮҩТϤr̯؜ضحө˶IndƜnӂh˼ż̢ćɜ0ū׫ӌڪ،̻ۄ͹CXƮǠCo׽ǒϾȟȔȖ̄ٔټ˧SۑۓkǒЏˀعȋӠʺے۔ǣۣ͹֧ѪۧكH۞˶Pacific/RıotĎgaĒڥϟɠۈˊĚ\tɩ-ڥۍKПʋۘęŀ܌װƽ۠ƽK%s̘ɐ\tڹڻĖӂocoćڧջƥ͹ʍĉŉɩڧٝƽCېƄFiji˫ԔˌĮۘטٓȳ۞ܸ֥ܶܺԩКƵԬɞƂ˦ܷܹɂŘǦܿ2֠شŌ݃Şݏܺƨ̂چ݋ķʺݛȶݞِĳŶ݁ķݙĦݣݝʥβŖω݌ڑǠݭĞݯ϶Ǹ2΅әݪݵ݅ݤֈŅĳŀݳʹɻ\t۵۷۹ۻݣ1Ġ5ɞ4ϙ؊ĩͼ Ҭ2ȫ̋ٓݣFJܜېވފ۸ۺ/GambiɗĘ-Ƥ5ҝ؉ܭĊբʧɴ-ϟ͹GÄڙܟޤތ/ŸquesŻƪϕɶک޵ޘƋ޸آȇARޢƔމ۶ޥۻTahitܺߊ̦Ƥ1̪܈̄ߏƌܖӠēTAHߖ߀ߙ߂Guީ܄ϗ2ŭکȄɠɧ 3ؠĘ՟ġߍĞƸ؍Gɯئʐȯؓ܋ڭēChɯ޿ƕ߁ަߜƙw܃ęĠ3Ɓ܇ޕܮ܊ɴ̄ƼGILƮ܋۴߳ަEںɗbӄŃޏɟڨ܈ĞܖٓēPHOПǃǗܖˆމࡀѥ̻̊ęކ࠾ࡈࠖ ࠘ۻKi˼ߠ̢ߠ܄Ĝݕ࠹ࠣ܉߫ܫĮLINࡂߩࡠϠࡣࡥԢࠦϗࡩࡤܞࠗ࠯ۻSaipĖ߸:ċࠅۈ߽ࠍcࠀࠂ̥Ʀŉࠆࢃ޺ŷPЎࡧࠑįࢋѭࢀؓ؍ࠓࠕ࠮ދަİjӄoĈĠ2ϗ4޳̬࡟ӗࡆM߰ϼࡃߐӗ࠽į߰ࡐࡒ/KࠜjƚeƢ࢞ĝƻƨࢇ̋ࢧࢩĉ6ࢫt࠼ƼKWAѥ3ؑҮĢޜƼࢨࡱࡑࡳھuuۡӘۄࢣϲ࠻ࢎCHU̙ࠬ࠭ࢲPohnpࢸ̼ʇۆբ࠺ࠥࢦƼPO࡫ࠈࢗߚࢳܧƙ́Ĝ5ސߦ࡞ࣞׯࡆKOҹࣃߩࠐׯࢮइҹˌࢿࣇईࡱߘ࢘ۻNaӄuࢺɃܫߍߺɱ̣֚ऒܲNߕŲբŸęĵؕ͹Jҹ4ɠѰबथ͹धࡦؚࢭƼसǠNCǒ٘7Ӌ\tɧטӠ݂ाीǣԔ7ўպČۧ˦ि˫ҀŔॆŇ֡ݫă॔ʿь֘ҮΜޣࣕȔume܃࠷Ԥ؈ߍߨŅࡌऒŌ॔िޡाZĩջΙܿ ִݗĢज़\tNॷĉӊݟ ݨݡįॶॸԔ3ЭڕЕݡكঀংॸЏ঎֯ԐٲঊƄকĉ3гš͹҂ӰĸMঋটডޓĮҥٱ঒؜ঔঃšॖĮރŇ॒঱ǒȅʲְֿܿDۑhaə߷ǣ঻ȓȕ݀ʜ˥ীঝলǤӶ݊־ॿুৃূmǒǥȟӷմʔ֌হǣĵ͐ॄۮف֩Ģ্Şࠓ৖৅Аৢǳ৤ׅঢ়5ৌনАهঙמΆঀ৫ৄ৘ǣ৸֑ρ৞ĸৠʽؿԺ঑јķ৩Ħ৽ৗȃݒȟঐĶ਄ȳ਍ड़ল֭Էם֒৵Ƅਏ৭ਛŉҠڕȤਖ਌৶ਣٹਂ֚˓ৼূ৾ԅڅਭо਄৔ৎ׏זভ־ਗ৕ਲڅ਻ŧমਨŌਘঁॷכڎ׋৺ζਰ৬৘੊νੌ҄਷ȉࢱࣕąckźںࢺ3܆߼Ͻ ܓҮशੈੈޡŲ̪९ę࣐ॲॷংॵࣹ߂ਡ৿ū1ޒࣜĩ5Ӝ੭ࠂࠧʔƽ਱ਐ࣠AੳߗࢲNi߆܄Ġĉटࣱࠈ̻܍࢟ष࣢੼Ěࡅٕঁઘौߩ੮ઔ४ગकઊڞf˗ࣙએސࣰःࣲअࡻˎঁࢤऀऌ੟षFࠬ੘ग/۵źजްɜ̩ࢇઓءࣴW߱ࡲ઼ࣧɘ_Mڞ߇byࢄʓޔܭ88اϬ؈࣮ĮPMҢƱશܗ࠾G઺ੴަPߟcࡶrėޯܫ࡝޴ࠇશ૰ܲP࡫ʿʋξҮӜŉġ܌ɶ૞࢖ࣥࣕ۵go_ଇ࢝ܔʇɜߨࡾॎӤ̤ࡊƸકƧūࢢ७ࠂଗܲS޽ϲ5Ģ૵ણܾउӜ҂છϠBҹǴ੤ȕࠀ࣏ઢࡆSɯࣸଅ઼ΩƜĘࠧ঎ĝࠢ૗଒ʙଔછޚ̦ं޴ޏછଞଠ੼ଣପ͹ʗݝƩҥҮ6୐ֿɮDѾݷƖΪҮই଀ଳƼ୒ଢ଼୕ࢠࠀୢଖଥȳ୚ଡ଼ޏ࢒Ǌࠦކ୭S୛ށ୞rҭ࡮૚ƹ੹୤ڷସࣺߵa˙l૬nƚęٳ޲७޶Ǹॱ͹SBૉखࣺFakaoન઎࠸ૃࣱࡨ͹Tܐ܋ƄT܁३ԕݦ ռ˥ঀநn܂ֺݰĲْքăறளٮׁēঽڐֿரனԯɂલރথՓ૊ࣺ஺ৃapजࠧઐࢽ஡ऻΛ߭ࡁŲ઀ࡍ\tT௘֥̋ކௌ௜OઈՔࢲFſafu࡙࠷̩̦ભ૳઀ࢮTVૉ઼ࣔJࣨnżĎ࡚Ƽ۲࣓ࢲM̀ࠜ࠶ĠҞʊࢾୣϠNҹૃɲn̤ؔఌƐॲ୷ĉૃ୕੦కଦЅନԹ୘ēବъ࣌ܓ؜ఢȉଶ઼߲ࣤWங́ŋܩ੻ࠤ੯୑A஥ǠVĖ߶tௐЬΙভĴۛఖਸŞ఻nఽిرʿցݱˑݻౄ٤ైొȃেЈ౑ैݾƄ౔ৃో৯ۤভȊౙॾ੗౜఼౞Ή˫ЭރౣŴ॒ͪౝా౪ݦ౮౒ॉॣ઼Efৃఱࡻɞߥஎढఒ੹ૅझĢ౲जVU੪ࠖ஖߂య؄˽Ĉ੸Ӊ૖ࢤऄಔ୤હ\t","tz/backward.lzw":"Link\tAfrica/Asmara\tĄĆĈĊČmeĐ\n"+
+"ĀĂēćĉ/BaĎkoĒąğĊTimbuktuěāăAĘĩċrgentāĊCatģďĉĄķĕĹĻĽĿ/ComodRivadaviaĳĝĶęŉAŘăŇŠĠAtkŜĜĵňŧĺļľnĊBuļos_AiresťĸŵŷŹŻŽsŝŭŦĖŰŌųŎłńrņşĸŁŃĎƒūĴƀšľĥŪnƜĠŏĐl_HďbourƈƢƋŋŲŀordobđƔŉƤƶƸƮƺĠījuaųħŮĊEnsļŗƚŞǈ/IndśƎǓǕǅapoliſǀĊFƴt_WayneƿǑǘǖĊǮǚǜǞǠǭǔǯǳǟǬƊŊűōJuǃyƯ/ȀȂǻĸǱƎKnoxȄȌȎ_INȈŉKűucky/LƫǟŚlleȄȟuȡiȣǫŬȄAƌƲ/MļƶzƹǑȳǔoȶȖĠŔo_BĐncĦǡ/PǤɀAcŽȽưǾƎƼƷȷǼRŸďioɏ/SǥThŐaǵǼVżgāƿsśċshgaƸtħɫĖɮkhɱŗɪɬCɡngqāgɴɽhuʀkʃɼĊDɹŪʅʍacĉʌ/KłhĎǔuʑʗłʛdĲȭČɬKǝŪŃʞŁlcutŃʖMʓaʝĄɵȲʴɛʤʸJęusaȤmʞTeƦAŚvʖHɀɾi_MāhʷɬSaigonʖɠĬpʇ˅hĬĮʲaŪsˁrʞUǃʀ_PǅŘʀʖUlaǅƸƐ˫ʥĊ˶ǅɁłƴƿt˷Ōc/FďoȥĄ̅ǅľ̈̊ę̌ƮEƬope/OslĦ̎̆̑ȅ̀ʳyļƿˀtƥ˖ydǪȃA̪̬ĖCT̩s̫˂̭̯e̱̳̻ŀ˹ęĚʤ̀ǞĊȟƵƧowȥ̴̲̹ȞHI̸̺͈ɝ̮̰Ą͇ɬNSW͖͒Dďwā͑́͜/NǤhͪ͢ɂǟƸǪͨ͗ɬQŶļ̞˲ͯ͘Ţˇ˘d͏͝ĊSƫtͮ͆ͩ͘ˍƸrɳ͐ͶĪɣʛśͽɬȳlƪƬʹΑ͒ɦctƴΖΊΒɈęΈħ΄/WžtΗŴrokļƧȪl͵͒YǅɅͦnųɜȿɁɃɅ\tɂazȪċɍȬƛɇͬβnɹĒχωl/Deϐ˛ɹɜ˗ɀ˱u̟φĐϖ/Eɣίʤȸǚˀϔϥϊέ̹ɜƨǞfaȏ\tŁųŘċ̏̇ɜWāni̚ʄϻǎŎűƥρeɨǆϺǚϽϨ̹-˗sʩchewǅɜTƴ˛΢ĒЈГϩę˜ϫǼEdőĽ˛БϼĊMƫĽ˘ЩώǑɞ_JohǋбЉNМfеd̆dɜVμƫvęсϽ˱cifĈЍЏđѐ΅ɣЙЛНиǐǼWˣteɡrǌњ/Yį˛Ϟ̐ś˚ϺˣȤŎТāű˂ƮђєĈϧЧ˫ѳƠ̈̄ДѥrIͻǔϴřǚФuƾʤĔƣ˘βĒEgypϪƛ̗β̚ϘҏǞơ\tEżύĝҝ̛̙ȟȺңҩҟBˇϷϳȭү̛ˏɫųʶҶ/īĐsǳ̖̘ҟҬƶңGBӂҞҫ˛ӆĒӈ-ҥɎҵẗGMTĒ\tӗT+0̖ӕ/ӜӚӜ-ӟӔӖӘӤӘӧҜӡӣӏŽļͦКˌ˛g_ʧʀĒˍʉӷ̢̄ѾR̾kjřiăIc΀ҊʼɬˆhɃĒIɃʖʾrˀ˂e˄\t҈ĐˇɜJńĕĒԢĎĕ˝γy̠ԢpОȭѼѕ̈KНԆȤͧԴaԶeɩґĸTćǹĒĀbyǏƉԿiǃҍ\tȳxĈoġԺaϐѥɜʳȶϿՍeՏɅՒԆSƬ՗՜Ր_CitȃՎՐӢļęѺ԰ʓѽ̲̈țш\tNZѻղԲŎɹΈģĒչ-CHA̷ЪĸϙnюҁNҌjʻώʸSɹʀɹiĒPRCջѓս˱˚˰aѲԱѾ˗őՇ\ẗ֦ɾuį֚ռѾλp֞ճվ֯Ť֬ҽԘkֶ֠оnֲ֙֫̈̚ɉų̚ӊҪάďˁw֚ǝͼҵӃҫͲа֫Ǥuɰl˝˘׃ĒRO֝Ԏ΅eƫθ\tעKʖSʃǛƴ̍׮ʀװӓҜוǒ̹˹ϢĒTƬδyӠ̈U̶Ӛ؄ֈйǼAɄѧ֤ȥUSċ˷И֪ɇŢ˧ĒؐؒeʯǖɜPɡļiϹؚȯiz˛ؕǑˏĉѲ\tؚCЋհ؉ȉǷǚǒض׉ǝǟدؑ҅-ȊتǼуw_Yƴăؚ҅ШֿѾӽǝϢʝؚƨНiiɜفʗȍȏؚفЖŃrδɜϙ̫oըؙؑ˒К˙ԯشŉ֋֍٨ȲеŃԽٮĠȟƄʀˇžؽɈ׆ׇٍ֤Ϡڃپ֨o֪EӡUTC؆ڍ؂/ڌڎؙЄ֍ˁםהӋٳsνĒWЖUڑړӚZّ","tz/etcetera.lzw":"Zone\tEtc/GMT\t\t0\t-\tĉT\n"+
+"ĀĂĄĆ/UTCČĎĐĚCĔāăąćUCċčď\tħēLinkėćĒČČĒ\n"+
+"įıĳęěĶļUniversalĹİĲĥĽĜĶōZuluŊĻōĵŐĘGreenwichŖŌśĊĿŘĊ-0ťļřČŪT+ŭĺŦĴŨŚŸTŭĕĤŧT-14\tƃīĒƂƄĢĖŲƂ3ƅƏĐƈ13ƋſŻƂ2ƅƚƒū12Ɩůƞ1ƅƤƝƁ11ơƍ1ĎƭƇƞŽģƢƁ9\tƶƧ-9ƫƀ-8\tƿƹ8ƼƘ7\tǆƹ7ǄĈū6\tǎƹ6ǋƈ5\tǕƹ5ǓūƄƄƹ4ǚƁƏƑđūƕžƴ-ƚƜǤƁƠǧƬƅưƨǠ+ƦƦǬǵǴƜǫĒ+ǮƳŲ+ƑǣǽǦȀƀ+ǝǝǸǟǯȈǗǗǸǙȎŻ+ǐǐǸǒȔǌųǈǈǸǊțǽǁǁǸǃȢĊ+ƸƸǸƻȨųƯƂĞǸƭǴƩďȷƧǵƪȯǵƜƟǲȾ","tz/europe.lzw":"Rule\tGB-Eiră1916\tonly\t-\tMaĔ21\t2:00s\t1ğ0\tBST\n"+
+"ĀĂĄĆĈĊģčďđēĕ\tOct\t ĜĞĠĢĦGMĪĬăąćĉċč7ĐĒĔĖAprļ8ĝĥĢĤĠħĩīāŇįŊĲ1ōĵŐ\tSepģōĿġ\tłńŞĭňİŋ1ŖŦķĘŔ24ŗŀģĥŜŅşĮŉıČŸŎĶĖũū3ĦŮŁĄŲņƇŶţ9ƌŧż\tƑƀůŚĦĨƅŴšƉčƛźƎŪĝƛƓŰƕƦŠƈŋ2ĦƬėaŽŖƱƣƄųƵƙČƸƜķĹĻ25ơƔŃƴƘŢǅĜƺŒŔ 3ǍƂśƥǂǑƩěǇĖǉļǙƱűǐŵǒ922ǢƻŽďƿƃǝƗǪǠǮƺǤ ƾŘƲǏǞǷƷǙǕœŨun>=ĎǚǀǵƆȂĲ2ǙǅſƭūSȈȊȌǧƳȁƨƷſȅŔșȉ=ưǾȎŝǶȠȒǌǅďőȆȥțǲȩǴȫȐȭǅȯ93ŖǣĺȇȦǮȝȀȬƶȒťŏķǖɃȊȨƁȪǩȻǬŖǅƛȲȤȚȋȶɒȸɔɉČƠȣɏȧȍɠȟɢȾĜɣǮɚɦȜȷǜȹƧɫ3ȄɌɰȴɧǳɴɡǄȾȢɺ\tɎɼɲɟɿɪʁ3ǌɥɼɑƢɩɈʌďɣōɻɜʈʒʊʔǫȿǯʆɜʑřʓȺɷƫʄʢȦʛʥʝʧʌʩƍ\tNovɱɞůǨʋǫ4ƹʄFebɦȓɨʯɶʁ4ǔʄĘĔɼǮƣĢŮħDɵǃʽɭ94ǙőugɦƛˑǛƤ˖ǟŋ4ː˚ȖʅȳɜːǾ˓B˕ʀʽʃʳƏʸˣʮˤ˴Ʃ4ʎʪȆMđȊ˯Ɓ˱˳ʼ˾̀ʳJāˠ˺ˣǁʞ̋Ĳ4ȱĸɂˏǚʻ̔˧Ĵ́ɛȦʤ̒ȏˈʽɋʳƞʭ̥˥ȑČ4̩ŧɎ1Ȕ˰Ǵ̞̖̲̉ɍ˞ģĦˢɓ̊˧̼Ėʵʷ ɅǾ̝ʰʽŹˌƼģſɾ˼̖̓͏ʳǤ3ľ͋Ȟ̺̰ʲ̳Ȇǘˆ͕͟˚͡ǈɂƠɆƖ͍Ʃ5̀95ɯˬ̢ț͓ɳͦͯŋͱĲʹͪĻˏ͜Ɓ̧͌Ͱɹʳʫȵͥ̓ͼͿȔ96ĦɁ΂ˮ̜͞ΏČ5˶͢ͷɽͺΎ·ͽȽ5̘΋ɝ΍̦˗ͰͅͶ͔̐΢άͽɗͳəίʇʹ˻β˦ĲΓʡ˭̣Ϊ̮ɕ6˙6˜ǰ\tlastȥσ˽ŋφξɀ̙ΖɄǦ͝ɇΚΒſČ6ʘϊʇ̤͂ͧ6͘ŧˁ˃ƋαΫνČ7˩8Δϣʚκ̭ϒĲϲĲϴ΁˄Ϛ΅ΙΣϽ˙ͳŻ͑όώϐƣuϹ̓Ľ98˙8ηǤˏ̶ĠЎΆγБ9ͲЇΕ˄̆0ЛȞZđăEurope/Lđdđĕ0ğĤ15 ĖLńģ8̱ Dec Ľ зŀ\n"+
+"\tэщƃȑ%řΒ8 ǉ͉7ьюǀĖƥϻ1іĺǘѠŮuњļъłȭђĲΒѧяśEUƳ/ǝLink\tЫЭЯбгеѼЮаJersey\n"+
+"ѷѹѻЬ҃ѿnдnҎѽаGu҆n҈ҊҌѺ҂ѾвҒҁҏѾIsĂ_of_Ęn\n"+
+"ШnЪҥаDublѸж:ǋĥм\tоTрϴ A˞ч2ѧ-зҽěҿDпƊ6 ˍ͉Ѥĥӊӌ5ҼѠǀIĩţӓїшƓѯѩνѬǓухч6ӦѐȭǏ/ӟӂ̰0 ϫ͉лŮӯśӞӠ̰ӢѢ ӓӼэѨƃĖǏ̻ӔƼĽԅӘԇѰ̀ƃӴԌ͇ӈ͉ԑюӧԊӑ˚ѕǖĽѕԆԜӰɉӲԖϠѕї2љԒќ\tԪ97Ѡї͛ԚКӽѪԨńӳԀ9ѮԒӧѲѴӴǞՅϱōČϾʙʬļЍ̒SՈѳՊǯ˸ЊϏȈՐĥЦ-ՔϻϩϿĽ՜КƲ՟ƗՉԴˡՁǌȗϋύ՚ҔĽ՝էՠՌĜmaxЈŔՙϐմզǀՓթՕՁďպռТտ՛ցХնƗWćЬϻՋВϵΨĜ֎λքƆ֒Ѽ֕՗Ʈ֌ճˢΔǞ֟֔ϱբТդ֛֐֞֓ŔϱլСŨ֣ձր֦ĕֲ֨Ѕ\t։սհЋ֍́ƃ֝ĭֳ֩և׀ջϿ֤եʺּƗC־ӒπŔͬ3ƃփǞו֠חǺɂ֮ǀ֧הזŌţϖɎ̃ʬǌԹʜĦ׈ăן֪שƊϖ˸׭țׯȝըƆ׵׋ʾטՐļα׳\t؁̖ǹʄ͇؆؆͝׿ĭ؊̰ΉƝ͑2ƛװ֜מר˛ǯǻſ؛ְؓ؞ϟ˚ծί׻ȋؐʉײ؝נ˪ؠףǮأצ؀؞̌ŧ˸Ȍضדظر7֖ՍθʚحױŨذ׶ق֢ūאؾؒ״ר7֬ϗ؅ِي׋7ֵة՘ֹ֍׾ֿׁٙĖƞُ؇٢ČΒ׍֊ٖ٧ؑՈٓك֘ρțԈӾׇٱفήٞׄճӧطĭEٕٓǻ֚ڀؿڂٜٓķٽղٷĦځЪרГ٬ׂُӧםթר٫٤ٮٟٿƃڒ\tĀssiaţή̎l؅ȓלƃMӠǞڥڧکƊήфcĝŖԓƲMпڴuڦڨתǯˍƟľ˓˓M˳\tۂۄڷčٕؼď֎̒ڲǐڵۅƊͩ٥ęۉĝכśی̹ƆۛےČǯڬٗ˓ښۧۃڶƚʡ̾ؽڈّڤ۱ۜǬˋʳϫ͒ۢڰś؈ۨȒ۽ؗŽƒۣƒڱې۲ǓٍٗڙٹƗ܅ܐעĻ֮۷܎ۻڕՌ˫Ɏܚ܂دܕۺےܞВωچڐؤăܖВاčڍָپهƔ۸ܯ8Ƚܲ۟վڠܶՒܜےǬۇЉֹaܙگٸ܃݂ѭ،˷ܴϏ݈؆܋ܭ۹ۑѭǦ01ϵ٦ܿأۯĭܯȾѭٝݑր١ܥݘ٪ǲݛϵǤٯЂ՟ұăWEӂŰƃՅݶђĪݴ؉ݷэǀ؊CEݽҰЩėށ̒؊MކsݾމEދ˓ՅޓއƗAlbanۻ؃ƺ̎ҔȌܓ݌ޙޛޝޟݏŧ؎͉Ɵڢډăޚޜޞے؟ƺƞؙơ݁ާ޴ޟؖɍȆݜޯśڣ޳ީے7ΝЈĔ ſޥܤƆ߇޵ϻߋ֭Ǯܛ޽߈ϻغߌ؅ߐىߚߔϱߝߗݹ߅ޱʅިߣԴ̠̪۠ޮߠ؈ߓۻ7߮ŧǻǙߙߒ߫ߵήۈǼߧԔަ߼޾߉ήǻߘް۸ߴ߉ٕࠀď߲ǞࠍաسܙĜ߻ĭࠔִ݅ߍǌࠒߢߵ۞ַƐڑࠋࠓ߽ܧʿ߯ߍߺܣߡࠅߛՌࠫ߸ףߏࠧࠡܧ܇߁Ǳࠂ޼࠱߬ڕƺ˸Ԯ࠾߆ࠩϽޫߞ߱࠯߳ࡈՌࡊ֭࠮ߨࠌࡏܩ؄Ƌࠠࡀܝ߀֭࠘࠸࡛ܧߖίդࠒݿҠаTĉޝċ:ČҼӷнԟ14ѧԱޅӵ˚ӷޢԏࡶƃࠔޅݽϽ4 ڬࡾѱѳࢁސވҲҕҐAңrrکъ6ğࢄࡲࡹݛѧԝ\tݶࡹ̗ Əǘ0ࢇϵࡸϽлżѣװࢦѻࢉޏǐӆώrۻǆɥ ǌ٨ޙۃtࢵےࢷʄؼЁגࠌࢽࢿ̖߷࠼܀ࢻߒࣇޟʖԠϿʇΘࣆࢴޟήܡϸݡ޲࣏޶̴ٕǽخ࠰ࠚࣞϽ࠴࣋Ԅ࠾ࣜʅࣦ࠳ܑ2ŖܛࡧҴ/ViennڷğӛƸҿӁрȾӅœࢮބࢱȒࢥԇǀࢳࢾۅࢊࢠӷԢӤŘआ־ऐ̖лओ2؛ࢮރEՀ˿ऄrĽजӥऋԉހࢠӮनśऍࣈघոࢮՅऐࢌҳҖ/MѸsѺĤͱ࡮ӓ࢙Ӄऊނ:;٥ԟžԍy͉ѧ˓ĖޓࡹƑࢅȈӖѧݕ٥SK̖Ѡࡼࣱख֠ऱ˪॔lч3ॗƃ܅ڲKहSDѭॄ߄ݝग़ѭѠࢫԸधэۮݺठࡹčࢢŪ͉9झԇॏѻށ٪जࢫؙԓsॎ࠯ޓՀǬঀpј঍এś܅ޗސĝݛॶԎԮ঄эक़\tFݷǞBelgiumۆ޸͑ ؚѩ؜Ɨ঩ফভয׸۳ТS݈ٶ݊ࣅনপবম۳঱Ǘľ܋শƆস৆঻ǬࣨĖۿࡴ܁ࣣ؈৏঺उࠖۢৗৃষ৅৛ܗֳ͓͐ৌ࠿ĭ৚ে৤͙ɂǋয়ܷৄহ৬Ǭࡑϊৰূ্৪ৢ৵ǭɊ࣓ীج৺ݖ৫৑˅ɥǡ਄࣬ਆȒࡣ޹ư২਌৽ਇߥࡤ১Ρ৙ਔȒ࣊ɰŤৱ৩ă਍ǅࣙͣ਑ਙ৳৐Ȓ࣠߂ਘ৘਩ৣɖĲʠাΗ٘ৡ৴ਇࠣɎǡݠܔৎਛɣ৓ί̵݀ਓਹਲ਼࠻ਞؚ࣍ৼੈɮ؄ͤਾࠄ੎ਪɣ࡝৸੍ۖਢੁʂੑڽਜ਼ħ੝ʍ݅י֚੡ਣȾਝ੄ੌਨਸ੖ȾਥǗآ੨੣ࠏؘō੓ߑ੕਱3਻߂ਗ਼੮ੀ੏Ⱦࠣ؎۪਷ઃੰޠˀ˂ĝ׽ં੼৵4ࡣؼ੹ݩઊ਱˿ੑصੵ઄છࡃƮؽઘ઒৑̗ࠝĲ੆ਿથࣉঢ় ગٰࣴसBr۱পŁ࡮7:॓ूŸϴ࢜હ઻ϵBӑЕঊęчӝԥ࠾Ė࢟ţࢄԘǼࢮĖࢨӒोૉчѩॠ֔ॢŸ Ԙ1ӝЍીǜਛݼজӶ૗ࣿঢތगई̰ࢄࢣǘࢮ਍ॢقळࢰޘৎā˟ࠜ৉ۡূਡħૼϻࠣܫۗڣB଄࣯ࡐ࣋িtুݕ਌ଋࣰؚ֗ץߩଊফֿડūࡅװնલҐSҫۜ઻כĎऀૅિनΦॆ̘Iૅ˚૟ʶࢤঘϵ॑؋଴vԙǘԛ૭ॡ૯ب૓पङण͉ାĠଷķହִԍतॸ܋ୋଚ˟ছࡹ8जࢣ2ӓࢭঅƃ؊ୖॵୋڃ֠ୡ٪ԯॺݺѳୖמzхhङ੟΍؈C୮c୰̰ਖઇ࣢ৠ؀୶୸˚੫ࠐ୳୭୯ભ࣓͠نત״୿̻؄ǆ੡୵ஆ̰ਬֳ୼৻஌ஓͨੑϥٹଢѾP࢓gҙݹ5઺ઔପӵܺॱз஦:ઔķPଲԶĺ૛ŔॢநࢣŤ૬ރ஍૶9૸ހૺĭфnպrऽĳન৖ଁ࣬௅ே௉ȌଝƟ܊ࡠ௄ࣹௐ̖੃ۈкܬ௎௘Ƽ௉ઠ̡؏੺ࣤă௏௡ୱǕ۵ઐݲǞ௩ைભ঱ߍ੧ઑ௨௠௲ԁܑ֮஋\t௱௢߿߰ੴ௷௿௹ఁ۴૽Ħઉௗெ௪ஔન঳પ੔௸ఎ௺࣒௬˟ࠁ٘ݴ ࡨ/C҃nhagࣹԈिࣿઽЕॱя఩ࡱ؉ଲࢄJޝૉѯǀఀூ૨˚ज૑दक԰ୟ૮ࢂ୹େୈોۗహॢବћ୪఺ޑҲӅtόntic/FƼoăӋҼ઺0࢘Ӏԟ0ѕఴnĽĜԻķ૎लՃ౎૧ǐThƆ٪І͵ݞܵॻśDǞ౳౵Ձ౷َܳܿ˓੻ă౿ĭ٪ݚ0Χٵਃ࠯౽ƗಉŋݤƸ಍׏ಅް؈ಔঝ0ōڞƞɼ୼̒ಒƆಝಗಠ׎͆ʶɱ޻دఝAm҆౗a/Dޝௐsతv౨-й4யరँ૖ڬ͉8ӊতWGୗऒœӭଢ଼э-ݕݻGౄև૤ϵȀಱಳࢵcಶScoĊsbysȈdмĤԮॆजઽĳ।ೇӊআCೌࣧెԐ୊ԇ-˓ބೖ఻Г୏ংӊǀޖഀ౐eӅೝವ/Godtత˃೓Ҽ࢖Φனӡೲय़೼ೊ೷࠳೹೑ĕ೔ѳೋއ೜಴೟/ಝ-ುʍğѕ೰଩ೆജ೒ುśಝAധޒࣵTalҹࣺƂ੾ऩೄ8ౌൃ9ऩTࡳѕϫஶ౏ƚ।ࡾൄśĖൌࡹӎˍୋॐঈࡺӅӇԄ२ൖėॴ̰Ѡ஺5൐ஸ૱ঁǭൣĦ४ग़७९Ռঃঋ೺ġୋആॽϽঃ୚ࢄॹ޻ୠୂВঔ͉Ӊ୞࢈ই೗Ձ଻శඊସށಗजӹěୣ୫ࢱǞFѸ౔d؋؄ࡓࠃಇথඝޝඟ̰৷͚ࡆߩගĒටֿ଍ܽ׃ڏ౻ඤථඞනВ͵ڎϐݕ֧டаHષѸki൉೮ങŸٔ૗͛ൔൊ΀ĖHॉটҊඑඥදҒඌഁ१෗ޖකҞࢎѾසlڧѹ෇టżࣸతmүƗF࢓ncŷ੫ޢ࣌਒ફă෰ޝෳӡঽٖࣔ਄ڣ෻ෲŷంŽਮو؈ค෽়૿ఒ਋෹থ෱ญƪ੥ڮ෸ఔณ෼Ʒ੃৕ฉ஘ปฅড়ܘ৞ขතดƷ੊ϊௌนභษ܆ঢ়৹২ฃะǅ৷޹ࢺฮ௧ยต৿ɣϖЗਂোٰ෯ึǬ੘ۈ୛ਠ࣬ฌȡท޺ฑบ๎Ȯੑภଂ๔Ȱࡘŭ฻ซ็ࡅࢸਧਯๆผਫࡘ๗ํ๟੿܉์ฒ๙Ⱦ੃̴Ʌ๝ඛ็͛ࡘƾ๴๤ร੐ࢸ๳అ๯ɸ๐ฺ຀๶ࡣܡ๜຅๥ɣਖƞךຊ๼੪๸๭๓๶ੲǥດฯ຋Ⱦ੷࠽๒ບຑ੾ࡘຄ๣Ɔກઆಭϭิศປઌ۾઎ৰଠ๩ອหࠀׯӧی๵ິમ࡚ۖĭ๯˨ทఒھູ๻ตແƺޭص଒๮็޷৥Ưه޻M຺ຑ໏৮ܙآ໌ຕອງͣǙଠ໅຦໎ࡣǻڽǀຳ໖ਖܡઝƃ໢຿໎ਖەǥ௖෺็߶๐໧ࡍ໕ต໸௓๋ଈּශ/PƼiસ0ൊӎఫॿࢫк૙и૤༊ĜĖலࡹૡഃ༘Ѱ1೙฽ݵୂʾ॔౨ࡴ͉୒भĦइ೗நӆgӺ༝๔౱୆஺ଡ଼༦ॅś๔૶୨̒ऴකǶ҆պnĔ௻ɥௌఅG༿ޝག஁મŭๅȐ཈ཁஎஈਵՏ௾ཇrཀཊ̱ੑď๺ཏམཉஎ௴ģ΄ů໯Ňཐཚګ՛޺໛ඤབྷཙ͗ຓ੡཰ཡஈང܌ລĂࢢʶࣸtݿ୹નž޻ཧོvཾྀبࣰſ཮௧྆ྈމ້ཱྀຩ஗ଡ഼ળ҆ു஥כ්ࣱЕ3ण൫༠ࢪૈॊોƣྏeཿމஸब༶łཀྵ൑࠳ுवఝటGib࢓lt͑౞ěҼౢെӄ༬ԙ঵༝ёѓ஦େ༤ྦྷऩ૕රྴ༽ȐĊхŋ3৷۬ય࣫ฒG࿕ต࿘௼࡟ࡔȁ࿟˧หຈ࿜บ࿞e࿖චྒྷ͈Ǯ඿ߩ࿬࿮ؕทƠ຾Ň࿦̖੘ءඬ۸࿵ต΀ޡ̏ࡥ໻Ƕ࿼Λ৷໊က࿥࿭໽໫߂ࠊེ࿻တŋ7୺ಭ๋঵ݖဂဘ੫̴ཥมဟϻ੫Ǥ߃བညԴ֖ٔ଎ஊཆါٌ໿ϸڣဥ֫ྋ\tഷڑ࿴ဲ๫؅ൊ݋཯ှଖಯွဗࣧੑ࿣ඣ฼့କ໿ࣲࠧ༃Aഒࣹʥ3ುʹྞͳඇࡴൔၙ͵Aࡳӓഴѕъ༜෗ဥ୦˚ѠԢƑࢮဥ൬ెࡵၩ࿼ၫГ඘ෛǐHȈgƼཊƋࢸ֚ྍ؈ၼnၾrႀ۔Ʈ޺୉ြ۸ႆႈႀဿ௝ႎଂ႑ၿৈࣂઢׯ࿳႐ၽ႙ǅ๱ͣႝဈƆ႘ႉฤႛࠥ໴࿤ƗႨཚຍ߰ไ၂฼Ⴐ௫؍ಭ੒࠙ăႷགྷ໐๷௦ႅႠႩ௻ན฀نఌႽჄཪ̖ηΨఄပ\tႾͳႣֳરგე;ล˅჊დ჌Ϳا5ة๊໠࿺ჟႇႡͳტة߹ܬڣლ෵՛ࣔھ࣬ჱܑژ໵შ႒ͿཫҔჴ໨ฒლټݧ֍႞ǞეϾࢸۖᄁ݌༃ଊdaЯώƂĎࡰၛӷǉྡྷ೗ŸࢮႷஸၭ೏Ԅӈିރృ఻˿ᄞრోӷ୚ѕ஼౎वƗIෳඹڸۆ৔઎்۪ฒᄴপධᄷნ֚ଘ۸ᄾᄶۓǯઇᄌჺᅆᅀઅஏ๢၌؈ᅍේɣຨʷႍಆߩᅔඨࡺǯۿັබ฼ᅜ௚ᅉႺ໠ᅚᅅᄵᅎˊໂص׆บᅤ൧ᅦ࿱ב৲ᄳᅫᅕ఼ໂ໺გᅲᅻნׯֻᅪᄿᅺ؟௻ඳᄀఅᅿᆇ࣒པ̅ᅯཎĭᆌ֖ϡုՏ֯࣬ᆌଆͫఋᆃǞᅿ;Ϡ̘Зˮᆑ௯ᅸᆅᅝᆖნଗ઱Щ౒౔ౖౘR҉kja྇Ѻಿ౟࿁ྞ3༺ᆼ೭4റڤ౤ೈ೼Ӟᅹඟӟ೗Ϩେ7֛౫ԞǐI྽Ķסʄ෶ͤဝᆚᇗႀဧף။ᅷƆᇖിႀທဇᅾᇟڪܑ࿹ᆒăᇦᇘᅈ૿߃ᇝᄽᇬ়۝உՏဝڣᇲ႓ᅮࠂมሀႪ߯ŽᇣଂህႢܑ۪ᇾᅛᇹᅞစޣࠟᆋሑர௓ਟሏᅅሗဒǗ͊Ⴕᅓምልሕᆨᇥሗஂ͑ਟ੡ላཋล࣪௾ርཛᇵࠑሖᇧརʄǻሥ୽ᆓሗٕᅠ஝ᅱሾમࣄᇤሽሷᆣϕߞˏနᅒᆠሑ6࣑6η˸ቌဎᄳቐࠣᇛ။ሊሑ7௛۠๷ყር቟ჸܿႼԲ቞˙ϼ۟ˎᆦ࿪ඤቤหල՛ᅄ቏ቈԴඪᇢ቗ሧቸ7੘ᇛජቝቾΑߊಃපϐቨቤਏ۠လႦቇᇳမׅ۫ሃኃኑȽٌկאማቷኑሩĔᇯᇫቾိηۈቖᇷቂቾڅቻኜቘቾࠣ˸ኡৃ༃Roಳݹ4ැुౣபቑඇ൯ԇзኹଯķRଲྠ૑Ѡ࿇༧ቩሷஸఽଵేీྯ؉ᄧࢠళāࢮህᄬ࿒އ෡టኵ኷టV݈ವүዟࣵዡषଣޝҭ༆noǞL݈྇ܧֵ̘౹ڏჂዲዴܝዷኇݱኳྗҐRiၾൃ࢖ྃఫൈĤ3ጉ˫዆༗ԡ೏༏࿎ጎ࿁̒LՀ૞༳ႎൔጏዅࡳঃओӗ೻ॅ጗ྃǀጚ༗൷ྥज༵ገጘĖ጑ਜ૗ૡ൜ইऑൠ༭ࢹ൰Ż൦ၬ൓ዌ༩ᄨࢄї̵ጾ൲६ڲ൵Вጭत֤૬ᅢ঑ୗൿঁፑං˓ዳtድၺѭᇑ౧ॖෞ඙ࢂಗӷඖீ෗൝ӂಗढ़వ्፣ၺश෢аዤduzݹȿࢗၛዘүዌ૔൞ၸዌ༼഻ࢍዣilޞۃƂˊीķ࿃ॱ೬ျ౬ࡳōൔӛጎķKጢѡtĽ᎒࿏൞ࣿೆ1ඉ୩൤୍৒᎞ч፩ዔᎁጺ࿅૳ԇত५ड़༢͉ၴዔፄ዗ጻፉܦ൥ፋ८ॵഃॸዓ޻ർ঒൨൮ঃፙూ୥අᇈᎨඒॾѕঋঃૣᎄૹ఻ඎԷӝ՝ጸହಗྠ፡Ľၹ୬ƗLuռᇙࠬ෷኏ăᏪᏬொሯᅃჺᏲᇭਉ๹ᏰӀᏫᏹႫŬבݖᏸฎ௤ث႕੡ᐄᇴ᐀ᐇ௮ሼᏱ᏾ᇻฏႴ቎ᏩᐑถሯႥႮƆᐊࣁຯϬฉଂᐝ੃Ǥྃଠڣᐝີሪᐡ࣬ᐩาઁᐛĭᐝؘุ຤ᐕᐜᐗ৿ล̛༁۸ᐝ੘਼ᐔᐢᐹ࿾̚ਸ਼ᅩዲᐹኌŽᅑᑃᏳጩਲᆏ=ᆧႏᑉᑏሞļᐶᑎਜ๛য়ᑛਤஜᑞᐭᐹகᏯሡᑖȒဿஐႄशఞࣵᏲemboЬ˟ӌമኻೄП፾ࢮᏸ૝ѕԘǋ༝ᏸ༱ɘᎬᄣංӧ਍ᒅൟӕ༤ጰᄦ֠ᒌஹঁ૞ᒐǴਛ༹ዝࢋƗĘྼ߉้͑ቢఅᒞ྽ϻ੘ࡄƛክƆᒥ߉ໞለን࣬ᒭߕልስሦĭᒳߤଅᆗ׼ᏈฒᒹԴȽلቕʚࢺჺᓀᄊჀཥ݁༃ᒳ஭8፼༌ወዑजዋዔዛ༠ዐ଼ዒыፃዖ୆छᄰśᓘ೗ቿᏅၨዔᒳోᓨ༻Ꮫഉ፴ఠh༇ѸaЎाࣾೃଫᎡუķC്Ӹ˂Ľ൪नઔጲħԟԸഴᎺ޻ዡߛၫ༡࿅кൻॼडढ़āĽ༺ᒑ૜༠ࢄ࿅žᎿݘ५൴॰ጾख़ज़٪ӷӕྮ޻፫ୢ෗চඅᎧ޻୤֔ၫԴᏧකᓍđaೢݹؙ઻೯ኼंটतᔒ዁ğ༓றࡳᕄ౩༯ะᒓлጝᒗ༷ะᒚᏚ౏ǞNྪ஀௒͐௵ተʴڳƗᕚഒ෾Ᏽඬၢӂᕙᕛ᏿Ί઀΍N˥ᕤᕜᄄūራ͝ᕩᕫᕥᇺۼ࣋ᐇᕰᕲᕬᕼǡኚձ׭Θᕹᕣᖂ৶ทאαᕱǐᕳȒ˩᎚ᑒሠגᖉƆᖒǅኀ՛෰iুΡᖐᕺ஀ྃ૿ᖎᖢᖁᕻǬਖ෶ᖟᖡࣣᖣᖊᖫ๋ɣ༔ƻགᓆᖱᖪ஀࿡ལ৿ᖏᖼਲ਼Αᖕᖸģᖺوᖲᖚᖋᇀྂᖗλᗊĭᖛੱናڭᇪᐷᗒᗌ֖ຢᖖࣕᖤਲ਼εᗜᗆ௝੡ᗓ௣ᕮሟ஄ᖳ஀ᗧػઢဵ༂ᆰటಲώ҆ᄑযз࡯࿘ᆿᔃэᗹൊ࿡ᖒөੱೲᏦᕇǆᖒN༠ᔩૈ଩૚ᓞୁ༪चᄢిጦ̒ᖒᕖዔᎅᒜᖚೣw۠ᏭؗĚФଂʵrᘟᇠᇮࠦᐱăᘦᘨႸᗨ؏ᗥᘞᘠྊᕧ௾ᘮᘵ5լ6˫ಢᓅᗪᘝᘧᘺᘼݦȘᙀᘸᘴཊ6ᑘ৹ਨ༃OҨoኸ܋ၛлᏥᓬǀᘹĔஸऒӇݜ༥ᄥᏏᔛᘒెजഢᙚᙊྲ֗ᒛĪየसᙑlᙓArĺ౗ґgyeƼ೦ࣹǞPoᅇƋᇻկ̬ڣ ᚂ႔ᗈมᚈᅬᒯຘ੡ᚍᆆ໥࠶၆۸ᚒᅝᗭ࣋޺ყᚘᘰެႺቜᚇᚁᅬအਭᒱฒ᚞Ⴟ໘ļཌྷᒷăᚪ˚ంߍ͹გᚱཛჇᆥཕᇰ\tᚷᑥϭఅᚷ႔ཹชᙿᚤᅺ஦ናճФᚌᛇᅝᛉΛ׹ᄅޣᚼᚱ5ຝ௔̑࣬ᛖࠣۈ๷ᅰඤᛜξᖷᚺٶᆟƗᚱοࢸЙᛅᛨᛎᛣξᘾ۠אᛠ฼ᛩ˩ᘽጀܿᆟ༃WƼsawƂžҾጋᎡᜄ൤Wࡳचൡᗽୀᙤ఻ጜᒕӓጰ˓᚞ၫǭ༢ࢮ᚞ᙝᎸȓᙨᙣஷᔜ᎞᜛ᛯᘙ̒׊ᙫേ᙭ᛆrĻᘡķ෶ራᑬᛮᜮᕦႹ͈᏶ᘬᚽೣᜯשƺᅠᏻᚶ᜽ᇭܐТอᛕᝄᐅሇธᛁᝊᐘઍ˃ࣱນᛶᝏᐞϪະᅑᛍ᜶৭᝘ᝒᝂ᛭Ɔ ᝜ǬᚏȜཞĭᝣ᜾ᖦሹɂᝈᚯ᜼ᝤ๋ངຉᝃᝲ࣑޺াใਠᚣᝲᇩ᝚ଂᝪ๦ང๨ᚩ᝖ᑪ௕᝶᜾๷ངᝠ᝛ឋ˙࿡᝺ଐਃຫᚗᝏᖾ௤ޮຟ᝕ᝤၘੑ᝵ᝡᝩមا਴฀᝻วភឞႲיញអᚰមᚦ஖᝔؈គʗੑǦᝨឰឞᛘ๋វ឵មᚊ឴ᜭឋᅗр᝼ߩាሒᝑĝចบ៊؃ᅳ֭ᐶቆុ᜾ᅭࢸ។ខᝏແཱྀᆉਂណ៛ᝤ່௤৹Ʊཧ᝱ៗ৷༬ᗇĝᚑៜ˩છន̅๗᝽ៗᑀ߂ŭ៧܍᜵៷ୱ˝˟ଏ̅ࢺ៯៣ا៲θਂਊ៻ś໔៽௳௤᠂ផᝎ៣ᇡ΂ឨពោདྷ஛Վٶዻ᠏̰֖ኹᇼ᠞௾៊5χة֙ఓᛡᝏᠨξჭᑆᆘᠦᝏဳ໐ଟከᠭᝤᠶݐଞືᝉᠻεٛᒼج঍២᜾ီᕧᡆ៶ᒻ඲ࠤኈׅᡀ᜾ᓉᝌჹដය୘ڗݟᛵៀᝤ8ᒡܾܵዻ༃ѷ೥е౞጗ᗻጋᔋᡨ࢖ᡪᕂƊजᙘ౫គᒌኾओྠైࡷ൞߶኿ӓƣᡴᝄᒌᡟ኿лˑ౫ᜩᒌও୚ᇑᢇుඋॢΒᓧ֎Ѧ౯උ౱ᑭၔᆲᙷAzೣeĢᆼ˨ೂྞсэഅॆമᕁී༗෕Ꮉ೴ƃគAZOᇎӓᡸഢᆼśᢲᢴ೗ᢄ୚ᢆᏇᢺĦᜩᢳᢵᏜ୙൮ᢍᏇھݻඅྠঋѕᏙ೒ആѳᣆᎆഊᢚޝᆳहade࡫ĕŚ઺ጎᢥſۏᇉğᣤኻFᕋ૪ᡬǀគMADᢶె᡹ିھᡵୂᢿ൮ᣁᓝԦᢗ࿓ݢ኶࠲ȾᐴĚڇఅᔍ߬࿡ᅖᠤᡅᒫᤄཀۻຂᤏ᠝ᑓڐมᤌࠢྂ੹ყᤜ߉ኰᛓჯߩᤡ၉៙ᑢฒᤧ࣯௓ُቶܕᤅ߬ܲಋᡚᡢᠹ฼᤬ಁݙ᛺ᤷᆯ౑టଊ୷Ƽᢠᜯயುॊ༌ழtࡾᔅጊᔇ॒ᔖ॥ྃୋᤧၷᕌঌᏎś඄ඍᓬ˓ᥖඅᔋޕ־ᔶ༺ޕ፤ࢋྶࣵKിѸѸg࢓ඟմǭᜅᡰྟྡᢏ༨ᓟ୹ѯ᜖ᜦ༠ᔫ႖ፊᔣ౶ᢓංଠᔰ፥ঞഃডᦇতদഉᑮस̃sೢᜂԚƑᄗᜆ᥽ૂŻၣᘅෝюĞᦙᇄ ܅ᘃČᘅጥభݕᦃፌᖓᜤԒআᎪ॓फ़ᓬᦂᏀᔢ᦯ᦅॷᦫ঎ᦲ३Ꮐᔶᡲవᦩᦎᧁᔡ൳᦯Ƹ༘ঋᇑᦇ᎔ᔦᑭዣᚁgoᥰᣞؐம༡೰Ꭴ፯ᦡႭϵTSA൙ᘓतൢԒতĩ᧥ਲ਼ࡻॕ඗Ԓ᧑ŨT᧭ϠѠૠᦷ᎔܅VOLᢾፏ͉൹ᦿю᦭Ꮐ᧽᧿ᏜᕌᏆᤀļ᧳ᨈॾેतᥙᣌᨆݘᨈᦊ᧍ঠ᧏ᣌᨏ᧾ᦑటিேکାƸ઻ᑹ᎝ೆऔᘖ႖Ǝᕩ᧮᜞᧺ऩ᧤ᔈᙗవԮѯ᧻ᏀKUYᨀᦌᨃѯᨖ۲ᨼᨾᨊᦆᣌᥟᨻᨽᥝ኿Ꮝᨕऩᩅॾ᥋͉ӷጰߎᧈ۲ᨴᨙᘌᨓԤᩐঙᏀᩛজ᧌ᥘ᨜ᨍᩘ൤ᨴᦑAڶ/Yek݈಴nbᑵᨎğĞ᥉ᡰƪೲ༏ျᨹᨳV൞ᦵ᧰ᦷӛᩡݘS᪃ᩍᦽ૬ᩩ൱ᩢ᪌ᣈࢅᧅᩏᩨ᪈᪑ݘYEKᨙᩦ᪏࢖൤᪜KᕪಱᩮOm़юၙכᣥലঃૠᔋࢹऩOۙᨰᦶѯ᪢᪚۲᪶S᪍ԎᨌൺԒ᪙ݗ᪽ڲඍᧄ༣᪗᫃ю᪻᫆ۅ᪾᪟ᦌᩧᫍᚭ᪵ۙᢙᩮ͇oڧbĉ᪫᪴͛ᢤ᪰ӫц༤᪺᪻ऩNOV॒᧯౨᧱юౠ᪼ۅ᫬Vᫀ୐ᦾ᫪᪉۲᫷᫉᪕᫋᪏᫴᫐ک᫿Ꮬᣐྥ᧠Ԅᩙ᫶᫭᫓᧎ᬃ᫫᫭ᩬ᫛ʶok፸Ҳt᫡ӛᇄயᇅNॉࡻ፯ᦁ᫏ĖKR᧶๰ᨱѯᬄ܅ᬩഺᩇ᪎ᦇ᫏ᬰᬪᬀ፡ᧆᣌᬯᨻᬸᩤݮᦌ᩟ᩨᬶᏀᬇ፬ᦋᬑᦇᬄ͆ᬔ᫚ڨ/K࢓sደy᛿Ѻᬌૡᦚ᩼᧞౨᧩ᫎᩑᬪ᫯ᬭԒᬽݘᬱ᫹ࢬᬵᬍک᭨᪔ᬺᫌᨄ᫗᫽ۅ᭮ᭈᨚᨓ᫕᭲Ǽ᭡᧥᭏ಶIைuᬜ᭘ഗ઺ప᥶ൈᬌமᮈ଱൙ᬤ᫱ᜎયऩIR᪥᪸᪆ѯᓐ᭴کᮕ᪞ᬳ᫁᫻᭥᭬Բᮖᬹ᪖᪏ᮛ᫵ᮝᮦᭀ᭸খᦇ၁ϵᮞᬕ᭐Yaᬙᮄŕ઻ᓐ᧜᩼ᦩںᔂᮚऩYAᮗੂ᭤ю᮲ᬅ\tᯅᮟᩓᩈᩨ᮪ᯌᯎᮧᬂ᮱ᮤᯕᮮ᪠ᦇݜᯄᯆ᮵ಶVόdiv᫝tᬘᮻ̱᥇්৶ඏᕆᯊऩVLᬫ᪅᫱ᙙӧ᧼᯵᭩᫂᭻ᯋ᯻ᬲ঒᫊Б஼᯺ᨇ᯼ᯛ᫔஼Ա᯴᭾ᪧ᭐িkతྚ঳ૂᬠᯮ0ᜌ༭ȓѯᯋ૔J॒Ꮢļᰟ\tJडᰛ༮ऋǀ܅᧤ᯏᏄ᬴ᏇᯞᮜŨᯆᯖᰅං᭚ᰴᰮඍᇑࢫፘᰲᰇ᪊ᰶᰊᭊᰲԱᰮᯡᣝၾᄑޣъନᕁᑺॊӕ፰ނ࢝ᣳടᬬ᪹ᰫᮤ᱘᯽ᮢ᱖ᱝAഈݎᬁ᰸᱇ᱢᱤᩥᰋ᰹আ᱘᱊ᥬm᥃tᩲ̿઻ᑸᯮ᜙ૠ᎒ԱPݷ᭣ᱛނᩊݘ᱾Tᱟᰌᮤᲅ᰷ᬻᨍᎦᲉݷᩜᭂᲈᰴᲊ᱅ᨛ஼আᲅ᱊࢐ᣞyֳĤዃഘ᧝ࢄ᱔ᔲ᲎൤AN᯶᫰።ނᩃۅᲩᬲୗजጤগऋᲃ۲Ჱᲇ᰹ᰬᏀᲺ᭯ᮨᱭᮤᲿ᭷ᩝೇᲓ᮫ʅᲪᬐᲗ᳂ᲨᲪᓯ᥁৅ᥱ࡭ᥴ൤࿃ᔋ᡻ࢠᄡᕅԤᕓ᥺ᘑᄨᜎ᳚୆ӕᭃ᫖ᄍ༨ൽ౅ጝᓢࢧᎂᓚјᜬҞᦒҐ৏᳔ᳵҡjҷlᆸࣻۏ᳴᳒ফ᳸ట d᧖ೞکҋළ᳹а᳷ᣞഊᨡƼajeᯧᴀᴌᴂ᧘ᣟᴍ/SkЮᴕᴘѹᴝᴏᴜటZథĊ˃ᴋᴤᴅ஢ҙᴥ࢓ౖҨᆹaǞSpaҺᅁᕞᑙៃƗᴹᴻޣ׷ถ֭ǲ᠙ᵁᴺᴼᐋᘱᗤឺŨᵋᵄ۪ᤩឿᴸᵒ਎ࡘᵈఅᵂᵌᝬᚬߎៈ۸ᵝᵄᝳ௤ᜳᵜᵘ๚ɘਁបᐔ៕ᵑᵃ਀๡ᵀƆᵤឃᵧ៎ඤᵷᵬਉឮมᵼᗔᖿ๿გᶁᗍᤗឧᵮᵢᵗᵲเ๐ᶄឯᵱᵌຢང៚࣬ᶁຮ܈ģᵛᶅᵪᆀᴾល᠌Ħ᠎ᵶᶞ៤ᠽڮ੡ᶘΑધɻใǦᶢėᶌᵌ໗࠵ܙᶰᵩᶍزลဩᶪᶦ໲ƮƠۗᶗᶦ੫኱ఋቨᶘဿຏᑧᵊᶺᠣ௓᷂ᤰᶥᶺኆᒺᶮᵮឹᏼᶁᷖᓁᤐ᜺ᑕ᷎ᵌ໾ᠷឡଂ࣑ᷜኙᡏ᤯ჺᷜိ׫ͣᶐᷧᶞᡉ᝭ࠗᐂڒࢢᵒAfᴉБᆬᇚᄆģᅢ׳᷺ᵃ᷾᷼Ϡࠈቻھ᷹ᵤḈವБኆሓ៍௞෹ḆѸḐ೟ḒકƮܢᘬḘnḚaḒᷩϢࠀᤊ᷍şḡḣḥఉܒ໵Ḭ᷽ḑՖၐᤥّḲḉԴٕቛḖఔḹḴḻḯᵡḍᗱᎇࣵĘdࢵඟ౞ࡴᯭ೰ݛᱦшᲶᤁײᵘᒓӓࢣၯ᥹ᶒҔிషᄱᔹމḣఠeᮃک྿йᨨ࢚ᦷ࢝౭ۓ૗ᒈᩗߠݶጛԬԃ᧏ṳऩṯᔟᢖṖᵲᒌؙԻṀḛ౱Бс༙ᦁ᳤ՌẊṡᣘʅ౓ᣛᙷCޝ႙ᢺግṫᦰżᢨ൤CᲩफඇ॓ᢀṾ౬ᎂ೎᧨ӓᓖḾᣄᳫ֗኿ၦᣌՄഥṢ᥀ࣵSᯩcᰓᚁ঻࡮ĞᎦྞٛṒᙙĥ࡮˫S൞ĠỂᣨᎯ୅૖ᒎඁ᳟ތậ଩ӣዊảỌ࿐ጌẎᘜĭSw༇ѓᅭඩߞᕿᳩ฼ỞỠड़චТᕿᑈ༃ZЬ౗୰зၘരྞᦥ஺ᔲӌൊரѝల᜚ዌỨڦᜪểᢐᤃಈЬk҉᜷ᏮᗗଂTἉἋᜰ࡞ቼĭἐைἒ৒໹ᕠಜἑཊ᝗Ͽৰቨ἗Ἂ἟࿨ໟἜ౾἞ัሯኂڣἤἙᐺᠷᒶᗘἈἘ἟ቺܙၑ᜻ἰ἟ኌགኂ࣬ἽᵙȼգᚢߩὃὅལἎὂἫӶᛊᛙყὉ់ᵠሻݖὓᶙķںߟᏼ὘ታႌ὇۸὘៫ͣቜὍἷ࿯᜸὜Ἴ὎ᘶរቍἏὭᚚ֭Ἳᷡಧὲჲ֥ἩಓὸમὡἪὨᠡིᤘޤὝὲ֖े჈Ʉἕἶἥ჎ࡘᘫἵ\tὓმᵧᒪᾆᾁͳἧŽὰὧᾎΛห໦ᾌᾓὭ6࿙̏௝ὒᾥἹŕᾣὓ᛹ལᾩᾘᾟϞ὾ᾮὭብϱ౸̛۠ᾪᾙᾹቹᤐὰἯᾸᖝճ᛬ά᾿੘ޭྌჺὓḓᓊᒾบ῏ࡣޭǙ᫅ῄ᾿ឬὑᾳἙኒϱᆤɂኛ῎ᾸόὫᾒ῏ᷯᡄὦฒῩঢ়ᾅὬ᾿լلᠫ᜴ίῲࡉϿᐇ὿ὼᾙܨᡙඳאῶ἖Ὥᡟᗕۡιᾴ ሯῃὈ ᙍᾑΈ ᷀ଞήὗ ࣑Пᤶඵఅὓ8’ϵቴҔ௾ὓܲಗዸ݆ܵᡜᾀᾴᤴխ᤽ڏᛧῷ‭ݭಘ֋᛻᤿ያҦώޝ᩶ڭᓷ෉ᦛଭഗରࡳᄙவ෗ὃၫ෌ፇᜎݕὃTRᢾ᧧ᩕୋ⁊ई಩ᔸ᳌᭹ᢔᏡඓᭉঠᣒᏠ፱୬ᙯҐҧ྽᩵̏ᩭ᭐⁨‽̏᧓ᥫࣸᅘ᩹ᓑᮉॱĿĿ˫᎜൙Ფૈ᱕ᔬጹᮘ᯸ᔥᏁᎷ୚Ꭱᥛ᥻˚ᓓᓛᔫᲯکᦺᏃᔨ₅Ꮆᔨᦪഢᦳ൞Ǭୣᥤඅᜎᥧ፲ᥪसUzhᴈഐᜃൊế༌⁇᥌ᎀọࡺᄛፅᦱዔटडፆѢ୛ୄ࿐ढफ़ᎮॲᯌₒፍПₕፀПₘ࿎ẝₛᨋѠ᜕ऩᎪₜෞ₞ඍ₠౎୬₣Ґᴩpೣo₦ᙺŗᨦᮾ᎑এǆ૔U⁽ṱᔲₚᲀᮙᎴऩₖፁᔞ᳣ᜡᙫ˛Ꭼᒂ⃯ᰴ⃃ᰰᮡₙݺ⃔Ꮬ⃖උ⃘ᗲẶimf҆Юᚁŗᄖ᩻⃤୞ȌƎॉ⁾ौ₀⃬₃Ჭ⃁ᔦᎷ͇₳ᎽԢፈ⃺᳉⃼ₔℤጿᔧՁ᧯॥ᨫ⁸⃐ₛ⃫℀Ꮠඍ№ጾᔴŔΩևᢓৌጾǀᦻ℻ԭᇑℽℨ᦮ₓՁ༺Ꮅ⃇᰾ԎፑᣓᔳᥨT","tz/northamerica.lzw":"Rule\tUS\t1918ćĉ9\t-\tMar\tlastSun\t2:00ćğġD\n"+
+"ĀĂĄĆĈĊČĈď\tOctĕėęěĝģ\tġSĦāăąČ42\tonlyįFeb\tĎĞĠĢŐWĽĨŀĈ45ńņňĐAugć4ĝ3ģuőġPŔĿĪ9ŘŚŇįSep\t3ġŏġĻŪĩČ67ĝĠ6įıĳĖĘĚĜŸĺ\tļħūŽſĈ73įApĔƆĶƉĹ1ĹĥƎżƒŢŅŰĐJaĜƂƊƝŐƟľơ97řƤŜ\tŊŌ2ƔƫƞŻŖƱƂĈ8ƂŝƗĴƇķƻƭƽŬ8ſ2Ɓƕǅƈ>=1ĸŐƬĤǋƀ0ſmaxįĒĔǓ=ċǉǚƠŀǏǝ\tǟǡĐNovƌěǔǖƊźZŅăEST\t\t -5ĹĐǾT\n"+
+"ǻnăMǿȁȃ7ȆđǿȊǼ\tHȏď10ȓșȉȋǽǿ5EDȀȂȄĹŀE%sȠȗCǿ6CȦȐ-6ȪĆCȭȯȌȔT7MȵȨȒŐŀMȼȖȾPǿ8PɃȃ8ȹ\tPɉƠNYCČǏůƵǣǆƚǗġǙ\tƮĨɘɚĈɜƴƃĲɠƈɢƋƍƯɨɛǖĈ6ǃ\tƖƘĵɰǨɥŻɵɪɷ95ŢĐŲŴƙɿĹźɗəČ5řɸɺƄɯǈʎƌɊe America/New_Yorkď4:5ȸ02ȃ\tLMȀĊ83 ǲv ĊˁŏŤ58\n"+
+"ȁďȅɆĆȬȮɛ0ˈȁȩŐɵˎʺŭ2˒ˊɓ˗Ł6˛˔ġ˖ȼƐˡˋġȫɖƯChʣagoːɝįJķ1ƺƜƼƠ˭˯˱˳ʄɭƅɾʙŐʏˬˮʤ˿́ɬĐɟʌ̅ɣ˻̈˾˲ɪŃʕǑɽǇƛǘ̓Ĩ˽̖̊92̘ʆʈƌųʘ̝Źʛ˼̉˰̣ʓŽʖɮ̬̐ɲʜʞʠʢʤ/̡̱˜5ȝ36ʶʸʺ8ʼʾǳˁ8˃ğ9:24ˡʳ˩Ⱥ˥ɪˑˉȷĹ̀˿ȻˏĈͅ ǣ ˁ Ÿ˧ȓȈČͥʿˁ5ͪģ͖̰͚͟͡˙Ͷˌ\t͢˘4ˠ͗͝;͸˲Ϳ˦΃ɓͿ̺ʟʡ˯ʦʬth_DakotʥCentʡȃȸŘ:1ʵ- ͈ć͊ʽͱ˂ΥΤʰ4ˇ͝Ʌ͘đͺ̤ Ƅͪͳʴ͵ΊͽΌȡ̻Ώ̾ǲrΓΕΗΙʥʧʩSaĂmΡ:Σ39ȃΨʹ͎͋έ͏ί1ʰ21ˡεżɈˏǬʽλ2͆ξĠͼζςǼτ̽ύΒΔΖΘΚ/Beāahϔ4Ʌ7ϙ͈Ϝά͍ήĞί53ϥɓϨȀǏȜ͌ˀ Іͫπϲ˫ĨDΝvʡ̤̀ǖ̎ē̫ɱɤɦăРnТĔ͛˴Đʗ̷ɱ̇ПСУ̌śǢaň̥з̮ƯЮаŽʔ9ɹ̚ЩʀЬɥкбщшъд̶̸̄ǺϴΎ϶/хУ͞5͒ʲ͇ʹΪϝЋϟŸğ͕δВͺǏБƭѐηͣͻѭͽГ˟ѱĤѳѹɸ7ѻϧОăCAŁċ̍đШϡЪ̟҄҆ŗĎ҉ƧĜˁтɳ̠Ґʆɣщɺɼь˺Ǌ˼Қ̓ŽЦ̩ʋїҗŻ҅Ž̦єİі̜ҫσћΐLos_AngeĂsȑʱĞˆѤ͉ѧˀЌğɅ˚͝ɒͽɕѵ΁ˡӏġҭӑ˘žӔɓӘ΍̼ΐ˶ȌaŦͲğЍϘĐΩĊžκĲ͎˛ɑʱȒ41ӆČĠʞşͪ0͐ϰˉӱŐĐɌ΀ӍȶӕżӘѺӿ-ԇԂȏɸ9ӰԌӜͺ8ӼɼͪКοȶ͒ͽYԕӼϬ͆ƊԒԇŀԉǁϫӮŶʹӾԜɓԟѵӈ ŶԒԝζAKɉҵӟ̾SitkaȂϡʱɒЄӶӫІλĊԶğƝ˸Չ9ӸŞgӻӽ͜ԆȓԃŁԅȨԦĆԨŭ΂՚ԁɔԏщԑԋՠɔԕԪtԴӼЛԯԞծЗձՎͽԹԻњԽʥMetĖՂւՃӥ˸ϕΦʷѥՊӭհՍիϕȸ˂ө֌ՓԗӺǏ՘ԥ՛ըł֜Ӑͺӓ֑զ՜Ԑ֠ζբ͋λԬճ՟ȓրȕԼυʥYΗuΚĳˁαƬͳ͉֕ӬՌγԯĊʱ־֋˘Ք֙ӼίԮȨԷįY֞՞ȃאŀԱ΀դ׏ȓגәժմζטČԳԵԋזĆջȮӞִ/Ҽchʬ˰ăֻģ͓4ՉǂՋӮ֐ԯѡ:ֿͥӷ֘Ֆ֚׍ՙțȝզ҅ԄˡȜ΋AT̿AWTˁŭͳՕֻͪŤĠu؍؉ϲؐؒPؕŗך-؎؊ؐƐʞƗ؟ȓAȟŽן؈ɓرն֬ղԛכյԲЊˀץנżשȽʝҶφoʠՄӄɒϣ׸ׁ׻׃țƬƝ3͏؁Ĉ׊؄׌֮بɤǱד؍ɤŀN֢ا1ٟ\tNըӬɼ٢ȓB٬شٞɓBظԫغ׎ו԰նͱفؼԸԺתֳќAdΗًΤŤَ٘׹֎ӯ͝٨֒׿ٗ׈؂ӹ֛ٛڑ٩٫،ڛɓ٥Ӓ٧ڜ٬Іٮڟզٱמٯͽٶؾڏ֭ػبؠكHٽ͍ٿڳɓHAռȌ Pacifʣ/HŅolāŦں3Ɲϭ׸щ Ҕˁʽ؆دŶįزͤʽԘڱ׎ێ̒ŐHȵ۝ͦпͪӵۘڑ̈́ġĐۜ˙ Ʒ 0Ϙٝ؎ۚɤۥ΀ͳʊձԭ؇ۢۛ֞Іӡͨ͏۸ڴ۰ֲս׬PװΝiǰȒ2ɒ֔ږʻؿ͎ˁٕƝ֟ѷζѾŭ׷ەͩĠՏҁ̎֞׷Ԙܧ؉Ϥܡ҂Ӓ׷λܯܩܲܫәҀܲɇͺ6͏ͧϣܪȿ\n"+
+"Linkϵΐўr݋ԾˮƗock׫ќBoisă-ӳαӨܙΫշӊ1ȅ٨ӛ֡ѵƹۨyۖ܁ҁܾѵ7Ѭ˓ϦܺČݳ۳ŋͨʽٝϦݱȉƎ IndiƨapۊݚؖӴг\tӡĝŃэŪރޅއnމދӁŗʅʇű̪жǹуĂޖކވފlތئʒ̨ҟޢҡǚڄΐބާޙ/޵ޘޚުӁȩ4ʰٖЇϛܚݣѩΤȅ̥ϱżΈ͛ϱަ޺ީތߌѶ˓΄ŀߓ֣ߕģߏިޛ ߓʓحݎ͔ݯ͝˨įͮĈ5Іۿ2۷ڲ΄Đȱ˘ӅԘ2Ԛۡߧȇٲͬͽ˞ƒܱ˓ߺ\tͮǬاߧ˪תƠǣΝ̋ʆǖ҉ޯҪޔࠋēࠍ̲ࠐнʉޡࠓʚҘȍࠖҽ̲Ţɸۯɻǅް̞ҢƯࠌࠢޭŽࠦʊҠ̆ʛ޳̾޹ވ/࠭˱ȃȅΣݫڍԳݤ߀ܼߚρͺ5ࠁď΄࠻·ܿӵ۟ٹ܂ࠃߩթ߽ζ߿Ʊܥƨͨԣ߰ޱ;ۦ࡚ڏ߷ߥࠂ˝ͺ7ࠇͭȏࠆࡗż˗ޕV݈cΝȌs˟ޏࠒҳࠔľ ࡳnࡵnࡷࡹ҉࠲̭ࠩࠟࡿࡴࡶeࡸߪƔߪޮࠨࠝࠪǩࡾࢀࢂࢄ࢐ʒĎࠛҩࡼࠞࡲࢌࢃࢎʒƳࠚҊňҖڴЫࢣࢁࢍ࢏ʆǀщƔǄ̛ɡࡽޥ࢙ࢱ࠰ޏе࢕ࢉࢯ࢚ࢦɸ࠙ƥҨ࠳ࣂނࢼࢥࢲ6үࢶұ̃ࢡ࠴ļ࠶ʥ࠸޷࣍ࡷ࠽ʱ؉ІΧӪݢϞӽѢАМߋ٦ߎࣜࢦߓ6ܭƗͪ࡞߹࡬ګߦࡨݲࡊˢߨ࡭Ɓߢͨʵٝߖ͙ϩĠІͱ ׷ٝࠈˍ҃ۀʡrňެࠑ࢔ۣࣕࢗޥPऑओգޏࢇࣁ̹ނछrऒʒ࢑̧ы࢈ŧʁणजध࢝ޠࢠࢹࢢमथझ̳҉ĒࢫǖࢭҎऐषʒࢴ6࣒ࡻऴ࢖भࡾतदࠥࢿҲे࣋ॊयࣆटࠜगढ॒ुɸ࣑̹̂࣊ࣘ޸ޗ࠹Tҿl_CՀݭ޾Ʌʽ࣢֌ࣤѨ͐Ўࡅࡋ΋࣫Мीदࣱ࣯ߣࣴࡓࣶس࡯ࠉ˘7ࣻࡔࣾ0͆ܮं࡟ࡇࠊƯPikăߪࢨࣈऻՄĺࡠю঑ওࢧࢾ࢟फ़иăঝঔࢳŽ࢓ࢸʍैজ঒দ6ʅࣰढ़फљڿهࣙॢ޷छΟrsburՖ޾ԝ࣡ϚӇܛݤȝЏߊߗࡈ5ߊথ;ࣲؘܿ2ͳऌঀʕڰࡒৌअ঄׺հ۠ॿզࠅࣿঋࡦॵ঎Дइշऊ২ࣼঃŻSΚʭদЄҦपडࢮƠ৳ēঞŗƑऩড঴ޤă৽৵টߪ̵ࣔॐक़Ĩਇ৿ʆਁˆलঢਅƌ৴਑ѡ৸ѕ਌ফࣂॠࣚʥKnoxࣞ΁׿Ӽࡁৈ߆ֈڹऄ৒Ӓॴ͞Őਐ҄ܿʵ߶߯ࣵ৤٬կԙ৯਱ߓĉࡤ߸ৣࠦ৥উऀͪੂॶএĨPЀskiࡹ्ࢷफ़৻ঐ੓੕੗ਂࣉ਄ࠟɔ੝੖কू঳डণ੤Ɔਫ਼ߪਁ6࠱ॖ਍঵نվॡ޶ʥW݈aǟcਨȸ৖߂ে߅ॲŤ3৏্ࣩڢ৐੥ਲәࡐࣲৢ࡯߻ࣷࡧ߾ࡩআঀࠆੌঌۡ੃˥ǬІͧ٨৯ऍࠄھ੶׬ਢ/Vev۩޾ȝ1͆ਬઅϠ͒޿ঢ়એޭऀં৘ਾખ˜ઘݲࣨગ੉ঈ࡫ૄށࡾҸuݚvilĨмগпćҍࠫޥ૎ૐ૒૔ХॕŴǸव્o૏s૑૓৶঱ҧॆਟबЬΨ૦૝૪ŁࣇƵठॗণ૲૧૩૟΁ޏޑޓ૤૛૳૨૞দҥ੧ਃ੪ਅૼ૴૟ʲঠ࣓ਖࣗ܎ќKΝtuݔy/૜ଇ૪ਨ؜֊ࣣࡂਮȸˆ઻ߓ݃ॸଠ૾ʝߘ՞ਵНઌମଆରߟࡏ۔ā؛દ৙щْৰऎݲ࡛n࡝੎ैȴ঄ܵӮࡥીࡘ઩ݏਣଚଜkଞMŅtʣ॥oࣞϗ׶ઃѦਭ͐Ǐ׿اઠଶࡆࠦ߳Žୂ୩৫ӸϬϘିોŻРtrݙĳŗ҈ࢩ૮̑૰୷ց୺Հ҇ૡକஃ୹୻Ɛଁ˷ŢࢺЭ஄஌ѿॎਞ஁ੵ୓ѝஓஆȩ3Ѝӵ٘Փઉ୫į୭īͳऻͲ୵ૈڞેࡰॷய୸அĳ࡙Ɠংୄ঄தૃ஭ݸ৔ߣੇஸન੐ʝրਥm݈e৶Ƃकপ஁ਜ਼ޥெى௉ோஈ੢ޕ௒ைȌযௌ୿ख਍ௐ௅Ν௓௛̴஖உॠ௙௔͂ȝࡥࡁ۾ųܜ۬஥ઋיߎ௪௥࣯Ϙ߶ுࣸુݸ۞৕਼܂୰Ҭވڇĭ୾ࣈҟҌ஑;ఇՃīఊƵʗۏҫ˼ఐ՝ޏƷȂŎࡠœఘޙఈŗখƵՕšţťबũడaణؗஈۚޣ੣CఙƢףҞ௟૯௡ఏఢ఑࡚ǜ਋உభయǍుыǥૣবఆాǜǞǠоǤǶǦ૙ङ҄ఙઢǮ౐ǱǳǵnǷగƯ৳Johnࢲ1ſ்Ȃǧছ৲t౤౦౨౪ࢩ࠲౩ౡਏ౰౥౧ĭҒࢩঘ řƹ౮ৼ౺౲౽ࡺşćޓ؜॑౹౱౼вͤřЧň౉఩ోಅಐࢲɜಓ੩ࡼ಍਎ਆಆ಑9ͅ૶оň୙౟=Ďा૚ಣಛͯࢴގਝđŅǔŃڴ੫ౣ౻ࢲ଀ߪࠦঘǥ౭ಙౢತಿࢴҥಶǥଃࣖ౯ಲߪʅǂ৹ॗ఼ಽಇ೒ऱଌૺਗ೘ಥੱసಟੴೞೈף౴ఋǒ౓ऽՏஂಚಾ೧ేಶжܰಢਘ೑9͊ࡺ೪ಬ೬0ొĤю೟ࢲ8Ŏǐਖ਼ಗ೵೗೦ౙЕҧɟೄচ೿೮ೇಲ഍೿ࠦʿ౞ౠ೵ஙষ/৳_ಲ-ઇ৊ଥ९8ݴďഥӃ ഃʾͺ׼ഫਪഭవ్ڡ˘Ĉˡബ5ʵയസͯனēո͝ഥ೷೰ീŗʵபݧ൅ਪఽమՃ൉գ഻൏ഃ٪ડ೿ӵʿൕۚശ൑൘ڃଗΐGoҹe_B૗-ʰ೿ϕਫݡഩ൝ദʶڝఉ൳വఐരѵഺൎŶഭ٠˘ઈۨݎڹെඁಳ൳േಇ൓łݬܝඊൟఈඍاൌ൓ɹ඄஫ٝ൭Ļ೦ڽआથ൜͝ඝ൐ఈචૌĨHϑۄ౐ī௝೩Ĕࢬ಄Ưණުfථĉධఔɮඳ೏Ơබතǡвऺ૗ ಮපඪඬමස̤ġࠑಊ߮ഒಎăශ෌ɶޏಀƂಯౖȘ෋ඹϣɛŃডಁී೶ූ෠Ń౫ۚොॉ්භ෠न৖಩ഛǕ෦఼෨෍ƹஈऊ෦੫෹ɛƣ౵̪ݥ෾ਗ฀ɪథਕܖฆ੣จ̤ර෴઴෷Ҏෞ෰෺ฑড˸ญŻฏ߷ෙෆ೾घ෮෕ෟ෺೨૸̪ϭผවฦɛċͤഏ૗഑෭юพఓਕ෇ฬඵฮɪ౾ࣈ࠲Դ฻෯ෂͯාฃૢř಻ง฽ದʅடਕಫಹŢ๋ฎํ๐ළ़ดರถๅ۝೻Ĕ෬෉ลทͯƔ҉ʗͪใ๤๞ದข૖рŹ๣๝෗ͤ๯ษૢෛ଄๬๵ದชƦķ๪ีฝ๗๿ࣉ๢඿฼๥ͤนސກยഔไ๽ಧࢆค๔๻๴ඹ3ਁٖ෴ഉ๳ฏປನড๒=͔๫ນ෍ϗภрċ຃อ຋ŭҜವࢪ෵ຐ෸ํೀŭ࢞ࠧ௎̸ຸັ຺4ຼૹ೤๖ັࡉ࠯ਖ਼फເ๭້࢒ਕௗະ໎ೊຼ஀຿ตฏ଒ߪໄੳ૯෿ํ࣐ఀೕ௠໙໡̦Ɠೣໟ࠵ൣ̾฀൬ΰୡ஢ʴ଼େݥˡඥ฀ඨ൷ඤ͟ఙ໻īٳ໹ฮༀ۲۴෇܁s໸໾్༅ߙʯĹ໺ࡩപ໰ŐඒՃඨݖ൤Ėࡵ൩൫˅હڕӪՓʵ܇໷໽༖໿ࡈ૆༐ۤ༄ࡈ༔ඥŝը7ଳ༃๥༅ݳ་༩།҃ಷࢁtŅ๦ു˵ķ഑ɤ఼ಫĲག๟ಞডཇຘཊཁĜຌͯċ຀Ĝಗ཈ตདྷཌದࢴຝཏ೫ब੫ཝཔದ฿ɞ૗ฟཛ๜སͯĎޝਕϐtಹɷདŅཋཧ4็๰Čबཉཹནನ๙Ȃࠤ๳཯ެƒ෣ຽਗ਼ཛྷྂཞ຺଒೜ໆŻྉ਒ݸྌࣀೝ੣ྗದೲྍຟഓཱྀཀཞྟࠆ໪ķഝ໬শ੷཯໰Ĉğ༢നʽР੿෇ઔࠄը໴༦஻༕Ӗ༪ѵ3༬྿༿ེɻ֢༶༌ൠ༎اඥ཯༹࿄ඥ༗࿈ѵದ༻ġ࿐൙ǝ࿘ඦ༘༾ಫ୼ĉศ౑ĝಂྈ୚ĭ࿤ਖ਼ວ๕ྖ࿩༁ภ๡ૣۺྏΞಈ๨ɮෳĞ෬ਗ࿡˳྅๪࿼รю࿿ಒ̤ྚɮಗဃ೶ဆૠခഀຑȍ࿰ဈ๠ŵŷ࿨࿷ɪ๷ฒǎမ࿢ວɪɺ໅ʍ࿽ྜྷနෳဢພལఎဎฟ྅ື࿶ဠຜྌဤྪླྀယ̤ะ๎໤ɰຯࠬန๘౿૗ေ཮၁नོွ့ೆĨဎ࿃௧ຐཥ၁ࠤཨ໑Ҫ࿮ࠋန຺໩໋৺ဲŁшβၖྜ࿯္ໃʒࠦྛྕၙ္໏ধྔ໫ဧၭਁၜଔௗॠBĖࢁ-ϐblŅȃŤβ͓ླӇ༱࿋ටࡩ܂༲ɻ܍ྭ׬࿡reϑ༐ʇΤવ൱༔ߧ࿿࡙ലࣼ࿔ႝٳႛ࿩࡙ඎ༇ః༊௾࿀్Ⴅ૊࿙Ⴄ༓࡯Ⴀ༾Tʬ୚̣Įළ๡ŷെ఼Ⴕ୺ΞႸཀྵढ़หၘƯႿႷက၃ࢫ೎ငŻ჈Ⴡ჊เส๺ຉĨაཁෘူ࿧၌ăი̣෡ຕ้౸პႶბ̗ɛ࣒ೃ౓೅჎Ơჟ෢ɛဣ̪౉ნු\tჰရɛſಕຶౕฤჸღკɪဴၣၫჇᄂრျఖၝೖตჹದ෪჋૘ఎᄐ၏ŗࠦ໗ჿюᄖ๧ࢩʗထ੫ᄖၔຫၰ஘ਗᄐŮެᄦјᄨᄉࢅ௞຾ᄛ჏ᄯ਀Ł໖఺။ხᄈჀᄃŭਁၢᄬຨᄩჃ౜Ǵ೴ຘᄐଊƱॅᄹ໘๜ᅊཽƵച໒ᄼ჉೚ਊᄆၱᄴᄽ̲ၴ࣒ၪᅛॠჰȩ౩׿ധ͉ʆႲఙႡ࡯ჰႥʵႧ༉ᅫႬற஼ᄁᅝ௃ୌᅴൠࡱᅣhědʡ༞४ȅ߫ߛڍᅪࣩ߲ըȜྐྵࡕܠயႳݲੈ༿வࡩ࿄ইᅻႪ࿞ᅺ༚φipi˱ĜȩЏѫے྾ߧᆓ΀Ӽ߭ႢࡠȥԄݺbͨႨᅼఈᅾ໭ʥRa݈y_Riаϔׅ઴ᆩߊ࿔ߘᆮ௱߮ߊɤୋ՝ᆴᆶᅳࣩᇊ୒ടA୛ΘՂᆥʳઁႅΪᆊ஥ᇗӒᇌpͪٳ΄ᇐࡢႦݻ༈ŸႩᇤఙߘ௰ᇨઓᆜકŻ੻ࢃĭຍҟ෻ဿĨᇼཧณტćſ჆ሃ݈ህุਖ਼఍๳ሄఉ௧ఖళᇻሌͯ࿫ີณఎሒͤሚ࠲หሖƠሞ˙ఛŋఝჿఠƯሥŮැŠ఍಍Ŧɤబሬመత௖଍੣ርຍঘΥᄳሤሷञ࿹୼˹ზăርᅀᄸᄲምቂ৷ґᅚᄧሻቂҥတቀሶᇽುఱဘቇ\tሥၮೡᄍ໥๜቟ޞབྷ੡ሺሗ቙ʆᅅၶቩቁቫೡሇᅕላቱᄞනྎቤቂॄஈсሣቘཧъǁహቌģ࢏ตሥъǬಔቮगࡸ੫ሥెኋైာኆஂॠሄᆡeŠ͞ܖ୧׸Ǎ଼lˁ୨ĹሒΈ࡮ᇖᇴ༾Rኛ੼ሓ౫ሐო\tክgኯఒሔᄡਗኵ኷ದҜ3̨ძ೽๛ෝኼޙๆ̨ͯʗྡྷჷ዆ిຢིഈწዄᄀዎሙ௧ิຘዖͤሎଔዌ೶ዛၕዑዞዓሊăዡłሧŌฺʀራĨየຆధሱపሴŻደሹၤƠየᇿ೼ǔჭဒኴኮ዇औᄟညዓቿዯጂి቏྘ቢ఻ตየਓჼቨዹƯዡਛ౫໌ጐጊऱቄృౢwۄ࿢߫ဖጚ๜Sጡfጣሚᅡቒ৲ጩጣཱщ૭ᅎ቗ਏጰጝጅ஗ᄭ੣ጨጢࢾ॔ᅂሖॠዖѠɒ؀ܙணമųҁዖܣੱऀ̷୉୬ႎપќጾጪ१ী႒Ξӂڒ֚໳ᇶҁ࿔ܣ΁ፑї৯Ϧፎࡈ܂Ϧፘĳܣ༵፧̜ፓ஦ȕƠEdmሓ࿱ዒಬዿ఼፹፻ኸጞሕຘᎂ࿸ᄓฟገǽ፺Ф෻ጎ௏ตᎈහጺጟĨ᎔ૠɪ࣒ံጼŻ᎙ዩ҉జዬట᎟ᎎሸሯనಃ؝ఫᎦᎃరታቯƯᎠሚᄚఎᎴዸᄇ᎘ᎧщᎵጵᎷᎼž௧ቴᎍᎯ6ቭᎶ๳᎙ᏇᏃᎲᎻᎯ༵ೢ᎑ᅏෝ᎙ᏑྨೳቩॠᎂႷᆥȒ࿃඀ፉੋʊҁᎈܣǍ፣ఙГŻVƨcኰᄱᎪ๳ᏭࢁᏰࣈకኺ੣ᏴᏯൊዪሩይᏬᏮၠಉሰஐሲᎭƠᏻᐃሇలຘᐊྊ೹ኄቹෝᐏቃ᎖ปᎌ\tᐕጌরቑ᎞ᐉᐂज़ྠጭ᎞ॠᏻ૦цԓίܖአ༔ԇᐊ֪਴ԇ࿔ӝॠΖwsŅ१႒e݊ԓܨѣࡁᐮႈՃբЄݨġᐰࡩ਺Ӻᇸݵְ፷ɴTʪK᏶దǅኲᄻɧᑓYᑕᎄ᎖ᎋຘNᑜᑞčຬ࿦ጶăᑣᑔᎉࣈച඾ჷᑫᑝచᎢረᎤैዮᑪᑤᐋ୿ಊዳᎬድɗᑻᎨ่ဗფ٪ᒃђጥၗĹƊDюᑲᑥ6ຆᐤᒇᒑףҜ೔ᏓᑩᒈᑬǁŷഇኍᎺᑺᒞ೹ǎᒡҟဋ౮ॠہҽniψěՖࠦzᒵɶ࿝ᒗ༅ʆऀ౉஬ᆝ࡙9Ϙ֬ӵःᑄ઼Ǭԡ୎ఃᆸՃᆺႏќIqϑ૏ĳᒴᒶൊژ࡯ᒗᓀᓂԫᓄ঍ႫൠከĠᓉհ߮ᒾᆬᆟᆼࢎۊָăᓖzŁڦᑍࣻ΄ᒗᓣ୲ᓊᒾકǜઑݎͩ಍ᇉካआੋ୳ᓻྺୱણൃથᔁኪ్ϳᓏΐᆽ݈݉_ބĂհᓰʒ਴ᓶᑻᓸᓥᇩᔇ੊ᓾͨӵᔍᇳᔏᇘ੷వmbʢdҾᆄ۵įᒵᓱߍܲᒗܣᓁڰᓟટᓆᔟࡤᓋᇹᔈǜӼउνᓠ፶ୱᔤᔀڲϦ፤ᔪ׬Yଢ଼wkᒯfʝᔚಓҁᔹԠᏩ్Ꮻਡnu૑ʮᕚʆ࿄ԇᒗբ7௻ࣲፒݾĹᕝԲ፭ᓆᕡᆻ/WˮΟװঽݜԷΤᅨڗؙѰ͝אᒗע৚˶ኣᔽ܂ᕪᑻ֪ᖎᓆᐵᕸᐷᐹᆥ͒ᅦོՒٚӻˡᖇᑻᖉᅌࡤ͏ؠᑈᒝᑳᖑᖧᐴ࿠exʣ̣ຫᑵŌ๊ྈᖮᖰ཰எƉᖵቝրᖯc̣၉҉ྶōዔစᖷᗀ྄Ᏹၑ࿾ᗈᗁቷƵᗄณ෭ᑹđᗎŁလჽᗌྜྷᗗቚᖳಋᗆྖᗝқஎlᒆዦᗖᖿ̣щᕅኔዃိᗣᗬᓈྩᐟࠬᗗǬ૷ါᗯᖶᗪᓽᎹᅛࠋᗷĠŃǯᗮౠᗰᗽǬᘄ౛ᒢᅢᕸശcķ५ᆨ஢̥۔࡜ͩ۵ᖁʱእ؊ը8ӵྶ؛࡯ᖾᖸᓀ͏੍ؙ፵ᘥᗉᔐፖΐրᔯՃᆦٍᇡ̗ᘗେᘙܰᅧߊᆌ˘ᘠ ᘢƹᆏᘟʵᘢͪߊᘬࡎൢᔑ̾ĒΚmႶࡸོ͞ᆈፉَᘢۏ؛͓ᖦᆋ;ᘟ୯੏ᘿᇪĹᙊᓇഘଫᕑќ࿡ऑeŜ΢Ր႘༣ᙘe੿ᙚಃׅ઺ᙞ஧೹ᙡ৪ףᙤŐᙦᘮசᙊ१३ϔͅኟᘕ༥ᘘӵ௭ڋ༔ݶȿ჻໵ˁղᔧ৩ፔංᕆЋ྾ᚓȎංӵபͩᎫఄȓᙼᙚƄ݄ᚡͯ਺ࣲˁᙉᗗᓸӵۿԬϯᚧᘞୱᅱݻᖅ஥ᚃᙪΐOj੼gᘳ଩ӳ൰ᙳᚍ໶ᘚξᚾďᚠըࡥ༦ᚘᕉᘾๆݣ᚟ᑐᚢඏᚥᚙ଴ᕊͯӵᚫܹᚔͤᚯᓿᓵᚨըщᚲᗽ੄ᙾ᚛Č೹ᒼ೫ԴᕎᙥᗗѹЕᕵѸᛁ̾˽ᆀЁuᘳɅϢᛊ֖ᙴᙶᓄ˅࠾᛾ೂᛓ܆ěᚗᙛᔾᚺᛙέᛛզᚭัᛞᜍᛗᙟᛝᛥᑏ᜜ըடੌ᛫᜘Ĉᛮࣩᛀ࿖ᛲᛢᜬᘨࣲᒽᛠϦᙦᕷᙍʥHʡᙑs૞˲ݝ͓˅ᖂʄᙁᙵԴᜠᚊ0ୂᛒ˘ᛔ᜔Жᚦᘽᜢ᜙᚞ᚬᜧᚣ۩ᛟᜡᚩᛤĲ᝙ංᛩᔥ᝕ᙼඎ߶ᚒᛜᄷᘸֻᖧԎ঄ᜐᗩᖸᔺٳᝏᓪ࠺azaօᏞğᜏՒᜋᝊᙛ႖ᛐᝃᜦᝐᜓ໶ᛖ᜗ᛳͤ᚝Ӊ᜛ᜑᛝᚤᜠឍᜲ๎֎ᝢᚮᜩᝦדાᝪឈᝬەϡᝯէ᝱ҁ᜹ᜀʥ൪ˮa༞ޅʡėᛑՏᙖᙳᘡᝉᙷ༠᛹អᄄᚖᝓᛠ߱᝖តᛚល᜞ផ᜖ᚹណយᜤ឴ួᄑឝᙻសᝩំົ᝭ឥӎ֝ឨܲឪඡԗࣲऋᕉᜯمசTijᜅ዇ᝃႃ0׷ᚌ᝭ᘺΤƝʲ៕͔ឦ֦̤ដ᜕᝔ᛦ᜝ኾៅ៙֥᝚៑˓ԇሴࡢᙚᚶᖒ᠂ᆳ។᠁รPؔၠژؚᚦ؞᠏ఫؤ᠓έଳԍឧ҇ੌ྾᠆Ĺɏ΀Ϙឤᑃ᠌ޭᖫ҆բর៷༴اլբᜭ᠅᛺ᗽԉᗸᖧԧ࿛ᚼᆵឆԇᙦᠹᙨ᠘ᠼᙌᘯԾƨΚᔖsabҿ឴ୠᐬ៯ܦӵᘚ୦ட៵ᠩࠦ៸ᝑឋ៉៕Ԭ᜚ᠰᛝܮࣻᠣŐᠥᛣፋᇷ᠋ᡜ៓৕ᡛఫ᠒త᠔ϡ៉᠗ᠶैP᠚ᡵ᠜ᡤᠠܮᠢࡠᡪґៗᡲᝰᠫ᠘ӗࡏᢀƒᠲԔ࿖ᢐᚂᗗᡃ೿ᠻաᠽᇓᡀᠷᖸᖔ᜻׭ҽ૏૓ᘳʰϠᙲ֖Υක࿊զAፕɻ੷Ҽ୛gᜅ༭Ȓᢪ஢ᢪ݂ᙄߴࣻႌ᢮ඩăឭ੽ឳɸၔƲᗴᒇᣃǟ࣏ᣇኌᏉోȡᢰ׬Nėᡍۍˋ͒ߤᢹോൃଳߧᣋឳஶႮர௄\t൪rŌƒሚޑሿఎᣨᣪƱၴቧዋንቝᣰݸျԖᘆǕჶጀ᣸ƒቭ࠲ᐍ᣷ēᣱ᣻ሇ࿻ࢢၸᤆమҹളˆႄខŢ\tൕᤑᡓᣧ֖๐࿝᣸༙ƠϾުzদĬᏽೌ౓಺ʎ൏ۥŻᤠiᤢಈŗ࣒జǥ෈᣷ҿ᤮দ໩ᗃᙵȂᖼᑚᣂᤷ᤯షᗟฺᗨ᤭᥂೹ᄒࣈᗒຮ๳᥇দʼ᏾ሿ࿮ᣒട᥏͂ĞβՒᢪڧ஥ᥗᚄᇚၺ୛cϽ᜾uఈྰԝ៮ፉԬᡕ৯ᢿ༴ॼͪ܉ڲඥᣡࡸ༹࿎ض઩ᣓќవyǟᆥ߈ȅᜨᆉġᤕ௾ᢷ֊KᢩᠾᢼҬRݸጲ᣻ĐజᅈኳCᦑᤁᒘཅཙལᗨᦙᛴʅ̤˵ƨƌ᝼Ƿ᤾ጀᦡᜬᗹ຀ᗦᑰ೶᦬ᓁ᥊ཪбᦪഞᔫҹᡋᇂʤ˜ᚊ፠ݡՓȁͬᧀ൰SJᜊӵឤ྾΄ᦡΌ˼ubిฌғ˷๲ᦘ᧒᧔ዝᄠ᧘ჷC᧚Łຳྌޑዟ఼᧠᧓᧢చརዃᦠ᧡ሸᄫຎᦞ᧭๳᧨ጋၡჳŴዟ੫᧶чᖺ૘ሂ҄᧯ᒊᐌ᧞ᦲᨃъ྅ිᨁ;ᨈຍʗᤨቝ᧽க౫᥍᧙᧩கɸቧ࠲ዙᨒᨈዝఌທᨗిᏌᣫ၊Ĝᨌᨓթݸҧᒕ᧮ᨘƱ໨ዊɮᨖ᧟ᨃᣈᨦᏙҳᨯి7ዝঘሉ᧵ᨷျᧃᤦ፿ຨᨪᕭᦜЧ౒೽ᦪ᧧ᨃᘠףኌዂǔᩏตᨪ೔ǁຼഐ೫ᨢ᤿ᨍᨰᧃᜬጓᒩᦟᩂᩢᦣኌᣵᩇؠ኏ਗᨪᗬጞ ვ0ᩯఴᨃƱၐᨑ᩶ᨇᩢᩄᩜШᦗ᩽ᩐ᩿ǜᅠॏှኖ᧼᧡ᗳǬ঩ჾᩮᦫ᪍ǐ᛽ᣉ᪒᪌᧩ౙႺ෵ᨵኇ๜᧽ǬᨿШჵී᪟ෝ᪡ĠആȜ࿥᨝᪄ᩘ᪔٨࿲ຶ᤾ᪧᄀ᪩᪲҉ചป᪘ᩰ᪱ᘋǰҊᩍዾ᪦᪓᪚೿ᫀ᪗᪋ྫྷăടණર៪߈ᣚᘶഅॿ߮ᚋȘᜊͳᖋؖښᆒ᧡ᥠ੷D௤˯༭ᦄᢨഹ᧋ଽᚏ೭ᦈ˓ᥰᣁɥᦚҝሔᨆ఼D᫳Ꮒᗟฌᗨ᫸س໣ᨺɡ಻ᤪю᫾ƒᅒŉረ෡᫽᫳অଁᦦɜᬌྙݸ̨Ҕĝᗛ᝸ϐჁΕ௤࠼໰ୠፈࣣՓ་၉ʉDᤚఁᛪ᫞ᅷ᫾ஶ୍ᓦ਴᫰ᕅᕁ۵୐ᣥୱӼᙇʽ൮ۡ᫰৲ϑǴǁਁ೺ჽ᧦ตϐlᭁᒦףᨛໞᄺय़ᕸE०ᭈરdʬࣞʲϕᘶૠ᫮ᚚᦧᭉએʜ᥽൤፜ൠ༕εᥛ᫪ᗦ࿝༳៤ടGᜅᆂၿupݜ൭ʳ᭛થ܇ċ᭬ႍȉ݇݉ச᭰మҿ૦᭵᭣Ծt༞ψhҿemy݆݈݊᭯᭱ᮅ᭴ᫍྮēᆣΙŻᮃ࿢᤺ࢩചෳᨌᮟᬔ᏾࿭ຘᮦԩᑧᬋ๳᮫೹ᗐซ᩼೶᮰ĉ᪳ሁᮯᜅ࿢᮷ሇЙຨᮦྨ෫᫶ตᯁǐᩳᬘॠᮟᮏϑᛇӦᘔፉ˂λ᧍Ĺᮦ᧐฼Հ੦᮱ᑧᨵጀණᯙףၔెᒛᨌᯟ୛ףनᯣᘍ᭏໠ᯠǁᩄᩥዽ෶Ǚ᪶ึᆾᯧᯯᛴጓᒕ᯴෧᯷੖ናᏘྡᩧኳ᯦ᰀĠಂᒡᨮᤋᕸPΒ-ӣ-Pʢࢰȃݟᙜےႋϕຼ᡼ᢩ܆࡜ߤ௳ᅷᰆᆞවŅdೱ᯹ᭅᰄ᩠ۈޅᰩᙽᐞຨᰮᰨᯂᄓᭆ๜ᰴేᎩລᯉᕸ।ᢴۃᛆlpaਨɒഽខᓾߊ᰺ᘮᮈʥƧǟ᫥˔ᦊᰙᧄᦉᖁʶᦌഹᦎᕃࡕݹ߶ᥴ਽୑Բႚࣶ᝸ǣ୛ᒯqu᭶ѫᰘΧͨᱲᬢᦇ༻ᜈʶFFᢩ᝛ᮑ༨ᄙᘟ៟ᓿ᥺ैAࡢԖᡬᥳ᭽ᣀᱨ୚ݛथ᝼༭᱈ᝆĉ᭪ܧܸ᫯ذᑑɧʣᦒᩋ᫂ຶ᩵ጀNᲜᦛᒟᦝ༿ಹƔᗨᲣᏯና኱ᯄ๜Წǜᒔጆ᧴ቝᲲᰶቸᤄ᩠Ჸᯇ᎖ཚᰌȾടĒޙᢴᘳ࠾ˋ᫔ᬣࣸΣᢸđᤚܥ᜔ᙃ្঄ʽऻᢼாᇓ઴ߊᲲ੄ᛌᔥऊڲᆚᛴാᇍ༔ែᙼ࿗ᱞ᛭ᔜᕲᲜᱎടᒭᣄ˜ׅᝍᰙͬྱፈC֖ᳶ߶ᣟᱧᒬᱭψoᇁᖰᰖ׶ׇ͓ᬢϘ݂߆ᬽᲙᆳᚤ࿒᥻୪༭᱿᭮੷ഡKՀtᙓᢦ൴ᣜ᢫᭝࿅᭭ᬙᮊLଜއ༭ඝ᱖ᴣ൭ᴬ߲ᦍᴮᴐᱨiᱬᮅᆥႂαᜉ᫩ඏฅᲊᲀݬൕ֥៾Ꮸൎ༼ൠP᜺ᡈʥഡ࣍ĳ༕ʰᑁᧂᱵ༨ᵒ႘ᱛĭŃᵀ᫱TɩƱᦓᐒጦෝᵞᲝᰂᒕᐙᵥᭂྠᩦᗻኳᵥౙᘅᩌ᪝ᒜᵰइౚ᫁ചᒪ೏ᯊrƨd_Tীʮ໰޿ᅧ᳷᱘᳎ᵙīᱝயᵥᓎᵌ/ႿཁĖ༐ׅᤘ༣᭺āᵜᴦᶁװᣌᶖહᥫᶙ᭪ᵜ","tz/pacificnew.lzw":"Link\tAmerica/Los_Angeles\tUS/Pacifĉ-New\t","tz/southamerica.lzw":"Rule\tArg\t1930\tonly\t-\tDec\t 1\t0:0Č1ĝČS\n"+
+"ĀĂĄĆĈĊĚĎĐĒĄprĘĚĜĞěĒĤāăąćĉ3īďđēOctĈ5ěġĈŉģĥĺĨĽ2ĩ4ČēMaıęňĵŔĸĦĻĩ3őĽ9ĮNovĲŚğŋŝŎļ9œčŀĮJāũĴūĵŌĹħů4ĿĭēŵnņŪĶ-ŭŽŒƀŁ\tŃŅ1ŇŸŊźƉşĉ43ŲƁĄućřƓŜōƊƘƚĬƍƏƅƓĠƕƣƗŰ6ƛƍŖŘĳŉƢżƯ4ƱƧĮƩƠŉƬĢƖŏ96ƦųłńŷƷķƮǅǇƲĮĕėƑƆǂ\tŻŞǐ4ĩ6ƱŕŗǌśǎƹǜǞǠƎǋǖƫŬǏů67ǒēAİĘőơǥǛǰǲĉ68ƾǋSun>=ƶĵǘǚŮǞȀǾŤǴǶȃȅȇƆƸǻĩ7ǝƽƂaƄ2ƚǭƭǦůȚǳ\tŖđǀǤƈǯĩ8ȀȜĔĖǣŹǃȮĉ8ŤĉĊĮƴǙȄȆȈČȗȌȹȻ99őǊŅȓɂƒǁǮȤĩɉȧƩɎȕȢȷɓ2ĞČȲȿȡǍȭɜĞǲȲǔ\tċǗɒȘɝ0ȀɯȐȨǢɘǬɣǄćɯȱǉǪɍɁȇɐȉŬZĎe America/ĻentinʏBuʒos_Aires -3:5ʥ48ʣ LMTęȺ4 Ə ľ\n"+
+"\tʸ-4:16:ʩʣ\tCʮĩɝ ȩʷʹʻĵǴRTŠ0 ǔˉĒˋČşAR%sˏȏʳń  5˔ʤŉ˘˚˜ɔ9˟tˡ3ˤ˖Ɗ˙˛ˏɯˑƴˮˤʥĵ˧˴\n"+
+"ʅnʇʉʋʍʏʑʓʕʏCordobaʣʻʽʿʪ-ʬ˄1ʱˬʵ1˰ʼʾˀē˃˝Ɋ˷ay̟ˌĄˎː˒Ė̪˗Ĩ˳˩˞ʴˢ˺˦̳˨̥91ˇŗ˹ʸ˕ŉēW˙̽̿ʴɝ̹˼̻˴˪̜ʵ̱˲̼\t˶̀r͂ʹ˻̲ć̴T˿ʆʈʊʌʎʐĆʒʔʖ/Salt̑ʺ:2Ġœʫʭ˝̛ʴʶ̓ͳ̢̔˂̙̦̩̀;˱ˍ̥ċ̯c͔˽̵ǆ˫̷ˣ;͕͐͝ȼ̿˸͓·ͅ\t͇̭Ι̜͌Ε̺͖͟ȼΒˠΜˊΦ̬͐͘Λ˯Υ͎ΧΰĞʪʴ͍̚Ŕ̬̀̂ͥ̅ͨ͡gͪ̉/TucumȞ̒ʹĜ52͸̙ͻˠͽέ΀̖΂̥ˆˈΝ̫͈̮˓Ϡ͞ίΐ6Ϊ˭̸δϦ͠ɔΚ́ά̫̈́Π͉Σ0μΗΐɉ͒γέεϧ˵ɞ͙͛ĒΖΉ͗Ğʲƃˡ̞ϥĮ϶Њ0ЌȄęϿЇή́ͤ̄ͧ̇ͫ͢͠ʏLa_RiojͲʻ27ʹʲ̗͹Ĉϖ˭Ϙ̈́Ϛˁ̤˅̧ΆЀνϢĽˑϤоϻ̥ϩ͒Δ͜КΨɉϱ͚ę͔͆рэ΅ˡ7ϺΏ̽ϪІͳЁϯαϲИ˥ϡ̭ɯЕnЎёΟϢѦ ЍΤъў͖ɻ̜λϭĮ͈МρП̆ͩ̈ͬͮn_ŵώͳ3ˋа̘ͺŰ̜жͿ̡ϛкĉϞ̨Ѫѓ΋уϴϮьчΓј͏ϼюѩАђΡєȩіҟζϼћϳѝқηĞЅҮЈξГʲҨҎΈѫѥЋѮā 2щЙѲұιˠѶѱпˎѺОͦѽυѿʏŵjuyϏ͵ʼϓēв̚ҌͼЏϙҐй΃ҔнҚѸҦҘ̰АљǞҭӃѣҰϼ̧я4ѪВȼˑ͋8͔ǘΠSϷ˸1їҤҼϷ̷6Ϻǘ˙ԁɔ2ҪЂ̷͑Ѣ˱ӮѠяѢΖԗθѵӽѷΉӍ̃ӏτφͬCaͱύrʎӘ˻̖Ҋгӟϗӡзӣ̣ӥмҖӪтӬфӮ̶ΫӱԛҠԂѡӸѓ̾ϸԑϯΩϾΎՅГӵќҵѬҾЍѐԆВѭѯϹѷԜɰԞϺԡπӎσСχMʒ̎zЫ:35̠ϔҋʲӠ̟иԸϝԺԆҗԽ΍ӭՑՁϫՃыΘɉՓ ӷ՚Չӻӈӱ˱ӿԍՆяԵүБՉ͊֎ӾŉԀ̽ϓΛ֕һӹɉϓκԟӊхԓΫԕօ˩ԘՔΞՖДѕȠՈҽֳSepӁԊ՟ՑѴ֦գξƉҁLuisГɱĞɳȿɘȀǹɤĦׇׅ׉ɯǲɲȁɿȔאɑƕեԣէѾТͭȞ_׆׈Әձ2҉ӝд̝շԷϜл΅ԻΊվՐҫцӰՌь9՞֨ԌRԎӺЅ1֊фҥ̽֍˭Ƒ֛ĵ֝ϰҳ֡Ξ֣Պ՘֕ՕҦϽԔ؏Čؑ֯ҴֱַҸ̨װ֋ؤҿlӁքӅ֮ԝJώ͵͔ה׈Ҽ˾נςРףχЧo_GͯĂgʛϏ3ʾϒճʰԳеؔո׳ғջ؉ҶсΌ׹ԒւˡحӳњՏր׺ՒҳԚأЃֳֶؘ٥ѧӁ؀ӄٜ׊բԠ׃عѼԥӒ/Ushuaiծ3ʥ1ӛҊًյԴױ̕Ӥպ׵ռԼٖٟ٘Αш׽ֆ؜֫ٗџЄβֲׂإӗċ٨ҷҿѨѰ٭֩׀ӈ֧ڥդʆĄغѽu̐̈́œЯˁӝ̾ϓFebęő̟ɫǴNц֏ֱԁѺڭٴФ_Paz̈́šկ6ڵϕ׿ھ2ېډŠ֙؍ۃۏهęŉBO؄Ċ֟́سԆۡˏƉBrیilۙɖǋʵĈǘȊۭ۫zۯŠŢĊƚȑƵĘב۸ۮ۰Ő۲Ņ۴ ɚǙ܄ۺ܆ŰɈϒǓȴř܋מɛĦ۬܅ĩ5ɟɽǵıʽĲɸƣܛ܏ܝĚĉܓ܀ũܗȬ܎ۻܫǈƜȿܖ܃ܦ۹ܲǆܴƍɩ Ťܯȶ܍ܹܜǾțɽܶĚ݂Ƈܱܐ6ŇȲرƄľ܂ܘ݄żܧܻݐȧɡ݋ܸݙܺݏݑɽܿݟݗȋ\tݚݏƱǾȀǡ܁݌ɅݪݢǨǞǲēŦŨܷݨݎȯݤƜݺǷݖʃȣܚݵȹƼ݉ǢǖݲǺăݫȯފƜƩӂބ݃ݩޑȹɧɽڹbĈǝގגސވ98ޜޔǋޖ݌۷݅ܨȹɼƜޞĘǲޢݾް܈ĈƱެɭޤ݆ަŤݒȞ͗݁ݠއ޿Ⱥ޹ލ܌ޙޥ׿ȧ޳1ݧܰޮܻߏȲޕߓޘ޷эߐںĈ޵߆޾ޯߝߘުČ޼ކߣߖőȲ޳݀ޗݍߕܐɊ޹ޫߌߜȽ߂ݔߚ߲ݡ޿ȽȼŇɌɀȔߒ߱ޭ߿ߤŰɔࠃ\t޳ɶŇ޶߳ɔޓƍߑ߽ݳޚɉࠖךĘ޻߸ࠔȼިࠗߟܣࠓࠊߖࠤࠞ ࠠݽࠢɉޱƳǢݼߔࠩߴ࠲ࠞࠇߩܙ߫ߴ߁ޝߟ͵߱ࠚߎࡀީ܉ƚ࠼ݘ߇ܨ˶ߞޟЭࡄޏݴܜࡏɯĚࠄ׏ࠈ޽ࡕࡎĞĚɯǩࠐʀߋܥ࠷Г߭ɽނ܊ࠡࡨɯܽ࠺߅࠯࡯Ћȧ࡬őࡋߍࡖĞހƨǫ࠮ޅ࠽࡞ۻࡢࡷŧĘࠒ࡮ࡍࢅɦࡐ͗ࢊࡧࢌ۰ח޹࡛ࡺݾɻ\tύxࠞࠑɬߪࢄ࢔θЊࠇēࡤࠆʂɄࡔޑɝځ࢏ɘ2Ǹ࢒࠾ࢥƚࢮǝࢧߟ࢟ߢࢢࢥࡾĮࢨȆࢲȖࢬݵࢮƱɝࣄࢺޟࢼࢴࢾ࣊ࡱ࣌ࠅࣃࢳ࠶࢓Њ׬ࣙࠎࣂʁࣅޣ࣐02࣓ࠝࢱࣖࢫ࣠ࢭ࣢ט0ٿࣁࢻࡥࢪ߾ࣘɝ҇ࢰʀࣄࢽ࣪հЊهࣱ࣯࢙࣭࣍ࣟࠫࣥࣸࣧࣳࢵࣵȀ࢜ࣿࣔࣞ܃ٳԤŦrĎhaĒۖ09ʿˑӜ΃؇ˤचČޑFNڔˑֹֻԄढΞदٝपʵ٬-णࢾदұ،ęӱवࢧہГ̿ऱ1Ѣवथधد࣢़͒֕ࠏہԢڮ/BeĂmЙूʦۑट̥डѷޑBьȰ ुԐٱफ़οͣסͧҁͱʠ॔˥38ڈख़ĩज़фޑAMֆॠॢҖ˄ѴѯʲĞġׂ॥ॎٴF̌ͱĂխङկ˖ےग़؈ڥढ़׾ऩֺęԅ֨ē॥͑ऱڟड़ݵफ़सΣॣঙݪַीখूϺওұ֥ΫؙΞ঄ऒσRĖifăऴʼज۞ॲĉॴ঒ঠঔॡ঩ঘڪদरখঞ֨বेह؎।ধৄफ٣ĵ্٥মϫর̫ল१ॏąagٻ̉ॕۖ΁ڶীӲࢾডӴ৓গঃ؛5৮৩ΖৗГ3৮׬ৰ०Н२ʏŖceШঌࢲʦӛ\t২঑৪৶؅ु৆৪চৱѵ৕तূڔۑऱ։৻জ৊ळ৵ਖৎণਛࡘ৳ਔ৫ѳĞ৙ңথঢ়৽ॏBahٽঌ҇ĝаਈठਊਟܜ৬٥৸ऱ৺৑ЃߒѵֽৌਠৼѻԤͮؿۋāoӄʾ2ϛਉফੈǞ৸͋৸ঁĞԋ۠؃ц਺۠ੈঅԤԨmpؿGۭndʇ८॰੓এॳਊ˱ॶॸ˜੥σCׇaڱ˥4Ьञਸঐ͔੷ұਿখੁٓॷ٩ॉઆݵॷظ৞ٴPঈؿV॒hoϏƑۗা̾ੵ੣ܜ઒ΐॺ঩তӨǴʮ੺ͧBoХV׈ͱϴ০ઃ੕Аઇદʪॻռ΃Ͻঝळ੶ઑ੸٥৏ۃϡબ঳ͧŖʖu׉үਸ਼ੳিઢ৖ૄॹ઼નॼ̽ઉֻ੓ઐતૅɔʲੀ઩֖ફ੉զͧEʟȄֺহʻ3जੲઠ৩ձ૖તC૘৳૦૷пC૜৹ک-૾ࢾAૺϼ૤ઊ૽ֱ଀ٯॿ܋Ÿ૛ભʏؾ_ܛnc੐҆Ġځ૓ડˤଅॶଈ̥ધफଌϡ଎ॾЖ׬଑ংા͡ƣCਲĦғǽۤĮपȵƔࢃଳۯăғȎସܭȫࣨƉାଵŰࡪƜƃũ˖uउ˂଴ୀ୊ȧAƞũ૾୐ࠉĦୈ୔ƻȧŵ܆Ň୏଼ࡌă୞ŒࣤǙֺũ͝୐Ɠ࣠୩Ƙअį܁୥ݳ୳ǆ࠹ݹ࢈۴୥ଡ଼୨୓ӯݝǢɫ୯୑୺ϩࢇŨȠ\t஀࡝୺7ܟܵǢ2Ťஈ୹ஃĉ7ƌȾތǝஙࡔஒğ97ɋɾएŤஐࢡஒ۽8ǩ׎ʀ஘ġ୰ண஛஦࣒୬pɪČ஬ଽஸȦޛ࢞ளஏவ୦ݩ୺ާୖǶࢯ஢୲ஸȰȯ׍ɵ௅௏େ௑୼னɶெĞ୛஑௑ࡇࡿכȆ஫ே஁୒ିɔஔ࠳ܢȀௗଲஸߗɽ଺ܣி୧௩୉̾ࠕடıɘழ௞உ௲ܪɉݸ௛௅௷௉௲୵ɡČ௰ż୺ަஅ௾௖ேச௪ȼ௚଺ࡒఉ௘ఘɉ௢ѸǶ։ɪఖஷటɕࢮνɗఈ௧௠௪ࢮஞǴ୘ɶƱఝ௱ర0ࢯऍ࡚భఁ௨୩ࡗࢎݰபథఁగĦ࢚ɠஆఎదௐహछఓ౅ఏଢ଼ஃపௌఔࠆె0ஶ౏౉఺లɴđࢱ౛ౝఞ౟఻a࢝ౄ௿౥ݍોʏ४ٽلڲ০क़઄Բૂʿ౶ˁSठˑ\tଡΞCLग़ۑୢਫ౵ʿ౷౾ग़૙ֻՙٓ಄ग़˫ಈ಑ಊƻ౽ӥ7৮ಗ଄ŉ୩಄ֆ4ಜҨࢲ͔ಡLઓНۋcষʍ/EastʋĒЮԄʿ਷׮۔;ಸЮ૴\tE΃š৓ˤЮĵ୩EASॹۥ͚ूӁǂˤʾ೉ஃೋ್੹ଲOԏஅȪɢࢂ௸C೜ȼ஺ܡĘǝऑڬ৾ॐoل઴ͳ5੒ષϕ8إ೐֬ೲϐˁBਹ ݺӁѢଅೣ˂O͐ۆ೬੼ۭʎଛ૱ձઁଟଞޞڼಁΝڿĄाǾૈпۅLʕkۇ੦uഋa੐೬Lowʋۊʌଙʡ\n"+
+"ഞnഠഉണaഌഡσKۭĂ੭ijkଔ/Gٻyaqׇ۰ಟĉ೻াȺळձ؇ġˁQೄ֕ଅēE଎ӍಭಯcൂͯapৡʛĒձ5ੱ಻ൕಂ̫൙ଥ੆ĒೕνGAಅಁƣFͯഠĽଷ९ହ୭lಳtȓࢠࢃ൸lൺĊୂ4நலࠆŤࢽආඈ૲ߊ඄௸එŒ஥උൾ஼඀಴ඃࢋă඗ƥୡ߃Ƀ୑ජަ஺଺ඝංȄඕݩඨ೶ݿఢıඬඟ࣏න݈Ɯ௵Ʊචࠏ൹ඳࡏē଺౭඾නࣉɞපएܣඐවࡘࢥпȒँवݳ඗ࢮő఼୶෋Ňුࡔූࡠ࢛౪ඛ෋͗ݽנt඀̈൞SͱďeŁʥ5Ġଭ്ಽъෲڴසठ೏ڼ͔඗FKॹ৸ϟ֨෿กદ৲ुഛ඿ඇࠏง૩ഉ̨ʒ́Й஗ൌ౸ি̿ୢѪGFцಜƏׂฝ੉സͧൃ൅ʖЙϒझ഑৲ȿ̹4ࠎGBGцۑದ൯઀าY̥7৲ಈҎҵG฼ϰผ฼ƉۋۭșŇ޸ࠄ୅ை่ŗघஜ์஦ݯɴ܁ࢽ้๓஦Ɉ௻ୄඦݳ๛௓߶ई௨๣Ӻ޹๏๧๒ϰ๪ලࡴĦ๨֤౒๏๢๭ȼୋ௣ࢉද๑๊೥౒ݕ๚๸ɉƚࠂࠬඦ๬๿ɉǝງ࣓බථ຃຋ǆ๵๡ࡔ๳ດාఽౚ඾ຘ୵޳ຐƄຒ๜ఒບ๘෤ຣࡩҷ්௜ຩɯőࡰ෣ອ๱ă๣ѦГɳబࢩ๽ƣຶࡽຸ௽एםࣗີ๭౗ෙ຺ɂຼż຾1Čෙ೧࡛೪ਮٴAsȄಮĎสĜͷ෵ਞʦໜઃઍۙѵ౺̫Pไஜ৙ׂ໨฽ʲܡ͔๣໨˾ຽʋ୛ඉඤƄ๫࡝P໶Š௚೧๶ທ໾Ľୂඓසൿඁභೡݩ໽r໷ඓƘνඍࣃ೩࣏༎໷ரȯఆݓ଻๧༄ަݭަఆ༁ຖ༘࣠௫໹༞໼༠௳Ɯ༥ं໵༏ૣ༪໻ࢡ༨ȼයƍ༰໓ĺॏഞύ൥ĝ॰ଞໞ൫॰ঽธ׿ʪಈ૟;ଅ༨PEഇ෧෩ʔ෫outhـěgٽʣࣣۖགྷ૓ൎʸभ̫GԎു๛ԫibଛʨ໡഑রڳىēPೄքڳཉེ̥ัˬ̹ഗNEี๋೿ŧ٫ྃνSҦ೶ྂٱྎฐॏખrt_of_SൢʕϏ0ೕ൩ग़෼૦һೌ଱żU༏ৢ̨˅஺ƿࡹơկČHݩྫƞൄ˅ຍɊǩ༰ࠨĦྸྭđғྼޖ๎࠙ྴ\tྶƉ࿂ྺĽຆĊࠎƩມࡄ࿊࿌ƣ࿎ྮĽྼࣾ౬ԩࣃොʥċ׉ݳ࿚࿄Ċ୫࡬࿉ɫ࿘ྪྫྷ࿏Ċଷſແ࿕࿀ă࿧Š࿳ఫǋ࿶ླ࿭ྷ࿰࿛ŰౡୗƟ࿬ྵခྐྵဃක߻ܮࢽ࿹Ƙ๺ܔǕޡ඾ထŰ஺ȿ؇ࡓ࣠ဘ5డǡđࣚ࢘࿙ဂ࿨ဠ஌ƅ࿷\tဘ6௬ŴඥߡິိဧǞူౄ࠭ဝ࿍ံചݷຬࡥ࡜ࢡီࣀ༈஼ࣣျဦဋ࿨ǟဿࠄݕာီୂஓடဣဳś࿗ည࿃ȍșνܿྲ࣏ဘ஧ౘ͗ဖဴၢဓళļ࢑ໄဵ။ș༺ແ໎࿖ကြၯஜၱēɩࣄဥ࿯ၷ஦୫ƿ࠙ࡔၢ୵ܿၦ༌ၶၛஜༀణႃသွ๝๪߽௨ဘ8းౢဏၡ႑ோɨȴလၽ࿁ႜ௚ရႈ୆၊ႋަ௚ɩ࠻ဗႜအວࢯၑႯ߶ࡳႉႨ࿱ߏ๹ແ௜ႳၿႺߝປࣃ႔࡝ဘߵߦƐȀႡ࿸႑ߺࡁࡑ჊တံືȲ௵ႶߛႸྮɯ၅ວࡒӁႛၯმ๪݁व႕დĞ୫ရࡹෝ႐სშ෡౫ఇౚჟႷၾၛ࢕ෙ༔=჊წുMĎವvi੮ི಺಺སަڢӁଃʨʻഐŕԹѕřྌၮၛUYಣϓǔęǝϺ࿹ᄗಫ༾ٴԨതૐЬЮᄏธൎ̟Эฬչॳڸں෽ഖνVEۂകٓᄶ٥ಜᄛ݀܋͝ھᄵᄷ"}
 
 });
 
@@ -4709,10 +557,9 @@ as they do in the ISO-8601 standard, or roll your own library. :-)
 
 });
 
-require.define("/src/Time.js",function(require,module,exports,__dirname,__filename,process,global){// Generated by CoffeeScript 1.8.0
-(function() {
+require.define("/src/Time.coffee",function(require,module,exports,__dirname,__filename,process,global){(function() {
   var Time, timezoneJS, utils,
-    __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+    indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
   utils = require('./utils');
 
@@ -4723,7 +570,7 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
     /*
     @class Time
     
-     *# Basic usage ##
+    ## Basic usage ##
     
         {TimelineIterator, Timeline, Time} = require('../')
     
@@ -4796,14 +643,14 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
         console.log(q1.inGranularity(Time.MILLISECOND).toString())
          * 2011-07-01T00:00:00.000
         
-     *# Timezones ##
+    ## Timezones ##
     
     Time does timezone sensitive conversions.
     
         console.log(new Time('2011-01-01').getJSDate('America/Denver').toISOString())
          * 2011-01-01T07:00:00.000Z
      */
-    var g, spec, _ref;
+    var g, ref, spec;
 
     function Time(value, granularity, tz) {
 
@@ -4815,14 +662,14 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
       
       The constructor for Time supports the passing in of a String, a rata die number (RDN), or a config Object
       
-       *# String ##
+      ## String ##
       
       There are two kinds of strings that can be passed into the constructor:
       
       1. Human strings relative to now (e.g. "this day", "previous month", "next quarter", "this millisecond in Pacific/Fiji", etc.)
       2. ISO-8601 or custom masked (e.g. "I03D10" - 10th day of 3rd iteration)
       
-       *# Human strings relative to now ##
+      ## Human strings relative to now ##
       
       The string must be in the form `(this, previous, next) |granularity| [in |timezone|]`
       
@@ -4835,7 +682,7 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
       * `next quarter` next quarter
       * `previous week` last week
       
-       *# ISO-8601 or custom masked ##
+      ## ISO-8601 or custom masked ##
       
       When you pass in an ISO-8601 or custom mask string, Time uses the masks that are defined for each granularity to figure out the granularity...
       unless you explicitly provide a granularity. This parser works on all valid ISO-8601 forms except orginal dates (e.g. `"2012-288"`)
@@ -4856,32 +703,32 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
       may mistakenly request charts for iterations and releases that have not yet been defined. They are particularly useful when 
       you want to iterate to the last defined iteration/release.
       
-       *# Rata Die Number ##
+      ## Rata Die Number ##
       
       The **rata die number (RDN)** for a date is the number of days since 0001-01-01. You will probably never work
       directly with this number but it's what Time uses to convert between granularities. When you are instantiating
       a Time from an RDN, you must provide a granularity. Using RDN will work even for the granularities finer than day.
       Time will populate the finer grained segments (hour, minute, etc.) with the approriate `lowest` value.
       
-       *# Date ##
+      ## Date ##
       
       You can also pass in a JavaScript Date() Object. The passing in of a tz with this option doesn't make sense. You'll end
       up with the same Time value no matter what because the JS Date() already sorta has a timezone. I'm not sure if this
       option is even really useful. In most cases, you are probably better off using Time.getISOStringFromJSDate()
       
-       *# Object ##
+      ## Object ##
       
       You can also explicitly spell out the segments in a specification Object in the form of
       `{granularity: Time.DAY, year: 2009, month: 1, day: 1}`. If the granularity is specified but not all of the segments are
       provided, Time will fill in the missing value with the appropriate `lowest` value from _granularitySpecs.
       
-       *# granularity ##
+      ## granularity ##
       
       If you provide a granularity it will take precedence over whatever fields you've provided in your config or whatever segments
       you have provided in your string. Time will leave off extra values and fill in missing ones with the appropriate `lowest`
       value.
       
-       *# tz ##
+      ## tz ##
       
       Most of the time, Time assumes that any dates you pass in are timezone less. You'll specify Christmas as 12-25, then you'll
       shift the boundaries of Christmas for a specific timezone for boundary comparison.
@@ -4900,14 +747,14 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
       3. In either case, if the dates you want to compare to are in GMT, but you've got Times or Timelines, you'll have to provide a timezone on
          the way back out of Time/Timeline
        */
-      var config, jsDate, newCT, newConfig, rdn, s, segment, _i, _len, _ref, _ref1, _ref2, _ref3;
+      var config, jsDate, k, len, newCT, newConfig, rdn, ref, ref1, ref2, ref3, s, segment;
       this.beforePastFlag = '';
       switch (utils.type(value)) {
         case 'string':
           s = value;
-          if ((s.slice(-3, -2) === ':' && (_ref = s.slice(-6, -5), __indexOf.call('+-', _ref) >= 0)) || s.slice(-1) === 'Z') {
+          if ((s.slice(-3, -2) === ':' && (ref = s.slice(-6, -5), indexOf.call('+-', ref) >= 0)) || s.slice(-1) === 'Z') {
             if (tz != null) {
-              if (s.slice(-3, -2) === ':' && (_ref1 = s.slice(-6, -5), __indexOf.call('+-', _ref1) >= 0)) {
+              if (s.slice(-3, -2) === ':' && (ref1 = s.slice(-6, -5), indexOf.call('+-', ref1) >= 0)) {
                 throw new Error("tzTime.Time does not know how to deal with time shifted ISOStrings like what you sent: " + s);
               }
               if (s.slice(-1) === 'Z') {
@@ -4946,9 +793,9 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
           config = {};
           config.granularity = value.granularity;
           config.beforePastFlag = value.beforePastFlag;
-          _ref2 = Time._granularitySpecs[value.granularity].segments;
-          for (_i = 0, _len = _ref2.length; _i < _len; _i++) {
-            segment = _ref2[_i];
+          ref2 = Time._granularitySpecs[value.granularity].segments;
+          for (k = 0, len = ref2.length; k < len; k++) {
+            segment = ref2[k];
             config[segment] = value[segment];
           }
           if (tz != null) {
@@ -4960,7 +807,7 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
           }
       }
       if (tz != null) {
-        if ((_ref3 = this.beforePastFlag) === 'BEFORE_FIRST' || _ref3 === 'PAST_LAST') {
+        if ((ref3 = this.beforePastFlag) === 'BEFORE_FIRST' || ref3 === 'PAST_LAST') {
           throw new Error("Cannot do timezone manipulation on " + this.beforePastFlag);
         }
         if (granularity != null) {
@@ -5106,14 +953,14 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
           granularitySpec.segmentStart = i + 1;
           granularitySpec.segmentLength = segmentEnd - i;
           return granularitySpec.regex = new RegExp(((function() {
-            var _i, _len, _ref, _results;
-            _ref = mask.split('');
-            _results = [];
-            for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-              character = _ref[_i];
-              _results.push(character === '#' ? '\\d' : character);
+            var k, len, ref, results;
+            ref = mask.split('');
+            results = [];
+            for (k = 0, len = ref.length; k < len; k++) {
+              character = ref[k];
+              results.push(character === '#' ? '\\d' : character);
             }
-            return _results;
+            return results;
           })()).join(''));
         } else {
           return granularitySpec.regex = new RegExp(mask);
@@ -5121,9 +968,9 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
       }
     };
 
-    _ref = Time._granularitySpecs;
-    for (g in _ref) {
-      spec = _ref[g];
+    ref = Time._granularitySpecs;
+    for (g in ref) {
+      spec = ref[g];
       Time._expandMask(spec);
       Time[g.toUpperCase()] = g;
     }
@@ -5133,15 +980,15 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
     timezoneJS.timezone.init();
 
     Time.prototype._inBoundsCheck = function() {
-      var gs, lowest, rolloverValue, segment, segments, temp, _i, _len, _results;
+      var gs, k, len, lowest, results, rolloverValue, segment, segments, temp;
       if (this.beforePastFlag === '' || (this.beforePastFlag == null)) {
         if (!this.granularity) {
           throw new Error('@granularity should be set before _inBoundsCheck is ever called.');
         }
         segments = Time._granularitySpecs[this.granularity].segments;
-        _results = [];
-        for (_i = 0, _len = segments.length; _i < _len; _i++) {
-          segment = segments[_i];
+        results = [];
+        for (k = 0, len = segments.length; k < len; k++) {
+          segment = segments[k];
           gs = Time._granularitySpecs[segment];
           temp = this[segment];
           lowest = gs.lowest;
@@ -5149,41 +996,41 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
           if (temp < lowest || temp >= rolloverValue) {
             if (temp === lowest - 1) {
               this[segment]++;
-              _results.push(this.decrement(segment));
+              results.push(this.decrement(segment));
             } else if (temp === rolloverValue) {
               this[segment]--;
-              _results.push(this.increment(segment));
+              results.push(this.increment(segment));
             } else {
               throw new Error("Tried to set " + segment + " to " + temp + ". It must be >= " + lowest + " and < " + rolloverValue);
             }
           } else {
-            _results.push(void 0);
+            results.push(void 0);
           }
         }
-        return _results;
+        return results;
       }
     };
 
     Time.prototype._setFromConfig = function(config) {
-      var segment, segments, _i, _len, _results;
+      var k, len, results, segment, segments;
       utils.assert(config.granularity != null, 'A granularity property must be part of the supplied config.');
       this.granularity = config.granularity;
       this.beforePastFlag = config.beforePastFlag != null ? config.beforePastFlag : '';
       segments = Time._granularitySpecs[this.granularity].segments;
-      _results = [];
-      for (_i = 0, _len = segments.length; _i < _len; _i++) {
-        segment = segments[_i];
+      results = [];
+      for (k = 0, len = segments.length; k < len; k++) {
+        segment = segments[k];
         if (config[segment] != null) {
-          _results.push(this[segment] = config[segment]);
+          results.push(this[segment] = config[segment]);
         } else {
-          _results.push(this[segment] = Time._granularitySpecs[segment].lowest);
+          results.push(this[segment] = Time._granularitySpecs[segment].lowest);
         }
       }
-      return _results;
+      return results;
     };
 
     Time.prototype._setFromString = function(s, granularity) {
-      var gs, l, sSplit, segment, segments, stillParsing, sub, tz, zuluCT, _i, _len, _ref1, _ref2, _results;
+      var gs, k, l, len, ref1, ref2, results, sSplit, segment, segments, stillParsing, sub, tz, zuluCT;
       if (s === 'PAST_LAST' || s === 'BEFORE_FIRST') {
         if (granularity != null) {
           this.granularity = granularity;
@@ -5194,7 +1041,7 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
         }
       }
       sSplit = s.split(' ');
-      if ((_ref1 = sSplit[0]) === 'this' || _ref1 === 'next' || _ref1 === 'previous') {
+      if ((ref1 = sSplit[0]) === 'this' || ref1 === 'next' || ref1 === 'previous') {
         if (sSplit[2] === 'in' && (sSplit[3] != null)) {
           tz = sSplit[3];
         } else {
@@ -5209,9 +1056,9 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
         }
         return;
       }
-      _ref2 = Time._granularitySpecs;
-      for (g in _ref2) {
-        spec = _ref2[g];
+      ref2 = Time._granularitySpecs;
+      for (g in ref2) {
+        spec = ref2[g];
         if (spec.segmentStart + spec.segmentLength === s.length || spec.mask.indexOf('#') < 0) {
           if (spec.regex.test(s)) {
             granularity = g;
@@ -5225,9 +1072,9 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
       this.granularity = granularity;
       segments = Time._granularitySpecs[this.granularity].segments;
       stillParsing = true;
-      _results = [];
-      for (_i = 0, _len = segments.length; _i < _len; _i++) {
-        segment = segments[_i];
+      results = [];
+      for (k = 0, len = segments.length; k < len; k++) {
+        segment = segments[k];
         if (stillParsing) {
           gs = Time._granularitySpecs[segment];
           l = gs.segmentLength;
@@ -5237,12 +1084,12 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
           }
         }
         if (stillParsing) {
-          _results.push(this[segment] = Number(sub));
+          results.push(this[segment] = Number(sub));
         } else {
-          _results.push(this[segment] = Time._granularitySpecs[segment].lowest);
+          results.push(this[segment] = Time._granularitySpecs[segment].lowest);
         }
       }
-      return _results;
+      return results;
     };
 
     Time._getStringPart = function(s, segment) {
@@ -5255,7 +1102,7 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
     };
 
     Time.prototype._setFromRDN = function(rdn, granularity) {
-      var J, a, afterCT, afterRDN, b, beforeCT, beforeRDN, c, config, d, da, db, dc, dg, granularitySpec, j, m, n, segment, specForLowest, w, x, y, z, _i, _len, _ref1;
+      var J, a, afterCT, afterRDN, b, beforeCT, beforeRDN, c, config, d, da, db, dc, dg, granularitySpec, j, k, len, m, n, ref1, segment, specForLowest, w, x, y, z;
       config = {
         granularity: granularity
       };
@@ -5308,9 +1155,9 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
           specForLowest = {
             granularity: granularity
           };
-          _ref1 = granularitySpec.segments;
-          for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
-            segment = _ref1[_i];
+          ref1 = granularitySpec.segments;
+          for (k = 0, len = ref1.length; k < len; k++) {
+            segment = ref1[k];
             specForLowest[segment] = Time._granularitySpecs[segment].lowest;
           }
           beforeCT = new Time(specForLowest);
@@ -5354,10 +1201,10 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
       @private
       @return {Boolean} true if the Time Object's granularity is above (coarser than) "day" level
        */
-      var segment, _i, _len, _ref1;
-      _ref1 = Time._granularitySpecs[this.granularity].segments;
-      for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
-        segment = _ref1[_i];
+      var k, len, ref1, segment;
+      ref1 = Time._granularitySpecs[this.granularity].segments;
+      for (k = 0, len = ref1.length; k < len; k++) {
+        segment = ref1[k];
         if (segment.indexOf('day') >= 0) {
           return false;
         }
@@ -5380,7 +1227,7 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
       (actually something that can be compared to GMT). It does **NOT** convert **FROM** GMT. Use getJSDateFromGMTInTZ()
       if you want to go in the other direction.
         
-       *# Usage ##
+      ## Usage ##
       
           ct = new Time('2011-01-01')
           d = new Date(Date.UTC(2011, 0, 1))
@@ -5497,11 +1344,11 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
           console.log(t.getSegmentsAsObject())
            * { year: 2011, month: 1, day: 10 }
        */
-      var rawObject, segment, segments, _i, _len;
+      var k, len, rawObject, segment, segments;
       segments = Time._granularitySpecs[this.granularity].segments;
       rawObject = {};
-      for (_i = 0, _len = segments.length; _i < _len; _i++) {
-        segment = segments[_i];
+      for (k = 0, len = segments.length; k < len; k++) {
+        segment = segments[k];
         rawObject[segment] = this[segment];
       }
       return rawObject;
@@ -5518,11 +1365,11 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
           console.log(t.getSegmentsAsArray())
            * [ 2011, 1, 10 ]
        */
-      var a, segment, segments, _i, _len;
+      var a, k, len, segment, segments;
       segments = Time._granularitySpecs[this.granularity].segments;
       a = [];
-      for (_i = 0, _len = segments.length; _i < _len; _i++) {
-        segment = segments[_i];
+      for (k = 0, len = segments.length; k < len; k++) {
+        segment = segments[k];
         a.push(this[segment]);
       }
       return a;
@@ -5540,14 +1387,14 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
            * 2012-01-01T00:00
            * 2012-01-01T00:00
        */
-      var after, before, granularitySpec, l, s, segment, segments, start, _i, _len, _ref1;
-      if ((_ref1 = this.beforePastFlag) === 'BEFORE_FIRST' || _ref1 === 'PAST_LAST') {
+      var after, before, granularitySpec, k, l, len, ref1, s, segment, segments, start;
+      if ((ref1 = this.beforePastFlag) === 'BEFORE_FIRST' || ref1 === 'PAST_LAST') {
         s = "" + this.beforePastFlag;
       } else {
         s = Time._granularitySpecs[this.granularity].mask;
         segments = Time._granularitySpecs[this.granularity].segments;
-        for (_i = 0, _len = segments.length; _i < _len; _i++) {
-          segment = segments[_i];
+        for (k = 0, len = segments.length; k < len; k++) {
+          segment = segments[k];
           granularitySpec = Time._granularitySpecs[segment];
           l = granularitySpec.segmentLength;
           start = granularitySpec.segmentStart;
@@ -5579,6 +1426,21 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
       7: 'Sunday'
     };
 
+    Time.MONTH_TO_S_MAP = {
+      1: 'January',
+      2: 'February',
+      3: 'March',
+      4: 'April',
+      5: 'May',
+      6: 'June',
+      7: 'July',
+      8: 'August',
+      9: 'September',
+      10: 'October',
+      11: 'November',
+      12: 'December'
+    };
+
     Time.DOW_MONTH_TABLE = [0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4];
 
     Time.prototype.dowNumber = function() {
@@ -5591,11 +1453,11 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
           console.log(new Time('2012-01-01').dowNumber())
            * 7
        */
-      var dayNumber, y, _ref1;
+      var dayNumber, ref1, y;
       if (this.granularity === 'week_day') {
         return this.week_day;
       }
-      if ((_ref1 = this.granularity) === 'day' || _ref1 === 'hour' || _ref1 === 'minute' || _ref1 === 'second' || _ref1 === 'millisecond') {
+      if ((ref1 = this.granularity) === 'day' || ref1 === 'hour' || ref1 === 'minute' || ref1 === 'second' || ref1 === 'millisecond') {
         y = this.year;
         if (this.month < 3) {
           y--;
@@ -5621,6 +1483,18 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
            * Sunday
        */
       return Time.DOW_N_TO_S_MAP[this.dowNumber()];
+    };
+
+    Time.prototype.monthString = function() {
+
+      /*
+      @method monthString
+      @return {String} Returns the month as a String (e.g. "January")
+      
+          console.log(new Time('2012-01-01').monthString())
+           * January
+       */
+      return Time.MONTH_TO_S_MAP[this.month];
     };
 
     Time.prototype.rataDieNumber = function() {
@@ -5701,8 +1575,8 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
           console.log(new Time('2012Q3').inGranularity(Time.MONTH).toString())
            * 2012-07
        */
-      var newTime, tempGranularity, _ref1;
-      if ((_ref1 = this.granularity) === 'year' || _ref1 === 'month' || _ref1 === 'day' || _ref1 === 'hour' || _ref1 === 'minute' || _ref1 === 'second' || _ref1 === 'millisecond') {
+      var newTime, ref1, tempGranularity;
+      if ((ref1 = this.granularity) === 'year' || ref1 === 'month' || ref1 === 'day' || ref1 === 'hour' || ref1 === 'minute' || ref1 === 'second' || ref1 === 'millisecond') {
         if (granularity === 'year' || granularity === 'month' || granularity === 'day' || granularity === 'hour' || granularity === 'minute' || granularity === 'second' || granularity === 'millisecond') {
           tempGranularity = this.granularity;
           this.granularity = granularity;
@@ -5784,7 +1658,7 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
        */
       var lookup;
       lookup = this.year % 400;
-      return __indexOf.call(Time.YEARS_WITH_53_WEEKS, lookup) >= 0;
+      return indexOf.call(Time.YEARS_WITH_53_WEEKS, lookup) >= 0;
     };
 
     Time.prototype.equal = function(other) {
@@ -5799,7 +1673,7 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
           console.log(d3.equal(d4))
            * true
        */
-      var segment, segments, _i, _len;
+      var k, len, segment, segments;
       utils.assert(this.granularity === other.granularity, "Granulary of " + this + " does not match granularity of " + other + " on equality/inequality test");
       if (this.beforePastFlag === 'PAST_LAST' && other.beforePastFlag === 'PAST_LAST') {
         return true;
@@ -5820,8 +1694,8 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
         return false;
       }
       segments = Time._granularitySpecs[this.granularity].segments;
-      for (_i = 0, _len = segments.length; _i < _len; _i++) {
-        segment = segments[_i];
+      for (k = 0, len = segments.length; k < len; k++) {
+        segment = segments[k];
         if (this[segment] !== other[segment]) {
           return false;
         }
@@ -5843,7 +1717,7 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
           console.log(d2.greaterThan(d1))
            * true
        */
-      var segment, segments, _i, _len;
+      var k, len, segment, segments;
       utils.assert(this.granularity === other.granularity, "Granulary of " + this + " does not match granularity of " + other + " on equality/inequality test");
       if (this.beforePastFlag === 'PAST_LAST' && other.beforePastFlag === 'PAST_LAST') {
         return false;
@@ -5864,8 +1738,8 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
         return true;
       }
       segments = Time._granularitySpecs[this.granularity].segments;
-      for (_i = 0, _len = segments.length; _i < _len; _i++) {
-        segment = segments[_i];
+      for (k = 0, len = segments.length; k < len; k++) {
+        segment = segments[k];
         if (this[segment] > other[segment]) {
           return true;
         }
@@ -5921,8 +1795,8 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
     };
 
     Time.prototype._overUnderFlow = function() {
-      var granularitySpec, highestLevel, highestLevelSpec, lowest, rolloverValue, value, _ref1;
-      if ((_ref1 = this.beforePastFlag) === 'BEFORE_FIRST' || _ref1 === 'PAST_LAST') {
+      var granularitySpec, highestLevel, highestLevelSpec, lowest, ref1, rolloverValue, value;
+      if ((ref1 = this.beforePastFlag) === 'BEFORE_FIRST' || ref1 === 'PAST_LAST') {
         return true;
       } else {
         granularitySpec = Time._granularitySpecs[this.granularity];
@@ -5955,18 +1829,18 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
           console.log(new Time('2016W01').decrement().toString())
            * 2015W53
        */
-      var granularitySpec, gs, i, lastDayInMonthFlag, segment, segments, _i, _len, _results;
+      var granularitySpec, gs, i, k, lastDayInMonthFlag, len, results, segment, segments;
       if (this.beforePastFlag === 'PAST_LAST') {
         this.beforePastFlag = '';
         granularitySpec = Time._granularitySpecs[this.granularity];
         segments = granularitySpec.segments;
-        _results = [];
-        for (_i = 0, _len = segments.length; _i < _len; _i++) {
-          segment = segments[_i];
+        results = [];
+        for (k = 0, len = segments.length; k < len; k++) {
+          segment = segments[k];
           gs = Time._granularitySpecs[segment];
-          _results.push(this[segment] = gs.rolloverValue(this) - 1);
+          results.push(this[segment] = gs.rolloverValue(this) - 1);
         }
-        return _results;
+        return results;
       } else {
         lastDayInMonthFlag = this.day === this.daysInMonth();
         if (granularity == null) {
@@ -6013,18 +1887,18 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
           console.log(new Time('2012Q4').increment().toString())
            * 2013Q1
        */
-      var granularitySpec, gs, i, lastDayInMonthFlag, segment, segments, _i, _len, _results;
+      var granularitySpec, gs, i, k, lastDayInMonthFlag, len, results, segment, segments;
       if (this.beforePastFlag === 'BEFORE_FIRST') {
         this.beforePastFlag = '';
         granularitySpec = Time._granularitySpecs[this.granularity];
         segments = granularitySpec.segments;
-        _results = [];
-        for (_i = 0, _len = segments.length; _i < _len; _i++) {
-          segment = segments[_i];
+        results = [];
+        for (k = 0, len = segments.length; k < len; k++) {
+          segment = segments[k];
           gs = Time._granularitySpecs[segment];
-          _results.push(this[segment] = gs.lowest);
+          results.push(this[segment] = gs.lowest);
         }
-        return _results;
+        return results;
       } else {
         lastDayInMonthFlag = this.day === this.daysInMonth();
         if (granularity == null) {
@@ -6212,15 +2086,15 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
       granularity. If there is a use-case for it, Time could be upgraded to allow you to drill down into hours, minutes, etc. from any
       `_day` granularity but right now those lower order time granularities are only supported for the canonical ISO-6801 form.
        */
-      var _results;
-      _results = [];
+      var results;
+      results = [];
       for (g in granularitySpec) {
         spec = granularitySpec[g];
         Time._expandMask(spec);
         this._granularitySpecs[g] = spec;
-        _results.push(Time[g.toUpperCase()] = g);
+        results.push(Time[g.toUpperCase()] = g);
       }
-      return _results;
+      return results;
     };
 
     return Time;
@@ -6233,21 +2107,20 @@ require.define("/src/Time.js",function(require,module,exports,__dirname,__filena
 
 });
 
-require.define("/src/utils.js",function(require,module,exports,__dirname,__filename,process,global){// Generated by CoffeeScript 1.8.0
-(function() {
-  var AssertException, ErrorBase, assert, clone, compare, exactMatch, filterMatch, isArray, keys, log, match, startsWith, trim, type, values,
-    __hasProp = {}.hasOwnProperty,
-    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+require.define("/src/utils.coffee",function(require,module,exports,__dirname,__filename,process,global){(function() {
+  var AssertException, ErrorBase, assert, clone, compare, decodeUtf8, encodeUtf8, exactMatch, filterMatch, isArray, keys, log, lzwDecode, lzwEncode, match, startsWith, trim, type, values,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
 
   exports.MAX_INT = 2147483647;
 
   exports.MIN_INT = -2147483648;
 
-  ErrorBase = (function(_super) {
-    __extends(ErrorBase, _super);
+  ErrorBase = (function(superClass) {
+    extend(ErrorBase, superClass);
 
-    function ErrorBase(message) {
-      this.message = message != null ? message : 'Unknown error.';
+    function ErrorBase(message1) {
+      this.message = message1 != null ? message1 : 'Unknown error.';
       if (Error.captureStackTrace != null) {
         Error.captureStackTrace(this, this.constructor);
       }
@@ -6255,15 +2128,15 @@ require.define("/src/utils.js",function(require,module,exports,__dirname,__filen
     }
 
     ErrorBase.prototype.toString = function() {
-      return "" + this.name + ": " + this.message;
+      return this.name + ": " + this.message;
     };
 
     return ErrorBase;
 
   })(Error);
 
-  AssertException = (function(_super) {
-    __extends(AssertException, _super);
+  AssertException = (function(superClass) {
+    extend(AssertException, superClass);
 
     function AssertException() {
       return AssertException.__super__.constructor.apply(this, arguments);
@@ -6349,11 +2222,11 @@ require.define("/src/utils.js",function(require,module,exports,__dirname,__filen
   };
 
   type = (function() {
-    var classToType, name, _i, _len, _ref;
+    var classToType, j, len, name, ref;
     classToType = {};
-    _ref = "Boolean Number String Function Array Date RegExp Undefined Null".split(" ");
-    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-      name = _ref[_i];
+    ref = "Boolean Number String Function Array Date RegExp Undefined Null".split(" ");
+    for (j = 0, len = ref.length; j < len; j++) {
+      name = ref[j];
       classToType["[object " + name + "]"] = name.toLowerCase();
     }
     return function(obj) {
@@ -6397,26 +2270,26 @@ require.define("/src/utils.js",function(require,module,exports,__dirname,__filen
   keys = Object.keys || function(obj) {
     var key, val;
     return (function() {
-      var _results;
-      _results = [];
+      var results;
+      results = [];
       for (key in obj) {
         val = obj[key];
-        _results.push(key);
+        results.push(key);
       }
-      return _results;
+      return results;
     })();
   };
 
   values = function(obj) {
     var key, val;
     return (function() {
-      var _results;
-      _results = [];
+      var results;
+      results = [];
       for (key in obj) {
         val = obj[key];
-        _results.push(val);
+        results.push(val);
       }
-      return _results;
+      return results;
     })();
   };
 
@@ -6432,7 +2305,7 @@ require.define("/src/utils.js",function(require,module,exports,__dirname,__filen
   };
 
   compare = function(a, b) {
-    var aString, bString, index, value, _i, _len;
+    var aString, bString, index, j, len, value;
     if (a === null) {
       return 1;
     }
@@ -6445,7 +2318,7 @@ require.define("/src/utils.js",function(require,module,exports,__dirname,__filen
       case 'date':
         return b - a;
       case 'array':
-        for (index = _i = 0, _len = a.length; _i < _len; index = ++_i) {
+        for (index = j = 0, len = a.length; j < len; index = ++j) {
           value = a[index];
           if (b.length - 1 >= index && value < b[index]) {
             return 1;
@@ -6479,6 +2352,73 @@ require.define("/src/utils.js",function(require,module,exports,__dirname,__filen
     }
   };
 
+  encodeUtf8 = function(s) {
+    return unescape(encodeURIComponent(s));
+  };
+
+  decodeUtf8 = function(s) {
+    return decodeURIComponent(escape(s));
+  };
+
+  lzwEncode = function(s) {
+    var code, currChar, data, dict, i, out, phrase;
+    s = encodeUtf8(s);
+    dict = {};
+    data = (s + "").split("");
+    out = [];
+    currChar = void 0;
+    phrase = data[0];
+    code = 256;
+    i = 1;
+    while (i < data.length) {
+      currChar = data[i];
+      if (dict[phrase + currChar] != null) {
+        phrase += currChar;
+      } else {
+        out.push((phrase.length > 1 ? dict[phrase] : phrase.charCodeAt(0)));
+        dict[phrase + currChar] = code;
+        code++;
+        phrase = currChar;
+      }
+      i++;
+    }
+    out.push((phrase.length > 1 ? dict[phrase] : phrase.charCodeAt(0)));
+    i = 0;
+    while (i < out.length) {
+      out[i] = String.fromCharCode(out[i]);
+      i++;
+    }
+    return out.join("");
+  };
+
+  lzwDecode = function(s) {
+    var code, currChar, currCode, data, dict, i, oldPhrase, out, outS, phrase;
+    dict = {};
+    data = (s + "").split("");
+    currChar = data[0];
+    oldPhrase = currChar;
+    out = [currChar];
+    code = 256;
+    phrase = void 0;
+    i = 1;
+    while (i < data.length) {
+      currCode = data[i].charCodeAt(0);
+      if (currCode < 256) {
+        phrase = data[i];
+      } else {
+        phrase = (dict[currCode] ? dict[currCode] : oldPhrase + currChar);
+      }
+      out.push(phrase);
+      currChar = phrase.charAt(0);
+      dict[code] = oldPhrase + currChar;
+      code++;
+      oldPhrase = phrase;
+      i++;
+    }
+    outS = out.join("");
+    return decodeUtf8(outS);
+  };
+
   exports.log = log;
 
   exports.AssertException = AssertException;
@@ -6505,1239 +2445,9 @@ require.define("/src/utils.js",function(require,module,exports,__dirname,__filen
 
   exports.compare = compare;
 
-  exports._ = require('underscore');
+  exports.lzwEncode = lzwEncode;
 
-}).call(this);
-
-});
-
-require.define("/node_modules/underscore/package.json",function(require,module,exports,__dirname,__filename,process,global){module.exports = {"main":"underscore.js"}
-});
-
-require.define("/node_modules/underscore/underscore.js",function(require,module,exports,__dirname,__filename,process,global){//     Underscore.js 1.4.4
-//     http://underscorejs.org
-//     (c) 2009-2013 Jeremy Ashkenas, DocumentCloud Inc.
-//     Underscore may be freely distributed under the MIT license.
-
-(function() {
-
-  // Baseline setup
-  // --------------
-
-  // Establish the root object, `window` in the browser, or `global` on the server.
-  var root = this;
-
-  // Save the previous value of the `_` variable.
-  var previousUnderscore = root._;
-
-  // Establish the object that gets returned to break out of a loop iteration.
-  var breaker = {};
-
-  // Save bytes in the minified (but not gzipped) version:
-  var ArrayProto = Array.prototype, ObjProto = Object.prototype, FuncProto = Function.prototype;
-
-  // Create quick reference variables for speed access to core prototypes.
-  var push             = ArrayProto.push,
-      slice            = ArrayProto.slice,
-      concat           = ArrayProto.concat,
-      toString         = ObjProto.toString,
-      hasOwnProperty   = ObjProto.hasOwnProperty;
-
-  // All **ECMAScript 5** native function implementations that we hope to use
-  // are declared here.
-  var
-    nativeForEach      = ArrayProto.forEach,
-    nativeMap          = ArrayProto.map,
-    nativeReduce       = ArrayProto.reduce,
-    nativeReduceRight  = ArrayProto.reduceRight,
-    nativeFilter       = ArrayProto.filter,
-    nativeEvery        = ArrayProto.every,
-    nativeSome         = ArrayProto.some,
-    nativeIndexOf      = ArrayProto.indexOf,
-    nativeLastIndexOf  = ArrayProto.lastIndexOf,
-    nativeIsArray      = Array.isArray,
-    nativeKeys         = Object.keys,
-    nativeBind         = FuncProto.bind;
-
-  // Create a safe reference to the Underscore object for use below.
-  var _ = function(obj) {
-    if (obj instanceof _) return obj;
-    if (!(this instanceof _)) return new _(obj);
-    this._wrapped = obj;
-  };
-
-  // Export the Underscore object for **Node.js**, with
-  // backwards-compatibility for the old `require()` API. If we're in
-  // the browser, add `_` as a global object via a string identifier,
-  // for Closure Compiler "advanced" mode.
-  if (typeof exports !== 'undefined') {
-    if (typeof module !== 'undefined' && module.exports) {
-      exports = module.exports = _;
-    }
-    exports._ = _;
-  } else {
-    root._ = _;
-  }
-
-  // Current version.
-  _.VERSION = '1.4.4';
-
-  // Collection Functions
-  // --------------------
-
-  // The cornerstone, an `each` implementation, aka `forEach`.
-  // Handles objects with the built-in `forEach`, arrays, and raw objects.
-  // Delegates to **ECMAScript 5**'s native `forEach` if available.
-  var each = _.each = _.forEach = function(obj, iterator, context) {
-    if (obj == null) return;
-    if (nativeForEach && obj.forEach === nativeForEach) {
-      obj.forEach(iterator, context);
-    } else if (obj.length === +obj.length) {
-      for (var i = 0, l = obj.length; i < l; i++) {
-        if (iterator.call(context, obj[i], i, obj) === breaker) return;
-      }
-    } else {
-      for (var key in obj) {
-        if (_.has(obj, key)) {
-          if (iterator.call(context, obj[key], key, obj) === breaker) return;
-        }
-      }
-    }
-  };
-
-  // Return the results of applying the iterator to each element.
-  // Delegates to **ECMAScript 5**'s native `map` if available.
-  _.map = _.collect = function(obj, iterator, context) {
-    var results = [];
-    if (obj == null) return results;
-    if (nativeMap && obj.map === nativeMap) return obj.map(iterator, context);
-    each(obj, function(value, index, list) {
-      results[results.length] = iterator.call(context, value, index, list);
-    });
-    return results;
-  };
-
-  var reduceError = 'Reduce of empty array with no initial value';
-
-  // **Reduce** builds up a single result from a list of values, aka `inject`,
-  // or `foldl`. Delegates to **ECMAScript 5**'s native `reduce` if available.
-  _.reduce = _.foldl = _.inject = function(obj, iterator, memo, context) {
-    var initial = arguments.length > 2;
-    if (obj == null) obj = [];
-    if (nativeReduce && obj.reduce === nativeReduce) {
-      if (context) iterator = _.bind(iterator, context);
-      return initial ? obj.reduce(iterator, memo) : obj.reduce(iterator);
-    }
-    each(obj, function(value, index, list) {
-      if (!initial) {
-        memo = value;
-        initial = true;
-      } else {
-        memo = iterator.call(context, memo, value, index, list);
-      }
-    });
-    if (!initial) throw new TypeError(reduceError);
-    return memo;
-  };
-
-  // The right-associative version of reduce, also known as `foldr`.
-  // Delegates to **ECMAScript 5**'s native `reduceRight` if available.
-  _.reduceRight = _.foldr = function(obj, iterator, memo, context) {
-    var initial = arguments.length > 2;
-    if (obj == null) obj = [];
-    if (nativeReduceRight && obj.reduceRight === nativeReduceRight) {
-      if (context) iterator = _.bind(iterator, context);
-      return initial ? obj.reduceRight(iterator, memo) : obj.reduceRight(iterator);
-    }
-    var length = obj.length;
-    if (length !== +length) {
-      var keys = _.keys(obj);
-      length = keys.length;
-    }
-    each(obj, function(value, index, list) {
-      index = keys ? keys[--length] : --length;
-      if (!initial) {
-        memo = obj[index];
-        initial = true;
-      } else {
-        memo = iterator.call(context, memo, obj[index], index, list);
-      }
-    });
-    if (!initial) throw new TypeError(reduceError);
-    return memo;
-  };
-
-  // Return the first value which passes a truth test. Aliased as `detect`.
-  _.find = _.detect = function(obj, iterator, context) {
-    var result;
-    any(obj, function(value, index, list) {
-      if (iterator.call(context, value, index, list)) {
-        result = value;
-        return true;
-      }
-    });
-    return result;
-  };
-
-  // Return all the elements that pass a truth test.
-  // Delegates to **ECMAScript 5**'s native `filter` if available.
-  // Aliased as `select`.
-  _.filter = _.select = function(obj, iterator, context) {
-    var results = [];
-    if (obj == null) return results;
-    if (nativeFilter && obj.filter === nativeFilter) return obj.filter(iterator, context);
-    each(obj, function(value, index, list) {
-      if (iterator.call(context, value, index, list)) results[results.length] = value;
-    });
-    return results;
-  };
-
-  // Return all the elements for which a truth test fails.
-  _.reject = function(obj, iterator, context) {
-    return _.filter(obj, function(value, index, list) {
-      return !iterator.call(context, value, index, list);
-    }, context);
-  };
-
-  // Determine whether all of the elements match a truth test.
-  // Delegates to **ECMAScript 5**'s native `every` if available.
-  // Aliased as `all`.
-  _.every = _.all = function(obj, iterator, context) {
-    iterator || (iterator = _.identity);
-    var result = true;
-    if (obj == null) return result;
-    if (nativeEvery && obj.every === nativeEvery) return obj.every(iterator, context);
-    each(obj, function(value, index, list) {
-      if (!(result = result && iterator.call(context, value, index, list))) return breaker;
-    });
-    return !!result;
-  };
-
-  // Determine if at least one element in the object matches a truth test.
-  // Delegates to **ECMAScript 5**'s native `some` if available.
-  // Aliased as `any`.
-  var any = _.some = _.any = function(obj, iterator, context) {
-    iterator || (iterator = _.identity);
-    var result = false;
-    if (obj == null) return result;
-    if (nativeSome && obj.some === nativeSome) return obj.some(iterator, context);
-    each(obj, function(value, index, list) {
-      if (result || (result = iterator.call(context, value, index, list))) return breaker;
-    });
-    return !!result;
-  };
-
-  // Determine if the array or object contains a given value (using `===`).
-  // Aliased as `include`.
-  _.contains = _.include = function(obj, target) {
-    if (obj == null) return false;
-    if (nativeIndexOf && obj.indexOf === nativeIndexOf) return obj.indexOf(target) != -1;
-    return any(obj, function(value) {
-      return value === target;
-    });
-  };
-
-  // Invoke a method (with arguments) on every item in a collection.
-  _.invoke = function(obj, method) {
-    var args = slice.call(arguments, 2);
-    var isFunc = _.isFunction(method);
-    return _.map(obj, function(value) {
-      return (isFunc ? method : value[method]).apply(value, args);
-    });
-  };
-
-  // Convenience version of a common use case of `map`: fetching a property.
-  _.pluck = function(obj, key) {
-    return _.map(obj, function(value){ return value[key]; });
-  };
-
-  // Convenience version of a common use case of `filter`: selecting only objects
-  // containing specific `key:value` pairs.
-  _.where = function(obj, attrs, first) {
-    if (_.isEmpty(attrs)) return first ? null : [];
-    return _[first ? 'find' : 'filter'](obj, function(value) {
-      for (var key in attrs) {
-        if (attrs[key] !== value[key]) return false;
-      }
-      return true;
-    });
-  };
-
-  // Convenience version of a common use case of `find`: getting the first object
-  // containing specific `key:value` pairs.
-  _.findWhere = function(obj, attrs) {
-    return _.where(obj, attrs, true);
-  };
-
-  // Return the maximum element or (element-based computation).
-  // Can't optimize arrays of integers longer than 65,535 elements.
-  // See: https://bugs.webkit.org/show_bug.cgi?id=80797
-  _.max = function(obj, iterator, context) {
-    if (!iterator && _.isArray(obj) && obj[0] === +obj[0] && obj.length < 65535) {
-      return Math.max.apply(Math, obj);
-    }
-    if (!iterator && _.isEmpty(obj)) return -Infinity;
-    var result = {computed : -Infinity, value: -Infinity};
-    each(obj, function(value, index, list) {
-      var computed = iterator ? iterator.call(context, value, index, list) : value;
-      computed >= result.computed && (result = {value : value, computed : computed});
-    });
-    return result.value;
-  };
-
-  // Return the minimum element (or element-based computation).
-  _.min = function(obj, iterator, context) {
-    if (!iterator && _.isArray(obj) && obj[0] === +obj[0] && obj.length < 65535) {
-      return Math.min.apply(Math, obj);
-    }
-    if (!iterator && _.isEmpty(obj)) return Infinity;
-    var result = {computed : Infinity, value: Infinity};
-    each(obj, function(value, index, list) {
-      var computed = iterator ? iterator.call(context, value, index, list) : value;
-      computed < result.computed && (result = {value : value, computed : computed});
-    });
-    return result.value;
-  };
-
-  // Shuffle an array.
-  _.shuffle = function(obj) {
-    var rand;
-    var index = 0;
-    var shuffled = [];
-    each(obj, function(value) {
-      rand = _.random(index++);
-      shuffled[index - 1] = shuffled[rand];
-      shuffled[rand] = value;
-    });
-    return shuffled;
-  };
-
-  // An internal function to generate lookup iterators.
-  var lookupIterator = function(value) {
-    return _.isFunction(value) ? value : function(obj){ return obj[value]; };
-  };
-
-  // Sort the object's values by a criterion produced by an iterator.
-  _.sortBy = function(obj, value, context) {
-    var iterator = lookupIterator(value);
-    return _.pluck(_.map(obj, function(value, index, list) {
-      return {
-        value : value,
-        index : index,
-        criteria : iterator.call(context, value, index, list)
-      };
-    }).sort(function(left, right) {
-      var a = left.criteria;
-      var b = right.criteria;
-      if (a !== b) {
-        if (a > b || a === void 0) return 1;
-        if (a < b || b === void 0) return -1;
-      }
-      return left.index < right.index ? -1 : 1;
-    }), 'value');
-  };
-
-  // An internal function used for aggregate "group by" operations.
-  var group = function(obj, value, context, behavior) {
-    var result = {};
-    var iterator = lookupIterator(value || _.identity);
-    each(obj, function(value, index) {
-      var key = iterator.call(context, value, index, obj);
-      behavior(result, key, value);
-    });
-    return result;
-  };
-
-  // Groups the object's values by a criterion. Pass either a string attribute
-  // to group by, or a function that returns the criterion.
-  _.groupBy = function(obj, value, context) {
-    return group(obj, value, context, function(result, key, value) {
-      (_.has(result, key) ? result[key] : (result[key] = [])).push(value);
-    });
-  };
-
-  // Counts instances of an object that group by a certain criterion. Pass
-  // either a string attribute to count by, or a function that returns the
-  // criterion.
-  _.countBy = function(obj, value, context) {
-    return group(obj, value, context, function(result, key) {
-      if (!_.has(result, key)) result[key] = 0;
-      result[key]++;
-    });
-  };
-
-  // Use a comparator function to figure out the smallest index at which
-  // an object should be inserted so as to maintain order. Uses binary search.
-  _.sortedIndex = function(array, obj, iterator, context) {
-    iterator = iterator == null ? _.identity : lookupIterator(iterator);
-    var value = iterator.call(context, obj);
-    var low = 0, high = array.length;
-    while (low < high) {
-      var mid = (low + high) >>> 1;
-      iterator.call(context, array[mid]) < value ? low = mid + 1 : high = mid;
-    }
-    return low;
-  };
-
-  // Safely convert anything iterable into a real, live array.
-  _.toArray = function(obj) {
-    if (!obj) return [];
-    if (_.isArray(obj)) return slice.call(obj);
-    if (obj.length === +obj.length) return _.map(obj, _.identity);
-    return _.values(obj);
-  };
-
-  // Return the number of elements in an object.
-  _.size = function(obj) {
-    if (obj == null) return 0;
-    return (obj.length === +obj.length) ? obj.length : _.keys(obj).length;
-  };
-
-  // Array Functions
-  // ---------------
-
-  // Get the first element of an array. Passing **n** will return the first N
-  // values in the array. Aliased as `head` and `take`. The **guard** check
-  // allows it to work with `_.map`.
-  _.first = _.head = _.take = function(array, n, guard) {
-    if (array == null) return void 0;
-    return (n != null) && !guard ? slice.call(array, 0, n) : array[0];
-  };
-
-  // Returns everything but the last entry of the array. Especially useful on
-  // the arguments object. Passing **n** will return all the values in
-  // the array, excluding the last N. The **guard** check allows it to work with
-  // `_.map`.
-  _.initial = function(array, n, guard) {
-    return slice.call(array, 0, array.length - ((n == null) || guard ? 1 : n));
-  };
-
-  // Get the last element of an array. Passing **n** will return the last N
-  // values in the array. The **guard** check allows it to work with `_.map`.
-  _.last = function(array, n, guard) {
-    if (array == null) return void 0;
-    if ((n != null) && !guard) {
-      return slice.call(array, Math.max(array.length - n, 0));
-    } else {
-      return array[array.length - 1];
-    }
-  };
-
-  // Returns everything but the first entry of the array. Aliased as `tail` and `drop`.
-  // Especially useful on the arguments object. Passing an **n** will return
-  // the rest N values in the array. The **guard**
-  // check allows it to work with `_.map`.
-  _.rest = _.tail = _.drop = function(array, n, guard) {
-    return slice.call(array, (n == null) || guard ? 1 : n);
-  };
-
-  // Trim out all falsy values from an array.
-  _.compact = function(array) {
-    return _.filter(array, _.identity);
-  };
-
-  // Internal implementation of a recursive `flatten` function.
-  var flatten = function(input, shallow, output) {
-    each(input, function(value) {
-      if (_.isArray(value)) {
-        shallow ? push.apply(output, value) : flatten(value, shallow, output);
-      } else {
-        output.push(value);
-      }
-    });
-    return output;
-  };
-
-  // Return a completely flattened version of an array.
-  _.flatten = function(array, shallow) {
-    return flatten(array, shallow, []);
-  };
-
-  // Return a version of the array that does not contain the specified value(s).
-  _.without = function(array) {
-    return _.difference(array, slice.call(arguments, 1));
-  };
-
-  // Produce a duplicate-free version of the array. If the array has already
-  // been sorted, you have the option of using a faster algorithm.
-  // Aliased as `unique`.
-  _.uniq = _.unique = function(array, isSorted, iterator, context) {
-    if (_.isFunction(isSorted)) {
-      context = iterator;
-      iterator = isSorted;
-      isSorted = false;
-    }
-    var initial = iterator ? _.map(array, iterator, context) : array;
-    var results = [];
-    var seen = [];
-    each(initial, function(value, index) {
-      if (isSorted ? (!index || seen[seen.length - 1] !== value) : !_.contains(seen, value)) {
-        seen.push(value);
-        results.push(array[index]);
-      }
-    });
-    return results;
-  };
-
-  // Produce an array that contains the union: each distinct element from all of
-  // the passed-in arrays.
-  _.union = function() {
-    return _.uniq(concat.apply(ArrayProto, arguments));
-  };
-
-  // Produce an array that contains every item shared between all the
-  // passed-in arrays.
-  _.intersection = function(array) {
-    var rest = slice.call(arguments, 1);
-    return _.filter(_.uniq(array), function(item) {
-      return _.every(rest, function(other) {
-        return _.indexOf(other, item) >= 0;
-      });
-    });
-  };
-
-  // Take the difference between one array and a number of other arrays.
-  // Only the elements present in just the first array will remain.
-  _.difference = function(array) {
-    var rest = concat.apply(ArrayProto, slice.call(arguments, 1));
-    return _.filter(array, function(value){ return !_.contains(rest, value); });
-  };
-
-  // Zip together multiple lists into a single array -- elements that share
-  // an index go together.
-  _.zip = function() {
-    var args = slice.call(arguments);
-    var length = _.max(_.pluck(args, 'length'));
-    var results = new Array(length);
-    for (var i = 0; i < length; i++) {
-      results[i] = _.pluck(args, "" + i);
-    }
-    return results;
-  };
-
-  // Converts lists into objects. Pass either a single array of `[key, value]`
-  // pairs, or two parallel arrays of the same length -- one of keys, and one of
-  // the corresponding values.
-  _.object = function(list, values) {
-    if (list == null) return {};
-    var result = {};
-    for (var i = 0, l = list.length; i < l; i++) {
-      if (values) {
-        result[list[i]] = values[i];
-      } else {
-        result[list[i][0]] = list[i][1];
-      }
-    }
-    return result;
-  };
-
-  // If the browser doesn't supply us with indexOf (I'm looking at you, **MSIE**),
-  // we need this function. Return the position of the first occurrence of an
-  // item in an array, or -1 if the item is not included in the array.
-  // Delegates to **ECMAScript 5**'s native `indexOf` if available.
-  // If the array is large and already in sort order, pass `true`
-  // for **isSorted** to use binary search.
-  _.indexOf = function(array, item, isSorted) {
-    if (array == null) return -1;
-    var i = 0, l = array.length;
-    if (isSorted) {
-      if (typeof isSorted == 'number') {
-        i = (isSorted < 0 ? Math.max(0, l + isSorted) : isSorted);
-      } else {
-        i = _.sortedIndex(array, item);
-        return array[i] === item ? i : -1;
-      }
-    }
-    if (nativeIndexOf && array.indexOf === nativeIndexOf) return array.indexOf(item, isSorted);
-    for (; i < l; i++) if (array[i] === item) return i;
-    return -1;
-  };
-
-  // Delegates to **ECMAScript 5**'s native `lastIndexOf` if available.
-  _.lastIndexOf = function(array, item, from) {
-    if (array == null) return -1;
-    var hasIndex = from != null;
-    if (nativeLastIndexOf && array.lastIndexOf === nativeLastIndexOf) {
-      return hasIndex ? array.lastIndexOf(item, from) : array.lastIndexOf(item);
-    }
-    var i = (hasIndex ? from : array.length);
-    while (i--) if (array[i] === item) return i;
-    return -1;
-  };
-
-  // Generate an integer Array containing an arithmetic progression. A port of
-  // the native Python `range()` function. See
-  // [the Python documentation](http://docs.python.org/library/functions.html#range).
-  _.range = function(start, stop, step) {
-    if (arguments.length <= 1) {
-      stop = start || 0;
-      start = 0;
-    }
-    step = arguments[2] || 1;
-
-    var len = Math.max(Math.ceil((stop - start) / step), 0);
-    var idx = 0;
-    var range = new Array(len);
-
-    while(idx < len) {
-      range[idx++] = start;
-      start += step;
-    }
-
-    return range;
-  };
-
-  // Function (ahem) Functions
-  // ------------------
-
-  // Create a function bound to a given object (assigning `this`, and arguments,
-  // optionally). Delegates to **ECMAScript 5**'s native `Function.bind` if
-  // available.
-  _.bind = function(func, context) {
-    if (func.bind === nativeBind && nativeBind) return nativeBind.apply(func, slice.call(arguments, 1));
-    var args = slice.call(arguments, 2);
-    return function() {
-      return func.apply(context, args.concat(slice.call(arguments)));
-    };
-  };
-
-  // Partially apply a function by creating a version that has had some of its
-  // arguments pre-filled, without changing its dynamic `this` context.
-  _.partial = function(func) {
-    var args = slice.call(arguments, 1);
-    return function() {
-      return func.apply(this, args.concat(slice.call(arguments)));
-    };
-  };
-
-  // Bind all of an object's methods to that object. Useful for ensuring that
-  // all callbacks defined on an object belong to it.
-  _.bindAll = function(obj) {
-    var funcs = slice.call(arguments, 1);
-    if (funcs.length === 0) funcs = _.functions(obj);
-    each(funcs, function(f) { obj[f] = _.bind(obj[f], obj); });
-    return obj;
-  };
-
-  // Memoize an expensive function by storing its results.
-  _.memoize = function(func, hasher) {
-    var memo = {};
-    hasher || (hasher = _.identity);
-    return function() {
-      var key = hasher.apply(this, arguments);
-      return _.has(memo, key) ? memo[key] : (memo[key] = func.apply(this, arguments));
-    };
-  };
-
-  // Delays a function for the given number of milliseconds, and then calls
-  // it with the arguments supplied.
-  _.delay = function(func, wait) {
-    var args = slice.call(arguments, 2);
-    return setTimeout(function(){ return func.apply(null, args); }, wait);
-  };
-
-  // Defers a function, scheduling it to run after the current call stack has
-  // cleared.
-  _.defer = function(func) {
-    return _.delay.apply(_, [func, 1].concat(slice.call(arguments, 1)));
-  };
-
-  // Returns a function, that, when invoked, will only be triggered at most once
-  // during a given window of time.
-  _.throttle = function(func, wait) {
-    var context, args, timeout, result;
-    var previous = 0;
-    var later = function() {
-      previous = new Date;
-      timeout = null;
-      result = func.apply(context, args);
-    };
-    return function() {
-      var now = new Date;
-      var remaining = wait - (now - previous);
-      context = this;
-      args = arguments;
-      if (remaining <= 0) {
-        clearTimeout(timeout);
-        timeout = null;
-        previous = now;
-        result = func.apply(context, args);
-      } else if (!timeout) {
-        timeout = setTimeout(later, remaining);
-      }
-      return result;
-    };
-  };
-
-  // Returns a function, that, as long as it continues to be invoked, will not
-  // be triggered. The function will be called after it stops being called for
-  // N milliseconds. If `immediate` is passed, trigger the function on the
-  // leading edge, instead of the trailing.
-  _.debounce = function(func, wait, immediate) {
-    var timeout, result;
-    return function() {
-      var context = this, args = arguments;
-      var later = function() {
-        timeout = null;
-        if (!immediate) result = func.apply(context, args);
-      };
-      var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) result = func.apply(context, args);
-      return result;
-    };
-  };
-
-  // Returns a function that will be executed at most one time, no matter how
-  // often you call it. Useful for lazy initialization.
-  _.once = function(func) {
-    var ran = false, memo;
-    return function() {
-      if (ran) return memo;
-      ran = true;
-      memo = func.apply(this, arguments);
-      func = null;
-      return memo;
-    };
-  };
-
-  // Returns the first function passed as an argument to the second,
-  // allowing you to adjust arguments, run code before and after, and
-  // conditionally execute the original function.
-  _.wrap = function(func, wrapper) {
-    return function() {
-      var args = [func];
-      push.apply(args, arguments);
-      return wrapper.apply(this, args);
-    };
-  };
-
-  // Returns a function that is the composition of a list of functions, each
-  // consuming the return value of the function that follows.
-  _.compose = function() {
-    var funcs = arguments;
-    return function() {
-      var args = arguments;
-      for (var i = funcs.length - 1; i >= 0; i--) {
-        args = [funcs[i].apply(this, args)];
-      }
-      return args[0];
-    };
-  };
-
-  // Returns a function that will only be executed after being called N times.
-  _.after = function(times, func) {
-    if (times <= 0) return func();
-    return function() {
-      if (--times < 1) {
-        return func.apply(this, arguments);
-      }
-    };
-  };
-
-  // Object Functions
-  // ----------------
-
-  // Retrieve the names of an object's properties.
-  // Delegates to **ECMAScript 5**'s native `Object.keys`
-  _.keys = nativeKeys || function(obj) {
-    if (obj !== Object(obj)) throw new TypeError('Invalid object');
-    var keys = [];
-    for (var key in obj) if (_.has(obj, key)) keys[keys.length] = key;
-    return keys;
-  };
-
-  // Retrieve the values of an object's properties.
-  _.values = function(obj) {
-    var values = [];
-    for (var key in obj) if (_.has(obj, key)) values.push(obj[key]);
-    return values;
-  };
-
-  // Convert an object into a list of `[key, value]` pairs.
-  _.pairs = function(obj) {
-    var pairs = [];
-    for (var key in obj) if (_.has(obj, key)) pairs.push([key, obj[key]]);
-    return pairs;
-  };
-
-  // Invert the keys and values of an object. The values must be serializable.
-  _.invert = function(obj) {
-    var result = {};
-    for (var key in obj) if (_.has(obj, key)) result[obj[key]] = key;
-    return result;
-  };
-
-  // Return a sorted list of the function names available on the object.
-  // Aliased as `methods`
-  _.functions = _.methods = function(obj) {
-    var names = [];
-    for (var key in obj) {
-      if (_.isFunction(obj[key])) names.push(key);
-    }
-    return names.sort();
-  };
-
-  // Extend a given object with all the properties in passed-in object(s).
-  _.extend = function(obj) {
-    each(slice.call(arguments, 1), function(source) {
-      if (source) {
-        for (var prop in source) {
-          obj[prop] = source[prop];
-        }
-      }
-    });
-    return obj;
-  };
-
-  // Return a copy of the object only containing the whitelisted properties.
-  _.pick = function(obj) {
-    var copy = {};
-    var keys = concat.apply(ArrayProto, slice.call(arguments, 1));
-    each(keys, function(key) {
-      if (key in obj) copy[key] = obj[key];
-    });
-    return copy;
-  };
-
-   // Return a copy of the object without the blacklisted properties.
-  _.omit = function(obj) {
-    var copy = {};
-    var keys = concat.apply(ArrayProto, slice.call(arguments, 1));
-    for (var key in obj) {
-      if (!_.contains(keys, key)) copy[key] = obj[key];
-    }
-    return copy;
-  };
-
-  // Fill in a given object with default properties.
-  _.defaults = function(obj) {
-    each(slice.call(arguments, 1), function(source) {
-      if (source) {
-        for (var prop in source) {
-          if (obj[prop] == null) obj[prop] = source[prop];
-        }
-      }
-    });
-    return obj;
-  };
-
-  // Create a (shallow-cloned) duplicate of an object.
-  _.clone = function(obj) {
-    if (!_.isObject(obj)) return obj;
-    return _.isArray(obj) ? obj.slice() : _.extend({}, obj);
-  };
-
-  // Invokes interceptor with the obj, and then returns obj.
-  // The primary purpose of this method is to "tap into" a method chain, in
-  // order to perform operations on intermediate results within the chain.
-  _.tap = function(obj, interceptor) {
-    interceptor(obj);
-    return obj;
-  };
-
-  // Internal recursive comparison function for `isEqual`.
-  var eq = function(a, b, aStack, bStack) {
-    // Identical objects are equal. `0 === -0`, but they aren't identical.
-    // See the Harmony `egal` proposal: http://wiki.ecmascript.org/doku.php?id=harmony:egal.
-    if (a === b) return a !== 0 || 1 / a == 1 / b;
-    // A strict comparison is necessary because `null == undefined`.
-    if (a == null || b == null) return a === b;
-    // Unwrap any wrapped objects.
-    if (a instanceof _) a = a._wrapped;
-    if (b instanceof _) b = b._wrapped;
-    // Compare `[[Class]]` names.
-    var className = toString.call(a);
-    if (className != toString.call(b)) return false;
-    switch (className) {
-      // Strings, numbers, dates, and booleans are compared by value.
-      case '[object String]':
-        // Primitives and their corresponding object wrappers are equivalent; thus, `"5"` is
-        // equivalent to `new String("5")`.
-        return a == String(b);
-      case '[object Number]':
-        // `NaN`s are equivalent, but non-reflexive. An `egal` comparison is performed for
-        // other numeric values.
-        return a != +a ? b != +b : (a == 0 ? 1 / a == 1 / b : a == +b);
-      case '[object Date]':
-      case '[object Boolean]':
-        // Coerce dates and booleans to numeric primitive values. Dates are compared by their
-        // millisecond representations. Note that invalid dates with millisecond representations
-        // of `NaN` are not equivalent.
-        return +a == +b;
-      // RegExps are compared by their source patterns and flags.
-      case '[object RegExp]':
-        return a.source == b.source &&
-               a.global == b.global &&
-               a.multiline == b.multiline &&
-               a.ignoreCase == b.ignoreCase;
-    }
-    if (typeof a != 'object' || typeof b != 'object') return false;
-    // Assume equality for cyclic structures. The algorithm for detecting cyclic
-    // structures is adapted from ES 5.1 section 15.12.3, abstract operation `JO`.
-    var length = aStack.length;
-    while (length--) {
-      // Linear search. Performance is inversely proportional to the number of
-      // unique nested structures.
-      if (aStack[length] == a) return bStack[length] == b;
-    }
-    // Add the first object to the stack of traversed objects.
-    aStack.push(a);
-    bStack.push(b);
-    var size = 0, result = true;
-    // Recursively compare objects and arrays.
-    if (className == '[object Array]') {
-      // Compare array lengths to determine if a deep comparison is necessary.
-      size = a.length;
-      result = size == b.length;
-      if (result) {
-        // Deep compare the contents, ignoring non-numeric properties.
-        while (size--) {
-          if (!(result = eq(a[size], b[size], aStack, bStack))) break;
-        }
-      }
-    } else {
-      // Objects with different constructors are not equivalent, but `Object`s
-      // from different frames are.
-      var aCtor = a.constructor, bCtor = b.constructor;
-      if (aCtor !== bCtor && !(_.isFunction(aCtor) && (aCtor instanceof aCtor) &&
-                               _.isFunction(bCtor) && (bCtor instanceof bCtor))) {
-        return false;
-      }
-      // Deep compare objects.
-      for (var key in a) {
-        if (_.has(a, key)) {
-          // Count the expected number of properties.
-          size++;
-          // Deep compare each member.
-          if (!(result = _.has(b, key) && eq(a[key], b[key], aStack, bStack))) break;
-        }
-      }
-      // Ensure that both objects contain the same number of properties.
-      if (result) {
-        for (key in b) {
-          if (_.has(b, key) && !(size--)) break;
-        }
-        result = !size;
-      }
-    }
-    // Remove the first object from the stack of traversed objects.
-    aStack.pop();
-    bStack.pop();
-    return result;
-  };
-
-  // Perform a deep comparison to check if two objects are equal.
-  _.isEqual = function(a, b) {
-    return eq(a, b, [], []);
-  };
-
-  // Is a given array, string, or object empty?
-  // An "empty" object has no enumerable own-properties.
-  _.isEmpty = function(obj) {
-    if (obj == null) return true;
-    if (_.isArray(obj) || _.isString(obj)) return obj.length === 0;
-    for (var key in obj) if (_.has(obj, key)) return false;
-    return true;
-  };
-
-  // Is a given value a DOM element?
-  _.isElement = function(obj) {
-    return !!(obj && obj.nodeType === 1);
-  };
-
-  // Is a given value an array?
-  // Delegates to ECMA5's native Array.isArray
-  _.isArray = nativeIsArray || function(obj) {
-    return toString.call(obj) == '[object Array]';
-  };
-
-  // Is a given variable an object?
-  _.isObject = function(obj) {
-    return obj === Object(obj);
-  };
-
-  // Add some isType methods: isArguments, isFunction, isString, isNumber, isDate, isRegExp.
-  each(['Arguments', 'Function', 'String', 'Number', 'Date', 'RegExp'], function(name) {
-    _['is' + name] = function(obj) {
-      return toString.call(obj) == '[object ' + name + ']';
-    };
-  });
-
-  // Define a fallback version of the method in browsers (ahem, IE), where
-  // there isn't any inspectable "Arguments" type.
-  if (!_.isArguments(arguments)) {
-    _.isArguments = function(obj) {
-      return !!(obj && _.has(obj, 'callee'));
-    };
-  }
-
-  // Optimize `isFunction` if appropriate.
-  if (typeof (/./) !== 'function') {
-    _.isFunction = function(obj) {
-      return typeof obj === 'function';
-    };
-  }
-
-  // Is a given object a finite number?
-  _.isFinite = function(obj) {
-    return isFinite(obj) && !isNaN(parseFloat(obj));
-  };
-
-  // Is the given value `NaN`? (NaN is the only number which does not equal itself).
-  _.isNaN = function(obj) {
-    return _.isNumber(obj) && obj != +obj;
-  };
-
-  // Is a given value a boolean?
-  _.isBoolean = function(obj) {
-    return obj === true || obj === false || toString.call(obj) == '[object Boolean]';
-  };
-
-  // Is a given value equal to null?
-  _.isNull = function(obj) {
-    return obj === null;
-  };
-
-  // Is a given variable undefined?
-  _.isUndefined = function(obj) {
-    return obj === void 0;
-  };
-
-  // Shortcut function for checking if an object has a given property directly
-  // on itself (in other words, not on a prototype).
-  _.has = function(obj, key) {
-    return hasOwnProperty.call(obj, key);
-  };
-
-  // Utility Functions
-  // -----------------
-
-  // Run Underscore.js in *noConflict* mode, returning the `_` variable to its
-  // previous owner. Returns a reference to the Underscore object.
-  _.noConflict = function() {
-    root._ = previousUnderscore;
-    return this;
-  };
-
-  // Keep the identity function around for default iterators.
-  _.identity = function(value) {
-    return value;
-  };
-
-  // Run a function **n** times.
-  _.times = function(n, iterator, context) {
-    var accum = Array(n);
-    for (var i = 0; i < n; i++) accum[i] = iterator.call(context, i);
-    return accum;
-  };
-
-  // Return a random integer between min and max (inclusive).
-  _.random = function(min, max) {
-    if (max == null) {
-      max = min;
-      min = 0;
-    }
-    return min + Math.floor(Math.random() * (max - min + 1));
-  };
-
-  // List of HTML entities for escaping.
-  var entityMap = {
-    escape: {
-      '&': '&amp;',
-      '<': '&lt;',
-      '>': '&gt;',
-      '"': '&quot;',
-      "'": '&#x27;',
-      '/': '&#x2F;'
-    }
-  };
-  entityMap.unescape = _.invert(entityMap.escape);
-
-  // Regexes containing the keys and values listed immediately above.
-  var entityRegexes = {
-    escape:   new RegExp('[' + _.keys(entityMap.escape).join('') + ']', 'g'),
-    unescape: new RegExp('(' + _.keys(entityMap.unescape).join('|') + ')', 'g')
-  };
-
-  // Functions for escaping and unescaping strings to/from HTML interpolation.
-  _.each(['escape', 'unescape'], function(method) {
-    _[method] = function(string) {
-      if (string == null) return '';
-      return ('' + string).replace(entityRegexes[method], function(match) {
-        return entityMap[method][match];
-      });
-    };
-  });
-
-  // If the value of the named property is a function then invoke it;
-  // otherwise, return it.
-  _.result = function(object, property) {
-    if (object == null) return null;
-    var value = object[property];
-    return _.isFunction(value) ? value.call(object) : value;
-  };
-
-  // Add your own custom functions to the Underscore object.
-  _.mixin = function(obj) {
-    each(_.functions(obj), function(name){
-      var func = _[name] = obj[name];
-      _.prototype[name] = function() {
-        var args = [this._wrapped];
-        push.apply(args, arguments);
-        return result.call(this, func.apply(_, args));
-      };
-    });
-  };
-
-  // Generate a unique integer id (unique within the entire client session).
-  // Useful for temporary DOM ids.
-  var idCounter = 0;
-  _.uniqueId = function(prefix) {
-    var id = ++idCounter + '';
-    return prefix ? prefix + id : id;
-  };
-
-  // By default, Underscore uses ERB-style template delimiters, change the
-  // following template settings to use alternative delimiters.
-  _.templateSettings = {
-    evaluate    : /<%([\s\S]+?)%>/g,
-    interpolate : /<%=([\s\S]+?)%>/g,
-    escape      : /<%-([\s\S]+?)%>/g
-  };
-
-  // When customizing `templateSettings`, if you don't want to define an
-  // interpolation, evaluation or escaping regex, we need one that is
-  // guaranteed not to match.
-  var noMatch = /(.)^/;
-
-  // Certain characters need to be escaped so that they can be put into a
-  // string literal.
-  var escapes = {
-    "'":      "'",
-    '\\':     '\\',
-    '\r':     'r',
-    '\n':     'n',
-    '\t':     't',
-    '\u2028': 'u2028',
-    '\u2029': 'u2029'
-  };
-
-  var escaper = /\\|'|\r|\n|\t|\u2028|\u2029/g;
-
-  // JavaScript micro-templating, similar to John Resig's implementation.
-  // Underscore templating handles arbitrary delimiters, preserves whitespace,
-  // and correctly escapes quotes within interpolated code.
-  _.template = function(text, data, settings) {
-    var render;
-    settings = _.defaults({}, settings, _.templateSettings);
-
-    // Combine delimiters into one regular expression via alternation.
-    var matcher = new RegExp([
-      (settings.escape || noMatch).source,
-      (settings.interpolate || noMatch).source,
-      (settings.evaluate || noMatch).source
-    ].join('|') + '|$', 'g');
-
-    // Compile the template source, escaping string literals appropriately.
-    var index = 0;
-    var source = "__p+='";
-    text.replace(matcher, function(match, escape, interpolate, evaluate, offset) {
-      source += text.slice(index, offset)
-        .replace(escaper, function(match) { return '\\' + escapes[match]; });
-
-      if (escape) {
-        source += "'+\n((__t=(" + escape + "))==null?'':_.escape(__t))+\n'";
-      }
-      if (interpolate) {
-        source += "'+\n((__t=(" + interpolate + "))==null?'':__t)+\n'";
-      }
-      if (evaluate) {
-        source += "';\n" + evaluate + "\n__p+='";
-      }
-      index = offset + match.length;
-      return match;
-    });
-    source += "';\n";
-
-    // If a variable is not specified, place data values in local scope.
-    if (!settings.variable) source = 'with(obj||{}){\n' + source + '}\n';
-
-    source = "var __t,__p='',__j=Array.prototype.join," +
-      "print=function(){__p+=__j.call(arguments,'');};\n" +
-      source + "return __p;\n";
-
-    try {
-      render = new Function(settings.variable || 'obj', '_', source);
-    } catch (e) {
-      e.source = source;
-      throw e;
-    }
-
-    if (data) return render(data, _);
-    var template = function(data) {
-      return render.call(this, data, _);
-    };
-
-    // Provide the compiled function source as a convenience for precompilation.
-    template.source = 'function(' + (settings.variable || 'obj') + '){\n' + source + '}';
-
-    return template;
-  };
-
-  // Add a "chain" function, which will delegate to the wrapper.
-  _.chain = function(obj) {
-    return _(obj).chain();
-  };
-
-  // OOP
-  // ---------------
-  // If Underscore is called as a function, it returns a wrapped object that
-  // can be used OO-style. This wrapper holds altered versions of all the
-  // underscore functions. Wrapped objects may be chained.
-
-  // Helper function to continue chaining intermediate results.
-  var result = function(obj) {
-    return this._chain ? _(obj).chain() : obj;
-  };
-
-  // Add all of the Underscore functions to the wrapper object.
-  _.mixin(_);
-
-  // Add all mutator Array functions to the wrapper.
-  each(['pop', 'push', 'reverse', 'shift', 'sort', 'splice', 'unshift'], function(name) {
-    var method = ArrayProto[name];
-    _.prototype[name] = function() {
-      var obj = this._wrapped;
-      method.apply(obj, arguments);
-      if ((name == 'shift' || name == 'splice') && obj.length === 0) delete obj[0];
-      return result.call(this, obj);
-    };
-  });
-
-  // Add all accessor Array functions to the wrapper.
-  each(['concat', 'join', 'slice'], function(name) {
-    var method = ArrayProto[name];
-    _.prototype[name] = function() {
-      return result.call(this, method.apply(this._wrapped, arguments));
-    };
-  });
-
-  _.extend(_.prototype, {
-
-    // Start chaining a wrapped Underscore object.
-    chain: function() {
-      this._chain = true;
-      return this;
-    },
-
-    // Extracts the result from a wrapped and chained object.
-    value: function() {
-      return this._wrapped;
-    }
-
-  });
+  exports.lzwDecode = lzwDecode;
 
 }).call(this);
 
@@ -7774,6 +2484,7 @@ if (typeof exports.timezoneJS == 'undefined') { exports.timezoneJS = {}; }
 
 fs = require('fs');
 path = require('path');
+utils = require('../src/utils');
 
 exports.timezoneJS.timezone = new function() {
   var _this = this;
@@ -7819,7 +2530,7 @@ exports.timezoneJS.timezone = new function() {
   
   
   function myLoadZoneFile(fileName, opts) {
-    var url = path.join(_this.zoneFileBasePath, fileName);
+    var url = path.join(_this.zoneFileBasePath, fileName) + '.lzw';
     
     // If running in node.js
     if (fs.readFileSync) {
@@ -7827,7 +2538,7 @@ exports.timezoneJS.timezone = new function() {
 
       var ret
       if (fs.existsSync(url)) {
-        ret = fs.readFileSync(url, 'utf8');
+        ret = utils.lzwDecode(fs.readFileSync(url, 'utf8'));
       } else {
         throw new Error('Cannot find ' + url + ' from directory ' + __dirname);
       }
@@ -7836,9 +2547,9 @@ exports.timezoneJS.timezone = new function() {
     
     // If running in the browser assume tz files are "fileified" into the source and can be "require"d
     var files = require('files');
-    var filesName = 'tz/' + fileName
+    var filesName = 'tz/' + fileName + '.lzw'
     if (files[filesName]) {
-        return _this.parseZones(files[filesName]);
+        return _this.parseZones(utils.lzwDecode(files[filesName]));
     } else {
         throw new Error(filesName + ' not found embedded in this package.');
     };
@@ -8353,18 +3064,15 @@ require.define("fs",function(require,module,exports,__dirname,__filename,process
 
 });
 
-require.define("/src/Timeline.js",function(require,module,exports,__dirname,__filename,process,global){// Generated by CoffeeScript 1.8.0
-(function() {
-  var JSON, Time, Timeline, TimelineIterator, timezoneJS, utils,
-    __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+require.define("/src/Timeline.coffee",function(require,module,exports,__dirname,__filename,process,global){(function() {
+  var Time, Timeline, TimelineIterator, timezoneJS, utils,
+    indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
   Time = require('./Time').Time;
 
   timezoneJS = require('./../lib/timezone-js.js').timezoneJS;
 
   utils = require('./utils');
-
-  JSON = require('JSON2');
 
   Timeline = (function() {
 
@@ -8373,7 +3081,7 @@ require.define("/src/Timeline.js",function(require,module,exports,__dirname,__fi
     
     Allows you to specify a timeline with weekend, holiday and non-work hours knocked out and timezone precision.
     
-     *# Basic usage ##
+    ## Basic usage ##
     
         {TimelineIterator, Timeline, Time} = require('../')
     
@@ -8397,7 +3105,7 @@ require.define("/src/Timeline.js",function(require,module,exports,__dirname,__fi
         console.log(tl.getAll('ISOString', 'America/New_York'))
          * [ '2011-01-03T05:00:00.000Z', '2011-01-04T05:00:00.000Z' ]
     
-     *# More advanced usage ##
+    ## More advanced usage ##
      
     Now let's poke at Timeline behavior a little more. Let's start by creating a more advanced Timeline:
     
@@ -8455,7 +3163,7 @@ require.define("/src/Timeline.js",function(require,module,exports,__dirname,__fi
     
     All of the above comparisons assume that the `startOn`/`endBefore` boundaries are in the same timezone as the contains date.
     
-     *# Timezone sensitive comparisions ##
+    ## Timezone sensitive comparisions ##
     
     Now, let's look at how you do timezone sensitive comparisions.
     
@@ -8523,7 +3231,7 @@ require.define("/src/Timeline.js",function(require,module,exports,__dirname,__fi
       @cfg {Object} [workDayEndBefore = {hour: 24, minute: 60}] An optional object in the form {hour: 17, minute: 0}.
         If minute is zero it can be omitted.
        */
-      var h, holiday, idx, m, s, _i, _len, _ref, _ref1;
+      var h, holiday, idx, j, len, m, ref, ref1, s;
       this.memoizedTicks = {};
       if (config.endBefore != null) {
         this.endBefore = config.endBefore;
@@ -8577,20 +3285,20 @@ require.define("/src/Timeline.js",function(require,module,exports,__dirname,__fi
       }
       if (utils.type(this.workDays) === 'string') {
         this.workDays = (function() {
-          var _i, _len, _ref, _results;
-          _ref = this.workDays.split(',');
-          _results = [];
-          for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-            s = _ref[_i];
-            _results.push(utils.trim(s));
+          var j, len, ref, results;
+          ref = this.workDays.split(',');
+          results = [];
+          for (j = 0, len = ref.length; j < len; j++) {
+            s = ref[j];
+            results.push(utils.trim(s));
           }
-          return _results;
+          return results;
         }).call(this);
       }
       this.holidays = config.holidays != null ? config.holidays : [];
-      _ref = this.holidays;
-      for (idx = _i = 0, _len = _ref.length; _i < _len; idx = ++_i) {
-        holiday = _ref[idx];
+      ref = this.holidays;
+      for (idx = j = 0, len = ref.length; j < len; idx = ++j) {
+        holiday = ref[idx];
         if (utils.type(holiday) === 'string') {
           this.holidays[idx] = new Time(holiday).getSegmentsAsObject();
         }
@@ -8619,7 +3327,7 @@ require.define("/src/Timeline.js",function(require,module,exports,__dirname,__fi
       }
       if (config.step != null) {
         this.step = config.step;
-      } else if ((config.endBefore != null) && ((_ref1 = this.startOn) != null ? _ref1.greaterThan(this.endBefore) : void 0)) {
+      } else if ((config.endBefore != null) && ((ref1 = this.startOn) != null ? ref1.greaterThan(this.endBefore) : void 0)) {
         this.step = -1;
       } else if ((config.endBefore != null) && (config.startOn == null) && (config.limit != null)) {
         this.step = -1;
@@ -8797,7 +3505,7 @@ require.define("/src/Timeline.js",function(require,module,exports,__dirname,__fi
       @param {String} [tz]
       @return {Boolean} true if the date provided is within this Timeline.
       
-       *# Usage: ##
+      ## Usage: ##
       
       We can create a Timeline from May to just before July.
       
@@ -8853,7 +3561,7 @@ require.define("/src/Timeline.js",function(require,module,exports,__dirname,__fi
     specify. It will also iterate over hours, minutes, seconds, etc. and skip times that are not
     between the specified work hours.
     
-     *# Usage ##
+    ## Usage ##
     
         {TimelineIterator, Timeline, Time} = require('../')
     
@@ -8944,10 +3652,10 @@ require.define("/src/Timeline.js",function(require,module,exports,__dirname,__fi
      */
     var StopIteration, _contains;
 
-    function TimelineIterator(timeline, tickType, tz, childGranularity) {
-      var _ref;
-      this.tickType = tickType != null ? tickType : 'Time';
-      this.childGranularity = childGranularity;
+    function TimelineIterator(timeline, tickType1, tz, childGranularity1) {
+      var ref;
+      this.tickType = tickType1 != null ? tickType1 : 'Time';
+      this.childGranularity = childGranularity1;
 
       /*
       @constructor
@@ -8959,7 +3667,7 @@ require.define("/src/Timeline.js",function(require,module,exports,__dirname,__fi
       @param {String} [tz] A Sting specifying the timezone in the standard form,`America/New_York` for example. This is
          required if `tickType` is 'Date' or 'ISOString'.
        */
-      utils.assert((_ref = this.tickType) === 'Time' || _ref === 'Timeline' || _ref === 'Date' || _ref === 'ISOString', "tickType must be 'Time', 'Timeline', 'Date', or 'ISOString'. You provided " + this.tickType + ".");
+      utils.assert((ref = this.tickType) === 'Time' || ref === 'Timeline' || ref === 'Date' || ref === 'ISOString', "tickType must be 'Time', 'Timeline', 'Date', or 'ISOString'. You provided " + this.tickType + ".");
       utils.assert(this.tickType !== 'Date' || (tz != null), 'Must provide a tz (timezone) parameter when tickType is Date.');
       utils.assert(this.tickType !== 'ISOString' || (tz != null), 'Must provide a tz (timezone) parameter when returning ISOStrings.');
       if (this.tz == null) {
@@ -9010,22 +3718,22 @@ require.define("/src/Timeline.js",function(require,module,exports,__dirname,__fi
     };
 
     TimelineIterator.prototype._shouldBeExcluded = function() {
-      var currentInDay, currentMinutes, holiday, _i, _len, _ref, _ref1, _ref2;
+      var currentInDay, currentMinutes, holiday, j, len, ref, ref1, ref2;
       if (this.current._isGranularityCoarserThanDay()) {
         return false;
       }
       currentInDay = this.current.inGranularity('day');
-      if (_ref = this.current.dowString(), __indexOf.call(this.timeline.workDays, _ref) < 0) {
+      if (ref = this.current.dowString(), indexOf.call(this.timeline.workDays, ref) < 0) {
         return true;
       }
-      _ref1 = this.timeline.holidays;
-      for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
-        holiday = _ref1[_i];
+      ref1 = this.timeline.holidays;
+      for (j = 0, len = ref1.length; j < len; j++) {
+        holiday = ref1[j];
         if (utils.match(holiday, currentInDay)) {
           return true;
         }
       }
-      if ((_ref2 = this.timeline.granularity) === 'hour' || _ref2 === 'minute' || _ref2 === ' second' || _ref2 === 'millisecond') {
+      if ((ref2 = this.timeline.granularity) === 'hour' || ref2 === 'minute' || ref2 === ' second' || ref2 === 'millisecond') {
         currentMinutes = this.current.hour * 60;
         if (this.current.minute != null) {
           currentMinutes += this.current.minute;
@@ -9044,16 +3752,16 @@ require.define("/src/Timeline.js",function(require,module,exports,__dirname,__fi
     };
 
     TimelineIterator.prototype._proceedToNextValid = function() {
-      var _results;
-      _results = [];
+      var results;
+      results = [];
       while (this.hasNext() && this._shouldBeExcluded()) {
         if (this.timeline.step > 0) {
-          _results.push(this.current.increment());
+          results.push(this.current.increment());
         } else {
-          _results.push(this.current.decrement());
+          results.push(this.current.decrement());
         }
       }
-      return _results;
+      return results;
     };
 
     TimelineIterator.prototype.next = function() {
@@ -9063,13 +3771,13 @@ require.define("/src/Timeline.js",function(require,module,exports,__dirname,__fi
       @return {Time/Timeline/Date/String} Returns the next value of the iterator. The start will be the first value returned unless it should
          be skipped due to holiday, weekend, or workhour knockouts.
        */
-      var childtimeline, config, currentCopy, i, _i, _ref;
+      var childtimeline, config, currentCopy, i, j, ref;
       if (!this.hasNext()) {
         throw new StopIteration('Cannot call next() past end.');
       }
       currentCopy = new Time(this.current);
       this.count++;
-      for (i = _i = _ref = Math.abs(this.timeline.step); _ref <= 1 ? _i <= 1 : _i >= 1; i = _ref <= 1 ? ++_i : --_i) {
+      for (i = j = ref = Math.abs(this.timeline.step); ref <= 1 ? j <= 1 : j >= 1; i = ref <= 1 ? ++j : --j) {
         if (this.timeline.step > 0) {
           this.current.increment();
         } else {
@@ -9109,698 +3817,5 @@ require.define("/src/Timeline.js",function(require,module,exports,__dirname,__fi
   exports.TimelineIterator = TimelineIterator;
 
 }).call(this);
-
-});
-
-require.define("/node_modules/JSON2/package.json",function(require,module,exports,__dirname,__filename,process,global){module.exports = {"main":"index.js"}
-});
-
-require.define("/node_modules/JSON2/index.js",function(require,module,exports,__dirname,__filename,process,global){// For use in Node.js
-
-var JSON2 = require('./json2');
-var cycle = require('./cycle');
-
-JSON2.decycle = cycle.decycle;
-JSON2.retrocycle = cycle.retrocycle;
-
-module.exports = JSON2;
-
-});
-
-require.define("/node_modules/JSON2/json2.js",function(require,module,exports,__dirname,__filename,process,global){/*
-    json2.js
-    2011-10-19
-
-    Public Domain.
-
-    NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.
-
-    See http://www.JSON.org/js.html
-
-
-    This code should be minified before deployment.
-    See http://javascript.crockford.com/jsmin.html
-
-    USE YOUR OWN COPY. IT IS EXTREMELY UNWISE TO LOAD CODE FROM SERVERS YOU DO
-    NOT CONTROL.
-
-
-    This file creates a global JSON object containing two methods: stringify
-    and parse.
-
-        JSON.stringify(value, replacer, space)
-            value       any JavaScript value, usually an object or array.
-
-            replacer    an optional parameter that determines how object
-                        values are stringified for objects. It can be a
-                        function or an array of strings.
-
-            space       an optional parameter that specifies the indentation
-                        of nested structures. If it is omitted, the text will
-                        be packed without extra whitespace. If it is a number,
-                        it will specify the number of spaces to indent at each
-                        level. If it is a string (such as '\t' or '&nbsp;'),
-                        it contains the characters used to indent at each level.
-
-            This method produces a JSON text from a JavaScript value.
-
-            When an object value is found, if the object contains a toJSON
-            method, its toJSON method will be called and the result will be
-            stringified. A toJSON method does not serialize: it returns the
-            value represented by the name/value pair that should be serialized,
-            or undefined if nothing should be serialized. The toJSON method
-            will be passed the key associated with the value, and this will be
-            bound to the value
-
-            For example, this would serialize Dates as ISO strings.
-
-                Date.prototype.toJSON = function (key) {
-                    function f(n) {
-                        // Format integers to have at least two digits.
-                        return n < 10 ? '0' + n : n;
-                    }
-
-                    return this.getUTCFullYear()   + '-' +
-                         f(this.getUTCMonth() + 1) + '-' +
-                         f(this.getUTCDate())      + 'T' +
-                         f(this.getUTCHours())     + ':' +
-                         f(this.getUTCMinutes())   + ':' +
-                         f(this.getUTCSeconds())   + 'Z';
-                };
-
-            You can provide an optional replacer method. It will be passed the
-            key and value of each member, with this bound to the containing
-            object. The value that is returned from your method will be
-            serialized. If your method returns undefined, then the member will
-            be excluded from the serialization.
-
-            If the replacer parameter is an array of strings, then it will be
-            used to select the members to be serialized. It filters the results
-            such that only members with keys listed in the replacer array are
-            stringified.
-
-            Values that do not have JSON representations, such as undefined or
-            functions, will not be serialized. Such values in objects will be
-            dropped; in arrays they will be replaced with null. You can use
-            a replacer function to replace those with JSON values.
-            JSON.stringify(undefined) returns undefined.
-
-            The optional space parameter produces a stringification of the
-            value that is filled with line breaks and indentation to make it
-            easier to read.
-
-            If the space parameter is a non-empty string, then that string will
-            be used for indentation. If the space parameter is a number, then
-            the indentation will be that many spaces.
-
-            Example:
-
-            text = JSON.stringify(['e', {pluribus: 'unum'}]);
-            // text is '["e",{"pluribus":"unum"}]'
-
-
-            text = JSON.stringify(['e', {pluribus: 'unum'}], null, '\t');
-            // text is '[\n\t"e",\n\t{\n\t\t"pluribus": "unum"\n\t}\n]'
-
-            text = JSON.stringify([new Date()], function (key, value) {
-                return this[key] instanceof Date ?
-                    'Date(' + this[key] + ')' : value;
-            });
-            // text is '["Date(---current time---)"]'
-
-
-        JSON.parse(text, reviver)
-            This method parses a JSON text to produce an object or array.
-            It can throw a SyntaxError exception.
-
-            The optional reviver parameter is a function that can filter and
-            transform the results. It receives each of the keys and values,
-            and its return value is used instead of the original value.
-            If it returns what it received, then the structure is not modified.
-            If it returns undefined then the member is deleted.
-
-            Example:
-
-            // Parse the text. Values that look like ISO date strings will
-            // be converted to Date objects.
-
-            myData = JSON.parse(text, function (key, value) {
-                var a;
-                if (typeof value === 'string') {
-                    a =
-/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/.exec(value);
-                    if (a) {
-                        return new Date(Date.UTC(+a[1], +a[2] - 1, +a[3], +a[4],
-                            +a[5], +a[6]));
-                    }
-                }
-                return value;
-            });
-
-            myData = JSON.parse('["Date(09/09/2001)"]', function (key, value) {
-                var d;
-                if (typeof value === 'string' &&
-                        value.slice(0, 5) === 'Date(' &&
-                        value.slice(-1) === ')') {
-                    d = new Date(value.slice(5, -1));
-                    if (d) {
-                        return d;
-                    }
-                }
-                return value;
-            });
-
-
-    This is a reference implementation. You are free to copy, modify, or
-    redistribute.
-*/
-
-/*jslint evil: true, regexp: true */
-
-/*members "", "\b", "\t", "\n", "\f", "\r", "\"", JSON, "\\", apply,
-    call, charCodeAt, getUTCDate, getUTCFullYear, getUTCHours,
-    getUTCMinutes, getUTCMonth, getUTCSeconds, hasOwnProperty, join,
-    lastIndex, length, parse, prototype, push, replace, slice, stringify,
-    test, toJSON, toString, valueOf
-*/
-
-
-(function (JSON) {
-    'use strict';
-
-    function f(n) {
-        // Format integers to have at least two digits.
-        return n < 10 ? '0' + n : n;
-    }
-
-    /* DDOPSON-2012-04-16 - mutating global prototypes is NOT allowed for a well-behaved module.  
-     * It's also unneeded, since Date already defines toJSON() to the same ISOwhatever format below
-     * Thus, we skip this logic for the CommonJS case where 'exports' is defined
-     */
-    if (typeof exports === 'undefined') {
-      if (typeof Date.prototype.toJSON !== 'function') {
-          Date.prototype.toJSON = function (key) {
-
-              return isFinite(this.valueOf())
-                  ? this.getUTCFullYear()     + '-' +
-                      f(this.getUTCMonth() + 1) + '-' +
-                      f(this.getUTCDate())      + 'T' +
-                      f(this.getUTCHours())     + ':' +
-                      f(this.getUTCMinutes())   + ':' +
-                      f(this.getUTCSeconds())   + 'Z'
-                  : null;
-          };
-      }
-      
-      if (typeof String.prototype.toJSON !== 'function') {
-        String.prototype.toJSON = function (key) { return this.valueOf(); };
-      }
-
-      if (typeof Number.prototype.toJSON !== 'function') {
-        Number.prototype.toJSON = function (key) { return this.valueOf(); };
-      }
-      
-      if (typeof Boolean.prototype.toJSON !== 'function') {
-        Boolean.prototype.toJSON = function (key) { return this.valueOf(); };
-      }
-    }
-    var cx = /[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,
-        escapable = /[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,
-        gap,
-        indent,
-        meta = {    // table of character substitutions
-            '\b': '\\b',
-            '\t': '\\t',
-            '\n': '\\n',
-            '\f': '\\f',
-            '\r': '\\r',
-            '"' : '\\"',
-            '\\': '\\\\'
-        },
-        rep;
-
-
-    function quote(string) {
-
-// If the string contains no control characters, no quote characters, and no
-// backslash characters, then we can safely slap some quotes around it.
-// Otherwise we must also replace the offending characters with safe escape
-// sequences.
-
-        escapable.lastIndex = 0;
-        return escapable.test(string) ? '"' + string.replace(escapable, function (a) {
-            var c = meta[a];
-            return typeof c === 'string'
-                ? c
-                : '\\u' + ('0000' + a.charCodeAt(0).toString(16)).slice(-4);
-        }) + '"' : '"' + string + '"';
-    }
-
-
-    function str(key, holder) {
-
-// Produce a string from holder[key].
-
-        var i,          // The loop counter.
-            k,          // The member key.
-            v,          // The member value.
-            length,
-            mind = gap,
-            partial,
-            value = holder[key];
-
-// If the value has a toJSON method, call it to obtain a replacement value.
-
-        if (value && typeof value === 'object' &&
-                typeof value.toJSON === 'function') {
-            value = value.toJSON(key);
-        }
-
-// If we were called with a replacer function, then call the replacer to
-// obtain a replacement value.
-
-        if (typeof rep === 'function') {
-            value = rep.call(holder, key, value);
-        }
-
-// What happens next depends on the value's type.
-
-        switch (typeof value) {
-        case 'string':
-            return quote(value);
-
-        case 'number':
-
-// JSON numbers must be finite. Encode non-finite numbers as null.
-
-            return isFinite(value) ? String(value) : 'null';
-
-        case 'boolean':
-        case 'null':
-
-// If the value is a boolean or null, convert it to a string. Note:
-// typeof null does not produce 'null'. The case is included here in
-// the remote chance that this gets fixed someday.
-
-            return String(value);
-
-// If the type is 'object', we might be dealing with an object or an array or
-// null.
-
-        case 'object':
-
-// Due to a specification blunder in ECMAScript, typeof null is 'object',
-// so watch out for that case.
-
-            if (!value) {
-                return 'null';
-            }
-
-// Make an array to hold the partial results of stringifying this object value.
-
-            gap += indent;
-            partial = [];
-
-// Is the value an array?
-
-            if (Object.prototype.toString.apply(value) === '[object Array]') {
-
-// The value is an array. Stringify every element. Use null as a placeholder
-// for non-JSON values.
-
-                length = value.length;
-                for (i = 0; i < length; i += 1) {
-                    partial[i] = str(i, value) || 'null';
-                }
-
-// Join all of the elements together, separated with commas, and wrap them in
-// brackets.
-
-                v = partial.length === 0
-                    ? '[]'
-                    : gap
-                    ? '[\n' + gap + partial.join(',\n' + gap) + '\n' + mind + ']'
-                    : '[' + partial.join(',') + ']';
-                gap = mind;
-                return v;
-            }
-
-// If the replacer is an array, use it to select the members to be stringified.
-
-            if (rep && typeof rep === 'object') {
-                length = rep.length;
-                for (i = 0; i < length; i += 1) {
-                    if (typeof rep[i] === 'string') {
-                        k = rep[i];
-                        v = str(k, value);
-                        if (v) {
-                            partial.push(quote(k) + (gap ? ': ' : ':') + v);
-                        }
-                    }
-                }
-            } else {
-
-// Otherwise, iterate through all of the keys in the object.
-
-                for (k in value) {
-                    if (Object.prototype.hasOwnProperty.call(value, k)) {
-                        v = str(k, value);
-                        if (v) {
-                            partial.push(quote(k) + (gap ? ': ' : ':') + v);
-                        }
-                    }
-                }
-            }
-
-// Join all of the member texts together, separated with commas,
-// and wrap them in braces.
-
-            v = partial.length === 0
-                ? '{}'
-                : gap
-                ? '{\n' + gap + partial.join(',\n' + gap) + '\n' + mind + '}'
-                : '{' + partial.join(',') + '}';
-            gap = mind;
-            return v;
-        }
-    }
-
-// If the JSON object does not yet have a stringify method, give it one.
-
-    if (typeof JSON.stringify !== 'function') {
-        JSON.stringify = function (value, replacer, space) {
-
-// The stringify method takes a value and an optional replacer, and an optional
-// space parameter, and returns a JSON text. The replacer can be a function
-// that can replace values, or an array of strings that will select the keys.
-// A default replacer method can be provided. Use of the space parameter can
-// produce text that is more easily readable.
-
-            var i;
-            gap = '';
-            indent = '';
-
-// If the space parameter is a number, make an indent string containing that
-// many spaces.
-
-            if (typeof space === 'number') {
-                for (i = 0; i < space; i += 1) {
-                    indent += ' ';
-                }
-
-// If the space parameter is a string, it will be used as the indent string.
-
-            } else if (typeof space === 'string') {
-                indent = space;
-            }
-
-// If there is a replacer, it must be a function or an array.
-// Otherwise, throw an error.
-
-            rep = replacer;
-            if (replacer && typeof replacer !== 'function' &&
-                    (typeof replacer !== 'object' ||
-                    typeof replacer.length !== 'number')) {
-                throw new Error('JSON.stringify');
-            }
-
-// Make a fake root object containing our value under the key of ''.
-// Return the result of stringifying the value.
-
-            return str('', {'': value});
-        };
-    }
-
-
-// If the JSON object does not yet have a parse method, give it one.
-
-    if (typeof JSON.parse !== 'function') {
-        JSON.parse = function (text, reviver) {
-
-// The parse method takes a text and an optional reviver function, and returns
-// a JavaScript value if the text is a valid JSON text.
-
-            var j;
-
-            function walk(holder, key) {
-
-// The walk method is used to recursively walk the resulting structure so
-// that modifications can be made.
-
-                var k, v, value = holder[key];
-                if (value && typeof value === 'object') {
-                    for (k in value) {
-                        if (Object.prototype.hasOwnProperty.call(value, k)) {
-                            v = walk(value, k);
-                            if (v !== undefined) {
-                                value[k] = v;
-                            } else {
-                                delete value[k];
-                            }
-                        }
-                    }
-                }
-                return reviver.call(holder, key, value);
-            }
-
-
-// Parsing happens in four stages. In the first stage, we replace certain
-// Unicode characters with escape sequences. JavaScript handles many characters
-// incorrectly, either silently deleting them, or treating them as line endings.
-
-            text = String(text);
-            cx.lastIndex = 0;
-            if (cx.test(text)) {
-                text = text.replace(cx, function (a) {
-                    return '\\u' +
-                        ('0000' + a.charCodeAt(0).toString(16)).slice(-4);
-                });
-            }
-
-// In the second stage, we run the text against regular expressions that look
-// for non-JSON patterns. We are especially concerned with '()' and 'new'
-// because they can cause invocation, and '=' because it can cause mutation.
-// But just to be safe, we want to reject all unexpected forms.
-
-// We split the second stage into 4 regexp operations in order to work around
-// crippling inefficiencies in IE's and Safari's regexp engines. First we
-// replace the JSON backslash pairs with '@' (a non-JSON character). Second, we
-// replace all simple value tokens with ']' characters. Third, we delete all
-// open brackets that follow a colon or comma or that begin the text. Finally,
-// we look to see that the remaining characters are only whitespace or ']' or
-// ',' or ':' or '{' or '}'. If that is so, then the text is safe for eval.
-
-            if (/^[\],:{}\s]*$/
-                    .test(text.replace(/\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g, '@')
-                        .replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g, ']')
-                        .replace(/(?:^|:|,)(?:\s*\[)+/g, ''))) {
-
-// In the third stage we use the eval function to compile the text into a
-// JavaScript structure. The '{' operator is subject to a syntactic ambiguity
-// in JavaScript: it can begin a block or an object literal. We wrap the text
-// in parens to eliminate the ambiguity.
-
-                j = eval('(' + text + ')');
-
-// In the optional fourth stage, we recursively walk the new structure, passing
-// each name/value pair to a reviver function for possible transformation.
-
-                return typeof reviver === 'function'
-                    ? walk({'': j}, '')
-                    : j;
-            }
-
-// If the text is not JSON parseable, then a SyntaxError is thrown.
-
-            throw new SyntaxError('JSON.parse');
-        };
-    }
-})(
-    
-    // Create a JSON object only if one does not already exist. We create the
-    // methods in a closure to avoid creating global variables.
-    
-  (typeof exports !== 'undefined') ? 
-    exports : 
-    (window.JSON ? 
-      (window.JSON) :
-      (window.JSON = {})
-    )
-);
-
-});
-
-require.define("/node_modules/JSON2/cycle.js",function(require,module,exports,__dirname,__filename,process,global){// cycle.js
-// 2011-08-24
-
-/*jslint evil: true, regexp: true */
-
-/*members $ref, apply, call, decycle, hasOwnProperty, length, prototype, push,
-    retrocycle, stringify, test, toString
-*/
-
-(function (exports) {
-
-if (typeof exports.decycle !== 'function') {
-    exports.decycle = function decycle(object) {
-        'use strict';
-
-// Make a deep copy of an object or array, assuring that there is at most
-// one instance of each object or array in the resulting structure. The
-// duplicate references (which might be forming cycles) are replaced with
-// an object of the form
-//      {$ref: PATH}
-// where the PATH is a JSONPath string that locates the first occurance.
-// So,
-//      var a = [];
-//      a[0] = a;
-//      return JSON.stringify(JSON.decycle(a));
-// produces the string '[{"$ref":"$"}]'.
-
-// JSONPath is used to locate the unique object. $ indicates the top level of
-// the object or array. [NUMBER] or [STRING] indicates a child member or
-// property.
-
-        var objects = [],   // Keep a reference to each unique object or array
-            paths = [];     // Keep the path to each unique object or array
-
-        return (function derez(value, path) {
-
-// The derez recurses through the object, producing the deep copy.
-
-            var i,          // The loop counter
-                name,       // Property name
-                nu;         // The new object or array
-
-            switch (typeof value) {
-            case 'object':
-
-// typeof null === 'object', so get out if this value is not really an object.
-
-                if (!value) {
-                    return null;
-                }
-
-// If the value is an object or array, look to see if we have already
-// encountered it. If so, return a $ref/path object. This is a hard way,
-// linear search that will get slower as the number of unique objects grows.
-
-                for (i = 0; i < objects.length; i += 1) {
-                    if (objects[i] === value) {
-                        return {$ref: paths[i]};
-                    }
-                }
-
-// Otherwise, accumulate the unique value and its path.
-
-                objects.push(value);
-                paths.push(path);
-
-// If it is an array, replicate the array.
-
-                if (Object.prototype.toString.apply(value) === '[object Array]') {
-                    nu = [];
-                    for (i = 0; i < value.length; i += 1) {
-                        nu[i] = derez(value[i], path + '[' + i + ']');
-                    }
-                } else {
-
-// If it is an object, replicate the object.
-
-                    nu = {};
-                    for (name in value) {
-                        if (Object.prototype.hasOwnProperty.call(value, name)) {
-                            nu[name] = derez(value[name],
-                                path + '[' + JSON.stringify(name) + ']');
-                        }
-                    }
-                }
-                return nu;
-            case 'number':
-            case 'string':
-            case 'boolean':
-                return value;
-            }
-        }(object, '$'));
-    };
-}
-
-
-if (typeof exports.retrocycle !== 'function') {
-    exports.retrocycle = function retrocycle($) {
-        'use strict';
-
-// Restore an object that was reduced by decycle. Members whose values are
-// objects of the form
-//      {$ref: PATH}
-// are replaced with references to the value found by the PATH. This will
-// restore cycles. The object will be mutated.
-
-// The eval function is used to locate the values described by a PATH. The
-// root object is kept in a $ variable. A regular expression is used to
-// assure that the PATH is extremely well formed. The regexp contains nested
-// * quantifiers. That has been known to have extremely bad performance
-// problems on some browsers for very long strings. A PATH is expected to be
-// reasonably short. A PATH is allowed to belong to a very restricted subset of
-// Goessner's JSONPath.
-
-// So,
-//      var s = '[{"$ref":"$"}]';
-//      return JSON.retrocycle(JSON.parse(s));
-// produces an array containing a single element which is the array itself.
-
-        var px =
-            /^\$(?:\[(?:\d+|\"(?:[^\\\"\u0000-\u001f]|\\([\\\"\/bfnrt]|u[0-9a-zA-Z]{4}))*\")\])*$/;
-
-        (function rez(value) {
-
-// The rez function walks recursively through the object looking for $ref
-// properties. When it finds one that has a value that is a path, then it
-// replaces the $ref object with a reference to the value that is found by
-// the path.
-
-            var i, item, name, path;
-
-            if (value && typeof value === 'object') {
-                if (Object.prototype.toString.apply(value) === '[object Array]') {
-                    for (i = 0; i < value.length; i += 1) {
-                        item = value[i];
-                        if (item && typeof item === 'object') {
-                            path = item.$ref;
-                            if (typeof path === 'string' && px.test(path)) {
-                                value[i] = eval(path);
-                            } else {
-                                rez(item);
-                            }
-                        }
-                    }
-                } else {
-                    for (name in value) {
-                        if (typeof value[name] === 'object') {
-                            item = value[name];
-                            if (item) {
-                                path = item.$ref;
-                                if (typeof path === 'string' && px.test(path)) {
-                                    value[name] = eval(path);
-                                } else {
-                                    rez(item);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }($));
-        return $;
-    };
-}
-}) (
-  (typeof exports !== 'undefined') ? 
-    exports : 
-    (window.JSON ? 
-      (window.JSON) :
-      (window.JSON = {})
-    )
-);
 
 });
