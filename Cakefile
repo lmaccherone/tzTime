@@ -2,13 +2,33 @@ utils = require('./src/utils')
 
 fs = require('fs')
 path = require('path')
-{spawn, exec} = require('child_process')
+{spawn, exec, spawnSync} = require('child_process')
 wrench = require('wrench')
 marked = require('marked')
 uglify = require("uglify-js")
 browserify = require('browserify')
 fileify = require('fileify-lm')
 runsync = require('runsync')  # polyfil for node.js 0.12 synchronous running functionality. Remove when upgrading to 0.12
+
+isWindows = (process.platform.lastIndexOf('win') == 0)
+runSync2 = (command) ->
+  {status, stdout, stderr} = runSyncRaw(command)
+  if stderr?.length > 0 or status > 0
+    console.error("Error running: '#{command}'\n#{stderr}\n")
+    process.exit(status)
+  else
+    console.log("Output of running '#{command}'\n#{stdout}\n")
+    return stdout
+
+runSyncRaw2 = (command) ->
+  # Spawn things in a sub-shell so things like io redirection and gsutil work
+  if isWindows
+    shell = 'cmd.exe'
+    args = ['/c', command]
+  else
+    shell = 'sh'
+    args = ['-c', command]
+  return spawnSync(shell, args, {encoding: 'utf8'})  # capture the output with `{status, stdout, stderr} = runSyncRaw2(...)`
 
 runSync = (command, options, next) ->
   {stderr, stdout} = runSyncRaw(command, options)
@@ -123,6 +143,7 @@ task('publish', 'Publish to npm', () ->
 
 task('build', 'Build with browserify and place in ./deploy', () ->
   console.log('building...')
+  runSync2('cake tz')
   b = browserify()
   b.use(fileify('files', __dirname + '/files'))
   b.ignore(['files'])
@@ -148,42 +169,68 @@ task('build-and-docs', 'Build and docs combined for LiveReload.', () ->
   invoke('docs')
 )
 
-task('prep-tz', 'NOT WORKING - Prepare the tz files found in vendor/tz for browserify/fileify and place in files/tz.', () ->
-   files = [
-     'africa',
-     'antarctica',
-     'asia',
-     'australasia',
-     'backward',
-     'etcetera',
-     'europe',
-     'northamerica',
-     'pacificnew',
-     'southamerica',
-   ]
-   for f in files
-     inputFile = 'vendor/tz/' + f
-     outputFile = 'files/tz/' + f + '.lzw'
-     fileString = fs.readFileSync(inputFile, 'utf8')
-     # strip comment lines
-     lines = fileString.split('\n')
-     outputLines = []
-     for line in lines
-       commentLocation = line.indexOf('#')
-       if commentLocation > 0
-         line = line.substr(0, commentLocation)
-       while line.substr(line.length - 1) is ' '
-         console.log('trimming end')
-         line = line.substr(0, line.length - 1)
-       trimmedLine = line.trim()
-       if trimmedLine.length > 0 and not utils.startsWith(trimmedLine, '#')
-         outputLines.push(line)
+task('tz', 'Invokes tz-download then tz-prep.', () ->
+  runSync2('cake tz-download')  # Using runSync to make it wait before invoking tz-prep
+  invoke('tz-prep')
+)
 
-     console.log(f, lines.length, outputLines.length)
-     outputFileString = outputLines.join('\n')
-     output = utils.lzwEncode(outputFileString)
-     fs.writeFileSync(outputFile, output, 'utf8')
- )
+task('tz-download', 'Download latest tz files and unzip them', () ->
+  process.chdir(__dirname)
+  localFile = 'tzdata-latest.tar.gz'
+  if fs.existsSync(localFile)
+    fs.unlinkSync(localFile)
+  {status, stdout, stderr} = runSyncRaw2('curl -O ftp://ftp.iana.org/tz/tzdata-latest.tar.gz')
+  if status > 0
+    process.exit(status)
+  else
+    console.log(stderr)
+
+  outputDirectory = path.join(__dirname, 'vendor', "tz")
+  if fs.existsSync(outputDirectory)
+    wrench.rmdirSyncRecursive(outputDirectory, false)
+  fs.mkdir(outputDirectory)
+  {status, stdout, stderr} = runSyncRaw2("tar -zxvf #{localFile} -C vendor/tz")
+  if status > 0
+    process.exit(status)
+  else
+    console.log(stderr)
+)
+
+task('tz-prep', 'Prepare the tz files found in vendor/tz for browserify/fileify and place in files/tz.', () ->
+ files = [
+   'africa',
+   'antarctica',
+   'asia',
+   'australasia',
+   'backward',
+   'etcetera',
+   'europe',
+   'northamerica',
+   'pacificnew',
+   'southamerica',
+ ]
+ for f in files
+   inputFile = 'vendor/tz/' + f
+   outputFile = 'files/tz/' + f + '.lzw'
+   fileString = fs.readFileSync(inputFile, 'utf8')
+   # strip comment lines
+   lines = fileString.split('\n')
+   outputLines = []
+   for line in lines
+     commentLocation = line.indexOf('#')
+     if commentLocation > 0
+       line = line.substr(0, commentLocation)
+     while line.substr(line.length - 1) is ' '
+       line = line.substr(0, line.length - 1)
+     trimmedLine = line.trim()
+     if trimmedLine.length > 0 and not utils.startsWith(trimmedLine, '#')
+       outputLines.push(line)
+
+   console.log(f, lines.length, outputLines.length)
+   outputFileString = outputLines.join('\n')
+   output = utils.lzwEncode(outputFileString)
+   fs.writeFileSync(outputFile, output, 'utf8')
+)
 
 task('test', 'Run the CoffeeScript test suite with nodeunit', () ->
   {reporters} = require('nodeunit')

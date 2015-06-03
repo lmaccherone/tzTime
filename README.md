@@ -83,6 +83,7 @@ The documentation system uses jsduck so you'll need to install that like this:
 
 ## Changelog ##
 
+* 0.9.0 - 2015-06-02 Auto update the tz files on build. Removed dependency on JSON2 and underscore
 * 0.7.2 - 2014-10-02 More build fixes
 * 0.7.1 - 2014-10-02 TravisCI fiddly fix
 * 0.7.0 - 2014-10-02 Updated dependencies, git gets only source, npm gets only .js

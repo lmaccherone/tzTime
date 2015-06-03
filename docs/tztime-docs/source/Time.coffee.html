@@ -280,7 +280,7 @@ class Time
     segments: [&#39;year&#39;, &#39;month&#39;, &#39;day&#39;, &#39;hour&#39;, &#39;minute&#39;, &#39;second&#39;, &#39;millisecond&#39;],
     mask: &#39;####-##-##T##:##:##.###&#39;,
     lowest: 0,
-    rolloverValue: () -&gt; return 1000,
+    rolloverValue: () -&gt; return 1000
   }
   @_granularitySpecs[&#39;second&#39;] = {
     segments: [&#39;year&#39;, &#39;month&#39;, &#39;day&#39;, &#39;hour&#39;, &#39;minute&#39;, &#39;second&#39;], 
@@ -734,6 +734,7 @@ class Time
     return result
 
   @DOW_N_TO_S_MAP = {0: &#39;Sunday&#39;, 1: &#39;Monday&#39;, 2: &#39;Tuesday&#39;, 3: &#39;Wednesday&#39;, 4: &#39;Thursday&#39;, 5: &#39;Friday&#39;, 6: &#39;Saturday&#39;, 7: &#39;Sunday&#39;}
+  @MONTH_TO_S_MAP = {1: &#39;January&#39;, 2: &#39;February&#39;, 3: &#39;March&#39;, 4: &#39;April&#39;, 5: &#39;May&#39;, 6: &#39;June&#39;, 7: &#39;July&#39;, 8: &#39;August&#39;, 9: &#39;September&#39;, 10: &#39;October&#39;, 11: &#39;November&#39;, 12: &#39;December&#39;}
   @DOW_MONTH_TABLE = [0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4]
   dowNumber: () -&gt;
 &lt;/CoffeeScript&gt; */
@@ -773,6 +774,19 @@ class Time
      */
 /* &lt;CoffeeScript&gt;
     return Time.DOW_N_TO_S_MAP[@dowNumber()]
+
+  monthString: () -&gt;
+&lt;/CoffeeScript&gt; */
+<span id='tzTime-Time-method-monthString'>    /**
+</span>     * @method monthString
+     * @member tzTime.Time
+     * @return {String} Returns the month as a String (e.g. &quot;January&quot;)
+     * 
+     *     console.log(new Time(&#39;2012-01-01&#39;).monthString())
+     *     # January
+     */
+/* &lt;CoffeeScript&gt;
+    return Time.MONTH_TO_S_MAP[@month]
 
   rataDieNumber: () -&gt;
 &lt;/CoffeeScript&gt; */
