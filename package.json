@@ -1,6 +1,6 @@
 {
   "name": "tztime",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "main": "./tzTime",
   "description": "Timezone transformations in the browser and node.js plus timezone precise timeline creation for charting",
   "keywords": [
@@ -24,7 +24,9 @@
     "url": "http://github.com/lmaccherone/tzTime.git"
   },
   "preferGlobal": false,
-  "dependencies": {},
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
   "devDependencies": {
     "browserify": "1.16.x",
     "coffee-script": "~1.9.3",

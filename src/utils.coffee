@@ -88,13 +88,6 @@ keys = Object.keys or (obj) ->
 values = (obj) ->
   return (val for key, val of obj)
 
-sortBy = (array, key) ->
-  array.sort((a, b) ->
-    x = a[key]
-    y = b[key]
-    return compare(x, y)
-  )
-
 log = (s) ->
   if document?.createElement?
     pre = document.createElement('pre')
@@ -210,7 +203,7 @@ exports.type = type
 exports.clone = clone
 exports.keys = keys
 exports.values = values
-exports.sortBy = sortBy
 exports.compare = compare
 exports.lzwEncode = lzwEncode
 exports.lzwDecode = lzwDecode
+exports._ = require('underscore')

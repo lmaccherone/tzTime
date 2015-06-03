@@ -1,5 +1,5 @@
 /*
-tztime version: 0.9.2
+tztime version: 0.9.3
 */
 var require = function (file, cwd) {
     var resolved = require.resolve(file, cwd || '/');
@@ -2454,6 +2454,8 @@ require.define("/src/utils.js",function(require,module,exports,__dirname,__filen
   exports.keys = keys;
 
   exports.values = values;
+
+  exports.sortBy = sortBy;
 
   exports.compare = compare;
 
