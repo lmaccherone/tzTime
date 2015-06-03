@@ -83,6 +83,7 @@ The documentation system uses jsduck so you'll need to install that like this:
 
 ## Changelog ##
 
+* 0.9.4 - 2015-06-02 Fix broken npm publish
 * 0.9.3 - 2015-06-02 Restored underscore dependency. Too many things in Lumenize depend upon it.
 * 0.9.2 - 2015-06-02 Forgot to export utils.sortBy
 * 0.9.1 - 2015-06-02 Added sortBy to utils to replace Lumenize's use of utils._.sortBy
