@@ -194,6 +194,9 @@ task('tz-download', 'Download latest tz files and unzip them', () ->
     process.exit(status)
   else
     console.log(stderr)
+
+  if fs.existsSync(localFile)
+    fs.unlinkSync(localFile)
 )
 
 task('tz-prep', 'Prepare the tz files found in vendor/tz for browserify/fileify and place in files/tz.', () ->
