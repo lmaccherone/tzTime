@@ -11,6 +11,7 @@ fileify = require('fileify-lm')
 runsync = require('runsync')  # polyfil for node.js 0.12 synchronous running functionality. Remove when upgrading to 0.12
 
 isWindows = (process.platform.lastIndexOf('win') == 0)
+
 runSync2 = (command) ->
   {status, stdout, stderr} = runSyncRaw(command)
   if stderr?.length > 0 or status > 0
@@ -233,6 +234,42 @@ task('tz-prep', 'Prepare the tz files found in vendor/tz for browserify/fileify 
    outputFileString = outputLines.join('\n')
    output = utils.lzwEncode(outputFileString)
    fs.writeFileSync(outputFile, output, 'utf8')
+)
+
+task('tz-prep2', 'Prepare the tz files found in vendor/tz for browserify/fileify and place in files/tz.', () ->
+  files = [
+    'africa',
+    'antarctica',
+    'asia',
+    'australasia',
+    'backward',
+    'etcetera',
+    'europe',
+    'northamerica',
+    'pacificnew',
+    'southamerica',
+  ]
+  for f in files
+    inputFile = 'vendor/tz/' + f
+    outputFile = 'files/tz/' + f + '.lzw'
+    fileString = fs.readFileSync(inputFile, 'utf8')
+    # strip comment lines
+    lines = fileString.split('\n')
+    outputLines = []
+    for line in lines
+      commentLocation = line.indexOf('#')
+      if commentLocation > 0
+        line = line.substr(0, commentLocation)
+      while line.substr(line.length - 1) is ' '
+        line = line.substr(0, line.length - 1)
+      trimmedLine = line.trim()
+      if trimmedLine.length > 0 and not utils.startsWith(trimmedLine, '#')
+        outputLines.push(line)
+
+    console.log(f, lines.length, outputLines.length)
+    outputFileString = outputLines.join('\n')
+    output = utils.lzwEncode(outputFileString)
+    fs.writeFileSync(outputFile, output, 'utf8')
 )
 
 task('test', 'Run the CoffeeScript test suite with nodeunit', () ->

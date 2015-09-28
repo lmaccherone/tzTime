@@ -1,0 +1,8 @@
+{
+  "ignore": [
+    "**/docs/**"
+  ]
+  "dependencies": {
+      "mute": ["nodeunit"]
+  }
+}
