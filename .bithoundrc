@@ -1,6 +1,8 @@
 {
   "ignore": [
-    "**/docs/**"
+    "**/docs/**",
+    "**/vendor/**",
+    "**/lib/**"
   ],
   "dependencies": {
       "mute": ["nodeunit", "browserify", "uglify-js", "marked", "wrench", "coffee-script"]
