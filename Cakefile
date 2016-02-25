@@ -213,6 +213,7 @@ task('tz-prep', 'Prepare the tz files found in vendor/tz for browserify/fileify 
    'pacificnew',
    'southamerica',
  ]
+ indexString = "module.exports = {\n"
  for f in files
    inputFile = 'vendor/tz/' + f
    outputFile = 'files/tz/' + f + '.lzw'
@@ -232,8 +233,12 @@ task('tz-prep', 'Prepare the tz files found in vendor/tz for browserify/fileify 
 
    console.log(f, lines.length, outputLines.length)
    outputFileString = outputLines.join('\n')
+   indexString += "'tz/#{f}.lzw': '#{JSON.stringify(outputFileString)}',\n"
    output = utils.lzwEncode(outputFileString)
    fs.writeFileSync(outputFile, output, 'utf8')
+
+ indexString += "}"
+ fs.writeFileSync('files/index.js', indexString, 'utf8')
 )
 
 task('tz-prep2', 'Prepare the tz files found in vendor/tz for browserify/fileify and place in files/tz.', () ->
