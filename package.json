@@ -28,7 +28,8 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "browserify": "1.16.x",
+    "brfs": "^1.4.3",
+    "browserify": "^4.2.0",
     "coffee-script": "~1.9.3",
     "coffeedoctest": "~0.5.0",
     "fileify-lm": "~0.3.1",

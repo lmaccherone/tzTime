@@ -145,24 +145,28 @@ task('publish', 'Publish to npm', () ->
 task('build', 'Build with browserify and place in ./deploy', () ->
   console.log('building...')
   runSync2('cake tz')
-  b = browserify()
-#  b.use(fileify('files', __dirname + '/files'))
-  b.ignore(['files'])
-  b.require("./tzTime")
-  {name, version} = require('./package.json')
-  fileString = """
+  b = browserify('./tzTime')
+  b.transform('brfs')
+  b.bundle((err, buf) ->
+    fileString = buf.toString()
+    console.log(fileString)
+
+    {name, version} = require('./package.json')
+    fileString = """
     /*
     #{name} version: #{version}
     */
-    #{b.bundle()}
-  """
-  deployFileName = "deploy/#{name}.js"
-  fs.writeFileSync(deployFileName, fileString)
+    #{fileString}
+    """
+    deployFileName = "deploy/#{name}.js"
+    fs.writeFileSync(deployFileName, fileString)
 
-  minFileString = uglify.minify(deployFileName).code
-  fs.writeFileSync("deploy/#{name}-min.js", minFileString)
-  console.log('done')
-  # !TODO: Need to run tests on the built version
+    minFileString = uglify.minify(deployFileName).code
+    fs.writeFileSync("deploy/#{name}-min.js", minFileString)
+    console.log('done')
+# !TODO: Need to run tests on the built version
+  )
+
 )
 
 task('build-and-docs', 'Build and docs combined for LiveReload.', () ->
