@@ -145,11 +145,11 @@ task('publish', 'Publish to npm', () ->
 task('build', 'Build with browserify and place in ./deploy', () ->
   console.log('building...')
   runSync2('cake tz')
-  b = browserify('./tzTime')
+  b = browserify()
+  b.require('./tzTime', {expose: 'tzTime'})
   b.transform('brfs')
   b.bundle((err, buf) ->
-    fileString = buf.toString()
-    console.log(fileString)
+    fileString = buf.toString('utf8')
 
     {name, version} = require('./package.json')
     fileString = """
