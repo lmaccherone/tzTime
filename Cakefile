@@ -7,7 +7,7 @@ wrench = require('wrench')
 marked = require('marked')
 uglify = require("uglify-js")
 browserify = require('browserify')
-fileify = require('fileify-lm')
+#fileify = require('fileify-lm')
 runsync = require('runsync')  # polyfil for node.js 0.12 synchronous running functionality. Remove when upgrading to 0.12
 
 isWindows = (process.platform.lastIndexOf('win') == 0)
@@ -146,7 +146,7 @@ task('build', 'Build with browserify and place in ./deploy', () ->
   console.log('building...')
   runSync2('cake tz')
   b = browserify()
-  b.use(fileify('files', __dirname + '/files'))
+#  b.use(fileify('files', __dirname + '/files'))
   b.ignore(['files'])
   b.require("./tzTime")
   {name, version} = require('./package.json')
