@@ -83,6 +83,7 @@ The documentation system uses jsduck so you'll need to install that like this:
 
 ## Changelog ##
 
+* 1.0.2 - 2016-03-01 Added brfs to browserify section of package.json so Lumenize can browserify tz files
 * 1.0.1 - 2016-03-01 Timezone files now load with fs.readFileSync(), which should be compatible with webpack
 * 1.0.0 - 2016-01-01 Going 1.0
 * 0.9.4 - 2015-06-02 Fix broken npm publish

@@ -1,6 +1,6 @@
 {
   "name": "tztime",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./tzTime",
   "description": "Timezone transformations in the browser and node.js plus timezone precise timeline creation for charting",
   "keywords": [
@@ -42,6 +42,11 @@
   },
   "scripts": {
     "test": "cake testall"
+  },
+  "browserify": {
+    "transform": [
+      "brfs"
+    ]
   },
   "licenses": [
     {

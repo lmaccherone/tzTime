@@ -166,7 +166,6 @@ task('build', 'Build with browserify and place in ./deploy', () ->
     console.log('done')
 # !TODO: Need to run tests on the built version
   )
-
 )
 
 task('build-and-docs', 'Build and docs combined for LiveReload.', () ->
